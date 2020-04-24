@@ -1,110 +1,110 @@
 ---
 title: Audio en video meten in Adobe Analytics
-description: 'Adobe Analytics for Media (ook wel Media Analytics genoemd) biedt clients robuuste media-metingen voor inhoud, audio en advertenties. '
+description: 'Adobe Analytics voor Media (ook wel Media Analytics genoemd) biedt clients robuuste mediametingen voor content, audio en advertenties. '
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 689b7d4ce632d3ddba6704bb8040eec52bfc326f
 
 ---
 
 
-# Audio en video meten in Adobe Analytics{#measuring-audio-and-video-in-adobe-analytics}
+# Audio en video meten in Adobe Analytics {#measuring-audio-and-video-in-adobe-analytics}
 
 ![Banner](./assets/media_analytics_banner.png)
 
 >[!IMPORTANT]
 >
->De documentatie die hier wordt geleverd, is specifiek voor clients die versie 1.5 of hoger van de SDK *van Adobe* Media gebruiken voor hartslagmeting, of de nieuwere API *voor* Media Collection van Adobe voor hartslagmeting. Het omvat geen instructies rond de erfenisMijlestone videoimplementatie. We moedigen alle klanten aan om over te stappen op het toepassen van één of beide van de nieuwste oplossingen voor mediatracering, zodat ze kunnen profiteren van verbeteringen en uitgebreide metingen. U kunt de [voordelen van de overgang naar de nieuwste oplossingen](media-overview.md#heartbeat-versus-milestone-benefits) hieronder bekijken. Hoewel we de mijlpaalmethode voor het bijhouden van video&#39;s blijven ondersteunen, zijn er geen geplande updates, oplossingen of verbeteringen aan functies. Neem contact op met uw accountmanager van Adobe als u nog vragen hebt.
+>De documentatie die hier wordt geboden, is specifiek voor klanten die versie 1.5 of hoger van de *Media-SDK* van Adobe, of de nieuwere *Media Collection-API* van Adobe gebruiken voor hartslagmeting. De documentatie omvat geen instructies voor de verouderde Milestone-video-implementatie. We moedigen alle klanten aan om over te stappen op één of beide van de twee nieuwste oplossingen voor mediatracking om te kunnen profiteren van verbeteringen en uitgebreide metingen. U kunt de [voordelen van de overstap naar de nieuwste oplossingen](media-overview.md#heartbeat-versus-milestone-benefits) hieronder bekijken. Hoewel we de Milestone-methode voor het bijhouden van video&#39;s blijven ondersteunen, zullen er geen geplande updates, oplossingen of functieverbeteringen komen. Neem contact op met uw Adobe-accountmanager als u nog vragen hebt.
 
 ## Overzicht {#overview}
 
-Adobe Analytics for Media (ook wel Media Analytics genoemd) is een invoegtoepassing voor de basisanalysemogelijkheden die clients een robuuste mediummeting biedt voor inhoud, audio en advertenties. Media Analytics biedt klanten veel voordelen om real-time bewaking, gedetailleerde analyse, actioneerbare inzichten en mogelijkheden voor monetisering mogelijk te maken.
+Adobe Analytics voor Media (ook wel Media Analytics genoemd) is een invoegtoepassing voor de basistoepassing Analytics, waarmee clients een robuuste mediameting binnenhaalt voor content, audio en advertenties. Media Analytics biedt klanten veel voordelen voor realtimecontrole, gedetailleerde analyse, uitvoerbare inzichten en mogelijkheden voor monetisatie.
 
-Het volgen van media wordt toegelaten door één van beiden van het volgende:
+Mediatracking wordt ingeschakeld door een van de twee volgende items:
 
 * **Media SDK -** integreert met de meest gebruikte mediaspelers.
-* **Media Collection API -** (RESTful API) integreert met spelers waarvoor geen SDK steun (of met spelers waarvoor geen integratie SDK wordt gewenst) is.
+* **Media Collection API -** (RESTful API) integreert met spelers waarvoor geen SDK-ondersteuning is (of met spelers waarvoor geen SDK-integratie vereist is).
 
-Met Adobe Analytics for Media kunnen klanten de volledige reis van hun klanten over hun site volgen, inclusief mediaconsumptie. Deze maatregelen zijn eenvoudig geïntegreerd in Analytics-rapporten en andere Experience Cloud-producten. Met mediummeting kunt u uw gegevens in meerdere dimensies en segmenten segmenteren en alle metagegevens vastleggen die u nodig hebt voor een volledige, gedetailleerde analyse en om succescriteria toe te wijzen aan volledig verbruikte media, gemiddelde doorgebrachte tijd en voltooide advertenties.
+Met Adobe Analytics voor Media kunnen klanten het volledige klanttraject op hun site volgen, inclusief mediaconsumptie. Deze metingen kunnen gemakkelijk worden geïntegreerd in Analytics-rapporten en andere Experience Cloud-producten. Met mediametingen kunt u uw data in meerdere dimensies en segmenten opsplitsen en zo alle metadata vastleggen die u nodig hebt om een volledige, gedetailleerde analyse te maken, en om succescriteria toe te wijzen aan volledig gebruikte media, gemiddelde doorgebrachte tijd en voltooide advertenties.
 
-De media oplossingen meten niet alleen vitale leveringsmetriek met betrekking tot QoS, zoals gelaten vallen kaders, tijd doorgebrachte het als buffer optreden voor, en gemiddelde bitrate. Ze kunnen ook worden gecombineerd met uw website- of toepassingsgegevens om de stroom van de klant en zijn belangen te visualiseren, zodat u beter aanbevelingen kunt doen en uw ervaringen kunt aanpassen via de Adobe Experience Cloud.
+De mediaoplossingen meten niet alleen essentiële leveringsstatistieken in verband met QoS, zoals dropped frames, buffertijd en gemiddelde bitsnelheid. Ze kunnen ook worden gecombineerd met uw website- of appdata om de stroom en de interesses van de klant zichtbaar te maken, zodat u betere aanbevelingen kunt doen en hun ervaringen kunt aanpassen via de Adobe Experience Cloud.
 
 ## Voordelen {#benefits}
 
-De mediametingoplossingen van Adobe bieden onder andere de volgende voordelen:
+De mediametingsoplossingen van Adobe bieden onder andere de volgende voordelen:
 
-* **Tijdige analyse -** maak real-time, uitvoerbare besluiten gebruikend zeer belangrijke prestatiesmetriek (b.v., duur) over veelvoudige kanalen. Gebeurtenissen met betrekking tot de hoofdinhoud worden gemeten met tussenpozen van **10 seconden** om alle activiteit vast te leggen zoals deze plaatsvindt. Gebeurtenissen voor het bijhouden van toevoegingen vinden plaats met een interval van **1 seconde** .
-* **De betrokkenheid van de aandrijving -** verbind gebruikers volledig door minder het bufferen gebeurtenissen en door inzicht waar en wanneer de advertenties binnen inhoud moeten spelen om een vlotte, minder opdringerige ervaring te verstrekken die gebruikers terugbrengt en herhaalde bezoeken levert.
-* **Holistisch beeld -** Combineer veelvoudige gegevenspunten over al uw inhoudsverdelers om een volledig overzicht van al uw media activiteit te krijgen, en meet betrokkenheid en meningen/luistert over alle mogelijke kanalen door de [Federated Analytics](/help/federated-analytics.md) eigenschap.
-* **Meer granulariteit: evalueer het** bekijken gedrag op het meest korrelige niveau, met inbegrip van individuele bezoekerstijd van dag, gezamenlijke kijkers/luisteraars door minuut, en gemiddelde duur de inhoud werd verbruikt.
-* **Nauwkeurige meting -** Meet over de veelvoudige apparaten die voor media consumptie, met inbegrip van OTT, smartphone, tablet, Desktop, en meer worden gebruikt, om de patronen en gewoonten van de gebruikersbetrokkenheid te controleren.
-* **Segmentering -** Pas classificaties toe op uw spelers, apparaten, genres, hoofdstukken en laat zien hoe elk een invloed heeft op uw algemene meningen/luistert en klantenbetrokkenheid bij inhoud, audio, advertenties, en gecombineerde.
+* **Tijdige analyse -** Neem uitvoerbare, realtimebesluiten aan de hand van de belangrijkste prestatiestatistieken (b.v. duur) via meerdere kanalen. Gebeurtenissen in verband met hoofdcontent worden gemeten met tussenpozen van **10 seconden** om alle activiteit vast te leggen terwijl deze plaatsvindt. Gebeurtenissen in verband met het bijhouden van advertenties vinden plaats met tussenpozen van **1 seconde**.
+* **Betrokkenheid stimuleren -** Betrek gebruikers volledig door minder buffergebeurtenissen en door te begrijpen waar en wanneer de advertenties binnen content moeten worden afgespeeld spelen voor een soepele, minder opdringerige ervaring te verstrekken waardoor gebruikers terugkomen en hun bezoeken herhalen.
+* **Holistisch beeld -** Combineer meerdere datapunten bij al uw contentdistributeurs om volledig zicht op al uw media-activiteit te krijgen, betrokkenheid te meten en te kijken/luisteren op alle mogelijke kanalen via de [Federated Analytics](/help/federated-analytics.md)-functie.
+* **Meer granulariteit -** Evalueer het kijkgedrag op het meest gedetailleerde niveau, waaronder het tijdstip van individuele bezoeken, gelijktijdige kijkers/luisteraars per minuut, en de gemiddelde duur van gebruik van de content.
+* **Nauwkeurige meting -** Meet op meerdere apparaten die worden gebruikt voor mediaverbruik, waaronder OTT, smartphone, tablet, desktop, enz., om de patronen en gewoonten van de gebruikersbetrokkenheid bij te houden.
+* **Segmentering -** Pas classificaties toe op uw spelers, apparaten, genres en hoofdstukken, en laat zien hoe ze elk invloed hebben op uw totaal aan weergaven en klantenbetrokkenheid bij content, audio, advertenties en combinaties daarvan.
 
-## Voordelen van hartslag versus mijlpaal {#heartbeat-versus-milestone-benefits}
+## Voordelen van Heartbeat versus Milestone {#heartbeat-versus-milestone-benefits}
 
-Adobe Analytics for Media kan op twee manieren worden gemeten: de oudere methode van de Mijlpaal (video slechts) en de huidige methode Heartbeats (audio en video, die in zowel Media SDK als de Inzameling API van Media wordt omvat). De methode Heartbeats heeft de voorkeur en we raden alle clients aan naar deze versie te gaan als ze dat nog niet hebben gedaan, om de hieronder beschreven voordelen te benutten.
+Adobe Analytics voor Media kan op twee manieren worden gemeten: de oudere Mijlpaal-methode (alleen video) en de huidige Heartbeats-methode (audio en video, aanwezig in zowel de Media SDK als de Media Collection-API). De Heartbeats-methode is de geprefereerde meetmethode en we raden alle klanten aan op deze versie over te stappen als ze dat nog niet hebben gedaan, zodat ze van de hieronder beschreven voordelen kunnen profiteren.
 
-De oudere methode van Milestone is gebaseerd op individuele servervraag aan de server van Analytics, voor videobegin, kwartielen, duur, en voltooit. De methode Heartbeats biedt een robuustere oplossing voor mediatracering waarmee de belangrijkste inhoud met intervallen van 10 seconden wordt gemeten voor verbeterde, gestandaardiseerde meetgegevens. Daarnaast heeft Adobe lessen geleerd van onze mijlpaalmethode om een vloeiender, gestroomlijnd implementatieproces te bieden via de Media SDK of de Media Collection API die door Heartbeats wordt gebruikt.
+De oudere Milestone-methode is gebaseerd op individuele server calls aan de Analytics-server voor starts, kwartielen, duur, en voltooiingen van video. De methode Heartbeats biedt een robuustere oplossing voor mediatracking waarmee de belangrijkste content wordt gemeten met tussenpozen van 10 seconden voor verbeterde, gestandaardiseerde statistieken. Daarnaast heeft Adobe van onze Milestone-methode geleerd om een vloeiender, gestroomlijnder implementatieproces te bieden via de Media SDK of de Media Collection-API die door Heartbeats wordt gebruikt.
 
-Enkele vele voordelen van de methode Heartbeats omvatten:
+Een paar van de vele voordelen van de Heartbeats-methode:
 
-* **Gestroomlijnd implementatieproces -** Wijs variabelen gemakkelijker toe via de speler-API en valideer implementaties via Adobe Debug Tool om ervoor te zorgen dat alle benodigde variabelen correct worden bijgehouden.
-* **Automatische integratie** in de cloud van Adobe Experience - Profiteer van de automatische integratie met de Adobe Experience Cloud-id via Experience Cloud-id, deel uw mediapubliek, wijs deze aan en voer op basis van gebruikersvoorkeuren mediumaanbevelingen uit.
-* **Gedeelde gegevens door Federale Analytics -** Capitalize op onze industrie-eerste media delend mogelijkheden, om gegevens holistisch over al uw media distributie partners-exploitanten, programmeurs, en verdelers te evalueren.
-* **Gestandaardiseerde oplossing voor alle platforms -** Zorg voor consistente, gestandaardiseerde variabelen voor al uw media en platforms, zodat een efficiëntere vergelijking tussen campagne, apparaat en leverancier mogelijk is.
-* **Gedownloade inhoud bijhouden -** Media-inhoud (video en audio) bijhouden die op een apparaat wordt gedownload en afgespeeld, ongeacht de connectiviteit ervan.
+* **Gestroomlijnd implementatieproces -** Wijs variabelen gemakkelijker toe via de speler-API en valideer implementaties via het Adobe Debug-gereedschap om ervoor te zorgen dat alle vereiste variabelen correct worden bijgehouden.
+* **Automatische Adobe Experience Cloud-integratie** - profiteer van de automatische integratie met de Adobe Experience Cloud via de Experience Cloud ID, segmenteer uw mediadoelgroepen, target deze en doe media-aanbevelingen op basis van gebruikersvoorkeuren.
+* **Gedeelde data via Federated Analytics -** Maak gebruik van onze marktleidende mogelijkheden voor delen via media om data holistisch te evalueren via al uw mediadistributiepartners: operators, programmeurs, en distributeurs.
+* **Gestandaardiseerde oplossing op alle platforms -** Zorg voor consistente, gestandaardiseerde variabelen bij al uw media en platforms om een efficiëntere vergelijking tussen campagnes, apparaten en leveranciers mogelijk te maken.
+* **Gedownloade inhoud bijhouden -** Houd mediacontent (video en audio) bij die op een apparaat wordt gedownload en afgespeeld, ongeacht de connectiviteit.
 
 ### Vergelijkingstabel
 
-|  | Video-analyse - Mijlpaal | Media Analytics - Heartbeats |
+|  | Video Analytics - Milestone | Media Analytics - Heartbeats |
 |---|---|---|
-| **Media-gebeurtenissen** | Standaardgebeurtenissen op hoog niveau | Gedetailleerde en aangepaste gebeurtenissen om de 10 jaar voor de hoofdinhoud, elke 1 seconden voor advertenties |
-| **Metriek en afmetingen** | Verschillen tussen leveranciers, niet-gestandaardiseerde meeteenheden en afmetingen | Duidelijke, Gestandaardiseerde Metriek, Afmetingen, en Benchmarks over Verkopers |
-| **Integraties met Adobe-producten** | Afzonderlijke sessies met sommige toewijzingen en integratie | Created Experience Cloud ID gekoppeld aan de volledige Adobe Experience Cloud voor eenvoudige kruisanalyse |
-| **Prijzen** | Op elke serveroproep bijgehouden en gefactureerd | Transparant bijhouden via mediastream (één) |
-| **Implementatie en ondersteuning** | Langere integratie met beperkte ondersteuning voor oudere versies en geen upgrades | Gestroomlijnde configuratie met doorlopende updates en verbeteringen |
-| **Delen van partners** | N.v.t. | Federatieve analyse en gecertificeerde meetgegevens |
-| **Geavanceerd bijhouden** | N.v.t. | Foutherstel bijhouden en gelijktijdige viewers |
+| **Mediagebeurtenissen** | Standaardgebeurtenissen op hoog niveau | Gedetailleerde en aangepaste gebeurtenissen elke de 10 seconden voor hoofdcontent, elke seconde voor advertenties |
+| **Statistieken en dimensies** | Verschillen tussen leveranciers, niet-gestandaardiseerde statistieken en dimensies | Duidelijke, gestandaardiseerde statistieken, dimensies en benchmarks van leveranciers |
+| **Integraties met Adobe-producten** | Individuele sessies met een aantal toewijzingen en integraties | Verbonden Experience Cloud ID gekoppeld aan de volledige Adobe Experience Cloud voor eenvoudige kruisanalyse |
+| **Prijzen** | Bijgehouden en gefactureerd tegen elke server call | Transparant bijhouden via mediastream (enkel) |
+| **Implementatie en ondersteuning** | Langere integraties met beperkte ondersteuning voor oudere versies en geen upgrades | Gestroomlijnde configuratie met doorlopende updates en verbeteringen |
+| **Delen via partners** | N.v.t. | Federated Analytics en gecertificeerde statistieken |
+| **Geavanceerde tracking** | N.v.t. | Foutherstel bijhouden en gelijktijdige kijkers |
 
 ## Ondersteunde apparaten {#devices-supported}
 
-Adobe Analytics for Media heeft zich samen met de branche ontwikkeld om krachtige gereedschappen voor gegevensverzameling te bieden, zodat elke mediastream wordt verzameld en gerapporteerd op alle relevante apparaten. Onze Media SDK is ontwikkeld voor alle meest gebruikte apparaten, waaronder:
+Adobe Analytics voor Media heeft zich binnen de branche ontwikkeld om krachtige gereedschappen voor dataverzameling te bieden, zodat elke mediastream wordt verzameld en gerapporteerd op alle relevante apparaten. Onze Media SDK is ontwikkeld voor de meest gebruikte apparaten, waaronder:
 
 * iOS- en Android-smartphones en -tablets
 * OTT-apparaten voor ROKU, AppleTV, FireTV en Android TV
-* JavaScript-browser voor bureaublad en laptop
+* JavaScript-browser voor desktop en laptop
 
-SDK&#39;s worden routinematig bijgewerkt wanneer nieuwe versies van apparaten worden uitgebracht. Met deze SDK&#39;s kunt u de integratie tot stand brengen met de meeste van de grootste mediaspelers op dit moment, waaronder Brightcove en Ooyala.
+De SDK&#39;s worden routinematig bijgewerkt wanneer nieuwe versies van apparaten worden uitgebracht. Met deze SDK&#39;s kunt u integreren met de meeste grote mediaspelers op dit moment, waaronder Brightcove en Ooyala.
 
-Voor apparaten of platforms die momenteel geen SDK-ondersteuning hebben (of zelfs als dat wel het geval is), kunt u de API voor mediagroep implementeren, waarmee u RESTful-API-aanroepen rechtstreeks van het apparaat/platform naar de achtergrond voor Media Analytics maakt.
+Voor apparaten of platforms die momenteel geen SDK-ondersteuning hebben (of zelfs als ze dat wel hebben), kunt u de Media Collection-API implementeren, waarmee u RESTful-API-calls rechtstreeks van het apparaat/platform naar de Media Analytics-back-end maakt.
 
-De onderstaande tabel bevat een lijst met de apparaten die momenteel worden ondersteund via de implementatie van de Media SDK en de implementatie van de Media Collection API. Zie SDK&#39;s [downloaden voor informatie over het downloaden van de meest recente versie van de SDK.](sdk-implement/download-sdks.md) Als er een apparaat is dat niet in de lijst wordt vermeld waarop u meting zoekt, gelieve de klantenzorg of uw oplossingsadviseur voor de status van dat apparaat te contacteren.
+De onderstaande tabel bevat een lijst met de apparaten die momenteel worden ondersteund via onze Media SDK-implementatie en de Media Collection-API-implementatie. Zie [SDK&#39;s downloaden voor informatie over het downloaden van de meest recente versie van de SDK.](sdk-implement/download-sdks.md) Als een apparaat niet in de lijst wordt vermeld waarvoor u metingen wilt, neemt u contact op met de klantenservice of uw consultant voor oplossingen om de status van het apparaat te achterhalen.
 
-|      | Media SDK | Media Collection-API |
+|      | Media-SDK | Media Collection-API |
 |---|:---:|:---:|
 | **JavaScript-browser** | ![](assets/icon-blue-check.png) | ![](assets/icon-blue-check.png) |
 | **iOS-apparaten** | ![](assets/icon-blue-check.png) | ![](assets/icon-blue-check.png) |
 | **Android-apparaten** | ![](assets/icon-blue-check.png) | ![](assets/icon-blue-check.png) |
-| **Verenigde Platforms van Vensters (UWP)** |  | ![](assets/icon-blue-check.png) |
+| **Unified Windows Platforms (UWP)** |  | ![](assets/icon-blue-check.png) |
 | **Blackberry** |  | ![](assets/icon-blue-check.png) |
 | **Apple TV (nieuw/verouderd)** | ![](assets/icon-blue-check.png) | ![](assets/icon-blue-check.png) |
 | **ROKU (JS)** | ![](assets/icon-blue-check.png) | ![](assets/icon-blue-check.png) |
 | **ROKU (native app)** |  | ![](assets/icon-blue-check.png) |
 | **OSX** |  | ![](assets/icon-blue-check.png) |
-| **Fire TV** | ![](assets/icon-blue-check.png) | ![](assets/icon-blue-check.png) |
+| **Fire-tv** | ![](assets/icon-blue-check.png) | ![](assets/icon-blue-check.png) |
 | **Android-tv** | ![](assets/icon-blue-check.png) | ![](assets/icon-blue-check.png) |
 | **Chromecast** | ![](assets/icon-blue-check.png) | ![](assets/icon-blue-check.png) |
 | **Xbox One/360** |  | ![](assets/icon-blue-check.png) |
 | **Sony PS3/PS4** |  | ![](assets/icon-blue-check.png) |
 | **(Andere/nieuwe aangesloten apparaten)** |  | ![](assets/icon-blue-check.png) |
 
-Voor Media SDK, zie ook de [Minimale Steun van de Versie van het Platform](./sdk-implement/setup/setup-overview.md#minimum-platform-version)
+Zie voor Media SDK ook de [Ondersteuning voor minimale platformversie](./sdk-implement/setup/setup-overview.md#minimum-platform-version)
 
 ## Transport Layer Security {#transport-layer-security}
 
-**TLS-kennisgeving —** Adobe heeft beveiligingscompatibiliteitsnormen die het einde van de levensduur van oudere beveiligingsprotocollen vereisen. Om te blijven voldoen aan de evoluerende normen van het veiligheidsprotocol, beweegt Adobe zich op weg naar het gebruik van TLS 1.2, om de meest bijgewerkte en veilige versie in gebruik te hebben. Vanaf 20 februari 2019 biedt Adobe alleen ondersteuning voor TLS 1.1 of hoger. Met deze wijziging verzamelt Adobe geen gegevens meer van eindgebruikers met oudere apparaten of webbrowsers die TLS 1.0 gebruiken. Migratie naar TLS 1.2 biedt betere beveiliging. Het is belangrijk dat u de details doorloopt en de wijzigingen uitwerkt voor een vloeiende overgang.
+**TLS-kennisgeving -** Adobe heeft beveiligingscompatibiliteitsnormen waarvoor einde-levensduur van oudere beveiligingsprotocollen vereist is. Om te blijven voldoen aan de evoluerende normen van veiligheidsprotocollen is Adobe op weg naar van TLS 1.2 om de meest actuele en veilige versie te gebruiken. Vanaf 20 februari 2019 biedt Adobe alleen nog ondersteuning voor TLS 1.1 of hoger. Met deze wijziging verzamelt Adobe geen data meer van eindgebruikers met oudere apparaten of webbrowsers die gebruikmaken van TLS 1.0. Migratie naar TLS 1.2 biedt betere beveiliging. Het is belangrijk dat u de details doorloopt en de wijzigingen plant voor een vloeiende overgang.
 
 >[!NOTE]
 >
->TLS is momenteel het wijdst opgestelde veiligheidsprotocol dat in Webbrowsers en andere toepassingen wordt gebruikt die gegevens vereisen om veilig over een netwerk worden geruild.
+>TLS is momenteel het meest gebruikte veiligheidsprotocol in webbrowsers en andere toepassingen waarin data veilig over een netwerk worden uitgewisseld.
 
