@@ -1,14 +1,14 @@
 ---
-title: Overzicht van mijlpaal
+title: Milestone - overzicht
 description: null
 uuid: 2f9ec6bb-8860-4863-98bc-5cffb356ccc5
 translation-type: tm+mt
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+source-git-commit: 5a4f15616712ee91bc028258991fc4e7359698a5
 
 ---
 
 
-# Overzicht van mijlpaal{#milestone-overview}
+# Milestone - overzicht{#milestone-overview}
 
 >[!CAUTION]
 >
@@ -30,7 +30,10 @@ U kunt ook een willekeurig aantal aanvullende meetgegevens bijhouden voor video.
 
 Ga naar **[!UICONTROL Admin > Report Suite Manager]als u videorapportage wilt instellen voor een implementatie van mijlpaal.**Selecteer de rapportsuite en kies**[!UICONTROL Video Management > Video Reporting]:**
 
-<!--![](assets/0clip_image002_1537416456.png){width="248"}-->
+<!--
+![](assets/0clip_image002_1537416456.png){width="248"}
+-->
+
 ![](assets/rs1.png)
 
 Op het eerste scherm werkt alleen Video Core met Mijlpaal-gegevens. Selecteer **[!UICONTROL Video Core]** en klik op **[!UICONTROL Save].**
@@ -39,12 +42,18 @@ Op het eerste scherm werkt alleen Video Core met Mijlpaal-gegevens. Selecteer **
 
 Selecteer in het volgende scherm **[!UICONTROL Use Custom Variables].**
 
-<!--![](assets/0clip_image006_-1561510960.png){width="470"}-->
+<!--
+![](assets/0clip_image006_-1561510960.png){width="470"}
+-->
+
 ![](assets/rs2.png)
 
 Selecteer in het uiteindelijke scherm de twee eVars en drie gebeurtenissen die u wilt gebruiken voor de videometing:
 
-<!--![](assets/0clip_image008_-92166399.png)-->
+<!--
+![](assets/0clip_image008_-92166399.png)
+-->
+
 ![](assets/rs3.png)
 
 ## Referentie videovariabele {#video-variable-reference}
