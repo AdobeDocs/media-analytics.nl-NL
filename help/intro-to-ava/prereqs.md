@@ -3,7 +3,7 @@ title: Vereisten
 description: null
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 translation-type: tm+mt
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
@@ -30,7 +30,7 @@ Voor een implementatie van *Media Analytics* , zijn hier de taken u moet voltooi
 
    ![](assets/mc_id_service_graphic.png)
 
-   De dienst van identiteitskaart kan verschillende oplossing-specifieke IDs (bijvoorbeeld, Analytics HULP) ook vervangen. Via de [klant-id&#39;s en de verificatiestatus](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-authenticated-state.html) kunt u met de id-service uw eigen klant-id&#39;s doorgeven aan de Experience Cloud. Houd er echter rekening mee dat de id-service alleen werkt met de oplossingen waarop u zich al hebt geabonneerd. Als u niet bent aangemeld voor toegang tot andere producten, biedt de id-service geen toegang.
+   De dienst van identiteitskaart kan verschillende oplossing-specifieke IDs (bijvoorbeeld, Analytics HULP) ook vervangen. Via de [klant-id&#39;s en de verificatiestatus](https://docs.adobe.com/content/help/en/id-service/using/reference/authenticated-state.html) kunt u met de id-service uw eigen klant-id&#39;s doorgeven aan de Experience Cloud. Houd er echter rekening mee dat de id-service alleen werkt met de oplossingen waarop u zich al hebt geabonneerd. Als u niet bent aangemeld voor toegang tot andere producten, biedt de id-service geen toegang.
 
    De id-service is een integraal onderdeel van vele functies, verbeteringen en services van de Experience Cloud. Momenteel ondersteunt de id-service [Analytics,](https://www.adobe.com/marketing-cloud/web-analytics.html) [Audience Manager](https://www.adobe.com/marketing-cloud/data-management-platform.html) en [Target.](https://www.adobe.com/marketing-cloud/testing-targeting.html)
 
@@ -44,7 +44,7 @@ Voor een implementatie van *Media Analytics* , zijn hier de taken u moet voltooi
    >
    >Bij gebrek aan om het even welke gebruiker - identiteitskaart die op media-specifieke vraag aanwezig is, zullen de standaardanalytische Methoden [van identiteitskaart van de](https://docs-author.corp.adobe.com/content/help/en/analytics/implementation/javascript-implementation/unique-visitors/visid-fallback.html) Fallback van de Analyse van toepassing zijn.
 
-   Meer informatie over de Experience Cloud ID vindt u in het overzicht [Experience Cloud ID,](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-overview.html) en de [Adobe Experience Platform Identity Service.](https://marketing.adobe.com/resources/help/en_US/mcvid/)
+   Meer informatie over de Experience Cloud ID vindt u in het overzicht [Experience Cloud ID,](https://docs.adobe.com/content/help/en/id-service/using/intro/overview.html) en de [Adobe Experience Platform Identity Service.](https://docs.adobe.com/content/help/en/id-service/using/home.html)
 
 1. **Schakel Adobe Analytics Reports in.**
 
