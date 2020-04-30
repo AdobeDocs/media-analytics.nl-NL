@@ -3,15 +3,15 @@ title: JSON-rapportgegevens voor gelijktijdige viewers ophalen
 description: null
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
 translation-type: tm+mt
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
 
-# JSON-rapportgegevens voor gelijktijdige viewers ophalen{#get-concurrent-viewers-json-report-data}
+# Get concurrent viewers JSON report data{#get-concurrent-viewers-json-report-data}
 
 U kunt de rapportgegevens van gelijktijdige viewers ophalen met versie _**_ 1.4 van de API&#39;s voor analyse:
-* [Analyse-API&#39;s](https://github.com/AdobeDocs/analytics-1.4-apis)
+* [API&#39;s voor Analytics](https://github.com/AdobeDocs/analytics-1.4-apis)
 * [Swagger](https://adobedocs.github.io/analytics-1.4-apis/swagger-docs.html#/Report/Report.Get)
 
 1. Filter de gegevens gebruikend om het even welk segment dat op UI bouwde. Maak een nieuw segment om te filteren op een specifieke inhoud-id.
@@ -56,7 +56,7 @@ Een lading van het steekproefverzoek voor dit scenario zou als dit kijken:
 <!--
 You can extract the concurrent viewers report data using the Experience Cloud API Explorer as follows. 
 
-1. Navigate to: [https://marketing.adobe.com/developer/api-explorer.](https://marketing.adobe.com/developer/api-explorer)
+1. Navigate to: [https://www.adobe.io.](https://www.adobe.io)
 1. Select and enter the following information in the API Explorer form:
 
     * **API -** Select "Report".
@@ -64,7 +64,7 @@ You can extract the concurrent viewers report data using the Experience Cloud AP
     * **Environment -** Select your data center.
     * Request JSON - Specify the following:
 
-        * `reportSuiteID` - For info on reports suites: [Report Suites](https://marketing.adobe.com/resources/help/en_US/sc/implement/ref-reports-report-suites.html)
+        * `reportSuiteID` - For info on reports suites: [Report Suites](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/report-suites-admin.html)
         
         * `dateTo` - End date of the report.         
         
