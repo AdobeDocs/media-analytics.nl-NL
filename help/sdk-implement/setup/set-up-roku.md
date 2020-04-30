@@ -3,7 +3,7 @@ title: Roku instellen
 description: Installatie van de Media SDK-toepassing voor implementatie op Roku.
 uuid: 904dfda0-4782-41da-b4ab-212e81156633
 translation-type: tm+mt
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 Adobe Mobile-services biedt een nieuwe gebruikersinterface waarin mobiele marketingmogelijkheden voor mobiele toepassingen vanuit de volledige Adobe Marketing Cloud worden samengebracht. In eerste instantie biedt de Mobile-service naadloze integratie van toepassingsanalyses en doelgerichte functies voor de Adobe Analytics- en Adobe Target-oplossingen.
 
-Meer informatie vindt u in de documentatie van [Adobe Mobile Services.](https://marketing.adobe.com/resources/help/en_US/mobile/)
+Meer informatie vindt u in de documentatie van [Adobe Mobile Services.](https://docs.adobe.com/content/help/en/mobile-services/using/home.html)
 
 Met Roku SDK 2.x for Experience Cloud Solutions kunt u Roku-toepassingen die in BrightScript zijn geschreven, gebruiken en gegevens van het publiek verzamelen via publieksbeheer en de videobetrokkenheid meten via videohartslagen.
 
@@ -83,7 +83,7 @@ Met Roku SDK 2.x for Experience Cloud Solutions kunt u Roku-toepassingen die in 
       }
       ```
 
-      | Configuratieparameter | Beschrijving |
+      | Configuratieparameter | Beschrijving     |
       | --- | --- |
       | `server` | Tekenreeks die de URL van het volgende eindpunt op de achtergrond vertegenwoordigt. |
       | `publisher` | Tekenreeks die de unieke id van de uitgever van de inhoud vertegenwoordigt. |
@@ -124,11 +124,11 @@ Met Roku SDK 2.x for Experience Cloud Solutions kunt u Roku-toepassingen die in 
    >
    >De methoden Experience Cloud Visitor ID zijn vooraf ingesteld op `visitor`.
 
-   |  Methode | Beschrijving |
+   |  Methode   | Beschrijving |
    | --- | --- |
    | `visitorMarketingCloudID` | Haalt de Experience Cloud-bezoekersidentiteitskaart op van de bezoekersidentiteitsservice.  <br/><br/>`ADBMobile().visitorMarketingCloudID()` |
    | `visitorSyncIdentifiers` | Met de Experience Cloud Visitor-id kunt u aanvullende klant-id&#39;s instellen die aan elke bezoeker kunnen worden gekoppeld. De bezoeker-API accepteert meerdere klant-id&#39;s voor dezelfde bezoeker en een id voor het klanttype om het bereik van de verschillende klant-id&#39;s te scheiden. Deze methode komt overeen met `setCustomerIDs`. Bijvoorbeeld: <br/><br/>`identifiers={}` <br/>`identifiers["idType"]="idValue"` <br/>`ADBMobile().visitorSyncIdentifiers(identifiers)` |
-   | `setAdvertisingIdentifier` | Wordt gebruikt om de Roku-id voor advertentie (RIDA) in te stellen op de SDK. Bijvoorbeeld: <br/><br/> `ADBMobile().setAdvertisingIdentifier(`<br/>  `"<sample_roku_identifier_for_advertising>")` Haal de Roku-id voor advertentie (RIDA) op met de Roku SDK <br/><br/><br/>getRIDA() [](https://developer.roku.com/docs/references/brightscript/interfaces/ifdeviceinfo.md#getrida-as-dynamic) -API. |
+   | `setAdvertisingIdentifier` | Wordt gebruikt om de Roku-id voor advertentie (RIDA) in te stellen op de SDK. Bijvoorbeeld: <br/><br/> `ADBMobile().setAdvertisingIdentifier(`<br/>  `"<sample_roku_identifier_for_advertising>")` <br/><br/><br/>Haal de Roku-id voor advertentie (RIDA) op met de Roku SDK [getRIDA()](https://developer.roku.com/docs/references/brightscript/interfaces/ifdeviceinfo.md#getrida-as-dynamic) -API. |
 
    <!--
     Roku Api Reference: 
@@ -136,4 +136,4 @@ Met Roku SDK 2.x for Experience Cloud Solutions kunt u Roku-toepassingen die in 
     * [GetRIDA()](https://sdkdocs.roku.com/display/sdkdoc/ifDeviceInfo#ifDeviceInfo-GetRIDA())
     -->
 
-<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://marketing.adobe.com/resources/help/en_US/mobile/signals_.html) -->
+<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
