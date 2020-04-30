@@ -3,12 +3,12 @@ title: Foutopsporing in SDK
 description: Dit onderwerp beschrijft het volgen/registreren beschikbaar in Media SDK.
 uuid: a5972d87-c593-4b4f-a56f-dca6e25268e1
 translation-type: tm+mt
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
 
-# Foutopsporing in SDK{#sdk-debugging}
+# SDK debugging{#sdk-debugging}
 
 U kunt logbestanden in- en uitschakelen. De Media SDK biedt een uitgebreid mechanisme voor overtrekken/registreren in de stapel voor het bijhouden van media. U kunt registreren toelaten of onbruikbaar maken door de `debugLogging` vlag op het voorwerp te plaatsen Config.
 
@@ -64,10 +64,14 @@ ADBMobile.config.setDebugLogging(true)
 
 ## Adobe Bloodhound gebruiken om chroecast-toepassingen te testen
 
-Tijdens toepassingsontwikkeling, staat het Bloephound u toe om servervraag plaatselijk te bekijken, en naar keuze de gegevens door:sturen aan de inzamelingsservers van Adobe. Raadpleeg de volgende hulplijnen voor meer informatie over Bloodhound:
+Tijdens toepassingsontwikkeling, staat het Bloephound u toe om servervraag plaatselijk te bekijken, en naar keuze de gegevens door:sturen aan de inzamelingsservers van Adobe.
 
-* [Bloodhound 3.x voor Mac](https://marketing.adobe.com/resources/help/en_US/mobile/bloodhound/)
-* [Bloodhound 2.2 voor Windows](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&cad=rja&uact=8&ved=0ahUKEwjil9aM87jRAhUExlQKHTYZCjoQFggoMAI&url=https%3A%2F%2Fmarketing.adobe.com%2Fresources%2Fhelp%2Fen_US%2Fmobile%2Fbloodhound_win_2x%2F&usg=AFQjCNEW-gZp1IdbifWFDgDNEaQcGlBobg&sig2=K0waTKxdMj_2kfNXdMI2yg)
+<!--
+For more information about Bloodhound, see the following guides:
+
+* [Bloodhound 3.x for Mac](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&ved=2ahUKEwiimfSUypDpAhVZHzQIHS6WDQIQFjABegQIChAD&url=https%3A%2F%2Fmarketing.adobe.com%2Fresources%2Fhelp%2Fen_US%2Fmobile%2Fbloodhound%2F&usg=AOvVaw3t4s0gcvuWEpLIqBkhKdGH) 
+* [Bloodhound 2.2 for Windows](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&cad=rja&uact=8&ved=0ahUKEwjil9aM87jRAhUExlQKHTYZCjoQFggoMAI&url=https%3A%2F%2Fmarketing.adobe.com%2Fresources%2Fhelp%2Fen_US%2Fmobile%2Fbloodhound_win_2x%2F&usg=AFQjCNEW-gZp1IdbifWFDgDNEaQcGlBobg&sig2=K0waTKxdMj_2kfNXdMI2yg)
+-->
 
 >[!IMPORTANT]
 >
