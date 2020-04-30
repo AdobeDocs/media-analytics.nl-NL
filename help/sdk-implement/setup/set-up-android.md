@@ -3,7 +3,7 @@ title: Android instellen
 description: Setup van de Media SDK-toepassing voor implementatie op Android.
 uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 translation-type: tm+mt
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
@@ -13,7 +13,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 ## Vereisten
 
 * **Verkrijg geldige configuratieparameters voor de Media SDK** Deze parameters kunnen bij een vertegenwoordiger van Adobe worden verkregen nadat u uw analyseaccount hebt ingesteld.
-* **ADBMobile for Android implementeren in uw toepassing**. Raadpleeg [Android SDK 4.x voor Experience Cloud Solutions voor meer informatie over de documentatie van Adobe Mobile SDK.](https://marketing.adobe.com/resources/help/en_US/mobile/android/)
+* **ADBMobile for Android implementeren in uw toepassing**. Raadpleeg [Android SDK 4.x voor Experience Cloud Solutions voor meer informatie over de documentatie van Adobe Mobile SDK.](https://docs.adobe.com/content/help/en/mobile-services/android/overview.html)
 * **Biedt de volgende mogelijkheden in uw mediaspeler:**
    * *Een API die zich moet abonneren op spelergebeurtenissen* - De Media SDK vereist dat u een set eenvoudige API&#39;s aanroept wanneer gebeurtenissen in de speler plaatsvinden.
    * *Een API die spelerinformatie* verschaft - Deze informatie bevat details zoals de medianaam en de positie van de afspeelkop.
