@@ -1,18 +1,18 @@
 ---
-title: Migreren van mijlpaal naar aangepaste koppeling
+title: Migreren van Milestone naar Custom Link
 description: null
 uuid: 1c8edde5-0ef1-4bc0-a62d-1747f4907f09
 translation-type: tm+mt
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
 
-# Migreren van mijlpaal naar aangepaste koppeling{#migrating-from-milestone-to-custom-link}
+# Migreren van Milestone naar Custom Link{#migrating-from-milestone-to-custom-link}
 
 ## Overzicht {#overview}
 
-De kernconcepten van videometing zijn hetzelfde voor bijhouden van mijlpaal en aangepaste koppeling. Deze houdt gebeurtenissen van videospelers in en wijst deze toe aan analysemethoden, terwijl de metagegevens en waarden van de speler ook worden opgehaald en aan analytische variabelen worden toegewezen. De benadering van de Verbinding van de Douane zou als afslanking en vereenvoudiging van zowel de implementatie als de verzamelde gegevens moeten worden beschouwd. Met de oplossing van de Verbinding van de Douane, zijn geen variabelen of methodes vooraf bepaald voor videometing, vereist het een volledige douaneopstelling. Het zou mogelijk moeten zijn om de spelergebeurteniscode bij te werken zodat deze naar de aangepaste link tracking-aanroepen voor basisspelergebeurtenissen zoals start en complete verwijst. Zie [de implementatiegids](/help/measurement-options/cl-in-aa/cl-impl-guide.md) van de Verbinding van de Douane en [Handmatige het Volgen van de Verbinding Gebruikend de Code](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) van de Verbinding van de Douane voor meer details.
+De kernconcepten van videometing zijn hetzelfde voor bijhouden van mijlpaal en aangepaste koppeling. Deze houdt gebeurtenissen van videospelers in en wijst deze toe aan analysemethoden, terwijl de metagegevens en waarden van de speler ook worden opgehaald en aan analytische variabelen worden toegewezen. De benadering van de Verbinding van de Douane zou als afslanking en vereenvoudiging van zowel de implementatie als de verzamelde gegevens moeten worden beschouwd. Met de oplossing van de Verbinding van de Douane, zijn geen variabelen of methodes vooraf bepaald voor videometing, vereist het een volledige douaneopstelling. Het zou mogelijk moeten zijn om de spelergebeurteniscode bij te werken zodat deze naar de aangepaste link tracking-aanroepen voor basisspelergebeurtenissen zoals start en complete verwijst. Zie [de implementatiegids](/help/measurement-options/cl-in-aa/cl-impl-guide.md) van de Verbinding van de Douane en [Handmatige het Volgen van de Verbinding Gebruikend de Code](https://docs.adobe.com/content/help/en/media-analytics/using/measurement-options/cl-in-aa/cl-impl-guide.html) van de Verbinding van de Douane voor meer details.
 
 De volgende lijsten verstrekken vertalingen tussen de oplossing van Milestone en de oplossing van de Verbinding van de Douane.
 
@@ -367,7 +367,7 @@ s.Media.trackSeconds = 15
 </tr>
 <tr>
 <td>
-Media.trackMijlpalen
+Media.trackMilestones
 </td>
 <td>
 <pre>
@@ -381,7 +381,7 @@ s.Media.trackMijlpalen = "25,50,75";
 </tr>
 <tr>
 <td>
-Media.trackOffsetMijlpalen
+Media.trackOffsetMilestones
 </td>
 <td>
 <pre>
@@ -395,7 +395,7 @@ s.Media.trackOffsetMijlpalen = "20,40,60";
 </tr>
 <tr>
 <td>
-Media.segmentByMijlpalen
+Media.segmentByMilestones
 </td>
 <td>
 <pre>
@@ -409,7 +409,7 @@ s.Media.segmentByMijlpalen = true;
 </tr>
 <tr>
 <td>
-Media.segmentByOffsetMijlpalen
+Media.segmentByOffsetMilestones
 </td>
 <td>
 <pre>
@@ -457,7 +457,7 @@ s.Media.adTrackSeconds = 15
 </tr>
 <tr>
 <td>
-Media.adTrackMijlpalen
+Media.adTrackMilestones
 </td>
 <td>
 <pre>
@@ -471,7 +471,7 @@ s.Media.adTrackMijlpalen = "25,50,75";
 </tr>
 <tr>
 <td>
-Media.adTrackOffsetMijlpalen
+Media.adTrackOffsetMilestones
 </td>
 <td>
 <pre>
@@ -486,7 +486,7 @@ s.Media.
 </tr>
 <tr>
 <td>
-Media.adSegmentByMijlpalen
+Media.adSegmentByMilestones
 </td>
 <td>
 <pre>
@@ -501,7 +501,7 @@ s.Media.
 </tr>
 <tr>
 <td>
-Media.adSegmentByOffsetMijlpalen
+Media.adSegmentByOffsetMilestones
 </td>
 <td>
 <pre>
