@@ -3,7 +3,7 @@ title: Chromecast instellen
 description: De toepassingsopstelling van SDK van media voor implementatie op Chromecast.
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 translation-type: tm+mt
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
@@ -25,7 +25,7 @@ Het juiste antwoord is &quot;Chromecast&quot;, om de volgende redenen:
    * *Een API die zich moet abonneren op spelergebeurtenissen* - De Media SDK vereist dat u een set eenvoudige API&#39;s aanroept wanneer gebeurtenissen in de speler plaatsvinden.
    * *Een API die spelerinformatie* verschaft - Deze informatie bevat details zoals de medianaam en de positie van de afspeelkop.
 
-Adobe Mobile-services biedt een nieuwe gebruikersinterface waarin mobiele marketingmogelijkheden voor mobiele toepassingen vanuit de volledige Adobe Marketing Cloud worden samengebracht. In eerste instantie biedt de Mobile-service naadloze integratie van toepassingsanalyses en doelgerichte functies voor de Adobe Analytics- en Adobe Target-oplossingen. Meer informatie vindt u in de documentatie van [Adobe Mobile Services.](https://marketing.adobe.com/resources/help/en_US/mobile/)
+Adobe Mobile-services biedt een nieuwe gebruikersinterface waarin mobiele marketingmogelijkheden voor mobiele toepassingen vanuit de volledige Adobe Marketing Cloud worden samengebracht. In eerste instantie biedt de Mobile-service naadloze integratie van toepassingsanalyses en doelgerichte functies voor de Adobe Analytics- en Adobe Target-oplossingen. Meer informatie vindt u in de documentatie van [Adobe Mobile Services.](https://docs.adobe.com/content/help/en/mobile-services/using/home.html)
 
 Met Chromecast SDK 2.x for Experience Cloud Solutions kunt u Chromecast-toepassingen die in JavaScript zijn geschreven, gebruiken en gegevens van het publiek verzamelen via publieksbeheer en de betrokkenheid van video&#39;s meten via videohartslagen.
 
@@ -90,7 +90,7 @@ Met Chromecast SDK 2.x for Experience Cloud Solutions kunt u Chromecast-toepassi
       >Als `mediaHeartbeat` verkeerd wordt gevormd, gaat de media module (VHL) een foutenstaat in en zal ophouden verzendend volgende vraag.
 
       ADBMobile Config-parameters voor de MediaHeartbeat-sleutel:
-   | Configuratieparameter | Beschrijving |
+   | Configuratieparameter | Beschrijving     |
    | --- | --- |
    | `server` | Tekenreeks die de URL van het volgende eindpunt op de achtergrond vertegenwoordigt. |
    | `publisher` | Tekenreeks die de unieke id van de uitgever van de inhoud vertegenwoordigt. |
@@ -133,5 +133,5 @@ Met Chromecast SDK 2.x for Experience Cloud Solutions kunt u Chromecast-toepassi
    | `syncIdentifiers()` | Met de Experience Cloud Visitor-id kunt u aanvullende klant-id&#39;s instellen die aan elke bezoeker kunnen worden gekoppeld. De bezoeker-API accepteert meerdere klant-id&#39;s voor dezelfde bezoeker en een id voor het klanttype om het bereik van de verschillende klant-id&#39;s te scheiden. Deze methode komt overeen met `setCustomerIDs()` in de JavaScript-bibliotheek.  Bijvoorbeeld: <br/><br/>`var identifiers = {};` <br/><br/>`identifiers["idType"] = "idValue";` <br/><br/>`ADBMobile.visitor.syncIdentifiers(identifiers);` |
 
 
-<!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://marketing.adobe.com/resources/help/en_US/mobile/signals_.html) -->
+<!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
 
