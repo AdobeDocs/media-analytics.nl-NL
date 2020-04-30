@@ -3,19 +3,19 @@ title: Custom Link-implementatiegids
 description: null
 uuid: 83315e73-20ca-4db5-9d43-33daade45a13
 translation-type: tm+mt
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
 
-# Custom Link Implementation Guide{#custom-link-implementation-guide}
+# Custom Link Implementatiehandleiding{#custom-link-implementation-guide}
 
-Bij Aangepaste videotracering wordt [handmatig koppelingen bijgehouden met behulp van aangepaste koppelingscode](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) in Analytics `appMeasurement`.
+Bij Aangepaste videotracering wordt [handmatig koppelingen bijgehouden met behulp van aangepaste koppelingscode](https://docs.adobe.com/content/help/en/media-analytics/using/measurement-options/cl-in-aa/cl-impl-guide.html) in Analytics `appMeasurement`.
 Het meest wordt aangepaste videotracering van koppelingen gebruikt op platforms en apparaten waar minimale videometing nodig is.
 
 * In JavaScript: de `s.tl()` functie
-* In mobiele toepassingen: [trackAction() Android](https://marketing.adobe.com/resources/help/en_US/mobile/android/actions.html), [trackAction() iOS](https://marketing.adobe.com/resources/help/en_US/mobile/ios/actions.html), [trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
-* In de API voor gegevensinvoeging: tag [linktype](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
+* In mobiele toepassingen: [trackAction() Android](hhttps://docs.adobe.com/content/help/en/mobile-services/android/analytics-android/actions.html), [trackAction() iOS](https://docs.adobe.com/content/help/en/mobile-services/ios/analytics-ios/actions.html), [trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
+* In de API voor gegevensinvoeging: [linktype-tag](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
 
 ## Vereisten
 
