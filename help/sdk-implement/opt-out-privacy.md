@@ -3,19 +3,19 @@ title: Uitschakelen en privacy
 description: Optie-in, opt-out en privacy afhandelen.
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 translation-type: tm+mt
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
 
-# Uitschakelen en privacy{#opt-out-and-privacy}
+# Opt-out and privacy{#opt-out-and-privacy}
 
 ## Uitschakelen/Opt-in {#opt-out-opt-in}
 
 U kunt bepalen of traceringsactiviteit is toegestaan op een specifiek apparaat:
 
 * **Mobiele apps -** De VA-bibliotheek respecteert de privacy- en opt-out-instellingen van de `AdobeMobile` bibliotheek. Als u de optie wilt uitschakelen, moet u de `AdobeMobile` bibliotheek gebruiken. Zie `AdobeMobile` Afmelden en Privacy-instellingen [voor meer informatie over de instellingen voor weigeren en privacy van de](https://docs.adobe.com/content/help/en/mobile-services/android/gdpr-privacy-android/privacy.html)bibliotheek.
-* **JavaScript-/browsertoepassingen -** De VA-bibliotheek respecteert de privacy- en `VisitorAPI` optoutinstellingen. Als u het bijhouden wilt uitschakelen, moet u zich afmelden bij de service voor de Bezoeker-API. Zie [Adobe Experience Platform Identity Service voor meer informatie over plug-out en privacy.](https://marketing.adobe.com/resources/help/en_US/mcvid/).
+* **JavaScript-/browsertoepassingen -** De VA-bibliotheek respecteert de privacy- en `VisitorAPI` optoutinstellingen. Als u het bijhouden wilt uitschakelen, moet u zich afmelden bij de service voor de Bezoeker-API. Zie [Adobe Experience Platform Identity Service voor meer informatie over plug-out en privacy.](https://docs.adobe.com/content/help/en/id-service/using/home.html).
 * **OTT Apps (Chromecast, Roku) -** `opt` De OTT SDKs verstrekken algemene de regelgevende (GDPR) - klaar APIs van de Bescherming van Gegevens die u toestaan om statusvlaggen voor gegevensinzameling en transmissie te plaatsen, en lokaal opgeslagen identiteiten terug te winnen.
 
    >[!NOTE]
