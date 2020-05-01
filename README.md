@@ -1,5 +1,5 @@
 ---
-source-git-commit: e8b232d0771863e739f806daefa344b58cbc661c
+source-git-commit: 18d6b140df7211190dd9597ef03059d8b9285fe9
 translation-type: tm+mt
 
 ---
@@ -7,7 +7,7 @@ translation-type: tm+mt
 
 | Productie | Werkgebied |
 |---|---|
-| [![Status samenstellen](https://docs.ci.corp.adobe.com/job/media-analytics.en_production/badge/icon)](https://docs.ci.corp.adobe.com/job/media-analytics.en_production/lastBuild) | [![Status samenstellen](https://docs.ci.corp.adobe.com/job/media-analytics.en_stage/badge/icon)](https://docs.ci.corp.adobe.com/job/collaborative-doc-instructions.en_stage/lastBuild) |
+| [![Status samenstellen](https://docs.ci.corp.adobe.com/job/media-analytics.en_production/badge/icon)](https://docs.ci.corp.adobe.com/job/media-analytics.en_production/lastBuild) | [![Status samenstellen](https://docs.ci.corp.adobe.com/job/media-analytics.en_stage/badge/icon)](https://docs.ci.corp.adobe.com/job/media-analytics.en_stage/lastBuild) |
 | [Uitvoerpod](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) | [Uitvoerinstelling](https://docs-stg.corp.adobe.com/content/help/en/media-analytics/using/media-overview.html) |
 
 We zijn blij met de bijdragen van onze gemeenschap en van Adobe-medewerkers van buiten de documentatieteams.
