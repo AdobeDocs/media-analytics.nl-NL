@@ -3,8 +3,8 @@ audience: end-user
 user-guide-title: Adobe Analytics voor audio en video
 product: adobe analytics
 sub-product: media-analytics
-translation-type: ht
-source-git-commit: d9f6c99b26153ef81d4623c30361fc5b34385bf6
+translation-type: tm+mt
+source-git-commit: c86c7932f932af0a121e0b757921973d6f4084e8
 
 ---
 
@@ -12,20 +12,31 @@ source-git-commit: d9f6c99b26153ef81d4623c30361fc5b34385bf6
 # Adobe Analytics voor audio en video {#using}
 
 + [Audio en video meten in Adobe Analytics](media-overview.md)
-+ Meetopties {#measurement-options}
++ [Meetopties](measurement-options/measurement-options.md)
    + Mediamodule Milestone-tracking {#mm-milestone-tracking}
       + [Milestone - overzicht](measurement-options/mm-milestone-tracking/milestone-overview.md)
       + [Milestone migreren naar Media Analytics](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
       + [Migreren van Milestone naar Custom Link](measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
    + Custom Link in Analytics {#cl-in-aa}
-      + [Custom Link Implementatiehandleiding](measurement-options/cl-in-aa/cl-impl-guide.md)
+      + [Custom Link Implementatiehandleiding](measurement-options/cl-in-aa/cl-impl-guide.md) -->
++ [Ondersteunde apparaten](measurement-options/supported-devices.md)
 + Inleiding tot Analytics voor audio en video {#intro-to-ava}
    + [Vereisten](intro-to-ava/prereqs.md)
    + Implementatiepaden {#implementation-paths}
       + [Overzicht](intro-to-ava/implementation-paths/implementation-paths.md)
-      + [Klantzijde](intro-to-ava/implementation-paths/client-side-path.md)
       + [Adobe Experience Platform Launch](intro-to-ava/implementation-paths/launch-path.md)
-      + [Primetime](intro-to-ava/implementation-paths/primetime-path.md)
+      + [Klantzijde](intro-to-ava/implementation-paths/client-side-path.md)
+      + [Andere implementatiepaden](PATH)
+      + Mediamodule Milestone-tracking {#mm-milestone-tracking}
+         + [Milestone - overzicht](measurement-options/mm-milestone-tracking/milestone-overview.md)
+         + [Media bijhouden](measurement-options/tracking-media-overview.md)
+         + [Ondersteunde apparaten](measurement-options/supported-devices.md)
+         + [Milestone migreren naar Media Analytics](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
+         + [Migreren van Milestone naar Custom Link](measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
+      + Custom Link in Analytics {#cl-in-aa}
+         + [Custom Link Implementatiehandleiding](measurement-options/cl-in-aa/cl-impl-guide.md)
+      + Primetime {#primetime}
+         + [Primetime](intro-to-ava/implementation-paths/primetime-path.md)
    + [Audience Manager inschakelen](intro-to-ava/am-enablement.md)
 + Media Analytics SDK {#sdk-implement}
    + [SDK&#39;s downloaden](sdk-implement/download-sdks.md)
