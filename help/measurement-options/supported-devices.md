@@ -3,7 +3,7 @@ title: Ondersteunde apparaten
 description: null
 uuid: null
 translation-type: tm+mt
-source-git-commit: c86c7932f932af0a121e0b757921973d6f4084e8
+source-git-commit: 3a237ee31412784f708e772cc3a58047630e2184
 
 ---
 
@@ -46,4 +46,4 @@ De onderstaande tabel bevat een lijst met momenteel ondersteunde apparaten. Zie 
 |  | Nieuwe aangesloten apparaten |  |  | X |
 
 
-Zie voor Media SDK ook de [Ondersteuning voor minimale platformversie](./sdk-implement/setup/setup-overview.md#minimum-platform-version)
+Zie voor Media SDK ook de [Ondersteuning voor minimale platformversie](/help/sdk-implement/setup/setup-overview.md#minimum-platform-version)
