@@ -3,7 +3,7 @@ title: Chromecast instellen
 description: De toepassingsopstelling van SDK van media voor implementatie op Chromecast.
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 translation-type: tm+mt
-source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
+source-git-commit: be82be2eb58f89344f2125288599fef461db441e
 
 ---
 
@@ -45,43 +45,43 @@ Met Chromecast SDK 2.x for Experience Cloud Solutions kunt u Chromecast-toepassi
    1. Voeg het bibliotheekbestand toe aan uw `index.html` bestand en maak de `ADBMobileConfig` algemene variabele als volgt (de algemene variabele die wordt gebruikt om Adobe Mobile voor hartslagen te configureren, heeft een exclusieve sleutel met de naam `mediaHeartbeat`):
 
       ```js
-      <script> 
-          var ADBMobileConfig = { 
-            "marketingCloud": { 
-              "org": "972C898555E9F7BC7F000101@AdobeOrg" 
-            }, 
-            "target": { 
-              "clientCode": "", 
-              "timeout": 5 
-            }, 
-            "audienceManager": { 
-              "server": "obumobile5.demdex.net" 
-            }, 
-            "analytics": { 
-              "rsids": "mobile5vhl.sample.player", 
-              "server": "obumobile5.sc.omtrdc.net", 
-              "ssl": false, 
-              "offlineEnabled": false, 
-              "charset": "UTF-8", 
-              "lifecycleTimeout": 300, 
-              "privacyDefault": "optedin", 
-              "batchLimit": 0, 
-              "timezone": "MDT", 
-              "timezoneOffset": -360, 
-              "referrerTimeout": 0, 
-              "poi": [] 
-            }, 
-            "mediaHeartbeat": { 
-              "server": "obumobile5.hb.omtrdc.net", 
-              "publisher": "972C898555E9F7BC7F000101@AdobeOrg", 
-              "channel": "test-channel-chromecast", 
-              "ssl": false, 
-              "ovp": "chromecast-player", 
-              "sdkVersion": "chromecast-sdk", 
-              "playerName": "Chromecast" 
-            } 
-          }; 
-        </script> 
+      <script>
+          var ADBMobileConfig = {
+            "marketingCloud": {
+              "org": "972C898555E9F7BC7F000101@AdobeOrg"
+            },
+            "target": {
+              "clientCode": "",
+              "timeout": 5
+            },
+            "audienceManager": {
+              "server": "obumobile5.demdex.net"
+            },
+            "analytics": {
+              "rsids": "mobile5vhl.sample.player",
+              "server": "obumobile5.sc.omtrdc.net",
+              "ssl": false,
+              "offlineEnabled": false,
+              "charset": "UTF-8",
+              "lifecycleTimeout": 300,
+              "privacyDefault": "optedin",
+              "batchLimit": 0,
+              "timezone": "MDT",
+              "timezoneOffset": -360,
+              "referrerTimeout": 0,
+              "poi": []
+            },
+            "mediaHeartbeat": {
+              "server": "obumobile5.hb.omtrdc.net",
+              "publisher": "972C898555E9F7BC7F000101@AdobeOrg",
+              "channel": "test-channel-chromecast",
+              "ssl": false,
+              "ovp": "chromecast-player",
+              "sdkVersion": "chromecast-sdk",
+              "playerName": "Chromecast"
+            }
+          };
+        </script>
       <script type="text/javascript" src="script/lib/adbmobile-chromecast.min.js"></script>
       ```
 
@@ -108,8 +108,8 @@ Met Chromecast SDK 2.x for Experience Cloud Solutions kunt u Chromecast-toepassi
    Verifieer dat uw `ADBMobileConfig` config uw `marketingCloud` organisatieID bevat.
 
    ```js
-   "marketingCloud": { 
-       "org": YOUR-MCORG-ID" 
+   "marketingCloud": {
+       "org": YOUR-MCORG-ID"
    }
    ```
 
@@ -131,6 +131,7 @@ Met Chromecast SDK 2.x for Experience Cloud Solutions kunt u Chromecast-toepassi
    | --- | --- |
    | `getMarketingCloudID()` | Haalt de Experience Cloud Visitor ID op van de Bezoeker ID-service.  <br/><br/>`ADBMobile.visitor.getMarketingCloudID();` |
    | `syncIdentifiers()` | Met de Experience Cloud Visitor-id kunt u aanvullende klant-id&#39;s instellen die aan elke bezoeker kunnen worden gekoppeld. De bezoeker-API accepteert meerdere klant-id&#39;s voor dezelfde bezoeker en een id voor het klanttype om het bereik van de verschillende klant-id&#39;s te scheiden. Deze methode komt overeen met `setCustomerIDs()` in de JavaScript-bibliotheek.  Bijvoorbeeld: <br/><br/>`var identifiers = {};` <br/><br/>`identifiers["idType"] = "idValue";` <br/><br/>`ADBMobile.visitor.syncIdentifiers(identifiers);` |
+
 
 
 <!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
