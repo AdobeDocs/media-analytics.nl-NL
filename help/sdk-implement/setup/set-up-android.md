@@ -3,17 +3,25 @@ title: Android instellen
 description: Setup van de Media SDK-toepassing voor implementatie op Android.
 uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 translation-type: tm+mt
-source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
+source-git-commit: be82be2eb58f89344f2125288599fef461db441e
 
 ---
 
 
 # Android instellen{#set-up-android}
 
+>[!IMPORTANT]
+>
+>Vanaf oktober 2020 beëindigt Adobe de ondersteuning voor versie 4 Mobile SDK&#39;s en de standalone Media Analytics SDK&#39;s voor Android. U kunt de SDK&#39;s van versie 4 blijven downloaden en gebruiken, maar de ondersteuning van de klantenservice en de toegang tot forums zullen worden beëindigd. Migreer naar de SDK&#39;s van het Adobe Experience Platform (AEP) voor Android. De AEP Mobile SDK (voorheen v5 genoemd) biedt uitsluitend ondersteuning voor functies en functies van Adobe Experience Cloud. Voor meer informatie over deze verandering, zie [versie 4 Mobiele SDKs het Eind van de Veelgestelde vragen](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq)van de Steun. We raden u aan te migreren naar de nieuwe AEP Mobile SDK.
+Nadat u naar de AEP Mobile SDK hebt gemigreerd, moet u de extensie Analytics Launch en de extensie Media Analytics Launch implementeren om Adobe Analytics voor Audio en Video in te schakelen. Zie [Migreren van zelfstandige media SDK naar Adobe Launch voor meer informatie over migreren naar de nieuwe AEP Mobile SDK ](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html)
+
+
 ## Vereisten
+
 
 * **Verkrijg geldige configuratieparameters voor de Media SDK** Deze parameters kunnen bij een vertegenwoordiger van Adobe worden verkregen nadat u uw analyseaccount hebt ingesteld.
 * **ADBMobile for Android implementeren in uw toepassing**. Raadpleeg [Android SDK 4.x voor Experience Cloud Solutions voor meer informatie over de documentatie van Adobe Mobile SDK.](https://docs.adobe.com/content/help/en/mobile-services/android/overview.html)
+
 * **Biedt de volgende mogelijkheden in uw mediaspeler:**
    * *Een API die zich moet abonneren op spelergebeurtenissen* - De Media SDK vereist dat u een set eenvoudige API&#39;s aanroept wanneer gebeurtenissen in de speler plaatsvinden.
    * *Een API die spelerinformatie* verschaft - Deze informatie bevat details zoals de medianaam en de positie van de afspeelkop.
@@ -53,10 +61,10 @@ source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 1. Importeer de bibliotheek.
 
    ```java
-   import com.adobe.primetime.va.simple.MediaHeartbeat; 
-   import com.adobe.primetime.va.simple.MediaHeartbeat.MediaHeartbeatDelegate; 
-   import com.adobe.primetime.va.simple.MediaHeartbeatConfig; 
-   import com.adobe.primetime.va.simple.MediaObject; 
+   import com.adobe.primetime.va.simple.MediaHeartbeat;
+   import com.adobe.primetime.va.simple.MediaHeartbeat.MediaHeartbeatDelegate;
+   import com.adobe.primetime.va.simple.MediaHeartbeatConfig;
+   import com.adobe.primetime.va.simple.MediaObject;
    ```
 
 1. Maak de `MediaHeartbeatConfig` instantie.
@@ -64,14 +72,14 @@ source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
    Hier volgt een voorbeeld van initialisatie van `MediaHeartbeatConfig`:
 
    ```java
-   // Media Heartbeat Initialization 
-   config.trackingServer = _<SAMPLE_HEARTBEAT_TRACKING_SERVER>_; 
-   config.channel = <SAMPLE_HEARTBEAT_CHANNEL>; 
-   config.appVersion = <SAMPLE_HEARTBEAT_SDK_VERSION>; 
-   config.ovp =  <SAMPLE_HEARTBEAT_OVP_NAME>; 
-   config.playerName = <SAMPLE_PLAYER_NAME>; 
-   config.ssl = <true/false>; 
-   config.debugLogging = <true/false>; 
+   // Media Heartbeat Initialization
+   config.trackingServer = _<SAMPLE_HEARTBEAT_TRACKING_SERVER>_;
+   config.channel = <SAMPLE_HEARTBEAT_CHANNEL>;
+   config.appVersion = <SAMPLE_HEARTBEAT_SDK_VERSION>;
+   config.ovp =  <SAMPLE_HEARTBEAT_OVP_NAME>;
+   config.playerName = <SAMPLE_PLAYER_NAME>;
+   config.ssl = <true/false>;
+   config.debugLogging = <true/false>;
    ```
 
 1. Implementeer de `MediaHeartbeatDelegate` interface.
@@ -83,18 +91,18 @@ source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
    ```java
    // Replace <bitrate>, <startupTime>, <fps>, and  
    // <droppeFrames> with the current playback QoS values.  
-   @Override 
-   public MediaObject getQoSObject() { 
+   @Override
+   public MediaObject getQoSObject() {
        return MediaHeartbeat.createQoSObject(<bitrate>,  
                                              <startupTime>,  
                                              <fps>,  
-                                             <droppedFrames>); 
-   } 
+                                             <droppedFrames>);
+   }
    
-   //Replace <currentPlaybackTime> with the video player current playback time 
-   @Override 
-   public Double getCurrentPlaybackTime() { 
-       return <currentPlaybackTime>; 
+   //Replace <currentPlaybackTime> with the video player current playback time
+   @Override
+   public Double getCurrentPlaybackTime() {
+       return <currentPlaybackTime>;
    }
    ```
 
@@ -103,7 +111,7 @@ source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
    Gebruik de `MediaHeartbeatConfig` instantie en de `MediaHertbeatDelegate` instantie om de `MediaHeartbeat` instantie te maken.
 
    ```java
-   // Replace <MediaHertbeatDelegate> with your delegate instance 
+   // Replace <MediaHertbeatDelegate> with your delegate instance
    MediaHeartbeat _heartbeat =  
      new MediaHeartbeat(<MediaHeartbeatDelegate>, config);
    ```
