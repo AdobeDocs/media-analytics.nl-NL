@@ -1,14 +1,14 @@
 ---
-title: Tijdlijn 1 - Weergeven tot einde van inhoud
+title: Tijdlijn 1 - Weergeven tot einde van content
 description: null
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 translation-type: tm+mt
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+source-git-commit: c86c7932f932af0a121e0b757921973d6f4084e8
 
 ---
 
 
-# Tijdlijn 1 - Weergeven tot einde van inhoud{#timeline-view-to-end-of-content}
+# Tijdlijn 1 - Weergeven tot einde van content{#timeline-view-to-end-of-content}
 
 ## VOD, pre-roll advertenties, pauzeren, bufferen, inhoud weergeven tot het einde
 
@@ -696,4 +696,3 @@ Naar `sessionComplete` de achtergrond sturen om aan te geven dat de gebruiker kl
 >[!NOTE]
 >
 >**Geen zoekgebeurtenissen? -** Er is geen expliciete ondersteuning voor gebeurtenissen `seekStart` `seekComplete` of gebeurtenissen in de Media Collection API. Dit is omdat bepaalde spelers een zeer groot aantal dergelijke gebeurtenissen produceren wanneer de eindgebruiker schrobt, en verscheidene honderden gebruikers de netwerkbandbreedte van een backenddienst gemakkelijk konden knelpen. Adobe biedt expliciete ondersteuning voor zoekgebeurtenissen door de hartslagduur te berekenen op basis van de tijdstempel van het apparaat in plaats van de positie van de afspeelkop.
-
