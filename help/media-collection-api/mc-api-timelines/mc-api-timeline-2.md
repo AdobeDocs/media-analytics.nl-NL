@@ -1,14 +1,14 @@
 ---
-title: Tijdlijn 2 - Afloopsessie van gebruiker
+title: Tijdlijn 2 - Gebruiker verlaat sessie
 description: null
 uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
 translation-type: tm+mt
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+source-git-commit: c86c7932f932af0a121e0b757921973d6f4084e8
 
 ---
 
 
-# Tijdlijn 2 - Afloopsessie van gebruiker {#timeline--2-user-abandons-session}
+# Tijdlijn 2 - Gebruiker verlaat sessie {#timeline--2-user-abandons-session}
 
 ## VOD, Pre-roll en, mid-roll advertenties, gebruikers laten de inhoud vroeg achter
 
@@ -407,5 +407,3 @@ Naar `sessionEnd` de VA-achtergrond sturen om aan te geven dat de sessie onmidde
     eventType:sessionEnd
 }
 ```
-
-
