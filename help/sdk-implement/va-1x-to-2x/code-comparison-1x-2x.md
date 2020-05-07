@@ -3,12 +3,15 @@ title: Codevergelijking 1.x naar 2.x
 description: Dit onderwerp vergelijkt code in 1.x en 2.x versies van Media SDK.
 uuid: 9f0a1660-2100-446d-ab75-afdf966478b3
 translation-type: tm+mt
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 72cdf2d03ebae6998514c9092ab462c29345c9f9
+workflow-type: tm+mt
+source-wordcount: '567'
+ht-degree: 2%
 
 ---
 
 
-# Codevergelijking: 1.x tot 2.x {#code-comparison-x-to-x}
+# Code comparison: 1.x to 2.x {#code-comparison-x-to-x}
 
 Alle configuratieparameters en tracking-API&#39;s worden nu geconsolideerd in de klassen `MediaHeartbeats` en `MediaHeartbeatConfig` klassen.
 
@@ -27,7 +30,7 @@ Alle configuratieparameters en tracking-API&#39;s worden nu geconsolideerd in de
 **Koppelingen naar 1.x- en 2.x-voorbeeldspelers:**
 
 * [1.x voorbeeldspeler ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L58)
-* [2.x Sample Player ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L47)
+* [2.x Sample Player ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/2.x/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L47)
 
 In de volgende secties vindt u codevergelijkingen tussen 1.x en 2.x, waaronder Initialisatie, Core Playback, Ad Playback, Chapter Playback en enkele andere gebeurtenissen.
 
@@ -707,7 +710,7 @@ SampleVideoPlayerPluginDelegate.prototype.getChapterInfo = function() {
 ```
 
 >[!NOTE]
->in VHL 1.5.X-API&#39;s; Retourneert `getChapterinfo()` null als de speler zich buiten de hoofdstukgrenzen bevindt.
+>in VHL 1.5.X-API&#39;s; `getChapterinfo()` moet null retourneren als de speler zich buiten de hoofdstukgrenzen bevindt.
 
 #### Hoofdstuk overslaan (2.x) {#chap-skip-2.x}
 
