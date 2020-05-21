@@ -3,7 +3,10 @@ title: SDK's downloaden
 description: Koppelingen naar SDK-downloads voor beschikbare platforms, zoals Android, iOS, JavaScript, Chromecast en Roku.
 uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 translation-type: tm+mt
-source-git-commit: 06e32cbea61ed56220787e2bcb822f6bf02b44ac
+source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
+workflow-type: tm+mt
+source-wordcount: '359'
+ht-degree: 6%
 
 ---
 
@@ -12,11 +15,7 @@ source-git-commit: 06e32cbea61ed56220787e2bcb822f6bf02b44ac
 
 >[!IMPORTANT]
 >
->Vanaf oktober 2020 beëindigt Adobe de ondersteuning voor versie 4 Mobile SDK&#39;s en de zelfstandige Media Analytics SDK&#39;s voor iOS en Android. U kunt de SDK&#39;s van versie 4 blijven downloaden en gebruiken, maar de ondersteuning van de klantenservice en de toegang tot forums zullen worden beëindigd. Migreer naar de SDK&#39;s van het Adobe Experience Platform (AEP) voor iOS of Android. De AEP Mobile SDK (voorheen v5 genoemd) biedt uitsluitend ondersteuning voor functies en functies van Adobe Experience Cloud. Voor meer informatie over deze verandering, zie [versie 4 Mobiele SDKs het Eind van de Veelgestelde vragen](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq)van de Steun. We raden u aan te migreren naar de nieuwe AEP Mobile SDK.
-Nadat u naar de AEP Mobile SDK hebt gemigreerd, moet u de extensie Analytics Launch en de extensie Media Analytics Launch implementeren om Adobe Analytics voor Audio en Video in te schakelen. Zie [Migreren van zelfstandige media SDK naar Adobe Launch voor meer informatie over migreren naar de nieuwe AEP Mobile SDK ](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html)
-
-
-
+>Aan het einde van de ondersteuning voor versie 4 Mobile SDK&#39;s op 31 augustus 2021 beëindigt Adobe ook de ondersteuning voor de Media Analytics SDK&#39;s voor iOS en Android.  Voor extra informatie, zie de Eind-van-Steun Veelgestelde vragen van SDK van de Analytics van [Media](/help/sdk-implement/end-of-support-faqs.md).
 
 ## De 2.x Media SDK&#39;s downloaden {#download-2x-sdks}
 
