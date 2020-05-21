@@ -2,7 +2,10 @@
 title: Migreren van de standalone SDK van Media naar Adobe Launch - Web (JS)
 description: Instructies en codevoorbeelden voor het migreren van de Media SDK naar Launch.
 translation-type: tm+mt
-source-git-commit: bc896cc403923e2f31be7313ab2ca22c05893c45
+source-git-commit: 0f9a985d04969eeca837a2655c666259ce30aee4
+workflow-type: tm+mt
+source-wordcount: '401'
+ht-degree: 2%
 
 ---
 
@@ -47,7 +50,7 @@ De uitbreiding van Media zal de gevormde parameters voor het volgen gebruiken.
 
 ## Verschillen in het maken van Beheer
 
-### Media SDK
+### Media-SDK
 
 1. Voeg de bibliotheek van de Analyse van Media aan uw ontwikkelingsproject toe.
 1. Maak een config-object (`MediaHeartbeatConfig`).
@@ -73,7 +76,8 @@ mediaDelegate.getQoSObject = function() {
 this.mediaHeartbeat = new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurement);
 ```
 
-[Media SDK - Beheer maken](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/cookbook/sdk-vs-launch-qoe.html)
+<!--  Dead Link - from 2019 - can't locate where this should go
+[Media SDK - Tracker Creation](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/cookbook/sdk-vs-launch-qoe.html) -->
 
 ### Starten
 
@@ -107,7 +111,7 @@ Geef een gedelegeerd object door aan `get-instance` dat functies `getQoSObject()
 
 ## Verwante documentatie
 
-### Media SDK
+### Media-SDK
 
 * [JS instellen](/help/sdk-implement/setup/set-up-js.md)
 * [Media SDK JS API](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html)
