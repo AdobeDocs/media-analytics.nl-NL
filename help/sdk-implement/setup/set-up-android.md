@@ -3,7 +3,10 @@ title: Android instellen
 description: Setup van de Media SDK-toepassing voor implementatie op Android.
 uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 translation-type: tm+mt
-source-git-commit: be82be2eb58f89344f2125288599fef461db441e
+source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
+workflow-type: tm+mt
+source-wordcount: '403'
+ht-degree: 9%
 
 ---
 
@@ -12,12 +15,10 @@ source-git-commit: be82be2eb58f89344f2125288599fef461db441e
 
 >[!IMPORTANT]
 >
->Vanaf oktober 2020 beëindigt Adobe de ondersteuning voor versie 4 Mobile SDK&#39;s en de standalone Media Analytics SDK&#39;s voor Android. U kunt de SDK&#39;s van versie 4 blijven downloaden en gebruiken, maar de ondersteuning van de klantenservice en de toegang tot forums zullen worden beëindigd. Migreer naar de SDK&#39;s van het Adobe Experience Platform (AEP) voor Android. De AEP Mobile SDK (voorheen v5 genoemd) biedt uitsluitend ondersteuning voor functies en functies van Adobe Experience Cloud. Voor meer informatie over deze verandering, zie [versie 4 Mobiele SDKs het Eind van de Veelgestelde vragen](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq)van de Steun. We raden u aan te migreren naar de nieuwe AEP Mobile SDK.
-Nadat u naar de AEP Mobile SDK hebt gemigreerd, moet u de extensie Analytics Launch en de extensie Media Analytics Launch implementeren om Adobe Analytics voor Audio en Video in te schakelen. Zie [Migreren van zelfstandige media SDK naar Adobe Launch voor meer informatie over migreren naar de nieuwe AEP Mobile SDK ](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html)
+>Aan het einde van de ondersteuning voor versie 4 Mobile SDK&#39;s op 31 augustus 2021 beëindigt Adobe ook de ondersteuning voor de Media Analytics SDK voor iOS en Android.  Voor extra informatie, zie de Eind-van-Steun Veelgestelde vragen van SDK van de Analytics van [Media](/help/sdk-implement/end-of-support-faqs.md).
 
 
 ## Vereisten
-
 
 * **Verkrijg geldige configuratieparameters voor de Media SDK** Deze parameters kunnen bij een vertegenwoordiger van Adobe worden verkregen nadat u uw analyseaccount hebt ingesteld.
 * **ADBMobile for Android implementeren in uw toepassing**. Raadpleeg [Android SDK 4.x voor Experience Cloud Solutions voor meer informatie over de documentatie van Adobe Mobile SDK.](https://docs.adobe.com/content/help/en/mobile-services/android/overview.html)
