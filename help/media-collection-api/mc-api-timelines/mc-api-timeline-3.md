@@ -3,7 +3,10 @@ title: Tijdlijn 3 - Hoofdstukken
 description: null
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
 translation-type: tm+mt
-source-git-commit: 5107de22c2388e8ac5b15b8d28fa974e97363fdf
+source-git-commit: 197041df4c985cdc572564652a976bd733448787
+workflow-type: tm+mt
+source-wordcount: '1219'
+ht-degree: 5%
 
 ---
 
@@ -745,4 +748,3 @@ Naar `sessionComplete` de achtergrond sturen om aan te geven dat de gebruiker kl
 >[!NOTE]
 >
 >**Geen zoekgebeurtenissen? -** Er is geen expliciete ondersteuning voor gebeurtenissen `seekStart` `seekComplete` of gebeurtenissen in de Media Collection API. Dit is omdat bepaalde spelers een zeer groot aantal dergelijke gebeurtenissen produceren wanneer de eindgebruiker schrobt, en verscheidene honderden gebruikers de netwerkbandbreedte van een backenddienst gemakkelijk konden knelpen. Adobe biedt expliciete ondersteuning voor zoekgebeurtenissen door de hartslagduur te berekenen op basis van de tijdstempel van het apparaat in plaats van de positie van de afspeelkop.
-
