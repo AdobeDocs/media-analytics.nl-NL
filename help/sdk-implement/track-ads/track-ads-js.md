@@ -1,22 +1,25 @@
 ---
-title: Advertenties bijhouden op JavaScript
+title: Advertenties bijhouden met JavaScript 2.x
 description: Implementeer en volg in browser (JS) toepassingen gebruikend Media SDK.
 uuid: 4d81d29c-c55d-4d48-b505-3260922712ff
 translation-type: tm+mt
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: f5b3961e0525c26b682490a4376d244c2703ae24
+workflow-type: tm+mt
+source-wordcount: '352'
+ht-degree: 4%
 
 ---
 
 
-# Advertenties bijhouden op JavaScript{#track-ads-on-javascript}
+# Advertenties bijhouden met JavaScript 2.x{#track-ads-on-javascript}
 
 >[!IMPORTANT]
 >
->De volgende instructies bieden richtlijnen voor implementatie met behulp van de 2.x SDK&#39;s. Als u een 1.x-versie van de SDK implementeert, kunt u hier de 1.x-handleidingen voor ontwikkelaars downloaden: SDK&#39;s [downloaden.](/help/sdk-implement/download-sdks.md)
+>De volgende instructies bieden richtlijnen voor implementatie met behulp van de 2.x SDK&#39;s. Als u een 1.x-versie van de SDK implementeert, kunt u hier de 1.x-handleidingen voor ontwikkelaars downloaden: [SDK&#39;s downloaden.](/help/sdk-implement/download-sdks.md)
 
 ## Constanten voor bijhouden van advertenties
 
-| Naam van constante | Beschrijving |
+| Naam van constante | Beschrijving   |
 |---|---|
 | `AdBreakStart` | Constante voor het bijhouden van de gebeurtenis AdBreak Start |
 | `AdBreakComplete` | Constante voor het bijhouden van de gebeurtenis AdBreak Complete |
@@ -74,15 +77,15 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 1. Voeg desgewenst standaard- en/of advertentiemetagegevens toe aan de mediatraceringssessie via de variabelen van de contextgegevens.
 
-   * [Standaard en metagegevens implementeren in JavaScript](/help/sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-js.md)
+   * [Standaardmetadata voor advertenties implementeren in JavaScript](/help/sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-js.md)
    * **Aangepast en metagegevens -** Voor aangepaste metagegevens maakt u een variabel object voor de aangepaste gegevensvariabelen en vult u de gegevens voor de huidige advertentie in:
 
       ```js
-      /* Set custom context data */ 
-      var adCustomMetadata = { 
-          affiliate: "Sample affiliate", 
-          campaign: "Sample ad campaign", 
-          creative: "Sample creative" 
+      /* Set custom context data */
+      var adCustomMetadata = {
+          affiliate: "Sample affiliate",
+          campaign: "Sample ad campaign",
+          creative: "Sample creative"
       };
       ```
 
@@ -91,26 +94,26 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    Neem een verwijzing naar de aangepaste metagegevensvariabele (of een leeg object) op als de derde parameter in de gebeurtenisaanroep:
 
    ```js
-   _onAdStart = function() { 
+   _onAdStart = function() {
        this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdStart,  
                                        adObject,  
-                                       adCustomMetadata); 
+                                       adCustomMetadata);
    };
    ```
 
 1. Wanneer het afspelen van de advertentie het einde van de advertentie heeft bereikt, roept u `trackEvent()` de `AdComplete` gebeurtenis aan:
 
    ```js
-   _onAdComplete = function() { 
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdComplete); 
+   _onAdComplete = function() {
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdComplete);
    };
    ```
 
 1. Als het afspelen van de advertentie niet is voltooid omdat de gebruiker de advertentie heeft overgeslagen, houdt u de `AdSkip` gebeurtenis bij:
 
    ```js
-   _onAdSkip = function() { 
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdSkip); 
+   _onAdSkip = function() {
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdSkip);
    };
    ```
 
@@ -118,8 +121,8 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 1. Wanneer het advertentieeinde is voltooid, gebruikt u de `AdBreakComplete` gebeurtenis om te volgen:
 
    ```js
-   _onAdBreakComplete = function() { 
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakComplete); 
+   _onAdBreakComplete = function() {
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakComplete);
    };
    ```
 
