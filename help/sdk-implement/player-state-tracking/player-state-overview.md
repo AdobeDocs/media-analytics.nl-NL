@@ -2,9 +2,9 @@
 title: Over Player State Tracking
 description: In dit onderwerp wordt de functie voor het bijhouden van de spelerstatus beschreven, inclusief vereisten en richtlijnen voor het implementeren en rapporteren van spelerstatussen.
 translation-type: tm+mt
-source-git-commit: d317188ef664c836c7125e8bbe195baa924c0d80
+source-git-commit: 1b48565bcc5c9a87e5fabbc906049ab791bf89cc
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '397'
 ht-degree: 1%
 
 ---
@@ -40,8 +40,9 @@ Voor het bijhouden van Player-statussen is een van de volgende vereist voor gege
 
 Houd rekening met de volgende richtlijnen voordat u Player-statussen implementeert.
 
-* De spelerstatus wordt berekend over alle afspeelstatussen (geen splitsing)
-* U kunt meerdere spelerstatussen tegelijk meten
-* Het maximumaantal spelerstatussen dat tijdens het afspelen kan worden bijgehouden, is 10 
-* De de staatsmetriek van de speler wordt verzonden naar Analyses voor het melden van de Dichte vraag van Media SLECHTS
-* De spelerstatussen worden vastgelegd voor elke afzonderlijke afspeelsessie. De spelerstatus wordt niet berekend over afspeelsessies 
+* De spelerstatus wordt berekend over alle afspeelstatussen (geen splitsen).
+* U kunt meerdere spelerstatussen tegelijk meten.
+* Het maximumaantal spelerstatussen dat tijdens het afspelen kan worden bijgehouden, is 10.
+* De de staatsmetriek van de speler wordt verzonden naar Analytics voor het melden van de Dichte vraag van Media slechts.
+* Kennis van de status van de toepassing blijft niet behouden nadat een status is gestopt. Nadat een status is afgelopen, moet de status opnieuw worden gestart om door te gaan met bijhouden. Voor elke nieuwe afspeelstatus moet de status van de speler opnieuw worden gestart.
+* De spelerstatussen worden vastgelegd voor elke afzonderlijke afspeelsessie. De spelerstatus wordt niet berekend over afspeelsessies.
