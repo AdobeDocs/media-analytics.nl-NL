@@ -3,9 +3,9 @@ title: Parameters van de Player-status
 description: In dit onderwerp worden parameters voor het bijhouden van spelerstatussen beschreven.
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
 translation-type: tm+mt
-source-git-commit: c23a8787a8f59746665702eb5e2e74dde2c213e8
+source-git-commit: 1b48565bcc5c9a87e5fabbc906049ab791bf89cc
 workflow-type: tm+mt
-source-wordcount: '2167'
+source-wordcount: '2236'
 ht-degree: 0%
 
 ---
@@ -78,14 +78,14 @@ De mogelijkheden voor het bijhouden van de spelerstatus kunnen worden gekoppeld 
 
 |   Implementatie   | Netwerkparameters | Rapportage |
 | --- | --- | --- |
-| <ul> <li> **SDK-sleutel **<br/>automatisch instellen</li> <li> **API-sleutel **<br/>N.v.t.</li> <li> **Vereist **<br/>nr.</li> <li> **Type **<br/>nummer</li> <li> **Verzonden met **<br/>Media Sluiten</li> <li> **Min. SDK-versie **<br/>3.0</li> <li> **Samplewaarde **<br/>TRUE</li><li> ****<br/>BeschrijvingHet aantal keren dat Closed Captioning is weergegeven. Deze metrische waarde wordt slechts geplaatst aan 1 als minstens één Gesloten Captioning Staat tijdens een playbackzitting voorkwam.<br/> **Belangrijk **<br/>als deze gebeurtenis is ingesteld, is het aantal gelijk aan het aantal keren dat de video zich in de status Closed Captioning bevond. Als deze gebeurtenis niet is ingesteld, wordt geen waarde verzonden.</li> </ul> | <ul> <li> **Adobe Analytics **<br/>(C19)<br/></li> <li> **Hartslag **<br/>N.V.</li> </ul> | <ul> <li> **Beschikbaar **<br/>Ja</li> <li> **Gereserveerde variabele **<br/>, gebeurtenis</li> <li> **Rapportnaam **<br/>Aantal ondertitelingen</li> <li> **Contextgegevens **<br/>(media.states.closedcaptioning.count)<br/> </li> <li> **Data Feed **<br/>media.states.closedcaptioning.count</li> <li> **Audience Manager **<br/>(c_contextdata.media.states.closedcaptioning.count)</li> </ul> |
+| <ul> <li> **SDK-sleutel **<br/>automatisch instellen</li> <li> **API-sleutel **<br/>N.v.t.</li> <li> **Vereist **<br/>nr.</li> <li> **Type **<br/>nummer</li> <li> **Verzonden met **<br/>Media Sluiten</li> <li> **Min. SDK-versie **<br/>3.0</li> <li> **Samplewaarde **<br/>TRUE</li><li> ****<br/>BeschrijvingHet aantal keren dat Closed Captioning is weergegeven. Deze metrische waarde wordt slechts geplaatst aan 1 als minstens één Gesloten Captioning Staat tijdens een playbackzitting voorkwam.<br/> **Belangrijk **<br/>als deze gebeurtenis is ingesteld, is het aantal gelijk aan het aantal keren dat de video zich in de status Closed Captioning bevond. Als deze gebeurtenis niet is ingesteld, wordt geen waarde verzonden.</li> </ul> | <ul> <li> **Adobe Analytics **<br/>(C19)<br/></li> <li> **Hartslag **<br/>N.V.</li> </ul> | <ul> <li> **Beschikbaar **<br/>Ja</li> <li> **Gereserveerde variabele **<br/>, gebeurtenis</li> <li> **Rapportnaam **<br/>Aantal ondertitelingen</li> <li> **Contextgegevens **<br/>(media.states.closedcaptioning.count)<br/> </li> <li> **Data Feed **<br/>media.states.closedcaptioning.count</li> <li> **Audience Manager **<br/>(c_contextdata.media.states.closedCaptioning.count)</li> </ul> |
 
 
 #### Totale duur van ondertiteling
 
 |   Implementatie   | Netwerkparameters | Rapportage |
 | --- | --- | --- |
-| <ul> <li> **SDK-sleutel **<br/>automatisch instellen</li> <li> **API Key **<br/>N/A</li> <li> **Vereist **<br/>nr.</li> <li> **Type **<br/>nummer</li> <li> **Verzonden met **<br/>Media Sluiten</li> <li> **Min. SDK-versie **<br/>3.0</li> <li> **Samplewaarde **<br/>TRUE</li><li> ****<br/>BeschrijvingDe tijdsduur voor Ondertiteling is weergegeven. This metric is set to 1 only if at least one Full Screen State occurred during a playback session.<br/> **Belangrijk **<br/>als deze gebeurtenis is ingesteld, is de tijd gelijk aan de duur van de video in de status Closed Captioning. Als deze gebeurtenis niet is ingesteld, wordt geen waarde verzonden.</li> </ul> | <ul> <li> **Adobe Analytics **<br/>(media.states.closedcaptioning.time)<br/></li> <li> **Hartslag **<br/>N.V.</li> </ul> | <ul> <li> **Beschikbaar **<br/>Ja</li> <li> **Gereserveerde variabele **<br/>, gebeurtenis</li> <li> **De Naam **<br/>van het rapport Gesloten Captioning Totale Duur</li> <li> **Contextgegevens **<br/>(media.states.closedcaptioning.time)<br/> </li> <li> **Data Feed **<br/>media.states.closedcaptioning.time</li> <li> **Audience Manager **<br/>(c_contextdata.media.states.closedCaptioning.time)</li> </ul> |
+| <ul> <li> **SDK-sleutel **<br/>automatisch instellen</li> <li> **API-sleutel **<br/>N.v.t.</li> <li> **Vereist **<br/>nr.</li> <li> **Type **<br/>nummer</li> <li> **Verzonden met **<br/>Media Sluiten</li> <li> **Min. SDK-versie **<br/>3.0</li> <li> **Samplewaarde **<br/>TRUE</li><li> ****<br/>BeschrijvingDe tijdsduur voor Ondertiteling is weergegeven. Deze metrische waarde wordt slechts ingesteld op 1 als minstens één Volledige staat van het Scherm tijdens een playbackzitting voorkwam.<br/> **Belangrijk **<br/>als deze gebeurtenis is ingesteld, is de tijd gelijk aan de duur van de video in de status Closed Captioning. Als deze gebeurtenis niet is ingesteld, wordt geen waarde verzonden.</li> </ul> | <ul> <li> **Adobe Analytics **<br/>(media.states.closedcaptioning.time)<br/></li> <li> **Hartslag **<br/>N.V.</li> </ul> | <ul> <li> **Beschikbaar **<br/>Ja</li> <li> **Gereserveerde variabele **<br/>, gebeurtenis</li> <li> **De Naam **<br/>van het rapport Gesloten Captioning Totale Duur</li> <li> **Contextgegevens **<br/>(media.states.closedcaptioning.time)<br/> </li> <li> **Data Feed **<br/>media.states.closedcaptioning.time</li> <li> **Audience Manager **<br/>(c_contextdata.media.states.closedCaptioning.time)</li> </ul> |
 
 
 ### Eigenschappen dempen
@@ -155,7 +155,27 @@ De mogelijkheden voor het bijhouden van de spelerstatus kunnen worden gekoppeld 
 | --- | --- | --- |
 | <ul> <li> **SDK-sleutel **<br/>automatisch instellen</li> <li> **API-sleutel **<br/>N.v.t.</li> <li> **Vereist **<br/>nr.</li> <li> **Type **<br/>nummer</li> <li> **Verzonden met **<br/>Media Sluiten</li> <li> **Min. SDK-versie **<br/>3.0</li> <li> **Samplewaarde **<br/>TRUE</li><li> ****<br/>BeschrijvingDe tijdsduur waarop In focus werd weergegeven. Deze metrische waarde wordt slechts geplaatst aan 1 als minstens één In FocusStaat tijdens een playbackzitting voorkwam.<br/> **Belangrijk** <br/> als deze gebeurtenis is ingesteld, is de tijd gelijk aan hoe lang de video zich in de focus-status bevond. Als deze gebeurtenis niet is ingesteld, wordt geen waarde verzonden.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(media.states.infocus.time)<br/></li> <li> **Hartslag **<br/>N.V.</li> </ul> | <ul> <li> **Beschikbaar **<br/>Ja</li> <li> **Gereserveerde variabele **<br/>, gebeurtenis</li> <li> **Rapportnaam **<br/>in focus Totale duur</li> <li> **Contextgegevens **<br/>(media.states.infocus.time)<br/> </li> <li> **Data Feed **<br/>media.states.infocus.time</li> <li> **Audience Manager **<br/>(c_contextdata.media.states.infocus.time)</li> </ul> |
 
+## Lijst met eigenschappen voor XDM-identiteiten
 
+De gegevens die zijn opgeslagen in Analytics kunnen voor elk doel worden gebruikt en de metriek van de spelerstatus kunnen in het Adobe Experience Platform worden geïmporteerd met XDM en worden gebruikt met Customer Reader Analytics.
+
+| Eigenschap spelerstatus | Toewijzing |
+|---------------------------------------|------------------------------------|
+| a.media.states.fullScreen.set | media.mediaTimed.primaryAssetViewDetails.fullScreen.playerStateSet |
+| a.media.states.fullScreen.count | media.mediaTimed.primaryAssetViewDetails.fullScreen.playerStateCount |
+| a.media.states.fullScreen.time | media.mediaTimed.primaryAssetViewDetails.fullScreen.playerStateTime |
+| a.media.states.mute.set | media.mediaTimed.primaryAssetViewDetails.mute.playerStateSet |
+| a.media.states.mute.count | media.mediaTimed.primaryAssetViewDetails.mute.playerStateCount |
+| a.media.states.mute.time | media.mediaTimed.primaryAssetViewDetails.mute.playerStateTime |
+| a.media.states.closeCaption.set | media.mediaTimed.primaryAssetViewDetails.closeCaption.playerStateSet |
+| a.media.states.closeCaption.count | media.mediaTimed.primaryAssetViewDetails.closeCaption.playerStateCount |
+| a.media.states.closeCaption.time | media.mediaTimed.primaryAssetViewDetails.closeCaption.playerStateTime |
+| a.media.states.pictureInPicture.set | media.mediaTimed.primaryAssetViewDetails.pictureInPicture.playerStateSet |
+| a.media.states.pictureInPicture.count | media.mediaTimed.primaryAssetViewDetails.pictureInPicture.playerStateCount |
+| a.media.states.pictureInPicture.time | media.mediaTimed.primaryAssetViewDetails.pictureInPicture.playerStateTime |
+| a.media.states.inFocus.set | media.mediaTimed.primaryAssetViewDetails.inFocus.playerStateSet |
+| a.media.states.inFocus.count | media.mediaTimed.primaryAssetViewDetails.inFocus.playerStateCount |
+| a.media.states.inFocus.time | media.mediaTimed.primaryAssetViewDetails.inFocus.playerStateTime |
 
 ## Verwante API&#39;s {#related_apis_section}
 
