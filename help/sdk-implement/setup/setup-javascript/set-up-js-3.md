@@ -2,9 +2,9 @@
 title: JavaScript 3.x instellen
 description: Installatie van Media SDK-toepassingen voor implementatie op JavaScript 3.x.
 translation-type: tm+mt
-source-git-commit: a73536bd7a818ac23ad322a15f109644e75ee0d5
+source-git-commit: 83b38ac8f7fc88f982d194e776efccf8d5b983e4
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '398'
 ht-degree: 2%
 
 ---
@@ -45,6 +45,16 @@ ht-degree: 2%
       >
       >De JavaScript SDK is compatibel met de AMD- en CommonJS-modulespecificaties en `MediaSDK.js` kan ook worden gebruikt met compatibele modulelezers.
 
+1. Creeer een geval van `AppMeasurement` en vorm `visitor`.
+
+   De configuratie van Media SDK vereist een geval van `AppMeasurement` met `visitor` gevormd.
+
+```js
+var appMeasurement = new AppMeasurement(“<rsid>”);
+appMeasurement.visitor = visitor;
+appMeasurement.trackingServer = “<visitor_namespace>.sc.omtrdc.net”;
+```
+
 1. SDK van media configureren
 
    De SDK van media moet één keer per webpagina worden geconfigureerd en de configuratie is van toepassing op alle gemaakte tracker-instanties.
@@ -52,6 +62,7 @@ ht-degree: 2%
    >[!IMPORTANT]
    >
    > Media SDK (3.x) gebruikt Media Collection API voor het volgen van media die van het eindpunt HB verschillend is dat in 2.x SDKs wordt gebruikt. Neem contact op met uw Adobe-vertegenwoordiger voor meer informatie.
+
 
    Hier volgt een voorbeeld van initialisatie van `MediaConfig`:
 
