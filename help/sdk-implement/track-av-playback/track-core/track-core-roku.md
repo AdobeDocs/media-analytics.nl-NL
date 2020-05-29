@@ -3,15 +3,18 @@ title: Muziek afspelen bijhouden op Roku
 description: Dit onderwerp beschrijft hoe te om kern het volgen uit te voeren gebruikend Media SDK op Roku.
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 translation-type: tm+mt
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 815965d1cd41e73e50666a89f4a7c450af5022da
+workflow-type: tm+mt
+source-wordcount: '1022'
+ht-degree: 2%
 
 ---
 
 
-# Muziek afspelen bijhouden op Roku{#track-core-playback-on-roku}
+# Track core playback on Roku{#track-core-playback-on-roku}
 
 >[!IMPORTANT]
->Deze documentatie behandelt het volgen in versie 2.x van SDK. Als u een 1.x-versie van de SDK implementeert, kunt u hier de 1.x-handleidingen voor ontwikkelaars downloaden: SDK&#39;s [downloaden](/help/sdk-implement/download-sdks.md)
+>Deze documentatie behandelt het volgen in versie 2.x van SDK. Als u een 1.x-versie van de SDK implementeert, kunt u hier de 1.x-handleidingen voor ontwikkelaars downloaden: [SDK&#39;s downloaden](/help/sdk-implement/download-sdks.md)
 
 1. **Eerste instelling voor bijhouden**
 
@@ -25,11 +28,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    | `mediaid` | Unieke videoid | Ja |
    | `length` | Videolengte | Ja |
    | `streamType` | Stroomtype (zie _StreamType-constanten_ hieronder) | Ja |
-   | `mediaType` | Mediatype (zie _MediaType-constanten_ hieronder) | Ja |
+   | `mediaType` | Media type (see _MediaType constants_ below) | Ja |
 
    **`StreamType`constanten:**
 
-   | Naam van constante | Beschrijving |
+   | Naam van constante | Beschrijving   |
    |---|---|
    | `MEDIA_STREAM_TYPE_VOD` | Het type van stroom voor Video op bestelling. |
    | `MEDIA_STREAM_TYPE_LIVE` | Stroomtype voor LIVE-inhoud. |
@@ -72,10 +75,10 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    ```
    mediaInfo = adb_media_init_mediainfo(
-    "<MEDIA_NAME>", 
-    "<MEDIA_ID>", 
-    600, 
-    ADBMobile().MEDIA_STREAM_TYPE_AOD, 
+    "<MEDIA_NAME>",
+    "<MEDIA_ID>",
+    600,
+    ADBMobile().MEDIA_STREAM_TYPE_AOD,
     ADBMobile().MEDIA_TYPE_AUDIO
    )
    ```
@@ -97,7 +100,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    * **Standaardmetagegevens**
 
-      [Standaardmetagegevens implementeren in JavaScript](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js.md)
+      [Standaardmetadata implementeren in JavaScript](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
 
       >[!NOTE]
       >
@@ -105,17 +108,17 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
       * API-naslaggids voor metagegevens van media - [Standaardmetagegevenstoetsen - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
 
-         Hier vindt u de uitgebreide set met beschikbare metagegevens: Parameters voor [audio en video](/help/metrics-and-metadata/audio-video-parameters.md)
+         Hier vindt u de uitgebreide set met beschikbare metagegevens: [Parameters voor audio en video](/help/metrics-and-metadata/audio-video-parameters.md)
    * **Aangepaste metagegevens**
 
       Maak een veranderlijk object voor de douanevariabelen en bevolk met de gegevens voor deze media. Bijvoorbeeld:
 
       ```js
-      /* Set custom context data */ 
-      var customVideoMetadata = { 
-          isUserLoggedIn: "false", 
-          tvStation: "Sample TV station", 
-          programmer: "Sample programmer" 
+      /* Set custom context data */
+      var customVideoMetadata = {
+          isUserLoggedIn: "false",
+          tvStation: "Sample TV station",
+          programmer: "Sample programmer"
       };
       ```
 
@@ -182,7 +185,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    * **Standaard videometagegevens**
 
-      [Standaardmetagegevens implementeren op Roku](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+      [Standaardmetadata implementeren in Roku](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
       >[!NOTE]
       >Het is optioneel om het standaardobject voor videometagegevens aan het mediaobject te koppelen.
@@ -269,4 +272,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 * Volgscenario&#39;s: [VOD afspelen zonder advertenties](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Voorbeeldspeler die is opgenomen in de SDK van Roku voor een volledig voorbeeld van bijhouden.
-
