@@ -2,9 +2,9 @@
 title: Uitvoering en verslaglegging
 description: In dit onderwerp wordt beschreven hoe u de functie voor het bijhouden van de spelerstatus kunt implementeren, inclusief.
 translation-type: tm+mt
-source-git-commit: b0bfe74d1f6083e700dbf98f504a17518bd19ecb
+source-git-commit: 614780a121eac6d5f822d439365fa59f85959ce2
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ De Media SDK bevat twee nieuwe methoden voor het bijhouden van aangepaste status
 `trackStateClose("state_name")`
 
 
-De Media Collection API omvat twee nieuwe gebeurtenissen die &quot;media.stateName&quot;als vereiste parameter hebben:
+De Media Collection API omvat twee nieuwe gebeurtenissen die `media.stateName` als vereiste parameter hebben:
 
 `stateStart` en `stateEnd`
 
@@ -84,14 +84,19 @@ http(s)://<Analytics_Visitor_Namespace>.hb-api.omtrdc.net/api/v1/sessions/<SID>/
 
 De meetgegevens die voor elk afzonderlijk frame worden verstrekt, worden als Context Data-parameters berekend en doorgegeven aan Adobe Analytics en voor rapportagedoeleinden opgeslagen. Er zijn drie cijfers beschikbaar voor elk frame:
 
-* `a.media.states.(media.state.name).set = true` — Ingesteld op true als de status ten minste eenmaal is ingesteld voor elke specifieke weergave van een stream.
-* `a.media.states.(media.state.name).count = 4` — Identificeert het aantal instanties van een status tijdens elke afzonderlijke afspeelbewerking van een stream.
-* `a.media.states.(media.state.name).time = 240` — Geeft de totale frameduur aan in seconden per afzonderlijke afspeelbewerking van een stream.
+* `a.media.states.[state.name].set = true` — Ingesteld op true als de status ten minste eenmaal is ingesteld voor elke specifieke weergave van een stream.
+* `a.media.states.[state.name].count = 4` — Identificeert het aantal instanties van een status tijdens elke afzonderlijke afspeelbewerking van een stream.
+* `a.media.states.[state.name].time = 240` — Geeft de totale frameduur aan in seconden per afzonderlijke afspeelbewerking van een stream.
 
 ## Rapportage
 
-Alle staatsmetriek kan voor om het even welke rapporteringsvisualisatie of component (segment, berekende metriek) worden gebruikt.
-TBD - controleer bron/wiki voor bijgewerkte informatie - voor het schermschot van AW
+Alle metriek van de spelerstaat kan voor om het even welke rapporteringsvisualisatie worden gebruikt beschikbaar in de Werkruimte van de Analyse of een component (segment, berekende metriek) zodra een rapportreeks voor het volgen van de spelerstaat wordt toegelaten. De nieuwe metriek zou van de Console Admin voor elk individueel rapport kunnen worden toegelaten gebruikend Media die Opstelling melden (geef Montages > Mediabeheer > Mediarapportering uit).
+
+![](assets/report-setup.png)
+
+In de werkruimte Analytics bevinden alle nieuwe eigenschappen zich in het deelvenster Metrics. U kunt bijvoorbeeld zoeken op `full screen` om de gegevens van het volledige scherm weer te geven in het deelvenster Metriek.
+
+![](assets/full-screen-report.png)
 
 ## Door speler opgegeven meetgegevens importeren naar Adobe Experience Platform
 
