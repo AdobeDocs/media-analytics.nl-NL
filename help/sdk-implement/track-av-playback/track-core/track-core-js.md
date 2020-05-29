@@ -1,17 +1,20 @@
 ---
-title: Core playback bijhouden op JavaScript
-description: In dit onderwerp wordt beschreven hoe u het bijhouden van kernelementen implementeert met de SDK van Media in browser-apps (JS).
+title: Muziek afspelen bijhouden met JavaScript 2.x
+description: In dit onderwerp wordt beschreven hoe u het bijhouden van kernelementen implementeert met de SDK van Media in een browser met JavaScript 2.x-apps.
 uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
 translation-type: tm+mt
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 30ed54924c75a9c33e6122b2d7ddbb84c06b8c0c
+workflow-type: tm+mt
+source-wordcount: '688'
+ht-degree: 2%
 
 ---
 
 
-# Core playback bijhouden op JavaScript{#track-core-playback-on-javascript}
+# Muziek afspelen bijhouden met JavaScript 2.x{#track-core-playback-on-javascript}
 
 >[!IMPORTANT]
->Deze documentatie behandelt het volgen in versie 2.x van SDK. Als u een 1.x-versie van de SDK implementeert, kunt u hier de 1.x-handleidingen voor ontwikkelaars downloaden: SDK&#39;s [downloaden](/help/sdk-implement/download-sdks.md)
+>Deze documentatie behandelt het volgen in versie 2.x van SDK. Als u een 1.x-versie van de SDK implementeert, kunt u hier de 1.x-handleidingen voor ontwikkelaars downloaden: [SDK&#39;s downloaden](/help/sdk-implement/download-sdks.md)
 
 1. **Eerste instelling voor bijhouden**
 
@@ -29,7 +32,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    **`StreamType`constanten:**
 
-   | Naam van constante | Beschrijving |
+   | Naam van constante | Beschrijving   |
    |---|---|
    | `VOD` | Het type van stroom voor Video op bestelling. |
    | `LIVE` | Stroomtype voor LIVE-inhoud. |
@@ -49,7 +52,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    var mediaObject =  
      MediaHeartbeat.createMediaObject(<MEDIA_NAME>,  
                                      <MEDIA_ID,  
-                                     <MEDIA_LENGTH>, 
+                                     <MEDIA_LENGTH>,
                                      MediaHeartbeat.StreamType.VOD,
                                      <MEDIA_TYPE>);
    ```
@@ -60,7 +63,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    * **Standaardmetagegevens**
 
-      [Standaardmetagegevens implementeren in JavaScript](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js.md)
+      [Standaardmetadata implementeren in JavaScript](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js.md)
 
       >[!NOTE]
       >
@@ -68,17 +71,17 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
       * API-naslaggids voor metagegevens van media - [Standaardmetagegevenstoetsen - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
 
-         Hier vindt u de uitgebreide set met beschikbare metagegevens: Parameters voor [audio en video](/help/metrics-and-metadata/audio-video-parameters.md)
+         Hier vindt u de uitgebreide set met beschikbare metagegevens: [Parameters voor audio en video](/help/metrics-and-metadata/audio-video-parameters.md)
    * **Aangepaste metagegevens**
 
       Maak een veranderlijk object voor de douanevariabelen en bevolk met de gegevens voor deze media. Bijvoorbeeld:
 
       ```js
-      /* Set custom context data */ 
-      var customVideoMetadata = { 
-          isUserLoggedIn: "false", 
-          tvStation: "Sample TV station", 
-          programmer: "Sample programmer" 
+      /* Set custom context data */
+      var customVideoMetadata = {
+          isUserLoggedIn: "false",
+          tvStation: "Sample TV station",
+          programmer: "Sample programmer"
       };
       ```
 
@@ -160,4 +163,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 * Volgscenario&#39;s: [VOD afspelen zonder advertenties](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Voorbeeldspeler die is opgenomen in de JavaScript SDK voor een volledig voorbeeld van bijhouden.
-
