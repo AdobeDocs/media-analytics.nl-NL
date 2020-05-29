@@ -2,7 +2,7 @@
 title: JavaScript 3.x instellen
 description: Installatie van Media SDK-toepassingen voor implementatie op JavaScript 3.x.
 translation-type: tm+mt
-source-git-commit: 83b38ac8f7fc88f982d194e776efccf8d5b983e4
+source-git-commit: b642bd1a136e62901847f2a8cf004d05282fca01
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 2%
@@ -49,11 +49,11 @@ ht-degree: 2%
 
    De configuratie van Media SDK vereist een geval van `AppMeasurement` met `visitor` gevormd.
 
-```js
-var appMeasurement = new AppMeasurement(“<rsid>”);
-appMeasurement.visitor = visitor;
-appMeasurement.trackingServer = “<visitor_namespace>.sc.omtrdc.net”;
-```
+   ```js
+    var appMeasurement = new AppMeasurement(“<rsid>”);
+    appMeasurement.visitor = visitor;
+    appMeasurement.trackingServer = “<visitor_namespace>.sc.omtrdc.net”;
+   ```
 
 1. SDK van media configureren
 
@@ -62,7 +62,6 @@ appMeasurement.trackingServer = “<visitor_namespace>.sc.omtrdc.net”;
    >[!IMPORTANT]
    >
    > Media SDK (3.x) gebruikt Media Collection API voor het volgen van media die van het eindpunt HB verschillend is dat in 2.x SDKs wordt gebruikt. Neem contact op met uw Adobe-vertegenwoordiger voor meer informatie.
-
 
    Hier volgt een voorbeeld van initialisatie van `MediaConfig`:
 
@@ -77,7 +76,8 @@ appMeasurement.trackingServer = “<visitor_namespace>.sc.omtrdc.net”;
     mediaConfig.ssl = true;
    
     ADB.Media.configure(mediaConfig, appMeasurement);
-   
+   ```
+
 1. Maak de `MediaTracker` instantie.
 
    Nadat u de SDK van Media hebt geconfigureerd, kunnen tracker-instanties voor het bijhouden van media-inhoud worden gemaakt met behulp van `getInstance` API.
