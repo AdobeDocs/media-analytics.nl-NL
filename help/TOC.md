@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: f26816d37f30e9e4ae08dbf7af78f2135e8403f4
 workflow-type: tm+mt
 source-wordcount: '809'
-ht-degree: 79%
+ht-degree: 82%
 
 ---
 
@@ -20,10 +20,10 @@ ht-degree: 79%
    + [Vereisten](intro-to-ava/prereqs.md)
    + Implementatiepaden {#implementation-paths}
       + [Overzicht](intro-to-ava/implementation-paths/implementation-paths.md)
-      + [Klantzijde](intro-to-ava/implementation-paths/client-side-path.md)
-      + Other Implementation Paths {#other-paths}
+      + [Clientzijde](intro-to-ava/implementation-paths/client-side-path.md)
+      + Andere implementatiepaden {#other-paths}
          + Mediamodule Milestone-tracking {#mm-milestone-tracking}
-            + [Overzicht van mijlpaal](measurement-options/mm-milestone-tracking/milestone-overview.md)
+            + [Milestone: overzicht](measurement-options/mm-milestone-tracking/milestone-overview.md)
             + [Milestone migreren naar Media Analytics](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
             + [Migreren van Milestone naar Custom Link](measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
          + Custom Link in Analytics {#cl-in-aa}
@@ -43,7 +43,7 @@ ht-degree: 79%
          + [JavaScript 3.x instellen](sdk-implement/setup/setup-javascript/set-up-js-3.md)
       + [Chromecast instellen](sdk-implement/setup/set-up-chromecast.md)
       + [Roku instellen](sdk-implement/setup/set-up-roku.md)
-   +  afspelen voor audio en video bijhouden {#track-av-playback}
+   +  Afspelen voor audio en video bijhouden {#track-av-playback}
       + [Overzicht](sdk-implement/track-av-playback/track-core-overview.md)
       + Core afspelen voor audio en video bijhouden {#track-core}
          + [Core afspelen bijhouden in Android](sdk-implement/track-av-playback/track-core/track-core-android.md)
@@ -69,7 +69,7 @@ ht-degree: 79%
             + [Zoeken bijhouden in JavaScript 3.x](sdk-implement/track-av-playback/track-seeking/track-seeking-js/track-seeking-js3.md)
          + [Trackzoekopdracht in Chromecast](sdk-implement/track-av-playback/track-seeking/track-seeking-chromecast.md)
          + [Trackzoekopdracht in Roku](sdk-implement/track-av-playback/track-seeking/track-seeking-roku.md)
-      + Implement Standard Metadata {#impl-std-metadata}
+      + Standaardmetadata implementeren {#impl-std-metadata}
          + [Standaardmetadata implementeren in Android](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
          + [Standaardmetadata implementeren in iOS](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
          + [iOS-metadatatoetsen](sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
@@ -89,7 +89,7 @@ ht-degree: 79%
          + [Advertenties bijhouden in JavaScript 3.x](sdk-implement/track-ads/track-ads-js/track-ads-js3.md)
       + [Advertenties bijhouden in Chromecast](sdk-implement/track-ads/track-ads-chromecast.md)
       + [Advertenties bijhouden in Roku](sdk-implement/track-ads/track-ads-roku.md)
-      + Implement Standard ad Metadata {#impl-std-ad-metadata}
+      + Standaardmetadata voor advertenties implementeren {#impl-std-ad-metadata}
          + [Standaardmetadata voor advertenties implementeren in Android](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
          + [Standaardmetadata voor advertenties implementeren in iOS](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
          + Implement Standard ad Metadata on JavaScript {#impl-std-ad-md-js}
