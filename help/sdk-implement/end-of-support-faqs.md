@@ -2,9 +2,9 @@
 title: Veelgestelde vragen over einde ondersteuning van Media Analytics SDK
 description: Dit onderwerp omvat FAQs over het eind van steun voor Media Analytics SDKs.
 translation-type: tm+mt
-source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
+source-git-commit: 38adc54438f85ca8ece8c77d9ff0d0aa14eb6605
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '703'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Aan het einde van de ondersteuning voor versie 4 Mobile SDK&#39;s op 31 augustus
 
 ## Top 5 van dingen die u moet weten
 
-1. Mobiele v4-SDK&#39;s worden na 31 augustus 2021 niet meer ondersteund. Migreer naar de SDK&#39;s van het Adobe Experience Platform (AEP) voor iOS en Android.
+1. Mobiele v4-SDK&#39;s worden na 31 augustus 2021 niet meer ondersteund. Migreer naar de SDK&#39;s van het Adobe Experience Platform (AEP) voor iOS en Android. Voor extra informatie, zie [Versie 4 Mobiele SDKs eind-van-steun FAQ](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq).
 
 1. Voor analyse voor audio- en video-implementatie is de AEP SDK en het gebruik van de extensies Analytics en Media Analytics vereist. Vanaf 1 september 2021 moet u de nieuwe SDK&#39;s en uitbreidingen van AEP gebruiken.  De extensies voor Media Analytics worden geconfigureerd met Adobe Launch.  Zie [Migreren van zelfstandige media SDK naar Adobe Launch voor meer informatie](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html)
 
@@ -49,7 +49,7 @@ Neem contact op met de Adobe Customer Success Manager als u vragen hebt.
 
 1. **Moet ik Starten als systeem voor tagbeheer hebben? Wat gebeurt er als ik Launch niet wil gebruiken?**
 
-   Voor mobiel, wordt de Lancering vereist om de Uitbreidingen van Media zoals Mobiele Diensten UI te vormen. In het geval van het gebruik van de mobiele app wordt deze niet gebruikt als een systeem voor tagbeheer.
+   Voor het gebruik van de mobiele app wordt Launch niet gebruikt als een systeem voor tagbeheer zoals voor het web.  Het gebruiken van de UI van de Lancering wordt vereist voor het vormen van de uitbreidingen van SDK. Dit is vergelijkbaar met de manier waarop u de gebruikersinterface van Adobe Mobile Services gebruikt om de mobiele v4 SDK te configureren. Voor installatie, is het voordeel van het gebruiken van Lancering dat het u aangepaste installatieinstructies geeft die op de uitbreiding worden gebaseerd u kiest.
 
 1. **Heeft dit einde van de ondersteuning invloed op de SDK voor tvOS?**
 
