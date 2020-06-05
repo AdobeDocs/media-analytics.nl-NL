@@ -4,7 +4,7 @@ user-guide-title: Adobe Analytics voor audio en video
 product: adobe analytics
 sub-product: media-analytics
 translation-type: tm+mt
-source-git-commit: f26816d37f30e9e4ae08dbf7af78f2135e8403f4
+source-git-commit: f90eec31389431fe5275760d510926fb01c33d9a
 workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 82%
@@ -193,7 +193,6 @@ ht-degree: 82%
       + [Tijdlijn 1 - Weergeven tot einde van content](media-collection-api/mc-api-timelines/mc-api-timeline-1.md)
       + [Tijdlijn 2 - Gebruiker verlaat sessie](media-collection-api/mc-api-timelines/mc-api-timeline-2.md)
       + [Tijdlijn 3 - Hoofdstukken](media-collection-api/mc-api-timelines/mc-api-timeline-3.md)
-   + [Gedownloade content bijhouden](media-collection-api/track-downloaded-content.md)
 + Cookbook {#media-analytics-cookbook}
    + [Cookbook](media-analytics-cookbook/media-analytics-cookbook.md)
    + [Attributie van mediastream](media-analytics-cookbook/media-dimensions.md)
@@ -215,6 +214,7 @@ ht-degree: 82%
       + [Gelijktijdige mediaviewers](media-reports/media-default-reports/media-concurrent-viewers.md)
       + [JSON-rapportdata voor gelijktijdige viewers ophalen](media-reports/media-default-reports/get-concurrent-json.md)
    + [Sjablonen voor Media Workspace](media-reports/media-workspace-templates.md)
++ [Gedownloade content bijhouden](media-collection-api/track-downloaded-content.md)
 + [Federated Analytics](federated-analytics.md)
 + Player State Tracking {#player-state-tracking}
    + [Overzicht](sdk-implement/player-state-tracking/player-state-overview.md)
