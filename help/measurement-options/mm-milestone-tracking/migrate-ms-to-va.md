@@ -4,6 +4,9 @@ description: null
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
 translation-type: tm+mt
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+workflow-type: tm+mt
+source-wordcount: '877'
+ht-degree: 5%
 
 ---
 
@@ -216,7 +219,7 @@ s.Media.
 </tr>
 <tr>
 <td>
-Media.trackMijlpalen
+Media.trackMilestones
 </td>
 <td>
 <pre>
@@ -231,7 +234,7 @@ s.Media.
 </tr>
 <tr>
 <td>
-Media.trackOffsetMijlpalen
+Media.trackOffsetMilestones
 </td>
 <td>
 <pre>
@@ -246,7 +249,7 @@ s.Media.
 </tr>
 <tr>
 <td>
-Media.segmentByMijlpalen
+Media.segmentByMilestones
 </td>
 <td>
 <pre>
@@ -260,7 +263,7 @@ s.Media.segmentByMijlpalen = true;
 </tr>
 <tr>
 <td>
-Media.segmentByOffsetMijlpalen
+Media.segmentByOffsetMilestones
 </td>
 <td>
 <pre>
@@ -309,7 +312,7 @@ s.Media.
 </tr>
 <tr>
 <td>
-Media.adTrackMijlpalen
+Media.adTrackMilestones
 </td>
 <td>
 <pre>
@@ -324,7 +327,7 @@ s.Media.
 </tr>
 <tr>
 <td>
-Media.adTrackOffsetMijlpalen
+Media.adTrackOffsetMilestones
 </td>
 <td>
 <pre>
@@ -339,7 +342,7 @@ s.Media.
 </tr>
 <tr>
 <td>
-Media.adSegmentByMijlpalen
+Media.adSegmentByMilestones
 </td>
 <td>
 <pre>
@@ -354,7 +357,7 @@ s.Media.
 </tr>
 <tr>
 <td>
-Media.adSegmentByOffsetMijlpalen
+Media.adSegmentByOffsetMilestones
 </td>
 <td>
 <pre>
