@@ -3,9 +3,9 @@ audience: end-user
 user-guide-title: Adobe Analytics voor audio en video
 product: adobe analytics
 sub-product: media-analytics
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f90eec31389431fe5275760d510926fb01c33d9a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '809'
 ht-degree: 100%
 
@@ -43,7 +43,7 @@ ht-degree: 100%
          + [JavaScript 3.x instellen](sdk-implement/setup/setup-javascript/set-up-js-3.md)
       + [Chromecast instellen](sdk-implement/setup/set-up-chromecast.md)
       + [Roku instellen](sdk-implement/setup/set-up-roku.md)
-   +  Afspelen voor audio en video bijhouden {#track-av-playback}
+   + Afspelen voor audio en video bijhouden {#track-av-playback}
       + [Overzicht](sdk-implement/track-av-playback/track-core-overview.md)
       + Core afspelen voor audio en video bijhouden {#track-core}
          + [Core afspelen bijhouden in Android](sdk-implement/track-av-playback/track-core/track-core-android.md)
@@ -147,7 +147,7 @@ ht-degree: 100%
          + [Adobe Debug configureren](sdk-implement/validation/debugging/config-adobe-debug.md)
          + [Nieuw foutopsporingsrapport maken](sdk-implement/validation/debugging/create-new-debug-report.md)
          + [Foutopsporing voor dashboards en rapporten](sdk-implement/validation/debugging/debug-dash-repts.md)
-   + Analyses in OTT-apps {#analytics-with-ott}
+   + Analytics in OTT-apps {#analytics-with-ott}
       + [App-statussen bijhouden](sdk-implement/analytics-with-ott/track-app-states.md)
       + [App-acties bijhouden](sdk-implement/analytics-with-ott/track-app-actions.md)
       + [Gebruikers-ID&#39;s instellen](sdk-implement/analytics-with-ott/set-user-ids.md)
