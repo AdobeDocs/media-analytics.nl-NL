@@ -1,29 +1,29 @@
 ---
-title: Migreren van Mijlsteen naar Media Analytics
+title: Migreren van Milestone naar Media Analytics
 description: null
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
 translation-type: tm+mt
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 workflow-type: tm+mt
 source-wordcount: '877'
-ht-degree: 20%
+ht-degree: 22%
 
 ---
 
 
-# Migreren van Mijlsteen naar Media Analytics {#migrating-from-milestone-to-media-analytics}
+# Migreren van Milestone naar Media Analytics {#migrating-from-milestone-to-media-analytics}
 
 ## Overzicht {#overview}
 
-De kernconcepten van videometing zijn hetzelfde voor Mijlpaal en Media Analytics, die videospelergebeurtenissen neemt en deze toewijst aan analytische methoden, terwijl ook de metagegevens en waarden van de speler worden opgehaald en aan analytische variabelen worden toegewezen. De oplossing van de Analyse van Media groeide uit Mijlpaal, zo veel van de methodes en metriek zijn het zelfde, echter, is de configuratiebenadering en de code beduidend veranderd. Het zou mogelijk moeten zijn om de spelergebeurteniscode bij te werken om aan de nieuwe methodes van de Analyse van Media te richten. Zie Overzicht [en het](/help/sdk-implement/setup/setup-overview.md) Volgen Overzicht [](/help/sdk-implement/track-av-playback/track-core-overview.md) van SDK voor meer details bij het uitvoeren van de Analytics van Media.
+De kernconcepten van videometing zijn hetzelfde voor Mijlsteen en Media Analytics, die videospelergebeurtenissen neemt en deze toewijst aan analytische methoden, terwijl ze ook metagegevens en waarden van spelers vastzetten en toewijzen aan analytische variabelen. De oplossing van Media Analytics groeide uit Mijlpaal, zo veel van de methodes en metriek zijn het zelfde, echter, is de configuratiebenadering en de code beduidend veranderd. Het zou mogelijk moeten zijn om de spelergebeurteniscode bij te werken om aan de nieuwe methodes van Media Analytics te richten. Zie Overzicht [en Overzicht](/help/sdk-implement/setup/setup-overview.md) van het [](/help/sdk-implement/track-av-playback/track-core-overview.md) Volgen van SDK voor meer details bij het uitvoeren van Media Analytics.
 
-De volgende lijsten verstrekken vertalingen tussen de oplossing van de Mijlpaal en de oplossing van de Analyse van Media.
+De volgende lijsten verstrekken vertalingen tussen de oplossing van de Mijlpaal en de oplossing van Media Analytics.
 
 ## Migratiehandleiding {#migration-guide}
 
 ### Referentie variabele
 
-| Mijlsteen, metrisch | Type variabele | Metrisch voor media-analyse |
+| Mijlsteen, metrisch | Type variabele | Media Analytics Metric |
 | --- | --- | --- |
 | Inhoud | Vervaldatum<br/><br/>eVarDefault: Bezoek | Inhoud |
 | Inhoudstype | Standaardvervaldatum van eVar<br/><br/> : Paginaweergave | Inhoudstype |
@@ -42,7 +42,7 @@ De volgende lijsten verstrekken vertalingen tussen de oplossing van de Mijlpaal 
 </th>
 <th>Media Analytics
 </th>
-<th>Syntaxis voor medianalyse
+<th>Analytics-syntaxis voor media
 </th>
 </tr>
 </thead>
@@ -58,7 +58,7 @@ s.Media.trackUsingContextData = true;
 </td>
 <td>N.v.t.
 </td>
-<td>Alle gegevens van de Analyse van Media worden slechts verzonden gebruikend de Gegevens van de Context.
+<td>Alle Media Analytics-gegevens worden alleen verzonden met gebruik van Context Data.
 </td>
 </tr>
 <tr>
@@ -85,7 +85,7 @@ s.Media.contextDataMapping = {
 </td>
 <td>N.v.t.
 </td>
-<td>Contextgegevens van Media Analytics worden automatisch ingevuld met geïndexeerde variabelen. Toewijzing aan eVars, props en gebeurtenissen die ik niet meer nodig heb in de implementatiecode. De klanten kunnen contextdata aan variabelen in kaart brengen gebruikend verwerkingsregels.
+<td>De Analytics-contextgegevens van media worden automatisch ingevuld met geïndexeerde variabelen. Toewijzing aan eVars, props en gebeurtenissen die ik niet meer nodig heb in de implementatiecode. De klanten kunnen contextdata aan variabelen in kaart brengen gebruikend verwerkingsregels.
 </td>
 </tr>
 <tr>
@@ -142,7 +142,7 @@ s.Media.trackEvents =
 </th>
 <th>Media Analytics
 </th>
-<th>Syntaxis voor medianalyse
+<th>Analytics-syntaxis voor media
 </th>
 </tr>
 </thead>
@@ -315,7 +315,7 @@ s.Media.
 </th>
 <th>Media Analytics
 </th>
-<th>Syntaxis voor medianalyse
+<th>Analytics-syntaxis voor media
 </th>
 </tr>
 </thead>
@@ -362,7 +362,7 @@ s.Media.
 </td>
 <td>N.v.t.
 </td>
-<td>Media Analytics is ingesteld op 1 seconde voor advertenties. Er zijn geen andere opties beschikbaar.
+<td>Media Analytics wordt ingesteld op 1 seconde voor advertenties. Er zijn geen andere opties beschikbaar.
 </td>
 </tr>
 <tr>
@@ -409,7 +409,7 @@ s.Media.
 </th>
 <th>Media Analytics
 </th>
-<th>Syntaxis voor medianalyse
+<th>Analytics-syntaxis voor media
 </th>
 </tr>
 </thead>
@@ -687,7 +687,7 @@ CPM
 </td>
 <td>N.v.t.
 </td>
-<td>Niet standaard beschikbaar in Media Analytics
+<td>Standaard niet beschikbaar in Media Analytics
 </td>
 </tr>
 <tr>
