@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 workflow-type: tm+mt
 source-wordcount: '877'
-ht-degree: 22%
+ht-degree: 32%
 
 ---
 
@@ -53,7 +53,8 @@ Media.trackUsingContextData
 </td>
 <td>
 <pre>
-s.Media.trackUsingContextData = true;
+s.Media.trackUsingContextData
+  = true;
 </pre>
 </td>
 <td>N.v.t.
@@ -153,7 +154,8 @@ Media.autoTrack
 </td>
 <td>
 <pre>
-s.Media.autoTrack = true;
+s.Media.autoTrack
+  = true;
 </pre>
 </td>
 <td>N.v.t.
@@ -168,7 +170,8 @@ Media.autoTrackNetStreams
 <td>
 <pre>
 s.Media.
-  autoTrackNetStreams = true
+  autoTrackNetStreams
+  = true
 </pre>
 </td>
 <td>N.v.t.
@@ -183,7 +186,8 @@ Media.completeByCloseOffset
 <td>
 <pre>
 s.Media.
-  completeByCloseOffset = true
+  completeByCloseOffset
+  = true
 </pre>
 </td>
 <td>N.v.t.
@@ -198,7 +202,8 @@ Media.completeCloseOffsetThreshold
 <td>
 <pre>
 s.Media.
-  completeCloseOffsetThreshold = 1
+  completeCloseOffsetThreshold
+  = 1
 </pre>
 </td>
 <td>N.v.t.
@@ -212,7 +217,8 @@ Media.playerName
 </td>
 <td>
 <pre>
-s.Media.playerName = "Naam van aangepaste speler"
+s.Media.playerName
+  = "Custom Player Name"
 </pre>
 </td>
 <td>
@@ -221,7 +227,7 @@ API-sleutel: media.playerName
 </td>
 <td>
 <pre>
-MediaHeartboneConfig.
+MediaHeartbeatConfig.
   playerName
 </pre>
 </p>
@@ -234,7 +240,8 @@ Media.trackSeconds
 <td>
 <pre>
 s.Media.
-  trackSeconds = 15
+  trackSeconds
+  = 15
 </pre>
 </td>
 <td>N.v.t.
@@ -249,7 +256,8 @@ Media.trackMilestones
 <td>
 <pre>
 s.Media.
-  trackMijlpalen = "25,50,75";
+  trackMilestones
+  = "25,50,75";
 </pre>
 </td>
 <td>N.v.t.
@@ -264,7 +272,8 @@ Media.trackOffsetMilestones
 <td>
 <pre>
 s.Media.
-  trackOffsetMilestone = "20,40,60";
+  trackOffsetMilestones
+  = "20,40,60";
 </pre>
 </td>
 <td>N.v.t.
@@ -278,7 +287,8 @@ Media.segmentByMilestones
 </td>
 <td>
 <pre>
-s.Media.segmentByMijlpalen = true;
+s.Media.segmentByMilestones
+  = true;
 </pre>
 </td>
 <td>N.v.t.
@@ -293,7 +303,8 @@ Media.segmentByOffsetMilestones
 <td>
 <pre>
 s.Media.
-  segmentByOffsetMilestone = true;
+  segmentByOffsetMilestones
+  = true;
 </pre>
 </td>
 <td>N.v.t.
@@ -327,7 +338,8 @@ Media.adTrackSeconds
 <td>
 <pre>
 s.Media.
-  adTrackSeconds = 15
+  adTrackSeconds
+  = 15
 </pre>
 </td>
 <td>N.v.t.
@@ -342,7 +354,8 @@ Media.adTrackMilestones
 <td>
 <pre>
 s.Media.
-  adTrackMijlpalen = "25,50,75";
+  adTrackMilestones
+  = "25,50,75";
 </pre>
 </td>
 <td>N.v.t.
@@ -357,7 +370,8 @@ Media.adTrackOffsetMilestones
 <td>
 <pre>
 s.Media.
-  adTrackOffsetMijlpalen = "20,40,60";
+  adTrackOffsetMilestones
+  = "20,40,60";
 </pre>
 </td>
 <td>N.v.t.
@@ -372,7 +386,8 @@ Media.adSegmentByMilestones
 <td>
 <pre>
 s.Media.
-  adSegmentByMilestone = true;
+  adSegmentByMilestones
+  = true;
 </pre>
 </td>
 <td>N.v.t.
@@ -387,7 +402,8 @@ Media.adSegmentByOffsetMilestones
 <td>
 <pre>
 s.Media.
-  adSegmentByOffsetMilestone = true;
+  adSegmentByOffsetMilestones
+  = true;
 </pre>
 </td>
 <td>N.v.t.
@@ -441,7 +457,7 @@ trackSessionStart(
 </tr>
 <tr>
 <td>
-mediaName - (Vereist) de naam van de video aangezien u het in videorapporten wilt verschijnen.
+mediaName - (Vereist) De naam van de video zoals u deze wilt weergeven in videorapporten.
 </td>
 <td>
 <pre>
@@ -465,7 +481,7 @@ createMediaObject(
 </tr>
 <tr>
 <td>
-mediaLength - (Vereist) de lengte van de video in seconden.
+mediaLength - (Vereist) De lengte van de video in seconden.
 </td>
 <td>
 <pre>
@@ -503,7 +519,7 @@ playerName
 </td>
 <td>
 <pre>
-MediaHeartboneConfig.
+MediaHeartbeatConfig.
   playerName
 </pre>
 </td>
@@ -548,7 +564,7 @@ trackEvent(
 </tr>
 <tr>
 <td>
-name - (Required) De naam of identiteitskaart van de advertentie.
+name - (Vereist) De naam of id van de advertentie.
 </td>
 <td>
 <pre>
@@ -572,7 +588,8 @@ createAdObject(
 </tr>
 <tr>
 <td>
-length(Vereist) De lengte van de advertentie.
+length
+(Vereist) De lengte van de advertentie.
 </td>
 <td>
 <pre>
@@ -610,7 +627,7 @@ playerName
 </td>
 <td>
 <pre>
-MediaHeartboneConfig.
+MediaHeartbeatConfig.
   playerName
 </pre>
 </td>
@@ -640,7 +657,7 @@ parentPod
 </td>
 <td>
 <pre>
-positie
+position
 </pre>
 </td>
 <td>
@@ -654,7 +671,7 @@ createAdBreakObject(
 </tr>
 <tr>
 <td>
-parentPodPosition - De positie binnen de pod waar de advertentie wordt afgespeeld.
+parentPodPosition - De positie in de pod waar de advertentie wordt afgespeeld.
 </td>
 <td>
 <pre>
@@ -663,7 +680,7 @@ parentPodPosition
 </td>
 <td>
 <pre>
-positie
+position
 </pre>
 </td>
 <td>
@@ -678,7 +695,8 @@ createAdObject(
 </tr>
 <tr>
 <td>
-CPMTthe CPM of encrypted CPM (gefixeerd met "~") die op deze playback van toepassing is.
+CPM
+CPM of gecodeerde CPM (vooraf bevestigd met "~") die op deze playback van toepassing is.
 </td>
 <td>
 <pre>
@@ -696,7 +714,9 @@ Media.click
 </td>
 <td>
 <pre>
-s.Media.click( naam, verschuiving)
+s.Media.click(
+  name,
+  offset)
 </pre>
 </td>
 <td>N.v.t.
@@ -710,7 +730,8 @@ Media.close
 </td>
 <td>
 <pre>
-s.Media.close( mediaName)
+s.Media.close(
+  mediaName)
 </pre>
 </td>
 <td>
@@ -781,7 +802,9 @@ Media.stop
 </td>
 <td>
 <pre>
-s.Media.stop( mediaName, mediaOffset)
+s.Media.stop(
+  mediaName,
+  mediaOffset)
 </pre>
 </td>
 <td>
@@ -864,7 +887,8 @@ Media.track
 </td>
 <td>
 <pre>
-s.Media.track( mediaName)
+s.Media.track(
+  mediaName)
 </pre>
 </td>
 <td>N.v.t.
