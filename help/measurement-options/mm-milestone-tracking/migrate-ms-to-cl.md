@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 workflow-type: tm+mt
 source-wordcount: '908'
-ht-degree: 33%
+ht-degree: 41%
 
 ---
 
@@ -98,7 +98,8 @@ Media.trackUsingContextData
 <td>
 <pre>
 s.Media.
-  trackUsingContextData = true;
+  trackUsingContextData 
+  = true;
 </pre>
 </td>
 <td>
@@ -203,7 +204,8 @@ linkTrackEvents
 </td>
 <td>
 <pre>
-s.linkTrackEvents = 'event2';
+s.linkTrackEvents
+  = 'event2';
 </pre>
 </td>
 </tr>
@@ -231,7 +233,8 @@ Media.trackUsingContextData
 <td>
 <pre>
 s.Media.
-  trackUsingContextData = true;
+  trackUsingContextData 
+  = true;
 </pre>
 </td>
 <td>
@@ -328,7 +331,8 @@ linkTrackEvents
 </td>
 <td>
 <pre>
-s.linkTrackEvents = 'event2';
+s.linkTrackEvents
+  = 'event2';
 </pre>
 </td>
 </tr>
@@ -357,7 +361,8 @@ Media.autoTrack
 </td>
 <td>
 <pre>
-s.Media.autoTrack = true;
+s.Media.autoTrack
+  = true;
 </pre>
 </td>
 <td>N.v.t.
@@ -371,7 +376,8 @@ Media.autoTrackNetStreams
 </td>
 <td>
 <pre>
-s.Media.autoTrackNetStreams = true
+s.Media.autoTrackNetStreams
+  = true
 </pre>
 </td>
 <td>N.v.t.
@@ -385,7 +391,8 @@ Media.completeByCloseOffset
 </td>
 <td>
 <pre>
-s.Media.completeByCloseOffset = true
+s.Media.completeByCloseOffset
+  = true
 </pre>
 </td>
 <td>N.v.t.
@@ -400,7 +407,8 @@ Media.completeCloseOffsetThreshold
 <td>
 <pre>
 s.Media.
-  completeCloseOffsetThreshold = 1
+  completeCloseOffsetThreshold
+    = 1
 </pre>
 </td>
 <td>N.v.t.
@@ -414,7 +422,8 @@ Media.playerName
 </td>
 <td>
 <pre>
-s.Media.playerName = "Naam van aangepaste speler"
+s.Media.playerName 
+  = "Custom Player Name"
 </pre>
 </td>
 <td>
@@ -422,7 +431,8 @@ Variabele voor eVar- of contextgegevens instellen in koppelingsaanroep
 </td>
 <td>
 <pre>
-s.contextData['video.player'] ="Naam CustomPlayer";
+s.contextData['video.player']
+  = ”CustomPlayer Name”;
 </pre>
 </td>
 </tr>
@@ -446,7 +456,8 @@ Media.trackMilestones
 </td>
 <td>
 <pre>
-s.Media.trackMijlpalen = "25,50,75";
+s.Media.trackMilestones 
+  = "25,50,75";
 </pre>
 </td>
 <td>N.v.t.
@@ -460,7 +471,8 @@ Media.trackOffsetMilestones
 </td>
 <td>
 <pre>
-s.Media.trackOffsetMijlpalen = "20,40,60";
+s.Media.trackOffsetMilestones 
+  = "20,40,60";
 </pre>
 </td>
 <td>N.v.t.
@@ -474,7 +486,8 @@ Media.segmentByMilestones
 </td>
 <td>
 <pre>
-s.Media.segmentByMijlpalen = true;
+s.Media.segmentByMilestones
+  = true;
 </pre>
 </td>
 <td>N.v.t.
@@ -489,7 +502,8 @@ Media.segmentByOffsetMilestones
 <td>
 <pre>
 s.Media.
-  segmentByOffsetMilestone = true;
+  segmentByOffsetMilestones
+    = true;
 </pre>
 </td>
 <td>N.v.t.
@@ -522,7 +536,8 @@ Media.adTrackSeconds
 </td>
 <td>
 <pre>
-s.Media.adTrackSeconds = 15 
+s.Media.adTrackSeconds 
+  = 15 
 </pre>
 </td>
 <td>N.v.t.
@@ -536,7 +551,8 @@ Media.adTrackMilestones
 </td>
 <td>
 <pre>
-s.Media.adTrackMijlpalen = "25,50,75";
+s.Media.adTrackMilestones 
+  = "25,50,75";
 </pre>
 </td>
 <td>N.v.t.
@@ -551,7 +567,8 @@ Media.adTrackOffsetMilestones
 <td>
 <pre>
 s.Media.
-  adTrackOffsetMijlpalen = "20,40,60";
+  adTrackOffsetMilestones 
+    = "20,40,60";
 </pre>
 </td>
 <td>N.v.t.
@@ -566,7 +583,8 @@ Media.adSegmentByMilestones
 <td>
 <pre>
 s.Media.
-  adSegmentByMilestone = true;
+  adSegmentByMilestones
+    = true;
 </pre>
 </td>
 <td>N.v.t.
@@ -581,7 +599,8 @@ Media.adSegmentByOffsetMilestones
 <td>
 <pre>
 s.Media.
-  adSegmentByOffsetMilestone = true;
+  adSegmentByOffsetMilestones
+    = true;
 </pre>
 </td>
 <td>N.v.t.
@@ -674,7 +693,8 @@ Variabele voor eVar- of contextgegevens instellen in koppelingsaanroep
 </td>
 <td>
 <pre>
-s.contextData['video.length'] ="90";
+s.contextData['video.length']
+  = ”90”;
 </pre>
 </td>
 </tr>
@@ -690,7 +710,8 @@ Variabele voor eVar- of contextgegevens instellen in koppelingsaanroep
 </td>
 <td>
 <pre>
-s.contextData['video.player'] ="Naam CustomPlayer";
+s.contextData['video.player']
+  = ”CustomPlayer Name”;
 </pre>
 </td>
 </tr>
@@ -798,7 +819,7 @@ Media.click
 </td>
 <td>
 <pre>
-s.Media.click(naam, verschuiving)
+s.Media.click(name, offset)
 </pre>
 </td>
 <td>
@@ -894,7 +915,9 @@ Media.stop
 </td>
 <td>
 <pre>
-s.Media.stop( mediaName, mediaOffset)
+s.Media.stop(
+  mediaName,
+  mediaOffset)
 </pre>
 </td>
 <td>N.v.t. 
