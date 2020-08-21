@@ -1,9 +1,12 @@
 ---
 title: Tracking in SceneGraph (Roku)
-description: Het volgen media met het Roku SceneGraph het programmeringskader van XML.
+description: Het volgen media met het Roku SceneGraph de programmeringskader van XML.
 uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
 translation-type: tm+mt
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 305f97d6d1350a3bb8b0ad9c4c58e0a5fefca045
+workflow-type: tm+mt
+source-wordcount: '1171'
+ht-degree: 1%
 
 ---
 
@@ -12,102 +15,102 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## Inleiding {#introduction}
 
-Roku heeft een nieuw programmeringskader voor het ontwikkelen van toepassingen geïntroduceerd: het SceneGraph XML programmeringskader. Dit nieuwe kader heeft twee nieuwe sleutelconcepten:
+Roku heeft een nieuw programmeringskader voor de ontwikkeling van toepassingen geïntroduceerd: het SceneGraph de programmeringskader van XML. Dit nieuwe kader omvat twee nieuwe zeer belangrijke concepten:
 
-* SceneGraph-rendering van de toepassingsschermen
+* SceneGraph die van de toepassingsschermen teruggeven
 * De configuratie van XML van de schermen SceneGraph
 
-De Adobe Mobile SDK voor Roku is geschreven in BrightScript. De SDK gebruikt veel componenten die niet beschikbaar zijn voor een toepassing die op SceneGraph wordt uitgevoerd (bijvoorbeeld threads). Daarom kan een ontwikkelaar van de Roku-app die het SceneGraph-framework wil gebruiken, geen API&#39;s van Adobe Mobile SDK aanroepen (deze laatste API&#39;s zijn vergelijkbaar met de API&#39;s die beschikbaar zijn in oudere BrightScript-toepassingen).
+Adobe Mobile SDK voor Roku wordt geschreven in BrightScript. SDK gebruikt vele componenten die niet beschikbaar voor app zijn die op SceneGraph (bijvoorbeeld, draden) lopen. Daarom kan een Roku app ontwikkelaar die van plan is om het kader te gebruiken SceneGraph geen Adobe Mobile SDK APIs (de laatstgenoemde zijn gelijkaardig aan die beschikbaar in erfenisBrightScript apps) roepen.
 
 ## Architectuur {#architecture}
 
-Om SceneGraph-ondersteuning toe te voegen aan de AdobeMobile SDK, heeft Adobe een nieuwe API toegevoegd die een verbindingsbrug tussen de SDK van AdobeMobile en `adbmobileTask`. Het laatste is een SceneGraph-knooppunt dat wordt gebruikt voor de API-uitvoering van de SDK. (Het gebruik van `adbmobileTask` wordt in de rest van dit document uitgebreid uitgelegd.)
+Om steun SceneGraph aan AdobeMobile SDK toe te voegen, heeft Adobe nieuwe API toegevoegd die tot een schakelaarbrug tussen AdobeMobile SDK en leidt `adbmobileTask`. Het laatstgenoemde is een knoop SceneGraph die voor de API van SDK uitvoering wordt gebruikt. (Gebruik van `adbmobileTask` wordt in de rest van dit document uitvoerig toegelicht.)
 
 De verbindingsbrug is ontworpen om als volgt te presteren:
 
-* De bridge retourneert een instantie die compatibel is met SceneGraph van de Adobe Mobile SDK. De SceneGraph-compatibele SDK heeft alle APIs die erfenis SDK blootstelt.
-* U gebruikt AdobeMobile SDK APIs in SceneGraph op een zeer gelijkaardige manier als hoe u verouderde APIs gebruikte.
-* De brug stelt ook een mechanisme bloot om naar callbacks voor APIs te luisteren die sommige gegevens terugkeren.
+* De brug keert een SceneGraph-Compatibele instantie van AdobeMobile SDK terug. SceneGraph-Compatibele SDK heeft alle APIs die de erfenis SDK blootstelt.
+* U gebruikt AdobeMobile SDK APIs in SceneGraph op een zeer gelijkaardige manier aan hoe u de erfenis APIs gebruikte.
+* De brug stelt ook een mechanisme bloot om callbacks voor APIs te letten die sommige gegevens terugkeren.
 
 ![](assets/SceneGraph_arch.png)
 
-## Componenten {#components}
+## Onderdelen {#components}
 
 **SceneGraph-toepassing:**
 
-* Verbruikt APIs via SceneGraph schakelaarbrug APIs. `AdobeMobileLibrary`
-* Registreert voor reactiecallbacks op `adbmobileTask` verwachte variabelen van outputgegevens.
+* Consumenten `AdobeMobileLibrary` APIs via de SceneGraph schakelaarbrug APIs.
+* Registers voor terugbellen op reacties `adbmobileTask` voor de variabelen voor verwachte outputgegevens.
 
 **AdobeMobileLibrary:**
 
-* Stelt een reeks openbare APIs (Verouderd), met inbegrip van de schakelaarbrug API bloot.
-* Retourneert een SceneGraph-connectorinstantie die alle oudere openbare API&#39;s omvat.
-* Communiceert met een knoop `adbmobileTask` SceneGraph voor uitvoering van APIs.
+* Stelt een reeks openbare APIs (Erfenis), met inbegrip van de schakelaarbrug API bloot.
+* Keert een SceneGraph schakelaarinstantie terug die al erfenis openbare APIs verpakt.
+* Communiceert met een `adbmobileTask` De knoop SceneGraph voor uitvoering van APIs.
 
 **adbmobileTask Node:**
 
-* Een SceneGraph taakknoop die APIs op een achtergronddraad uitvoert. `AdobeMobileLibrary`
-* Fungeert als afgevaardigde om gegevens terug te sturen naar toepassingsscènes.
+* Een SceneGraph taakknoop die uitvoert `AdobeMobileLibrary` APIs op een achtergronddraad.
+* Dient als afgevaardigde om gegevens terug naar toepassingsscènes terug te keren.
 
-## Public SceneGraph-API&#39;s {#public-scenegraph-apis}
+## Public SceneGraph APIs {#public-scenegraph-apis}
 
 ### ADBMobileConnector
 
 | Categorie | Naam methode | Beschrijving |
 |---|---|---|
 | **Constanten** |  |  |
-|  | `sceneGraphConstants` | Retourneert een object dat het bevat `SceneGraphConstants`. Zie de bovenstaande tabel voor meer informatie. |
+|  | `sceneGraphConstants` | Keert een voorwerp terug dat bevat `SceneGraphConstants`. Raadpleeg de tabel hierboven voor meer informatie. |
 |  |  |  |
-| **Foutopsporingsregistratie** |  |  |
+| **Foutopsporing** |  |  |
 |  | `setDebugLogging` | SceneGraph API om te plaatsen zuivert het registreren op ADBMobile SDK. |
-|  | `getDebugLogging` | SceneGraph API om te krijgen zuivert registreren van ADBMobile SDK. |
-|  | Voor meer informatie verwijs naar de Debug Logging sectie van erfenisSDK. |  |
+|  | `getDebugLogging` | SceneGraph API om te krijgen zuiveren registreren van ADBMobile SDK. |
+|  | Voor meer informatie verwijs naar de Debug het Registreren sectie van de erfenis SDK. |  |
 |  |  |  |
-| **Privacystatus / Uitschakelen** |  |  |
+| **Privacystatus / opt-out** |  |  |
 |  | `setPrivacyStatus` | SceneGraph API om privacystatus op ADBMobile SDK te plaatsen. |
 |  | `getPrivacyStatus` | SceneGraph API om privacystatus van ADBMobile SDK te krijgen. |
-|  | Raadpleeg het gedeelte Opt-Out/Privacy Status van de verouderde SDK voor meer informatie. |  |
+|  | Voor meer informatie, verwijs naar de Opt-uit/de sectie van de Status van de Privacy van de erfenis SDK. |  |
 |  |  |  |
-| **Analyse** |  |  |
+| **Analytics**   |  |  |
 |  | `trackState` | SceneGraph API aan spoorstaat op ADBMobile SDK. |
-|  | `trackAction` | SceneGraph API om actie op ADBMobile SDK te volgen. |
-|  | `trackingIdentifier` | SceneGraph API om een volgende herkenningsteken van ADBMobile SDK te krijgen. |
+|  | `trackAction` | SceneGraph API aan spooractie op ADBMobile SDK. |
+|  | `trackingIdentifier` | SceneGraph API om een volgend herkenningsteken van ADBMobile SDK te krijgen. |
 |  | `userIdentifier` | SceneGraph API om een gebruikersidentificatie van ADBMobile SDK te krijgen. |
 |  | `setUserIdentifier` | SceneGraph API om het gebruikersherkenningsteken op ADBMobile SDK te plaatsen. |
 |  | `getAllIdentifiers` | SceneGraph API wint alle die gebruikersidentiteiten terug door Roku SDK worden gekend en worden voortgeduurd. |
-|  | Raadpleeg de sectie Analytics van de verouderde SDK voor meer informatie. |  |
+|  | Voor meer informatie verwijs naar de sectie van de Analyse van de erfenis SDK. |  |
 |  |  |  |
-| **Experience Cloud** |  |  |
-|  | `visitorSyncIdentifiers` | SceneGraph-API voor synchronisatie van Experience Cloud-id&#39;s op de ADBMobile-SDK. |
-|  | `visitorMarketingCloudID` | SceneGraph-API voor bezoekers die de Cloud-id van de ADBMobile-SDK kunnen ophalen. |
-|  | Raadpleeg de sectie Experience Cloud van de verouderde SDK voor meer informatie. |  |
+| **Ervaar Cloud** |  |  |
+|  | `visitorSyncIdentifiers` | SceneGraph API aan de herkenningstekens van de Wolk van de synchronisatieervaring op ADBMobile SDK. |
+|  | `visitorMarketingCloudID` | SceneGraph API om identiteitskaart van de Wolk van de Ervaring van de Bezoeker van ADBMobile SDK te krijgen. |
+|  | Voor meer informatie verwijs naar de sectie van de Wolk van de Ervaring van de erfenis SDK. |  |
 |  |  |  |
-| **Auditiebeheer** |  |  |
+| **Audience Manager** |  |  |
 |  | `audienceSubmitSignal` | SceneGraph API om een signaal van het publieksbeheer met eigenschap te verzenden. |
-|  | `audienceVisitorProfile` | SceneGraph-API om een bezoekersprofiel van de publieksmanager op te halen van de ADBMobile-SDK. |
-|  | `audienceDpid` | SceneGraph API om een publiekDpid van ADBMobile SDK te krijgen. |
+|  | `audienceVisitorProfile` | SceneGraph API om een de bezoekersprofiel van de publieksmanager van ADBMobile SDK te krijgen. |
+|  | `audienceDpid` | SceneGraph API om een publiek Dpid van ADBMobile SDK te krijgen. |
 |  | `audienceDpuuid` | SceneGraph API om een publiek Dpuuid van ADBMobile SDK te krijgen. |
 |  | `audienceSetDpidAndDpuuid` | SceneGraph API om publiek Dpid en Dpuuid op ADBMobile SDK te plaatsen. |
-|  | Raadpleeg de sectie Audience Manager van de verouderde SDK voor meer informatie. |  |
+|  | Voor meer informatie verwijs naar de sectie van de Manager van het Publiek van de erfenis SDK. |  |
 |  |  |  |
-| **MediaHeartbone** |  |  |
-|  | `mediaTrackLoad` | SceneGraph-API om video-inhoud te laden voor MediaHeartbone-tracking. |
-|  | mediaTrackStart | SceneGraph-API om een sessie voor het bijhouden van video te starten met MediaHeartbone. |
-|  | `mediaTrackUnload` | SceneGraph-API om video-inhoud van MediaHeartbone-tracking te verwijderen. |
-|  | `mediaTrackPlay` | SceneGraph-API om het afspelen van video-inhoud te volgen. |
-|  | mediaTrackPause | SceneGraph-API om gepauzeerde video-inhoud bij te houden. |
-|  | `mediaTrackComplete` | SceneGraph-API om het afspelen van video-inhoud te volgen. |
+| **MediaHeartbeat** |  |  |
+|  | `mediaTrackLoad` | SceneGraph API om videoinhoud voor het volgen MediaHeartbeat te laden. |
+|  | mediaTrackStart | SceneGraph API om video het volgen zitting te beginnen gebruikend MediaHeartbeat. |
+|  | `mediaTrackUnload` | SceneGraph API om videoinhoud van MediaHeartbeat het volgen los te laden. |
+|  | `mediaTrackPlay` | SceneGraph API om playback van videoinhoud te volgen. |
+|  | mediaTrackPauze | SceneGraph API om gepauzeerde videoinhoud te volgen. |
+|  | `mediaTrackComplete` | SceneGraph API om playback volledig voor videoinhoud te volgen. |
 |  | `mediaTrackError` | SceneGraph API om playbackfouten te volgen. |
-|  | mediaTrackEvent | SceneGraph API om playbackgebeurtenissen tijdens het volgen te volgen. Bijvoorbeeld: Advertenties, hoofdstukken. |
-|  | `mediaUpdatePlayhead` | SceneGraph API om playhead updates naar MediaHeartbone tijdens video het volgen te verzenden. |
-|  | `mediaUpdateQoS` | SceneGraph API om updates QoS naar MediaHeartbone tijdens video het volgen te verzenden. |
-|  | Voor meer informatie verwijs naar de MediaHeartmaatsectie van erfenisSDK. |  |
+|  | mediaTrackEvent | SceneGraph API om playbackgebeurtenissen tijdens het volgen te volgen. Bijvoorbeeld: Advertentie, hoofdstukken. |
+|  | `mediaUpdatePlayhead` | SceneGraph API om playhead updates naar MediaHeartbeat tijdens video het volgen te verzenden. |
+|  | `mediaUpdateQoS` | SceneGraph API om updates QoS naar MediaHeartbeat tijdens video het volgen te verzenden. |
+|  | Voor meer informatie verwijs naar de sectie MediaHeartbeat van de erfenis SDK. |  |
 
 ### SceneGraphConstants
 
-| Naam van constante | Beschrijving |
+| Constante naam | Beschrijving |
 |---|---|
-| `API_RESPONSE` | Wordt gebruikt om het reactieobject op te halen uit het `adbmobileTask` veld van het `adbmobileApiResponse` knooppunt |
+| `API_RESPONSE` | Gebruikt om het reactievoorwerp van terug te winnen `adbmobileTask` knooppunten `adbmobileApiResponse` gebied |
 | `DEBUG_LOGGING` | Gebruikt als `apiName` voor `getDebugLogging` |
 | `PRIVACY_STATUS` | Gebruikt als `apiName` voor `getPrivacyStatus` |
 | `TRACKING_IDENTIFIER` | Gebruikt als `apiName` voor `trackingIdentifier` |
@@ -130,29 +133,27 @@ De verbindingsbrug is ontworpen om als volgt te presteren:
 <td> adbmobileApiCall </td>
 <td> assocarray </td>
 <td> Ongeldig </td>
-<td> Wijzig dit veld NIET of laat dit door de toepassing worden gebruikt. Dit gebied wordt gebruikt door ADBMobile SceneGraphConnector om API vraag via knopen te leiden SceneGraph en reacties te halen. Daarom is deze sleutel/het gebied gereserveerd voor AdobeMobileSDK voor verenigbaarheid SceneGraph. <b>Belangrijk:</b> Wijzigingen in dit veld kunnen ertoe leiden dat AdobeMobileSDK niet correct werkt.</td>
+<td> Wijzig dit veld NIET of laat het door de toepassing worden gebruikt. Dit gebied wordt gebruikt door ADBMobile SceneGraphConnector aan route API vraag via knopen SceneGraph en om reacties te halen. Daarom is deze sleutel/het gebied gereserveerd voor AdobeMobileSDK voor verenigbaarheid SceneGraph. <b>Belangrijk:</b> Om het even welke wijzigingen aan dit gebied kunnen in verkeerd werkend AdobeMobileSDK resulteren.</td>
 </tr>
 <tr>
 <td> adbmobileApiResponse </td>
 <td> assocarray </td>
 <td> Ongeldig </td>
-<td> Alleen-lezen Alle API's die op AdobeMobileSDK worden uitgevoerd, retourneren reacties in dit veld. Registreer u voor een callback om te luisteren naar updates voor dit veld om reactieobjecten te ontvangen. Hier volgt de indeling voor het reactieobject:  
-<codeblock>
-response = { "apiName" : &lt;SceneGraphConstants.
-               API_NAME&gt; "returnValue: &lt;API_RESPONSE&gt; } 
-</codeblock>
-Een instantie van dit reactieobject wordt verzonden voor elke API-aanroep op AdobeMobileSDK die een waarde retourneert volgens de API-naslaggids. Een API-aanroep voor bezoekerMarketingCloudID() retourneert bijvoorbeeld het volgende reactieobject: 
-<codeblock>
-response = { "apiName" : m.
-              adbmobileConstants.
-              VISITOR_MARKETING_CLOUD_ID "returnValue: "07050x25671x33760x72644x14" } 
-</codeblock>
-OR, kunnen de reactiegegevens ook ongeldig zijn: 
-<codeblock>
-response = { "apiName" : m.
-              adbmobileConstants.
-              VISITOR_MARKETING_CLOUD_ID "returnValue: invalid } 
-</codeblock>
+<td> Alleen-lezen Alle API's die worden uitgevoerd op AdobeMobileSDK zullen reacties op dit veld teruggeven. Register voor een callback om updates aan dit gebied te luisteren om reactievoorwerpen te ontvangen. Na is het formaat voor het reactievoorwerp:  
+<pre>
+respons = { "apiName" : &lt;scenegraphconstants.&gt;
+               API_NAME&gt; "returnValue: &lt;api_response&gt; 
+}</pre>
+Een geval van dit reactievoorwerp zal voor om het even welke API vraag op AdobeMobileSDK worden verzonden die om een waarde volgens de API verwijzingsgids zou moeten terugkeren. Bijvoorbeeld, zal een API vraag naar bezoekorMarketingCloudID () het volgende reactievoorwerp terugkeren: 
+<pre>
+respons = { "apiName" : m. adbmobileConstants.
+              VISITOR_MARKETING_CLOUD_ID "returnValue: "07050x25671x33760x72644x14"} 
+</pre>
+OF, kunnen de antwoordgegevens ook ongeldig zijn: 
+<pre>
+respons = { "apiName" : m. adbmobileConstants.
+              VISITOR_MARKETING_CLOUD_ID "returnValue: ongeldig} 
+</pre>
 </td>
 </tr>
 </tbody>
@@ -163,51 +164,53 @@ response = { "apiName" : m.
 #### `getADBMobileConnectorInstance`
 
 API-handtekening: `ADBMobile().getADBMobileConnectorInstance()`\
-Invoer: `adbmobileTask`Retourtype: `ADBMobileConnector`
+Invoer: `adbmobileTask`
+Retourtype: `ADBMobileConnector`
 
 #### `sgConstants`
 
-API-handtekening: `ADBMobile().sgConstants()`Invoer: Geen\
-Retourneringstype: `SceneGraphConstants`
+API-handtekening: `ADBMobile().sgConstants()`
+Invoer: Geen\
+Retourtype: `SceneGraphConstants`
 
 >[!NOTE]
->Raadpleeg de API- `ADBMobileConnector` referentie voor meer informatie.
+>Verwijs naar `ADBMobileConnector` API-referentie voor details.
 
-### ADBMobile-constanten
+### ADBMobile Constanten
 
-|  Functie | Naam van constante | Beschrijving |
+|  Functie  | Constante naam | Beschrijving   |
 |---|---|---|
-| Versioning | `version` | Constante voor het ophalen van AdobeMobileLibrary-versiegegevens |
+| Versioning | `version` | Constante voor het herstellen van de versie info van AdobeMobileLibrary |
 | Privacy/opt-out | `PRIVACY_STATUS_OPT_IN` | Constante voor privacystatus gekozen in |
-|  | `PRIVACY_STATUS_OPT_OUT` | Constante voor privacystatus uitgeschakeld |
-| MediaHeartbone-constanten | Raadpleeg de constanten op deze pagina: Hartslagmethoden <br/><br/>[voor media.](/help/sdk-implement/track-av-playback/track-core/track-core-roku.md) | Deze constanten gebruiken met MediaHeartbone-API&#39;s |
-| Standaardmetagegevens | Raadpleeg de constanten op deze pagina: Parameters <br/><br/>[van standaardmetagegevens.](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md) | Gebruik deze constanten om standaard video-/advertentiemetagegevens toe te voegen in MediaHeartbone-API&#39;s |
+|  | `PRIVACY_STATUS_OPT_OUT` | Constante voor privacystatus uitgekozen |
+| MediaHeartbeat Constanten | Verwijs naar de constanten op deze pagina: <br/><br/>[Mediahartslagmethoden.](/help/sdk-implement/track-av-playback/track-core/track-core-roku.md) | Gebruik deze constanten met MediaHeartbeat APIs |
+| Standaardmetagegevens | Verwijs naar de constanten op deze pagina: <br/><br/>[Standaard metagegevensparameters.](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md) | Gebruik deze constanten om StandaardVideo/Ad meta-gegevens in MediaHeartbeat APIs vast te maken |
 
-Globaal bepaalde nut API `MediaHeartbeat` &#39;s op erfenis AdobeMobileLibrary zijn toegankelijk *zoals in het milieu SceneGraph is* omdat zij geen componenten van Brightscript gebruiken die niet beschikbaar in knopen SceneGraph zijn. Zie de onderstaande tabel voor meer informatie over deze methoden:
+Globaal bepaald nut `MediaHeartbeat` APIs op de erfenis AdobeMobileLibrary is toegankelijk *zoals* in het milieu SceneGraph omdat zij geen componenten gebruiken van het Helderscript die in knopen SceneGraph niet beschikbaar zijn. Voor meer informatie over deze methodes, verwijs naar de hieronder lijst:
 
-### Algemene methoden voor MediaHeartbeat
+### Globale Methodes voor MediaHeartbeat
 
 | Methode | Beschrijving |
 | --- | --- |
-| `adb_media_init_mediainfo` | Deze methode retourneert een geïnitialiseerd Media Information-object `Function adb_media_init_mediainfo(name As String, id As String, length As Double, streamType As String) As Object` |
-| `adb_media_init_adinfo` | Deze methode retourneert het geïnitialiseerde object AD Information `Function adb_media_init_adinfo(name As String, id As String, position As Double, length As Double) As Object` |
-| `adb_media_init_chapterinfo` | Deze methode retourneert het geïnitialiseerde object Chapter Information.  `Function adb_media_init_adbreakinfo(name As String, startTime as Double, position as Double) As Object` |
-| `adb_media_init_adbreakinfo` | Deze methode retourneert het geïnitialiseerde object AdBreak Information.  `Function adb_media_init_chapterinfo(name As String, position As Double, length As Double, startTime As Double) As Object` |
+| `adb_media_init_mediainfo` | Deze methode keert een geïnitialiseerd voorwerp van de Informatie van Media terug `Function adb_media_init_mediainfo(name As String, id As String, length As Double, streamType As String) As Object` |
+| `adb_media_init_adinfo` | Deze methode keert geïnitialiseerd Add voorwerp van de Informatie terug `Function adb_media_init_adinfo(name As String, id As String, position As Double, length As Double) As Object` |
+| `adb_media_init_chapterinfo` | Deze methode keert het geïnitialiseerde voorwerp van de Informatie van het Hoofdstuk terug.  `Function adb_media_init_adbreakinfo(name As String, startTime as Double, position as Double) As Object` |
+| `adb_media_init_adbreakinfo` | Deze methode keert geïnitialiseerd voorwerp van de Informatie AdBreak terug.  `Function adb_media_init_chapterinfo(name As String, position As Double, length As Double, startTime As Double) As Object` |
 | `adb_media_init_qosinfo` | Deze methode keert een geïnitialiseerd voorwerp van de Informatie QoS terug.  `Function adb_media_init_qosinfo(bitrate As Double, startupTime as Double, fps as Double, droppedFrames as Double) As Object` |
 
 ## Implementatie {#implementation}
 
-1. **Download de Roku-bibliotheek -** Download de [nieuwste Roku-bibliotheek.](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.2)
+1. **Download de Roku Library -** Download de [de nieuwste Roku-bibliotheek.](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.2)
 
-1. **Uw ontwikkelomgeving instellen**
+1. **Stel uw ontwikkelomgeving in**
 
-   1. Kopieer `adbmobile.brs` (AdobeMobileLibrary) naar uw `pkg:/source/` map.
+   1. Kopie `adbmobile.brs` (AdobeMobileLibrary) in uw `pkg:/source/` directory.
 
-   1. Voor de steun van de Grafiek van de Scène, kopieer `adbmobileTask.brs` en `adbMobileTask.xml` in uw `pkg:/components/` folder.
+   1. Voor de steun van de Grafiek van de Scène, exemplaar `adbmobileTask.brs` en `adbMobileTask.xml` in uw `pkg:/components/` directory.
 
 1. **Initialiseren**
 
-   1. Importeer `adbmobile.brs` in de scène.
+   1. Invoer `adbmobile.brs` in uw Scène.
 
       ```
       <script type="text/brightscript" uri="pkg:/source/adbmobile.brs" />
@@ -219,7 +222,7 @@ Globaal bepaalde nut API `MediaHeartbeat` &#39;s op erfenis AdobeMobileLibrary z
       m.adbmobileTask = createObject("roSGNode", "adbmobileTask")
       ```
 
-   1. Krijg een geval van `adbmobile` schakelaar voor SceneGraph gebruikend de `adbmobileTask` instantie.
+   1. Krijg een geval van `adbmobile` schakelaar voor SceneGraph die de `adbmobileTask` instantie.
 
       ```
       m.adbmobile = ADBMobile().getADBMobileConnectorInstance(m.adbmobileTask)
@@ -231,7 +234,7 @@ Globaal bepaalde nut API `MediaHeartbeat` &#39;s op erfenis AdobeMobileLibrary z
       m.adbmobileConstants = m.adbmobile.sceneGraphConstants()
       ```
 
-   1. Registreer een callback voor het ontvangen van reactievoorwerp voor alle `AdbMobile` API vraag.
+   1. Registreer een callback voor het ontvangen van reactievoorwerp voor allen `AdbMobile` API-oproepen.
 
       ```
       m.adbmobileTask.ObserveField(m.adbmobileConstants.API_RESPONSE,  
@@ -297,7 +300,7 @@ Globaal bepaalde nut API `MediaHeartbeat` &#39;s op erfenis AdobeMobileLibrary z
 
 ## Voorbeeldimplementatie {#sample-implementation}
 
-### Voorbeeld-API-aanroepen op verouderde SDK
+### De steekproef API roept op de Erfenis SDK
 
 ```
 'get an instance of SDK 
@@ -310,7 +313,7 @@ m.adbmobile.setDebugLogging(true)
 debugLogging = m.adbmobile.getDebugLogging()
 ```
 
-### Voorbeeld-API-aanroepen op SG SDK
+### De steekproef API roept SG SDK
 
 ```
 'create adbmobileTask instance 
