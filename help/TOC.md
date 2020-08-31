@@ -4,11 +4,11 @@ user-guide-title: Adobe Analytics voor audio en video
 user-guide-description: Implement Analytics on audio or video sources. Includes the Media SDK and the Media Collection API.
 product: adobe analytics
 sub-product: media-analytics
-translation-type: ht
-source-git-commit: ec64289694dde391b6a14634c9685e741790e552
-workflow-type: ht
-source-wordcount: '809'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 25920c9c01e67f9e5d969495a03f23fcf80d6493
+workflow-type: tm+mt
+source-wordcount: '826'
+ht-degree: 97%
 
 ---
 
@@ -214,6 +214,8 @@ ht-degree: 100%
       + [Media-daypart](media-reports/media-default-reports/media-reports-daypart.md)
       + [Gelijktijdige mediaviewers](media-reports/media-default-reports/media-concurrent-viewers.md)
       + [JSON-rapportdata voor gelijktijdige viewers ophalen](media-reports/media-default-reports/get-concurrent-json.md)
+   + Media Workspace-deelvensters {#media-workspace-panels}
+      + [deelvenster Mediagelijktijdige kijkers](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html)
    + [Sjablonen voor Media Workspace](media-reports/media-workspace-templates.md)
 + [Gedownloade content bijhouden](media-collection-api/track-downloaded-content.md)
 + [Federated Analytics](federated-analytics.md)
