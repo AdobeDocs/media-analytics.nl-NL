@@ -2,7 +2,7 @@
 title: Mediagelijktijdige rapportage
 description: Voor klanten van Media Analytics, laat het Medium Gelijktijdige Kijkers in Analysis Workspace u toe om gezamenlijke kijkers te analyseren om te begrijpen waar de piekgelijktijdig voorkwam of waar drop-outs voorkwamen.
 translation-type: tm+mt
-source-git-commit: 9c87109477518dd647b263edfa6bcf89be3e067d
+source-git-commit: 5d6f2c35f11b14222b704888a80e08e7217b33e9
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 5%
@@ -10,7 +10,7 @@ ht-degree: 5%
 ---
 
 
-# Mediagelijktijdige viewers rapporteren{#media-concurrent-viewers}
+# Mediagelijktijdige rapportage{#media-concurrent-viewers}
 
 >[!IMPORTANT]
 >
