@@ -8,7 +8,7 @@ translation-type: tm+mt
 source-git-commit: 126b54173b8b488e53fe27fbc99ad9e83fb2c078
 workflow-type: tm+mt
 source-wordcount: '816'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -62,7 +62,7 @@ ht-degree: 99%
             + [Buffer bijhouden in JavaScript 3.x](sdk-implement/track-av-playback/track-buffering/track-buffering-js/track-buffering-js3.md)
          + [Buffer bijhouden in Chromecast](sdk-implement/track-av-playback/track-buffering/track-buffering-chromecast.md)
          + [Buffer bijhouden in Roku](sdk-implement/track-av-playback/track-buffering/track-buffering-roku.md)
-      + Zoekopdrachten bijhouden{#track-seeking}
+      + Zoekopdrachten bijhouden {#track-seeking}
          + [Zoekopdrachten bijhouden in Android](sdk-implement/track-av-playback/track-seeking/track-seeking-android.md)
          + [Zoekopdrachten bijhouden in iOS](sdk-implement/track-av-playback/track-seeking/track-seeking-ios.md)
          + Zoekopdrachten bijhouden in JavaScript {#track-seeking-js}
@@ -214,9 +214,9 @@ ht-degree: 99%
       + [Media-daypart](media-reports/media-default-reports/media-reports-daypart.md)
       + [Gelijktijdige mediaviewers](media-reports/media-default-reports/media-concurrent-viewers.md)
       + [JSON-rapportdata voor gelijktijdige viewers ophalen](media-reports/media-default-reports/get-concurrent-json.md)
-   + Deelvensters in de werkruimte Media {#media-workspace-panels}
-      + [Deelvenster Mediagelijktijdige viewers](media-reports/media-workspace-panels/media-concurrent-viewers.md)
-   + [Sjablonen voor Media Workspace](media-reports/media-workspace-templates.md)
+   + Deelvensters voor Media-werkruimte {#media-workspace-panels}
+      + [Deelvenster voor gelijktijdige mediaviewers](media-reports/media-workspace-panels/media-concurrent-viewers.md)
+   + [Sjablonen voor Media-werkruimte](media-reports/media-workspace-templates.md)
 + [Gedownloade content bijhouden](media-collection-api/track-downloaded-content.md)
 + [Federated Analytics](federated-analytics.md)
 + Player-status bijhouden {#player-state-tracking}
