@@ -5,9 +5,9 @@ user-guide-description: Implement Analytics on audio or video sources. Includes 
 product: adobe analytics
 sub-product: media-analytics
 translation-type: tm+mt
-source-git-commit: cb54b862a0d4a179c499e3a28ab49301121de1bf
+source-git-commit: e93a39fb76c3ccca2c05e5d1590a53394e50b29b
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '818'
 ht-degree: 98%
 
 ---
@@ -213,11 +213,10 @@ ht-degree: 98%
       + [Details van media](media-reports/media-default-reports/media-reports-detail.md)
       + [Rapport Mediaoverdag](media-reports/media-default-reports/media-reports-daypart.md)
       + [Rapport Mediagelijktijdige viewers](media-reports/media-default-reports/media-concurrent-viewers.md)
-      + [JSON-rapportdata voor gelijktijdige viewers ophalen](media-reports/media-default-reports/get-concurrent-json20.md)
    + Deelvensters voor Media-werkruimte {#media-workspace-panels}
       + [Deelvenster voor gelijktijdige mediaviewers](media-reports/media-workspace-panels/media-concurrent-viewers.md)
    + [Sjablonen voor Media-werkruimte](media-reports/media-workspace-templates.md)
-   + [Gegevens van gelijktijdige viewers ophalen via API](https://www.adobe.io/apis/experiencecloud/analytics/docs.html)
+   + [Gegevens van gelijktijdige viewers ophalen via API](media-reports/media-default-reports/get-concurrent-json20.md)
 + [Gedownloade content bijhouden](media-collection-api/track-downloaded-content.md)
 + [Federated Analytics](federated-analytics.md)
 + Player-status bijhouden {#player-state-tracking}
