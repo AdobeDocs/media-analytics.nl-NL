@@ -3,9 +3,9 @@ title: Mediagelijktijdige viewers
 description: null
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
 translation-type: tm+mt
-source-git-commit: 420d17294f8f4b5c38d960e4e4ebd0b2ee80a60b
+source-git-commit: cb54b862a0d4a179c499e3a28ab49301121de1bf
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '267'
 ht-degree: 3%
 
 ---
@@ -16,8 +16,8 @@ ht-degree: 3%
 Op het dashboard Medium Gelijktijdige viewers worden gedurende één dag gelijktijdige viewers weergegeven. De gegevens kunnen worden gefilterd op inhoud, apparaattype of land.
 
 >[!TIP]
-> 
-> Tip: Dit rapport is gebaseerd op gelijktijdige actieve mediasessies.  Als u gelijktijdige viewers wilt zien door een unieke bezoeker, met de extra mogelijkheden om een segment toe te passen, op te delen en te vergelijken, gebruikt u de opdracht [Deelvenster Mediagelijktijdige viewers in Analysis Workspace](https://docs.adobe.com/content/help/nl-NL/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html).
+>
+> Dit rapport is gebaseerd op gelijktijdige actieve mediasessies.  Als u gelijktijdige viewers wilt zien door een unieke bezoeker, met de extra mogelijkheden om een segment toe te passen, op te delen en te vergelijken, gebruikt u de opdracht [Deelvenster Mediagelijktijdige viewers in Analysis Workspace](https://docs.adobe.com/content/help/nl-NL/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html).
 
 
 ![](assets/video-concurrent-viewers.png)
@@ -44,4 +44,3 @@ Hier volgen enkele beperkingen voor dit rapport:
 * U kunt een rapport niet verzenden via e-mail.
 * Zelfs als u geen advertenties bijhoudt, moet u media tracking opnieuw inschakelen en de module Media Ad selecteren.
 * Deze functionaliteit biedt nauwkeurige gegevens wanneer u een hartslagbibliotheek gebruikt die mogelijkheden voor het bijhouden van pauzes heeft.
-
