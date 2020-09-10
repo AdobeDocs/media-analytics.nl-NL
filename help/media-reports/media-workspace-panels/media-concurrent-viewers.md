@@ -2,10 +2,10 @@
 title: Mediagelijktijdige rapportage
 description: Voor klanten van Media Analytics, laat het Medium Gelijktijdige Kijkers in Analysis Workspace u toe om gezamenlijke kijkers te analyseren om te begrijpen waar de piekgelijktijdig voorkwam of waar drop-outs voorkwamen.
 translation-type: tm+mt
-source-git-commit: 1e59c1201a4c0544b1fc571d6e1baf7bdc19e7dc
+source-git-commit: ee925e7bf2d32431679dd1b82e46c7c124256d13
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 8%
+source-wordcount: '224'
+ht-degree: 9%
 
 ---
 
@@ -20,8 +20,8 @@ Door gelijktijdige viewers te analyseren, kunt u precies zien waar de piekgelijk
 
 ## Deelvenster Mediagelijktijdige viewers in Analysis Workspace
 
-In Analysis Workspace is Gelijktijdige viewers het aantal unieke bezoekers dat uw mediastream(s) op een bepaald tijdstip weergeeft, ongeacht het aantal sessies. Het deelvenster Mediagelijktijdige viewers is beschikbaar voor het visualiseren van gelijktijdige viewers, het indelen en vergelijken van viewers. [Meer informatie...](https://docs.adobe.com/content/help/en/media-analytics/using/media-reports/media-default-reports/get-concurrent-json20.html)
+In Analysis Workspace is Gelijktijdige viewers het aantal unieke bezoekers dat uw mediastream(s) op een bepaald tijdstip weergeeft, ongeacht het aantal sessies. Het deelvenster Mediagelijktijdige viewers is beschikbaar voor het visualiseren van gelijktijdige viewers, het indelen en vergelijken van viewers. [Meer informatie...](https://docs.adobe.com/content/help/nl-NL/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html)
 
 ## Gelijktijdige viewers ophalen via Analytics Reporting API
 
-Met de Analytics Reporting API 2.0 kunt u ook gelijktijdige viewergegevens voor maximaal één maand tegelijk ophalen bij granulariteit op minaniveau. De API voor rapportage gebruikt dezelfde definitie van gelijktijdige viewers als Analysis Workspace.  Zie voor meer informatie [_*API&#39;s voor Analytics 2.0*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html).
+Met de Analytics Reporting API 2.0 kunt u ook gelijktijdige viewergegevens voor maximaal één maand tegelijk ophalen bij granulariteit op minaniveau. De API voor rapportage gebruikt dezelfde definitie van gelijktijdige viewers als Analysis Workspace.  Zie voor meer informatie [_*Gelijktijdige viewers voor JSON-rapportgegevens ophalen met Analytics 2.0-API&#39;s*_](https://docs.adobe.com/content/help/en/media-analytics/using/media-reports/media-default-reports/get-concurrent-json20.html).
