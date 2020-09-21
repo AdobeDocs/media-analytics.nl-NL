@@ -2,19 +2,15 @@
 title: Mediagelijktijdige rapportage
 description: Voor klanten van Media Analytics, laat het Medium Gelijktijdige Kijkers in Analysis Workspace u toe om gezamenlijke kijkers te analyseren om te begrijpen waar de piekgelijktijdig voorkwam of waar drop-outs voorkwamen.
 translation-type: tm+mt
-source-git-commit: ee925e7bf2d32431679dd1b82e46c7c124256d13
+source-git-commit: eb69c5c68b7bc367a944ce441a196f45791bcb53
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 9%
+source-wordcount: '204'
+ht-degree: 5%
 
 ---
 
 
 # Mediagelijktijdige rapportage{#media-concurrent-viewers}
-
->[!IMPORTANT]
->
->Deze functie vindt u in Beperkte tests voor klanten van Media Analytics. [Meer informatie...](https://docs.adobe.com/content/help/nl-NL/analytics/landing/an-releases.html)
 
 Door gelijktijdige viewers te analyseren, kunt u precies zien waar de piekgelijktijdige uitvoering plaatsvond of waar drop-offs kostbare inzichten in de kwaliteit van de inhoud en de betrokkenheid van de viewer hebben opgeleverd en kunt u helpen met het oplossen van problemen of het plannen van volumes en schaal.
 
