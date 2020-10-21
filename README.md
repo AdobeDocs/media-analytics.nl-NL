@@ -1,18 +1,25 @@
 ---
-source-git-commit: 18d6b140df7211190dd9597ef03059d8b9285fe9
+source-git-commit: 7dbbd8b77801243a4a557be811dc678156c39d31
+workflow-type: tm+mt
 translation-type: tm+mt
+source-wordcount: '568'
+ht-degree: 6%
 
 ---
 # Contribute-artikel
 
+| EXL-PR | EXL | Voorvertoning | Activeren | Gepubliceerd | Help |
+|--- |--- |--- |--- |--- |--- |
+| [![Status samenstellen](https://docs.ci.corp.adobe.com/view/exl-pr/job/media-analytics.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/media-analytics.en_pr-exl/lastBuild/) | [![Status samenstellen](https://docs.ci.corp.adobe.com/view/exl-pr/job/media-analytics.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/media-analytics.en_exl/lastBuild/lastBuild) | [Voorbeeld-URL](https://experienceleague.corp.adobe.com/docs/media-analytics/using/media-overview.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [Live URL](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=en) | [Ontwerphandleiding](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
+
 | Productie | Werkgebied |
 |---|---|
 | [![Status samenstellen](https://docs.ci.corp.adobe.com/job/media-analytics.en_production/badge/icon)](https://docs.ci.corp.adobe.com/job/media-analytics.en_production/lastBuild) | [![Status samenstellen](https://docs.ci.corp.adobe.com/job/media-analytics.en_stage/badge/icon)](https://docs.ci.corp.adobe.com/job/media-analytics.en_stage/lastBuild) |
-| [Uitvoerpod](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) | [Uitvoerinstelling](https://docs-stg.corp.adobe.com/content/help/en/media-analytics/using/media-overview.html) |
+| [Uitvoerpod](https://docs.adobe.com/content/help/nl-NL/media-analytics/using/media-overview.html) | [Uitvoerinstelling](https://docs-stg.corp.adobe.com/content/help/en/media-analytics/using/media-overview.html) |
 
-We zijn blij met de bijdragen van onze gemeenschap en van Adobe-medewerkers van buiten de documentatieteams.
+Wij verwelkomen de bijdragen van onze gemeenschap en van Adobe werknemers van buiten de documentatieteams.
 
-## Adobe Open Source Code of Conduct
+## Adobe Open-Source-gedragscode
 
 Dit project heeft de [Adobe-gedragscode voor open source](code-of-conduct.md) of de [.NET Foundation-gedragscode](https://dotnetfoundation.org/code-of-conduct) overgenomen. Zie het artikel [Bijdragen](contributing.md) voor meer informatie.
 
@@ -24,13 +31,13 @@ Hoe u een bijdrage levert, hangt af van wie u bent en van het soort veranderinge
 
 ### Kleine wijzigingen
 
-Als u minder belangrijke updates uit de goodness van uw hart bijdraagt, bezoek het artikel en klik de **Edit** verbinding in het artikel dat naar de bron GitHub voor het artikel gaat. Dan, gebruik enkel GitHub UI om uw updates te maken. Zie de algemene [Adobe Docs Contributor Guide](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html) voor meer informatie.
+Als u kleine updates aanbrengt uit uw goedheid, gaat u naar het artikel en klikt u op de knop **Bewerken** verbinding in het artikel dat naar de bron GitHub voor het artikel gaat. Dan, gebruik enkel GitHub UI om uw updates te maken. Zie de algemene [Adobe Docs Contributor Guide](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html) voor meer informatie .
 
-Kleine correcties of verduidelijkingen die u voor documentatie en codevoorbeelden in dit antwoord opgeeft, worden behandeld in de gebruiksvoorwaarden van Adobe.
+Kleine correcties of verduidelijkingen die u ter documentatie en codevoorbeelden in dit antwoord aanbrengt, worden behandeld in de gebruiksvoorwaarden van de Adobe.
 
 ### Belangrijke wijzigingen of nieuwe artikelen van leden van de gemeenschap
 
-Als u deel uitmaakt van de Adobe-community en u een nieuw artikel wilt maken of belangrijke wijzigingen wilt indienen, gebruikt u het tabblad Problemen in de Git-opslagplaats om een uitgave in te dienen die een gesprek met het documentatieteam kan starten. Zodra u met een plan hebt ingestemd, zult u met een werknemer moeten werken helpen die nieuwe inhoud door een combinatie van het werk in de openbare en privé bewaarplaatsen brengen.
+Als u deel uitmaakt van de gemeenschap van de Adobe en u een nieuw artikel wilt creëren of belangrijke veranderingen voorleggen, gelieve het lusje van Kwesties in de bewaarplaats van de it te gebruiken om een kwestie voor te leggen om een gesprek met het documentatieteam te beginnen. Zodra u met een plan hebt ingestemd, zult u met een werknemer moeten werken helpen die nieuwe inhoud door een combinatie van het werk in de openbare en privé bewaarplaatsen brengen.
 
 <!--
 If you submit a pull request with significant changes to documentation and code examples, you'll see a message in the pull request asking you to submit an online contribution license agreement (CLA). We need you to complete the online form before we can review your pull request.
@@ -38,7 +45,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 ### Belangrijke wijzigingen van Adobe-medewerkers
 
-Als u een technisch schrijver, programmamanager of ontwikkelaar van het productteam bent voor een Adobe Experience Cloud-oplossing en het uw taak is om een bijdrage te leveren aan technische artikelen of om technische artikelen te schrijven, moet u de persoonlijke opslagruimte [git.corp.adobe.com/AdobeDocs](https://git.corp.adobe.com/AdobeDocs)gebruiken. <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
+Als u een technisch schrijver, programmamanager, of ontwikkelaar van het productteam voor een oplossing van Adobe Experience Cloud bent en het uw baan is om aan of auteur technische artikelen bij te dragen, zou u de privé bewaarplaats moeten gebruiken [git.corp.adobe.com/AdobeDocs](https://git.corp.adobe.com/AdobeDocs). <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 
 ## Gereedschappen en instellen
 
@@ -57,7 +64,7 @@ Alle artikelen in deze repository gebruiken GitHub gearomatiseerde prijsopgave. 
 
 In de openbare bewaarplaats, worden de geautomatiseerde etiketten toegewezen om verzoeken te trekken om ons te helpen de werkschema van het trekkingsverzoek beheren en u te helpen laten weten wat aan de hand is uw trekkrachtverzoek:
 
-* **Naar auteur** verzonden wijziging: De auteur is op de hoogte gesteld van het aanloopverzoek.
-* **kant-en-klaar samenvoegen**: Klaar voor overzicht door ons team van het trekpleonderzoek.
+* **Wijziging verzonden naar auteur**: De auteur is op de hoogte gesteld van het aanloopverzoek.
+* **samenvoegen**: Klaar voor overzicht door ons team van het trekpleonderzoek.
 
 
