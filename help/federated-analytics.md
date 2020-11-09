@@ -1,9 +1,12 @@
 ---
 title: Federated Analytics
-description: 'De Federated Analytics-service biedt een systeem voor het delen van Adobe Media Analytics-data (audio en video) tussen twee partners. '
+description: De Federated Analytics-service biedt een systeem voor het delen van Adobe Media Analytics-data (audio en video) tussen twee partners.
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 88f4479ec072ab2a332ade09a83e9fbff94a98e9
+workflow-type: tm+mt
+source-wordcount: '554'
+ht-degree: 97%
 
 ---
 
@@ -42,7 +45,8 @@ Federated Analytics maakt het meten van audio en video efficiënter, gestroomlij
 
 ## Het Federated Analytics-formulier downloaden
 
-Download hier de huidige versie van dit formulier: [Overeenkomst federatieregels](https://github.com/AdobeDocs/media-analytics.en/blob/master/help/federated-analytics-form.pdf)
+Als u wilt deelnemen aan Federated Analytics, downloadt en voltooit u de [Overeenkomst betreffende federatieregels](federated-analytics-form.pdf) formulier.
+
 
 ## Proces {#process}
 
@@ -54,4 +58,3 @@ Download hier de huidige versie van dit formulier: [Overeenkomst federatieregels
 1. Zodra de ontvanger bevestigt dat de data correct zijn, werkt Adobe Engineering de regels bij zodat deze naar een productierapportsuite verwijzen.
 1. De ontvanger zal de data in de productierapportsuite controleren en valideren.
 1. Als de veranderingen in de datareeks optreden in de toekomst, kan de afzender of de ontvanger een klantenserviceticket indienen voor ondersteuning.
-
