@@ -3,9 +3,9 @@ title: Parameters voor audio en video
 description: null
 uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 translation-type: tm+mt
-source-git-commit: abb2cd2d056ffbefa72126061b11286cc10ec1ca
+source-git-commit: 4dad6507966e30accfb4f6c2eb5f1d6a5507d29d
 workflow-type: tm+mt
-source-wordcount: '6237'
+source-wordcount: '6234'
 ht-degree: 2%
 
 ---
@@ -47,7 +47,7 @@ Beschrijving van tabelgegevens:
 >Wijzig de classificatienamen niet voor onderstaande variabelen die onder Rapportage/Gereserveerde variabele worden beschreven als &quot;classificatie&quot;.\
 >De mediaclassificaties worden gedefinieerd wanneer een rapportsuite is ingeschakeld voor het bijhouden van media. Van tijd tot tijd, voegt Adobe nieuwe eigenschappen toe, en, wanneer dit voorkomt, moeten de klanten hun rapportsuites opnieuw toelaten om toegang tot de nieuwe media eigenschappen te krijgen. Tijdens het updateproces bepaalt Adobe of de classificaties worden toegelaten door de namen van de variabelen te controleren. Als een van deze ontbrekende elementen ontbreekt, voegt Adobe de ontbrekende opnieuw toe.
 
-## Core Audio- en videogegevens {#core-audio-and-video-data}
+## Gegevens over kernstuurmedia {#core-audio-and-video-data}
 
 ### Type stream {#stream-type}
 
@@ -187,7 +187,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 | --- | --- | --- |
 | <ul> <li> **SDK-sleutel:**<br/> Automatisch instellen </li> <li> **API-sleutel:**<br/> N.v.t. </li> <li> **Vereist:**<br/> Nee </li> <li> **Type:**<br/> string </li> <li> **Verzonden met:**<br/> Media sluiten </li> <li> **Min. SDK-versie:** 1.5.7. </li> <li> **Samplewaarde:**<br/> &quot;js-2.0.1.88-c8c0b1&quot; </li> <li> **Omschrijving:**<br/> De SDK-versie van Media die wordt gebruikt voor de volgende sessie. <br/><br/>Klanten moeten hun eigen verwerkingsregels maken om de waarde voor rapportage beschikbaar te hebben.  <br/><br/>[MediaHeartbone.version();](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html) </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.<br/>vhlVersion) </li> <li> **Hartmaten:**<br/> (s:sp:hb_version) </li> </ul> | <ul> <li> **Beschikbaar:**<br/> Aangepaste verwerkingsregel gebruiken </li> <li> **Gereserveerde variabele:**<br/> N.v.t. </li> <li> **Rapportnaam:**<br/> Aangepast </li> <li> **Contextgegevens:**<br/> (a.media.vhlVersion) </li> <li> **Gegevensfeed:**<br/> N.v.t. </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.vhlVersion) </li> </ul> |
 
-## Standaardmetadata voor audio en video {#standard-audio-and-video-metadata}
+## Metagegevens van standaard stuurmedia {#standard-audio-and-video-metadata}
 
 ### Tonen
 
@@ -321,7 +321,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 | --- | --- | --- |
 | <ul> <li> **SDK-sleutel:**<br/> </li> <li> **API-sleutel:**<br/> media.publisher </li> <li> **Vereist:**<br/> Nee </li> <li> **Type:**<br/> string </li> <li> **Verzonden met:**<br/> Media starten, Media sluiten </li> <li> **Min. SDK-versie:** 1.5.7. <br/>Beschikbaar in [Overzicht van mediagroep](/help/media-collection-api/mc-api-overview.md) of [SDK&#39;s downloaden - Versies 2.2](/help/sdk-implement/download-sdks.md).  </li> <li> **Samplewaarde:**<br/> &quot;Random Bauhaus&quot; </li> <li> **Omschrijving:**<br/> Naam van de uitgever van de audio-inhoud.  <br/> **Releasedatum: 13-09-18** </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.publisher) </li> <li> **Hartmaten:**<br/> (s:meta:<br/>a.media.uitgever) </li> </ul> | <ul> <li> **Beschikbaar:**<br/> Ja </li> <li> **Gereserveerde variabele:**<br/> eVar </li> <li> **Verlopen:**<br/> Op HIT </li> <li> **Rapportnaam:**<br/> </li> <li> **Contextgegevens:**<br/> (a.media.publisher) </li> <li> **Gegevensfeed:**<br/> videoluisteraar </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.uitgever) </li> </ul> |
 
-## Audio- en videometrie {#audio-and-video-metrics}
+## Metrische gegevens van stemmedia {#audio-and-video-metrics}
 
 ### Start media
 
