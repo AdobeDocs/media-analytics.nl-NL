@@ -1,24 +1,24 @@
 ---
 audience: end-user
-user-guide-title: Adobe Analytics voor audio en video
+user-guide-title: Adobe Analytics for Streaming Media
 breadcrumb-title: Handleiding voor media-analyse
 user-guide-description: Analyses implementeren op audio- of videobronnen. Bevat de Media-SDK en de Media Collection-API.
 product: adobe analytics
 sub-product: media-analytics
 translation-type: tm+mt
-source-git-commit: 32865b998afc7b19ef328a2d43c3acd9970a4d5c
+source-git-commit: da13db682f859cfd176a5ab379b7a0a947dc0e3a
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 97%
+source-wordcount: '830'
+ht-degree: 93%
 
 ---
 
 
-# Adobe Analytics voor audio en video {#using}
+# Adobe Analytics for Streaming Media {#using}
 
-+ [Audio en video meten in Adobe Analytics](media-overview.md)
++ [Streaming media meten in Adobe Analytics](media-overview.md)
 + [Ondersteunde apparaten en platforms](measurement-options/supported-devices.md)
-+ Inleiding tot Analytics voor audio en video {#intro-to-ava}
++ Inleiding tot de analyse van streaming media {#intro-to-ava}
    + [Vereisten](intro-to-ava/prereqs.md)
    + Implementatiepaden {#implementation-paths}
       + [Overzicht](intro-to-ava/implementation-paths/implementation-paths.md)
@@ -45,9 +45,9 @@ ht-degree: 97%
          + [JavaScript 3.x instellen](sdk-implement/setup/setup-javascript/set-up-js-3.md)
       + [Chromecast instellen](sdk-implement/setup/set-up-chromecast.md)
       + [Roku instellen](sdk-implement/setup/set-up-roku.md)
-   + Afspelen voor audio en video bijhouden {#track-av-playback}
+   + Stempelmedia bijhouden tijdens afspelen {#track-av-playback}
       + [Overzicht](sdk-implement/track-av-playback/track-core-overview.md)
-      + Core afspelen voor audio en video bijhouden {#track-core}
+      + Core Steaming Media afspelen {#track-core}
          + [Core afspelen bijhouden in Android](sdk-implement/track-av-playback/track-core/track-core-android.md)
          + [Core afspelen bijhouden in iOS](sdk-implement/track-av-playback/track-core/track-core-ios.md)
          + Core afspelen bijhouden in JavaScript {#track-core-javascript}
@@ -199,7 +199,7 @@ ht-degree: 97%
    + [Cookbook](media-analytics-cookbook/media-analytics-cookbook.md)
    + [Attributie van mediastream](media-analytics-cookbook/media-dimensions.md)
 + Statistieken en metadata {#metrics-and-metadata}
-   + [Parameters voor audio en video](metrics-and-metadata/audio-video-parameters.md)
+   + [Parameters voor streaming media](metrics-and-metadata/audio-video-parameters.md)
    + [Parameters voor advertenties](metrics-and-metadata/ad-parameters.md)
    + [Hoofdstukparameters](metrics-and-metadata/chapter-parameters.md)
    + [Parameters voor Player-status](metrics-and-metadata/player-state-parameters.md)
@@ -220,6 +220,8 @@ ht-degree: 97%
    + [Gegevens van gelijktijdige viewers ophalen via API](media-reports/media-default-reports/get-concurrent-json20.md)
 + [Gedownloade content bijhouden](media-collection-api/track-downloaded-content.md)
 + [Federated Analytics](federated-analytics.md)
+
+<!-- + Basic Streaming Media Measurement for Adobe Analytics Ultimate{#basic-streaming-measurement} -->
 + Player-status bijhouden {#player-state-tracking}
    + [Overzicht](sdk-implement/player-state-tracking/player-state-overview.md)
    + [Standaard en aangepaste statussen](sdk-implement/player-state-tracking/standard-and-custom-states.md)
