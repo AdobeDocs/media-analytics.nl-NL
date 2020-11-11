@@ -6,7 +6,7 @@ user-guide-description: Analyses implementeren op audio- of videobronnen. Bevat 
 product: adobe analytics
 sub-product: media-analytics
 translation-type: tm+mt
-source-git-commit: da13db682f859cfd176a5ab379b7a0a947dc0e3a
+source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
 workflow-type: tm+mt
 source-wordcount: '830'
 ht-degree: 93%
@@ -18,7 +18,7 @@ ht-degree: 93%
 
 + [Streaming media meten in Adobe Analytics](media-overview.md)
 + [Ondersteunde apparaten en platforms](measurement-options/supported-devices.md)
-+ Inleiding tot de analyse van streaming media {#intro-to-ava}
++ Inleiding tot het analyseren van streaming media {#intro-to-ava}
    + [Vereisten](intro-to-ava/prereqs.md)
    + Implementatiepaden {#implementation-paths}
       + [Overzicht](intro-to-ava/implementation-paths/implementation-paths.md)
@@ -45,9 +45,9 @@ ht-degree: 93%
          + [JavaScript 3.x instellen](sdk-implement/setup/setup-javascript/set-up-js-3.md)
       + [Chromecast instellen](sdk-implement/setup/set-up-chromecast.md)
       + [Roku instellen](sdk-implement/setup/set-up-roku.md)
-   + Stempelmedia bijhouden tijdens afspelen {#track-av-playback}
+   + Streaming media afspelen bijhouden {#track-av-playback}
       + [Overzicht](sdk-implement/track-av-playback/track-core-overview.md)
-      + Core Steaming Media afspelen {#track-core}
+      + Core Streaming Media Playback bijhouden {#track-core}
          + [Core afspelen bijhouden in Android](sdk-implement/track-av-playback/track-core/track-core-android.md)
          + [Core afspelen bijhouden in iOS](sdk-implement/track-av-playback/track-core/track-core-ios.md)
          + Core afspelen bijhouden in JavaScript {#track-core-javascript}
@@ -199,7 +199,7 @@ ht-degree: 93%
    + [Cookbook](media-analytics-cookbook/media-analytics-cookbook.md)
    + [Attributie van mediastream](media-analytics-cookbook/media-dimensions.md)
 + Statistieken en metadata {#metrics-and-metadata}
-   + [Parameters voor streaming media](metrics-and-metadata/audio-video-parameters.md)
+   + [Streaming mediaparameters](metrics-and-metadata/audio-video-parameters.md)
    + [Parameters voor advertenties](metrics-and-metadata/ad-parameters.md)
    + [Hoofdstukparameters](metrics-and-metadata/chapter-parameters.md)
    + [Parameters voor Player-status](metrics-and-metadata/player-state-parameters.md)
