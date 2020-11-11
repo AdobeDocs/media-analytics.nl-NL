@@ -1,9 +1,9 @@
 ---
-title: Metingsstreammedia in Adobe Analytics
+title: Streaming media meten in Adobe Analytics
 description: Adobe Analytics voor Media (ook wel Media Analytics genoemd) biedt clients robuuste mediametingen voor content, audio en advertenties.
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 translation-type: tm+mt
-source-git-commit: fdec4da99a43d889690638f1ff3579e145548b69
+source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
 workflow-type: tm+mt
 source-wordcount: '903'
 ht-degree: 85%
@@ -11,7 +11,7 @@ ht-degree: 85%
 ---
 
 
-# Metingsstreammedia in Adobe Analytics{#measuring-audio-and-video-in-adobe-analytics}
+# Streaming media meten in Adobe Analytics{#measuring-audio-and-video-in-adobe-analytics}
 
 ![Banner](./assets/media_analytics_banner.png)
 
@@ -47,7 +47,7 @@ Het gebruik van hartslagen Adobe Analytics voor streamingmedia biedt de volgende
 | Prijzen | Transparant bijhouden via mediastream (enkel) |
 | Implementatie en ondersteuning | Gestroomlijnde configuratie met doorlopende updates en verbeteringen<br>Met een gestroomlijnd implementatieproces kunt u snel variabelen toewijzen via de speler-API en implementaties valideren met de Adobe Debug-tool om ervoor te zorgen dat alle benodigde variabelen correct worden bijgehouden. |
 | Delen via partners | Federated Analytics en Certified Metrics<br>Met gedeelde data via Federated Analytics kunt u gebruikmaken van onze toonaangevende mogelijkheden voor delen om data holistisch te evalueren via al uw mediadistributiepartners: operators, programmeurs, en distributeurs. |
-| Geavanceerde tracking | Gedownloade inhoud bijhouden, Foutopsporing bijhouden en Gelijktijdige viewers<br>U kunt streaming media-inhoud bijhouden die op een apparaat wordt gedownload en afgespeeld, ongeacht de connectiviteit ervan. |
+| Geavanceerde tracking | Gedownloade Inhoud bijhouden, Foutherstel bijhouden en Gelijktijdige viewers<br>U kunt streaming media-inhoud bijhouden die op een apparaat wordt gedownload en afgespeeld, ongeacht de connectiviteit. |
 
 
 
