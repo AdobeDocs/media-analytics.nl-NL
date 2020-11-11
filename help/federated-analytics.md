@@ -3,7 +3,7 @@ title: Federated Analytics
 description: De Federated Analytics-service biedt een systeem voor het delen van Adobe Analytics voor het streamen van mediagegevens tussen twee partners.
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: 4dad6507966e30accfb4f6c2eb5f1d6a5507d29d
+source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
 workflow-type: tm+mt
 source-wordcount: '552'
 ht-degree: 92%
@@ -40,13 +40,13 @@ Federated Analytics maakt het meten van audio en video efficiënter, gestroomlij
 * **Contract voor mediastreams:** ontvanger en afzender moeten een contract voor Adobe Analytics voor Media Streams hebben voordat ze toegang krijgen tot audio- en videodata in Adobe Analytics. Neem contact op met uw accountteam voor meer informatie.
 * **Federated addendum:** zowel afzender als ontvanger moet beschikken over een ondertekend addendum bij Adobe voordat data worden verzonden of ontvangen. Eén addendum per klant is vereist, niet één addendum per partnerschap. Neem contact op met uw accountteam voor meer informatie.
 
-* **Media Analytics-implementatie:** de afzenden moet Media Analytics hebben geïmplementeerd op alle spelers die deel zullen uitmaken van de gefedereerde datareeks. Alleen de data van Media Analytics zijn beschikbaar voor federatie. Zie documentatie: [Metingsstreammedia in Adobe Analytics](/help/media-overview.md)
+* **Media Analytics-implementatie:** de afzenden moet Media Analytics hebben geïmplementeerd op alle spelers die deel zullen uitmaken van de gefedereerde datareeks. Alleen de data van Media Analytics zijn beschikbaar voor federatie. Zie documentatie: [Streaming media meten in Adobe Analytics](/help/media-overview.md)
 
 * **Adobe Consulting-contract:** voor de eerste instelling van gefedereerde regels tussen ontvanger en afzender is het waardevol om met adviesdiensten te werken voor het beoordelen van data en een datasharingovereenkomst te maken.
 
 ## Het Federated Analytics-formulier downloaden
 
-Als u wilt deelnemen aan Federated Analytics, downloadt en voltooit u de [Overeenkomst betreffende federatieregels](federated-analytics-form.pdf) formulier.
+Als u wilt deelnemen aan Federated Analytics, downloadt en invult u het [Federation Rules Agreement](federated-analytics-form.pdf)-formulier.
 
 
 ## Proces {#process}
