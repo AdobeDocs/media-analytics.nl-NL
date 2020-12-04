@@ -2,15 +2,15 @@
 title: Mediagelijktijdige rapportage
 description: Voor klanten van Media Analytics, laat het Medium Gelijktijdige Kijkers in Analysis Workspace u toe om gezamenlijke kijkers te analyseren om te begrijpen waar de piekgelijktijdig voorkwam of waar drop-outs voorkwamen.
 translation-type: tm+mt
-source-git-commit: eb69c5c68b7bc367a944ce441a196f45791bcb53
+source-git-commit: 2eb5318267546408f2aab5da074dd7f30c4fbb1d
 workflow-type: tm+mt
-source-wordcount: '204'
-ht-degree: 5%
+source-wordcount: '193'
+ht-degree: 6%
 
 ---
 
 
-# Mediagelijktijdige rapportage{#media-concurrent-viewers}
+# Mediagelijktijdige viewers rapporteren{#media-concurrent-viewers}
 
 Door gelijktijdige viewers te analyseren, kunt u precies zien waar de piekgelijktijdige uitvoering plaatsvond of waar drop-offs kostbare inzichten in de kwaliteit van de inhoud en de betrokkenheid van de viewer hebben opgeleverd en kunt u helpen met het oplossen van problemen of het plannen van volumes en schaal.
 
@@ -20,4 +20,4 @@ In Analysis Workspace is Gelijktijdige viewers het aantal unieke bezoekers dat u
 
 ## Gelijktijdige viewers ophalen via Analytics Reporting API
 
-Met de Analytics Reporting API 2.0 kunt u ook gelijktijdige viewergegevens voor maximaal één maand tegelijk ophalen bij granulariteit op minaniveau. De API voor rapportage gebruikt dezelfde definitie van gelijktijdige viewers als Analysis Workspace.  Zie voor meer informatie [_*Gelijktijdige viewers voor JSON-rapportgegevens ophalen met Analytics 2.0-API&#39;s*_](https://docs.adobe.com/content/help/en/media-analytics/using/media-reports/media-default-reports/get-concurrent-json20.html).
+Met de Analytics Reporting API 2.0 kunt u ook gelijktijdige viewergegevens voor maximaal één maand tegelijk ophalen bij granulariteit op minaniveau.  De API voor rapportage gebruikt dezelfde definitie van gelijktijdige viewers als Analysis Workspace.  Zie [_*Gelijktijdige viewers in JSON-rapportgegevens ophalen met Analytics 2.0 API&#39;s*_](/help/media-reports/media-default-reports/get-concurrent-json20.md) voor meer informatie.
