@@ -2,9 +2,9 @@
 title: Ondersteunde apparaten en platforms
 description: Adobe Analytics for Streaming Media zorgt ervoor dat elke mediastream wordt verzameld en gerapporteerd op alle apparaten.
 translation-type: tm+mt
-source-git-commit: fdec4da99a43d889690638f1ff3579e145548b69
+source-git-commit: dfffcf1e1d815ca178e0bdba881d973d60fe1631
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '337'
 ht-degree: 19%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 19%
 
 >[!IMPORTANT]
 >
->Aan het einde van de ondersteuning voor versie 4 Mobile SDK&#39;s op 31 augustus 2021 beëindigt Adobe ook de ondersteuning voor de Media Analytics SDK voor iOS en Android.  Zie voor meer informatie [Veelgestelde vragen over einde van ondersteuning voor Media Analytics SDK](/help/sdk-implement/end-of-support-faqs.md).
+>Aan het einde van de ondersteuning voor versie 4 Mobile SDK&#39;s op 31 augustus 2021 beëindigt Adobe ook de ondersteuning voor de Media Analytics SDK voor iOS en Android.  Voor extra informatie, zie [Van begin tot eind - van - de Veelgestelde vragen van de Analyse van Media SDK](/help/sdk-implement/end-of-support-faqs.md).
 
 Adobe Analytics for Streaming Media ondersteunt alle belangrijke apparaten, waaronder:
 
@@ -28,19 +28,19 @@ Voor apparaten of platforms die momenteel geen SDK-ondersteuning hebben of in si
 
 De onderstaande tabel bevat een lijst met momenteel ondersteunde apparaten en platforms. Zie [SDK&#39;s downloaden voor informatie over het downloaden van de meest recente versie van de SDK](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/download-sdks.html). Als een apparaat niet in de lijst staat, neemt u contact op met uw klantenservice of oplossingsconsultant voor de status van dat apparaat.
 
-| Streaming Platforms en apparaten |  | Media Launch Extension met AEP SDK | Media-SDK | Media Collection-API |
+| Streaming Platforms en apparaten |  | Media Launch Extension met AEP Mobile SDK | Media-SDK | Media Collection-API |
 |:---------------------------:|:-----------------------------------------------:|:----------------------------:|:-------------------:|:--------------------:|
 | Web/Mobiel web |  |  |  |  |
 |  | JavaScript-browsers | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png)    | ![](/help/assets/icon-blue-check.png) |
 | Mobiele app |  |  |  |  |
-|  | iOS-apparaten | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
-|  | Android-apparaten | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
+|  | iOS-apparaten | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>3</sup> | ![](/help/assets/icon-blue-check.png) |
+|  | Android-apparaten | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>3</sup> | ![](/help/assets/icon-blue-check.png) |
 |  | Windows-apparaten |  |  | ![](/help/assets/icon-blue-check.png) |
 | OTT |  |  |  |  |
-|  | Apple TV (tvOS) | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
+|  | Apple TV (tvOS) | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>3</sup> | ![](/help/assets/icon-blue-check.png) |
 |  | ROKU |  | ![](/help/assets/icon-blue-check.png)   <br>(BrightScript)    | ![](/help/assets/icon-blue-check.png)<br>(native) |
-|  | Fire TV (Fire OS) | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
-|  | Android-tv | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
+|  | Fire TV (Fire OS) | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>3</sup> | ![](/help/assets/icon-blue-check.png) |
+|  | Android-tv | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>3</sup> | ![](/help/assets/icon-blue-check.png) |
 |  | Chromecast |  | ![](/help/assets/icon-blue-check.png)    | ![](/help/assets/icon-blue-check.png) |
 |  | Gamingconsoles (bijvoorbeeld Xbox ONE, Sony PS3/PS4) |  |  | ![](/help/assets/icon-blue-check.png) |
 |  | Bovenste vakken instellen (bijvoorbeeld x1 x xfinity) |  |  | ![](/help/assets/icon-blue-check.png) |
@@ -48,6 +48,6 @@ De onderstaande tabel bevat een lijst met momenteel ondersteunde apparaten en pl
 | Overige |  |  |  |  |
 |  | Nieuwe aangesloten apparaten |  |  | ![](/help/assets/icon-blue-check.png) |
 
-1. De ondersteuning voor deze SDK&#39;s loopt af op 31 augustus 2021. Zie voor meer informatie [Veelgestelde vragen over einde van ondersteuning voor Media Analytics SDK](/help/sdk-implement/end-of-support-faqs.md).
+1. De ondersteuning voor deze SDK&#39;s loopt af op 31 augustus 2021. Voor extra informatie, zie [Van begin tot eind - van - de Veelgestelde vragen van de Analyse van Media SDK](/help/sdk-implement/end-of-support-faqs.md).
 
-Voor meer informatie over de minimale platformversies die voor elke SDK worden ondersteund, raadpleegt u [Ondersteuning voor minimale versie van Platform](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/setup/setup-overview.html)
+Zie [Ondersteuning voor minimale versie van Platform](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/setup/setup-overview.html) voor meer informatie over de minimale platformversies die voor elke SDK worden ondersteund
