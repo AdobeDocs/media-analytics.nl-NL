@@ -1,15 +1,15 @@
 ---
 audience: end-user
 user-guide-title: Adobe Analytics for Streaming Media
-breadcrumb-title: Handleiding voor media-analyse
-user-guide-description: Analyses implementeren op audio- of videobronnen. Bevat de Media-SDK en de Media Collection-API.
+breadcrumb-title: Handleiding voor analyse van streaming media
+user-guide-description: Implementeer Adobe Analytics for Streaming Media. Bevat de Media-SDK en de Media Collection-API.
 product: adobe analytics
 sub-product: media-analytics
 translation-type: tm+mt
-source-git-commit: a51f9bb33c7385fef0f13b7e1e9009b07a788305
+source-git-commit: 640005cbd90a074a1a441865c4b6abc8f94c1277
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '830'
+ht-degree: 93%
 
 ---
 
