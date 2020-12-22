@@ -3,7 +3,7 @@ title: Parameters voor advertenties
 description: null
 uuid: 92cd7f97-bb5a-4de6-8946-453d30271d0f
 translation-type: tm+mt
-source-git-commit: ef237fd0d9e2bcebe011d819224d98d450830d07
+source-git-commit: f59738f48eeb80d3aaead1757abd2ba3785c40da
 workflow-type: tm+mt
 source-wordcount: '1867'
 ht-degree: 3%
@@ -148,7 +148,7 @@ Beschrijving van tabelgegevens:
 
 |   Implementatie   | Netwerkparameters | Rapportage |
 | --- | --- | --- |
-| <ul> <li> **SDK-sleutel:**<br/> SITE_ID </li> <li> **API-sleutel:**<br/> media.ad.siteId </li> <li> **Vereist:**<br/> Nee </li> <li> **Type:**<br/> tekenreeks </li> <li> **Verzonden met:**<br/> Advertentie Begin, en Sluiten </li> <li> **Min. SDK-versie:** 1.5.7 </li> <li> **Samplewaarde:**<br/> </li><li> **Beschrijving:**<br/> id van de advertentiesite.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.ad.<br/>site) </li> <li> **Hartslag:**<br/> (s:meta:<br/>a.media.ad.site) </li> </ul> | <ul> <li> **Beschikbaar:**<br/> <i>Aangepaste verwerkingsregel gebruiken  </i> </li> <li> **Gereserveerde variabele:**<br/> eVar </li> <li> **verlopen:**<br/> op HIT </li> <li> **Rapportnaam:**<br/> Aangepast* </li> <li> **Contextgegevens:**<br/> (a.media.ad.<br/>site) </li> <li> **Gegevensfeed:**<br/> n.v.t. </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.ad.site) </li> </ul> <br/>* Aangepaste verwerkingsregel gebruiken |
+| <ul> <li> **SDK-sleutel:**<br/> SITE_ID </li> <li> **API-sleutel:**<br/> media.ad.siteId </li> <li> **Vereist:**<br/> Nee </li> <li> **Type:**<br/> tekenreeks </li> <li> **Verzonden met:**<br/> Advertentie Begin, en Sluiten </li> <li> **Min. SDK-versie:** 1.5.7 </li> <li> **Samplewaarde:**<br/> </li><li> **Beschrijving:**<br/> id van de advertentiesite.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.ad.<br/>site) </li> <li> **Hartslag:**<br/> (s:meta:<br/>a.media.ad.site) </li> </ul> | <ul> <li> **Beschikbaar:**<br/> <i>Aangepaste verwerkingsregel gebruiken  </i> </li> <li> **Gereserveerde variabele:**<br/> eVar </li> <li> **verlopen:**<br/> op HIT </li> <li> **Rapportnaam:**<br/> Aangepast* </li> <li> **Contextgegevens:**<br/> (a.media.ad.<br/>site) </li> <li> **Gegevensfeed:**<br/> n.v.t. </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.ad.site) </li> </ul> * Aangepaste verwerkingsregel gebruiken |
 
 
 
@@ -156,7 +156,7 @@ Beschrijving van tabelgegevens:
 
 |   Implementatie   | Netwerkparameters | Rapportage |
 | --- | --- | --- |
-| <ul> <li> **SDK-sleutel:**<br/> CREATIVE_URL </li> <li> **API-sleutel:**<br/> media.ad.creativeURL </li> <li> **Vereist:**<br/> Nee </li> <li> **Type:**<br/> tekenreeks </li> <li> **Verzonden met:**<br/> Advertentie Begin, en Sluiten </li> <li> **Min. SDK-versie:** 1.5.7 </li> <li> **Samplewaarde:**<br/> </li><li> **Beschrijving:**<br/> URL van de advertentie.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.ad.<br/>creativeURL) </li> <li> **Hartslag:**<br/> (s:meta:<br/>a.media.ad.creativeURL) </li> </ul> | <ul> <li> **Beschikbaar:**<br/> <i>Aangepaste verwerkingsregel gebruiken  </i> </li> <li> **Gereserveerde variabele:**<br/> eVar </li> <li> **verlopen:**<br/> op HIT </li> <li> **Rapportnaam:**<br/> Aangepast* </li> <li> **Contextgegevens:**<br/> (a.media.ad.<br/>creativeURL) </li> <li> **Gegevensfeed:**<br/> n.v.t. </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.ad.creativeURL) </li> </ul> <br/>* Aangepaste verwerkingsregel gebruiken |
+| <ul> <li> **SDK-sleutel:**<br/> CREATIVE_URL </li> <li> **API-sleutel:**<br/> media.ad.creativeURL </li> <li> **Vereist:**<br/> Nee </li> <li> **Type:**<br/> tekenreeks </li> <li> **Verzonden met:**<br/> Advertentie Begin, en Sluiten </li> <li> **Min. SDK-versie:** 1.5.7 </li> <li> **Samplewaarde:**<br/> </li><li> **Beschrijving:**<br/> URL van de advertentie.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.ad.<br/>creativeURL) </li> <li> **Hartslag:**<br/> (s:meta:<br/>a.media.ad.creativeURL) </li> </ul> | <ul> <li> **Beschikbaar:**<br/> <i>Aangepaste verwerkingsregel gebruiken  </i> </li> <li> **Gereserveerde variabele:**<br/> eVar </li> <li> **verlopen:**<br/> op HIT </li> <li> **Rapportnaam:**<br/> Aangepast* </li> <li> **Contextgegevens:**<br/> (a.media.ad.<br/>creativeURL) </li> <li> **Gegevensfeed:**<br/> n.v.t. </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.ad.creativeURL) </li> </ul> * Aangepaste verwerkingsregel gebruiken |
 
 
 
@@ -164,7 +164,7 @@ Beschrijving van tabelgegevens:
 
 |   Implementatie   | Netwerkparameters | Rapportage |
 | --- | --- | --- |
-| <ul> <li> **SDK-sleutel:**<br/> PLACEMENT_ID </li> <li> **API-sleutel:**<br/> media.ad.placementId </li> <li> **Vereist:**<br/> Nee </li> <li> **Type:**<br/> tekenreeks </li> <li> **Verzonden met:**<br/> Advertentie Begin, en Sluiten </li> <li> **Min. SDK-versie:** 1.5.7 </li> <li> **Samplewaarde:**<br/> </li><li> **Beschrijving:**<br/> Plaatsing-id van de advertentie.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.ad.<br/>plaatsing) </li> <li> **Hartslag:**<br/> (s:meta:<br/>a.media.ad.placement) </li> </ul> | <ul> <li> **Beschikbaar:**<br/> <i>Aangepaste verwerkingsregel gebruiken  </i> </li> <li> **Gereserveerde variabele:**<br/> eVar </li> <li> **verlopen:**<br/> op HIT </li> <li> **Rapportnaam:**<br/> Aangepast* </li> <li> **Contextgegevens:**<br/> (a.media.ad.<br/>plaatsing) </li> <li> **Gegevensfeed:**<br/> n.v.t. </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.ad.placement) </li> </ul><br/>* Aangepaste verwerkingsregel gebruiken |
+| <ul> <li> **SDK-sleutel:**<br/> PLACEMENT_ID </li> <li> **API-sleutel:**<br/> media.ad.placementId </li> <li> **Vereist:**<br/> Nee </li> <li> **Type:**<br/> tekenreeks </li> <li> **Verzonden met:**<br/> Advertentie Begin, en Sluiten </li> <li> **Min. SDK-versie:** 1.5.7 </li> <li> **Samplewaarde:**<br/> </li><li> **Beschrijving:**<br/> Plaatsing-id van de advertentie.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.ad.<br/>plaatsing) </li> <li> **Hartslag:**<br/> (s:meta:<br/>a.media.ad.placement) </li> </ul> | <ul> <li> **Beschikbaar:**<br/> <i>Aangepaste verwerkingsregel gebruiken  </i> </li> <li> **Gereserveerde variabele:**<br/> eVar </li> <li> **verlopen:**<br/> op HIT </li> <li> **Rapportnaam:**<br/> Aangepast* </li> <li> **Contextgegevens:**<br/> (a.media.ad.<br/>plaatsing) </li> <li> **Gegevensfeed:**<br/> n.v.t. </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.ad.placement) </li> </ul>* Aangepaste verwerkingsregel gebruiken |
 
 
 
