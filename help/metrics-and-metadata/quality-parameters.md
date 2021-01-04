@@ -3,9 +3,9 @@ title: Parameters voor kwaliteit
 description: null
 uuid: 0d9fa764-edef-4178-8650-90c9a0852a57
 translation-type: tm+mt
-source-git-commit: ef237fd0d9e2bcebe011d819224d98d450830d07
+source-git-commit: 5802a474588a6df6c66e0d1d7cb2fd30f83e4e3d
 workflow-type: tm+mt
-source-wordcount: '3008'
+source-wordcount: '2992'
 ht-degree: 2%
 
 ---
@@ -117,7 +117,7 @@ Beschrijving van tabelgegevens:
 
 |   Implementatie   | Netwerkparameters | Rapportage |
 | --- | --- | --- |
-| <ul> <li> **SDK-sleutel:**<br/> automatisch instellen </li> <li> **API-sleutel:**<br/> </li> <li> **Vereist:**<br/> Nee </li> <li> **Tekst:**<br/> nummer </li> <li> **Verzonden met:**<br/> Media Sluiten </li> <li> **Min. SDK-versie:** Willekeurige </li> <li> **Samplewaarde:**<br/> </li><li> **Beschrijving:**<br/> De unieke fout-id&#39;s die door de Media SDK tijdens het afspelen worden gegenereerd.  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.qoe.<br/>mediaSDKErrors) </li> <li> **Hartslag:**<br/> (s:event:<br/>type=error) </li> </ul> | <ul> <li> **Beschikbaar:**<br/> Ja </li> <li> **Gereserveerde variabele:**<br/> eVar </li> <li> **verlopen:**<br/> op HIT </li> <li> **Rapportnaam:**<br/> Aangepast* </li> <li> **Contextgegevens:**<br/> (a.media.qoe.<br/>mediaSDKErrors) </li> <li> **gegevensfeed:**<br/> mediakwalitale fouten </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.qoe.<br/>mediaSDKErrors) </li> </ul><br/>* Aangepaste verwerkingsregel gebruiken |
+| <ul> <li> **SDK-sleutel:**<br/> automatisch instellen </li> <li> **API-sleutel:**<br/> </li> <li> **Vereist:**<br/> Nee </li> <li> **Tekst:**<br/> nummer </li> <li> **Verzonden met:**<br/> Media Sluiten </li> <li> **Min. SDK-versie:** Willekeurige </li> <li> **Samplewaarde:**<br/> </li><li> **Beschrijving:**<br/> De unieke fout-id&#39;s die door de Media SDK tijdens het afspelen worden gegenereerd.  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.qoe.<br/>mediaSDKErrors) </li> <li> **Hartslag:**<br/> (s:event:<br/>type=error) </li> </ul> | <ul> <li> **Beschikbaar:**<br/> Ja </li> <li> **Gereserveerde variabele:**<br/> eVar </li> <li> **verlopen:**<br/> op HIT </li> <li> **Rapportnaam:**<br/> Aangepast </li> <li> **Contextgegevens:**<br/> (a.media.qoe.<br/>mediaSDKErrors) </li> <li> **gegevensfeed:**<br/> mediakwalitale fouten </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.qoe.<br/>mediaSDKErrors) </li> </ul><br/> |
 
 
 
@@ -252,7 +252,7 @@ Beschrijving van tabelgegevens:
 
 |   Implementatie   | Netwerkparameters | Rapportage |
 | --- | --- | --- |
-| <ul> <li> **SDK-sleutel:**<br/> automatisch instellen </li> <li> **API-sleutel:**<br/> N.v.t. </li> <li> **Vereist:**<br/> Nee </li> <li> **Type:**<br/> tekenreeks </li> <li> **Verzonden met:**<br/> Media Sluiten </li> <li> **Min. SDK-versie:** 1.5+ </li> <li> **Samplewaarde:**<br/> TRUE </li><li> **Beschrijving:**<br/> Het aantal streams waarin een gebeurtenis stagneerde heeft plaatsgevonden. Deze metrische waarde wordt ingesteld op 1 als er tijdens het afspelen ten minste één keer wordt vastgezet. Klanten moeten hun eigen verwerkingsregels maken om de waarde voor rapportage beschikbaar te hebben.  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.qoe.<br/>kraal) </li> <li> **hartslag:**<br/> (s:event:<br/>type=stall) </li> </ul> | <ul> <li> **Beschikbaar:aangepaste verwerkingsregel**<br/> gebruiken </li> <li> **Gereserveerde variabele:**<br/> gebeurtenis </li> <li> **Rapportnaam:**<br/> Aangepast*</li> <li> **Gegevensfeed:**<br/> n.v.t. </li> <li> **Contextgegevens:**<br/> (a.media.qoe.<br/>kraal) </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.qoe.<br/>kraal) </li> </ul><br/>* Aangepaste verwerkingsregel gebruiken |
+| <ul> <li> **SDK-sleutel:**<br/> automatisch instellen </li> <li> **API-sleutel:**<br/> N.v.t. </li> <li> **Vereist:**<br/> Nee </li> <li> **Type:**<br/> tekenreeks </li> <li> **Verzonden met:**<br/> Media Sluiten </li> <li> **Min. SDK-versie:** 1.5+ </li> <li> **Samplewaarde:**<br/> TRUE </li><li> **Beschrijving:**<br/> Het aantal streams waarin een gebeurtenis stagneerde heeft plaatsgevonden. Deze metrische waarde wordt ingesteld op 1 als er tijdens het afspelen ten minste één keer wordt vastgezet. Klanten moeten hun eigen verwerkingsregels maken om de waarde voor rapportage beschikbaar te hebben.  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.qoe.<br/>kraal) </li> <li> **hartslag:**<br/> (s:event:<br/>type=stall) </li> </ul> | <ul> <li> **Beschikbaar:aangepaste verwerkingsregel**<br/> gebruiken </li> <li> **Gereserveerde variabele:**<br/> gebeurtenis </li> <li> **Rapportnaam:**<br/> Aangepast</li> <li> **Gegevensfeed:**<br/> n.v.t. </li> <li> **Contextgegevens:**<br/> (a.media.qoe.<br/>kraal) </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.qoe.<br/>kraal) </li> </ul><br/> |
 
 >[!IMPORTANT]
 >
@@ -262,7 +262,7 @@ Beschrijving van tabelgegevens:
 
 |   Implementatie   | Netwerkparameters | Rapportage |
 | --- | --- | --- |
-| <ul> <li> **SDK-sleutel:**<br/> automatisch instellen </li> <li> **API-sleutel:**<br/> N.v.t. </li> <li> **Vereist:**<br/> Nee </li> <li> **Type:**<br/> tekenreeks </li> <li> **Verzonden met:**<br/> Media Sluiten </li> <li> **Min. SDK-versie:** 1.5+ </li> <li> **Samplewaarde:**<br/> &quot;3&quot; </li><li> **Beschrijving:**<br/> Het aantal keren dat het afspelen tijdens een afspeelsessie is gestopt. Klanten moeten hun eigen verwerkingsregels maken om de waarde voor rapportage beschikbaar te hebben.  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.qoe.<br/>stallCount) </li> <li> **hartslag:**<br/> (s:event:<br/>type=stall) </li> </ul> | <ul> <li> **Beschikbaar:aangepaste verwerkingsregel**<br/> gebruiken </li> <li> **Gereserveerde variabele:**<br/> gebeurtenis </li> <li> **Rapportnaam:**<br/> Aangepast*</li> <li> **Contextgegevens:**<br/> (a.media.qoe.<br/>stallCount) </li> <li> **Gegevensfeed:**<br/> n.v.t. </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.qoe.<br/>stallCount) </li> </ul><br/>* Aangepaste verwerkingsregel gebruiken |
+| <ul> <li> **SDK-sleutel:**<br/> automatisch instellen </li> <li> **API-sleutel:**<br/> N.v.t. </li> <li> **Vereist:**<br/> Nee </li> <li> **Type:**<br/> tekenreeks </li> <li> **Verzonden met:**<br/> Media Sluiten </li> <li> **Min. SDK-versie:** 1.5+ </li> <li> **Samplewaarde:**<br/> &quot;3&quot; </li><li> **Beschrijving:**<br/> Het aantal keren dat het afspelen tijdens een afspeelsessie is gestopt. Klanten moeten hun eigen verwerkingsregels maken om de waarde voor rapportage beschikbaar te hebben.  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.qoe.<br/>stallCount) </li> <li> **hartslag:**<br/> (s:event:<br/>type=stall) </li> </ul> | <ul> <li> **Beschikbaar:aangepaste verwerkingsregel**<br/> gebruiken </li> <li> **Gereserveerde variabele:**<br/> gebeurtenis </li> <li> **Rapportnaam:**<br/> Aangepast</li> <li> **Contextgegevens:**<br/> (a.media.qoe.<br/>stallCount) </li> <li> **Gegevensfeed:**<br/> n.v.t. </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.qoe.<br/>stallCount) </li> </ul><br/> |
 
 
 
@@ -270,7 +270,7 @@ Beschrijving van tabelgegevens:
 
 |   Implementatie   | Netwerkparameters | Rapportage |
 | --- | --- | --- |
-| <ul> <li> **SDK-sleutel:**<br/> automatisch instellen </li> <li> **API-sleutel:**<br/> N.v.t. </li> <li> **Vereist:**<br/> Nee </li> <li> **Tekst:**<br/> nummer </li> <li> **Verzonden met:**<br/> Media Sluiten </li> <li> **Min. SDK-versie:** 1.5+ </li> <li> **Samplewaarde:**<br/> 12 </li><li> **Omschrijving:**<br/> de totale tijd (seconden); (geheel getal) het afspelen is tijdens een afspeelsessie gestopt. Klanten moeten hun eigen verwerkingsregels maken om de waarde voor rapportage beschikbaar te hebben.  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.qoe.<br/>stallTime) </li> <li> **hartslag:**<br/> (s:event:<br/>type=stall) </li> </ul> | <ul> <li> **Beschikbaar:aangepaste verwerkingsregel**<br/> gebruiken </li> <li> **Gereserveerde variabele:**<br/> gebeurtenis </li> <li> **Rapportnaam:**<br/> Aangepast*</li> <li> **Contextgegevens:**<br/> (a.media.qoe.<br/>stallTime) </li> <li> **Gegevensfeed:**<br/> n.v.t. </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.qoe.<br/>stallTime) </li> </ul> <br/>* Aangepaste verwerkingsregel gebruiken |
+| <ul> <li> **SDK-sleutel:**<br/> automatisch instellen </li> <li> **API-sleutel:**<br/> N.v.t. </li> <li> **Vereist:**<br/> Nee </li> <li> **Tekst:**<br/> nummer </li> <li> **Verzonden met:**<br/> Media Sluiten </li> <li> **Min. SDK-versie:** 1.5+ </li> <li> **Samplewaarde:**<br/> 12 </li><li> **Omschrijving:**<br/> de totale tijd (seconden); (geheel getal) het afspelen is tijdens een afspeelsessie gestopt. Klanten moeten hun eigen verwerkingsregels maken om de waarde voor rapportage beschikbaar te hebben.  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.qoe.<br/>stallTime) </li> <li> **hartslag:**<br/> (s:event:<br/>type=stall) </li> </ul> | <ul> <li> **Beschikbaar:aangepaste verwerkingsregel**<br/> gebruiken </li> <li> **Gereserveerde variabele:**<br/> gebeurtenis </li> <li> **Rapportnaam:**<br/> Aangepast</li> <li> **Contextgegevens:**<br/> (a.media.qoe.<br/>stallTime) </li> <li> **Gegevensfeed:**<br/> n.v.t. </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.qoe.<br/>stallTime) </li> </ul> <br/> |
 
 
 
