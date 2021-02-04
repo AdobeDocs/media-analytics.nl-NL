@@ -1,11 +1,11 @@
 ---
-title: Attributie van mediastream
-description: null
+title: Wat is kenmerk van mediastream?
+description: Leer hoe u handelingen van toepassingen koppelt aan gegevens voor mediatracering zonder dat u extra verwerkingsregels en aangepaste variabelen nodig hebt.
 translation-type: tm+mt
-source-git-commit: cab9724476f7864ac23c4293e402e0443771cb1e
+source-git-commit: 901539a2095b23f9108a934eb61d182b14ccd9e8
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 2%
+source-wordcount: '231'
+ht-degree: 1%
 
 ---
 
@@ -14,15 +14,18 @@ ht-degree: 2%
 
 Met deze functie kunt u toepassingshandelingen koppelen aan gegevens voor het bijhouden van media zonder dat u aanvullende verwerkingsregels en aangepaste variabelen nodig hebt.
 
-## Media-afmetingen buiten mediatracering
+## Media-Dimension buiten mediatracering
 
-Met de Attributie van de Stroom van Media, kunnen de klanten om het even welke media dimensie aan alle andere analytische vraag, zoals paginameningen en douaneverbindingen nu toevoegen. Tijdens implementatie, moet u de gegevensparameters van de media context aan de spoorvraag van Analytics toevoegen. De volledige lijst met contextegegevensparameters die voor media worden gebruikt, is hier beschikbaar: [Parameters voor audio en video.](/help/metrics-and-metadata/audio-video-parameters.md)
+Met de Attributen van de Stream van Media, kunnen de klanten om het even welke media afmetingen toevoegen
+naar alle andere analytische aanroepen, zoals paginaweergaven en aangepaste koppelingen. Tijdens de uitvoering
+u moet de gegevensparameters van de media context aan de het spoorvraag van de Analyse toevoegen. De volledige lijst
+van de parameters voor contextgegevens die voor media worden gebruikt , zijn hier beschikbaar : [Parameters voor audio en video.](/help/metrics-and-metadata/audio-video-parameters.md)
 
 U zult ook media volgende configuratie van de Admin console voor elk rapport moeten re-toelaten dat u deze eigenschap voor wilt toelaten.
 
 >[!NOTE]
 >
->De mediummetriek is _niet_ beschikbaar voor gebruik buiten mediatracering, omdat de meeste hiervan door Media Analytics worden berekend op basis van hartslaggebeurtenissen. Ook, is het belangrijk dat de media metriek niet door verschillende implementaties worden opgeblazen.
+>De media metriek zijn _not_ beschikbaar om buiten media het volgen te worden gebruikt omdat de meeste van deze door de Analytics van Media op hartslaggebeurtenissen worden berekend die. Ook, is het belangrijk dat de media metriek niet door verschillende implementaties worden opgeblazen.
 
 ## Procedure
 
@@ -33,7 +36,7 @@ s.contextData["a.media.show"]="Mi Amore"
 s.tl(this,'o','Hero Banner');
 ```
 
-In Analytics-rapportages kunt u de `Show` Var gebruiken om de gegevens op te splitsen, en u zult de instanties van de spoorverbinding kunnen tellen. De rapportage zou er ongeveer als volgt uitzien:
+Bij Analytics-rapportage kunt u de `Show`-eVar gebruiken om de gegevens op te splitsen en u kunt de instanties van trackkoppelingen tellen. De rapportage zou er ongeveer als volgt uitzien:
 
 ![](/assets/myShow-rpt-1.png)
 
@@ -46,4 +49,3 @@ In Analytics-rapportages kunt u de `Show` Var gebruiken om de gegevens op te spl
 ![](/assets/show-engagement.png)
 
 ![](/assets/vid-stream-attr-subs.png)
-
