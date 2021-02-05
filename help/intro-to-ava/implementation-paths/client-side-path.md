@@ -1,20 +1,23 @@
 ---
-title: Client-kant
-description: null
+title: Wat zijn Media Analytics en cliënt-zijintegratie?
+description: Leer hoe de Analytics van Media met cliënt-zijintegratie en de SDK van Media en/of de Inzameling API van Media werkt.
 uuid: ba0496e2-585a-4176-b583-c705726fecc6
 translation-type: tm+mt
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+source-git-commit: 5f0de1e0f0694987c6bab0bd97ac8c98e843f23a
+workflow-type: tm+mt
+source-wordcount: '152'
+ht-degree: 0%
 
 ---
 
 
-# Client-kant{#client-side}
+# Clientzijde{#client-side}
 
-Media Analytics (Heartbeats) is de gestandaardiseerde oplossing voor mediatracering van Adobe. Het is in de plaats gekomen van het oudere mijlpaalmodel van Adobe.
+Media Analytics (Heartbeats) is de gestandaardiseerde oplossing voor mediatracering van Adobe. dat in de plaats is gekomen van het model Adobe Milestone.
 
 Integraties aan de clientzijde worden alleen geïmplementeerd met Media Analytics. U kunt kiezen of u de SDK van Media of de API voor mediagroep (of beide) wilt implementeren. Het pad naar de client-side kan worden gebruikt voor elke speler, inclusief client- en/of OVP-spelers zoals Brightcove, Ooyala, het Platform enzovoort.
 
-Als Media Analytics uw voorgenomen weg is, zie de Implementatie [van SDK van](/help/sdk-implement/setup/setup-overview.md) Media en [de Inzameling API van Media.](/help/media-collection-api/mc-api-overview.md)
+Als Media Analytics uw voorgenomen weg is, zie [Implementatie van SDK van Media](/help/sdk-implement/setup/setup-overview.md) en [Verzameling API van Media.](/help/media-collection-api/mc-api-overview.md)
 
 >[!IMPORTANT]
 >
