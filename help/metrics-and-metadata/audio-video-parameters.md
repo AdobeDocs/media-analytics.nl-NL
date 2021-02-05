@@ -3,9 +3,9 @@ title: Parameters voor audio en video
 description: null
 uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 translation-type: tm+mt
-source-git-commit: 5802a474588a6df6c66e0d1d7cb2fd30f83e4e3d
+source-git-commit: b1b94b4cde74908ea528fb69d78250dc1da1db80
 workflow-type: tm+mt
-source-wordcount: '6245'
+source-wordcount: '6243'
 ht-degree: 2%
 
 ---
@@ -199,7 +199,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   Implementatie   | Netwerkparameters | Rapportage |
 | --- | --- | --- |
-| <ul> <li> **SDK-sleutel:**<br/> STREAM_FORMAT </li> <li> **API-sleutel:**<br/> N.v.t. </li> <li> **Vereist:**<br/> Nee </li> <li> **Type:**<br/> tekenreeks </li> <li> **Verzonden met:**<br/> Media starten, Media sluiten </li> <li> **Min. SDK-versie:** 1.5.7 </li> <li> **Samplewaarde:**<br/> &quot;Live&quot; </li> <li> **Beschrijving:**<br/> Indeling van de stream (Live, VOD, Lineair).  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.format) </li> <li> **Hartmaten:**<br/> (s:meta:<br/>a.media.format) </li> </ul> | <ul> <li> **Beschikbaar:aangepaste verwerkingsregel**<br/> gebruiken </li> <li> **Gereserveerde variabele:**<br/> n.v.t. </li> <li> **Rapportnaam:**<br/> Aangepast </li> <li> **Contextgegevens:**<br/> (a.media.format) </li> <li> **Gegevensfeed:**<br/> n.v.t. </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.format) </li> </ul> |
+| <ul> <li> **SDK-sleutel:**<br/> STREAM_FORMAT </li> <li> **API-sleutel:**<br/> media.streamFormat </li> <li> **Vereist:**<br/> Nee </li> <li> **Type:**<br/> tekenreeks </li> <li> **Verzonden met:**<br/> Media starten, Media sluiten </li> <li> **Min. SDK-versie:** 1.5.7 </li> <li> **Samplewaarde:**<br/> &quot;HD&quot; </li> <li> **Beschrijving:**<br/> Indeling van de stream (HD, SD)  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.format) </li> <li> **Hartmaten:**<br/> (s:meta:<br/>a.media.format) </li> </ul> | <ul> <li> **Beschikbaar:aangepaste verwerkingsregel**<br/> gebruiken </li> <li> **Gereserveerde variabele:**<br/> n.v.t. </li> <li> **Rapportnaam:**<br/> Aangepast </li> <li> **Contextgegevens:**<br/> (a.media.format) </li> <li> **Gegevensfeed:**<br/> n.v.t. </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.format) </li> </ul> |
 
 ### Seizoen
 
