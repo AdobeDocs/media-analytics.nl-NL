@@ -4,6 +4,9 @@ description: De toepassingsopstelling van SDK van media voor implementatie op Ch
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 translation-type: tm+mt
 source-git-commit: be82be2eb58f89344f2125288599fef461db441e
+workflow-type: tm+mt
+source-wordcount: '630'
+ht-degree: 3%
 
 ---
 
@@ -20,20 +23,21 @@ Het juiste antwoord is &quot;Chromecast&quot;, om de volgende redenen:
 
 ## Vereisten
 
-* **Verkrijg geldige configuratieparameters voor Heartbeats**. Deze parameters kunnen bij een vertegenwoordiger van Adobe worden verkregen nadat u uw account voor mediaanalyse hebt ingesteld.
+* **Verkrijg geldige configuratieparameters voor**
+HeartbeatsDeze parameters kunnen bij een vertegenwoordiger van Adobe worden verkregen nadat u uw media analytics-account hebt ingesteld.
 * **Biedt de volgende mogelijkheden in uw mediaspeler:**
-   * *Een API die zich moet abonneren op spelergebeurtenissen* - De Media SDK vereist dat u een set eenvoudige API&#39;s aanroept wanneer gebeurtenissen in de speler plaatsvinden.
-   * *Een API die spelerinformatie* verschaft - Deze informatie bevat details zoals de medianaam en de positie van de afspeelkop.
+   * *Een API die zich moet abonneren op spelergebeurtenissen* . De Media SDK vereist dat u een set eenvoudige API&#39;s aanroept wanneer gebeurtenissen in de speler plaatsvinden.
+   * *Een API die spelerinformatie*  verschaft. Deze informatie bevat details zoals de medianaam en de positie van de afspeelkop.
 
-Adobe Mobile-services biedt een nieuwe gebruikersinterface waarin mobiele marketingmogelijkheden voor mobiele toepassingen vanuit de volledige Adobe Marketing Cloud worden samengebracht. In eerste instantie biedt de Mobile-service naadloze integratie van toepassingsanalyses en doelgerichte functies voor de Adobe Analytics- en Adobe Target-oplossingen. Meer informatie vindt u in de documentatie van [Adobe Mobile Services.](https://docs.adobe.com/content/help/en/mobile-services/using/home.html)
+Adobe Mobile-services bieden een nieuwe gebruikersinterface waarin mobiele marketingmogelijkheden voor mobiele toepassingen uit de hele Adobe Marketing Cloud worden samengebracht. Aanvankelijk biedt de Mobile-service een naadloze integratie van analysemogelijkheden voor apps en doelgerichte functionaliteit voor de Adobe Analytics- en Adobe Target-oplossingen. Meer informatie vindt u in de [Adobe Mobile Services-documentatie.](https://docs.adobe.com/content/help/en/mobile-services/using/home.html)
 
-Met Chromecast SDK 2.x for Experience Cloud Solutions kunt u Chromecast-toepassingen die in JavaScript zijn geschreven, gebruiken en gegevens van het publiek verzamelen via publieksbeheer en de betrokkenheid van video&#39;s meten via videohartslagen.
+Met Chromecast SDK 2.x voor Experience Cloud Solutions kunt u Chromecast-toepassingen meten die in JavaScript zijn geschreven, publieksgegevens benutten en verzamelen via publieksbeheer en de videobetrokkenheid meten via videohartslagen.
 
 ## SDK-implementatie
 
-1. Voeg uw [gedownloade](/help/sdk-implement/download-sdks.md#download-2x-sdks) Chromecast-bibliotheek toe aan uw project.
+1. Voeg uw [gedownloade ](/help/sdk-implement/download-sdks.md#download-2x-sdks) Chromecast bibliotheek aan uw project toe.
 
-   1. Het `AdobeMobileLibrary-Chromecast-[version]` ZIP-bestand bestaat uit de volgende softwarecomponenten:
+   1. Het ZIP-bestand `AdobeMobileLibrary-Chromecast-[version]` bestaat uit de volgende softwarecomponenten:
 
       * `adbmobile-chromecast.min.js`:
 
@@ -41,8 +45,8 @@ Met Chromecast SDK 2.x for Experience Cloud Solutions kunt u Chromecast-toepassi
 
       * `ADBMobileConfig` config
 
-         Dit SDK-configuratiebestand is aangepast voor uw app. De SDK beschikt over een voorbeeldimplementatie (onder `ADBMobileConfig` `samples/`). Verkrijg de juiste montages van een vertegenwoordiger van Adobe.
-   1. Voeg het bibliotheekbestand toe aan uw `index.html` bestand en maak de `ADBMobileConfig` algemene variabele als volgt (de algemene variabele die wordt gebruikt om Adobe Mobile voor hartslagen te configureren, heeft een exclusieve sleutel met de naam `mediaHeartbeat`):
+         Dit SDK-configuratiebestand is aangepast voor uw app. Bij de SDK wordt een voorbeeld van `ADBMobileConfig`-implementatie geleverd (onder `samples/`). Verkrijg de juiste montages van een vertegenwoordiger van de Adobe.
+   1. Voeg het bibliotheekbestand toe aan uw `index.html`-bestand en maak de globale variabele `ADBMobileConfig` als volgt (de algemene variabele die wordt gebruikt om Adobe Mobile voor hartslagen te configureren heeft een exclusieve sleutel met de naam `mediaHeartbeat`):
 
       ```js
       <script>
@@ -101,11 +105,11 @@ Met Chromecast SDK 2.x for Experience Cloud Solutions kunt u Chromecast-toepassi
    | `playerName` | Tekenreeks die de naam van de speler vertegenwoordigt. |
 
 
-1. Geniet-id voor Experience Cloud Visitor configureren.
+1. Experience Cloud-bezoeker-id configureren.
 
-   De Experience Cloud Visitor ID-service biedt een universele bezoeker-id voor alle Experience Cloud-oplossingen. De service voor bezoekers-id is vereist voor Video-hartslag en andere integraties in de marketingcloud.
+   De dienst van identiteitskaart van de Bezoeker van Experience Cloud verstrekt universele Bezoeker identiteitskaart over de oplossingen van Experience Cloud. De service voor bezoekers-id is vereist voor Video-hartslag en andere Marketing Cloud-integratie.
 
-   Verifieer dat uw `ADBMobileConfig` config uw `marketingCloud` organisatieID bevat.
+   Verifieer dat uw `ADBMobileConfig` config uw `marketingCloud` organisatie ID bevat.
 
    ```js
    "marketingCloud": {
@@ -113,24 +117,24 @@ Met Chromecast SDK 2.x for Experience Cloud Solutions kunt u Chromecast-toepassi
    }
    ```
 
-   Ervaar de organisatie-id&#39;s van de cloud die uniek zijn voor elk clientbedrijf in de Adobe Marketing Cloud en die er ongeveer als volgt uitzien: `016D5C175213CCA80A490D05@AdobeOrg`.
+   De organisatie-id&#39;s van Experience Cloud identificeren uniek elk clientbedrijf in de Adobe Marketing Cloud en lijken ongeveer op de volgende waarde te lijken: `016D5C175213CCA80A490D05@AdobeOrg`.
 
    >[!IMPORTANT]
    >
-   >Zorg ervoor dat u dit ook doet `@AdobeOrg`.
+   >Zorg ervoor dat u `@AdobeOrg` opneemt.
 
-   Nadat de configuratie is voltooid, wordt een Experience Cloud Visitor-id gegenereerd en opgenomen in alle hits. Andere bezoeker-id&#39;s, zoals `custom` en `automatically-generated`, worden bij elke treffer verzonden.
+   Nadat de configuratie volledig is, wordt een identiteitskaart van de Bezoeker van de Experience Cloud geproduceerd en inbegrepen op alle treffers. Andere bezoeker-id&#39;s, zoals `custom` en `automatically-generated`, worden nog steeds bij elke treffer verzonden.
 
-   **Ervaar de Methoden van de Dienst van de Bezoeker van de Wolk**
+   **Service-methoden voor Experience Cloud-bezoeker-id**
 
    >[!TIP]
    >
-   >De methoden Experience Cloud Visitor ID zijn vooraf ingesteld op `visitor`.
+   >De methodes van identiteitskaart van de Bezoeker van Experience Cloud worden vooraf bepaald met `visitor`.
 
    | Methode | Beschrijving |
    | --- | --- |
-   | `getMarketingCloudID()` | Haalt de Experience Cloud Visitor ID op van de Bezoeker ID-service.  <br/><br/>`ADBMobile.visitor.getMarketingCloudID();` |
-   | `syncIdentifiers()` | Met de Experience Cloud Visitor-id kunt u aanvullende klant-id&#39;s instellen die aan elke bezoeker kunnen worden gekoppeld. De bezoeker-API accepteert meerdere klant-id&#39;s voor dezelfde bezoeker en een id voor het klanttype om het bereik van de verschillende klant-id&#39;s te scheiden. Deze methode komt overeen met `setCustomerIDs()` in de JavaScript-bibliotheek.  Bijvoorbeeld: <br/><br/>`var identifiers = {};` <br/><br/>`identifiers["idType"] = "idValue";` <br/><br/>`ADBMobile.visitor.syncIdentifiers(identifiers);` |
+   | `getMarketingCloudID()` | Haalt de Experience Cloud Bezoeker-id op van de Bezoeker-id-service.  <br/><br/>`ADBMobile.visitor.getMarketingCloudID();` |
+   | `syncIdentifiers()` | Met de Experience Cloud-bezoeker-id kunt u aanvullende klant-id&#39;s instellen die aan elke bezoeker kunnen worden gekoppeld. De bezoeker-API accepteert meerdere klant-id&#39;s voor dezelfde bezoeker en een id voor het klanttype om het bereik van de verschillende klant-id&#39;s te scheiden. Deze methode komt overeen met `setCustomerIDs()` in de JavaScript-bibliotheek.  Bijvoorbeeld: <br/><br/>`var identifiers = {};` <br/><br/>`identifiers["idType"] = "idValue";` <br/><br/>`ADBMobile.visitor.syncIdentifiers(identifiers);` |
 
 
 
