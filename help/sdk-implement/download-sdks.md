@@ -3,7 +3,7 @@ title: SDK's downloaden
 description: Koppelingen naar SDK-downloads voor beschikbare platforms, zoals Android, iOS, JavaScript, Chromecast en Roku.
 uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 translation-type: tm+mt
-source-git-commit: 63daad47260243d7f8c3badd8dc3cbf45432a905
+source-git-commit: cd3efa68ba0903bc9a616ac41dd5b20346c66870
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 6%
@@ -22,8 +22,8 @@ ht-degree: 6%
 
 | 3.x Media SDK&#39;s  | Nieuwste SDK-downloads voor media |  API&#39;s   |  Documentatie  |
 | --- | --- | --- | --- |
-| JavaScript | [Media SDK voor JS v3.0.1](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.1) | [JS API-naslaggids](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [JavaScript 3.x instellen](/help/sdk-implement/setup/setup-javascript/set-up-js-3.md) |
-| Chromecast | [Media SDK voor Chromecast v3.0.1](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.1) | [Referentie voor Chromecast API](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Chromecast instellen](/help/sdk-implement/setup/set-up-chromecast.md) |
+| JavaScript | [Media SDK voor JS v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [JS API-naslaggids](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [JavaScript 3.x instellen](/help/sdk-implement/setup/setup-javascript/set-up-js-3.md) |
+| Chromecast | [Media SDK voor Chromecast v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.2) | [Referentie voor Chromecast API](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Chromecast instellen](/help/sdk-implement/setup/set-up-chromecast.md) |
 
 
 ## Download de 2.x Media SDKs {#download-2x-sdks}
