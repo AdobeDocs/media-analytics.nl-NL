@@ -1,16 +1,19 @@
 ---
-cloud: experience-cloud
+cloud: Experience Cloud
 solution-title: Meer informatie en ondersteuning
-solution-hub-url: https://helpx.adobe.com/support/analytics.html
+solution-hub-url: https://helpx.adobe.com/nl/support/analytics.html
 solution-image: assets/analytics-icon-24.png
 getting-started-title: Aan de slag
 getting-started-url: https://helpx.adobe.com/analytics/get-started.html
-tutorials-title: Zelfstudies
-tutorials-url: https://helpx.adobe.com/analytics/kt/index/analytics-videos.html
-git-repo: https://github.com/AdobeDocs/media-analytics.en
+tutorials-title: Tutorials
+tutorials-url: https://helpx.adobe.com/nl/analytics/kt/index/analytics-videos.html
+git-repo: https://git.corp.adobe.com/AdobeDocs/media-analytics.nl-NL
 index: true
 translation-type: tm+mt
-source-git-commit: e074a77406f907ad66ac8e8ed1b44300596c065a
+source-git-commit: 171053b49a2fda22cbd228f49170c3acdd7bc681
+workflow-type: tm+mt
+source-wordcount: '136'
+ht-degree: 8%
 
 ---
 
@@ -27,4 +30,4 @@ Het bestand metadata.md bevat metagegevens op repo-niveau die worden doorgegeven
 | aan de slag-url | Aan de slag met Help-pagina koppelen |
 | zelfstudies-url | Koppeling maken naar videozelfstudies: helpx-zelfstudies of KT-zelfstudies |
 | mini-toc-niveaus | Hiermee bepaalt u het aantal kopniveaus dat wordt weergegeven in de rechterrails. default is 2 |
-| git-repo | Hiermee geeft u de locatie op van het hoofdrepo voor intern gebruik |
+| git-repo | Hiermee wordt de locatie van het master repo voor intern gebruik opgegeven |
