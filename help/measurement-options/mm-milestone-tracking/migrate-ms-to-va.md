@@ -1,21 +1,21 @@
 ---
 title: Migreren van Mijlsteen naar Media Analytics
-description: null
+description: Migreren van Mijlsteen naar Media Analytics
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
+exl-id: 655841ed-3a02-4e33-bbc9-46fb14302194
 translation-type: tm+mt
-source-git-commit: e079b90f8fb9197e5ebae0fb6ca31081ba28de1d
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '675'
 ht-degree: 12%
 
 ---
 
-
-# Migreren van Mijlsteen naar Media Analytics {#migrating-from-milestone-to-media-analytics}
+# Van Mijlpaal naar Medianalyse {#migrating-from-milestone-to-media-analytics} migreren
 
 ## Overzicht {#overview}
 
-De kernconcepten van videometing zijn hetzelfde voor Mijlpaal en Media Analytics, die videospelergebeurtenissen neemt en deze toewijst aan analytische methoden, terwijl ook de metagegevens en waarden van de speler worden opgehaald en aan analytische variabelen worden toegewezen. De oplossing van de Analyse van Media groeide uit Mijlpaal, zo veel van de methodes en metriek zijn het zelfde, echter, is de configuratiebenadering en de code beduidend veranderd. Het zou mogelijk moeten zijn om de spelergebeurteniscode bij te werken om aan de nieuwe methodes van de Analyse van Media te richten. Zie [Overzicht SDK](/help/sdk-implement/setup/setup-overview.md) en [Overzicht van bijhouden](/help/sdk-implement/track-av-playback/track-core-overview.md) voor meer informatie over het implementeren van Media Analytics.
+De kernconcepten van videometing zijn hetzelfde voor Mijlpaal en Media Analytics, die videospelergebeurtenissen neemt en deze toewijst aan analytische methoden, terwijl ook de metagegevens en waarden van de speler worden opgehaald en aan analytische variabelen worden toegewezen. De oplossing van de Analyse van Media groeide uit Mijlpaal, zo veel van de methodes en metriek zijn het zelfde, echter, is de configuratiebenadering en de code beduidend veranderd. Het zou mogelijk moeten zijn om de spelergebeurteniscode bij te werken om aan de nieuwe methodes van de Analyse van Media te richten. Zie [Overzicht SDK](/help/sdk-implement/setup/setup-overview.md) en [Overzicht bijhouden](/help/sdk-implement/track-av-playback/track-core-overview.md) voor meer informatie over het implementeren van Media Analytics.
 
 De volgende lijsten verstrekken vertalingen tussen de oplossing van de Mijlpaal en de oplossing van de Analyse van Media.
 
@@ -27,9 +27,9 @@ De volgende lijsten verstrekken vertalingen tussen de oplossing van de Mijlpaal 
 | --- | --- | --- |
 | Inhoud | eVar <br> Standaardvervaldatum: Bezoek | Inhoud |
 | Inhoudstype | eVar <br> Standaardvervaldatum: Paginaweergave | Inhoudstype |
-| Tijd van inhoud besteed | Gebeurtenis <br> Type: Teller | Tijd van inhoud besteed |
-| Video wordt gestart | Gebeurtenis <br> Type: Teller | Video wordt gestart |
-| Video voltooid | Gebeurtenis <br> Type: Teller | Inhoud voltooid |
+| Tijd van inhoud besteed | Type gebeurtenis <br>: Teller | Tijd van inhoud besteed |
+| Video wordt gestart | Type gebeurtenis <br>: Teller | Video wordt gestart |
+| Video voltooid | Type gebeurtenis <br>: Teller | Inhoud voltooid |
 
 
 ### Variabelen van de mediamodule
@@ -86,7 +86,6 @@ De volgende lijsten verstrekken vertalingen tussen de oplossing van de Mijlpaal 
 | Media.close | `s.Media.close(mediaName)` | trackSessionEnd | `trackSessionEnd()` |
 | Media.complete | `s.Media.complete(name, offset)` | trackComplete | `trackComplete()` |
 | Media.play | `s.Media.play(` <br> `  name,` <br> `  offset,` <br> `  segmentNum,` <br> `  segment, ` <br> `  segmentLength)` | trackPlay | `trackPlay()` |
-| Media.stop | `s.Media.stop(mediaName, mediaOffset)` | trackPause <br> of <br> trackEvent | `trackPause()` <br> of `trackEvent(` <br> `  MediaHeartbeat.` <br> `  Event.` <br> `  SeekStart)` <br> of <br> `trackEvent(` <br> `  MediaHeartbeat.` <br> `  Event.` <br> `  BufferStart);` |
+| Media.stop | `s.Media.stop(mediaName, mediaOffset)` | trackPause <br> of <br> trackEvent | `trackPause()` <br> of  `trackEvent(` <br> `  MediaHeartbeat.` <br> `  Event.` <br> `  SeekStart)` <br> of  <br> `trackEvent(` <br> `  MediaHeartbeat.` <br> `  Event.` <br> `  BufferStart);` |
 | Media.monitor | `s.Media.monitor(s, media)` | Gebruik aangepaste of standaardmetagegevens om extra variabelen in te stellen. | `var customVideoMetadata = ` <br> `{` <br> `  isUserLoggedIn: ` <br> `    "false",` <br> `  tvStation: ` <br> `    "Sample TV station",` <br> `  programmer: ` <br> `    "Sample programmer"` <br> `};` <br> `...` <br> `var standardVideoMetadata ` <br> `  = {};` <br> `standardVideoMetadata` <br> `  [MediaHeartbeat.` <br> `   VideoMetadataKeys.` <br> `   EPISODE] = ` <br> `  "Sample Episode";` <br> `standardVideoMetadata` <br> `  [MediaHeartbeat.` <br> `   VideoMetadataKeys.` <br> `   SHOW] = "Sample Show";` <br> `...` <br> `mediaObject.setValue(` <br> `  MediaHeartbeat.` <br> `  MediaObjectKey.` <br> `  StandardVideoMetadata, ` <br> `  standardVideoMetadata);` |
 | Media.track | `s.Media.track(mediaName)` | N.v.t. | De het volgen vraagfrequentie wordt automatisch geplaatst. |
-
