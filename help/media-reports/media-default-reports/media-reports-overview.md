@@ -1,14 +1,17 @@
 ---
 title: Overzicht van media
-description: null
+description: Overzicht van media
 uuid: bdbd998f-9b5e-40c9-a8ea-12dfa5acd35c
+exl-id: 4fe91372-da41-44c5-bea9-2bba762512ef
 translation-type: tm+mt
-source-git-commit: 5a4f15616712ee91bc028258991fc4e7359698a5
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+workflow-type: tm+mt
+source-wordcount: '93'
+ht-degree: 1%
 
 ---
 
-
-# Media overview{#media-overview}
+# Media-overzicht{#media-overview}
 
 Het dashboard voor mediaoverzicht is ontworpen om u in staat te stellen media op uw site te controleren. In de weergave Mediaoverzicht worden verschillende metingen van het aggregaat weergegeven, zodat u snel kunt controleren of het medium naar behoren functioneert. In een grafiek wordt de inhoud weergegeven die begint naast de advertentie, zodat u deze gegevens snel kunt bekijken voor elk media-item.
 
