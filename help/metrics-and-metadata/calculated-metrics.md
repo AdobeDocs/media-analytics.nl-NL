@@ -1,14 +1,17 @@
 ---
-title: Berekende cijfers
-description: null
+title: Berekende standaarden
+description: Berekende standaarden
 uuid: 9dd35155-58aa-4f05-896e-c5cbc4b13d59
+exl-id: 253f6c61-70b5-4bdf-8e79-840545aeca0e
 translation-type: tm+mt
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+workflow-type: tm+mt
+source-wordcount: '192'
+ht-degree: 6%
 
 ---
 
-
-# Berekende cijfers{#calculated-metrics}
+# Berekende standaarden{#calculated-metrics}
 
 >[!NOTE]
 >
@@ -25,7 +28,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 | Voltooiingssnelheid van media | Percentage voltooide inhoud versus geïnitieerde media (%) | `Content Completes/ Media Starts` |
 | Voltooiingssnelheid van inhoud | Percentage van voltooide inhoud versus begin van inhoud (%) | `Content Completes / Content Starts` |
 | Voltooiingssnelheid van advertentie | Percentage voltooide advertenties vs Advertentiestart (%) | `Ad Completes / Ad Starts` |
-| Afsluitingspercentage hoofdstuk | Percentage voltooide hoofdstukken versus Start van hoofdstuk (%) | `Chapter Completes / Chapter Starts` |
+| Afsluitingspercentage hoofdstuk | Percentage voltooide hoofdstukfuncties vs Hoofdstukstarters (%) | `Chapter Completes / Chapter Starts` |
 | Waarden neerzetten voor beginsnelheid | Snelheid van druppels voor begin vs mediumstart (%) | `Drops before Starts / Media Starts` |
 | Tijdsduur inhoudspauze | Percentage van totale pauzeduur vs Content Time Spent (%) | `Total Pause Duration / Content Time Spent` |
 | Duur van inhoudsbuffer | Percentage van totale bufferduur vs Content Time Spent (%) | `Total Buffer Duration / Content Time Spent` |
