@@ -1,14 +1,17 @@
 ---
 title: Aanvraag voor sessies
-description: null
+description: Aanvraag voor sessies
 uuid: 9609192d-4f7f-4fb5-844f-ea89d47c4e30
+exl-id: f55f5838-610f-4f82-b3c5-72165ea2c86b
 translation-type: tm+mt
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+workflow-type: tm+mt
+source-wordcount: '80'
+ht-degree: 8%
 
 ---
 
-
-# Aanvraag voor sessies{#sessions-request}
+# Sessieverzoek{#sessions-request}
 
 ```
 POST 
@@ -62,7 +65,7 @@ De aanvraaginstantie moet JSON zijn en dezelfde structuur hebben als deze instan
    * `ts` - Tijdstempel; moet in milliseconden zijn.
 * `eventType` (Verplicht)
 
-   **Geldige waarde:**`sessionStart`
+   **Geldige waarde:** `sessionStart`
 * `params` (Verplicht)
 * `customMetadata` (Optioneel)
 * `qoeData` (Optioneel)
@@ -84,7 +87,7 @@ Age: 0
 Via: 1.1 wsg.sanjose08
 ```
 
-`Location:` header - Het `/api/v1/` onderdeel bevat de API-versie. Het deel na `[…]sessions/` is Zitting ID.
+`Location:` header - Het  `/api/v1/` onderdeel bevat de API-versie. Het onderdeel na `[…]sessions/` is de sessie-id.
 
 ## Antwoordcodes
 
@@ -93,4 +96,3 @@ Via: 1.1 wsg.sanjose08
 | 201 | Sessie gemaakt |
 | 400 | Ongeldig verzoek |
 | 500 | Serverfout |
-
