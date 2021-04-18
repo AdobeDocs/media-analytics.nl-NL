@@ -1,12 +1,15 @@
 ---
 title: Overzicht van standaardrapporten
-description: null
+description: Overzicht van standaardrapporten
 uuid: a078aa59-3b2d-45b2-9e66-3d9c29c82f0c
+exl-id: 0040006e-cd59-48a1-b019-1feafc275fa3
 translation-type: tm+mt
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+workflow-type: tm+mt
+source-wordcount: '324'
+ht-degree: 0%
 
 ---
-
 
 # Overzicht van standaardrapporten{#default-reports-overview}
 
@@ -14,9 +17,9 @@ Adobe Analytics biedt verschillende rapporten en meetgegevens om de mediaprestat
 
 Naast de metriek en de dimensies beschikbaar wanneer u elk van de modules toelaat, zijn er drie extra dashboardstijlrapporten die beschikbaar worden wanneer u de module van de Kern van Media toelaat. Als u de module Advertenties inschakelt, verandert ook de weergave van sommige van deze dashboardstijlrapporten door extra metriek en filters toe te voegen.
 
-Mediarapporten worden weergegeven op het **[!UICONTROL Reports]** tabblad. Navigeer naar > **[!UICONTROL Media]** > **[!UICONTROL Media Engagement]** en selecteer een van de volgende opties:
+Mediarapporten worden weergegeven op het tabblad **[!UICONTROL Reports]**. Navigeer naar > **[!UICONTROL Media]** > **[!UICONTROL Media Engagement]** en selecteer uit:
 
-| Mediarapport | Beschrijving | Algemene bedrijfsinzichten |
+| Mediarapport | Beschrijving     | Algemene bedrijfsinzichten       |
 | --- | --- | --- |
 | [Overzicht van media](media-reports-overview.md) | Hiermee geeft u verschillende metingen van aggregaten weer om snel te controleren of het medium naar behoren functioneert. In een grafiek worden media weergegeven die naast de afbeeldingen worden weergegeven, zodat u deze metingen snel kunt bekijken en vergelijken. | <ul> <li>Totalen voor de hoogste meetwaarden, waaronder het begin van de inhoud, de voltooiingssnelheid, de gemiddelde tijd op de stream en de gemiddelde media-items per bezoek.  </li> <li>Totale inhoud en advertentie beginnen voor media gefilterd door apparatentype of land.  </li> </ul> |
 | [Media-details](media-reports-detail.md) | Hiermee geeft u gedetailleerde metriek weer voor alle media-items, zoals het starten, gelijktijdige viewers, de voltooiingsfrequentie, het afspeelpercentage en de afbeeldingsindrukken. | <ul> <li>De totalen voor de beste meeteenheden, zoals het begin van media, de inhoud en de advertentie, en de gemiddelde inhoud per bezoek.  </li> <li>Totale inhoud en advertentie beginnen voor media gefilterd door apparatentype of land.  </li> </ul> |
