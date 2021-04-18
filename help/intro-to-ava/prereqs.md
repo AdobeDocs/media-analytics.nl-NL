@@ -1,15 +1,15 @@
 ---
 title: Vereisten
-description: null
+description: Vereisten
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
+exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 translation-type: tm+mt
-source-git-commit: 72cdf2d03ebae6998514c9092ab462c29345c9f9
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '425'
 ht-degree: 2%
 
 ---
-
 
 # Vereisten{#prerequisites}
 
@@ -52,4 +52,3 @@ Voor een *Media Analytics* implementatie, zijn hier de taken u moet voltooien al
 1. **Adobe Analytics-rapporten inschakelen.**
 
    Als u rapporten wilt inschakelen in Analytics en de inhoud en advertentiegegevens wilt zien die u verzamelt, raadpleegt u [Media-rapporten inschakelen.](/help/media-reports/media-reports-enable.md)
-
