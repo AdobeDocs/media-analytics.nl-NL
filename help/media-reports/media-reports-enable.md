@@ -1,14 +1,17 @@
 ---
 title: Media-rapporten inschakelen
-description: null
+description: Media-rapporten inschakelen
 uuid: d306068d-a308-4b6e-8a72-742dda0de428
+exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
 translation-type: tm+mt
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+workflow-type: tm+mt
+source-wordcount: '863'
+ht-degree: 1%
 
 ---
 
-
-# Media-rapporten inschakelen{#media-reports-enablement}
+# Inschakelen van mediapporten{#media-reports-enablement}
 
 Elke rapportsuite die mediametriek verzamelt, moet worden geconfigureerd voordat mediagegevens worden verzonden.
 
@@ -16,12 +19,12 @@ Elke rapportsuite die mediametriek verzamelt, moet worden geconfigureerd voordat
 >
 >Om uit nieuwe mogelijkheden voordeel te halen, zouden de bestaande klanten van Media Analytics media het volgen voor hun RSIDs moeten re-toelaten.
 
-1. Klik in [Rapporten en Analyse](https://my.omniture.com/login/) op **[!UICONTROL Admin > Report Suites].**
-1. Selecteer de rapportsuite(s) waar u mediagegevens verzamelt en klik op **[!UICONTROL Edit Settings > Media Management > Media Reporting].**
+1. Klik in [Rapporten &amp; Analytics](https://my.omniture.com/login/) op **[!UICONTROL Admin > Report Suites].**
+1. Selecteer de rapportsuite(s) waar u mediadata verzamelt en klik op **[!UICONTROL Edit Settings > Media Management > Media Reporting].**
 
    ![](assets/media-reporting.png){width=&quot;400px&quot;}
 
-1. Schakel op de **[!UICONTROL Media Reporting]** pagina in **[!UICONTROL Media Core]en schakel desgewenst **,**[!UICONTROL Media Ads]** en **[!UICONTROL Media Chapters]****[!UICONTROL Media Quality]in.**
+1. Schakel op de pagina **[!UICONTROL Media Reporting]** **[!UICONTROL Media Core],** in en schakel **[!UICONTROL Media Ads],** **[!UICONTROL Media Chapters],** en **[!UICONTROL Media Quality]optioneel in.**
 
    Mediameting omvat de volgende modules:
 
@@ -35,7 +38,7 @@ Elke rapportsuite die mediametriek verzamelt, moet worden geconfigureerd voordat
 
    * **Mediahoofdstukken**
 
-      Videohoofdstukken worden gemeten voor het meten van hoofdstukken. Een hoofdstuk is een onderverdeling van inhoud in één medium. Dit zal een Oplossing eVar gebruiken om Hoofdstuk ID op te slaan. De gebeurtenissen van de oplossing zullen voor Hoofdstukbeginnen, de Voltooiingen van het Hoofdstuk, en de Tijd van het Hoofdstuk worden gebruikt. Extra hoofdstukmeta-gegevens van de Naam van het Hoofdstuk en de Positie van het Hoofdstuk zullen als classificaties van Hoofdstuk ID worden verstrekt.
+      Videohoofdstukken worden gemeten voor het meten van hoofdstukken. Een hoofdstuk is een onderverdeling van inhoud in één medium. Dit zal een eVar van de Oplossing gebruiken om Hoofdstuk ID op te slaan. De gebeurtenissen van de oplossing zullen voor Hoofdstukbeginnen, de Voltooiingen van het Hoofdstuk, en de Tijd van het Hoofdstuk worden gebruikt. Extra hoofdstukmeta-gegevens van de Naam van het Hoofdstuk en de Positie van het Hoofdstuk zullen als classificaties van Hoofdstuk ID worden verstrekt.
 
    * **Mediakwaliteit**
 
@@ -54,15 +57,15 @@ Elke rapportsuite die mediametriek verzamelt, moet worden geconfigureerd voordat
 
 1. Klik op **[!UICONTROL Save].**
 
-   Als deze rapportsuite al is geconfigureerd voor het verzamelen van mediagegevens, wordt na het klikken **[!UICONTROL Save]** een extra configuratiepagina weergegeven. Ga naar de volgende stap als de **[!UICONTROL Media Core measurement]** pagina wordt weergegeven.
+   Als deze rapportsuite al is geconfigureerd voor het verzamelen van mediagegevens, wordt na het klikken op **[!UICONTROL Save]** een extra configuratiepagina weergegeven. Ga door met de volgende stap als de pagina **[!UICONTROL Media Core measurement]** wordt weergegeven.
 
-1. (Voorwaardelijk) Kies op de **[!UICONTROL Media Core measurement]** pagina of u de aangepaste variabelen wilt blijven gebruiken of kies om oplossingvariabelen te gebruiken.
+1. (Voorwaardelijk) op de **[!UICONTROL Media Core measurement]** pagina, verkies om het gebruiken van douanevariabelen voort te zetten of verkies om oplossingsvariabelen te gebruiken.
 
-   | Option | Notities |
+   | Optie | Notities |
    | --- | --- |
-   | Doorgaan met aangepaste variabelen | Pros en kons:<ul> <li> **Pros:** Na de migratie blijft het trenderen van inhoud werken. </li> <li> **Cons:** U moet twee aangepaste eVars en drie aangepaste gebeurtenissen toewijzen aan media. U kunt één aangepaste eVar en één aangepaste gebeurtenis opnieuw gebruiken. </li> </ul> Aangepaste variabelen blijven gebruiken: <ol> <li>Selecteer **[!UICONTROL Use Custom Variables,]** en klik op **[!UICONTROL Save.]** </li> <li>Wijs desgevraagd uw huidige aangepaste gebeurtenissen en gebeurtenissen toe en klik vervolgens op **[!UICONTROL Save:]** </li> </ol> |
-   | Migreren naar oplossingsvariabelen | Pros en kons:<ul> <li> **Pros:** U kunt weer drie aangepaste eVars en vier aangepaste gebeurtenissen gebruiken. </li> <li> **Cons:** U verliest **alle** historische trending en vergelijking voor media rapporten. Dit betekent dat u de weergave van inhoud of de tijd van de inhoud die wordt afgespeeld voor geen van de datums kunt veranderen voordat u naar hartslagen migreerde. </li> </ul> **Beperking:**  Migreer niet naar oplossingvariabelen tenzij u zeker bent dat u deze trending niet wilt bewaren. Alle klanten zouden oplossingsvariabelen en verwerkingsregels moeten gebruiken om media gegevens in bestaande steunen en eVars te zetten, slechts als zij historische continuïteit moeten bewaren. Migreren naar oplossingvariabelen: Selecteer **[!UICONTROL Use Solution Variables]** en klik op **[!UICONTROL Save].**BELANGRIJK<br><br>: Door te migreren naar oplossingsvariabelen verliest u**alle **historische trending en vergelijking voor mediapporten. |
+   | Doorgaan met aangepaste variabelen | Pros en kons:<ul> <li> **Pros:** Inhoud trending blijft werken na migratie. </li> <li> **Cons:** Vereist dat u twee aangepaste eVars en drie aangepaste gebeurtenissen toewijst aan media. U kunt één aangepaste eVar en één aangepaste gebeurtenis opnieuw gebruiken. </li> </ul> Aangepaste variabelen blijven gebruiken: <ol> <li>Selecteer **[!UICONTROL Use Custom Variables,]** en klik dan **[!UICONTROL Save.]** </li> <li>Wijs desgevraagd uw huidige aangepaste gebeurtenissen en gebeurtenissen toe en klik op **[!UICONTROL Save:]** </li> </ol> |
+   | Migreren naar oplossingsvariabelen | Pros en kons:<ul> <li> **Pros:** U kunt weer drie aangepaste eVars en vier aangepaste gebeurtenissen gebruiken. </li> <li> **Cons:** U verliest  **** alle historische trending en vergelijking voor media rapporten. Dit betekent dat u de weergave van inhoud of de tijd van de inhoud die wordt afgespeeld voor geen van de datums kunt veranderen voordat u naar hartslagen migreerde. </li> </ul> **Beperking:**  ga niet naar oplossingsvariabelen tenzij u zeker bent dat u deze trending niet wilt bewaren. Alle klanten zouden oplossingsvariabelen en verwerkingsregels moeten gebruiken om media gegevens in bestaande steunen en eVars te zetten, slechts als zij historische continuïteit moeten bewaren. Migreren naar oplossingvariabelen: Selecteer **[!UICONTROL Use Solution Variables]** en klik **[!UICONTROL Save].** <br><br> BELANGRIJK: Door te migreren naar oplossingsvariabelen gaat u alle  **** historische trending en vergelijking voor mediapporten verloren. |
 
 >[!IMPORTANT]
 >
->Wijzig de classificatienamen niet voor variabelen die in de metriek- en metagegevenstabellen (bijvoorbeeld [audio- en videoparameters](/help/metrics-and-metadata/audio-video-parameters.md)) worden vermeld en die daar onder Rapportage/Gereserveerde variabele worden beschreven als &quot;classificatie&quot;. De mediaclassificaties worden gedefinieerd wanneer een rapportsuite is ingeschakeld voor het bijhouden van media. Van tijd tot tijd voegt Adobe nieuwe eigenschappen toe. Wanneer dit gebeurt, moeten klanten hun rapportsuites opnieuw inschakelen om toegang tot de nieuwe media-eigenschappen te krijgen. Tijdens het updateproces bepaalt Adobe of de classificaties zijn ingeschakeld door de namen van de variabelen te controleren. Als een van deze ontbrekende items ontbreekt, voegt Adobe de ontbrekende items opnieuw toe.
+>Wijzig de classificatienamen niet voor variabelen die in de Metriek en meta-gegevenstabellen (b.v. [Audio en videoparameters](/help/metrics-and-metadata/audio-video-parameters.md)) worden vermeld die daar onder Rapportage/Gereserveerde Variabele als &quot;classificatie&quot; worden beschreven. De mediaclassificaties worden gedefinieerd wanneer een rapportsuite is ingeschakeld voor het bijhouden van media. Van tijd tot tijd, voegt Adobe nieuwe eigenschappen toe, en wanneer dit voorkomt, moeten de klanten hun rapportsuites opnieuw toelaten om toegang tot de nieuwe media eigenschappen te krijgen. Tijdens het updateproces bepaalt Adobe of de classificaties worden toegelaten door de namen van de variabelen te controleren. Als een van deze ontbrekende elementen ontbreekt, voegt Adobe de ontbrekende opnieuw toe.
