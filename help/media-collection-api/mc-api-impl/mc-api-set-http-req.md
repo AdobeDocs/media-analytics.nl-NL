@@ -1,18 +1,20 @@
 ---
 title: Het HTTP-aanvraagtype in de speler instellen
-description: null
+description: Het HTTP-aanvraagtype in de speler instellen
 uuid: b8fa7233-e654-4acf-a9d7-14158cded13e
+exl-id: 9ab3eb07-8f0d-4f9a-8feb-db20c4de3db4
 translation-type: tm+mt
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+workflow-type: tm+mt
+source-wordcount: '58'
+ht-degree: 0%
 
 ---
 
+# Het HTTP-aanvraagtype {#setting-the-http-request-type} instellen
 
-# Het HTTP-aanvraagtype instellen {#setting-the-http-request-type}
-
-De aanvraaginstantie voor alle aanvragen voor de API voor mediagroep moet de JSON-indeling hebben. U moet daarom het type inhoudsaanvraag in de speler instellen. In JavaScript stelt u bijvoorbeeld de `Content-Type` aanvraagkoptekst als volgt in:
+De aanvraaginstantie voor alle aanvragen voor de API voor mediagroep moet de JSON-indeling hebben. U moet daarom het type inhoudsaanvraag in de speler instellen. In JavaScript zou u bijvoorbeeld de aanvraagheader `Content-Type` als volgt instellen:
 
 ```
 httpRequest.setRequestHeader('Content-Type', 'application/json'); 
 ```
-
