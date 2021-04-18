@@ -1,27 +1,30 @@
 ---
 title: Snel starten
-description: null
+description: Snel starten
 uuid: ca20bad4-2c8f-406b-833e-b4883a9aa534
+exl-id: 08bb5873-f69a-4fdd-8f27-69649b4acb17
 translation-type: tm+mt
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+workflow-type: tm+mt
+source-wordcount: '276'
+ht-degree: 0%
 
 ---
-
 
 # Snel starten{#quick-start}
 
 >[!TIP]
 >
->Verzamel de verzoekgegevens noodzakelijk voor de voltooiing van een succesvol verzoek [van de](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) Zitting aan de achtergrond-eindserver van de Inzameling van Media Analytics (MA). U kunt uw aanvraaggegevens snel verifiëren door aanvragen handmatig te verzenden (met `curl`, of Postman, enz.). Zo kunt u direct feedback geven over de vraag of er problemen zijn met onjuiste gegevenstypen of onjuiste gegevens in uw aanvraag. Gebruik de [JSON-validatieschema](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md) &#39;s om te controleren of u de juiste aanvraaggegevens opgeeft.
+>Verzamel de verzoekgegevens noodzakelijk voor de voltooiing van een succesvol [Sessieverzoek](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) aan de achtergrondserver van de Media Analytics (MA) Collection API. U kunt uw verzoekgegevens snel verifiëren door verzoeken manueel te verzenden (met `curl`, of Postman, enz.). Zo kunt u direct feedback geven over de vraag of er problemen zijn met onjuiste gegevenstypen of onjuiste gegevens in uw aanvraag. Gebruik [JSON bevestigingsschema&#39;s](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md) om te verifiëren dat u juiste verzoekgegevens verstrekt.
 
-1. Verzamel de standaard, vereiste gegevens van Adobe Analytics en Visitor die u moet leveren om een of meer van de Experience Cloud-toepassingen uit te voeren:
+1. Verzamel de standaard, vereiste Adobe Analytics- en Bezoekergegevens die u moet leveren om een van de Experience Cloud-toepassingen uit te voeren:
 
-   * Bezoeker Cloud Org ID
-   * Gebruikersnaam voor gebruiker in de cloud
+   * Bezoeker Experience Cloud Org ID
+   * Gebruikersnaam bezoeker Experience Cloud
    * ID Analyserapport
    * URL Analytics Tracking Server
 
-1. Creeer een voorwerp JSON voor uw `sessions` verzoeklichaam, dat de minimumgegevens bevat die voor een succesvolle vraag worden vereist. Bijvoorbeeld:
+1. Creeer een voorwerp JSON voor uw `sessions` verzoeklichaam, die de minimumgegevens bevatten die voor een succesvolle vraag worden vereist. Bijvoorbeeld:
 
    ```
    { 
@@ -49,9 +52,9 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
    >[!NOTE]
    >
-   >U moet de correcte gegevenstypes in het JSON verzoeklichaam gebruiken. Bijvoorbeeld: `analytics.enableSSL` vereist een Booleaanse waarde, `media.length` is numeriek, enzovoort. U kunt parametertypen en verplichte versus optionele vereisten controleren door de [JSON-validatieschema&#39;s te controleren.](/help/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
+   >U moet de correcte gegevenstypes in het JSON verzoeklichaam gebruiken. `analytics.enableSSL` vereist bijvoorbeeld een booleaanse waarde, `media.length` is numeriek, enzovoort. U kunt parametertypen en verplichte versus optionele vereisten controleren door de [JSON-validatieschema&#39;s te controleren.](/help/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
 
-1. Verzend Sessieverzoeken naar het API-eindpunt van de MA-verzameling. Als de lading van uw verzoek ongeldig is, identificeer het probleem en probeer opnieuw tot u een `201 Created` reactie krijgt. In dit `curl` voorbeeld bevindt de JSON-aanvraaginstantie zich in een bestand met de naam `sample_data_session`:
+1. Verzend Sessieverzoeken naar het API-eindpunt van de MA-verzameling. Als uw verzoek lading ongeldig is, identificeer het probleem en probeer opnieuw tot u een `201 Created` reactie krijgt. In dit `curl` voorbeeld, is het JSON verzoeklichaam in een dossier genoemd `sample_data_session`:
 
    ```
    $ curl -i -d \ 
@@ -72,4 +75,4 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
    Access-Control-Expose-Headers: Location
    ```
 
-Als het verzoek [van](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) Sessies is geslaagd, ontvangt u een `201 Created` vergelijkbare reactie als hierboven. De reactie bevat een sessie-id in de koptekst Locatie. Identiteitskaart van de Zitting is het cruciale stuk van informatie in de reactie, aangezien het voor alle verdere het volgen vraag wordt vereist. Nadat een [sessieverzoek](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)met succes is geretourneerd, kunt u met vertrouwen doorgaan met het implementeren van videotracering met behulp van de MA API in uw videospeler.
+Als [Sessies request](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) slaagt, ontvangt u een `201 Created` reactie gelijkend op hierboven. De reactie bevat een sessie-id in de koptekst Locatie. Identiteitskaart van de Zitting is het cruciale stuk van informatie in de reactie, aangezien het voor alle verdere het volgen vraag wordt vereist. Na een succesvolle terugkeer van [Sessies request](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md), kunt u met vertrouwen doorgaan met het implementeren van video tracking met behulp van de MA API in uw videospeler.
