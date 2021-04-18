@@ -1,27 +1,30 @@
 ---
 title: JSON-rapportgegevens voor gelijktijdige viewers ophalen
-description: null
+description: JSON-rapportgegevens voor gelijktijdige viewers ophalen
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
 translation-type: tm+mt
-source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+workflow-type: tm+mt
+source-wordcount: '164'
+ht-degree: 4%
 
 ---
 
 
-# Get concurrent viewers JSON report data{#get-concurrent-viewers-json-report-data}
+# Hiermee worden JSON-rapportgegevens voor gelijktijdige viewers opgehaald{#get-concurrent-viewers-json-report-data}
 
-U kunt de rapportgegevens van gelijktijdige viewers ophalen met versie _**_ 1.4 van de API&#39;s voor analyse:
+U kunt de gegevens van het gelijktijdig kijkersrapport verkrijgen gebruikend _*1.4 versie*_ van Analytics APIs:
 * [API&#39;s voor Analytics](https://github.com/AdobeDocs/analytics-1.4-apis)
 * [Swagger](https://adobedocs.github.io/analytics-1.4-apis/swagger-docs.html#/Report/Report.Get)
 
 1. Filter de gegevens gebruikend om het even welk segment dat op UI bouwde. Maak een nieuw segment om te filteren op een specifieke inhoud-id.
-1. Stel de optie `elements` -> `id` in de aanvraaginstantie in op `videoconcurrentviewers`.
-1. Een voldoende hoeveelheid gegevens aanvragen. Adobe raadt 3200 gegevenspunten aan om ervoor te zorgen dat de gegevens geen hiaten bevatten.
+1. Stel de `elements` -> `id` in de hoofdtekst van de aanvraag in op `videoconcurrentviewers`.
+1. Een voldoende hoeveelheid gegevens aanvragen. Adobe raadt 3200 gegevenspunten aan om ervoor te zorgen dat de gegevens geen leemten bevatten.
 
    * Het gegevensbereik dat u in het rapport opgeeft, verzamelt alle gelijktijdige viewergegevens _op het moment dat de videosessie werd beëindigd._
 U moet dus rekening houden met sessies die op een dag beginnen en na middernacht eindigen (dus de volgende dag).
 
-   * Vraag meer dan één dag gegevens aan, maar _*gebruik in uw analyse slechts de eerste dag van de gegevens.*_
+   * Vraag meer dan één dag gegevens aan, maar gebruik in uw analyse _*slechts de eerste dag van de gegevens.*_
 
 Een lading van het steekproefverzoek voor dit scenario zou als dit kijken:
 
