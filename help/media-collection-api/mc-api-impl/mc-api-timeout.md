@@ -1,12 +1,15 @@
 ---
 title: Tijdslimiet
-description: null
+description: Tijdslimiet
 uuid: 2a4ea13e-a561-4adf-b567-f980301b32c8
+exl-id: 0b494b27-a4a6-4af7-84c1-c44b33b6da8f
 translation-type: tm+mt
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+workflow-type: tm+mt
+source-wordcount: '156'
+ht-degree: 0%
 
 ---
-
 
 # Tijdslimiet{#timeout-conditions}
 
@@ -24,4 +27,3 @@ De API voor de verzameling van media heeft, aangezien deze geen status heeft, ni
 >[!NOTE]
 >
 >U kunt een zittingseind ook dwingen door een `events` verzoek met het `sessionEnd` gebeurtenistype te verzenden.
-
