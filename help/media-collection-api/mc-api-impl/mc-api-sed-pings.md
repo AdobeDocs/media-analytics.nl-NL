@@ -1,16 +1,19 @@
 ---
 title: Pingsgebeurtenissen verzenden
-description: null
+description: Pingsgebeurtenissen verzenden
 uuid: c92c1a92-3af6-4474-9e42-ffb8f6c94b33
+exl-id: 0a645363-26d5-41e7-aa16-c775253e2b1d
 translation-type: tm+mt
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+workflow-type: tm+mt
+source-wordcount: '88'
+ht-degree: 0%
 
 ---
 
+# Pingel gebeurtenissen{#sending-ping-events} verzenden
 
-# Pingsgebeurtenissen verzenden{#sending-ping-events}
-
-**Voor hoofdinhoud, moet u in brand pingelen gebeurtenissen elke 10 seconden, die na 10 seconden van playback beginnen, ongeacht andere API gebeurtenissen die u hebt verzonden. Voor het volgen van de Advertentie, moet u pingelen gebeurtenissen elke 1 seconde in brand steken.**
+**Voor hoofdinhoud, moet u in brand pingelen gebeurtenissen elke 10 seconden, die na 10 seconden van playback beginnen, ongeacht andere API gebeurtenissen die u hebt verzonden. Voor het volgen van Advertentie, moet u pingelen gebeurtenissen elke 1 seconde in brand steken.**
 
 Pingel gebeurtenissen zijn letterlijk de &quot;hartslag&quot;van de Analytics van Media. De enige vereiste parameters voor pingelen vraag zijn `eventType: ping` samen met het `playerTime` voorwerp (playhead positie en timestamp).
 
@@ -34,4 +37,3 @@ var Pinger = {
     } 
 }
 ```
-
