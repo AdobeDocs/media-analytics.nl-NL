@@ -4,7 +4,7 @@ description: De volgorde van gebeurtenissen bepalen
 uuid: 007fccc6-be72-4b79-826d-588c957ccf15
 exl-id: c0cac319-2bea-42c8-8674-641dfbb44fa2
 translation-type: tm+mt
-source-git-commit: e0da35f364dc057a241fbb05a718a731ffee1e94
+source-git-commit: 27694ec83de89980404df7a7cc77fa42b3d1a751
 workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 0%
@@ -16,6 +16,7 @@ ht-degree: 0%
 Het stromen video het volgen is een hoogst tijd-afhankelijke verrichting en soms komen de het volgen vraag van API van de Inzameling van Media bij het achtereind uit-van-orde aan. In deze situatie, probeert het achtereind om gebeurtenissen op verstrekte timestamp in het `playerTime` voorwerp op rij te plaatsen en opnieuw te rangschikken.  Dit gebeurt met enkele limieten. Momenteel, kan reorder ontbreken als de vertragingen tussen uit-van-orde vraag meer dan één seconde zijn. In toekomstige updates kan de &quot;aanvaardbare vertragingstijd&quot; geoptimaliseerd en configureerbaar zijn.
 
 ## Voorbeeld van een out-of-order-gebeurtenis
+
 Gebeurtenissen buiten de volgorde treden op wanneer gebeurtenissen door het netwerk gaan, wat soms een vertraging veroorzaakt.
 
 U kunt bijvoorbeeld een gebeurtenis `adBreakStart` verzenden, gevolgd door een gebeurtenis `adStart`. Dit is een gebruikscase, omdat een advertentie moet beginnen in een advertentie-einde.
