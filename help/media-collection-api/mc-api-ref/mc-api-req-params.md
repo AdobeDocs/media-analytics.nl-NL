@@ -2,14 +2,14 @@
 title: Parameters aanvragen
 description: null
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
+exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 translation-type: tm+mt
-source-git-commit: b1b94b4cde74908ea528fb69d78250dc1da1db80
+source-git-commit: 64a91795bd2f9120991be2a67e68c645dc24c8d1
 workflow-type: tm+mt
-source-wordcount: '1195'
+source-wordcount: '1205'
 ht-degree: 5%
 
 ---
-
 
 # Parameters aanvragen{#request-parameters}
 
@@ -28,7 +28,7 @@ ht-degree: 5%
 | --- | :---: | :---: | --- |
 | `visitor.marketingCloudOrgId` | Y | `sessionStart` | de Experience Cloud Organisatie-id; identificeert uw organisatie binnen het ecosysteem van Adobe Experience Cloud |
 | `visitor.marketingCloudUserId` | N | `sessionStart` | Dit is de Experience Cloud-gebruikersnaam (ECID). In de meeste gevallen is dit de id die u moet gebruiken om een gebruiker te identificeren. De hartslag `marketingCloudUserId` is gelijk aan `MID` in Adobe Analytics. Hoewel deze parameter technisch niet vereist is, is deze vereist voor toegang tot de Experience Cloud-reeks apps. |
-| `visitor.aamLocationHint` | N | `sessionStart` | Biedt Adobe Audience Manager Edge-gegevens |
+| `visitor.aamLocationHint` | N | `sessionStart` | Biedt Adobe Audience Manager Edge-gegevens — Als geen waarde wordt ingevoerd, is de waarde null. |
 | `appInstallationId` | N | `sessionStart` | De appInstallationId identificeert de app en het apparaat op unieke wijze |
 
 ## Inhoudsgegevens
