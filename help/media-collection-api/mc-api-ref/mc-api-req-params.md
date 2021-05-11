@@ -4,7 +4,7 @@ description: null
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 translation-type: tm+mt
-source-git-commit: 64a91795bd2f9120991be2a67e68c645dc24c8d1
+source-git-commit: 786327371aa1fc8809c8a5827bc9c8991b1ecae1
 workflow-type: tm+mt
 source-wordcount: '1205'
 ht-degree: 5%
@@ -164,7 +164,7 @@ De waarde `visitor.customerIDs` kan een willekeurig aantal objecten in de gepres
 
 ### visitor.aamLocationHint
 
-Deze parameter geeft aan welke Adobe Audience Manager (AAM) Edge wordt bereikt wanneer Adobe Analytics de klantgegevens naar de Audience Manager verzendt. Als u deze parameter niet overgaat, hardcodeert Adobe het aan 1. Dit is met name van belang wanneer eindgebruikers hun apparaten doorgaans gebruiken op geografisch afgelegen locaties (bijvoorbeeld VS-Oost, VS-West, Europa, Azië). Anders worden de gebruikersgegevens over meerdere AAM Randen verspreid.
+Deze parameter geeft aan welke Adobe Audience Manager (AAM) Edge wordt bereikt wanneer Adobe Analytics de klantgegevens naar de Audience Manager verzendt. Wanneer geen waarde wordt ingevoerd, is de waarde null. Dit is met name van belang wanneer eindgebruikers hun apparaten doorgaans gebruiken op geografisch afgelegen locaties (bijvoorbeeld VS-Oost, VS-West, Europa, Azië). Anders worden de gebruikersgegevens over meerdere AAM Randen verspreid.
 
 ### media.resume
 
