@@ -2,14 +2,13 @@
 title: Chromecast instellen
 description: De toepassingsopstelling van SDK van media voor implementatie op Chromecast.
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
-translation-type: tm+mt
-source-git-commit: be82be2eb58f89344f2125288599fef461db441e
+exl-id: 5dfe3407-2858-48c0-a70c-8ea87967ac47
+source-git-commit: 218c4f6a841a988477eb4509bff8d418e18715f5
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 3%
 
 ---
-
 
 # Chromecast instellen{#set-up-chromecast}
 
@@ -64,7 +63,7 @@ Met Chromecast SDK 2.x voor Experience Cloud Solutions kunt u Chromecast-toepass
             "analytics": {
               "rsids": "mobile5vhl.sample.player",
               "server": "obumobile5.sc.omtrdc.net",
-              "ssl": false,
+              "ssl": true,
               "offlineEnabled": false,
               "charset": "UTF-8",
               "lifecycleTimeout": 300,
@@ -79,7 +78,7 @@ Met Chromecast SDK 2.x voor Experience Cloud Solutions kunt u Chromecast-toepass
               "server": "obumobile5.hb.omtrdc.net",
               "publisher": "972C898555E9F7BC7F000101@AdobeOrg",
               "channel": "test-channel-chromecast",
-              "ssl": false,
+              "ssl": true,
               "ovp": "chromecast-player",
               "sdkVersion": "chromecast-sdk",
               "playerName": "Chromecast"
@@ -139,4 +138,3 @@ Met Chromecast SDK 2.x voor Experience Cloud Solutions kunt u Chromecast-toepass
 
 
 <!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
-
