@@ -1,14 +1,13 @@
 ---
 title: Wat is Adobe Audience Manager ingeschakeld?
 description: Leer hoe u handelingen van toepassingen koppelt aan gegevens voor mediatracering zonder dat u extra verwerkingsregels en aangepaste variabelen nodig hebt.
-translation-type: tm+mt
-source-git-commit: 901539a2095b23f9108a934eb61d182b14ccd9e8
+exl-id: c0d73bc2-4713-498a-8882-ff66c7f3dd50
+source-git-commit: e781af84f23400aa7c899b686f0e9fee2c19d660
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 0%
 
 ---
-
 
 # Audience Manager inschakelen{#audience-manager-enablement}
 
@@ -59,7 +58,7 @@ U kunt deze methodes gebruiken om signalen te verzenden en bezoekerssegmenten va
    Hiermee stelt u de DPID en DPUUID in. Als DPID en DPUUID worden geplaatst, zullen zij met elk signaal worden verzonden.
 
    ```js
-   ADBMobile.audienceManager.SetDpidAndDpuuid("myDpid", "myDpuuid");
+   ADBMobile.audienceManager.setDpidAndDpuuid("myDpid", "myDpuuid");
    ```
 
 * `submitSignal() -`
@@ -67,7 +66,7 @@ U kunt deze methodes gebruiken om signalen te verzenden en bezoekerssegmenten va
    Verzendt publieksbeheer een signaal met eigenschappen.
 
    ```js
-   ADBMobile.audienceManager.SubmitSignal();
+   ADBMobile.audienceManager.submitSignal({"sampleTrait":"sampleValue"});
    ```
 
 ### Roku {#am-roku}
@@ -109,5 +108,7 @@ U kunt deze methodes gebruiken om signalen te verzenden en bezoekerssegmenten va
    Verzendt publieksbeheer een signaal met eigenschappen.
 
    ```js
-   ADBMobile().audienceSubmitSignal()
+   traitData = {}
+   traitData["sampleTrait"] = "sampleValue"
+   ADBMobile().audienceSubmitSignal(traitData)
    ```
