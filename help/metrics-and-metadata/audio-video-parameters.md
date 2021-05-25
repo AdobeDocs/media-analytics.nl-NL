@@ -2,14 +2,13 @@
 title: Parameters voor audio en video
 description: null
 uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
-translation-type: tm+mt
-source-git-commit: b1b94b4cde74908ea528fb69d78250dc1da1db80
+exl-id: 9dc84377-6eca-482f-89e7-c4008d1c0f07
+source-git-commit: fc12fb75060759230911afbe0127b235edfb0e55
 workflow-type: tm+mt
-source-wordcount: '6243'
+source-wordcount: '6242'
 ht-degree: 2%
 
 ---
-
 
 # Parameters voor audio en video{#audio-and-video-parameters}
 
@@ -26,7 +25,7 @@ Dit onderwerp stelt een lijst van audio en videoinhoudsgegevens, met inbegrip va
 Beschrijving van tabelgegevens:
 
 * **Implementatie:** informatie over implementatiewaarden en -vereisten
-   * *Sleutel*  - Variabele, plaats of manueel in uw app, of automatisch door Adobe Media SDK.
+   * *Sleutel*  - Variabele, plaats of manueel in uw app, of automatisch door de Adobe Media SDK.
    * *Vereist*  - Geeft aan of de parameter is vereist voor het bijhouden van audio en video.
    * *Type*  - Geeft het type op van de variabele die moet worden ingesteld, de tekenreeks of het getal.
    * *Verzonden met*  - Geeft aan wanneer de gegevens worden verzonden:  *Media* Startis de analytische aanroep die op het begin van de media wordt verzonden,  *Ad* Startis de analytische aanroep die op ad start wordt verzonden, enzovoort; de  ** Closecalls zijn de gecompileerde analytische vraag die rechtstreeks van de hartslagserver naar de analyseserver aan het eind van de media zitting, of het eind van de advertentie, het hoofdstuk, enz. wordt verzonden. De dichte vraag is niet beschikbaar in de vraag van het netwerkpakket.
@@ -327,7 +326,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   Implementatie   | Netwerkparameters | Rapportage |
 | --- | --- | --- |
-| <ul> <li> **SDK-sleutel:**<br/> automatisch instellen</li> <li> **API-sleutel:**<br/> N.v.t.</li> <li> **Type:**<br/> tekenreeks</li> <li> **Verzonden met:Start**<br/> media</li> <li> **Min. SDK-versie:** Willekeurige</li> <li> **Samplewaarde:**<br/> TRUE </li> <li> **Beschrijving:gebeurtenis**<br/> Laden voor de media. (Dit komt voor wanneer de kijker _Spel_ knoop) klikt. Dit zou tellen zelfs als er pre-roladvertenties, het bufferen, fouten, etc. zijn.  <br/>**Belangrijk:**  dit kan alleen waar zijn als het is ingesteld. Als deze niet is ingesteld, wordt geen waarde geretourneerd.  <br/> **Releasedatum: 13-09-18** </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.view) </li> <li> **hartslagen:**<br/> (s:event:<br/>type=start) </li> </ul> | <ul> <li> **Beschikbaar:**<br/> Ja </li> <li> **Gereserveerde variabele:**<br/> gebeurtenis </li> <li> **Rapportnaam:**<br/> Media starten </li> <li> **Contextgegevens:**<br/> (a.media.view) </li> <li> **Gegevensfeed:**<br/> n.v.t. </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.view) </li> </ul> |
+| <ul> <li> **SDK-sleutel:**<br/> automatisch instellen</li> <li> **API-sleutel:**<br/> N.v.t.</li> <li> **Type:**<br/> tekenreeks</li> <li> **Verzonden met:Start**<br/> media</li> <li> **Min. SDK-versie:** Willekeurige</li> <li> **Samplewaarde:**<br/> TRUE </li> <li> **Beschrijving:gebeurtenis**<br/> Laden voor de media. (Dit komt voor wanneer de kijker _Spel_ knoop) klikt. Dit zou tellen zelfs als er pre-roladvertenties, het bufferen, fouten, etc. zijn.  <br/>**Belangrijk:**  dit kan alleen waar zijn als het is ingesteld. Als deze niet is ingesteld, wordt geen waarde geretourneerd.  <br/> **Releasedatum: 13-09-18** </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.view) </li> <li> **Hartmaten:**<br/> (s:event:<br/>type=start) </li> </ul> | <ul> <li> **Beschikbaar:**<br/> Ja </li> <li> **Gereserveerde variabele:**<br/> gebeurtenis </li> <li> **Rapportnaam:**<br/> Media starten </li> <li> **Contextgegevens:**<br/> (a.media.view) </li> <li> **Gegevensfeed:**<br/> n.v.t. </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.view) </li> </ul> |
 
 ### Inhoud start
 
@@ -429,7 +428,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   Implementatie   | Netwerkparameters | Rapportage |
 | --- | --- | --- |
-| <ul> <li> **SDK-sleutel:**<br/> automatisch instellen </li> <li> **API-sleutel:**<br/> N.v.t. </li> <li> **Tekst:**<br/> nummer </li> <li> **Verzonden met:**<br/> Media Sluiten </li> <li> **Min. SDK-versie:** 1.5.6 </li> <li> **Samplewaarde:**<br/> 190 </li> <li> **Beschrijving:**<br/> geeft een overzicht van de duur (in seconden) van alle gebeurtenissen van het type PAUSE. De waarde wordt weergegeven in de tijdnotatie (HH:MM:SS) in Analysis Workspace en Reports &amp; Analytics. In de Diervoeders van Gegevens, Data Warehouse, en Rapporterende APIs zullen de waarden in seconden worden getoond. <br/> **Releasedatum: 13-09-18** </li></ul> | <ul> <li> **Adobe Analytics:**<br/> N.v.t. </li> <li> **Hartmaten:**<br/> n.v.t. </li> </ul> | <ul> <li> **Beschikbaar:**<br/> Ja </li> <li> **Gereserveerde variabele:**<br/> gebeurtenis </li> <li> **Rapportnaam:**<br/> Totale pauzeduur </li> <li> **Contextgegevens:**<br/> (a.media.pauseTime) </li> <li> **Gegevensfeed:**<br/> n.v.t. </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.pauseTime) </li> </ul> |
+| <ul> <li> **SDK-sleutel:**<br/> automatisch instellen </li> <li> **API-sleutel:**<br/> N.v.t. </li> <li> **Tekst:**<br/> nummer </li> <li> **Verzonden met:**<br/> Media Sluiten </li> <li> **Min. SDK-versie:** 1.5.6 </li> <li> **Samplewaarde:**<br/> 190 </li> <li> **Beschrijving:**<br/> geeft een overzicht van de duur (in seconden) van alle gebeurtenissen van het type PAUSE. De waarde wordt weergegeven in de tijdnotatie (HH:MM:SS) in Analysis Workspace en Reports &amp; Analytics. In de Diervoeders van Gegevens, Data Warehouse, en Rapporterende APIs zullen de waarden in seconden worden getoond. <br/> **Releasedatum: 13-09-18** </li></ul> | <ul> <li> **Adobe Analytics:**<br/> N.v.t. </li> <li> **Hartmaten:**<br/> n.v.t. </li> </ul> | <ul> <li> **Beschikbaar:**<br/> Ja </li> <li> **Gereserveerde variabele:**<br/> gebeurtenis </li> <li> **Rapportnaam:**<br/> Totale pauzeduur </li> <li> **Contextgegevens:**<br/> (a.media.pauseTime) </li> <li> **Gegevensfeed:**<br/> (videoTime) </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.pauseTime) </li> </ul> |
 
 ### Inhoudsresultaten
 
