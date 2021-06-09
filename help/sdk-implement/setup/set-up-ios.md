@@ -2,14 +2,13 @@
 title: iOS instellen
 description: Installatie van Media SDK-toepassingen voor implementatie op iOS.
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
-translation-type: tm+mt
-source-git-commit: f54733c44e96c517d0c4c624a40742b421a54325
+exl-id: fe7662b5-1700-4bd6-b542-66aa8493459d
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
 workflow-type: tm+mt
-source-wordcount: '724'
-ht-degree: 7%
+source-wordcount: '720'
+ht-degree: 6%
 
 ---
-
 
 # iOS instellen{#set-up-ios}
 
@@ -22,11 +21,11 @@ ht-degree: 7%
 * **Verkrijg geldige configuratieparameters voor de Media**
 SDKTDeze parameters kunnen van een vertegenwoordiger van Adobe worden verkregen nadat u opstelling uw analytische rekening.
 * **ADBMobile for iOS implementeren in uw**
-toepassingZie  [iOS SDK 4.x voor Experience Cloud Solutions voor meer informatie over de documentatie van de Adobe Mobile SDK.](https://docs.adobe.com/content/help/nl-NL/mobile-services/ios/overview.html)
+toepassingZie  [iOS SDK 4.x voor Experience Cloud Solutions voor meer informatie over de documentatie van de Adobe Mobile SDK.](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html)
 
    >[!IMPORTANT]
    >
-   >Vanaf iOS 9 introduceerde Apple de functie App Transport Security (ATS). Deze functie is bedoeld om de netwerkbeveiliging te verbeteren door ervoor te zorgen dat uw apps alleen industriestandaard protocollen en ciphers gebruiken. Deze functie is standaard ingeschakeld, maar u hebt configuratieopties die u opties bieden voor het werken met ATS. Voor details op ATS, zie [de Veiligheid van het Vervoer van de app.](https://docs.adobe.com/content/help/en/mobile-services/ios/config-ios/app-transport-security.html)
+   >Vanaf iOS 9 introduceerde Apple de functie App Transport Security (ATS). Deze functie is bedoeld om de netwerkbeveiliging te verbeteren door ervoor te zorgen dat uw apps alleen industriestandaard protocollen en ciphers gebruiken. Deze functie is standaard ingeschakeld, maar u hebt configuratieopties die u opties bieden voor het werken met ATS. Voor details op ATS, zie [de Veiligheid van het Vervoer van de app.](https://experienceleague.adobe.com/docs/mobile-services/ios/config-ios/app-transport-security.html)
 
 * **Biedt de volgende mogelijkheden in uw mediaspeler:**
 
