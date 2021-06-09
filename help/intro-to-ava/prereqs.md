@@ -3,10 +3,10 @@ title: Vereisten
 description: Vereisten
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+source-git-commit: e56ce73316d9cf00193220df8959a489fc3f2124
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 2%
+source-wordcount: '388'
+ht-degree: 1%
 
 ---
 
@@ -42,11 +42,7 @@ Voor een *Media Analytics* implementatie, zijn hier de taken u moet voltooien al
 
    Als u de id-service niet hebt geïmplementeerd, is het nu tijd om een migratiestrategie te overwegen. Voor meer informatie over het belang en de rol van de dienst van identiteitskaart, zie [Waarom de Dienst van de Identiteit op Uw Radar zou moeten zijn.](https://theblog.adobe.com/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)
 
-   >[!IMPORTANT]
-   >
-   >Bij gebrek aan om het even welke gebruiker - identiteitskaart informatie aanwezig op media-specifieke vraag, zal de standaardanalyse [Methoden van identiteitskaart van de Terugval](https://docs-author.corp.adobe.com/content/help/en/analytics/implementation/javascript-implementation/unique-visitors/visid-fallback.html) van toepassing zijn.
-
-   Voor extra informatie over Experience Cloud ID, zie [Experience Cloud ID Overzicht,](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html) en [Adobe Experience Platform de Dienst van de Identiteit.](https://docs.adobe.com/content/help/nl-NL/id-service/using/home.html)
+   Voor extra informatie over Experience Cloud ID, zie [Overzicht van identiteitskaart van de Experience Cloud,](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html) en [de Dienst van de Identiteit van Adobe Experience Platform](https://experienceleague.adobe.com/docs/id-service/using/home.html).
 
 1. **Adobe Analytics-rapporten inschakelen.**
 
