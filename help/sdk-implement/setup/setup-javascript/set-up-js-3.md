@@ -1,51 +1,52 @@
 ---
 title: JavaScript 3.x instellen
 description: Installatie van Media SDK-toepassingen voor implementatie op JavaScript 3.x.
-translation-type: tm+mt
-source-git-commit: b642bd1a136e62901847f2a8cf004d05282fca01
+exl-id: 35e27495-e480-4463-9f00-4b60a54d02c1
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
 workflow-type: tm+mt
-source-wordcount: '398'
-ht-degree: 2%
+source-wordcount: '396'
+ht-degree: 4%
 
 ---
-
 
 # JavaScript 3.x instellen{#set-up-javascript}
 
 ## Vereisten
 
-* **Verkrijg geldige configuratieparameters**. Deze parameters kunnen bij een vertegenwoordiger van Adobe worden verkregen nadat u uw analyseaccount hebt ingesteld.
-* **Implementeren`AppMeasurement`en`Experience Cloud Identity Service`voor JavaScript in uw mediatoepassing** Zie Analyses [implementeren met JavaScript](https://docs.adobe.com/content/help/en/analytics/implementation/js/overview.html) en Cloud Identity Service [implementeren voor meer informatie.](https://docs.adobe.com/content/help/en/id-service/using/implementation/setup-analytics.html)
+* **Verkrijg geldige**
+configuratieparameters. Deze parameters kunnen bij een Adobe vertegenwoordiger worden verkregen nadat u uw analyseaccount hebt ingesteld.
+* **Implementeer  `AppMeasurement` en  `Experience Cloud Identity Service` voor JavaScript in uw mediatoepassingZie Analyses**
+implementeren met  [JavaScript en Experience Cloud-identiteitsservice ](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html)   [implementeren voor meer informatie.](https://docs.adobe.com/content/help/en/id-service/using/implementation/setup-analytics.html)
 
 * **Biedt de volgende mogelijkheden in uw mediaspeler:**
 
-   * *Een API die zich moet abonneren op spelergebeurtenissen* - De Media SDK vereist dat u een set eenvoudige API&#39;s aanroept wanneer gebeurtenissen in de speler plaatsvinden.
-   * *Een API die spelerinformatie* biedt - Dit omvat informatie over het momenteel afspelen van media, advertenties, hoofdstuk.
+   * *Een API die zich moet abonneren op spelergebeurtenissen* . De Media SDK vereist dat u een set eenvoudige API&#39;s aanroept wanneer gebeurtenissen in de speler plaatsvinden.
+   * *Een API die spelerinformatie*  verschaft. Dit is informatie over het momenteel afspelen van media, advertenties en hoofdstuk.
 
-1. Voeg uw [gedownloade](/help/sdk-implement/download-sdks.md#download-3x-sdks) bibliotheek aan uw project toe. Maak lokale verwijzingen naar de klassen voor het gemak.
+1. Voeg uw [gedownloade ](/help/sdk-implement/download-sdks.md#download-3x-sdks) bibliotheek aan uw project toe. Maak lokale verwijzingen naar de klassen voor het gemak.
 
-   1. Vouw het `MediaSDK-js-v3*.zip` bestand uit dat u hebt gedownload.
-   1. Controleer of het `MediaSDK.js` bestand in de `libs` map staat.
+   1. Vouw het `MediaSDK-js-v3*.zip`-bestand uit dat u hebt gedownload.
+   1. Controleer of het `MediaSDK.js`-bestand in de map `libs` aanwezig is.
 
-   1. Het `MediaSDK.js` bestand hosten.
+   1. Het `MediaSDK.js`-bestand hosten.
 
       Dit kern-JavaScript-bestand moet worden gehost op een webserver die toegankelijk is voor alle pagina&#39;s op uw site. Voor de volgende stap hebt u het pad naar deze bestanden nodig.
 
    1. Verwijzing `MediaSDK.js` op alle sitepagina&#39;s.
 
-      Neem code op `MediaSDK` voor JavaScript door de volgende coderegel toe te voegen in de `<head>` of `<body>` tag op elke pagina. Bijvoorbeeld:
+      Neem `MediaSDK` op voor JavaScript door de volgende coderegel toe te voegen in de tag `<head>` of `<body>` op elke pagina. Bijvoorbeeld:
 
       ```html
       <script type="text/javascript" src="https://INSERT-DOMAIN-AND-PATH-TO-CODE-HERE/MediaSDK.js"></script>
       ```
 
-   1. Als u snel wilt controleren of de bibliotheek is geïmporteerd, controleert u of de bibliotheek is geëxporteerd naar een Window-object. `ADB.Media`
+   1. Als u snel wilt controleren of de bibliotheek is geïmporteerd, controleert u `ADB.Media` op het object Window.
 
       >[!NOTE]
       >
       >De JavaScript SDK is compatibel met de AMD- en CommonJS-modulespecificaties en `MediaSDK.js` kan ook worden gebruikt met compatibele modulelezers.
 
-1. Creeer een geval van `AppMeasurement` en vorm `visitor`.
+1. Maak een exemplaar van `AppMeasurement` en configureer `visitor`.
 
    De configuratie van Media SDK vereist een geval van `AppMeasurement` met `visitor` gevormd.
 
@@ -78,9 +79,9 @@ ht-degree: 2%
     ADB.Media.configure(mediaConfig, appMeasurement);
    ```
 
-1. Maak de `MediaTracker` instantie.
+1. Maak de instantie `MediaTracker`.
 
-   Nadat u de SDK van Media hebt geconfigureerd, kunnen tracker-instanties voor het bijhouden van media-inhoud worden gemaakt met behulp van `getInstance` API.
+   Nadat u de SDK van Media hebt geconfigureerd, kunnen tracker-instanties voor het bijhouden van media-inhoud worden gemaakt met de API `getInstance`.
 
    ```js
    var tracker = ADB.Media.getInstance();
@@ -88,8 +89,8 @@ ht-degree: 2%
 
    >[!IMPORTANT]
    >
-   >Zorg ervoor dat uw `tracker` instantie toegankelijk is en pas aan het einde van de mediasessie wordt gedetoewijzingsd. Deze instantie wordt gebruikt voor het bijhouden van alle volgende gebeurtenissen voor die sessie.
+   >Controleer of uw `tracker`-instantie toegankelijk is en pas aan het einde van de mediasessie wordt gedetoewijzingsd. Deze instantie wordt gebruikt voor het bijhouden van alle volgende gebeurtenissen voor die sessie.
 
 ## Migreren van JavaScript 2.x naar 3.x
 
-Voor gedetailleerde informatie over migreren van 2.x naar 3.x, zie Migratie [2.x aan 3.x.](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/MigrationGuide.html)
+Zie [2.x naar 3.x Migratie](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/MigrationGuide.html) voor gedetailleerde informatie over migreren van 2.x naar 3.x.
