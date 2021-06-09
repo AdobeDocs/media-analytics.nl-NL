@@ -1,14 +1,13 @@
 ---
 title: Mediagelijktijdige rapportage
 description: Voor klanten van Media Analytics, laat het Medium Gelijktijdige Kijkers in Analysis Workspace u toe om gezamenlijke kijkers te analyseren om te begrijpen waar de piekgelijktijdig voorkwam of waar drop-outs voorkwamen.
-translation-type: tm+mt
-source-git-commit: 2eb5318267546408f2aab5da074dd7f30c4fbb1d
+exl-id: 2eadd5e7-45de-4275-aac5-d16e2a6a9fed
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 6%
+source-wordcount: '191'
+ht-degree: 1%
 
 ---
-
 
 # Mediagelijktijdige viewers rapporteren{#media-concurrent-viewers}
 
@@ -16,7 +15,7 @@ Door gelijktijdige viewers te analyseren, kunt u precies zien waar de piekgelijk
 
 ## Deelvenster Mediagelijktijdige viewers in Analysis Workspace
 
-In Analysis Workspace is Gelijktijdige viewers het aantal unieke bezoekers dat uw mediastream(s) op een bepaald tijdstip weergeeft, ongeacht het aantal sessies. Het deelvenster Mediagelijktijdige viewers is beschikbaar voor het visualiseren van gelijktijdige viewers, het indelen en vergelijken van viewers. [Meer informatie...](https://docs.adobe.com/content/help/nl-NL/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html)
+In Analysis Workspace is Gelijktijdige viewers het aantal unieke bezoekers dat uw mediastream(s) op een bepaald tijdstip weergeeft, ongeacht het aantal sessies. Het deelvenster Mediagelijktijdige viewers is beschikbaar voor het visualiseren van gelijktijdige viewers, het indelen en vergelijken van viewers. [Meer informatie...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html)
 
 ## Gelijktijdige viewers ophalen via Analytics Reporting API
 
