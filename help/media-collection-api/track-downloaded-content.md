@@ -2,16 +2,15 @@
 title: Gedownloade inhoud bijhouden
 description: null
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
-translation-type: tm+mt
-source-git-commit: be68a7abf7d5fd4cc725b040583801f2308ab066
+exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '609'
 ht-degree: 0%
 
 ---
 
-
-# Track downloaded content{#track-downloaded-content}
+# Gedownloade inhoud bijhouden{#track-downloaded-content}
 
 ## Overzicht {#overview}
 
@@ -45,8 +44,8 @@ De functie Gedownloade inhoud is de offlineversie van de (standaard) online API 
 
 ### Volgorde van de gebeurtenissen
 
-* De eerste gebeurtenis in de batch-lading moet `sessionStart` zoals gebruikelijk zijn met de Media Collection API.
-* **U moet`media.downloaded: true`**in de standaardmeta-gegevensparameters (sleutel) op de`params``sessionStart`gebeurtenis omvatten om aan het achtereind erop te wijzen dat u gedownloade inhoud verzendt. Als deze parameter niet aanwezig is of op vals wordt geplaatst wanneer u gedownloade gegevens verzendt, zal API een 400 antwoordcode (Onjuiste Verzoek) terugkeren. Deze parameter maakt onderscheid tussen gedownloade en live inhoud naar de back-end. Als deze optie`media.downloaded: true`is ingesteld op een live sessie, resulteert dit ook in een 400 reactie van de API.
+* De eerste gebeurtenis in de batch-lading moet `sessionStart` zijn zoals gebruikelijk met de Media Collection API.
+* **U moet`media.downloaded: true`** in de standaardmeta-gegevensparameters (`params` sleutel) op de  `sessionStart` gebeurtenis omvatten om aan het achtereind erop te wijzen dat u gedownloade inhoud verzendt. Als deze parameter niet aanwezig is of op vals wordt geplaatst wanneer u gedownloade gegevens verzendt, zal API een 400 antwoordcode (Onjuiste Verzoek) terugkeren. Deze parameter maakt onderscheid tussen gedownloade en live inhoud naar de back-end. Als `media.downloaded: true` op een levende zitting wordt geplaatst, zal dit eveneens in een 400 reactie van API resulteren.
 * Het is de verantwoordelijkheid van de implementatie om spelergebeurtenissen correct op te slaan in de volgorde waarin ze worden weergegeven.
 
 ### Antwoordcodes
@@ -56,7 +55,7 @@ De functie Gedownloade inhoud is de offlineversie van de (standaard) online API 
 
 ## Integratie met Adobe Analtyics {#integration-with-adobe-analtyics}
 
-Bij het berekenen van de Analytics start/close-aanroepen voor het gedownloade inhoudsscenario stelt de back-end een extra Analytics-veld in met de naam `ts.` Dit zijn tijdstempels voor de eerste en laatste ontvangen gebeurtenissen (start en voltooid). Dankzij dit mechanisme kan een voltooide mediasessie op het juiste tijdstip worden geplaatst (zelfs als de gebruiker enkele dagen niet online terugkomt, wordt gemeld dat de mediasessie heeft plaatsgevonden op het moment dat de inhoud daadwerkelijk werd bekeken). U moet dit mechanisme inschakelen op de zijde van Adobe Analytics door een optionele _tijdstempelrapportsuite te maken._ Als u een optionele rapportsuite met tijdstempels wilt inschakelen, raadpleegt u [Tijdstempels optioneel.](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/timestamp-optional.html)
+Bij het berekenen van het begin/de dichte vraag van Analytics voor het gedownloade inhoudsscenario, plaatst het achterste eind een extra gebied van Analytics genoemd `ts.` Dit zijn timestamps voor de eerste en laatste ontvangen gebeurtenissen (begin en volledig). Dankzij dit mechanisme kan een voltooide mediasessie op het juiste tijdstip worden geplaatst (zelfs als de gebruiker enkele dagen niet online terugkomt, wordt gemeld dat de mediasessie heeft plaatsgevonden op het moment dat de inhoud daadwerkelijk werd bekeken). U moet dit mechanisme aan de Adobe Analytics kant toelaten door een _timestamp facultatieve rapportreeks te creëren._ Als u een optionele rapportsuite met tijdstempels wilt inschakelen, raadpleegt u  [Tijdstempels optioneel.](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/timestamp-optional.html)
 
 ## Samplesessievergelijking {#sample-session-comparison}
 
@@ -108,4 +107,4 @@ Bij het berekenen van de Analytics start/close-aanroepen voor het gedownloade in
 
 ## Referentie voor API voor mediatracker
 
-Zie de API-naslaggids voor [Media tracker voor informatie over het configureren van gedownloade inhoud](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#media-api-reference).
+Voor informatie over hoe te om gedownloade inhoud te vormen, zie [Bron van API van de Tracker van Media](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#media-api-reference).
