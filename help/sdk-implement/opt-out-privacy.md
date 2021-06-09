@@ -2,21 +2,23 @@
 title: Uitschakelen en privacy
 description: Optie-in, opt-out en privacy afhandelen.
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
-translation-type: tm+mt
-source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
+exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+workflow-type: tm+mt
+source-wordcount: '356'
+ht-degree: 1%
 
 ---
 
-
-# Opt-out and privacy{#opt-out-and-privacy}
+# Uitschakelen en privacy{#opt-out-and-privacy}
 
 ## Uitschakelen/Opt-in {#opt-out-opt-in}
 
 U kunt bepalen of traceringsactiviteit is toegestaan op een specifiek apparaat:
 
-* **Mobiele apps -** De VA-bibliotheek respecteert de privacy- en opt-out-instellingen van de `AdobeMobile` bibliotheek. Als u de optie wilt uitschakelen, moet u de `AdobeMobile` bibliotheek gebruiken. Zie `AdobeMobile` Afmelden en Privacy-instellingen [voor meer informatie over de instellingen voor weigeren en privacy van de](https://docs.adobe.com/content/help/en/mobile-services/android/gdpr-privacy-android/privacy.html)bibliotheek.
-* **JavaScript-/browsertoepassingen -** De VA-bibliotheek respecteert de privacy- en `VisitorAPI` optoutinstellingen. Als u het bijhouden wilt uitschakelen, moet u zich afmelden bij de service voor de Bezoeker-API. Zie [Adobe Experience Platform Identity Service voor meer informatie over plug-out en privacy.](https://docs.adobe.com/content/help/en/id-service/using/home.html).
-* **OTT Apps (Chromecast, Roku) -** `opt` De OTT SDKs verstrekken algemene de regelgevende (GDPR) - klaar APIs van de Bescherming van Gegevens die u toestaan om statusvlaggen voor gegevensinzameling en transmissie te plaatsen, en lokaal opgeslagen identiteiten terug te winnen.
+* **Mobiele apps -** De VA-bibliotheek respecteert de privacy- en opt-out-instellingen van de  `AdobeMobile` bibliotheek. Als u niet wilt bijhouden, moet u de bibliotheek `AdobeMobile` gebruiken. Zie [Opt-Out- en Privacy-instellingen](https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html) voor meer informatie over de `AdobeMobile`-instellingen van de bibliotheek.
+* **JavaScript-/browsertoepassingen -** De VA-bibliotheek respecteert de instellingen voor  `VisitorAPI` privacy en optout. Als u het bijhouden wilt uitschakelen, moet u zich afmelden bij de service voor de Bezoeker-API. Zie [Adobe Experience Platform Identity Service.](https://experienceleague.adobe.com/docs/id-service/using/home.html) voor meer informatie over optout en privacy.
+* **OTT Apps (Chromecast, Roku) -** De OTT SDKs verstrekken algemene de regelgevende (GDPR) - klaar APIs van de Bescherming van Gegevens die u toestaan om  `opt` statusvlaggen voor gegevensinzameling en transmissie te plaatsen, en lokaal opgeslagen identiteiten terug te winnen.
 
    >[!NOTE]
    >
@@ -24,9 +26,9 @@ U kunt bepalen of traceringsactiviteit is toegestaan op een specifiek apparaat:
 
    Met de volgende instellingen kunt u bepalen of analysegegevens op een specifiek apparaat worden verzonden:
 
-   * De `privacyDefault` instelling in het `ADBMobile.json` configuratiebestand. Hiermee bepaalt u de eerste instelling en gaat u door totdat deze in de code wordt gewijzigd.
+   * De instelling `privacyDefault` in het configuratiebestand `ADBMobile.json`. Hiermee bepaalt u de eerste instelling en gaat u door totdat deze in de code wordt gewijzigd.
 
-   * De `ADBMobile().setPrivacyStatus()` methode.
+   * De methode `ADBMobile().setPrivacyStatus()`.
 
       * **Weigeren:**
 
@@ -71,21 +73,21 @@ U kunt bepalen of traceringsactiviteit is toegestaan op een specifiek apparaat:
             ```
             ADBMobile().getPrivacyStatus()
             ```
-   Nadat u de privacyinstelling hebt gewijzigd met `setPrivacyStatus`deze methode, is de wijziging permanent totdat deze opnieuw wordt gewijzigd of totdat de toepassing wordt verwijderd en opnieuw wordt geïnstalleerd.
+   Nadat de privacy-instelling is gewijzigd met behulp van `setPrivacyStatus`, is de wijziging permanent totdat deze opnieuw wordt gewijzigd met deze methode of totdat de toepassing wordt verwijderd en opnieuw wordt geïnstalleerd.
 
-## Opgeslagen id&#39;s ophalen (OTT-apps) {#retrieving-stored-identifiers-ott-apps}
+## Opgeslagen id&#39;s (OTT-apps) {#retrieving-stored-identifiers-ott-apps} ophalen
 
 Met deze informatie kunt u lokaal opgeslagen gebruikersidentiteiten ophalen uit uw Roku-app.
 
 >[!IMPORTANT]
 >
->De methode om alle herkenningstekens terug te winnen krijgt alle die gebruikersidentiteiten door SDK worden gekend en worden voortgeduurd. U moet deze methode aanroepen **voordat** een gebruiker de functie uitschakelt.
+>De methode om alle herkenningstekens terug te winnen krijgt alle die gebruikersidentiteiten door SDK worden gekend en worden voortgeduurd. U moet deze methode **before** een gebruiker roepen uit.
 
 De lokaal opgeslagen identiteiten worden geretourneerd in een JSON-tekenreeks, die het volgende kan bevatten:
 
 * Bedrijfcontext - IMS-organisatie-id&#39;s
 * Gebruikersnamen
-* Experience Cloud ID (MCID)
+* Experience Cloud-id (MCID)
 * Gegevensbron-id&#39;s (DPID, DPUUID)
 * Analytische id&#39;s (AVID, AID, VID en bijbehorende RSID&#39;s)
 * Audience Manager-id (UUID)
@@ -103,4 +105,3 @@ Bijvoorbeeld:
    ```
    vids = ADBMobile().getAllIdentifiers()
    ```
-
