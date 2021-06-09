@@ -1,9 +1,8 @@
 ---
-source-git-commit: 4c4f296aced1e0e65a5fef7cf26ee9f6481139dd
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
 workflow-type: tm+mt
-translation-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '428'
+ht-degree: 10%
 
 ---
 # Contribute-artikel
@@ -16,13 +15,13 @@ Dit project heeft de [Adobe-gedragscode voor open source](code-of-conduct.md) of
 
 ## Over uw bijdragen aan Adobe-inhoud
 
-Zie [Adobe Docs Contributor Guide](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html).
+Zie [Adobe Docs Contributor Guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=nl).
 
 Hoe u een bijdrage levert, hangt af van wie u bent en van het soort veranderingen dat u wilt bijdragen:
 
 ### Kleine wijzigingen
 
-Als u minder belangrijke updates uit de goodness van uw hart bijdraagt, bezoek het artikel en klik de **Edit** verbinding in het artikel dat naar de bron GitHub voor het artikel gaat. Dan, gebruik enkel GitHub UI om uw updates te maken. Zie de algemene [Adobe Docs Contributor Guide](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html) voor meer informatie.
+Als u minder belangrijke updates uit de goodness van uw hart bijdraagt, bezoek het artikel en klik de **Edit** verbinding in het artikel dat naar de bron GitHub voor het artikel gaat. Dan, gebruik enkel GitHub UI om uw updates te maken. Zie de algemene [Adobe Docs Contributor Guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) voor meer informatie.
 
 Kleine correcties of verduidelijkingen die u ter documentatie en codevoorbeelden in dit antwoord aanbrengt, worden behandeld in de gebruiksvoorwaarden van de Adobe.
 
@@ -42,7 +41,7 @@ Als u een technisch schrijver, programmamanager, of ontwikkelaar van het product
 
 Communautaire contribuanten kunnen GitHub UI voor basishet uitgeven of vork gebruiken het repo om belangrijke bijdragen te leveren.
 
-Zie [Adobe Docs Contributor Guide](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html) voor meer informatie.
+Zie [Adobe Docs Contributor Guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) voor meer informatie.
 
 ## Hoe te om prijsdaling te gebruiken om uw onderwerp te formatteren
 
