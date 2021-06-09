@@ -1,12 +1,11 @@
 ---
 title: Parameters aanvragen
-description: null
+description: Meer informatie over Adobe Analytics-parameters voor streaming media request.
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
-translation-type: tm+mt
-source-git-commit: 786327371aa1fc8809c8a5827bc9c8991b1ecae1
+source-git-commit: 00e9992712034dc67072e09cce7819719c0371d1
 workflow-type: tm+mt
-source-wordcount: '1205'
+source-wordcount: '1297'
 ht-degree: 5%
 
 ---
@@ -15,105 +14,105 @@ ht-degree: 5%
 
 ## Analysegegevens
 
-| Aanvraagsleutel  | Vereist | Instellen op... |  Beschrijving  |
-| --- | :---: | :---: | --- |
-| `analytics.trackingServer` | Y | `sessionStart` | De URL van uw Adobe Analytics-server |
-| `analytics.reportSuite` | Y | `sessionStart` | De id die uw analysegegevens identificeert |
-| `analytics.enableSSL` | N | `sessionStart` | Waar of onwaar voor het inschakelen van SSL |
-| `analytics.visitorId` | N | `sessionStart` | De Adobe-bezoeker-id is een aangepaste id die u kunt gebruiken in meerdere Adobe-toepassingen. De hartslag `visitorId` is gelijk aan de Analytics `VID.` |
+| Aanvraagsleutel  | Vereist | Sleutel aanvraagtype | Instellen op... |  Beschrijving  |
+| --- | :---: | :---: | :---: | --- |
+| `analytics.trackingServer` | Y | string | `sessionStart` | De URL van uw Adobe Analytics-server |
+| `analytics.reportSuite` | Y | string | `sessionStart` | De id die uw analysegegevens identificeert |
+| `analytics.enableSSL` | N | boolean | `sessionStart` | Waar of onwaar voor het inschakelen van SSL |
+| `analytics.visitorId` | N | string | `sessionStart` | De Adobe-bezoeker-id is een aangepaste id die u kunt gebruiken in meerdere Adobe-toepassingen. De hartslag `visitorId` is gelijk aan de Analytics `VID.` |
 
 ## Bezoekersgegevens
 
-| Aanvraagsleutel  | Vereist | Instellen op... |  Beschrijving  |
-| --- | :---: | :---: | --- |
-| `visitor.marketingCloudOrgId` | Y | `sessionStart` | de Experience Cloud Organisatie-id; identificeert uw organisatie binnen het ecosysteem van Adobe Experience Cloud |
-| `visitor.marketingCloudUserId` | N | `sessionStart` | Dit is de Experience Cloud-gebruikersnaam (ECID). In de meeste gevallen is dit de id die u moet gebruiken om een gebruiker te identificeren. De hartslag `marketingCloudUserId` is gelijk aan `MID` in Adobe Analytics. Hoewel deze parameter technisch niet vereist is, is deze vereist voor toegang tot de Experience Cloud-reeks apps. |
-| `visitor.aamLocationHint` | N | `sessionStart` | Biedt Adobe Audience Manager Edge-gegevens — Als geen waarde wordt ingevoerd, is de waarde null. |
-| `appInstallationId` | N | `sessionStart` | De appInstallationId identificeert de app en het apparaat op unieke wijze |
+| Aanvraagsleutel  | Vereist | Sleutel aanvraagtype | Instellen op... |  Beschrijving  |
+| --- | :---: | :---: | :---: | --- |
+| `visitor.marketingCloudOrgId` | Y | string | `sessionStart` | de Experience Cloud Organisatie-id; identificeert uw organisatie binnen het ecosysteem van Adobe Experience Cloud |
+| `visitor.marketingCloudUserId` | N | string | `sessionStart` | Dit is de Experience Cloud-gebruikersnaam (ECID). In de meeste gevallen is dit de id die u moet gebruiken om een gebruiker te identificeren. De hartslag `marketingCloudUserId` is gelijk aan `MID` in Adobe Analytics. Hoewel deze parameter technisch niet vereist is, is deze vereist voor toegang tot de Experience Cloud-reeks apps. |
+| `visitor.aamLocationHint` | N | integer | `sessionStart` | Biedt Adobe Audience Manager Edge-gegevens — Als geen waarde wordt ingevoerd, is de waarde null. |
+| `appInstallationId` | N | string | `sessionStart` | De appInstallationId identificeert de app en het apparaat op unieke wijze |
 
 ## Inhoudsgegevens
 
-| Aanvraagsleutel  | Vereist | Instellen op... |  Beschrijving  |
-| --- | :---: | :---: | --- |
-| `media.id` | Y | `sessionStart` | Unieke id voor de inhoud |
-| `media.name` | N | `sessionStart` | Menselijke leesbare naam voor de inhoud |
-| `media.length` | Y | `sessionStart` | Lengte van inhoud (seconden) |
-| `media.contentType` | Y | `sessionStart` | Indeling van de stream (kan elke tekenreeks zijn, een aantal aanbevolen waarden zijn &quot;Live&quot;, &quot;VOD&quot; of &quot;Lineair&quot;) |
-| `media.playerName` | Y | `sessionStart` | De naam van de speler die verantwoordelijk is voor het renderen van de inhoud |
-| `media.channel` | Y | `sessionStart` | Het distributiekanaal van de inhoud. Dit kan een mobiele toepassingsnaam of een websitenaam, eigenschapsnaam zijn |
-| `media.resume` | N | `sessionStart` | Geeft aan of een gebruiker een vorige sessie hervat (in tegenstelling tot het starten van een nieuwe sessie) |
-| `media.sdkVersion` | N | `sessionStart` | De SDK-versie die door de speler wordt gebruikt |
+| Aanvraagsleutel  | Vereist | Sleutel aanvraagtype | Instellen op... |  Beschrijving  |
+| --- | :---: | :---: | :---: | --- |
+| `media.id` | Y | string | `sessionStart` | Unieke id voor de inhoud |
+| `media.name` | N | string | `sessionStart` | Menselijke leesbare naam voor de inhoud |
+| `media.length` | Y | getal | `sessionStart` | Lengte van inhoud (seconden) |
+| `media.contentType` | Y | string | `sessionStart` | Indeling van de stream (kan elke tekenreeks zijn, een aantal aanbevolen waarden zijn &quot;Live&quot;, &quot;VOD&quot; of &quot;Lineair&quot;) |
+| `media.playerName` | Y | string | `sessionStart` | De naam van de speler die verantwoordelijk is voor het renderen van de inhoud |
+| `media.channel` | Y | string | `sessionStart` | Het distributiekanaal van de inhoud. Dit kan een mobiele toepassingsnaam of een websitenaam, eigenschapsnaam zijn |
+| `media.resume` | N | boolean | `sessionStart` | Geeft aan of een gebruiker een vorige sessie hervat (in tegenstelling tot het starten van een nieuwe sessie) |
+| `media.sdkVersion` | N | string | `sessionStart` | De SDK-versie die door de speler wordt gebruikt |
 
 ## Metagegevens inhoudstandaard
 
-| Aanvraagsleutel  | Vereist | Instellen op... |  Beschrijving  |
-| --- | :---: | :---: | --- |
-| `media.streamFormat` | N | `sessionStart` | Stroomindeling, bijvoorbeeld &quot;HD&quot; |
-| `media.show` | N | `sessionStart` | De naam van het programma of de serie |
-| `media.season` | N | `sessionStart` | Het seizoensnummer waartoe de show of serie behoort |
-| `media.episode` | N | `sessionStart` | Het nummer van de episode |
-| `media.assetId` | N | `sessionStart` | De unieke id voor de inhoud van het video-element, zoals de aflevering-id van de tv-reeks, de id van het filmelement of de livegebeurtenis. Deze id&#39;s zijn doorgaans afgeleid van metagegevensautoriteiten zoals EIDR, TMS/Gracenote of Rovi. Deze id&#39;s kunnen ook afkomstig zijn van andere bedrijfseigen of interne systemen. |
-| `media.genre` | N | `sessionStart` | Het type inhoud zoals gedefinieerd door de inhoudproducent |
-| `media.firstAirDate` | N | `sessionStart` | De datum waarop de inhoud voor het eerst op televisie werd uitgezonden |
-| `media.firstDigitalDate` | N | `sessionStart` | De datum waarop de inhoud voor het eerst is verzonden op een digitaal platform |
-| `media.rating` | N | `sessionStart` | De rating zoals gedefinieerd in de TV Parental Guidelines |
-| `media.originator` | N | `sessionStart` | De maker van de inhoud |
-| `media.network` | N | `sessionStart` | De naam van het netwerk/kanaal |
-| `media.showType` | N | `sessionStart` | Het type inhoud, uitgedrukt als een geheel getal tussen 0 en 3: <ul> <li>0 - Volledige aflevering </li> <li>1 - Voorvertoning </li> <li>2 - Clip </li> <li>3 - Overige </li> </ul> |
-| `media.adLoad` | N | `sessionStart` | Het type geladen advertentie |
-| `media.pass.mvpd` | N | `sessionStart` | MVPD verstrekt door de authentificatie van de Adobe |
-| `media.pass.auth` | N | `sessionStart` | Geeft aan dat de gebruiker is geautoriseerd via Adobe-verificatie (kan alleen waar zijn als deze is ingesteld) |
-| `media.dayPart` | N | `sessionStart` | De tijd van de dag waarop de inhoud werd uitgezonden |
-| `media.feed` | N | `sessionStart` | Het type diervoeder, bijvoorbeeld &quot;West-HD&quot; |
+| Aanvraagsleutel  | Vereist | Sleutel aanvraagtype | Instellen op... |  Beschrijving  |
+| --- | :---: | :---: | :---: | --- |
+| `media.streamFormat` | N | string | `sessionStart` | Stroomindeling, bijvoorbeeld &quot;HD&quot; |
+| `media.show` | N | string | `sessionStart` | De naam van het programma of de serie |
+| `media.season` | N | string | `sessionStart` | Het seizoensnummer waartoe de show of serie behoort |
+| `media.episode` | N | string | `sessionStart` | Het nummer van de episode |
+| `media.assetId` | N | string | `sessionStart` | De unieke id voor de inhoud van het video-element, zoals de aflevering-id van de tv-reeks, de id van het filmelement of de livegebeurtenis. Deze id&#39;s zijn doorgaans afgeleid van metagegevensautoriteiten zoals EIDR, TMS/Gracenote of Rovi. Deze id&#39;s kunnen ook afkomstig zijn van andere bedrijfseigen of interne systemen. |
+| `media.genre` | N | string | `sessionStart` | Het type inhoud zoals gedefinieerd door de inhoudproducent |
+| `media.firstAirDate` | N | string | `sessionStart` | De datum waarop de inhoud voor het eerst op televisie werd uitgezonden |
+| `media.firstDigitalDate` | N | string | `sessionStart` | De datum waarop de inhoud voor het eerst is verzonden op een digitaal platform |
+| `media.rating` | N | string | `sessionStart` | De rating zoals gedefinieerd in de TV Parental Guidelines |
+| `media.originator` | N | string | `sessionStart` | De maker van de inhoud |
+| `media.network` | N | string | `sessionStart` | De naam van het netwerk/kanaal |
+| `media.showType` | N | string | `sessionStart` | Het type inhoud, uitgedrukt als een geheel getal tussen 0 en 3: <ul> <li>0 - Volledige aflevering </li> <li>1 - Voorvertoning </li> <li>2 - Clip </li> <li>3 - Overige </li> </ul> |
+| `media.adLoad` | N | string | `sessionStart` | Het type geladen advertentie |
+| `media.pass.mvpd` | N | string | `sessionStart` | MVPD verstrekt door de authentificatie van de Adobe |
+| `media.pass.auth` | N | string | `sessionStart` | Geeft aan dat de gebruiker is geautoriseerd via Adobe-verificatie (kan alleen waar zijn als deze is ingesteld) |
+| `media.dayPart` | N | string | `sessionStart` | De tijd van de dag waarop de inhoud werd uitgezonden |
+| `media.feed` | N | string | `sessionStart` | Het type diervoeder, bijvoorbeeld &quot;West-HD&quot; |
 
 ## Advertentiegegevens
 
-| Aanvraagsleutel  | Vereist | Instellen op... |  Beschrijving  |
-| --- | :---: | :---: | --- |
-| `media.ad.podFriendlyName` | N | `adBreakStart` | Vriendschappelijke naam van het advertentiepad |
-| `media.ad.podIndex` | Y | `adBreakStart` | De index van de advertentiepod in de video |
-| `media.ad.podSecond` | Y | `adBreakStart` | De tweede waarmee de pod is gestart |
-| `media.ad.podPosition` | Y | `adStart` | De index van de advertentie binnen het advertentiespoor dat bij 1 begint |
-| `media.ad.name` | N | `adStart` | Vriendelijke naam van de advertentie |
-| `media.ad.id` | Y | `adStart` | Naam van de advertentie |
-| `media.ad.length` | Y | `adStart` | Lengte van de video en in seconden |
-| `media.ad.playerName` | Y | `adStart` | De naam van de speler die verantwoordelijk is voor het renderen van de advertentie |
+| Aanvraagsleutel  | Vereist | Sleutel aanvraagtype | Instellen op... |  Beschrijving  |
+| --- | :---: | :---: | :---: | --- |
+| `media.ad.podFriendlyName` | N | string | `adBreakStart` | Vriendschappelijke naam van het advertentiepad |
+| `media.ad.podIndex` | Y | integer | `adBreakStart` | De index van de advertentiepod in de video |
+| `media.ad.podSecond` | Y | getal | `adBreakStart` | De tweede waarmee de pod is gestart |
+| `media.ad.podPosition` | Y | integer | `adStart` | De index van de advertentie binnen het advertentiespoor dat bij 1 begint |
+| `media.ad.name` | N | string | `adStart` | Vriendelijke naam van de advertentie |
+| `media.ad.id` | Y | string | `adStart` | Naam van de advertentie |
+| `media.ad.length` | Y | getal | `adStart` | Lengte van de video en in seconden |
+| `media.ad.playerName` | Y | string | `adStart` | De naam van de speler die verantwoordelijk is voor het renderen van de advertentie |
 
 ## Standaardmetagegevens toevoegen
 
-| Aanvraagsleutel  | Vereist | Instellen op... |  Beschrijving  |
-| --- | :---: | :---: | --- |
-| `media.ad.advertiser` | N | `adStart` | De onderneming of het merk waarvan het product in de advertentie voorkomt |
-| `media.ad.campaignId` | N | `adStart` | De id van de advertentiecampagne |
-| `media.ad.creativeId` | N | `adStart` | De id van de advertentie is creatief |
-| `media.ad.siteId` | N | `adStart` | De id van de advertentiesite |
-| `media.ad.creativeURL` | N | `adStart` | De URL van de advertentie |
-| `media.ad.placementId` | N | `adStart` | De plaatsings-id van de advertentie |
+| Aanvraagsleutel  | Vereist | Sleutel aanvraagtype | Instellen op... |  Beschrijving  |
+| --- | :---: | :---: | :---: | --- |
+| `media.ad.advertiser` | N | string | `adStart` | De onderneming of het merk waarvan het product in de advertentie voorkomt |
+| `media.ad.campaignId` | N | string | `adStart` | De id van de advertentiecampagne |
+| `media.ad.creativeId` | N | string | `adStart` | De id van de advertentie is creatief |
+| `media.ad.siteId` | N | string | `adStart` | De id van de advertentiesite |
+| `media.ad.creativeURL` | N | string | `adStart` | De URL van de advertentie |
+| `media.ad.placementId` | N | string | `adStart` | De plaatsings-id van de advertentie |
 
 ## Hoofdgegevens
 
-| Aanvraagsleutel  | Vereist | Instellen op... |  Beschrijving  |
-| --- | :---: | :---: | --- |
-| `media.chapter.index` | Y | `chapterStart` | Hiermee wordt de positie van het hoofdstuk in de inhoud aangegeven |
-| `media.chapter.offset` | Y | `chapterStart` | De tweede functie in het afspelen waar het hoofdstuk begint |
-| `media.chapter.length` | Y | `chapterStart` | De lengte van het hoofdstuk in seconden |
-| `media.chapter.friendlyName` | N | `chapterStart` | De mensvriendelijke naam van het hoofdstuk |
+| Aanvraagsleutel  | Vereist | Sleutel aanvraagtype | Instellen op... |  Beschrijving  |
+| --- | :---: | :---: | :---: | --- |
+| `media.chapter.index` | Y | integer | `chapterStart` | Hiermee wordt de positie van het hoofdstuk in de inhoud aangegeven |
+| `media.chapter.offset` | Y | getal | `chapterStart` | De tweede functie in het afspelen waar het hoofdstuk begint |
+| `media.chapter.length` | Y | getal | `chapterStart` | De lengte van het hoofdstuk in seconden |
+| `media.chapter.friendlyName` | N | string | `chapterStart` | De mensvriendelijke naam van het hoofdstuk |
 
 ## Kwaliteitsgegevens
 
-| Aanvraagsleutel  | Vereist | Instellen op... |  Beschrijving  |
-| --- | :---: | :---: | --- |
-| `media.qoe.bitrate` | N | Alle | De bitsnelheid van de stream |
-| `media.qoe.droppedFrames` | N | Alle | Het aantal gedropte frames in de stream |
-| `media.qoe.framesPerSecond` | N | Alle | Het aantal frames per seconde |
-| `media.qoe.timeToStart` | N | Alle | De hoeveelheid tijd (in milliseconden) die wordt doorgegeven tussen het moment dat de gebruiker in aanraking komt met afspelen en het moment waarop de inhoud wordt geladen en het moment waarop wordt begonnen met afspelen |
+| Aanvraagsleutel  | Vereist | Sleutel aanvraagtype | Instellen op... |  Beschrijving  |
+| --- | :---: | :---: | :---: | --- |
+| `media.qoe.bitrate` | N | integer | Alle | De bitsnelheid van de stream |
+| `media.qoe.droppedFrames` | N | integer | Alle | Het aantal gedropte frames in de stream |
+| `media.qoe.framesPerSecond` | N | integer | Alle | Het aantal frames per seconde |
+| `media.qoe.timeToStart` | N | integer | Alle | De hoeveelheid tijd (in milliseconden) die wordt doorgegeven tussen het moment dat de gebruiker in aanraking komt met afspelen en het moment waarop de inhoud wordt geladen en het moment waarop wordt begonnen met afspelen |
 
 ## California Consumer Privacy Act (CCPA) Parameters {#ccpa-params}
 
-| Aanvraagsleutel  | Vereist | Instellen op... |  Beschrijving  |
-| --- | :---: | :---: | --- |
-| `analytics.optOutServerSideForwarding` | N | `sessionStart` | Ingesteld op true wanneer de eindgebruiker ervoor heeft gekozen geen gegevens meer te delen tussen Adobe Analytics en andere Experience Cloud-oplossingen (bijvoorbeeld Audience Manager) |
-| `analytics.optOutShare` | N | `sessionStart` | Wordt ingesteld op true wanneer de eindgebruiker heeft opgegeven dat zijn gegevens niet meer worden gefedereerd (bijvoorbeeld aan andere Adobe Analytics-clients). |
+| Aanvraagsleutel  | Vereist | Sleutel aanvraagtype | Instellen op... |  Beschrijving  |
+| --- | :---: | :---: | :---: | --- |
+| `analytics.optOutServerSideForwarding` | N | boolean | `sessionStart` | Ingesteld op true wanneer de eindgebruiker ervoor heeft gekozen geen gegevens meer te delen tussen Adobe Analytics en andere Experience Cloud-oplossingen (bijvoorbeeld Audience Manager) |
+| `analytics.optOutShare` | N | boolean | `sessionStart` | Wordt ingesteld op true wanneer de eindgebruiker heeft opgegeven dat zijn gegevens niet meer worden gefedereerd (bijvoorbeeld aan andere Adobe Analytics-clients). |
 
 ## Aanvullende details {#additional-details}
 
