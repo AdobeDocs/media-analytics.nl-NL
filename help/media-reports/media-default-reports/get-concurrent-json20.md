@@ -2,27 +2,26 @@
 title: Gelijktijdige gebruikers JSON-rapportgegevens ophalen met Analytics 2.0-API's
 description: null
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
-translation-type: tm+mt
-source-git-commit: e93a39fb76c3ccca2c05e5d1590a53394e50b29b
+exl-id: f84f63d3-b0d0-45fe-95a7-159f22d60660
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 3%
 
 ---
 
+# Krijg Gelijktijdige Viewers JSON rapportgegevens met Analytics 2.0 APIs{#get-concurrent-viewers-json-report-data}
 
-# Gelijktijdige gebruikers JSON-rapportgegevens ophalen met Analytics 2.0-API&#39;s{#get-concurrent-viewers-json-report-data}
-
-U kunt rapportgegevens voor gelijktijdige viewers verkrijgen met de opdracht [_*API&#39;s voor Analytics 2.0*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html).
+U kunt gelijktijdige viewers rapportgegevens verkrijgen met de [_*Analytics 2.0 API&#39;s*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html).
 
 1. Filter de gegevens gebruikend om het even welk segment dat op UI wordt voortgebouwd. Maak een nieuw segment om te filteren op een specifieke inhoud-id.
-1. Stel de `elements` -> `id` in de verzoekende instantie `metrics/concurrent_viewers_visitors`.
+1. Stel de `elements` -> `id` in de hoofdtekst van de aanvraag in op `metrics/concurrent_viewers_visitors`.
 1. Een voldoende hoeveelheid gegevens aanvragen.
 
    * Het gegevensbereik dat u in het rapport opgeeft, verzamelt alle gelijktijdige viewergegevens _op het moment dat de videosessie werd beëindigd._
 U moet uw account opgeven voor sessies die op een dag beginnen en eindigen na middernacht, de volgende dag.
 
-   * Vraag in uw verzoek om een nieuwe dag gegevens naar de bedoelde periode, maar in uw analyse _*alleen de beoogde gegevens gebruiken.*_
+   * Vraag nog één dag van gegevens aan uw voorgenomen periode in uw verzoek, maar in uw analyse _*gebruik slechts de voorgenomen gegevens.*_
 
 Een lading van het steekproefverzoek voor één dag van gegevens zou als het volgende voorbeeld kijken. Het verzoek wordt gedurende twee opeenvolgende dagen uitgevoerd, maar in de rapportage wordt u alleen de eerste dag gebruikt.
 
@@ -129,7 +128,7 @@ You can extract the concurrent viewers report data using the Experience Cloud AP
     * **Environment -** Select your data center.
     * Request JSON - Specify the following:
 
-        * `reportSuiteID` - For info on reports suites: [Report Suites](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/report-suites-admin.html)
+        * `reportSuiteID` - For info on reports suites: [Report Suites](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html)
 
         * `dateTo` - End date of the report.         
 
