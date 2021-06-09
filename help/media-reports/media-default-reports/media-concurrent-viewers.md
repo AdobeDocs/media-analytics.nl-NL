@@ -2,14 +2,13 @@
 title: Mediagelijktijdige viewers
 description: null
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
-translation-type: tm+mt
-source-git-commit: cb54b862a0d4a179c499e3a28ab49301121de1bf
+exl-id: 2c679c1a-a4bd-44fc-8e11-173c8544ab06
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 3%
+source-wordcount: '265'
+ht-degree: 0%
 
 ---
-
 
 # Mediagelijktijdige viewers{#media-concurrent-viewers}
 
@@ -17,7 +16,7 @@ Op het dashboard Medium Gelijktijdige viewers worden gedurende één dag gelijkt
 
 >[!TIP]
 >
-> Dit rapport is gebaseerd op gelijktijdige actieve mediasessies.  Als u gelijktijdige viewers wilt zien door een unieke bezoeker, met de extra mogelijkheden om een segment toe te passen, op te delen en te vergelijken, gebruikt u de opdracht [Deelvenster Mediagelijktijdige viewers in Analysis Workspace](https://docs.adobe.com/content/help/nl-NL/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html).
+> Dit rapport is gebaseerd op gelijktijdige actieve mediasessies.  Gebruik het [deelvenster Mediagelijktijdige viewers in Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html) om gelijktijdige viewers per unieke bezoeker weer te geven met de extra mogelijkheden om een segment toe te passen, op te splitsen en te vergelijken.
 
 
 ![](assets/video-concurrent-viewers.png)
@@ -29,8 +28,8 @@ Dit rapport bevat enkele kenmerken:
 * Dit is niet in real time. Het heeft normale Adobe Analytics latentie.
 * Het verslag bestrijkt een tijdsbestek van 24 uur. De x-as is tijd-van-dag die op de tijdzone van de rapportreeks wordt gebaseerd.
 * Dit toont gelijktijdige kijkers bij minieme granulariteit.
-* Er is een *Rapport Mediagelijktijdige viewers* Hiermee kunt u zien hoeveel kijkers in alle inhoud kijken of luisteren.
-* Er is een rapport voor gelijktijdige viewers in het dialoogvenster *Details media* een rapport waarin wordt aangegeven hoeveel viewers naar een bepaald media-item luisteren.
+* Er is een *Rapport Medium Gelijktijdige Viewers* dat toont hoeveel kijkers kijken of over alle inhoud luisteren.
+* Er is een Gelijktijdig rapport Viewers in het rapport *Mediadetail* dat toont hoeveel kijkers naar één specifiek media-item kijken of luisteren.
 * Het rapport werkt slechts over één dag.
 * De klant kan naar historische gelijktijdige viewerrapporten (beperkt tot één dag) kijken.
 
