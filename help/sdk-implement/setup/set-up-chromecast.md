@@ -3,10 +3,10 @@ title: Chromecast instellen
 description: De toepassingsopstelling van SDK van media voor implementatie op Chromecast.
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 exl-id: 5dfe3407-2858-48c0-a70c-8ea87967ac47
-source-git-commit: 218c4f6a841a988477eb4509bff8d418e18715f5
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 3%
+source-wordcount: '628'
+ht-degree: 2%
 
 ---
 
@@ -28,7 +28,7 @@ HeartbeatsDeze parameters kunnen bij een vertegenwoordiger van Adobe worden verk
    * *Een API die zich moet abonneren op spelergebeurtenissen* . De Media SDK vereist dat u een set eenvoudige API&#39;s aanroept wanneer gebeurtenissen in de speler plaatsvinden.
    * *Een API die spelerinformatie*  verschaft. Deze informatie bevat details zoals de medianaam en de positie van de afspeelkop.
 
-Adobe Mobile-services bieden een nieuwe gebruikersinterface waarin mobiele marketingmogelijkheden voor mobiele toepassingen uit de hele Adobe Marketing Cloud worden samengebracht. Aanvankelijk biedt de Mobile-service een naadloze integratie van analysemogelijkheden voor apps en doelgerichte functionaliteit voor de Adobe Analytics- en Adobe Target-oplossingen. Meer informatie vindt u in de [Adobe Mobile Services-documentatie.](https://docs.adobe.com/content/help/en/mobile-services/using/home.html)
+Adobe Mobile-services bieden een nieuwe gebruikersinterface waarin mobiele marketingmogelijkheden voor mobiele toepassingen uit de hele Adobe Marketing Cloud worden samengebracht. Aanvankelijk biedt de Mobile-service een naadloze integratie van analysemogelijkheden voor apps en doelgerichte functionaliteit voor de Adobe Analytics- en Adobe Target-oplossingen. Meer informatie vindt u in de [Adobe Mobile Services-documentatie.](https://experienceleague.adobe.com/docs/mobile-services/using/home.html)
 
 Met Chromecast SDK 2.x voor Experience Cloud Solutions kunt u Chromecast-toepassingen meten die in JavaScript zijn geschreven, publieksgegevens benutten en verzamelen via publieksbeheer en de videobetrokkenheid meten via videohartslagen.
 
@@ -137,4 +137,4 @@ Met Chromecast SDK 2.x voor Experience Cloud Solutions kunt u Chromecast-toepass
 
 
 
-<!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
+<!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
