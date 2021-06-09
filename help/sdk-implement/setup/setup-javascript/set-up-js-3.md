@@ -2,9 +2,9 @@
 title: JavaScript 3.x instellen
 description: Installatie van Media SDK-toepassingen voor implementatie op JavaScript 3.x.
 exl-id: 35e27495-e480-4463-9f00-4b60a54d02c1
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+source-git-commit: e56ce73316d9cf00193220df8959a489fc3f2124
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '394'
 ht-degree: 4%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 4%
 * **Verkrijg geldige**
 configuratieparameters. Deze parameters kunnen bij een Adobe vertegenwoordiger worden verkregen nadat u uw analyseaccount hebt ingesteld.
 * **Implementeer  `AppMeasurement` en  `Experience Cloud Identity Service` voor JavaScript in uw mediatoepassingZie Analyses**
-implementeren met  [JavaScript en Experience Cloud-identiteitsservice ](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html)   [implementeren voor meer informatie.](https://docs.adobe.com/content/help/en/id-service/using/implementation/setup-analytics.html)
+implementeren met  [JavaScript en Experience Cloud-identiteitsservice](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html)   [ ](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html)implementeren voor meer informatie.
 
 * **Biedt de volgende mogelijkheden in uw mediaspeler:**
 
