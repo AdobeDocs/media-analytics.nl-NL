@@ -2,23 +2,22 @@
 title: Custom Link-implementatiegids
 description: null
 uuid: 83315e73-20ca-4db5-9d43-33daade45a13
-translation-type: tm+mt
-source-git-commit: 6ba2e92ef2c9eabbe0ccfc5eeea200f968bec911
+exl-id: ee6f931a-ef80-4ebe-8ccb-cdbf970516e6
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '191'
 ht-degree: 2%
 
 ---
-
 
 # Custom Link Implementatiehandleiding{#custom-link-implementation-guide}
 
 Bij Aangepaste videotracering wordt handmatig koppelingen bijgehouden met behulp van aangepaste koppelingscode in Analytics `appMeasurement`.
 Het meest wordt aangepaste videotracering van koppelingen gebruikt op platforms en apparaten waar minimale videometing nodig is.
 
-* In JavaScript: de `s.tl()` function
-* In mobiele toepassingen: [trackAction() Android](https://docs.adobe.com/content/help/en/mobile-services/android/analytics-android/actions.html), [trackAction() iOS](https://docs.adobe.com/content/help/en/mobile-services/ios/analytics-ios/actions.html), [trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
-* In de API voor gegevensinvoeging: [linktype-tag](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
+* In JavaScript: de functie `s.tl()`
+* In mobiele toepassingen: [trackAction() Android](https://experienceleague.adobe.com/docs/mobile-services/android/analytics-android/actions.html), [trackAction() iOS](https://docs.adobe.com/content/help/en/mobile-services/ios/analytics-ios/actions.html), [trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
+* In de API voor gegevensinvoeging: [linktype tag](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
 
 ## Vereisten
 
@@ -29,7 +28,7 @@ Het meest wordt aangepaste videotracering van koppelingen gebruikt op platforms 
 ## Metagegevens
 
 * Metagegevens kunnen aan elke volgende aanroep worden toegevoegd als onderdeel van de koppelingsgegevens
-* Vergeet niet de `linkTrackVars` en `linkTrackEvents`
+* Vergeet niet `linkTrackVars` en `linkTrackEvents` bij te werken
 
 ```javascript
 /* Call on video complete */
