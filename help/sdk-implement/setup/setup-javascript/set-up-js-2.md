@@ -2,52 +2,53 @@
 title: JavaScript 2.x instellen
 description: Installatie van Media SDK-toepassingen voor implementatie op JavaScript 2.x.
 uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
-translation-type: tm+mt
-source-git-commit: a73536bd7a818ac23ad322a15f109644e75ee0d5
+exl-id: 33976096-8b86-4353-906b-e25bf4693471
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 2%
+source-wordcount: '392'
+ht-degree: 4%
 
 ---
-
 
 # JavaScript 2.x instellen{#set-up-javascript}
 
 ## Vereisten
 
-* **Verkrijg geldige configuratieparameters**. Deze parameters kunnen bij een vertegenwoordiger van Adobe worden verkregen nadat u uw analyseaccount hebt ingesteld.
-* **Implementeren`AppMeasurement`voor JavaScript in uw mediatoepassing** Zie Analyses [implementeren met JavaScript voor meer informatie over de documentatie van Adobe Mobile SDK.](https://docs.adobe.com/content/help/en/analytics/implementation/js/overview.html)
+* **Verkrijg geldige**
+configuratieparameters. Deze parameters kunnen bij een Adobe vertegenwoordiger worden verkregen nadat u uw analyseaccount hebt ingesteld.
+* **Implementeren  `AppMeasurement` voor JavaScript in uw**
+mediatoepassing. Zie Analyses  [implementeren met JavaScript voor meer informatie over de documentatie van de Adobe Mobile SDK.](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html)
 
 * **Biedt de volgende mogelijkheden in uw mediaspeler:**
 
-   * *Een API die zich moet abonneren op spelergebeurtenissen* - De Media SDK vereist dat u een set eenvoudige API&#39;s aanroept wanneer gebeurtenissen in de speler plaatsvinden.
-   * *Een API die spelerinformatie* verschaft - Deze informatie bevat details zoals de medianaam en de positie van de afspeelkop.
+   * *Een API die zich moet abonneren op spelergebeurtenissen* . De Media SDK vereist dat u een set eenvoudige API&#39;s aanroept wanneer gebeurtenissen in de speler plaatsvinden.
+   * *Een API die spelerinformatie*  verschaft. Deze informatie bevat details zoals de medianaam en de positie van de afspeelkop.
 
-1. Voeg uw [gedownloade](/help/sdk-implement/download-sdks.md#download-2x-sdks) bibliotheek aan uw project toe. Maak lokale verwijzingen naar de klassen voor het gemak.
+1. Voeg uw [gedownloade ](/help/sdk-implement/download-sdks.md#download-2x-sdks) bibliotheek aan uw project toe. Maak lokale verwijzingen naar de klassen voor het gemak.
 
-   1. Vouw het `MediaSDK-js-v2.*.zip` bestand uit dat u hebt gedownload.
-   1. Controleer of het `MediaSDK.min.js` bestand in de `libs` map staat:
+   1. Vouw het `MediaSDK-js-v2.*.zip`-bestand uit dat u hebt gedownload.
+   1. Controleer of het `MediaSDK.min.js`-bestand aanwezig is in de map `libs`:
 
-   1. Het `MediaSDK.min.js` bestand hosten.
+   1. Het `MediaSDK.min.js`-bestand hosten.
 
       Dit kern-JavaScript-bestand moet worden gehost op een webserver die toegankelijk is voor alle pagina&#39;s op uw site. Voor de volgende stap hebt u het pad naar deze bestanden nodig.
 
    1. Verwijzing `MediaSDK.min.js` op alle sitepagina&#39;s.
 
-      Neem code op `MediaSDK` voor JavaScript door de volgende coderegel toe te voegen in de `<head>` of `<body>` tag op elke pagina. Bijvoorbeeld:
+      Neem `MediaSDK` op voor JavaScript door de volgende coderegel toe te voegen in de tag `<head>` of `<body>` op elke pagina. Bijvoorbeeld:
 
       ```
       <script type="text/javascript"
       src="https://INSERT-DOMAIN-AND-PATH-TO-CODE-HERE/MediaSDK.min.js"></script>
       ```
 
-   1. Instantieer de `ADB.va.MediaHeartbeatConfig` klasse om snel te controleren of de bibliotheek is geïmporteerd.
+   1. Instantieer de klasse `ADB.va.MediaHeartbeatConfig` om snel te controleren of de bibliotheek is geïmporteerd.
 
       >[!NOTE]
       >
-      >Vanaf versie 2.1.0 is de JavaScript SDK compatibel met de specificaties van de AMD- en CommonJS-module en `VideoHeartbeat.min.js` kan deze ook worden gebruikt met compatibele modulelezers.
+      >Vanaf versie 2.1.0 is de JavaScript SDK compatibel met de specificaties van de AMD- en CommonJS-module en kan `VideoHeartbeat.min.js` ook worden gebruikt met compatibele modulelezers.
 
-1. Maak lokale verwijzingen naar de `MediaHeartbeat` klassen voor eenvoudige toegang tot de API&#39;s.
+1. Voor eenvoudige toegang tot APIs, creeer lokale verwijzingen naar de `MediaHeartbeat` klassen.
 
    ```js
    var MediaHeartbeat = ADB.va.MediaHeartbeat;
@@ -55,9 +56,9 @@ ht-degree: 2%
    var MediaHeartbeatDelegate = ADB.va.MediaHeartbeatDelegate;
    ```
 
-1. Maak een `MediaHeartbeatConfig` instantie.
+1. Maak een `MediaHeartbeatConfig`-instantie.
 
-   Deze sectie helpt u `MediaHeartbeat` config parameters te begrijpen en hoe te om correcte config waarden op uw `MediaHeartbeat` instantie, voor nauwkeurige het volgen te plaatsen.
+   Deze sectie helpt u om `MediaHeartbeat` configuratieparameters te begrijpen en hoe te om correcte configuratiewaarden op uw `MediaHeartbeat` instantie te plaatsen, voor nauwkeurige het volgen.
 
    Hier volgt een voorbeeld van initialisatie van `MediaHeartbeatConfig`:
 
@@ -73,7 +74,7 @@ ht-degree: 2%
    mediaConfig.ovp = Configuration.HEARTBEAT.OVP;
    ```
 
-1. Implementeer het `MediaHeartbeatDelegate` protocol.
+1. Implementeer het `MediaHeartbeatDelegate`-protocol.
 
    ```js
    var mediaDelegate = new MediaHeartbeatDelegate();
@@ -89,9 +90,9 @@ ht-degree: 2%
    };
    ```
 
-1. Maak de `MediaHeartbeat` instantie.
+1. Maak de instantie `MediaHeartbeat`.
 
-   Gebruik het `MediaHeartbeatConfig` en `MediaHeartbeatDelegate` om de `MediaHeartbeat` instantie te maken.
+   Gebruik `MediaHeartbeatConfig` en `MediaHeartbeatDelegate` om de `MediaHeartbeat` instantie tot stand te brengen.
 
    ```js
    this.mediaHeartbeat = new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurement);
@@ -99,11 +100,11 @@ ht-degree: 2%
 
    >[!IMPORTANT]
    >
-   >Zorg ervoor dat uw `MediaHeartbeat` instantie toegankelijk is en pas aan het einde van de mediasessie wordt gedetoewijzingsd. Deze instantie wordt gebruikt voor alle volgende gebeurtenissen tracking.
+   >Controleer of uw `MediaHeartbeat`-instantie toegankelijk is en pas aan het einde van de mediasessie wordt gedetoewijzingsd. Deze instantie wordt gebruikt voor alle volgende gebeurtenissen tracking.
 
    >[!TIP]
    >
-   >`MediaHeartbeat` vereist een instantie van `AppMeasurement` om aanroepen naar Adobe Analytics te verzenden. Hier volgt een voorbeeld van een `AppMeasurement` instantie:
+   >`MediaHeartbeat` vereist een geval van  `AppMeasurement` om vraag naar Adobe Analytics te verzenden. Hier volgt een voorbeeld van een `AppMeasurement`-instantie:
 
    ```js
    var appMeasurement = new AppMeasurement();
@@ -116,6 +117,6 @@ ht-degree: 2%
 
 ## Migreren van JavaScript 1.x naar 2.x
 
-In versie 2.x worden alle methoden van het type public geconsolideerd in de `ADB.va.MediaHeartbeat` klasse om het voor ontwikkelaars eenvoudiger te maken. Bovendien worden alle configuraties nu geconsolideerd in de `ADB.va.MediaHeartbeatConfig` klasse.
+In versie 2.x, worden alle openbare methodes geconsolideerd in de `ADB.va.MediaHeartbeat` klasse om het voor ontwikkelaars gemakkelijker te maken. Bovendien worden alle configuraties nu geconsolideerd in de klasse `ADB.va.MediaHeartbeatConfig`.
 
-Zie [VHL 1.x- naar 2.x-migratie voor gedetailleerde informatie over het migreren van 1.x naar 2.x.](/help/sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
+Voor gedetailleerde informatie over het migreren van 1.x aan 2.x, zie [VHL 1.x aan Migratie 2.x.](/help/sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
