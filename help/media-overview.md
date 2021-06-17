@@ -2,14 +2,13 @@
 title: Streaming media meten in Adobe Analytics
 description: Adobe Analytics voor Media (ook wel Media Analytics genoemd) biedt clients robuuste mediametingen voor content, audio en advertenties.
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
-translation-type: tm+mt
-source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
+exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
+source-git-commit: eaae56abd3e549ad57c45852fe0bedb618f80e9e
 workflow-type: tm+mt
-source-wordcount: '903'
-ht-degree: 85%
+source-wordcount: '879'
+ht-degree: 83%
 
 ---
-
 
 # Streaming media meten in Adobe Analytics{#measuring-audio-and-video-in-adobe-analytics}
 
@@ -26,7 +25,7 @@ U kunt essentiële leveringsstatistieken in verband met QoS meten, zoals dropped
 ## Functies {#features}
 
 De voordelen van Adobe Analytics for Streaming Media zijn onder andere realtime bewaking, gedetailleerde analyse, inzichten in actie en mogelijkheden voor monetisering.
-* **Real-time analyse**: maak real-time beslissingen waarvoor acties kunnen worden uitgevoerd op basis van essentiële prestatiestatistieken zoals duur, ex2 en ex3, op meerdere kanalen. Gebeurtenissen in verband met hoofdcontent worden gemeten met tussenpozen van 10 seconden om alle activiteit vast te leggen terwijl deze plaatsvindt. Gebeurtenissen in verband met het bijhouden van advertenties vinden plaats met tussenpozen van 1 seconde.
+* **In real time analyse**-maak in real time, actionable besluiten gebruikend zeer belangrijke prestatiesmetriek zoals media begint, over veelvoudige kanalen.
 * **Betrokkenheid stimuleren**: Betrek gebruikers volledig door minder buffergebeurtenissen en door te begrijpen waar en wanneer de advertenties binnen content moeten worden afgespeeld om een soepele, minder opdringerige ervaring te bieden waardoor bezoeken worden herhaald.
 * **Holistisch beeld**: Combineer meerdere datapunten bij al uw contentdistributeurs om volledig zicht op al uw media-activiteit te krijgen. Meet betrokkenheid en kijk/luister op alle mogelijke kanalen via de Federated Analytics-functie.
 * **Meer granulariteit**: Evalueer het kijkgedrag op het meest gedetailleerde niveau, waaronder het tijdstip van individuele bezoeken, gelijktijdige kijkers/luisteraars per minuut, en de gemiddelde duur van gebruik van de content.
