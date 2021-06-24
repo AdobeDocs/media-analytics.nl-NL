@@ -1,17 +1,18 @@
 ---
 title: Sjablonen voor de werkruimte Media
-description: null
+description: Gebruik sjablonen voor de werkruimte Media om de volggegevens te analyseren. Kies standaardsjablonen voor Ophalen of Streaming Media of maak uw eigen aangepaste sjablonen.
 uuid: 0024b06a-eaf5-4d2e-be45-aeda9d0554c1
-translation-type: tm+mt
-source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
+exl-id: a835f86a-a93a-4a56-91f4-14628cf48214
+feature: '"Media Analytics, Workspace Basics"'
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '209'
 ht-degree: 0%
 
 ---
 
-
-# Sjablonen voor de werkruimte van media{#media-workspace-templates}
+# Sjablonen voor de werkruimte Media{#media-workspace-templates}
 
 Met Adobe Analytics Workspace kunt u snel dashboards instellen voor het analyseren van uw trackinggegevens. Wanneer u een nieuw project creeert, of wanneer u binnen naar Workspace gaat om een bestaand project te beheren, kunt u van standaardmalplaatjes kiezen die gemeenschappelijke algemene volgende scenario&#39;s, zoals Aankoop, het Stroomende Gebruik van Media, en meer behandelen. U kunt ook uw eigen aangepaste sjablonen maken, wijzigen en opslaan.
 
