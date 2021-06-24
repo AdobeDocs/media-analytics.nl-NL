@@ -1,20 +1,24 @@
 ---
-title: VOD afspelen met pre-roll-advertenties
-description: Een voorbeeld van hoe u VOD-inhoud kunt bijhouden die pre-roll-advertenties bevat met behulp van de Media SDK.
+title: '"VOD afspelen met voorroladvertenties"'
+description: '"Bekijk een voorbeeld van hoe u VOD-inhoud kunt bijhouden die pre-roll-advertenties bevat met behulp van de Media SDK."'
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
-translation-type: tm+mt
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: c77f6457-ac3b-4d7a-8eed-e7ebd357a6a5
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '528'
+ht-degree: 0%
 
 ---
 
-
 # VOD afspelen met pre-roll-advertenties{#vod-playback-with-pre-roll-ads}
 
-In dit scenario zijn pre-roll-advertenties ingevoegd vóór de hoofdinhoud. Tenzij gespecificeerd, zijn de netwerkvraag het zelfde als de vraag in de playback [VOD zonder advertentiescenario](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) . De netwerkvraag gebeurt tezelfdertijd, maar de nuttige lading is verschillend.
+In dit scenario zijn pre-roll-advertenties ingevoegd vóór de hoofdinhoud. Tenzij gespecificeerd, zijn de netwerkvraag het zelfde als de vraag in [VOD playback zonder het scenario Adads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). De netwerkvraag gebeurt tezelfdertijd, maar de nuttige lading is verschillend.
 
-| Trigger | Hartslagmethode | Netwerkaanroepen | Notities |
+| Trigger | Hartslagmethode | Netwerkaanroepen   | Notities   |
 | --- | --- | --- | --- |
-| De gebruiker klikt [!UICONTROL Play] | `trackSessionStart` | Start inhoud analyse, Start inhoud hartslag | De meetbibliotheek weet niet dat er een pre-rol advertentie is, zodat zijn deze netwerkvraag nog identiek aan de playback [VOD zonder ad](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| De gebruiker klikt [!UICONTROL Play] | `trackSessionStart` | Start inhoud analyse, Start inhoud hartslag | De meetbibliotheek weet niet dat er een pre-rol advertentie is, zodat zijn deze netwerkvraag nog identiek aan [VOD playback zonder het scenario van advertenties](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | De advertentie begint. | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analyses en begin, hartslag en begin |  |
 | Het frame van advertentie 1 wordt afgespeeld. | `trackPlay` | Hartslag en Afspelen | De inhoud van de advertentie wordt afgespeeld vóór de hoofdinhoud en de hartslagen beginnen bij het starten van de advertentie. |
 | De advertentie wordt afgespeeld. |  | Hartbeats toevoegen |  |
@@ -22,13 +26,13 @@ In dit scenario zijn pre-roll-advertenties ingevoegd vóór de hoofdinhoud. Tenz
 | Het eerste frame van advertentie 2 wordt afgespeeld. | `trackEvent:AdStart` | Analyses en begin, hartslag en begin |  |
 | De advertentie wordt afgespeeld. |  | Hartbeats toevoegen |  |
 | Advertentie 2 voltooit het afspelen. | <ul> <li> `trackEvent:trackAdComplete` </li> <li> `trackEvent:AdBreakComplete` </li> </ul> | Hartslag en voltooid | Het einde van de advertentie en de pod is bereikt. |
-| De inhoud wordt afgespeeld. |  | Content Heartbeats | Deze netwerkaanroep is identiek aan de [VOD-weergave zonder advertentiescenario](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) . |
-| De inhoud is voltooid. | `trackComplete` | Hartslaginhoud voltooid | Deze netwerkaanroep is identiek aan de [VOD-weergave zonder advertentiescenario](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) . |
+| De inhoud wordt afgespeeld. |  | Content Heartbeats | Deze netwerkaanroep is identiek aan de [VOD-weergave zonder advertenties](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)-scenario. |
+| De inhoud is voltooid. | `trackComplete` | Hartslaginhoud voltooid | Deze netwerkaanroep is identiek aan de [VOD-weergave zonder advertenties](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)-scenario. |
 | De sessie is beëindigd | `trackSessionEnd` |  | `SessionEnd` |
 
 ## Parameters {#parameters}
 
-Wanneer het afspelen van de advertentie begint, wordt een `Heartbeat Ad Start` aanroep verzonden. Als het begin van de advertentie niet met de 10 tweede tijdopnemer samenvalt, wordt de `Heartbeat Ad Start` vraag vertraagd met een paar seconden, en de vraag gaat naar het volgende 10 tweede interval. Wanneer dit gebeurt, gaat een `Content Heartbeat` uit in het zelfde interval, en u kunt tussen de twee vraag onderscheiden door het gebeurtenistype en het activatype te bekijken:
+Wanneer het afspelen van de advertentie begint, wordt een `Heartbeat Ad Start` vraag verzonden. Als het begin van de advertentie niet met de 10 tweede tijdopnemer samenvalt, wordt de `Heartbeat Ad Start` vraag vertraagd met een paar seconden, en de vraag gaat naar het volgende 10 tweede interval. Wanneer dit gebeurt, gaat `Content Heartbeat` in het zelfde interval uit, en u kunt tussen de twee vraag onderscheiden door het gebeurtenistype en het activatype te bekijken:
 
 ### Hartslag en begin
 
@@ -37,7 +41,7 @@ Wanneer het afspelen van de advertentie begint, wordt een `Heartbeat Ad Start` a
 | `s:event:type` | `start` |  |
 | `s:asset:type` | `ad` |  |
 
-Advertenties volgen het zelfde basismodel zoals `Content Heartbeats`, zodat is de `Ad Play` vraag gelijkaardig aan de `Content Play` vraag.
+Advertenties volgen het zelfde basismodel zoals `Content Heartbeats`, zodat is de `Ad Play` vraag gelijkaardig aan `Content Play` vraag.
 
 ### Aanroep hartslag en afspelen
 
@@ -54,10 +58,10 @@ Deze parameters zijn gelijkaardig aan de `Content Heartbeats` vraag, maar de `Ad
 |---|---|---|
 | `s:event:type` | `play` |  |
 | `s:asset:type` | `ad` |  |
-| `s:asset:ad_id` | &lt;ad-id> |  |
-| `s:asset:pod_id` | &lt;pod-id toevoegen> |  |
+| `s:asset:ad_id` | &lt;ad ID=&quot;&quot;> |  |
+| `s:asset:pod_id` | &lt;ad pod=&quot;&quot; ID=&quot;&quot;> |  |
 
-Gelijkaardig aan `Heartbeat Content Complete` vraag, wanneer ad playback heeft voltooid, en het eind van playhead wordt bereikt, wordt een `Heartbeat Ad Complete` vraag verzonden. Deze vraag kijkt als andere `Heartbeat Ad` vraag maar bevat een paar specifieke dingen:
+Gelijkaardig aan `Heartbeat Content Complete` vraag, wanneer het afspelen van de advertentie heeft voltooid, en het eind van playhead wordt bereikt, wordt een `Heartbeat Ad Complete` vraag verzonden. Deze vraag kijkt als andere `Heartbeat Ad` vraag maar bevat een paar specifieke dingen:
 
 ### Hartslagslag en Volledige Vraag
 
@@ -72,7 +76,7 @@ In dit scenario bestaat de VOD uit een pre-roll advertentie, een tweede pre-roll
 
 ![](assets/preroll-regular-playback.png)
 
-* **Android** Als u dit scenario wilt weergeven in Android, stelt u de volgende code in:
+* **** AndroidStel de volgende code in om dit scenario in Android weer te geven:
 
    ```java
    // Set up  mediaObject 
@@ -176,7 +180,7 @@ In dit scenario bestaat de VOD uit een pre-roll advertentie, een tweede pre-roll
    ........ 
    ```
 
-* **iOS -** Stel de volgende code in om dit scenario in iOS te bekijken:
+* **iOS - Stel de volgende code in** om dit scenario in iOS te bekijken:
 
    ```
    //  Set up mediaObject 
@@ -280,7 +284,7 @@ In dit scenario bestaat de VOD uit een pre-roll advertentie, een tweede pre-roll
    ....... 
    ```
 
-* **JavaScript** Voer de volgende tekst in om dit scenario in JavaScript weer te geven:
+* **** JavaScriptVoer de volgende tekst in om dit scenario in JavaScript weer te geven:
 
    ```js
    // Set up mediaObject 
@@ -382,7 +386,7 @@ In dit scenario wordt VOD-inhoud afgespeeld met een pre-roll-advertentie, de inh
 
 ![](assets/ad-content-regular-playback.png)
 
-* **Android** Als u dit scenario wilt weergeven in Android, stelt u de volgende code in:
+* **** AndroidStel de volgende code in om dit scenario in Android weer te geven:
 
    ```java
    // Set up mediaObject 
@@ -559,7 +563,7 @@ In dit scenario wordt VOD-inhoud afgespeeld met een pre-roll-advertentie, de inh
    ........ 
    ```
 
-* **iOS** Stel de volgende code in om dit scenario in iOS weer te geven:
+* **Stel** de volgende code in om dit scenario in iOS te bekijken:
 
    ```
    //  Set up mediaObject 
@@ -746,7 +750,7 @@ In dit scenario wordt VOD-inhoud afgespeeld met een pre-roll-advertentie, de inh
    ....... 
    ```
 
-* **JavaScript** Voer de volgende tekst in om dit scenario in JavaScript weer te geven:
+* **** JavaScriptVoer de volgende tekst in om dit scenario in JavaScript weer te geven:
 
    ```js
    // Set up mediaObject 
