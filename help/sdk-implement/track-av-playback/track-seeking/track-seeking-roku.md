@@ -1,29 +1,33 @@
 ---
-title: Zoeken volgen op Roku
-description: In dit onderwerp wordt het implementeren van 'seek tracking' beschreven met de Media SDK op Roku.
+title: Leer hoe u zoekopdrachten kunt bijhouden op Roku
+description: Leer hoe u de gebeurtenissen Start en Voltooid zoeken bijhoudt met de Media SDK op Roku.
 uuid: 0572252b-397f-4aa2-b4b5-c5346b75244a
-translation-type: tm+mt
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: cb0581f7-3ced-4d46-ac6a-a309a179c21e
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '132'
+ht-degree: 0%
 
 ---
-
 
 # Zoeken volgen op Roku{#track-seeking-on-roku}
 
 >[!IMPORTANT]
 >
->De volgende instructies bieden richtlijnen voor implementatie voor alle 2.x SDK&#39;s. Als u een 1.x-versie van de SDK implementeert, kunt u de 1.x-handleidingen voor ontwikkelaars hier downloaden: SDK&#39;s [downloaden.](/help/sdk-implement/download-sdks.md)
+>De volgende instructies bieden richtlijnen voor implementatie voor alle 2.x SDK&#39;s. Als u een 1.x-versie van de SDK implementeert, kunt u de 1.x-handleidingen voor ontwikkelaars hier downloaden: [SDK&#39;s downloaden.](/help/sdk-implement/download-sdks.md)
 
 ## Constanten voor reeksspatiëring zoeken
 
-| Naam van constante | Beschrijving |
+| Naam van constante | Beschrijving     |
 |---|---|
 | `SeekStart` | Constante voor het bijhouden van de gebeurtenis Start van zoekopdracht. |
 | `SeekComplete` | Constante voor het bijhouden van de gebeurtenis Seek Complete. |
 
 ## Zoeken implementeren
 
-1. Luister naar het afspelen van zoekgebeurtenissen van de mediaspeler en volg zoekacties bij het zoeken naar gebeurtenissen via de `SeekStart` gebeurtenis.
+1. Luister naar het afspelen van zoekgebeurtenissen van de mediaspeler en volg het zoeken naar gebeurtenissen met de gebeurtenis `SeekStart` bij het zoeken naar gebeurtenissen.
 
    ```
    seekContextData = {}
@@ -31,7 +35,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    ADBMobile().mediaTrackEvent(MEDIA_SEEK_START, seekInfo, seekContextData)
    ```
 
-1. Volg bij het zoeken naar volledige meldingen van de mediaspeler het einde van het zoeken met de `SeekComplete` gebeurtenis.
+1. Volg bij het zoeken naar volledige meldingen van de mediaspeler het einde van het zoeken met de gebeurtenis `SeekComplete`.
 
    ```
    seekContextData = {}
