@@ -1,12 +1,16 @@
 ---
 title: VOD afspelen met een overgeslagen hoofdstuk
-description: Een voorbeeld van hoe te om inhoud van VOD te volgen waarin de gebruiker een hoofdstuk gebruikend Media SDK overgeslagen heeft.
+description: Bekijk een voorbeeld van hoe te om inhoud van VOD te volgen waarin de gebruiker een hoofdstuk gebruikend Media SDK overgeslagen heeft.
 uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
-translation-type: tm+mt
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 5ab981bf-1195-4197-a7c0-051fa4aa11b8
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '314'
+ht-degree: 2%
 
 ---
-
 
 # VOD afspelen met een overgeslagen hoofdstuk{#vod-playback-with-a-skipped-chapter}
 
@@ -14,11 +18,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 In dit scenario slaat de gebruiker een hoofdstuk in de hoofdinhoud over.
 
-Dit is hetzelfde scenario als het afspelen van [VOD met één hoofdstuk](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md), behalve dat de gebruiker in dit geval van plan is uit het hoofdstuk te zoeken en het vervolgens over te slaan naar de hoofdinhoud.
+Dit is hetzelfde scenario als het afspelen van [VOD met één hoofdstuk](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md), behalve dat de gebruiker in dit geval van plan is uit het hoofdstuk te zoeken, waarbij het wordt overgeslagen om in de hoofdinhoud te landen.
 
-| Trigger | Hartslagmethode | Netwerkaanroepen | Notities |
+| Trigger | Hartslagmethode | Netwerkaanroepen   | Notities |
 |---|---|---|---|
-| Gebruiker klikt **[!UICONTROL Play]** | `trackSessionStart` | Start inhoud analyse, Start inhoud hartslag | De meetbibliotheek is zich er niet van bewust dat er een pre-roll advertentie is. Deze netwerkaanroepen zijn nog steeds precies hetzelfde als [Afspelen zonder onderbrekingen in iOS](vod-no-intrs-details.md) -scenario. |
+| Gebruiker klikt **[!UICONTROL Play]** | `trackSessionStart` | Start inhoud analyse, Start inhoud hartslag | De meetbibliotheek is zich er niet van bewust dat er een pre-roll advertentie is. Deze netwerkaanroepen zijn nog steeds precies hetzelfde als het afspelen zonder onderbrekingen in iOS](vod-no-intrs-details.md)-scenario.[ |
 | Het hoofdstuk begint. | `trackEvent:ChapterStart` | Begin van hoofdstuk hartslag |  |
 | Het eerste frame van het hoofdstuk wordt afgespeeld. | `trackPlay` | Hoofdgedeelte afspelen | Wanneer hoofdstukinhoud vóór hoofdinhoud wordt afgespeeld, willen wij hartslagen beginnen wanneer het hoofdstuk begint. |
 | Het hoofdstuk wordt afgespeeld. |  | Hoofdstukbeats |  |
@@ -26,12 +30,12 @@ Dit is hetzelfde scenario als het afspelen van [VOD met één hoofdstuk](/help/s
 | Het zoeken is voltooid. | `trackEvent:trackSeekComplete` |  | De hartslagen zullen dit bericht hervatten. |
 | De toepassing realiseert zich dat de gebruiker uit de regelmatige hoofdstukgrens heeft gezocht. | `trackEvent:trackChapterSkip` |  |  |
 | De inhoud wordt afgespeeld. |  | Content Heartbeats |  |
-| Het afspelen van de inhoud is voltooid. | `trackComplete` | Hartslaginhoud voltooid | Deze netwerkaanroep is precies hetzelfde als het afspelen zonder onderbrekingen in het iOS [](vod-no-intrs-details.md) -scenario. |
+| Het afspelen van de inhoud is voltooid. | `trackComplete` | Hartslaginhoud voltooid | Deze netwerkaanroep is precies hetzelfde als het afspelen zonder onderbrekingen in iOS](vod-no-intrs-details.md)-scenario.[ |
 | De sessie is afgelopen. | `trackSessionEnd` |  | `SessionEnd` het einde van een weergavesessie. Deze API moet worden aangeroepen, zelfs als de gebruiker de media niet controleert om te worden voltooid. |
 
 ## Parameters {#parameters}
 
-De parameters die tijdens hoofdstukplayback worden gebruikt zijn identiek aan de parameters in de [playback VOD met één hoofdstukscenario](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md) , behalve dat er geen hoofdstuk volledige netwerkvraag is.
+De parameters die tijdens hoofdstukplayback worden gebruikt zijn identiek aan de parameters in [VOD playback met één hoofdstuk](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md) scenario, behalve dat er geen hoofdstuk volledige netwerkvraag is.
 
 ## Voorbeeldcode {#sample-code}
 
@@ -288,4 +292,3 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ........ 
 ```
-
