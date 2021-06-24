@@ -1,20 +1,24 @@
 ---
-title: Toepassingsstaten bijhouden
-description: 'App-statussen zijn de verschillende schermen of weergaven in uw toepassing. Wanneer deze worden weergegeven, moet dit resulteren in een trackState-aanroep. '
+title: App-statussen bijhouden
+description: 'Toepassingsstaten zijn de verschillende schermen of weergaven in uw toepassing. Leer hoe u de toepassingsstatus in uw toepassing kunt bijhouden met behulp van de trackState-oproep. '
 uuid: 2f98fb43-c362-4a9b-8732-fa7e963da729
-translation-type: tm+mt
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: bb1e0eee-7c59-40b4-9359-a7441b9686b8
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '190'
+ht-degree: 2%
 
 ---
 
-
 # Toepassingsstaten bijhouden{#track-app-states}
 
-Frames zijn de verschillende schermen of weergaven in uw toepassing. Telkens als een nieuw staat in uw toepassing wordt getoond, zou u een `trackState` vraag moeten verzenden. Wanneer een gebruiker bijvoorbeeld van de startpagina naar het scherm met videodetails navigeert, stuurt u een `trackState` aanroep. Frames worden meestal weergegeven met behulp van een tekenrapport, zodat u kunt zien hoe gebruikers door uw app navigeren en welke frames het meest worden weergegeven.
+Frames zijn de verschillende schermen of weergaven in uw toepassing. Telkens wanneer een nieuwe staat in uw toepassing wordt getoond, zou u een `trackState` vraag moeten verzenden. Wanneer een gebruiker bijvoorbeeld van de startpagina naar het scherm met videodetails navigeert, verzendt u een `trackState`-aanroep. Frames worden meestal weergegeven met behulp van een tekenrapport, zodat u kunt zien hoe gebruikers door uw app navigeren en welke frames het meest worden weergegeven.
 
 ## trackState-oproepen
 
-U roept doorgaans `trackState` telkens wanneer de toepassing een nieuw scherm laadt.
+U roept `trackState` gewoonlijk elke keer wanneer app een nieuw scherm laadt.
 
 ### Roku
 
@@ -28,7 +32,7 @@ ADBMobile().trackState("State Name", {})
 ADBMobile.analytics.trackState("State Name",{});
 ```
 
-De statusnaam wordt vermeld in de variabele &quot;View State&quot; in Adobe Mobile-services en er wordt voor elke `trackState` aanroep een weergave opgenomen. In andere analytische interfaces, wordt de &quot;Staat van de Mening&quot;gerapporteerd als &quot;Naam van de Pagina&quot;; &quot;Statusweergaven&quot; wordt gerapporteerd als &quot;Paginaweergaven&quot;.
+De staatsnaam wordt vermeld in de &quot;staat van de Mening&quot;variabele in de Mobiele diensten van Adobe, en een mening wordt geregistreerd voor elke `trackState` vraag. In andere analytische interfaces, wordt de &quot;Staat van de Mening&quot;gerapporteerd als &quot;Naam van de Pagina&quot;; &quot;Statusweergaven&quot; wordt gerapporteerd als &quot;Paginaweergaven&quot;.
 
 ## Contextgegevens verzenden
 
@@ -52,5 +56,4 @@ ADBMobile.analytics.trackState("Home Screen", dictionary);
 
 >[!NOTE]
 >
->Contextgegevenswaarden moeten worden toegewezen aan aangepaste variabelen in Adobe Mobile-services.
-
+>De waarden van contextgegevens moeten aan douanevariabelen in de Mobiele diensten van Adobe worden in kaart gebracht.
