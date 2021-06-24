@@ -1,8 +1,10 @@
 ---
-title: Migreren van de standalone SDK van Media naar Adobe Launch - Web (JS)
-description: Instructies en codevoorbeelden voor het migreren van de Media SDK naar Launch.
+title: '"Migrating from the Standalone Media SDK to Adobe Launch - Web (JS)"'
+description: Leer hoe u van de SDK van Media naar Starten voor JS migreert.
 exl-id: 19b506b2-3070-4a5e-9732-a5cd0867afde
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 3%
