@@ -1,16 +1,17 @@
 ---
 title: Uitvoering en verslaglegging
-description: In dit onderwerp wordt beschreven hoe u de functie voor het bijhouden van de spelerstatus kunt implementeren, inclusief.
-translation-type: tm+mt
-source-git-commit: 1b48565bcc5c9a87e5fabbc906049ab791bf89cc
+description: Meer informatie over het implementeren van de functie voor het bijhouden van de spelerstatus, waaronder .
+exl-id: 19a97c9b-14d1-4f11-bb0a-3a1ad6f949da
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 0%
+source-wordcount: '334'
+ht-degree: 1%
 
 ---
 
-
-# Uitvoering en verslaglegging
+# Implementatie en rapportage
 
 Tijdens een afspeelsessie moet elke statusinstantie (begin tot eind) afzonderlijk worden bijgehouden. De Media SDK en de Media Collection API verstrekken nieuwe het volgen methodes voor dit vermogen.
 
@@ -21,7 +22,7 @@ De Media SDK bevat twee nieuwe methoden voor het bijhouden van aangepaste status
 `trackStateClose("state_name")`
 
 
-De Media Collection API omvat twee nieuwe gebeurtenissen die `media.stateName` als vereiste parameter hebben:
+De API van de Inzameling van Media omvat twee nieuwe gebeurtenissen die `media.stateName` als vereiste parameter hebben:
 
 `stateStart` en `stateEnd`
 
@@ -82,7 +83,7 @@ http(s)://<Analytics_Visitor_Namespace>.hb-api.omtrdc.net/api/v1/sessions/<SID>/
 
 ## Statusmetriek
 
-De meetgegevens die voor elk afzonderlijk frame worden verstrekt, worden als Context Data-parameters berekend en doorgegeven aan Adobe Analytics en voor rapportagedoeleinden opgeslagen. Er zijn drie cijfers beschikbaar voor elk frame:
+De metriek die voor elke individuele staat wordt verstrekt wordt berekend en aan Adobe Analytics als parameters van de Gegevens van de Context en voor rapporteringsdoeleinden opgeslagen. Er zijn drie cijfers beschikbaar voor elk frame:
 
 * `a.media.states.[state.name].set = true` — Ingesteld op true als de status ten minste eenmaal is ingesteld voor elke specifieke weergave van een stream.
 * `a.media.states.[state.name].count = 4` — Identificeert het aantal instanties van een status tijdens elke afzonderlijke afspeelbewerking van een stream.
@@ -90,14 +91,14 @@ De meetgegevens die voor elk afzonderlijk frame worden verstrekt, worden als Con
 
 ## Rapportage
 
-Alle metriek van de spelerstaat kan voor om het even welke rapporteringsvisualisatie worden gebruikt beschikbaar in de Werkruimte van de Analyse of een component (segment, berekende metriek) zodra een rapportreeks voor het volgen van de spelerstaat wordt toegelaten. De nieuwe metriek zou van de Console Admin voor elk individueel rapport kunnen worden toegelaten gebruikend Media die Opstelling melden (geef Montages > Mediabeheer > Mediarapportering uit).
+Alle metriek van de spelerstaat kan voor om het even welke rapporteringsvisualisatie beschikbaar in Analysis Workspace of een component (segment, berekende metriek) worden gebruikt zodra een rapportreeks voor het volgen van de spelerstaat wordt toegelaten. De nieuwe metriek zou van de Admin Console voor elk individueel rapport kunnen worden toegelaten gebruikend Media die Opstelling melden (geef Montages > Mediabeheer > Mediarapportering uit).
 
 ![](assets/report-setup.png)
 
-In de werkruimte Analytics bevinden alle nieuwe eigenschappen zich in het deelvenster Metrics. U kunt bijvoorbeeld zoeken op `full screen` om de gegevens van het volledige scherm weer te geven in het deelvenster Metriek.
+In de werkruimte Analytics bevinden alle nieuwe eigenschappen zich in het deelvenster Metrics. U kunt bijvoorbeeld zoeken op `full screen` om de gegevens op het volledige scherm weer te geven in het deelvenster Metriek.
 
 ![](assets/full-screen-report.png)
 
 ## Door speler opgegeven meetgegevens importeren naar Adobe Experience Platform
 
-De gegevens die zijn opgeslagen in Analytics kunnen voor elk doel worden gebruikt en de metriek van de spelerstatus kunnen in het Adobe Experience Platform worden geïmporteerd met XDM en worden gebruikt met Customer Journey Analytics. De eigenschappen van de standaardstatus hebben specifieke eigenschappen, terwijl de aangepaste statussen eigenschappen zijn die beschikbaar zijn via aangepaste gebeurtenissen. Zie de sectie *Eigenschappen voor XDM-identiteiten* op de pagina Parameters [van](/help/metrics-and-metadata/player-state-parameters.md) Player voor aanvullende informatie over de standaardeigenschappen van statuseigenschappen.
+De gegevens die in Analytics worden opgeslagen, kunnen voor elk doel worden gebruikt en de metriek van de spelerstaat kunnen in Adobe Experience Platform worden ingevoerd gebruikend XDM en met Customer Journey Analytics worden gebruikt. De eigenschappen van de standaardstatus hebben specifieke eigenschappen, terwijl de aangepaste statussen eigenschappen zijn die beschikbaar zijn via aangepaste gebeurtenissen. Voor extra informatie over de standaardstatuseigenschappen, zie *de Lijst van Eigenschappen voor XDM Identiteiten* sectie op [Parameters van de Staat van de Speler ](/help/metrics-and-metadata/player-state-parameters.md) pagina.
