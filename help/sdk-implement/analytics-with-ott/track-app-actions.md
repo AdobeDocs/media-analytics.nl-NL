@@ -1,12 +1,16 @@
 ---
-title: Toepassingsacties bijhouden
+title: App-acties bijhouden
 description: Toepassingsacties zijn de gebeurtenissen die in uw app voorkomen en die u wilt meten.
 uuid: 9cdc048a-419a-4725-bd61-6ca6d909cf10
-translation-type: tm+mt
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 88b7d540-67b7-4ec1-8273-02e34853bf60
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '134'
+ht-degree: 3%
 
 ---
-
 
 # Toepassingsacties bijhouden{#track-app-actions}
 
@@ -14,7 +18,7 @@ Acties zijn de gebeurtenissen die in uw app voorkomen en die u wilt meten.
 
 Elke actie heeft één of meerdere overeenkomstige metriek die elke keer worden verhoogd de gebeurtenis voorkomt. Bijvoorbeeld, zou u een `trackAction` vraag voor elk nieuw abonnement kunnen verzenden, of telkens als de inhoud wordt beoordeeld, of telkens als een niveau wordt voltooid.
 
-Handelingen worden niet automatisch bijgehouden, dus roep deze aan `trackAction` wanneer een gebeurtenis plaatsvindt die u wilt bijhouden en wijs de handeling toe aan een aangepaste gebeurtenis.
+Handelingen worden niet automatisch bijgehouden, dus roep `trackAction` aan wanneer een gebeurtenis plaatsvindt die u wilt bijhouden en wijs de handeling toe aan een aangepaste gebeurtenis.
 
 1. Wanneer een gebeurtenis die u wilt volgen voorkomt, roep `trackAction`.
 
@@ -49,4 +53,3 @@ Handelingen worden niet automatisch bijgehouden, dus roep deze aan `trackAction`
       ```
 
 U kunt ook aanvullende contextgegevens verzenden met elke aanroep van de trackactie.
-
