@@ -1,12 +1,14 @@
 ---
-title: Vereisten
-description: Vereisten
+title: Meer informatie over vereisten voor streamingmedia
+description: Aan de slag met Adobe Analytics Streaming Media. Leer wat u nodig hebt om Adobe Analytics for Streaming Media te implementeren.
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
-source-git-commit: e56ce73316d9cf00193220df8959a489fc3f2124
+feature: '"Media Analytics, System Requirements"'
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 1%
+source-wordcount: '414'
+ht-degree: 0%
 
 ---
 
