@@ -1,12 +1,16 @@
 ---
 title: VOD afspelen met bufferen
-description: Een voorbeeld van hoe te om VOD inhoud te volgen gebruikend Media SDK.
+description: Bekijk een voorbeeld van hoe te om inhoud te volgen VOD gebruikend Media SDK.
 uuid: 958f7692-7193-40fb-a8e7-2ff4fa805330
-translation-type: tm+mt
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 3a8f913f-cb51-45ae-ac1d-862ea1e7c994
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '229'
+ht-degree: 2%
 
 ---
-
 
 # VOD afspelen met bufferen{#vod-playback-with-buffering}
 
@@ -14,11 +18,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 In dit scenario vindt enige buffering plaats wanneer VOD-inhoud wordt afgespeeld.
 
-Tenzij gespecificeerd, zijn de netwerkvraag in dit scenario het zelfde als de vraag in de playback [VOD zonder advertentiescenario](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) .
+Tenzij gespecificeerd, zijn de netwerkvraag in dit scenario het zelfde als de vraag in [VOD playback zonder het scenario van advertenties](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md).
 
-| Trigger | Hartslagmethode | Netwerkaanroepen | Notities |
+| Trigger   | Hartslagmethode   | Netwerkaanroepen   | Notities   |
 |---|---|---|---|
-| Gebruiker klikt **[!UICONTROL Play]** | `trackSessionStart` | Start inhoud analyse, Start inhoud hartslag | Dit kan een gebruiker zijn klikkend **[!UICONTROL Play]** of een auto-playgebeurtenis. |
+| Gebruiker klikt **[!UICONTROL Play]** | `trackSessionStart` | Start inhoud analyse, Start inhoud hartslag | Dit kan een gebruiker zijn die **[!UICONTROL Play]** of een auto-playgebeurtenis klikt. |
 | Het eerste frame van de video wordt afgespeeld. | `trackPlay` | Hartslaginhoud afspelen | Deze methode activeert de timer. Hartslagen worden elke 10 seconden verzonden zolang het afspelen duurt. |
 | De inhoud wordt afgespeeld. |  | Content Heartbeats |  |
 | De buffering begint. | `trackEvent:BufferStart` | Hartslagbuffer |  |
@@ -222,4 +226,3 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ........ 
 ```
-
