@@ -1,15 +1,16 @@
 ---
-title: Zoeken bijhouden met JavaScript 2.x
-description: In dit onderwerp wordt het implementeren van 'seek tracking' beschreven met behulp van de Media SDK in browser-apps (JS).
+title: Leer hoe u zoekopdrachten kunt bijhouden met JavaScript 2.x
+description: Leer hoe u de gebeurtenissen Start en Voltooien zoeken bijhoudt met de Media SDK in browser-apps (JS 2.x).
 uuid: 089947fb-8bae-4ae8-b215-53793620efd7
-translation-type: tm+mt
-source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
+exl-id: 90f35376-24d8-405d-82b4-d6b737acf7b9
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '127'
+source-wordcount: '137'
 ht-degree: 0%
 
 ---
-
 
 # Zoeken bijhouden met JavaScript 2.x{#track-seeking-on-javascript}
 
@@ -26,7 +27,7 @@ ht-degree: 0%
 
 ## Zoeken implementeren
 
-1. Luister naar het afspelen en zoeken van gebeurtenissen van de mediaspeler en volg zoekacties bij het starten van de gebeurtenis via de `SeekStart` gebeurtenis:
+1. Luister naar het afspelen van zoekgebeurtenissen van de mediaspeler en volg het zoeken naar de gebeurtenis `SeekStart` bij het starten van de zoekgebeurtenis:
 
    ```js
    _onSeekStart = function() {
@@ -34,7 +35,7 @@ ht-degree: 0%
    };
    ```
 
-1. Volg bij het zoeken naar volledige meldingen van de mediaspeler het einde van het zoeken met behulp van de `SeekComplete` gebeurtenis:
+1. Volg bij het zoeken naar volledige meldingen van de mediaspeler het einde van het zoeken met de gebeurtenis `SeekComplete`:
 
    ```js
    _onSeekComplete = function() {
