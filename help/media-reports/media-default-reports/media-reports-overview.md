@@ -1,17 +1,18 @@
 ---
 title: Overzicht van media
-description: Overzicht van media
+description: Gebruik het dashboard Overzicht van Media om gezamenlijke metingen weer te geven. Leer hoe u de mediaprestaties snel kunt controleren.
 uuid: bdbd998f-9b5e-40c9-a8ea-12dfa5acd35c
 exl-id: 4fe91372-da41-44c5-bea9-2bba762512ef
-translation-type: tm+mt
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+feature: '"Grondbeginselen van media-analyse, rapporten en analyses"'
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '93'
-ht-degree: 1%
+source-wordcount: '112'
+ht-degree: 0%
 
 ---
 
-# Media-overzicht{#media-overview}
+# Overzicht van media{#media-overview}
 
 Het dashboard voor mediaoverzicht is ontworpen om u in staat te stellen media op uw site te controleren. In de weergave Mediaoverzicht worden verschillende metingen van het aggregaat weergegeven, zodat u snel kunt controleren of het medium naar behoren functioneert. In een grafiek wordt de inhoud weergegeven die begint naast de advertentie, zodat u deze gegevens snel kunt bekijken voor elk media-item.
 
