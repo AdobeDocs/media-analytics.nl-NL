@@ -1,15 +1,16 @@
 ---
-title: Advertenties bijhouden met JavaScript 2.x
+title: Leer hoe u advertenties kunt bijhouden met JavaScript 2.x
 description: Implementeer en volg in browser (JS) toepassingen gebruikend Media SDK.
 uuid: 4d81d29c-c55d-4d48-b505-3260922712ff
-translation-type: tm+mt
-source-git-commit: 815965d1cd41e73e50666a89f4a7c450af5022da
+exl-id: 4404d3a6-ab98-40f0-9573-ee32f480f650
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '357'
 ht-degree: 4%
 
 ---
-
 
 # Advertenties bijhouden met JavaScript 2.x{#track-ads-on-javascript}
 
@@ -29,7 +30,7 @@ ht-degree: 4%
 
 ## Uitvoeringsstappen
 
-1. Bepaal wanneer de grens van de advertentierak begint, met inbegrip van pre-rol, en creeer een `AdBreakObject` door de informatie van de advertentierak te gebruiken.
+1. Bepaal wanneer de grens van de advertentierak begint, met inbegrip van pre-rol, en creeer `AdBreakObject` door de informatie van de advertentierak te gebruiken.
 
    `AdBreakObject` referentie:
 
@@ -48,13 +49,13 @@ ht-degree: 4%
                                         <START_TIME>);
    ```
 
-1. Roep `trackEvent()` met `AdBreakStart` in de `MediaHeartbeat` instantie aan begin het volgen van de advertentie onderbreking:
+1. Roep `trackEvent()` met `AdBreakStart` in de `MediaHeartbeat` instantie aan om het advertentiesonderbreking te volgen:
 
    ```js
    mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakStart, adBreakObject);
    ```
 
-1. Bepaal wanneer de advertentie begint en creeer een `AdObject` instantie gebruikend de advertentieinformatie.
+1. Identificeer wanneer de advertentie begint en creeer een `AdObject` instantie gebruikend de advertentieinformatie.
 
    `AdObject` referentie:
 
@@ -78,7 +79,7 @@ ht-degree: 4%
 1. Voeg desgewenst standaard- en/of advertentiemetagegevens toe aan de mediatraceringssessie via de variabelen van de contextgegevens.
 
    * [Standaardmetadata voor advertenties implementeren in JavaScript](/help/sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js.md)
-   * **Aangepast en metagegevens -** Voor aangepaste metagegevens maakt u een variabel object voor de aangepaste gegevensvariabelen en vult u de gegevens voor de huidige advertentie in:
+   * **Aangepast en metagegevens -** Voor aangepaste metagegevens maakt u een variabelenobject voor de aangepaste gegevensvariabelen en vult u de gegevens voor de huidige advertentie in:
 
       ```js
       /* Set custom context data */
@@ -89,7 +90,7 @@ ht-degree: 4%
       };
       ```
 
-1. Roep `trackEvent()` met de `AdStart` gebeurtenis in de `MediaHeartbeat` instantie aan om het afspelen van de advertentie te volgen.
+1. Roep `trackEvent()` met de gebeurtenis `AdStart` in de instantie `MediaHeartbeat` aan om het afspelen van de advertentie te volgen.
 
    Neem een verwijzing naar de aangepaste metagegevensvariabele (of een leeg object) op als de derde parameter in de gebeurtenisaanroep:
 
@@ -101,7 +102,7 @@ ht-degree: 4%
    };
    ```
 
-1. Wanneer het afspelen van de advertentie het einde van de advertentie heeft bereikt, roept u `trackEvent()` de `AdComplete` gebeurtenis aan:
+1. Wanneer het afspelen van de advertentie het einde van de advertentie bereikt, roept u `trackEvent()` aan met de gebeurtenis `AdComplete`:
 
    ```js
    _onAdComplete = function() {
@@ -109,7 +110,7 @@ ht-degree: 4%
    };
    ```
 
-1. Als het afspelen van de advertentie niet is voltooid omdat de gebruiker de advertentie heeft overgeslagen, houdt u de `AdSkip` gebeurtenis bij:
+1. Als het afspelen van de advertentie niet is voltooid omdat de gebruiker de advertentie heeft overgeslagen, houdt u de gebeurtenis `AdSkip` bij:
 
    ```js
    _onAdSkip = function() {
@@ -117,8 +118,8 @@ ht-degree: 4%
    };
    ```
 
-1. Herhaal stap 3 tot en met 7 opnieuw als er extra advertenties binnen dezelfde `AdBreak`advertentie zijn.
-1. Wanneer het advertentieeinde is voltooid, gebruikt u de `AdBreakComplete` gebeurtenis om te volgen:
+1. Herhaal stap 3 tot en met 7 als er extra advertenties binnen dezelfde `AdBreak` zijn.
+1. Wanneer het ad-einde is voltooid, gebruikt u de gebeurtenis `AdBreakComplete` om te volgen:
 
    ```js
    _onAdBreakComplete = function() {
