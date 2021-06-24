@@ -1,26 +1,30 @@
 ---
-title: Actieve hoofdinhoud met opeenvolgende spatiëring
-description: Een voorbeeld van hoe te om levende inhoud met opeenvolgend te volgen gebruikend Media SDK.
+title: Actieve hoofdinhoud met opeenvolgende reeksspatiëring
+description: Bekijk een voorbeeld van hoe u live-inhoud kunt bijhouden met sequentiële tracking met de SDK van Media.
 uuid: b03477b6-9be8-4b67-a5a0-4cef3cf262ab
-translation-type: tm+mt
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 277a72b8-453b-41e5-b640-65c43587baf8
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '521'
+ht-degree: 2%
 
 ---
 
-
-# Actieve hoofdinhoud met opeenvolgende spatiëring{#live-main-content-with-sequential-tracking}
+# Live hoofdcontent met sequentiële tracking{#live-main-content-with-sequential-tracking}
 
 ## Scenario {#scenario}
 
 In dit scenario is er één actief dat gedurende 40 seconden geen advertenties bevat nadat de live stream is samengevoegd.
 
-Dit is hetzelfde scenario als het afspelen [VOD zonder advertentiescenario](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) , maar een deel van de inhoud wordt doorgescrubd en een zoekopdracht wordt uitgevoerd van het ene punt in de hoofdinhoud naar het andere.
+Dit is het zelfde scenario zoals [VOD playback zonder advertenties](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario, maar een deel van de inhoud wordt geschrobd door en het zoeken wordt voltooid van één punt in belangrijkste inhoud aan een ander punt.
 
-| Trigger | Hartslagmethode |  Netwerkaanroepen |  Notities |
+| Trigger | Hartslagmethode |  Netwerkaanroepen  |  Notities   |
 | --- | --- | --- | --- |
-| Gebruiker klikt [!UICONTROL Play] | trackSessionStart | Start inhoud analyse, Start inhoud hartslag | De metingsbibliotheek is zich niet bewust dat er een pre-rol advertentie is, zodat zijn deze netwerkvraag identiek aan de playback [VOD zonder ad-hocscenario](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) . |
+| Gebruiker klikt [!UICONTROL Play] | trackSessionStart | Start inhoud analyse, Start inhoud hartslag | De meetbibliotheek is zich er niet van bewust dat er een pre-rol advertentie is, zodat zijn deze netwerkvraag identiek aan [VOD playback zonder het scenario van advertenties](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | Het eerste frame van de inhoud wordt afgespeeld. | trackPlay | Hartslaginhoud afspelen | Wanneer de hoofdstukinhoud vóór hoofdinhoud wordt afgespeeld, begint de hartslag wanneer het hoofdstuk begint. |
-| Inhoud afspelen |  | Content Heartbeats | Deze netwerkaanroep is precies hetzelfde als de [VOD-weergave zonder advertentiescenario](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) . |
+| Inhoud afspelen |  | Content Heartbeats | Deze netwerkaanroep is precies hetzelfde als de [VOD-weergave zonder advertenties](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)-scenario. |
 | Session1 Boven (Aflevering1 beëindigd) | trackComplete / trackSessionEnd | Hartslaginhoud voltooid | Complete betekent dat session1 voor de eerste aflevering is bereikt en volledig is gecontroleerd. Deze sessie moet worden beëindigd voordat de sessie voor de volgende aflevering wordt gestart. |
 | Episode2 begonnen (Sessie2 start) | trackSessionStart | Begin hartslaginhoud voor analyse inhoud | De reden hiervoor is dat de gebruiker de eerste aflevering heeft bekeken en verder heeft gekeken naar een andere aflevering |
 | Eerste frame van media | trackPlay | Hartslaginhoud afspelen | Deze methode activeert de timer en vanaf dit punt worden hartslagen elke 10 seconden verzonden zolang het afspelen wordt voortgezet. |
@@ -33,12 +37,12 @@ Dit is hetzelfde scenario als het afspelen [VOD zonder advertentiescenario](/hel
 
 | Parameter | Waarde | Notities |
 |---|---|---|
-| `s:sc:rsid` | &lt;Uw Adobe-rapportsuite-id> |  |
-| `s:sc:tracking_serve` | &lt;Uw URL voor Analytics Tracking Server> |  |
+| `s:sc:rsid` | &lt;your Adobe=&quot;&quot; Report=&quot;&quot; Suite=&quot;&quot; ID=&quot;&quot;> |  |
+| `s:sc:tracking_serve` | &lt;your Analytics=&quot;&quot; Tracking=&quot;&quot; Server=&quot;&quot; URL=&quot;&quot;> |  |
 | `s:user:mid` | `s:user:mid` | Moet overeenkomen met de gemiddelde waarde van de Adobe Analytics Content Start Call |
 | `s:event:type` | `"start"` |  |
 | `s:asset:type` | `"main"` |  |
-| `s:asset:media_id` | &lt;Uw mediumnaam> |  |
+| `s:asset:media_id` | &lt;your Media=&quot;&quot; Name=&quot;&quot;> |  |
 | `s:stream:type` | `live` |  |
 | `s:meta:*` | *optioneel* | Aangepaste metagegevens ingesteld op het medium |
 
@@ -60,7 +64,7 @@ Zoek in de inhoudslooplijst naar een aantal specifieke dingen:
 | Parameter | Waarde | Notities |
 |---|---|---|
 | `s:event:type` | `"play"` |  |
-| `l:event:playhead` | &lt;positie van afspeelkop> bijv. 50, 60, 70 | Dit moet de huidige positie van de afspeelkop aangeven. |
+| `l:event:playhead` | &lt;playhead position=&quot;&quot;> bijv. 50, 60, 70 | Dit moet de huidige positie van de afspeelkop aangeven. |
 
 ## Hartslaginhoud voltooid {#heartbeat-content-complete}
 
@@ -331,4 +335,3 @@ this._mediaHeartbeat.trackSessionEnd();
 
 // Continue tracking further sessions in live stream similarly if required 
 ```
-
