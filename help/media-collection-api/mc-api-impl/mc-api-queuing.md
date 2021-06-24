@@ -1,17 +1,18 @@
 ---
-title: Gebeurtenissen in de wachtrij plaatsen wanneer de reactie van de sessie traag is
-description: Gebeurtenissen in de wachtrij plaatsen wanneer de reactie van de sessie traag is
+title: Gebeurtenissen in wachtrij plaatsen wanneer de reactie op sessies traag is
+description: 'Leer wat te doen wanneer Sessie-id wordt geretourneerd nadat de speler gebeurtenissen heeft geactiveerd. '
 uuid: 39ea59d9-89d3-4087-a806-48a43ecf0c98
 exl-id: 2c23c378-c104-4256-b6e7-8eb6871f62da
-translation-type: tm+mt
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 1%
+source-wordcount: '207'
+ht-degree: 4%
 
 ---
 
-# Gebeurtenissen in een wachtrij plaatsen wanneer de reactie van de sessie langzaam is{#queueing-events-when-sessions-response-is-slow}
+# Gebeurtenissen in de wachtrij plaatsen wanneer de reactie van de sessie traag is{#queueing-events-when-sessions-response-is-slow}
 
 De Media Collection API is RESTful: U moet dus een HTTP-aanvraag indienen en op de reactie wachten. Dit is een belangrijk punt slechts voor wanneer u [Sessies request](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) maakt om een identiteitskaart van de Zitting aan het begin van videoplayback te verkrijgen. Dit is belangrijk omdat identiteitskaart van de Zitting voor alle verdere volgende het volgen vraag wordt vereist.
 
