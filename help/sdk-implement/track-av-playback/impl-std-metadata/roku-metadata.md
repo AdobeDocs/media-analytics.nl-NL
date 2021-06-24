@@ -1,12 +1,16 @@
 ---
-title: Metagegevens roteren
-description: Dit onderwerp beschrijft de beschikbare de meta-gegevenssleutels van Roku.
+title: Verklaarde de Sleutels van Meta-gegevens van Roku
+description: Leer meer over de beschikbare Roku-metagegevenssleutels en bekijk de volledige lijst met standaardmetagegevensconstanten.
 uuid: 2ca6bb1d-c545-43d3-9c3e-63b890aa268d
-translation-type: tm+mt
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 687dbaa5-4723-4b3f-ab1e-4d5bf447cddf
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '472'
+ht-degree: 1%
 
 ---
-
 
 # Metagegevens roteren{#roku-metadata-keys}
 
@@ -62,28 +66,28 @@ U kunt de volgende constanten gebruiken om mediagebeurtenissen bij te houden:
 
 ### Andere constanten
 
-| Constante | Beschrijving |
+| Constante | Beschrijving   |
 |---|---|
 | `ERROR_SOURCE_PLAYER` | Constante voor Flash Player-foutbron |
 
 ### MediaObjectKey-constanten (gebruikt als sleutels binnen MediaObject-instanties)
 
-| Constante | Beschrijving |
+| Constante | Beschrijving   |
 | --- | --- |
-| `MEDIA_STANDARD_MEDIA_METADATA` | Constante om metagegevens in te stellen op het `MediaInfo``trackLoad` |
-| `MEDIA_STANDARD_AD_METADATA` | Constante om de metagegevens voor de advertentie in te stellen op de `EventData``trackEvent` |
-| `MEDIA_RESUMED` | Constante voor het verzenden van een video-hervat hartslag. Als u het bijhouden van video&#39;s van eerder gestopt inhoud wilt hervatten, moet u de `MEDIA_RESUMED` eigenschap voor het `mediaInfo` object instellen wanneer u deze aanroept `mediaTrackLoad`. (`MEDIA_RESUMED` is geen gebeurtenis die u kunt bijhouden met de `mediaTrackEvent` API.) `MEDIA_RESUMED` moet worden ingesteld op true wanneer een toepassing inhoud wil blijven bijhouden die een gebruiker niet meer bekijkt, maar nu opnieuw wil kijken. <br/><br/>Stel dat een gebruiker 30% van de inhoud controleert en de app vervolgens sluit. Hierdoor wordt de sessie beëindigd. Later, als dezelfde gebruiker naar dezelfde inhoud terugkeert en de toepassing de gebruiker toestaat om vanaf hetzelfde punt te hervatten waar deze werd uitgeschakeld, moet de toepassing ingesteld `MEDIA_RESUMED` op &quot;true&quot; terwijl de `mediaTrackLoad` API wordt aangeroepen. Het resultaat is dat deze twee verschillende mediasessies voor dezelfde video-inhoud aan elkaar kunnen worden gekoppeld. Hier volgt het implementatievoorbeeld: <br/><br/> `mediaInfo =` <br/>   `adb_media_init_mediainfo(` <br/>     `"test_media_name",` <br/>     `"test_media_id",`<br/>      `10,` <br/>     `"vod"` <br/> `)` <br/> `mediaInfo[ADBMobile().MEDIA_RESUMED] = true` <br/> `mediaContextData = {}` <br/>  `ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)` <br/><br/>Hierdoor wordt een nieuwe sessie voor de video gemaakt, maar de SDK verzendt ook een hartslagverzoek met het gebeurtenistype &quot;resume&quot;, dat in de rapportage kan worden gebruikt om twee verschillende mediasessies aan elkaar te koppelen. |
+| `MEDIA_STANDARD_MEDIA_METADATA` | Constante voor het instellen van metagegevens op `MediaInfo` `trackLoad` |
+| `MEDIA_STANDARD_AD_METADATA` | Constante om de advertentiemetagegevens op `EventData` `trackEvent` te plaatsen |
+| `MEDIA_RESUMED` | Constante voor het verzenden van een video-hervat hartslag. Om video het volgen van eerder tegengehouden inhoud te hervatten, moet u `MEDIA_RESUMED` bezit op `mediaInfo` voorwerp plaatsen wanneer u `mediaTrackLoad` roept. (`MEDIA_RESUMED` is geen gebeurtenis die u kunt volgen gebruikend `mediaTrackEvent` API.) `MEDIA_RESUMED` moet worden ingesteld op true wanneer een toepassing inhoud wil blijven bijhouden die een gebruiker niet meer bekijkt, maar nu opnieuw wil kijken. <br/><br/>Stel dat een gebruiker 30% van de inhoud controleert en de app vervolgens sluit. Hierdoor wordt de sessie beëindigd. Later, als de zelfde gebruiker aan de zelfde inhoud terugkeert, en de toepassing die gebruiker toestaat om van het zelfde punt te hervatten waar zij weggingen, dan zou de toepassing `MEDIA_RESUMED` aan &quot;waar&quot;moeten plaatsen terwijl het roepen van `mediaTrackLoad` API. Het resultaat is dat deze twee verschillende mediasessies voor dezelfde video-inhoud aan elkaar kunnen worden gekoppeld. Hier volgt het implementatievoorbeeld: <br/><br/> `mediaInfo =` <br/>   `adb_media_init_mediainfo(` <br/>     `"test_media_name",` <br/>     `"test_media_id",`<br/>      `10,` <br/>     `"vod"` <br/> `)` <br/> `mediaInfo[ADBMobile().MEDIA_RESUMED] = true` <br/> `mediaContextData = {}` <br/>  `ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)` <br/><br/>Hierdoor wordt een nieuwe sessie voor de video gemaakt, maar de SDK verzendt ook een hartslagverzoek met het gebeurtenistype &quot;resume&quot;, dat in de rapportage kan worden gebruikt om twee verschillende mediasessies aan elkaar te koppelen. |
 
 ### Constanten van inhoudstypen
 
-| Constante | Beschrijving |
+| Constante | Beschrijving   |
 |---|---|
 | `MEDIA_STREAM_TYPE_LIVE` | Constante voor stroomtype LIVE |
 | `MEDIA_STREAM_TYPE_VOD` | Constante voor het stroomtype VOD |
 
 ### Constanten voor gebeurtenistype (gebruikt voor de aanroep van trackEvent)
 
-| Constante | Beschrijving |
+| Constante | Beschrijving   |
 |---|---|
 | `MEDIA_BUFFER_START` | Type gebeurtenis voor Start buffer |
 | `MEDIA_BUFFER_COMPLETE` | Gebeurtenistype voor buffer voltooid |
@@ -99,4 +103,3 @@ U kunt de volgende constanten gebruiken om mediagebeurtenissen bij te houden:
 | `MEDIA_AD_START` | Gebeurtenistype voor begin advertentie |
 | `MEDIA_AD_COMPLETE` | Gebeurtenistype voor advertentie voltooid |
 | `MEDIA_AD_SKIP` | Gebeurtenistype voor overslaan van advertentie |
-
