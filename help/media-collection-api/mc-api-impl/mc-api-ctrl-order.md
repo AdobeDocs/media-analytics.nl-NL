@@ -1,13 +1,14 @@
 ---
 title: De volgorde van gebeurtenissen bepalen
-description: De volgorde van gebeurtenissen bepalen
+description: Leer hoe u de volgorde van gebeurtenissen regelt en hoe gebeurtenissen in sommige gevallen opnieuw worden geordend op basis van de opgegeven tijdstempel in het PlayerTime-object.
 uuid: 007fccc6-be72-4b79-826d-588c957ccf15
 exl-id: c0cac319-2bea-42c8-8674-641dfbb44fa2
-translation-type: tm+mt
-source-git-commit: 27694ec83de89980404df7a7cc77fa42b3d1a751
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 0%
+source-wordcount: '328'
+ht-degree: 1%
 
 ---
 
