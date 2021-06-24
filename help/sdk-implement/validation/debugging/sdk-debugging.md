@@ -1,14 +1,18 @@
 ---
 title: Foutopsporing in SDK
-description: Dit onderwerp beschrijft het volgen/registreren beschikbaar in Media SDK.
+description: Leer over het volgen/registreren beschikbaar in de SDK van Media.
 uuid: a5972d87-c593-4b4f-a56f-dca6e25268e1
-translation-type: tm+mt
-source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
+exl-id: c2de6454-8538-4d07-a099-e278b153d894
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '272'
+ht-degree: 1%
 
 ---
 
-
-# SDK debugging{#sdk-debugging}
+# Foutopsporing in SDK{#sdk-debugging}
 
 U kunt logbestanden in- en uitschakelen. De Media SDK biedt een uitgebreid mechanisme voor overtrekken/registreren in de stapel voor het bijhouden van media. U kunt registreren toelaten of onbruikbaar maken door de `debugLogging` vlag op het voorwerp te plaatsen Config.
 
@@ -62,9 +66,9 @@ ADBMobile().setDebugLogging(true)
 ADBMobile.config.setDebugLogging(true)
 ```
 
-## Adobe Bloodhound gebruiken om chroecast-toepassingen te testen
+## Het gebruiken van Adobe Bloodhound om Chromecast Toepassingen te testen
 
-Tijdens toepassingsontwikkeling, staat het Bloephound u toe om servervraag plaatselijk te bekijken, en naar keuze de gegevens door:sturen aan de inzamelingsservers van Adobe.
+Tijdens toepassingsontwikkeling, staat Bloodhound u toe om servervraag plaatselijk te bekijken, en naar keuze door:sturen de gegevens aan de servers van de Adobe inzameling.
 
 <!--
 For more information about Bloodhound, see the following guides:
@@ -75,7 +79,7 @@ For more information about Bloodhound, see the following guides:
 
 >[!IMPORTANT]
 >
->Op 30 april 2017 is Adobe Bloodhound zonsondergang. Vanaf 1 mei 2017 worden geen aanvullende verbeteringen aangebracht en wordt geen extra ondersteuning voor Engineering of Adobe Expert Care geboden.
+>Op 30 april 2017 is Adobe Bloodhound zonsondergang. Vanaf 1 mei 2017 worden er geen aanvullende verbeteringen aangebracht en wordt er geen extra ondersteuning voor Engineering of Adobe Expert Care geboden.
 
 ## Logberichten
 
@@ -86,18 +90,18 @@ Format: [<timestamp>] [<level>] [<tag>] [<message>]
 Example: [16:10:29 GMT­0700 (PDT).245] [DEBUG] [plugin::player] Resolving qos.startupTime: 0
 ```
 
-* **tijdstempel:** Dit is de huidige CPU-tijd (tijdzone voor GMT)
-* **niveau:** Er zijn vier berichtniveaus gedefinieerd:
+* **timestamp:** This is the current CPU time (time-zone for GMT)
+* **niveau:** Er zijn 4 berichtniveaus gedefinieerd:
    * INFO - Meestal worden de invoergegevens van de toepassing (naam van speler valideren, video-id enzovoort)
    * DEBUG - zuivert logboeken, die door de ontwikkelaars worden gebruikt om complexere kwesties te zuiveren
    * WAARSCHUWING - Geeft mogelijke integratie-/configuratiefouten of fouten in de SDK van Heartbeats aan
    * FOUT - Geeft belangrijke integratiefouten of fouten in de SDK van Heartbeats aan
-* **tag:** De naam van de subcomponent die het logboekbericht heeft uitgegeven (gewoonlijk de klassenaam)
-* **bericht:** Het daadwerkelijke spoorbericht
+* **tag:** De naam van de subcomponent die het logbericht heeft uitgegeven (gewoonlijk de klassenaam)
+* **bericht:** het daadwerkelijke spoorbericht
 
-U kunt de logboekoutput door de bibliotheek van SDK van Media gebruiken om de implementatie te verifiëren. Een goede strategie is door de logboeken naar het koord te zoeken `#track`. Hiermee worden alle `track*()` aanroepen van uw toepassing gemarkeerd.
+U kunt de logboekoutput door de bibliotheek van SDK van Media gebruiken om de implementatie te verifiëren. Een goede strategie is door de logboeken voor het koord `#track` te zoeken. Dit zal alle `track*()` vraag benadrukken die door uw toepassing wordt gemaakt.
 
-Dit is bijvoorbeeld wat de logs waarnaar wordt gefilterd, `#track` eruit kunnen zien:
+Dit is bijvoorbeeld wat de voor `#track` gefilterde logboeken eruit zouden kunnen zien:
 
 ```js
 [16:10:29 GMT­0700 (PDT).222] [INFO] [plugin::player] #trackVideoLoad() 
@@ -111,4 +115,3 @@ Dit is bijvoorbeeld wat de logs waarnaar wordt gefilterd, `#track` eruit kunnen 
 [16:11:29 GMT­0700 (PDT).764] [INFO] [plugin::player] #trackComplete() 
 [16:11:29 GMT­0700 (PDT).766] [INFO] [plugin::player] #trackVideoUnload()
 ```
-
