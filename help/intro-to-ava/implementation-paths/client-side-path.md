@@ -2,14 +2,15 @@
 title: Wat zijn Media Analytics en cliënt-zijintegratie?
 description: Leer hoe de Analytics van Media met cliënt-zijintegratie en de SDK van Media en/of de Inzameling API van Media werkt.
 uuid: ba0496e2-585a-4176-b583-c705726fecc6
-translation-type: tm+mt
-source-git-commit: 5f0de1e0f0694987c6bab0bd97ac8c98e843f23a
+exl-id: 6fd4e82e-b471-4ed1-864d-5dd77cc6ffe0
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '152'
+source-wordcount: '154'
 ht-degree: 0%
 
 ---
-
 
 # Clientzijde{#client-side}
 
