@@ -1,15 +1,16 @@
 ---
-title: Hoofdstukken en segmenten bijhouden met JavaScript 2.x
-description: In dit onderwerp wordt beschreven hoe u hoofdstuk- en segmenttracering implementeert met de Media SDK in browser-apps (JS).
+title: Leer hoofdstukken en segmenten bij te houden met JavaScript 2.x
+description: Leer hoe u hoofdstuk- en segmenttracering implementeert met de Media SDK in browser-apps (JS).
 uuid: ef99edf7-7a77-46c4-8429-bc9a856b98d6
-translation-type: tm+mt
-source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
+exl-id: 9964ec0c-cce9-4ccc-bd26-a2b3fcdc3e28
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '200'
 ht-degree: 2%
 
 ---
-
 
 # Hoofdstukken en segmenten bijhouden met JavaScript 2.x{#track-chapters-and-segments-on-javascript}
 
@@ -52,7 +53,7 @@ ht-degree: 2%
    };
    ```
 
-1. Als u wilt beginnen met het afspelen van het hoofdstuk, roept u de `ChapterStart` gebeurtenis in de `MediaHeartbeat` instantie aan:
+1. Als u wilt beginnen met het afspelen van het hoofdstuk, roept u de gebeurtenis `ChapterStart` in de instantie `MediaHeartbeat` aan:
 
    ```js
    _onChapterStart = function() {
@@ -62,7 +63,7 @@ ht-degree: 2%
    };
    ```
 
-1. Wanneer de playback de hoofdstukeindgrens bereikt, zoals die door uw douanecode wordt bepaald, roep de `ChapterComplete` gebeurtenis in de `MediaHeartbeat` instantie:
+1. Wanneer de playback de hoofdstukeindgrens, zoals die door uw douanecode wordt bepaald bereikt, roep de `ChapterComplete` gebeurtenis in `MediaHeartbeat` instantie:
 
    ```js
    _onChapterComplete = function() {
@@ -70,7 +71,7 @@ ht-degree: 2%
    };
    ```
 
-1. Als het afspelen van het hoofdstuk niet is voltooid omdat de gebruiker het hoofdstuk heeft overgeslagen (bijvoorbeeld als de gebruiker buiten de hoofdstukgrens zoekt), roept u de `ChapterSkip` gebeurtenis op in de MediaHeartbeat-instantie:
+1. Als het afspelen van het hoofdstuk niet is voltooid omdat de gebruiker het hoofdstuk heeft overgeslagen (bijvoorbeeld als de gebruiker buiten de hoofdstukgrens zoekt), roept u de gebeurtenis `ChapterSkip` in de MediaHeartbeat-instantie aan:
 
    ```js
    _onChapterSkip = function() {
