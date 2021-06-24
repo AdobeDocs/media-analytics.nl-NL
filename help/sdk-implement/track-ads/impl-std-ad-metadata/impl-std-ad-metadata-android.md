@@ -1,20 +1,24 @@
 ---
-title: Standaard- en metagegevens implementeren op Android
+title: Meer informatie over het implementeren van standaard-advertentiemetagegevens op Android
 description: Standaardinstellingen en metagegevens gebruiken voor het bijhouden van advertenties op Android.
 uuid: 19b98bc1-c659-4182-a4ff-b3340fe2453c
-translation-type: tm+mt
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: f1aa017f-b2ae-40ca-b4d9-b508cf45cb0c
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '65'
+ht-degree: 10%
 
 ---
 
-
-# Standaard- en metagegevens implementeren op Android{#implement-standard-ad-metadata-on-android}
+# Standaardmetadata voor advertenties implementeren in Android{#implement-standard-ad-metadata-on-android}
 
 ## Advertentieconstanten
 
-| Naam van constante | Beschrijving |
+| Naam van constante | Beschrijving   |
 |---|---|
-| `MediaHeartbeat.MediaObjectKey.StandardAdMetadata` | Constante voor het koppelen van standaard- en metagegevens op advertentie `MediaObject`. |
+| `MediaHeartbeat.MediaObjectKey.StandardAdMetadata` | Constante voor het bijvoegen van standaard- en metagegevens op advertentie `MediaObject`. |
 
 ## Implementatiestandaard en metagegevens
 
@@ -27,4 +31,3 @@ standardAdMetadata.put(MediaHeartbeat.AdMetadataKeys.ADVERTISER, "Sample Adverti
 standardAdMetadata.put(MediaHeartbeat.AdMetadataKeys.CAMPAIGN_ID, "Sample Campaign"); 
 adInfo.setValue(MediaHeartbeat.MediaObjectKey.StandardAdMetadata, standardAdMetadata); 
 ```
-
