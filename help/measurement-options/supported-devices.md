@@ -1,11 +1,13 @@
 ---
-title: Ondersteunde apparaten en platforms
-description: Adobe Analytics for Streaming Media zorgt ervoor dat elke mediastream wordt verzameld en gerapporteerd op alle apparaten.
+title: Meer informatie over ondersteunde apparaten en Platforms
+description: '"Meer informatie over de belangrijkste apparaten die Adobe Analytics for Streaming Media ondersteunt, zoals iOS, Android, OTT-apparaten en JavaScript-browsers."'
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 20%
+source-wordcount: '341'
+ht-degree: 18%
 
 ---
 
@@ -33,13 +35,13 @@ De onderstaande tabel bevat een lijst met momenteel ondersteunde apparaten en pl
 |  | JavaScript-browsers | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png)    | ![](/help/assets/icon-blue-check.png) |
 | Mobiele app |  |  |  |  |
 |  | iOS-apparaten | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>3</sup> | ![](/help/assets/icon-blue-check.png) |
-|  | Android-apparaten | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
+|  | Android-apparaten | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>3</sup> | ![](/help/assets/icon-blue-check.png) |
 |  | Windows-apparaten |  |  | ![](/help/assets/icon-blue-check.png) |
 | OTT |  |  |  |  |
 |  | Apple TV (tvOS) | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
 |  | ROKU |  | ![](/help/assets/icon-blue-check.png)   <br>(BrightScript)    | ![](/help/assets/icon-blue-check.png)<br>(native) |
 |  | Fire TV (Fire OS) | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>3</sup> | ![](/help/assets/icon-blue-check.png) |
-|  | Android-tv | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
+|  | Android-tv | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>3</sup> | ![](/help/assets/icon-blue-check.png) |
 |  | Chromecast |  | ![](/help/assets/icon-blue-check.png)    | ![](/help/assets/icon-blue-check.png) |
 |  | Gamingconsoles (bijvoorbeeld Xbox ONE, Sony PS3/PS4) |  |  | ![](/help/assets/icon-blue-check.png) |
 |  | Bovenste vakken instellen (bijvoorbeeld x1 x xfinity) |  |  | ![](/help/assets/icon-blue-check.png) |
