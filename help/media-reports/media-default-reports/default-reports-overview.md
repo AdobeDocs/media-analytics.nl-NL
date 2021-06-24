@@ -1,12 +1,13 @@
 ---
 title: Overzicht van standaardrapporten
-description: Overzicht van standaardrapporten
+description: '"Meer informatie over rapporttypen en metriek die worden gebruikt om media op uw website bij te houden. Ontdek de dashboardstijlrapporten die beschikbaar zijn met de Media Core-module."'
 uuid: a078aa59-3b2d-45b2-9e66-3d9c29c82f0c
 exl-id: 0040006e-cd59-48a1-b019-1feafc275fa3
-translation-type: tm+mt
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+feature: '"Grondbeginselen van media-analyse, rapporten en analyses"'
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
