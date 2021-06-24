@@ -1,14 +1,15 @@
 ---
-title: buffering bijhouden met JavaScript 3.x
-description: Beschrijft het bijhouden van buffergebeurtenissen in browser-apps (JS).
-translation-type: tm+mt
-source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
+title: Leer hoe u buffering kunt bijhouden met JavaScript 3.x
+description: Leer hoe u buffergebeurtenissen kunt bijhouden in browser-apps (JS).
+exl-id: c6941942-02f9-4f9c-99ad-0c52ed2f793b
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '115'
+source-wordcount: '122'
 ht-degree: 0%
 
 ---
-
 
 # buffering bijhouden met JavaScript 3.x{#track-buffering-on-javascript}
 
@@ -25,7 +26,7 @@ ht-degree: 0%
 
 ## Buffering implementeren
 
-1. Luister naar de buffergebeurtenissen voor het afspelen vanaf de mediaspeler en volg de buffering van de `BufferStart` gebeurtenis bij het melden van de buffergebeurtenis.
+1. Luister naar de afspeelbuffergebeurtenissen van de mediaspeler en volg bij de melding van de gebeurtenis buffering van de buffer de buffering met de gebeurtenis `BufferStart`.
 
    ```js
    _onBufferStart = function() {
@@ -33,7 +34,7 @@ ht-degree: 0%
    };
    ```
 
-1. Volg bij het verzenden van het volledige bericht over de buffer vanuit de mediaspeler het einde van de buffering met behulp van de `BufferComplete` gebeurtenis.
+1. Volg bij het verzenden van het volledige bericht over de buffer vanuit de mediaspeler het einde van de buffering met de gebeurtenis `BufferComplete`.
 
    ```js
    _onBufferComplete = function() {
@@ -41,4 +42,4 @@ ht-degree: 0%
    };
    ```
 
-Zie het volgende scenario [VOD playback met het als buffer optreden](/help/sdk-implement/tracking-scenarios/vod-buffering.md) voor voor meer informatie.
+Zie het volgende scenario [VOD playback met het als buffer optreden](/help/sdk-implement/tracking-scenarios/vod-buffering.md) voor meer informatie.
