@@ -1,15 +1,16 @@
 ---
-title: Tijdlijn 3 - Hoofdstukken
-description: null
+title: Meer informatie over tijdlijnen voor mediatracering � hoofdstukken
+description: Leer meer over de tijdlijn van de afspeelkop en wanneer een hoofdstuk begint en eindigt.
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
-translation-type: tm+mt
-source-git-commit: 197041df4c985cdc572564652a976bd733448787
+exl-id: e3f5bbdb-7007-435b-920c-566d163e57ad
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '1219'
+source-wordcount: '1237'
 ht-degree: 5%
 
 ---
-
 
 # Tijdlijn 3 - Hoofdstukken {#timeline-3-chapters}
 
@@ -36,7 +37,7 @@ De volgende diagrammen illustreren de tijdlijn van de afspeelkop en de bijbehore
 
 **Implementatiedetails**
 
-Deze aanroep geeft _de intentie van de gebruiker om een video af te spelen_ . Het keert een identiteitskaart van de Zitting ( `{sid}` ) aan de cliënt terug die wordt gebruikt om alle volgende volgende volgende het volgen vraag binnen de zitting te identificeren. De spelerstatus wordt nog niet afgespeeld, maar &#39;gestart&#39;.  [Verplichte sessieparameters](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) moeten in de `params` kaart in de aanvraaginstantie worden opgenomen.  Op de achtergrond, leidt deze vraag tot een Analytics van Adobe vraag in werking stellen.
+Deze vraag signaleert _de intentie van de gebruiker om_ een video te spelen. Het keert een identiteitskaart van de Zitting ( `{sid}`) aan de cliënt terug die wordt gebruikt om alle volgende volgende volgende volgende volgende volgende het volgen vraag binnen de zitting te identificeren. De spelerstatus wordt nog niet afgespeeld, maar &#39;gestart&#39;.  [De verplichte ](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) parameters voor sessies moeten in de  `params` kaart in de aanvraaginstantie worden opgenomen.  Op de achtergrond, produceert deze vraag Adobe Analytics in werking stelt vraag in werking.
 
 **Voorbeeld van de aanvraaginstantie**
 
@@ -106,7 +107,7 @@ Advertenties kunnen alleen worden bijgehouden binnen een advertentie-einde.
 
 **Implementatiedetails**
 
-Volg de eerste pre-roll advertentie, die 15 seconden lang is. Aangepaste metagegevens opnemen bij deze `adStart` .
+Volg de eerste advertentie voor de rol, die 15 seconden lang is. Aangepaste metagegevens opnemen met deze `adStart`.
 
 **Voorbeeld van de aanvraaginstantie**
 
@@ -268,7 +269,7 @@ Het einde van de tweede advertentie vóór de rol bijhouden.
 
 **Implementatiedetails**
 
-Het advertentiespoor is voorbij. Tijdens de hele advertentiesessie is de spelstatus blijven spelen.
+Het advertentiespoor is voorbij. Tijdens de hele advertentieronde is de spelstatus blijven spelen.
 
 **Voorbeeld van de aanvraaginstantie**
 
@@ -290,7 +291,7 @@ Het advertentiespoor is voorbij. Tijdens de hele advertentiesessie is de spelsta
 
 **Implementatiedetails**
 
-Na de `adBreakComplete` gebeurtenis plaatst u de speler in de afspeelstatus met de `play` gebeurtenis.
+Na de gebeurtenis `adBreakComplete` plaatst u de speler in de afspeelstatus met de gebeurtenis `play`.
 
 **Voorbeeld van de aanvraaginstantie**
 
@@ -381,7 +382,7 @@ Houd de verplaatsing naar de bufferstatus bij.
 
 **Implementatiedetails**
 
-Bufferbewerkingen worden na 3 seconden beëindigd. Zet de speler dus terug naar de afspeelstatus. U moet een andere gebeurtenis voor het afspelen van tracks verzenden die buiten de buffering valt.  **De`play`vraag na een`bufferStart`&quot;bufferEnd&quot;vraag aan het achtereind,** zodat is er geen behoefte aan een `bufferEnd` gebeurtenis.
+Bufferbewerkingen worden na 3 seconden beëindigd. Zet de speler dus terug naar de afspeelstatus. U moet een andere gebeurtenis voor het afspelen van tracks verzenden die buiten de buffering valt.  **De  `play` vraag na een  `bufferStart` infers een &quot;bufferEnd&quot;vraag aan het achtereind,** zodat is er geen behoefte aan een  `bufferEnd` gebeurtenis.
 
 **Voorbeeld van de aanvraaginstantie**
 
@@ -447,7 +448,7 @@ Het eerste hoofdstuk eindigt, vlak voor het tweede en het tweede einde.
 
 **Implementatiedetails**
 
-Midden rol en duur van 8 seconden: verzenden `adBreakStart` .
+Midden rol en duur van 8 seconden: `adBreakStart` verzenden.
 
 **Voorbeeld van de aanvraaginstantie**
 
@@ -664,7 +665,7 @@ Pingel het achterste eind om de 10 seconden. Player bevindt zich nog steeds in d
 
 **Implementatiedetails**
 
-De afspeelstatus verplaatsen naar Afspelen.  **De`play`vraag na een`pauseStart`infers een &quot;hervattingsvraag&quot;aan het achtereind**, zodat is er geen behoefte aan een `resume` gebeurtenis.
+De afspeelstatus verplaatsen naar Afspelen.  **De  `play` vraag na een  `pauseStart` infers een &quot;hervattingsvraag&quot;aan het achtereind**, zodat is er geen behoefte aan een  `resume` gebeurtenis.
 
 **Voorbeeld van de aanvraaginstantie**
 
@@ -730,7 +731,7 @@ Het einde van het tweede en laatste hoofdstuk bijhouden.
 
 **Implementatiedetails**
 
-Naar `sessionComplete` de achtergrond sturen om aan te geven dat de gebruiker klaar is met het bekijken van de volledige inhoud.
+Verzend `sessionComplete` naar de achtergrond om aan te geven dat de gebruiker klaar is met het bekijken van de volledige inhoud.
 
 **Voorbeeld van de aanvraaginstantie**
 
@@ -747,4 +748,4 @@ Naar `sessionComplete` de achtergrond sturen om aan te geven dat de gebruiker kl
 
 >[!NOTE]
 >
->**Geen zoekgebeurtenissen? -** Er is geen expliciete ondersteuning voor gebeurtenissen `seekStart` `seekComplete` of gebeurtenissen in de Media Collection API. Dit is omdat bepaalde spelers een zeer groot aantal dergelijke gebeurtenissen produceren wanneer de eindgebruiker schrobt, en verscheidene honderden gebruikers de netwerkbandbreedte van een backenddienst gemakkelijk konden knelpen. Adobe biedt expliciete ondersteuning voor zoekgebeurtenissen door de hartslagduur te berekenen op basis van de tijdstempel van het apparaat in plaats van de positie van de afspeelkop.
+>**Geen zoekgebeurtenissen? -** Er is geen expliciete steun in de Inzameling API van Media voor `seekStart` of `seekComplete` gebeurtenissen. Dit is omdat bepaalde spelers een zeer groot aantal dergelijke gebeurtenissen produceren wanneer de eindgebruiker schrobt, en verscheidene honderden gebruikers de netwerkbandbreedte van een backenddienst gemakkelijk konden knelpen. Adobe werkt aan expliciete ondersteuning voor zoekgebeurtenissen door de hartslagduur te berekenen op basis van de tijdstempel van het apparaat in plaats van de positie van de afspeelkop.
