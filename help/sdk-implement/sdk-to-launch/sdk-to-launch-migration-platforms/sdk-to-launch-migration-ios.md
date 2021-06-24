@@ -1,11 +1,15 @@
 ---
-title: Migreren van de standalone Media SDK naar Adobe Launch - iOS
-description: Instructies en codevoorbeelden voor het migreren van de Media SDK naar Launch voor iOS.
-translation-type: tm+mt
-source-git-commit: bc896cc403923e2f31be7313ab2ca22c05893c45
+title: '"Migreren van de standalone Media SDK naar Adobe Launch - iOS"'
+description: Leer hoe u van de SDK van Media naar Starten voor iOS migreert.
+exl-id: f70b8e1b-cb9f-4230-86b2-171bdaed4615
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '359'
+ht-degree: 0%
 
 ---
-
 
 # Migreren van de standalone Media SDK naar Adobe Launch - iOS
 
@@ -13,7 +17,8 @@ source-git-commit: bc896cc403923e2f31be7313ab2ca22c05893c45
 
 ### Standalone Media SDK
 
-In de standalone SDK van Media, vormt u de het volgen configuratie in app, en gaat het tot SDK over wanneer u de trekker creeert.
+In de standalone SDK van Media, vormt u de het volgen configuratie in app,
+en geeft deze door aan de SDK wanneer u de Beheer maakt.
 
 ```objective-c
 ADBMediaHeartbeatConfig *config = 
@@ -33,8 +38,8 @@ ADBMediaHeartbeat* tracker =
 
 ### Extensie starten
 
-1. Klik in Experience Platform Launch op het [!UICONTROL Extensions] tabblad voor uw mobiele eigenschap
-1. Zoek op het [!UICONTROL Catalog] tabblad de extensie Adobe Media Analytics for Audio and Video en klik op [!UICONTROL Install].
+1. Klik in Experience Platform Launch op het tabblad [!UICONTROL Extensions] voor uw mobiele eigenschap
+1. Zoek op het tabblad [!UICONTROL Catalog] de Adobe Media Analytics voor de extensie Audio en Video en klik op [!UICONTROL Install].
 1. In de pagina van de uitbreidingsmontages, vorm de volgende parameters.
 De uitbreiding van Media zal de gevormde parameters voor het volgen gebruiken.
 
@@ -46,7 +51,9 @@ De uitbreiding van Media zal de gevormde parameters voor het volgen gebruiken.
 
 ### Standalone Media SDK
 
-In de standalone SDK van Media creeert u manueel het `ADBMediaHeartbeatConfig` voorwerp en vormt de volgende parameters. Implementeer de gedelegeerde interface die het`getQoSObject()` en `getCurrentPlaybackTime()functions.`
+In de standalone SDK van Media maakt u handmatig het `ADBMediaHeartbeatConfig`-object
+en configureert u de volgende parameters. Implementeer de gedelegeerde interface die de
+`getQoSObject()` en `getCurrentPlaybackTime()functions.`
 
 Maak een MediaHeartbone-instantie die u wilt bijhouden:
 
@@ -120,16 +127,23 @@ Tracker selecteert automatisch de configuratie van het gevormde lanceringsbezit.
 
 ### Standalone Media SDK
 
-In de standalone Media SDK, wordt een afgevaardigde voorwerp dat het`ADBMediaHeartbeartDelegate` protocol uitvoert overgegaan tijdens trackerverwezenlijking.
-De implementatie zou recentste QoE en playhead moeten terugkeren wanneer de trekker de `getQoSObject()` en `getCurrentPlaybackTime()` interfacemethods roept.
+In de standalone SDK van Media, een afgevaardigde voorwerp dat uitvoert
+`ADBMediaHeartbeartDelegate` protocol wordt overgegaan tijdens de verwezenlijking van de spoorker.
+De implementatie moet de nieuwste QoE en afspeelkop retourneren telkens als de
+tracker roept de `getQoSObject()`- en `getCurrentPlaybackTime()`-interface aan
+methoden.
 
 ### Extensie starten
 
-De implementatie moet de huidige afspeelkop van de speler bijwerken door de methode aan te roepen die`updateCurrentPlayhead` door de tracker wordt weergegeven. Voor nauwkeurige tracering moet u deze methode ten minste één keer per seconde aanroepen.
+De huidige afspeelkop van de speler moet worden bijgewerkt met de functie
+`updateCurrentPlayhead` methode blootgesteld door de trekker. Voor nauwkeurige tracering
+u zou deze methode minstens eens per seconde moeten roepen.
 
 [Referentie voor media-API: huidige afspeelknop bijwerken](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updatecurrentplayhead)
 
-De implementatie moet de QoE-informatie bijwerken door de methode aan te roepen die`updateQoEObject` door de Beheer wordt weergegeven. U zou deze methode moeten roepen wanneer er een verandering in de kwaliteitsmetriek is.
+De implementatie moet de QoE-informatie bijwerken door de
+`updateQoEObject` methode blootgesteld door de trekker. U moet deze methode aanroepen
+wanneer er een wijziging optreedt in de kwaliteitswaarden.
 
 [Referentie voor media-API - QoE-object bijwerken](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updateqoeobject)
 
