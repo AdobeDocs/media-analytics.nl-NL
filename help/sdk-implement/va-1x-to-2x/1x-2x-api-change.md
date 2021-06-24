@@ -1,12 +1,16 @@
 ---
-title: 1.x naar 2.x API-conversie
-description: Dit onderwerp bevat koppelingen naar API-verwijzingen en lijsten met vereiste en optionele API's voor bijhouden voor 1.x- en 2.x-versie van de Media SDK.
+title: Versie 1.x naar 2.x API-conversie
+description: Verken API-referenties en lijsten met vereiste en optionele API's voor bijhouden voor 1.x- en 2.x-versie van de Media SDK.
 uuid: 6e619288-c082-4cb4-8685-e90823dadf4a
-translation-type: tm+mt
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 8d06b7df-f246-49e6-aa58-91a9d6fa889a
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '202'
+ht-degree: 1%
 
 ---
-
 
 # API 1.x naar 2.x-conversie {#one-x-to-two-x-conv}
 
@@ -19,7 +23,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## Vereiste track*-API&#39;s:
 
-|  VHL 1.x | VHL 2.x |
+|  VHL 1.x  | VHL 2.x |
 |---|---|
 | `videoPlayerPlugin.trackVideoLoad()` | N.v.t. |
 | `videoPlayerPlugin.trackSessionStart()` | [mediaHeartbone.trackSessionStart(mediaObject, mediaCustomMetadata)](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#trackSessionStart) |
@@ -30,13 +34,13 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `videoPlayerPlugin.trackApplicationError()` | N.v.t. |
 | `videoPlayerPlugin.trackVideoPlayerError()` | [mediaHeartbone.trackError()](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#trackError) |
 
-Alle optionele API&#39;s voor reeksspatiëring, zoals advertenties, hoofdstukken, wijzigingen in bitsnelheid, zoeken en bufferen, maken nu deel uit van één `trackEvent` API. De [trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#trackEvent) -API ontvangt een constante parameter die het type gebeurtenis vertegenwoordigt dat moet worden bijgehouden:
+Alle optionele API&#39;s voor reeksspatiëring, zoals advertenties, hoofdstukken, wijzigingen in bitsnelheid, zoeken en bufferen, maken nu deel uit van één `trackEvent`-API. De [trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#trackEvent) API ontvangt een constante parameter die het type gebeurtenis vertegenwoordigt dat het bedoeld is te volgen:
 
 ## Optionele trackEvent-API&#39;s:
 
 | VHL 1.x | VHL 2.x |
 |---|---|
-| Een geldige `AdBreakInfo` waarde retourneren in `VideoPlayerPlugin.getAdBreakInfo()` | `trackEvent(Event.AdBreakStart)` |
+| Een geldige `AdBreakInfo` retourneren in `VideoPlayerPlugin.getAdBreakInfo()` | `trackEvent(Event.AdBreakStart)` |
 | null retourneren in `VideoPlayerPlugin.getAdBreakInfo()` | `trackEvent(Event.AdBreakComplete)` |
 | `playerPlugin.trackAdStart()` | `trackEvent(Event.AdStart, adObject, adCustomMetadata)` |
 | `playerPlugin.trackAdComplete()` | `trackEvent(Event.AdComplete)` |
@@ -50,4 +54,3 @@ Alle optionele API&#39;s voor reeksspatiëring, zoals advertenties, hoofdstukken
 | `playerPlugin.trackBufferComplete()` | `trackEvent(Event.BufferComplete)` |
 | `playerPlugin.trackBitrateChange()` | `trackEvent(Event.BitrateChange)` |
 | `playerPlugin.trackTimedMetadata()` | `trackEvent(Event.TimedMetadataUpdate)` |
-
