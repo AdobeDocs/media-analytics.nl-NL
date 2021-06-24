@@ -1,28 +1,32 @@
 ---
-title: VOD één tracker voor meerdere sessies
-description: Een voorbeeld van hoe u één tracker kunt gebruiken om meerdere sessies bij te houden met behulp van de Media SDK.
+title: VOD Eén Beheer voor meerdere sessies
+description: Bekijk een voorbeeld van hoe te om één spoor te gebruiken om veelvoudige zittingen te volgen gebruikend SDK van Media.
 uuid: 355c83f4-52bd-4bdd-92dc-ab506e412d0a
-translation-type: tm+mt
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 72edb484-0d45-446e-bda3-cda9e2272e7e
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '186'
+ht-degree: 4%
 
 ---
 
-
-# VOD één tracker voor meerdere sessies{#vod-one-tracker-for-multiple-sessions}
+# Eén VOD-tracker voor meerdere sessies{#vod-one-tracker-for-multiple-sessions}
 
 ## Scenario {#scenario}
 
-In dit scenario wordt de `MediaHeartbeat` instantie gebruikt om twee afzonderlijke sessies in de juiste volgorde te maken.
+In dit scenario wordt de instantie `MediaHeartbeat` gebruikt om twee afzonderlijke sessies in de juiste volgorde te maken.
 
-Dit scenario is hetzelfde als het [VOD-afspelen zonder advertentiescenario](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) .
+Dit scenario is het zelfde als [VOD playback zonder advertenties](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario.
 
 ## Parameters {#parameters}
 
 ### Hartslagsessie
 
-| Parameter | Waarde | Notities |
+| Parameter | Waarde | Notities   |
 | --- | --- | --- |
-| `s:event:sid` | Unieke sessie-id | Een unieke zitting-identiteitskaart die in alle hartslagnetwerkvraag tot bestaat `trackSessionEnd` |
+| `s:event:sid` | Unieke sessie-id | Een unieke sessie-id die bestaat in alle hartslagnetwerkaanroepen tot `trackSessionEnd` |
 
 ## Voorbeeldcode {#sample-code}
 
@@ -30,7 +34,7 @@ Dit scenario is hetzelfde als het [VOD-afspelen zonder advertentiescenario](/hel
 
 ### Android {#android}
 
-Stel de volgende code in om twee instanties van `MediaHeartbeat` voor twee mediaspelers te maken:
+Als u twee instanties van `MediaHeartbeat` voor twee mediaspelers wilt maken, stelt u de volgende code in:
 
 ```java
 public class MediaAnalyticsProvider implements MediaHeartbeatDelegate { 
@@ -95,7 +99,7 @@ protected void onCreate(Bundle savedInstanceState) {
 } 
 ```
 
-Als u de eerste sessie wilt weergeven met de `MediaAnalyticsProvider` (vandaar `MediaHeartbeat`) instantie in Android, stelt u de volgende code in:
+Als u de eerste sessie wilt weergeven met de instantie `MediaAnalyticsProvider` (vandaar `MediaHeartbeat`) in Android, stelt u de volgende code in:
 
 ```java
 // Set up mediaObject 
@@ -139,7 +143,7 @@ _mediaHeartbeat.trackSessionEnd();
 ........ 
 ```
 
-Als u de tweede sessie wilt weergeven, kunt u dezelfde `MediaAnalyticsProvider` ( `MediaHeartbeat`) instantie gebruiken als de eerste sessie, maar voor een nieuwe sessie:
+Als u de tweede sessie wilt weergeven, kunt u dezelfde instantie `MediaAnalyticsProvider` ( `MediaHeartbeat`) gebruiken als de eerste sessie, maar voor een nieuwe sessie:
 
 ```java
 // Set up mediaObject 
@@ -185,7 +189,7 @@ _mediaHeartbeat.trackSessionEnd();
 
 ### iOS {#ios}
 
-Voer het volgende in om twee instanties van `MediaHeartbeat` voor twee mediaspelers te maken:
+Als u twee instanties van `MediaHeartbeat` voor twee mediaspelers wilt maken, voert u het volgende in:
 
 ```
 @interface MediaAnalyticsProvider : NSObject <ADBMediaHeartbeatDelegate> 
@@ -253,7 +257,7 @@ Voer het volgende in om twee instanties van `MediaHeartbeat` voor twee mediaspel
 } 
 ```
 
-Als u de eerste sessie wilt weergeven met de `MediaAnalyticsProvider` (vandaar `MediaHeartbeat`) instantie in iOS, stelt u de volgende code in:
+Als u de eerste sessie wilt weergeven met de instantie `MediaAnalyticsProvider` (vandaar `MediaHeartbeat`) in iOS, stelt u de volgende code in:
 
 ```
 // Set up mediaObject 
@@ -291,7 +295,7 @@ NSMutableDictionary *mediaContextData = [[NSMutableDictionary alloc] init];
 ....... 
 ```
 
-Als u de tweede sessie wilt weergeven, kunt u dezelfde `MediaAnalyticsProvider` ( `MediaHeartbeat`) instantie gebruiken als de eerste sessie, maar voor een nieuwe sessie:
+Als u de tweede sessie wilt weergeven, kunt u dezelfde instantie `MediaAnalyticsProvider` ( `MediaHeartbeat`) gebruiken als de eerste sessie, maar voor een nieuwe sessie:
 
 ```
 // Set up mediaObject 
@@ -378,4 +382,3 @@ analyticsProvider1 = new MediaAnalyticsProvider(_player1);
 // Load the main media content.  
 _player1.loadContent(URL_TO_MEDIA_1);
 ```
-
