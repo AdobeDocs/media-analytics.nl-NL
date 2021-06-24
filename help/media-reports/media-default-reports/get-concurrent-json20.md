@@ -1,16 +1,18 @@
 ---
 title: Gelijktijdige gebruikers JSON-rapportgegevens ophalen met Analytics 2.0-API's
-description: null
+description: Leer hoe u gelijktijdige viewers rapportgegevens verkrijgt met de API's Analytics 2.0. Bekijk een voorbeeldverzoek en een antwoord.
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
 exl-id: f84f63d3-b0d0-45fe-95a7-159f22d60660
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+feature: '"Grondbeginselen van media-analyse, rapporten en analyses"'
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '190'
 ht-degree: 3%
 
 ---
 
-# Krijg Gelijktijdige Viewers JSON rapportgegevens met Analytics 2.0 APIs{#get-concurrent-viewers-json-report-data}
+# Gelijktijdige gebruikers JSON-rapportgegevens ophalen met Analytics 2.0-API&#39;s{#get-concurrent-viewers-json-report-data}
 
 U kunt gelijktijdige viewers rapportgegevens verkrijgen met de [_*Analytics 2.0 API&#39;s*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html).
 
