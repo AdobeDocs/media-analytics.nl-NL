@@ -1,11 +1,13 @@
 ---
-title: Parameters aanvragen
-description: Meer informatie over Adobe Analytics-parameters voor streaming media request.
+title: API voor streaming media-verzameling � aanvraagparameters
+description: '"Wat zijn de de verzoekparameters van de Inzameling van Media, verzoeksleutels, en beschrijvingen."'
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
-source-git-commit: 00e9992712034dc67072e09cce7819719c0371d1
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '1297'
+source-wordcount: '1307'
 ht-degree: 5%
 
 ---
