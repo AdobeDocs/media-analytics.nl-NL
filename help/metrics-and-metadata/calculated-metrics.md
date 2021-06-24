@@ -1,13 +1,14 @@
 ---
 title: Berekende standaarden
-description: Berekende standaarden
+description: Leer over Adobe die Media berekende metriek en metrische formules stroomt.
 uuid: 9dd35155-58aa-4f05-896e-c5cbc4b13d59
 exl-id: 253f6c61-70b5-4bdf-8e79-840545aeca0e
-translation-type: tm+mt
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 6%
+source-wordcount: '198'
+ht-degree: 5%
 
 ---
 
@@ -21,10 +22,10 @@ ht-degree: 6%
 |---|---|---|
 | Gem. Advertenties per mediastroom | Advertentie start per mediumstart | `Ad Starts / Media Starts` |
 | Gem. Hoofdstukken per mediastroom | Hoofdstuk start per medium | `Chapter Start / Media Starts` |
-| Gem. Tijd besteed aan media | Totale tijd die per medium wordt besteed (HH:MM:SS) | `Media Time Spent / Media Starts` |
-| Gem. Tijd van inhoud besteed | Tijd die per inhoud wordt besteed, begint (HH:MM:SS) | `Content Time Spent / Content Start` |
-| Gem. Toegevoegde tijd | Advertentietijd per Advertentiestart (HH:MM:SS) | `Ad Time Spent / Ad Start` |
-| Gem. Tijd besteed aan hoofdstuk | De Tijd van het hoofdstuk per Hoofdstuk begint (HH:MM:SS) | `Chapter Time Spent / Chapter Start` |
+| Gem. Tijd besteed aan media | Totale tijd die per media wordt besteed (HH:MM:SS) | `Media Time Spent / Media Starts` |
+| Gem. Tijd van inhoud besteed | Tijd van inhoud per inhoud begint (HH:MM:SS) | `Content Time Spent / Content Start` |
+| Gem. Toegevoegde tijd | Adviseer tijd die per Advertentie begint (HH:MM:SS) | `Ad Time Spent / Ad Start` |
+| Gem. Tijd besteed aan hoofdstuk | De Tijd die van het hoofdstuk per Hoofdstuk wordt uitgegeven begint (HH:MM:SS) | `Chapter Time Spent / Chapter Start` |
 | Voltooiingssnelheid van media | Percentage voltooide inhoud versus geïnitieerde media (%) | `Content Completes/ Media Starts` |
 | Voltooiingssnelheid van inhoud | Percentage van voltooide inhoud versus begin van inhoud (%) | `Content Completes / Content Starts` |
 | Voltooiingssnelheid van advertentie | Percentage voltooide advertenties vs Advertentiestart (%) | `Ad Completes / Ad Starts` |
