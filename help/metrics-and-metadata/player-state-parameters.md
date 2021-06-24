@@ -1,24 +1,25 @@
 ---
 title: Parameters van de Player-status
-description: In dit onderwerp worden parameters voor het bijhouden van spelerstatussen beschreven.
+description: '"Meer informatie over de parameters voor het bijhouden van de spelerstatus voor volledig scherm, bijschrift sluiten, dempen en beeld-in-beeld-eigenschappen."'
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
-translation-type: tm+mt
-source-git-commit: 1cf631d7f3d5365a02be99af78655ac3b53fb3cb
+exl-id: cd51ed3a-fe37-41e9-8243-dfd9deb514c1
+feature: '"Media Analytics, Variables"'
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '2236'
+source-wordcount: '2249'
 ht-degree: 1%
 
 ---
 
-
-# Parameters van de Speler{#player-state-parameters}
+# Parameters van de Player-status{#player-state-parameters}
 
 Dit onderwerp stelt een lijst van spelerstaatsgegevens voor die Adobe via oplossingsvariabelen verzamelt.
 
 Beschrijving van tabelgegevens:
 
 * **Implementatie:** informatie over implementatiewaarden en -vereisten
-   * *Sleutel*  - Variabele, plaats of manueel in uw app, of automatisch door Adobe Media SDK.
+   * *Sleutel*  - Variabele, plaats of manueel in uw app, of automatisch door de Adobe Media SDK.
    * *Vereist*  - Geeft aan of de parameter is vereist voor het bijhouden van basisvideo.
    * *Type*  - Geeft het type op van de variabele die moet worden ingesteld, de tekenreeks of het getal.
    * *Verzonden met*  - Geeft aan wanneer de gegevens worden verzonden:  *Media* Startis de analytische aanroep die op het begin van de media wordt verzonden,  *Ad* Startis de analytische aanroep die op ad start wordt verzonden, enzovoort; de  ** Closecalls zijn de gecompileerde analytische vraag die rechtstreeks van de hartslagserver naar de analyseserver aan het eind van de media zitting, of het eind van de advertentie, het hoofdstuk, enz. wordt verzonden. De dichte vraag is niet beschikbaar in de vraag van het netwerkpakket.
@@ -38,7 +39,7 @@ Beschrijving van tabelgegevens:
 >Wijzig de classificatienamen niet voor onderstaande variabelen die onder Rapportage/Gereserveerde variabele worden beschreven als &quot;classificatie&quot;.\
 >De mediaclassificaties worden gedefinieerd wanneer een rapportsuite is ingeschakeld voor het bijhouden van media. Van tijd tot tijd, voegt Adobe nieuwe eigenschappen toe, en, wanneer dit voorkomt, moeten de klanten hun rapportsuites opnieuw toelaten om toegang tot de nieuwe media eigenschappen te krijgen. Tijdens het updateproces bepaalt Adobe of de classificaties worden toegelaten door de namen van de variabelen te controleren. Als een van deze ontbrekende elementen ontbreekt, voegt Adobe de ontbrekende opnieuw toe.
 
-## Eigenschappen van afspeelstatus {#player-state-properties}
+## Eigenschappen van spelerstatus {#player-state-properties}
 
 De mogelijkheden voor het bijhouden van de spelerstatus kunnen worden gekoppeld aan een audio- of videostream. De gestandaardiseerde metriek voor het bijhouden van spelerstatussen worden opgeslagen als oplossingsvariabelen. De standaardstatussen zijn: fullScreen, dempen, closeCaption, pictureInPicture en inFocus.
 
