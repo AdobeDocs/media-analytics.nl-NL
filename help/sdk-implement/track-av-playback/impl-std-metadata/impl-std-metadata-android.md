@@ -1,28 +1,32 @@
 ---
-title: Standaardmetagegevens implementeren op Android
-description: Beschrijft het plaatsen van standaardvideo en admeta-gegevens die met het volgen vraag op Android moeten worden verzonden.
+title: Meer informatie over het implementeren van standaardmetagegevens op Android
+description: Leer hoe u standaardvideo- en advertentiemetagegevens instelt die moeten worden verzonden met trackingaanroepen op Android.
 uuid: c48b4190-b062-4c4e-9c40-8dde4598a50e
-translation-type: tm+mt
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 31afd8b5-0f23-4025-afcb-6df906cf6be5
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '108'
+ht-degree: 6%
 
 ---
 
-
-# Standaardmetagegevens implementeren op Android{#implement-standard-metadata-on-android}
+# Standaardmetadata implementeren in Android{#implement-standard-metadata-on-android}
 
 ## Standaardmetagegevensconstanten
 
-| Naam van constante | Beschrijving |
+| Naam van constante | Beschrijving   |
 |---|---|
-| `MediaHeartbeat.MediaObjectKey.StandardMediaMetadata` | Constante voor het koppelen van standaardmetagegevens op `MediaObject`. |
+| `MediaHeartbeat.MediaObjectKey.StandardMediaMetadata` | Constante voor het bijvoegen van standaardmetagegevens op `MediaObject`. |
 
 ## API-naslaggids voor metagegevens
 
-* Maak een `HashMap` standaard waarde voor de metagegevenssleutel.
+* Maak een `HashMap` van standaard waardeparen voor metagegevens.
    * [Videometagegevens](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
    * [Toetsen voor audiometagegevens](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.AudioMetadataKeys.html)
-* Stel de standaardmetagegevens in `HashMap` op het `MediaInfo` gebruik van de standaardconstante Metagegevens voor de metagegevens.
-* Geef dit `MediaInfo` object op terwijl de `trackSessionStart()` API wordt aangeroepen.
+* Stel de standaardmetagegevens `HashMap` in op `MediaInfo` met de constante Standaard metagegevens voor de metagegevens.
+* Geef dit `MediaInfo`-object op terwijl de `trackSessionStart()`-API wordt aangeroepen.
 
 ## Voorbeeldimplementaties
 
