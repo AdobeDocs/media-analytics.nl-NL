@@ -1,15 +1,17 @@
 ---
 title: Mediagelijktijdige rapportage
-description: Voor klanten van Media Analytics, laat het Medium Gelijktijdige Kijkers in Analysis Workspace u toe om gezamenlijke kijkers te analyseren om te begrijpen waar de piekgelijktijdig voorkwam of waar drop-outs voorkwamen.
+description: '"Leer hoe u het deelvenster Mediagelijktijdige viewers kunt gebruiken om gelijktijdige viewers te analyseren en om inzicht te krijgen in de piekconsistentie en vervolgkeuzemogelijkheden."'
 exl-id: 2eadd5e7-45de-4275-aac5-d16e2a6a9fed
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+feature: '"Media Analytics, Workspace Basics"'
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '187'
 ht-degree: 1%
 
 ---
 
-# Mediagelijktijdige viewers rapporteren{#media-concurrent-viewers}
+# Mediagelijktijdige rapportage{#media-concurrent-viewers}
 
 Door gelijktijdige viewers te analyseren, kunt u precies zien waar de piekgelijktijdige uitvoering plaatsvond of waar drop-offs kostbare inzichten in de kwaliteit van de inhoud en de betrokkenheid van de viewer hebben opgeleverd en kunt u helpen met het oplossen van problemen of het plannen van volumes en schaal.
 
