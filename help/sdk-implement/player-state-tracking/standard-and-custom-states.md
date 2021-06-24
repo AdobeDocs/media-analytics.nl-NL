@@ -1,14 +1,15 @@
 ---
 title: Over Standaard- en Aangepaste statussen
-description: In dit onderwerp wordt de functie voor het bijhouden van de spelerstatus beschreven, inclusief vereisten en richtlijnen voor het implementeren en rapporteren van standaard- en aangepaste spelerstatussen.
-translation-type: tm+mt
-source-git-commit: f7a45dfbabe71fa9e1de7a4f4b2a7e64849e4ef4
+description: Leer meer over de functie voor het bijhouden van spelerstatussen, zoals vereisten en richtlijnen voor het implementeren en rapporteren van standaard- en aangepaste spelerstatussen.
+exl-id: 3c492055-d471-4147-aa78-b058d6b931f4
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '281'
 ht-degree: 0%
 
 ---
-
 
 # Informatie over standaard- en aangepaste frames
 
@@ -34,7 +35,7 @@ De gegevens worden op dezelfde manier berekend voor standaard- en aangepaste sta
 * Elke combinatie van frames is toegestaan.
 * Wanneer meerdere spelerstatussen slagen, worden alleen de eerste 10 behouden en naar de VA-verwerkingscomponent doorgestuurd.
 * Het maximum van tien staten geldt voor alle staten, ongeacht of ze gesloten zijn of niet.
-* Een status kan meerdere keren beginnen en eindigen en wordt als één status geteld. U kunt bijvoorbeeld `closedCapationing` vijf keer beginnen en stoppen, maar het telt als één frame.
+* Een status kan meerdere keren beginnen en eindigen en wordt als één status geteld. `closedCapationing` kan bijvoorbeeld vijf keer worden gestart en gestopt, maar het telt als één status.
 * Elke staat die het maximum van 10 toegestane staten overschrijdt wordt verworpen.
 
 ## Aangepaste statussen
