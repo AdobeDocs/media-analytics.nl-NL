@@ -1,29 +1,33 @@
 ---
-title: Zoeken bijhouden op iOS
-description: In dit onderwerp wordt het implementeren van 'seek tracking' beschreven met behulp van de Media SDK op iOS.
+title: Leer zoeken bijhouden op iOS
+description: Leer hoe u de gebeurtenissen Start en Voltooid zoeken kunt bijhouden met de Media SDK op iOS.
 uuid: 1d31ae99-384f-4b4d-b557-4018db177349
-translation-type: tm+mt
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: e8cb4962-2a14-4bfe-9a25-2405e503ba0b
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '132'
+ht-degree: 0%
 
 ---
-
 
 # Zoeken bijhouden op iOS{#track-seeking-on-ios}
 
 >[!IMPORTANT]
 >
->De volgende instructies bieden richtlijnen voor implementatie voor alle 2.x SDK&#39;s. Als u een 1.x-versie van de SDK implementeert, kunt u de 1.x-handleidingen voor ontwikkelaars hier downloaden: SDK&#39;s [downloaden.](/help/sdk-implement/download-sdks.md)
+>De volgende instructies bieden richtlijnen voor implementatie voor alle 2.x SDK&#39;s. Als u een 1.x-versie van de SDK implementeert, kunt u de 1.x-handleidingen voor ontwikkelaars hier downloaden: [SDK&#39;s downloaden.](/help/sdk-implement/download-sdks.md)
 
 ## Constanten voor reeksspatiëring zoeken
 
-| Naam van constante | Beschrijving |
+| Naam van constante | Beschrijving     |
 |---|---|
 | `ADBMediaHeartbeatEventSeekStart` | Constante voor het bijhouden van de gebeurtenis Start van zoekopdracht. |
 | `ADBMediaHeartbeatEventSeekComplete` | Constante voor het bijhouden van de gebeurtenis Seek Complete. |
 
 ## Zoeken implementeren
 
-1. Luister naar het afspelen en zoeken van gebeurtenissen van de mediaspeler en volg zoekacties bij het starten van de gebeurtenis via de `SeekStart` gebeurtenis:
+1. Luister naar het afspelen van zoekgebeurtenissen van de mediaspeler en volg het zoeken naar de gebeurtenis `SeekStart` bij het starten van de zoekgebeurtenis:
 
    ```
    - (void)onSeekStart:(NSNotification *)notification { 
@@ -33,7 +37,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    }
    ```
 
-1. Volg bij het zoeken naar volledige meldingen van de mediaspeler het einde van het zoeken met behulp van de `SeekComplete` gebeurtenis:
+1. Volg bij het zoeken naar volledige meldingen van de mediaspeler het einde van het zoeken met de gebeurtenis `SeekComplete`:
 
    ```
    - (void)onSeekComplete:(NSNotification *)notification { 
