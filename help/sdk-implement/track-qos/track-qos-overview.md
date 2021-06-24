@@ -1,20 +1,24 @@
 ---
-title: Overzicht
+title: Uitleg over de kwaliteit van de ervaring
 description: Een overzicht van het volgen van kwaliteit van ervaring (QoE, QoS) gebruikend Media SDK.
 uuid: 4d73c47f-d0a4-4228-9040-d6432311c9eb
-translation-type: tm+mt
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: af5f3372-a9a5-46ea-9c2f-81b0f5c96ccf
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '260'
+ht-degree: 2%
 
 ---
-
 
 # Overzicht{#overview}
 
 >[!IMPORTANT]
 >
->De volgende instructies bieden richtlijnen voor implementatie voor alle 2.x SDK&#39;s. Als u een 1.x-versie van de SDK implementeert, kunt u de 1.x-handleidingen voor ontwikkelaars hier downloaden: SDK&#39;s [downloaden.](/help/sdk-implement/download-sdks.md)
+>De volgende instructies bieden richtlijnen voor implementatie voor alle 2.x SDK&#39;s. Als u een 1.x-versie van de SDK implementeert, kunt u de 1.x-handleidingen voor ontwikkelaars hier downloaden: [SDK&#39;s downloaden.](/help/sdk-implement/download-sdks.md)
 
-De kwaliteit van ervaring het volgen omvat kwaliteit van de dienst (QoS) en fout het volgen, allebei zijn facultatieve elementen en **niet** vereist voor kernmedia het volgen implementaties. U kunt de mediaspeler-API gebruiken om de variabelen met betrekking tot QoS en foutcontrole te identificeren. Hier volgen de belangrijkste elementen van de kwaliteit van ervaring:
+De kwaliteit van ervaring het volgen omvat kwaliteit van de dienst (QoS) en fout het volgen, allebei facultatieve elementen zijn en **niet** vereist voor kernmedia het volgen implementaties. U kunt de mediaspeler-API gebruiken om de variabelen met betrekking tot QoS en foutcontrole te identificeren. Hier volgen de belangrijkste elementen van de kwaliteit van ervaring:
 
 ## Gebeurtenissen van Player {#player-events}
 
@@ -24,11 +28,11 @@ Maak of werk de instantie van het object QoS bij voor het afspelen. [QoS API-nas
 
 ### Bij alle gebeurtenissen die betrekking hebben op bitsnelheden
 
-Bellen `trackEvent(Media.Heartbeat.Event.BitrateChange);`
+`trackEvent(Media.Heartbeat.Event.BitrateChange);` aanroepen
 
 ## QOS implementeren
 
-1. Identificeer wanneer om het even welke metriek QOS tijdens media playback veranderen, creeer het `MediaObject` gebruiken van de informatie QoS, en werk de nieuwe informatie QoS bij.
+1. Identificeer wanneer om het even welke metriek QOS tijdens media playback veranderen, creeer `MediaObject` gebruikend de informatie QoS, en werk de nieuwe informatie QoS bij.
 
    QoSObject-variabelen:
 
@@ -43,8 +47,8 @@ Bellen `trackEvent(Media.Heartbeat.Event.BitrateChange);`
    | `fps` | FPS-waarde | Ja |
    | `droppedFrames` | Aantal gedropte frames | Ja |
 
-1. Zorg ervoor dat de `getQoSObject()` methode de meest bijgewerkte informatie QoS terugkeert.
-1. Als bij het afspelen wordt geschakeld naar een andere bitsnelheid, roept u de `BitrateChange` gebeurtenis op in de Media Heartbeat-instantie.
+1. Zorg ervoor dat `getQoSObject()` de methode de meest bijgewerkte informatie QoS terugkeert.
+1. Wanneer de playbackschakelaars bitrates, roep de `BitrateChange` gebeurtenis in de instantie van de Hartslag van Media.
 
    >[!IMPORTANT]
    >
@@ -70,4 +74,3 @@ if (e.type == "bitrate_change") {
     this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BitrateChange, qosObject); 
 };
 ```
-
