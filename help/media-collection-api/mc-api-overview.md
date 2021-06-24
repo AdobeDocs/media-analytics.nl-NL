@@ -1,16 +1,17 @@
 ---
 seo-title: Overzicht
-title: Overzicht
-description: null
+title: API-overzicht voor streaming media
+description: Leer over de API van de Inzameling van Media en hoe uw speler audio en videogebeurtenissen kan volgen gebruikend de vraag van HTTP RESTful.
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
-translation-type: tm+mt
-source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
+exl-id: 58430636-7fab-433a-8ead-52ccaa45d920
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
-
 
 # Overzicht{#overview}
 
@@ -46,7 +47,7 @@ De volggegevens die met de Media Collection API worden gevangen worden verzonden
    {uri}/api/v1/sessions/{session-id}/events
    ```
 
-### Hoofdtekst {#mc-api-request-body} aanvragen
+### Verzoek {#mc-api-request-body}
 
 ```
 {
