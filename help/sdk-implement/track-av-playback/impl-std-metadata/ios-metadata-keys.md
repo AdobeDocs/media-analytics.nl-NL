@@ -1,12 +1,16 @@
 ---
-title: iOS-metagegevenssleutels
-description: In dit onderwerp worden de beschikbare iOS-metagegevenssleutels beschreven.
+title: iOS-metagegevenssleutels uitgelegd
+description: Meer informatie over de beschikbare iOS-metagegevenstoetsen.
 uuid: 8eb90111-c9dd-4ca7-9766-91530a8ae6cf
-translation-type: tm+mt
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: a4bbbcba-9644-486a-95f4-65e5dc57623e
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '117'
+ht-degree: 19%
 
 ---
-
 
 # iOS-metagegevenssleutels{#ios-metadata-keys}
 
@@ -57,4 +61,3 @@ Van `ADBStandardMetadataKeys.h`:
 | `ADBAdMetadataKeyPLACEMENT_ID` | Plaatsing-id | Advertentie |
 | `ADBAdMetadataKeySITE_ID` | Site-id | Advertentie |
 | `ADBAdMetadataKeyCREATIVE_URL` | Creative URL | Advertentie |
-
