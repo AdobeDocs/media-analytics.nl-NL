@@ -1,12 +1,16 @@
 ---
-title: Chromecast-metagegevenssleutels
-description: Beschrijft het plaatsen van standaardvideo en advertentiemetagegevens die met het volgen vraag op Chromecast moeten worden verzonden.
+title: Verklaarde Sleutels van Metagegevens van Chromecast
+description: Leer hoe te om standaardvideo en admeta-gegevens te plaatsen die met het volgen vraag op Chromecast moeten worden verzonden.
 uuid: c446ad41-51b8-46d6-9bc1-abfae866023f
-translation-type: tm+mt
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: ccc717ae-d846-4349-8282-5e3511ddeb9b
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '141'
+ht-degree: 2%
 
 ---
-
 
 # Chromecast-metagegevenssleutels{#chromecast-metadata-keys}
 
@@ -111,4 +115,3 @@ adObject[ADBMobile.media.MediaObjectKey.StandardAdMetadata] = standardVideoMetad
  
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, this._player.getAdInfo(), adContextData);
 ```
-
