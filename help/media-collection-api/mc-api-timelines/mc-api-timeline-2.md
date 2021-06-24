@@ -1,12 +1,16 @@
 ---
-title: Tijdlijn 2 - Gebruiker verlaat sessie
-description: null
+title: Meer informatie over tijdslijnen voor mediatracering � gebruikerssessie wordt verlaten
+description: Leer meer over de tijdlijn van de afspeelkop en de bijbehorende � als een videosessie wordt verlaten. Meer informatie over de details van elke actie en elk verzoek.
 uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
-translation-type: tm+mt
-source-git-commit: c86c7932f932af0a121e0b757921973d6f4084e8
+exl-id: 0c6a89f4-7949-4623-8ed9-ce1d1547bdfa
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '665'
+ht-degree: 5%
 
 ---
-
 
 # Tijdlijn 2 - Gebruiker verlaat sessie {#timeline--2-user-abandons-session}
 
@@ -31,7 +35,7 @@ De volgende diagrammen illustreren de tijdlijn van de afspeelkop en de bijbehore
 
 **Implementatiedetails**
 
-Deze aanroep geeft _de intentie van de gebruiker om een video af te spelen_ . Het keert een identiteitskaart van de Zitting ( `{sid}` ) aan de cliënt terug die wordt gebruikt om alle volgende volgende volgende het volgen vraag binnen de zitting te identificeren. De spelerstatus wordt nog niet afgespeeld, maar &#39;gestart&#39;.  [Verplichte sessieparameters](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) moeten in de `params` kaart in de aanvraaginstantie worden opgenomen.  Op de achtergrond, leidt deze vraag tot een Analytics van Adobe vraag in werking stellen.
+Deze vraag signaleert _het voornemen van de gebruiker om_ een video te spelen. Het keert een identiteitskaart van de Zitting ( `{sid}`) aan de cliënt terug die wordt gebruikt om alle volgende volgende volgende volgende volgende volgende het volgen vraag binnen de zitting te identificeren. De spelerstatus wordt nog niet afgespeeld, maar &#39;gestart&#39;.  [De verplichte ](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) parameters voor sessies moeten in de  `params` kaart in de aanvraaginstantie worden opgenomen.  Op de achtergrond, produceert deze vraag Adobe Analytics in werking stelt vraag in werking.
 
 **Voorbeeld van de aanvraaginstantie**
 
@@ -133,7 +137,7 @@ Een advertentie van 12 seconden begint.
 
 | Handeling | Tijdlijn handeling (seconden) | Positie afspeelkop (seconden) | Aanvraag client |
 | --- | :---: | :---: | --- |
-| App verzendt ping-gebeurtenis | 1 | 0 | `/api/v1/sessions/{sid}/events` |
+| App verzendt ping-gebeurtenis | 3 | 0 | `/api/v1/sessions/{sid}/events` |
 
 **Implementatiedetails**
 
@@ -335,7 +339,7 @@ Pingel het achterste eind om de 10 seconden.
 
 **Implementatiedetails**
 
-Midden rol en duur van 8 seconden: verzenden `adBreakStart` .
+Midden rol en duur van 8 seconden: `adBreakStart` verzenden.
 
 **Voorbeeld van de aanvraaginstantie**
 
@@ -394,7 +398,7 @@ Houd de middenrol advertentie bij.
 
 **Implementatiedetails**
 
-Naar `sessionEnd` de VA-achtergrond sturen om aan te geven dat de sessie onmiddellijk moet worden gesloten, zonder verdere verwerking.
+Verzend `sessionEnd` naar de VA-achtergrond om aan te geven dat de sessie onmiddellijk moet worden gesloten, zonder verdere verwerking.
 
 **Voorbeeld van de aanvraaginstantie**
 
