@@ -1,12 +1,16 @@
 ---
 title: VOD afspelen met overgeslagen advertenties
-description: Een voorbeeld van hoe u VOD-inhoud kunt bijhouden waarin de gebruiker advertenties met de SDK van Media heeft overgeslagen.
+description: Bekijk een voorbeeld van hoe u VOD-inhoud kunt bijhouden waarin de gebruiker advertenties met de SDK van Media heeft overgeslagen.
 uuid: f3ab3524-abcb-4051-b64e-a1aad6e3dd3f
-translation-type: tm+mt
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 034b5c1f-7dd9-431f-a51b-925e407a7b36
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '281'
+ht-degree: 2%
 
 ---
-
 
 # VOD afspelen met overgeslagen advertenties{#vod-playback-with-skipped-ads}
 
@@ -16,22 +20,22 @@ Dit scenario bestaat uit het afspelen van VOD-inhoud met een overgeslagen advert
 
 ### Eén VOD met een overgeslagen pre-roll-advertentie
 
-Dit is hetzelfde scenario als het afspelen van [VOD met pre-roll advertenties](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md), behalve dat de toepassing een bepaling heeft die de gebruiker de advertentie laat overslaan, bij de klik van een overslaan knop misschien.
+Dit is het zelfde scenario zoals [VOD playback met pre-rol advertenties](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md), behalve heeft de toepassing een bepaling om de gebruiker te laten overslaan de advertentie, op de klik van een overslaan knoop misschien.
 
-| Trigger | Hartslagmethode | Netwerkaanroepen | Notities |
+| Trigger   | Hartslagmethode  | Netwerkaanroepen   | Notities   |
 | --- | --- | --- | --- |
-| Gebruiker klikt [!UICONTROL Play] | `trackSessionStart()` | Start inhoud analyse, Start inhoud hartslag | De meetbibliotheek is zich er niet van bewust dat er een pre-roll advertentie is. Deze netwerkaanroepen zijn nog steeds precies hetzelfde als het afspelen van [VOD zonder advertentiescenario](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) . |
+| Gebruiker klikt [!UICONTROL Play] | `trackSessionStart()` | Start inhoud analyse, Start inhoud hartslag | De meetbibliotheek is zich er niet van bewust dat er een pre-roll advertentie is. Deze netwerkaanroepen zijn nog steeds precies hetzelfde als het afspelen van [VOD zonder scenario&#39;s](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | De advertentie begint. | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analyses en begin, hartslag en begin |  |
 | Het eerste frame van de advertentie wordt afgespeeld. | `trackPlay()` | Hartslag en Afspelen | Wanneer advertentie-inhoud wordt afgespeeld vóór de hoofdinhoud, worden de hartslagen gestart wanneer de advertentie wordt afgespeeld. |
 | De advertentie wordt afgespeeld. |  | Hartbeats toevoegen |  |
 | De advertentie wordt overgeslagen. | `trackEvent:trackAdSkip` |  | Er is geen volledig netwerkgesprek. |
-| De inhoud wordt afgespeeld. |  | Content Heartbeats | Deze netwerkaanroepen zijn precies hetzelfde als het [VOD-afspelen zonder advertentiescenario](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) . |
-| Het afspelen van de inhoud is voltooid. | `trackComplete()` | Hartslaginhoud voltooid | Deze netwerkaanroep is precies hetzelfde als de [VOD-weergave zonder advertentiescenario](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) . |
+| De inhoud wordt afgespeeld. |  | Content Heartbeats | Deze netwerkaanroepen zijn precies hetzelfde als het afspelen van [VOD zonder advertenties](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)-scenario. |
+| Het afspelen van de inhoud is voltooid. | `trackComplete()` | Hartslaginhoud voltooid | Deze netwerkaanroep is precies hetzelfde als de [VOD-weergave zonder advertenties](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)-scenario. |
 | De sessie is afgelopen. | `trackSessionEnd()` |  | `SessionEnd` |
 
 ## Parameters {#parameters}
 
-De parameters zijn identiek aan de parameters in het spelen [VOD met pre-rol het scenario van advertenties](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md) , behalve is er geen volledige ad-break en geen volledige vraag.
+De parameters zijn identiek aan de parameters in [VOD playback met pre-rol advertenties](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md) scenario, behalve is er geen volledige ad-break volledige vraag.
 
 ## Voorbeeldcode {#sample-code}
 
@@ -292,4 +296,3 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ........ 
 ```
-
