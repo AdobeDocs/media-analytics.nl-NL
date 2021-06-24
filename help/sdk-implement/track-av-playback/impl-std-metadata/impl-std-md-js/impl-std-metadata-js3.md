@@ -1,14 +1,15 @@
 ---
-title: Standaardmetagegevens implementeren met JavaScript 3.x
-description: Beschrijft het plaatsen van standaardvideo en admeta-gegevens die met het volgen vraag in browser apps (JS) moeten worden verzonden.
-translation-type: tm+mt
-source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
+title: Leer standaardmetagegevens implementeren met JavaScript 3.x
+description: Leer hoe u standaardvideo- en advertentiemetagegevens instelt die moeten worden verzonden met trackingaanroepen in browser-apps (JS 3.x).
+exl-id: 228ba000-10e2-4906-8417-265a03367a9b
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '43'
-ht-degree: 4%
+source-wordcount: '50'
+ht-degree: 6%
 
 ---
-
 
 # Standaardmetagegevens implementeren met JavaScript 3.x{#implement-standard-metadata-on-javascript}
 
