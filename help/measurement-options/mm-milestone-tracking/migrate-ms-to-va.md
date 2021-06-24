@@ -1,17 +1,18 @@
 ---
-title: Migreren van Mijlsteen naar Media Analytics
-description: Migreren van Mijlsteen naar Media Analytics
+title: Leer hoe u van Mijlsteen naar Media Analytics kunt migreren
+description: Leer hoe u Mijlsteenvariabelen wijzigt in Metrics van Media Analytics en Mijlstone-modulemethoden in de syntaxis van Media Analytics.
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
 exl-id: 655841ed-3a02-4e33-bbc9-46fb14302194
-translation-type: tm+mt
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 12%
+source-wordcount: '692'
+ht-degree: 11%
 
 ---
 
-# Van Mijlpaal naar Medianalyse {#migrating-from-milestone-to-media-analytics} migreren
+# Migreren van Mijlsteen naar Media Analytics {#migrating-from-milestone-to-media-analytics}
 
 ## Overzicht {#overview}
 
