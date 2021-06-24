@@ -1,11 +1,13 @@
 ---
-title: Uitschakelen en privacy
-description: Optie-in, opt-out en privacy afhandelen.
+title: '"Uitschakelen en Privacy uitgelegd"'
+description: '"Leer hoe u kunt werken met opt-in, opt-out en privacy."'
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '360'
 ht-degree: 1%
 
 ---
@@ -75,7 +77,7 @@ U kunt bepalen of traceringsactiviteit is toegestaan op een specifiek apparaat:
             ```
    Nadat de privacy-instelling is gewijzigd met behulp van `setPrivacyStatus`, is de wijziging permanent totdat deze opnieuw wordt gewijzigd met deze methode of totdat de toepassing wordt verwijderd en opnieuw wordt geïnstalleerd.
 
-## Opgeslagen id&#39;s (OTT-apps) {#retrieving-stored-identifiers-ott-apps} ophalen
+## Opgeslagen id&#39;s ophalen (OTT-apps) {#retrieving-stored-identifiers-ott-apps}
 
 Met deze informatie kunt u lokaal opgeslagen gebruikersidentiteiten ophalen uit uw Roku-app.
 
