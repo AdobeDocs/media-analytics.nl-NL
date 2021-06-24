@@ -1,12 +1,14 @@
 ---
-title: SDK's downloaden
+title: Koppelingen openen om Media Analytics SDK's te downloaden
 description: Koppelingen naar SDK-downloads voor beschikbare platforms, zoals Android, iOS, JavaScript, Chromecast en Roku.
 uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '513'
-ht-degree: 6%
+source-wordcount: '520'
+ht-degree: 5%
 
 ---
 
@@ -25,7 +27,7 @@ ht-degree: 6%
 | Chromecast | [Media SDK voor Chromecast v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.2) | [Referentie voor Chromecast API](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Chromecast instellen](/help/sdk-implement/setup/set-up-chromecast.md) |
 
 
-## Download de 2.x Media SDKs {#download-2x-sdks}
+## De 2.x Media SDK&#39;s downloaden {#download-2x-sdks}
 
 | 2.x Media SDK&#39;s  | Nieuwste SDK-downloads voor media |  API&#39;s   |  Documentatie  |
 | --- | --- | --- | --- |
@@ -35,7 +37,7 @@ ht-degree: 6%
 | Roku | [Media SDK voor Roku v2.2.3](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.3) |  | [Roku instellen](/help/sdk-implement/setup/set-up-roku.md) |
 | Chromecast | [Media SDK voor Chromecast v2.2.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v2.2.0) | [Referentie voor Chromecast API](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Chromecast instellen](/help/sdk-implement/setup/set-up-chromecast.md) |
 
-## Media Analytics Launch Extension {#media-analytics-launch-extension}
+## Extensie voor media-analyse starten {#media-analytics-launch-extension}
 
 | MA-opstartcomponent   | Documentatie | Voorbeelden |
 |---|---|---|
