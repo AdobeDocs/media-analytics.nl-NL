@@ -1,20 +1,24 @@
 ---
-title: Standaard en metagegevens implementeren op iOS
+title: Meer informatie over het implementeren van standaard-advertentiemetagegevens op iOS
 description: Standaardinstellingen en metagegevens gebruiken voor het bijhouden van advertenties op iOS.
 uuid: f15fb727-5a5b-46c5-bf12-93b376c10fd1
-translation-type: tm+mt
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 018ae833-51d9-4ff0-80e7-3dbcaefb997c
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '67'
+ht-degree: 10%
 
 ---
 
-
-# Standaard en metagegevens implementeren op iOS{#implement-standard-ad-metadata-on-ios}
+# Standaardmetadata voor advertenties implementeren in iOS{#implement-standard-ad-metadata-on-ios}
 
 ## Advertentieconstanten
 
-| Naam van constante | Beschrijving |
+| Naam van constante | Beschrijving   |
 |---|---|
-| `ADBMediaObjectKeyStandardAdMetadata` | Constante voor het koppelen van standaard- en metagegevens op `AdInfo ADBMediaObject` |
+| `ADBMediaObjectKeyStandardAdMetadata` | Constante voor het bijvoegen van standaard- en metagegevens op `AdInfo ADBMediaObject` |
 
 ## Implementatiestandaard en metagegevens
 
