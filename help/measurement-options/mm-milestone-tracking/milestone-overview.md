@@ -1,11 +1,13 @@
 ---
-title: Milestone - overzicht
-description: Milestone - overzicht
+title: Meer informatie over Mijlpaalrapportage (afgekeurd)
+description: Vervangen � Leer hoe u videomelding kunt instellen voor een implementatie van mijlpaal
 uuid: 2f9ec6bb-8860-4863-98bc-5cffb356ccc5
 exl-id: 960785e3-f507-4f09-8f85-6eeca57dd2f3
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '3324'
+source-wordcount: '3339'
 ht-degree: 0%
 
 ---
@@ -58,7 +60,7 @@ Selecteer in het uiteindelijke scherm de twee eVars en drie gebeurtenissen die u
 
 ![](assets/rs3.png)
 
-## Referentie van videovariabele {#video-variable-reference}
+## Referentie videovariabele {#video-variable-reference}
 
 De volgende tabel bevat aanvullende informatie over de handelsvariabelen en aangepaste gebeurtenissen voor video:
 
@@ -70,7 +72,7 @@ De volgende tabel bevat aanvullende informatie over de handelsvariabelen en aang
 | Video wordt gestart | Gebeurtenis <br/>Type: Teller | Geeft aan dat een bezoeker een gedeelte van een video heeft weergegeven. Het biedt echter geen informatie over hoeveel of welk deel van een video de bezoeker heeft bekeken. |
 | Video voltooid | Gebeurtenis <br/>Type: Teller | Geeft aan dat een gebruiker een volledige video heeft weergegeven. Standaard wordt de complete-gebeurtenis 1 seconde voor het einde van de video gemeten.  <br/>Tijdens de implementatie kunt u opgeven hoeveel seconden vanaf het einde van de video u een volledige weergave wilt overwegen. Voor live video en andere streams zonder gedefinieerd einde kunt u een aangepast punt opgeven om de voltooiing te meten. Bijvoorbeeld na een bepaalde tijd die is weergegeven. |
 
-## Variabelen van mediamodule {#media-module-variables}
+## Variabelen van de mediamodule {#media-module-variables}
 
 Met de volgende variabelen kunt u videometing configureren. U moet waarden definiëren voor de variabelen in de tabel Vereiste variabelen. Als u gebeurtenissen in uw videospeler wilt bijhouden, moet u autoTrack (voor ondersteunde spelers) inschakelen of aangepaste Player-gebeurtenistracering implementeren met de methoden open, play, stop en close.
 
@@ -96,7 +98,7 @@ Met de volgende variabelen kunt u videometing configureren. U moet waarden defin
 | `Media.segmentByMilestones` | **Syntaxis:** <br/><br/> `s.Media.segmentByMilestones = true;` <br/><br/>Hiermee worden automatisch de segmentnaam, het segmentnummer en de segmentlengte-gegevens gegenereerd op basis van de lengte van de media en de mijlpalen die zijn opgegeven in  `Media.trackMilestones` <br/><br/>Segmenteren op basis van mijlpalen. Dit is de enige manier om segmenten te definiëren wanneer u  `autoTrack`segmenten gebruikt. <br/><br/>Standaardwaarde:  `false` |
 | `Media.segmentByOffsetMilestones` | **Syntaxis:** <br/><br/> `s.Media.segmentByOffsetMilestones = true;` <br/><br/>Hiermee worden automatisch de segmentnaam, het segmentnummer en de segmentlengte-gegevens gegenereerd op basis van de lengte van de media en de mijlpalen die zijn opgegeven in  `Media.trackOffsetMilestones` <br/><br/>Segmenteren op basis van mijlpalen. Dit is de enige manier om segmenten te definiëren wanneer u  `autoTrack`segmenten gebruikt.  <br/><br/>Standaardwaarde:  `false` |
 
-## Variabelen {#ad-tracking-variables} bijhouden
+## Variabelen voor Advisering bijhouden {#ad-tracking-variables}
 
 Deze variabelen worden gebruikt om advertentie-informatie samen met de openAd methode te verzenden. Zie [VAST video en opvolging.](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)
 
