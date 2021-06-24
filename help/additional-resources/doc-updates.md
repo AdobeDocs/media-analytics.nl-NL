@@ -1,15 +1,17 @@
 ---
 title: Wat is er nieuw in Adobe Analytics voor Streaming Media?
-description: Meer informatie over de nieuwe functies in Adobe Analytics for Streaming Media
+description: Leer wat er nieuw is in Adobe Analytics for Streaming Media.
 uuid: 1f3e48df-83b6-418c-8cf7-d79466481f79
 index: y
 internal: n
 snippet: y
 exl-id: 881a94f4-d248-4668-a2d1-4e50d3f9135a
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '28'
-ht-degree: 14%
+source-wordcount: '30'
+ht-degree: 13%
 
 ---
 
