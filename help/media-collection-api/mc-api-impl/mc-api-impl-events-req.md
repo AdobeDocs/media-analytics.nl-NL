@@ -1,17 +1,18 @@
 ---
-title: Een verzoek om gebeurtenissen uitvoeren
-description: Een verzoek om gebeurtenissen uitvoeren
+title: Een gebeurtenissenverzoek implementeren
+description: Leer hoe te om het de verzoekeindpunt van Gebeurtenissen voor alle volgende volgende volgende volgende volgende volgende volgende vraag te gebruiken nadat u een identiteitskaart van de Zitting verkrijgt
 uuid: 3bfa313c-ff74-4e2e-bbde-6f4a6221d85b
 exl-id: af9a3470-85c7-498e-9bf4-6df3c6aafad9
-translation-type: tm+mt
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '84'
-ht-degree: 0%
+source-wordcount: '101'
+ht-degree: 3%
 
 ---
 
-# Het uitvoeren van een gebeurtenisverzoek{#implementing-an-events-request}
+# Een verzoek om gebeurtenissen uitvoeren{#implementing-an-events-request}
 
 **`{uri}/api/v1/sessions/{sid}/events`**
 
