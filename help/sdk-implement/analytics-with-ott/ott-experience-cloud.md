@@ -1,17 +1,20 @@
 ---
 title: OTT en Experience Cloud
-description: Gegevens over de integratie van OTT-apps met Experience Cloud.
+description: Meer informatie over de integratie van OTT-apps met Experience Cloud.
 uuid: 89264403-0fc8-4c76-b001-22e20e57bef2
-translation-type: tm+mt
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: dfeb0708-e744-4ff1-a644-3d77812f736a
+feature: '"Media Analytics, Experience Cloud Integration"'
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '46'
+ht-degree: 23%
 
 ---
 
-
 # OTT en Experience Cloud{#ott-and-experience-cloud}
 
-Zie de onderwerpen &quot;Instellen&quot; voor Chromecast en Roku voor meer informatie over het integreren van OTT-apps met Experience Cloud:
+Voor details over het integreren van OTT apps met Experience Cloud, zie de &quot;Opstelling&quot;onderwerpen voor Chromecast en Roku:
 
 * [Chromecast instellen](/help/sdk-implement/setup/set-up-chromecast.md)
 * [Roku instellen](/help/sdk-implement/setup/set-up-roku.md)
-
