@@ -1,17 +1,18 @@
 ---
-title: Muziek afspelen bijhouden op Roku
-description: Dit onderwerp beschrijft hoe te om kern het volgen uit te voeren gebruikend Media SDK op Roku.
+title: Leer hoe u het afspelen van de kern kunt bijhouden op Roku
+description: Leer hoe te om kern het volgen uit te voeren gebruikend Media SDK op Roku.
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
-translation-type: tm+mt
-source-git-commit: d11f68d0967dc27a6866a9b5a39c6b84ac9532e4
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '684'
 ht-degree: 2%
 
 ---
 
-# Core playback van het spoor op Roku{#track-core-playback-on-roku}
+# Muziek afspelen bijhouden op Roku{#track-core-playback-on-roku}
 
 >[!IMPORTANT]
 >Deze documentatie behandelt het volgen in versie 2.x van SDK. Als u een 1.x-versie van de SDK implementeert, kunt u hier de 1.x-handleidingen voor ontwikkelaars downloaden: [SDK&#39;s downloaden](/help/sdk-implement/download-sdks.md)
@@ -100,7 +101,7 @@ ht-degree: 2%
 
    * **Standaardmetagegevens**
 
-      [Standaardmetadata implementeren in Roku](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+[Standaardmetadata implementeren in Roku](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
       >[!NOTE]
       >Het is optioneel om het standaardobject voor videometagegevens aan het mediaobject te koppelen.
