@@ -1,14 +1,18 @@
 ---
-title: Standaardmetagegevens implementeren op Roku
-description: Beschrijft het plaatsen van standaardvideo en advertentiemetagegevens die met het volgen vraag op Roku moeten worden verzonden.
+title: Leer hoe u standaardmetagegevens kunt implementeren op Roku
+description: Leer hoe te om standaardvideo en admeta-gegevens te plaatsen die met het volgen vraag op Roku moeten worden verzonden.
 uuid: ae14d809-343f-452c-832a-f94bd3d83a90
-translation-type: tm+mt
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 1552b16a-3c2d-4caa-b571-e6628f0b6866
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '65'
+ht-degree: 9%
 
 ---
 
-
-# Standaardmetagegevens implementeren op Roku{#implement-standard-metadata-on-roku}
+# Standaardmetadata implementeren in Roku{#implement-standard-metadata-on-roku}
 
 Instantiëren van een standaard metagegevensobject, vullen van de gewenste variabelen en stellen het metagegevensobject in op het Media Heartbone-object.
 
@@ -34,5 +38,4 @@ standardMetadata[ADBMobile().MEDIA_AudioMetadataKeyLABEL] = "sample label"
 mediaInfo[ADBMobile().MEDIA_STANDARD_MEDIA_METADATA] = standardMetadata 
 ```
 
-Zie de uitgebreide lijst met videometagegevens hier: Parameters voor [audio en video](/help/metrics-and-metadata/audio-video-parameters.md)
-
+Zie de uitgebreide lijst met videometagegevens hier: [Parameters voor audio en video](/help/metrics-and-metadata/audio-video-parameters.md)
