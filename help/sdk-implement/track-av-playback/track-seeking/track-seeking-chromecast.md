@@ -1,35 +1,39 @@
 ---
-title: Zoeken volgen op chroecast
-description: In dit onderwerp wordt het implementeren van 'seek tracking' beschreven met de Media SDK op Chromecast.
+title: Leer hoe u zoeken kunt bijhouden op Chromecast
+description: Leer hoe u de gebeurtenissen Start en Voltooid zoeken bijhoudt met de Media SDK op Chromecast.
 uuid: 8018e6c4-fed9-4de7-9eae-c720da55ad8c
-translation-type: tm+mt
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 03be8ed3-ae3a-4e9a-b667-0d9280a844a1
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '148'
+ht-degree: 0%
 
 ---
-
 
 # Zoeken volgen op chroecast{#track-seeking-on-chromecast}
 
 >[!IMPORTANT]
 >
->De volgende instructies bieden richtlijnen voor implementatie voor alle 2.x SDK&#39;s. Als u een 1.x-versie van de SDK implementeert, kunt u de 1.x-handleidingen voor ontwikkelaars hier downloaden: SDK&#39;s [downloaden.](/help/sdk-implement/download-sdks.md)
+>De volgende instructies bieden richtlijnen voor implementatie voor alle 2.x SDK&#39;s. Als u een 1.x-versie van de SDK implementeert, kunt u de 1.x-handleidingen voor ontwikkelaars hier downloaden: [SDK&#39;s downloaden.](/help/sdk-implement/download-sdks.md)
 
 ## Constanten voor reeksspatiëring zoeken
 
-| Naam van constante | Beschrijving |
+| Naam van constante | Beschrijving     |
 |---|---|
 | `SeekStart` | Constante voor het bijhouden van de gebeurtenis Start van zoekopdracht. |
 | `SeekComplete` | Constante voor het bijhouden van de gebeurtenis Seek Complete. |
 
 ## Zoeken implementeren
 
-1. Luister naar het afspelen en zoeken van gebeurtenissen van de mediaspeler en volg zoekacties bij het starten van de gebeurtenis via de `SeekStart` gebeurtenis: [trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
+1. Luister naar het afspelen van zoekgebeurtenissen van de mediaspeler en volg het zoeken naar de gebeurtenis `SeekStart` bij het starten van de zoekgebeurtenis: [trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
 
    ```
    ADBMobile.media.trackEvent(ADBMobile.media.Event.SeekStart); 
    ```
 
-1. Volg bij het zoeken naar volledige meldingen van de mediaspeler het einde van het zoeken met behulp van de `SeekComplete` gebeurtenis: [trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
+1. Volg bij het zoeken naar volledige meldingen van de mediaspeler het einde van het zoeken met de gebeurtenis `SeekComplete`: [trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
 
    ```
    ADBMobile.media.trackEvent(ADBMobile.media.Event.SeekComplete); 
