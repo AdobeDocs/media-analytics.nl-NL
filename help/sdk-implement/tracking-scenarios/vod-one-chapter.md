@@ -1,12 +1,16 @@
 ---
 title: VOD afspelen met één hoofdstuk
-description: Een voorbeeld van het bijhouden van het afspelen van VOD die één hoofdstuk bevat.
+description: Bekijk een voorbeeld van het bijhouden van het afspelen van VOD die één hoofdstuk bevat.
 uuid: 1566a6f5-cf22-42e7-8e1a-6976c6c4e649
-translation-type: tm+mt
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: a8394fd3-16a2-4f5d-b6e1-6e9acb4c7afd
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '432'
+ht-degree: 2%
 
 ---
-
 
 # VOD afspelen met één hoofdstuk{#vod-playback-with-one-chapter}
 
@@ -14,22 +18,22 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 In dit scenario wordt een gedeelte van de VOD-inhoud gemarkeerd als een hoofdstuk.
 
-Tenzij gespecificeerd, zijn de netwerkvraag in dit scenario het zelfde als de vraag in de playback [VOD zonder advertentiescenario](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) . De netwerkvraag gebeurt tezelfdertijd, maar de lading is verschillend.
+Tenzij gespecificeerd, zijn de netwerkvraag in dit scenario het zelfde als de vraag in [VOD playback zonder het scenario van advertenties](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). De netwerkvraag gebeurt tezelfdertijd, maar de lading is verschillend.
 
-| Trigger | Hartslagmethode | Netwerkaanroepen | Notities |
+| Trigger   | Hartslagmethode   | Netwerkaanroepen   | Notities   |
 |---|---|---|---|
 | Gebruiker klikt **[!UICONTROL Play]** | `trackSessionStart` | Start inhoud analyse, Start inhoud hartslag | We hebben de meetbibliotheek nog niet verteld dat er een pre-roll advertentie is, zodat deze netwerkvraag precies het zelfde als Enige VoD is. |
 | Het hoofdstuk begint. | `trackEvent:ChapterStart` | Begin van hoofdstuk hartslag |  |
 | Het eerste frame van het hoofdstuk wordt afgespeeld. | `trackPlay` | Hartslaginhoud afspelen | Wanneer de hoofdstukinhoud vóór hoofdinhoud wordt afgespeeld, begint de hartslag wanneer het hoofdstuk begint. |
 | Het hoofdstuk wordt afgespeeld. |  | Hoofdstukbeats |  |
 | Het hoofdstuk is voltooid. | `trackEvent:trackChapterComplete` | Hoofdstuk hartslag voltooid | Dit is wanneer het einde van het hoofdstuk is bereikt. |
-| De inhoud wordt afgespeeld. |  | Content Heartbeats | Deze netwerkaanroep is precies hetzelfde als de [VOD-weergave zonder advertentiescenario](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) . |
-| De inhoud is voltooid. | `trackComplete` | Hartslaginhoud voltooid | Deze netwerkaanroep is precies hetzelfde als de [VOD-weergave zonder advertentiescenario](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) . |
+| De inhoud wordt afgespeeld. |  | Content Heartbeats | Deze netwerkaanroep is precies hetzelfde als de [VOD-weergave zonder advertenties](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)-scenario. |
+| De inhoud is voltooid. | `trackComplete` | Hartslaginhoud voltooid | Deze netwerkaanroep is precies hetzelfde als de [VOD-weergave zonder advertenties](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)-scenario. |
 | De sessie is afgelopen. | `trackSessionEnd` |  | `SessionEnd` betekent dat het einde van een weergavesessie is bereikt. Deze API moet worden aangeroepen, zelfs als de gebruiker de media niet controleert om te worden voltooid. |
 
 ## Parameters {#parameters}
 
-Wanneer de hoofdstukplayback begint, wordt een `Heartbeat Chapter Start` vraag verzonden. Als het begin van het hoofdstuk niet met de 10 tweede tijdopnemer samenvalt, wordt de `Heartbeat Chapter Start` vraag vertraagd met een paar seconden, en de vraag gaat naar het volgende 10 tweede interval.
+Wanneer het hoofdstukplayback begint, wordt een `Heartbeat Chapter Start` vraag verzonden. Als het begin van het hoofdstuk niet met de 10 tweede tijdopnemer samenvalt, wordt de `Heartbeat Chapter Start` vraag vertraagd met een paar seconden, en de vraag gaat naar het volgende 10 tweede interval.
 
 Wanneer dit gebeurt, gaat een `Content Heartbeat` vraag uit in het zelfde interval. U kunt onderscheid maken tussen de twee gebeurtenissen door het gebeurtenistype en het type element te bekijken:
 
@@ -465,4 +469,3 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ........ 
 ```
-
