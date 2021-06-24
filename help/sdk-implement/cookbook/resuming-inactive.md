@@ -1,12 +1,16 @@
 ---
-title: Niet-actieve sessies hervatten
-description: Hoe te om het hervatten van een inactieve zitting te behandelen.
+title: Inactieve sessies hervatten
+description: Leer hoe u een inactieve sessie kunt hervatten.
 uuid: 3ff1205d-7bbe-4016-9bd7-6e34b7862c4c
-translation-type: tm+mt
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: ee4cf7f5-5788-4d35-a04d-4ed714ccd663
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '160'
+ht-degree: 3%
 
 ---
-
 
 # Niet-actieve sessies hervatten{#resuming-inactive-sessions}
 
@@ -19,7 +23,7 @@ De SDK van Media houdt automatisch bij hoe lang het afspelen van media zich in e
 * Gestopt
 * Bufferen
 
-Als een sessie voor het bijhouden van media langer dan 30 minuten in een niet-actieve status blijft, wordt de sessie automatisch gesloten. Als de gebruiker na een eerder inactieve video het volgen zitting (`trackPlay`) hervat, leidt de Hartslag van Media automatisch tot een nieuwe videozitting gebruikend de eerder gebruikte videoinformatie en meta-gegevens, en verzendt een hervattingshartgebeurtenis. Zie Parameters voor [audio en video voor meer informatie.](/help/metrics-and-metadata/audio-video-parameters.md)
+Als een sessie voor het bijhouden van media langer dan 30 minuten in een niet-actieve status blijft, wordt de sessie automatisch gesloten. Als de gebruiker na een eerder inactieve video het volgen zitting (`trackPlay`) hervat, leidt de Hartslag van Media automatisch tot een nieuwe videozitting gebruikend de eerder gebruikte videoinformatie en meta-gegevens, en verzendt een hervattingshartgebeurtenis. Zie [Audio- en videoparameters.](/help/metrics-and-metadata/audio-video-parameters.md)
 
 ## Eerder gesloten sessie handmatig hervatten
 
@@ -86,4 +90,3 @@ _onmediaLoad = function () {
   this._mediaHeartbeat.trackSessionStart(mediaObject, contextData); 
 };
 ```
-
