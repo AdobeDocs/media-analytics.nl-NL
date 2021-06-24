@@ -1,22 +1,26 @@
 ---
-title: Advertenties bijhouden op iOS
+title: Leer hoe u advertenties kunt bijhouden op iOS
 description: Implementeer en tracking in iOS-toepassingen met de SDK van Media.
 uuid: e979e679-cde5-4c30-8f34-867feceac13a
-translation-type: tm+mt
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: a352bca9-bcfc-4418-b2a2-c9b1ad226359
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 4%
 
 ---
-
 
 # Advertenties bijhouden op iOS{#track-ads-on-ios}
 
 >[!IMPORTANT]
 >
->De volgende instructies bieden richtlijnen voor implementatie met behulp van de 2.x SDK&#39;s. Als u een 1.x-versie van de SDK implementeert, kunt u hier de 1.x-handleidingen voor ontwikkelaars downloaden: SDK&#39;s [downloaden.](/help/sdk-implement/download-sdks.md)
+>De volgende instructies bieden richtlijnen voor implementatie met behulp van de 2.x SDK&#39;s. Als u een 1.x-versie van de SDK implementeert, kunt u hier de 1.x-handleidingen voor ontwikkelaars downloaden: [SDK&#39;s downloaden.](/help/sdk-implement/download-sdks.md)
 
 ## Constanten voor bijhouden van advertenties
 
-| Naam van constante | Beschrijving |
+| Naam van constante | Beschrijving   |
 |---|---|
 | `ADBMediaHeartbeatEventAdBreakStart` | Constante voor het bijhouden van de gebeurtenis AdBreak Start |
 | `ADBMediaHeartbeatEventAdBreakComplete` | Constante voor het bijhouden van de gebeurtenis AdBreak Complete |
@@ -26,7 +30,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## Uitvoeringsstappen
 
-1. Bepaal wanneer de grens van de advertentierak begint, met inbegrip van pre-rol, en creeer een `AdBreakObject` door de informatie van de advertentierak te gebruiken.
+1. Bepaal wanneer de grens van de advertentierak begint, met inbegrip van pre-rol, en creeer `AdBreakObject` door de informatie van de advertentierak te gebruiken.
 
    `AdBreakObject` referentie:
 
@@ -44,7 +48,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
                                startTime:[START_TIME]];
    ```
 
-1. Roep `trackEvent()` met `AdBreakStart` in de `MediaHeartbeat` instantie aan begin het volgen van de advertentie onderbreking:
+1. Roep `trackEvent()` met `AdBreakStart` in de `MediaHeartbeat` instantie aan om het advertentiesonderbreking te volgen:
 
    ```
    - (void)onAdBreakStart:(NSNotification *)notification { 
@@ -54,7 +58,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    }
    ```
 
-1. Bepaal wanneer de advertentie begint en creeer een `AdObject` instantie gebruikend de advertentieinformatie.
+1. Identificeer wanneer de advertentie begint en creeer een `AdObject` instantie gebruikend de advertentieinformatie.
 
    `AdObject` referentie:
 
@@ -76,8 +80,8 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 1. Voeg desgewenst standaard- en/of advertentiemetagegevens toe aan de mediatraceringssessie via de variabelen van de contextgegevens.
 
-   * [Standaard en metagegevens implementeren op iOS](/help/sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
-   * **Aangepast en metagegevens -** Voor aangepaste metagegevens maakt u een variabel object voor de aangepaste gegevensvariabelen en vult u de gegevens voor de huidige advertentie in:
+   * [Standaardmetadata voor advertenties implementeren in iOS](/help/sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
+   * **Aangepast en metagegevens -** Voor aangepaste metagegevens maakt u een variabelenobject voor de aangepaste gegevensvariabelen en vult u de gegevens voor de huidige advertentie in:
 
       ```
       NSMutableDictionary *adDictionary = [[NSMutableDictionary alloc] init]; 
@@ -86,7 +90,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
       [adDictionary setObject:@"Sample creative" forKey:@"creative"];
       ```
 
-1. Roep `trackEvent()` met de `AdStart` gebeurtenis in de `MediaHeartbeat` instantie aan om het afspelen van de advertentie te volgen.
+1. Roep `trackEvent()` met de gebeurtenis `AdStart` in de instantie `MediaHeartbeat` aan om het afspelen van de advertentie te volgen.
 
    Neem een verwijzing naar de aangepaste metagegevensvariabele (of een leeg object) op als de derde parameter in de gebeurtenisaanroep:
 
@@ -98,7 +102,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    }
    ```
 
-1. Wanneer het afspelen van de advertentie het einde van de advertentie heeft bereikt, roept u `trackEvent()` de `AdComplete` gebeurtenis aan.
+1. Wanneer het afspelen van de advertentie het einde van de advertentie bereikt, roept u `trackEvent()` aan met de gebeurtenis `AdComplete`.
 
    ```
    - (void)onAdComplete:(NSNotification *)notification { 
@@ -108,7 +112,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    }
    ```
 
-1. Als het afspelen van de advertentie niet is voltooid omdat de gebruiker de advertentie heeft overgeslagen, houdt u de `AdSkip` gebeurtenis bij.
+1. Als het afspelen van de advertentie niet is voltooid omdat de gebruiker de advertentie heeft overgeslagen, houdt u de gebeurtenis `AdSkip` bij.
 
    ```
    - (void)onAdSkip:(NSNotification *)notification { 
@@ -118,8 +122,8 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    }
    ```
 
-1. Herhaal stap 3 tot en met 7 opnieuw als er extra advertenties binnen dezelfde `AdBreak`advertentie zijn.
-1. Wanneer het advertentieeinde is voltooid, gebruikt u de `AdBreakComplete` gebeurtenis om te volgen:
+1. Herhaal stap 3 tot en met 7 als er extra advertenties binnen dezelfde `AdBreak` zijn.
+1. Wanneer het ad-einde is voltooid, gebruikt u de gebeurtenis `AdBreakComplete` om te volgen:
 
    ```
    - (void)onAdBreakComplete:(NSNotification *)notification { 
