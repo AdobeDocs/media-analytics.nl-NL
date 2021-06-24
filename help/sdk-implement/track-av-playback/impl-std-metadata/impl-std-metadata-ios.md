@@ -1,29 +1,33 @@
 ---
-title: Standaardmetagegevens implementeren op iOS
-description: Beschrijft het plaatsen van standaardvideo en admeta-gegevens die met het volgen vraag op iOS moeten worden verzonden.
+title: Leer hoe u standaardmetagegevens kunt implementeren op iOS
+description: Leer hoe u standaardvideo- en advertentiemetagegevens instelt die moeten worden verzonden met trackingoproepen op iOS.
 uuid: 75a80f08-4a95-49d4-a27a-8ce531d64d31
-translation-type: tm+mt
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: e0981346-3d3c-4a0c-82a4-19942634fd03
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '102'
+ht-degree: 8%
 
 ---
 
-
-# Standaardmetagegevens implementeren op iOS{#implement-standard-metadata-on-ios}
+# Standaardmetadata implementeren in iOS{#implement-standard-metadata-on-ios}
 
 ## Metagegevensconstanten
 
-| Naam van constante | Beschrijving |
+| Naam van constante | Beschrijving   |
 |---|---|
-| `ADBMediaObjectKeyStandardMediaMetadata` | Constante voor het koppelen van standaardmetagegevens op `MediaInfo ADBMediaObject` |
+| `ADBMediaObjectKeyStandardMediaMetadata` | Constante voor het bijvoegen van standaardmetagegevens op `MediaInfo ADBMediaObject` |
 
 ## Implementatie
 
-1. Een woordenboek maken van standaardwaardeparen voor metagegevens met de opdracht `ADBStandardMetadataKeys`
+1. Een woordenboek maken van standaardwaardeparen voor metagegevens met de `ADBStandardMetadataKeys`
    [IOS-metagegevens](/help/sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
 
-1. Stel het standaardmetagegevenswoordenboek voor `MediaInfo` een `ADBMediaObject` instantie in met de standaardmetagegevensconstante voor metagegevens.
+1. Stel het standaardmetagegevenswoordenboek in op `MediaInfo` `ADBMediaObject`-instantie met de standaardmetagegevensconstante voor metagegevens.
 
-1. Geef dit `MediaInfo` object op terwijl de `trackSessionStart` API wordt aangeroepen.
+1. Geef dit `MediaInfo`-object op terwijl de `trackSessionStart`-API wordt aangeroepen.
 
 ### Voorbeeldimplementatie
 
@@ -54,4 +58,3 @@ NSMutableDictionary *standardAudioMetadata = [[NSMutableDictionary alloc] init];
  
 [mediaObject setValue:standardAudioMetadata   forKey:ADBMediaObjectKeyStandardMediaMetadata];
 ```
-
