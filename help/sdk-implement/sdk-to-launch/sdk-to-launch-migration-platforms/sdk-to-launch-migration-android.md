@@ -1,11 +1,15 @@
 ---
-title: Migreren van de standalone Media SDK naar Adobe Launch - Android
-description: Instructies en codevoorbeelden voor het migreren van de Media SDK naar Launch voor Android.
-translation-type: tm+mt
-source-git-commit: bc896cc403923e2f31be7313ab2ca22c05893c45
+title: '"Migreren van de standalone Media SDK naar Adobe Launch - Android"'
+description: Leer hoe u van de SDK van Media naar Starten voor Android migreert.
+exl-id: 26764835-4781-417b-a6c0-ea6ae78d76ae
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '358'
+ht-degree: 0%
 
 ---
-
 
 # Migreren van de standalone Media SDK naar Adobe Launch - Android
 
@@ -13,7 +17,8 @@ source-git-commit: bc896cc403923e2f31be7313ab2ca22c05893c45
 
 ### Standalone Media SDK
 
-In de standalone SDK van Media, vormt u het volgen in app, en gaat het tot SDK over wanneer u de trekker creeert.
+In de standalone SDK van Media, vormt u het volgen in app en gaat het tot
+de SDK wanneer u de Beheer maakt.
 
 ```java
 MediaHeartbeatConfig config = new MediaHeartbeatConfig();
@@ -30,8 +35,10 @@ MediaHeartbeat tracker = new MediaHeartbeat(... , config);
 
 ### Extensie starten
 
-1. Klik in Experience Platform Launch op het [!UICONTROL Extensions] tabblad voor uw mobiele eigenschap.
-1. Zoek op het [!UICONTROL Catalog] tabblad de extensie Adobe Media Analytics for Audio and Video en klik op [!UICONTROL Install].
+1. Klik in Experience Platform Launch op het tabblad [!UICONTROL Extensions] voor uw
+eigenschap mobile.
+1. Zoek op het tabblad [!UICONTROL Catalog] de Adobe Media Analytics for Audio
+en Video-extensie en klik op [!UICONTROL Install].
 1. In de pagina van de uitbreidingsmontages, vorm de volgende parameters.
 De uitbreiding van Media zal de gevormde parameters voor het volgen gebruiken.
 
@@ -43,7 +50,10 @@ De uitbreiding van Media zal de gevormde parameters voor het volgen gebruiken.
 
 ### Standalone Media SDK
 
-In de standalone SDK van Media creeert u manueel het `MediaHeartbeatConfig` voorwerp en vormt de volgende parameters. Voer de afgevaardigde interface uit die en`getQoSObject()` creeer een `getCurrentPlaybackTime()functions.``MediaHeartbeat` geval voor het volgen blootstelt en.
+In de standalone SDK van Media maakt u handmatig het `MediaHeartbeatConfig`-object
+en configureert u de volgende parameters. Implementeer de gedelegeerde interface die blootstelt
+`getQoSObject()` en `getCurrentPlaybackTime()functions.`
+Maak een `MediaHeartbeat`-instantie om te volgen.
 
 ```java
 MediaHeartbeatConfig config = new MediaHeartbeatConfig();
@@ -79,7 +89,8 @@ MediaHeartbeatDelegate delegate = new MediaHeartbeatDelegate() {
 
 [Referentie voor media-API - Een mediabeheer maken](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#create-a-media-tracker)
 
-Voordat u Beheer maakt, moet u de media-extensie en afhankelijke extensies registreren bij de mobiele kern.
+Voordat u de Beheer maakt, moet u de media-extensie registreren en
+afhankelijke extensies met de mobiele kern.
 
 ```java
 // Register the extension once during app launch
@@ -119,15 +130,22 @@ Media.createTracker(new AdobeCallback<MediaTracker>() {
 
 ### Standalone Media SDK
 
-In de standalone Media SDK, gaat u een afgevaardigde voorwerp over dat de interface tijdens de verwezenlijking van de trekker uitvoert`MediaHeartbeartDelegate` .  De implementatie zou recentste QoE en playhead moeten terugkeren telkens als de trekker de methodes van`getQoSObject()` en van de `getCurrentPlaybackTime()` interface roept.
+In de standalone SDK van Media, gaat u een afgevaardigde voorwerp over dat uitvoert
+`MediaHeartbeartDelegate` interface tijdens het creëren van de trekker.  De uitvoering
+zou recentste QoE en playhead moeten terugkeren telkens als de trekker de
+`getQoSObject()` en `getCurrentPlaybackTime()` interfacemethoden.
 
 ### Extensie starten
 
-De implementatie moet de huidige afspeelkop van de speler bijwerken door de methode aan te roepen die`updateCurrentPlayhead` door de tracker wordt weergegeven. Voor nauwkeurige tracering moet u deze methode ten minste één keer per seconde aanroepen.
+De huidige afspeelkop van de speler moet in de implementatie worden bijgewerkt door de
+`updateCurrentPlayhead` methode blootgesteld door de trekker. Voor nauwkeurige tracering
+u zou deze methode minstens eens per seconde moeten roepen.
 
-[Referentie voor media-API: Huidige speler bijwerken](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updatecurrentplayhead)
+[Referentie voor media-API: huidige speler bijwerken](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updatecurrentplayhead)
 
-De implementatie moet de QoE-informatie bijwerken door de `updateQoEObject`methode aan te roepen die door de Beheer wordt weergegeven. We verwachten dat deze methode wordt aangeroepen wanneer er een wijziging optreedt in de kwaliteitswaarden.
+De implementatie moet de QoE-informatie bijwerken door `updateQoEObject` aan te roepen
+door de verklikker aan het licht gebrachte methode. We verwachten dat deze methode altijd wordt gebruikt
+Dit is een wijziging in de kwaliteitswaarden.
 
 [Referentie voor media-API - QoE-object bijwerken](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updateqoeobject)
 
