@@ -1,15 +1,16 @@
 ---
-title: Muziek afspelen bijhouden met JavaScript 2.x
-description: In dit onderwerp wordt beschreven hoe u het bijhouden van kernelementen implementeert met de SDK van Media in een browser met JavaScript 2.x-apps.
+title: Leer hoe u het afspelen van de kern kunt bijhouden met JavaScript 2.x
+description: Leer hoe u core tracking implementeert met de Media SDK in een browser met JavaScript 2.x-apps.
 uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
-translation-type: tm+mt
-source-git-commit: 815965d1cd41e73e50666a89f4a7c450af5022da
+exl-id: d8af37a0-9048-4e6b-8cba-809386cbed5f
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '691'
 ht-degree: 2%
 
 ---
-
 
 # Muziek afspelen bijhouden met JavaScript 2.x{#track-core-playback-on-javascript}
 
@@ -88,7 +89,7 @@ ht-degree: 2%
 
 1. **Houd de intentie bij om het afspelen te starten**
 
-   Als u een mediasessie wilt volgen, roept u `trackSessionStart` de Media Heartmaatinstantie aan:
+   Als u een mediasessie wilt volgen, roept u `trackSessionStart` op in de Media Heartmaatinstantie:
 
    ```js
    mediaHeartbeat.trackSessionStart(mediaObject, customVideoMetadata);
@@ -104,11 +105,11 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >Als u geen aangepaste metagegevens gebruikt, verzendt u gewoon een leeg object voor het `data` argument in `trackSessionStart`, zoals in de regel met opmerkingen in het bovenstaande iOS-voorbeeld wordt getoond.
+   >Als u geen aangepaste metagegevens gebruikt, verzendt u gewoon een leeg object voor het argument `data` in `trackSessionStart`, zoals getoond in de regel met opmerkingen in het bovenstaande iOS-voorbeeld.
 
 1. **Het feitelijke begin van het afspelen bijhouden**
 
-   Identificeer de gebeurtenis van de mediaspeler voor het begin van het afspelen, waar het eerste frame van de media op het scherm wordt weergegeven, en roep `trackPlay`:
+   Identificeer de gebeurtenis van de media speler voor het begin van het playback, waar het eerste kader van de media op het scherm wordt teruggegeven, en roep `trackPlay`:
 
    ```js
    mediaHeartbeat.trackPlay();
@@ -132,7 +133,7 @@ ht-degree: 2%
 
    >[!IMPORTANT]
    >
-   >`trackSessionEnd` markeert het einde van een volgende sessie. Als de sessie is gecontroleerd op voltooiing, waarbij de gebruiker de inhoud tot het einde heeft bekeken, moet u controleren of de sessie eerder `trackComplete` is aangeroepen `trackSessionEnd`. Elke andere `track*` API-aanroep wordt na `trackSessionEnd`de gebeurtenis genegeerd, behalve `trackSessionStart` voor een nieuwe traceringssessie.
+   >`trackSessionEnd` markeert het einde van een volgende sessie. Als de sessie succesvol is gecontroleerd op voltooiing, waarbij de gebruiker de inhoud tot het einde heeft bekeken, controleert u of `trackComplete` vóór `trackSessionEnd` is aangeroepen. Eventuele andere `track*` API-aanroepen worden genegeerd na `trackSessionEnd`, behalve `trackSessionStart` voor een nieuwe traceringssessie.
 
 1. **Houd alle mogelijke pauzescenario&#39;s bij**
 
@@ -144,12 +145,12 @@ ht-degree: 2%
 
    **Scenario&#39;s pauzeren**
 
-   Identificeer om het even welk scenario waarin de media speler zal pauzeren en ervoor zorgen dat dat behoorlijk geroepen `trackPause` is. Voor de volgende scenario&#39;s is het nodig dat uw app wordt aangeroepen `trackPause()`:
+   Identificeer om het even welk scenario waarin de media speler zal pauzeren en zorg ervoor dat `trackPause` behoorlijk wordt geroepen. De volgende scenario&#39;s vereisen allen dat uw app `trackPause()` roept:
 
    * De gebruiker raakt expliciet de pauze in de app.
    * De speler plaatst zichzelf in de pauzestatus.
-   * (*Mobiele apps*) - De gebruiker plaatst de toepassing op de achtergrond, maar u wilt dat de toepassing de sessie geopend houdt.
-   * (*Mobiele apps*) - Elk type systeemonderbreking vindt plaats waardoor een toepassing op de achtergrond wordt gezet. Bijvoorbeeld, ontvangt de gebruiker een vraag, of een pop-up van een andere toepassing komt voor, maar u wilt de toepassing de zitting levend houden om de gebruiker de kans te geven om de media van het punt van onderbreking te hervatten.
+   * (*Mobiele toepassingen*) - De gebruiker plaatst de toepassing op de achtergrond, maar u wilt dat de toepassing de sessie geopend houdt.
+   * (*Mobiele toepassingen*) - Elk type systeem dat wordt onderbroken, zorgt ervoor dat een toepassing op de achtergrond wordt gezet. Bijvoorbeeld, ontvangt de gebruiker een vraag, of een pop-up van een andere toepassing komt voor, maar u wilt de toepassing de zitting levend houden om de gebruiker de kans te geven om de media van het punt van onderbreking te hervatten.
 
 1. Identificeer de gebeurtenis van de speler voor spel en/of hervat van pauze en vraag `trackPlay`:
 
@@ -159,7 +160,7 @@ ht-degree: 2%
 
    >[!TIP]
    >
-   >Dit kan de zelfde gebeurtenisbron zijn die in Stap 4 werd gebruikt. Zorg ervoor dat elke `trackPause()` API-aanroep wordt gekoppeld aan een volgende `trackPlay()` API-aanroep wanneer het afspelen wordt hervat.
+   >Dit kan de zelfde gebeurtenisbron zijn die in Stap 4 werd gebruikt. Zorg ervoor dat elke `trackPause()` API vraag met de volgende `trackPlay()` API vraag wordt geparseerd wanneer de playback hervat.
 
 * Volgscenario&#39;s: [VOD afspelen zonder advertenties](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Voorbeeldspeler die is opgenomen in de JavaScript SDK voor een volledig voorbeeld van bijhouden.
