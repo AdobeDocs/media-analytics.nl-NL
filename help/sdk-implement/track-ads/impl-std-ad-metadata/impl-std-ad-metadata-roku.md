@@ -1,14 +1,18 @@
 ---
-title: Standaard en metagegevens implementeren op Roku
+title: Meer informatie over het implementeren van standaard-advertentiemetagegevens op Roku
 description: Hoe te om standaard en meta-gegevens in en het volgen op Roku te gebruiken.
 uuid: 20a437d7-18b8-4099-ac81-9f3628384236
-translation-type: tm+mt
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: d2c0a1e0-8d40-4f60-a82d-5860550ac152
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '52'
+ht-degree: 11%
 
 ---
 
-
-# Standaard en metagegevens implementeren op Roku{#implement-standard-ad-metadata-on-roku}
+# Standaardmetadata voor advertenties implementeren in Roku{#implement-standard-ad-metadata-on-roku}
 
 ## Implementatiestandaard en metagegevens
 
@@ -21,4 +25,3 @@ standardAdMetadata[ADBMobile().MEDIA_AdMetadataKeyADVERTISER] = "sample advertis
 
 adInfo[ADBMobile().MEDIA_STANDARD_AD_METADATA] = standardAdMetadata 
 ```
-
