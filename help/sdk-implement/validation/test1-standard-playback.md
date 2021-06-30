@@ -5,7 +5,7 @@ uuid: c4b3fead-1b27-484b-ab6a-39f1ae0f03f2
 exl-id: 3781f0f7-be75-43e5-a40b-a34956dce36e
 feature: Media Analytics
 role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+source-git-commit: 9fc75eb94603238aa85779b5f26f7b7de049dc8f
 workflow-type: tm+mt
 source-wordcount: '840'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Test 1: Standaardweergave{#test-standard-playback}
 
-Deze testcase valideert het algemene afspelen en het rangschikken.
+Deze testcase valideert het algemene afspelen en rangschikken.
 
 De implementaties van de Analytics van media omvatten twee soorten het volgen vraag:
 * Oproepen die rechtstreeks aan uw server van Adobe Analytics (AppMeasurement) worden gemaakt - Deze vraag komt op de gebeurtenissen &quot;van het Begin van Media&quot;en &quot;van het Begin van de Advertentie&quot;voor.
@@ -125,7 +125,7 @@ Voer de volgende handelingen uit en registreer deze (in volgorde):
 
    Voor vraagparameters en meta-gegevens, zie [de vraagdetails van de test.](/help/sdk-implement/validation/test-call-details.md#ma-ad-pause-call)
 
-1. **De belangrijkste inhoud van het spel ononderbroken 10 minuten.**   **Inhoud afspelen**
+1. **De belangrijkste inhoud van het spel ononderbroken 10 seconden.**   **Inhoud afspelen**
 
    Tijdens hoofdinhoudsplayback, verzendt SDK van Media hartslagen (de vraag van het Spel) naar de server van de Analyse van Media om de 10 seconden.
 
