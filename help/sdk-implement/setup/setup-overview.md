@@ -5,9 +5,9 @@ uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Media Analytics
 role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+source-git-commit: a6872703529159ded6f747b6429a9b94b4202abe
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '742'
 ht-degree: 3%
 
 ---
@@ -59,7 +59,7 @@ Voer de volgende stappen uit voor de implementatie:
    |  Naam van methode  |  Beschrijving  | Vereist |
    | --- | --- | :---: |
    | `getQoSObject()` | Retourneert de instantie `MediaObject` die de huidige QoS-informatie bevat. Deze methode wordt meerdere keren aangeroepen tijdens een afspeelsessie. De implementatie van de speler moet altijd de recentst beschikbare gegevens terugkeren QoS. | Ja |
-   | `getCurrentPlaybackTime()` | Retourneert de huidige positie van de afspeelkop. Voor het bijhouden van VOD wordt de waarde opgegeven in seconden vanaf het begin van het media-item. Voor LINEAR/LIVE tracking wordt de waarde opgegeven in seconden vanaf het begin van het programma. | Ja |
+   | `getCurrentPlaybackTime()` | Retourneert de huidige positie van de afspeelkop. Voor het bijhouden van VOD wordt de waarde opgegeven in seconden vanaf het begin van het media-item. Voor LINEAR/LIVE tracking wordt de waarde opgegeven als het aantal seconden sinds middernacht UTC op die dag. | Ja |
 
    >[!TIP]
    >
