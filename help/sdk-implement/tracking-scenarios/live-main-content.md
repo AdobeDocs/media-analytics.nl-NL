@@ -5,9 +5,9 @@ uuid: e92e99f4-c395-48aa-8a30-cbdd2f5fc07c
 exl-id: f6a00ffd-da6a-4d62-92df-15d119cfc426
 feature: Media Analytics
 role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+source-git-commit: a6872703529159ded6f747b6429a9b94b4202abe
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '547'
 ht-degree: 0%
 
 ---
@@ -59,17 +59,17 @@ Er zal geen volledige vraag in dit scenario zijn, omdat de levende stroom nooit 
 
 ## Waardeinstellingen afspeelkop
 
-Voor LIVE-streams moet u de afspeelkop instellen op een verschuiving van het tijdstip waarop het programma wordt gestart, zodat analisten bij het rapporteren kunnen bepalen op welk punt gebruikers de LIVE-stream binnen een weergave van 24 uur ontvangen en verlaten.
+Voor LIVE-streams moet u de waarde van de afspeelkop instellen als het aantal seconden sinds middernacht van de UTC op die dag, zodat analisten in de rapportage kunnen bepalen op welk punt gebruikers zich aansluiten bij en de LIVE-stream verlaten binnen een weergave van 24 uur.
 
 ### Bij starten
 
-Wanneer een gebruiker de stream afspeelt bij LIVE-media, moet u `l:event:playhead` instellen op de huidige verschuiving, in seconden. Dit is in tegenstelling tot VOD, waar u playhead aan &quot;0&quot;zou plaatsen.
+Wanneer een gebruiker de stream afspeelt bij LIVE-media, moet u `l:event:playhead` instellen op het aantal seconden dat is verstreken sinds middernacht van UTC op die dag. Dit is in tegenstelling tot VOD, waar u playhead aan &quot;0&quot;zou plaatsen.
 
-Bijvoorbeeld, zeg een LIVE het stromen gebeurtenis begint bij middernacht en looppas 24 uren (`a.media.length=86400`; `l:asset:length=86400`). Stel vervolgens dat een gebruiker die LIVE-stream begint af te spelen om 12:00 uur. In dit scenario, zou u `l:event:playhead` aan 43200 (12 uren in de stroom) moeten plaatsen.
+Bijvoorbeeld, zeg een LIVE het stromen gebeurtenis begint bij middernacht en looppas 24 uren (`a.media.length=86400`; `l:asset:length=86400`). Stel vervolgens dat een gebruiker die LIVE-stream begint af te spelen om 12:00 uur. In dit scenario, zou u `l:event:playhead` aan 43200 (12 uren sinds middernacht UTC op die dag in seconden) moeten plaatsen.
 
 ### Bij pauzeren
 
-Dezelfde logica &#39;live playhead&#39; die aan het begin van het afspelen is toegepast, moet worden toegepast wanneer een gebruiker het afspelen pauzeert. Wanneer de gebruiker terugkeert naar het afspelen van de LIVE-stream, moet u de waarde `l:event:playhead` instellen op de nieuwe positie van de verschuivingsafspeelkop, _niet_ op het punt waar de gebruiker de LIVE-stream heeft gepauzeerd.
+Dezelfde logica &#39;live playhead&#39; die aan het begin van het afspelen is toegepast, moet worden toegepast wanneer een gebruiker het afspelen pauzeert. Wanneer de gebruiker terugkeert naar het afspelen van de LIVE-stream, moet u de `l:event:playhead`-waarde instellen op basis van het nieuwe aantal seconden sinds middernacht UTC, _niet_ op het punt waar de gebruiker de LIVE-stream heeft gepauzeerd.
 
 ## Voorbeeldcode {#sample-code}
 
