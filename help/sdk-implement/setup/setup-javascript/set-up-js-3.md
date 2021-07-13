@@ -3,8 +3,8 @@ title: Hoe te opstelling media SKD gebruikend JavaScript 3.x
 description: Voer de volgende stappen uit om de Media SDK-toepassing in te stellen op JavaScript 3.x.
 exl-id: 35e27495-e480-4463-9f00-4b60a54d02c1
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 2%
