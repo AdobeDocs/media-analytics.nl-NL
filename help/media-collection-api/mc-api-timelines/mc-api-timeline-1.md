@@ -4,8 +4,8 @@ description: Dig dieper in de playhead chronologie en overeenkomstige gebruiker 
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: 1f18ba0c0c1b62f4228a590276164034474ebd08
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 5%
@@ -143,7 +143,7 @@ Volg de eerste advertentie voor de rol, die 15 seconden lang is. Aangepaste meta
 
 | Handeling | Tijdlijn handeling (seconden) | Positie afspeelkop (seconden) | Aanvraag client |
 | --- | :---: | :---: | --- |
-| App verzendt ping-gebeurtenis | 3 | 0 | `/api/v1/sessions/{sid}/events` |
+| App verzendt ping-gebeurtenis | 1 | 0 | `/api/v1/sessions/{sid}/events` |
 
 **Implementatiedetail**
 
@@ -188,7 +188,7 @@ Pingel de steun om de 1 seconde terwijl binnen een advertentie.
 
 | Handeling | Tijdlijn handeling (seconden) | Positie afspeelkop (seconden) | Aanvraag client |
 | --- | :---: | :---: | --- |
-| App verzendt ping-gebeurtenis | 3 | 0 | `/api/v1/sessions/{sid}/events` |
+| App verzendt ping-gebeurtenis | 1 | 0 | `/api/v1/sessions/{sid}/events` |
 
 **Implementatiedetail**
 
