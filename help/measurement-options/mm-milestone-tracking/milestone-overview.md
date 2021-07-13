@@ -4,8 +4,8 @@ description: Vervangen � Leer hoe u videomelding kunt instellen voor een imple
 uuid: 2f9ec6bb-8860-4863-98bc-5cffb356ccc5
 exl-id: 960785e3-f507-4f09-8f85-6eeca57dd2f3
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '3339'
 ht-degree: 0%
