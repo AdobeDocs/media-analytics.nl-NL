@@ -3,8 +3,8 @@ title: Mediagelijktijdige rapportage
 description: '"Leer hoe u het deelvenster Mediagelijktijdige viewers kunt gebruiken om gelijktijdige viewers te analyseren en om inzicht te krijgen in de piekconsistentie en vervolgkeuzemogelijkheden."'
 exl-id: 2eadd5e7-45de-4275-aac5-d16e2a6a9fed
 feature: '"Media Analytics, Workspace Basics"'
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 1%
