@@ -5,7 +5,7 @@ uuid: b1567265-7043-4efa-a313-aaaa91c4bb01
 exl-id: aaed828d-1aba-486e-83e3-2ffd092305e2
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 3%
@@ -14,9 +14,11 @@ ht-degree: 3%
 
 # Advertenties bijhouden op Roku{#track-ads-on-roku}
 
+De volgende instructies bieden richtlijnen voor implementatie met behulp van de 2.x SDK&#39;s.
+
 >[!IMPORTANT]
 >
->De volgende instructies bieden richtlijnen voor implementatie met behulp van de 2.x SDK&#39;s. Als u een 1.x-versie van de SDK implementeert, kunt u hier de 1.x-handleidingen voor ontwikkelaars downloaden: [SDK&#39;s downloaden.](/help/sdk-implement/download-sdks.md)
+>Als u een 1.x-versie van de SDK implementeert, kunt u hier de 1.x-handleidingen voor ontwikkelaars downloaden: [SDK&#39;s downloaden.](/help/sdk-implement/download-sdks.md)
 
 ## Constanten voor bijhouden van advertenties
 
@@ -41,17 +43,17 @@ ht-degree: 3%
    | `startTime` | Waarde van afspeelkop aan het begin van het advertentieeinde. | Ja |
 
    ```
-   ‘ Create an adbreak info object 
-   adBreakInfo = adb_media_init_adbreakinfo() 
-   adBreakInfo.name = <ADBREAK_NAME> 
-   adBreakInfo.startTime = <START_TIME> 
+   ‘ Create an adbreak info object
+   adBreakInfo = adb_media_init_adbreakinfo()
+   adBreakInfo.name = <ADBREAK_NAME>
+   adBreakInfo.startTime = <START_TIME>
    adBreakInfo.position = <POSITION>
    ```
 
 1. Roep `trackEvent()` met `AdBreakStart` in de `MediaHeartbeat` instantie aan om het advertentiesonderbreking te volgen:
 
    ```
-   contextData = {} 
+   contextData = {}
    ADBMobile().mediaTrackEvent(MEDIA_AD_BREAK_START, adBreakInfo, contextData)
    ```
 
@@ -62,7 +64,7 @@ ht-degree: 3%
      adb_media_init_adinfo(ad.title,  
                            ad.id,  
                            ad.position,  
-                           ad.duration) 
+                           ad.duration)
    ```
 
 1. Voeg desgewenst standaard- en/of advertentiemetagegevens toe aan de mediatraceringssessie via de variabelen van de contextgegevens.
@@ -71,8 +73,8 @@ ht-degree: 3%
    * **Aangepast en metagegevens -** Voor aangepaste metagegevens maakt u een variabelenobject voor de aangepaste gegevensvariabelen en vult u de gegevens voor het huidige ad-element in:
 
       ```
-      contextData = {} 
-      contextData["adinfo1"] = "adinfo2" 
+      contextData = {}
+      contextData["adinfo1"] = "adinfo2"
       contextData["adinfo2"] = "adinfo2"
       ```
 
@@ -85,15 +87,15 @@ ht-degree: 3%
 1. Wanneer het afspelen van het advertentiemiddel het einde van de advertentie bereikt, roept u `trackEvent()` aan met de gebeurtenis `AdComplete`.
 
    ```
-   standardAdMetadata = {} 
-   contextData = {} 
+   standardAdMetadata = {}
+   contextData = {}
    ADBMobile().mediaTrackEvent(ADBMobile().MEDIA_AD_COMPLETE, adInfo, contextData)
    ```
 
 1. Als het afspelen van de advertentie niet is voltooid omdat de gebruiker de advertentie heeft overgeslagen, houdt u de gebeurtenis `AdSkip` bij:
 
    ```
-   contextData = {} 
+   contextData = {}
    ADBMobile().mediaTrackEvent(ADBMobile().MEDIA_AD_SKIP, adInfo, contextData
    ```
 
@@ -101,7 +103,7 @@ ht-degree: 3%
 1. Wanneer het ad-einde is voltooid, gebruikt u de gebeurtenis `AdBreakComplete` om te volgen:
 
    ```
-   contextData = {} 
+   contextData = {}
    ADBMobile().mediaTrackEvent(MEDIA_AD_BREAK_COMPLETE, adBreakInfo, contextData)
    ```
 
