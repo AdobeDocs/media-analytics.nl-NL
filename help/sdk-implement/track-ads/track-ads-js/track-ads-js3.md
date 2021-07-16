@@ -4,7 +4,7 @@ description: Implementeer en volg in browser (JS) toepassingen gebruikend Media 
 exl-id: 6b34b2c0-5e50-471a-b52c-b9c760fa3169
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 3%
@@ -13,9 +13,11 @@ ht-degree: 3%
 
 # Advertenties bijhouden met JavaScript 3.x{#track-ads-on-javascript}
 
+De volgende instructies bieden richtlijnen voor implementatie met behulp van de 3.x SDK&#39;s.
+
 >[!IMPORTANT]
 >
->De volgende instructies bieden richtlijnen voor implementatie met behulp van de 3.x SDK&#39;s. Als u eerdere versies van de SDK implementeert, kunt u de ontwikkelaarsgidsen hier downloaden: [SDK&#39;s downloaden.](/help/sdk-implement/download-sdks.md)
+>Als u eerdere versies van de SDK implementeert, kunt u de ontwikkelaarsgidsen hier downloaden: [SDK&#39;s downloaden.](/help/sdk-implement/download-sdks.md)
 
 ## Constanten voor bijhouden van advertenties
 
