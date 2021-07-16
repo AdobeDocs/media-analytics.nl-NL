@@ -5,7 +5,7 @@ uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
 exl-id: 5c6b36b3-a421-45a4-a65e-4eb57513ca4a
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 2%
@@ -14,8 +14,10 @@ ht-degree: 2%
 
 # Core playback bijhouden op iOS{#track-core-playback-on-ios}
 
+Deze documentatie behandelt het volgen in versie 2.x van SDK.
+
 >[!IMPORTANT]
->Deze documentatie behandelt het volgen in versie 2.x van SDK. Als u een 1.x-versie van de SDK implementeert, kunt u hier de 1.x-handleidingen voor ontwikkelaars downloaden: [SDK&#39;s downloaden](/help/sdk-implement/download-sdks.md)
+>Als u een 1.x-versie van de SDK implementeert, kunt u hier de 1.x-handleidingen voor ontwikkelaars downloaden: [SDK&#39;s downloaden](/help/sdk-implement/download-sdks.md)
 
 1. **Eerste instelling voor bijhouden**
 
@@ -53,10 +55,10 @@ ht-degree: 2%
 
    ```
    ADBMediaObject *mediaObject =  
-     [ADBMediaHeartbeat createMediaObjectWithName:<MEDIA_NAME> 
-                                          mediaId:<MEDIA_ID> 
+     [ADBMediaHeartbeat createMediaObjectWithName:<MEDIA_NAME>
+                                          mediaId:<MEDIA_ID>
                                            length:<MEDIA_LENGTH>                       
-                                       streamType:<STREAM_TYPE> 
+                                       streamType:<STREAM_TYPE>
                                         mediaType: <MEDIA_TYPE>];
    ```
 
@@ -81,8 +83,8 @@ ht-degree: 2%
       Maak een veranderlijk object voor de douanevariabelen en bevolk met de gegevens voor deze video. Bijvoorbeeld:
 
       ```
-      NSMutableDictionary *videoMetadata = [[NSMutableDictionary alloc] init]; 
-      [videoMetadata setObject:@"false" forKey:@"isUserLoggedIn"]; 
+      NSMutableDictionary *videoMetadata = [[NSMutableDictionary alloc] init];
+      [videoMetadata setObject:@"false" forKey:@"isUserLoggedIn"];
       [videoMetadata setObject:@"Sample TV station" forKey:@"tvStation"];
       ```
 
@@ -96,9 +98,9 @@ ht-degree: 2%
    >De tweede waarde is de aangepaste objectnaam voor videometagegevens die u in stap 2 hebt gemaakt.
 
    ```
-   - (void)onMainVideoLoaded:(NSNotification *)notification { 
-   //    [_mediaHeartbeat trackSessionStart:mediaObject data:nil]; 
-       [_mediaHeartbeat trackSessionStart:mediaObject data:videoMetadata]; 
+   - (void)onMainVideoLoaded:(NSNotification *)notification {
+   //    [_mediaHeartbeat trackSessionStart:mediaObject data:nil];
+       [_mediaHeartbeat trackSessionStart:mediaObject data:videoMetadata];
    }
    ```
 
@@ -115,8 +117,8 @@ ht-degree: 2%
    Identificeer de gebeurtenis van de videospeler voor het begin van de videoplayback, waar het eerste kader van de video op het scherm wordt teruggegeven, en roep `trackPlay`:
 
    ```
-   - (void)onVideoPlay:(NSNotification *)notification { 
-       [_mediaHeartbeat trackPlay]; 
+   - (void)onVideoPlay:(NSNotification *)notification {
+       [_mediaHeartbeat trackPlay];
    }
    ```
 
@@ -125,8 +127,8 @@ ht-degree: 2%
    Identificeer de gebeurtenis van de videospeler voor de voltooiing van de videoplayback, waar de gebruiker de inhoud tot het eind heeft bekeken, en roep `trackComplete`:
 
    ```
-   - (void)onVideoComplete:(NSNotification *)notification { 
-       [_mediaHeartbeat trackComplete]; 
+   - (void)onVideoComplete:(NSNotification *)notification {
+       [_mediaHeartbeat trackComplete];
    }
    ```
 
@@ -135,8 +137,8 @@ ht-degree: 2%
    Identificeer de gebeurtenis van de videospeler voor het leegmaken/sluiten van de videoplayback, waar de gebruiker de video en/of de video sluit wordt voltooid en is leeggemaakt, en vraag `trackSessionEnd`:
 
    ```
-   - void)onMainVideoUnloaded:(NSNotification *)notification { 
-       [_mediaHeartbeat trackSessionEnd]; 
+   - void)onMainVideoUnloaded:(NSNotification *)notification {
+       [_mediaHeartbeat trackSessionEnd];
    }
    ```
 
@@ -149,8 +151,8 @@ ht-degree: 2%
    Identificeer de gebeurtenis van de videospeler voor videopauze en vraag `trackPause`:
 
    ```
-   - (void)onVideoPause:(NSNotification *)notification { 
-       [_mediaHeartbeat trackPause]; 
+   - (void)onVideoPause:(NSNotification *)notification {
+       [_mediaHeartbeat trackPause];
    }
    ```
 
@@ -166,8 +168,8 @@ ht-degree: 2%
 1. Identificeer de gebeurtenis van de speler voor videospel en/of video hervat van pauze en vraag `trackPlay`:
 
    ```
-   - (void)onVideoPlay:(NSNotification *)notification { 
-       [_mediaHeartbeat trackPlay]; 
+   - (void)onVideoPlay:(NSNotification *)notification {
+       [_mediaHeartbeat trackPlay];
    }
    ```
 
