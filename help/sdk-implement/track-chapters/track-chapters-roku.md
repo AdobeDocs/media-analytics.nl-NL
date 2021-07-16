@@ -5,7 +5,7 @@ uuid: 15c07131-77d7-4a97-92c6-0a190c6b08d3
 exl-id: b5eb8be7-4b85-4ba7-9216-dd691be7ba46
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 2%
@@ -14,9 +14,11 @@ ht-degree: 2%
 
 # Hoofdstukken en segmenten bijhouden op Roku{#track-chapters-and-segments-on-roku}
 
+De volgende instructies bieden richtlijnen voor implementatie met 2.x SDK&#39;s.
+
 >[!IMPORTANT]
 >
->De volgende instructies bieden richtlijnen voor implementatie met 2.x SDK&#39;s. Als u een 1.x-versie van de SDK implementeert, kunt u de Developers Guide hier downloaden: [SDK&#39;s downloaden.](/help/sdk-implement/download-sdks.md)
+> Als u een 1.x-versie van de SDK implementeert, kunt u de Developers Guide hier downloaden: [SDK&#39;s downloaden.](/help/sdk-implement/download-sdks.md)
 
 ## Implementatiestandaard en metagegevens
 
@@ -48,9 +50,9 @@ ht-degree: 2%
 1. Als u aangepaste metagegevens voor het hoofdstuk opneemt, maakt u de variabelen voor contextgegevens voor de metagegevens:
 
    ```
-   chapterContextData = {} 
-   chapterContextData["seg_type"] = "seg_type" 
-   chapterContextData["seg_name"] = "seg_name" 
+   chapterContextData = {}
+   chapterContextData["seg_type"] = "seg_type"
+   chapterContextData["seg_name"] = "seg_name"
    chapterContextData["seg_info"] = "seg_info"
    ```
 
@@ -63,14 +65,14 @@ ht-degree: 2%
 1. Wanneer de playback de hoofdstukeindgrens, zoals die door uw douanecode wordt bepaald bereikt, roep de `ChapterComplete` gebeurtenis in `MediaHeartbeat` instantie.
 
    ```
-   chapterContextData = {} 
+   chapterContextData = {}
    ADBMobile().mediaTrackEvent(MEDIA_CHAPTER_COMPLETE, chapterInfo, chapterContextData)
    ```
 
 1. Als het afspelen van het hoofdstuk niet is voltooid omdat de gebruiker het hoofdstuk heeft overgeslagen (bijvoorbeeld als de gebruiker buiten de hoofdstukgrens zoekt), roept u de gebeurtenis `ChapterSkip` in de MediaHeartbeat-instantie aan.
 
    ```
-   chapterContextData = {} 
+   chapterContextData = {}
    ADBMobile().mediaTrackEvent(MEDIA_CHAPTER_SKIP, chapterInfo, chapterContextData)
    ```
 
