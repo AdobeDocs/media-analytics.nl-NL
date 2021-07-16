@@ -5,7 +5,7 @@ uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '742'
 ht-degree: 3%
@@ -14,11 +14,12 @@ ht-degree: 3%
 
 # Overzicht van setup{#setup-overview}
 
+De volgende instructies zijn van toepassing op 2.x Media SDKs. Als u een 1.x versie van Media SDK uitvoert, zie [1.x de Documentatie van SDK van Media.](/help/sdk-implement/download-sdks.md) Voor Primetime-integrators, zie de  _documentatie_ bij Primetime Media SDK hieronder.
+
 >[!IMPORTANT]
 >
 >Aan het einde van de ondersteuning voor versie 4 Mobile SDK&#39;s op 31 augustus 2021 beëindigt Adobe ook de ondersteuning voor de Media Analytics SDK&#39;s voor iOS en Android.  Voor extra informatie, zie [Van begin tot eind - van - de Veelgestelde vragen van de Analyse van Media SDK](/help/sdk-implement/end-of-support-faqs.md).
 
-De volgende instructies zijn van toepassing op 2.x Media SDKs. Als u een 1.x versie van Media SDK uitvoert, zie [1.x de Documentatie van SDK van Media.](/help/sdk-implement/download-sdks.md) Voor Primetime-integrators, zie de  _documentatie_ bij Primetime Media SDK hieronder.
 
 ## Ondersteuning voor minimale versie van Platform {#minimum-platform-version}
 
