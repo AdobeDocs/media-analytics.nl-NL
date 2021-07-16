@@ -4,7 +4,7 @@ description: Leer hoe u hoofdstuk- en segmenttracering implementeert met de Medi
 exl-id: 00ba11df-d226-45a2-a561-dc9f15dcf714
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 0%
@@ -13,9 +13,11 @@ ht-degree: 0%
 
 # Hoofdstukken en segmenten bijhouden met JavaScript 3.x{#track-chapters-and-segments-on-javascript}
 
+De volgende instructies bieden richtlijnen voor implementatie met 3.x SDK&#39;s.
+
 >[!IMPORTANT]
 >
->De volgende instructies bieden richtlijnen voor implementatie met 3.x SDK&#39;s. Als u eerdere versies van de SDK implementeert, kunt u de Developers Guide hier downloaden: [SDK&#39;s downloaden.](/help/sdk-implement/download-sdks.md)
+> Als u eerdere versies van de SDK implementeert, kunt u de Developers Guide hier downloaden: [SDK&#39;s downloaden.](/help/sdk-implement/download-sdks.md)
 
 1. Identificeer wanneer de hoofdstukbegingebeurtenis voorkomt en creeer de `ChapterObject` instantie door de hoofdstukinformatie te gebruiken.
 
