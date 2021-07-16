@@ -5,7 +5,7 @@ uuid: f16ce76d-1db3-4b51-8c98-54cb781f71d7
 exl-id: fcea2ef8-53c5-41fb-8b70-06599c2d9cbf
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 0%
@@ -14,8 +14,10 @@ ht-degree: 0%
 
 # Trackbuffering op Android{#track-buffering-on-android}
 
+De volgende instructies bieden richtlijnen voor implementatie voor alle 2.x SDK&#39;s.
+
 >[!IMPORTANT]
->De volgende instructies bieden richtlijnen voor implementatie voor alle 2.x SDK&#39;s. Als u een 1.x-versie van de SDK implementeert, kunt u de 1.x-handleidingen voor ontwikkelaars hier downloaden: [SDks downloaden.](/help/sdk-implement/download-sdks.md)
+>Als u een 1.x-versie van de SDK implementeert, kunt u de 1.x-handleidingen voor ontwikkelaars hier downloaden: [SDks downloaden.](/help/sdk-implement/download-sdks.md)
 
 ## Constanten voor bufferspatiëring
 
@@ -30,7 +32,7 @@ ht-degree: 0%
 
    ```java
    public void onBufferStart(Observable observable, Object data) {  
-       _heartbeat.trackEvent(MediaHeartbeat.Event.BufferStart, null, null); 
+       _heartbeat.trackEvent(MediaHeartbeat.Event.BufferStart, null, null);
    }
    ```
 
@@ -38,7 +40,7 @@ ht-degree: 0%
 
    ```java
    public void onBufferComplete(Observable observable, Object data) {  
-       _heartbeat.trackEvent(MediaHeartbeat.Event.BufferComplete,null, null); 
+       _heartbeat.trackEvent(MediaHeartbeat.Event.BufferComplete,null, null);
    }
    ```
 
