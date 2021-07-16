@@ -5,7 +5,7 @@ uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '684'
 ht-degree: 2%
@@ -14,8 +14,10 @@ ht-degree: 2%
 
 # Muziek afspelen bijhouden op Roku{#track-core-playback-on-roku}
 
+Deze documentatie behandelt het volgen in versie 2.x van SDK.
+
 >[!IMPORTANT]
->Deze documentatie behandelt het volgen in versie 2.x van SDK. Als u een 1.x-versie van de SDK implementeert, kunt u hier de 1.x-handleidingen voor ontwikkelaars downloaden: [SDK&#39;s downloaden](/help/sdk-implement/download-sdks.md)
+>Als u een 1.x-versie van de SDK implementeert, kunt u hier de 1.x-handleidingen voor ontwikkelaars downloaden: [SDK&#39;s downloaden](/help/sdk-implement/download-sdks.md)
 
 1. **Eerste instelling voor bijhouden**
 
@@ -101,7 +103,7 @@ ht-degree: 2%
 
    * **Standaardmetagegevens**
 
-      [Standaardmetadata implementeren in Roku](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+[Standaardmetadata implementeren in Roku](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
       >[!NOTE]
       >Het is optioneel om het standaardobject voor videometagegevens aan het mediaobject te koppelen.
