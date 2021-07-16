@@ -5,9 +5,9 @@ uuid: 0d9fa764-edef-4178-8650-90c9a0852a57
 exl-id: aac178dc-5a46-4ce3-80e9-ec82cbfbfff5
 feature: '"Media Analytics, Variables"'
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
-source-wordcount: '2976'
+source-wordcount: '2997'
 ht-degree: 2%
 
 ---
@@ -50,11 +50,11 @@ Beschrijving van tabelgegevens:
 | <ul> <li> **SDK-sleutel:**<br/> </li> <li> **API-sleutel:**<br/> media.qoe.timeToStart </li> <li> **Vereist:**<br/> Nee </li> <li> **Tekst:**<br/> nummer </li> <li> **Verzonden met:**<br/> Media starten, Media sluiten </li> <li> **Min. SDK-versie:** Willekeurige </li> <li> **Samplewaarde:**<br/> 30.000 </li><li> **Beschrijving:**<br/> Deze waarde is standaard ingesteld op nul als u deze niet instelt via het object QoSO. U stelt deze waarde in milliseconden in. De waarde zal in het tijdformaat (HH:MM:SS) in Analysis Workspace en Rapporten &amp; Analytics worden getoond. In de Diervoeders van Gegevens, Data Warehouse, en Rapporterende APIs zullen de waarden in seconden worden getoond.  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.qoe.<br/>timeToStart) </li> <li> **Hartslag:**<br/> (:stream:opstarttijd) </li> </ul> | <ul> <li> **Beschikbaar:**<br/> Ja </li> <li> **Gereserveerde variabele:**<br/> eVar </li> <li> **verlopen:**<br/> op HIT </li> <li> **Rapportnaam:**<br/> Te starten tijd </li> <li> **Contextgegevens:**<br/> (a.media.qoe.<br/>timeToStart) </li> <li> **Gegevensfeed:**<br/> videoqoetimetostartevar </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.qoe.<br/>timeToStart) </li> </ul> |
 
 
-### FPS
+### Frames per seconde
 
 |   Implementatie   | Netwerkparameters | Rapportage |
 | --- | --- | --- |
-| <ul> <li> **SDK-sleutel:**<br/> </li> <li> **API-sleutel:**<br/> media.qoe.framesPerSecond </li> <li> **Vereist:**<br/> Nee </li> <li> **Tekst:**<br/> nummer </li> <li> **Verzonden met:**<br/> Media starten, Media sluiten </li> <li> **Min. SDK-versie:** Willekeurige </li> <li> **Samplewaarde:**<br/> 24 </li><li> **Beschrijving:**<br/> de huidige waarde van de framesnelheid van de stream (in frames per seconde).  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> </li> <li> **hartslag:**<br/> (:stream:lfps) </li> </ul> | <ul> <li> **Beschikbaar:**<br/> Nee </li> <li> **Gereserveerde variabele:**<br/> n.v.t. </li> <li> **Rapportnaam:**<br/> n.v.t. </li> <li> **Contextdata:**<br/> </li> <li> **Gegevensfeed:**<br/> n.v.t. </li> <li> **Audience Manager:**<br/> </li> </ul> |
+| <ul> <li> **SDK-sleutel:**<br/> </li> <li> **API-sleutel:**<br/> media.qoe.framesPerSecond </li> <li> **Vereist:**<br/> Nee </li> <li> **Tekst:**<br/> nummer </li> <li> **Verzonden met:**<br/> Media starten, Media sluiten </li> <li> **Min. SDK-versie:** Willekeurige </li> <li> **Samplewaarde:**<br/> 24 </li><li> **Beschrijving:**<br/> de huidige waarde van de framesnelheid van de stream (in frames per seconde). Het gebied wordt in kaart gebracht aan het fps gebied op de dichte vraag en kan door verwerkingsregels worden betreden.  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> </li> <li> **hartslag:**<br/> (:stream:lfps) </li> </ul> | <ul> <li> **Beschikbaar:**<br/> Nee </li> <li> **Gereserveerde variabele:**<br/> n.v.t. </li> <li> **Rapportnaam:**<br/> n.v.t. </li> <li> **Contextdata:**<br/> </li> <li> **Gegevensfeed:**<br/> n.v.t. </li> <li> **Audience Manager:**<br/> </li> </ul> |
 
 
 
