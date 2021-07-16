@@ -5,7 +5,7 @@ uuid: f6fa3a1a-d7de-4293-bd11-ebe9e130badd
 exl-id: 26fd1e2a-4103-486f-be12-36b088d28cb6
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 0%
@@ -14,9 +14,11 @@ ht-degree: 0%
 
 # Trackbuffering op chroecast{#track-buffering-on-chromecast}
 
+De volgende instructies bieden richtlijnen voor implementatie voor alle 2.x SDK&#39;s.
+
 >[!IMPORTANT]
 >
->De volgende instructies bieden richtlijnen voor implementatie voor alle 2.x SDK&#39;s. Als u een 1.x-versie van de SDK implementeert, kunt u de 1.x-handleidingen voor ontwikkelaars hier downloaden: [SDK&#39;s downloaden.](/help/sdk-implement/download-sdks.md)
+>Als u een 1.x-versie van de SDK implementeert, kunt u de 1.x-handleidingen voor ontwikkelaars hier downloaden: [SDK&#39;s downloaden.](/help/sdk-implement/download-sdks.md)
 
 ## Constanten voor bufferspatiëring
 
