@@ -5,7 +5,7 @@ uuid: 5ea562b9-0e07-4fbb-9a3b-213d746304f5
 exl-id: 26b71e4d-ced7-49cb-a838-2b1c8d4ee4de
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 2%
@@ -14,9 +14,11 @@ ht-degree: 2%
 
 # Hoofdstukken en segmenten bijhouden op Chromecast{#track-chapters-and-segments-on-chromecast}
 
+De volgende instructies bieden richtlijnen voor implementatie met 2.x SDK&#39;s.
+
 >[!IMPORTANT]
 >
->De volgende instructies bieden richtlijnen voor implementatie met 2.x SDK&#39;s. Als u een 1.x-versie van de SDK implementeert, kunt u de Developers Guide hier downloaden: [SDK&#39;s downloaden.](/help/sdk-implement/download-sdks.md)
+> Als u een 1.x-versie van de SDK implementeert, kunt u de Developers Guide hier downloaden: [SDK&#39;s downloaden.](/help/sdk-implement/download-sdks.md)
 
 1. Identificeer wanneer de hoofdstukbegingebeurtenis voorkomt en creeer de `ChapterObject` instantie door de hoofdstukinformatie te gebruiken.
 
@@ -42,15 +44,15 @@ ht-degree: 2%
 1. Als u aangepaste metagegevens voor het hoofdstuk opneemt, maakt u de variabelen voor contextgegevens voor de metagegevens:
 
    ```js
-   var chapterContextData = { 
-       segmentType: "Sample segment type" 
+   var chapterContextData = {
+       segmentType: "Sample segment type"
    };
    ```
 
 1. Volg de gebeurtenis `ChapterStart` om het afspelen van het hoofdstuk te starten: [trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
 
    ```js
-   ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterStart, ChapterInfo, chapterContextData); 
+   ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterStart, ChapterInfo, chapterContextData);
    ```
 
 1. Wanneer de playback de hoofdstukeindgrens, zoals die door uw douanecode wordt bepaald bereikt, roep de `ChapterComplete` gebeurtenis in `MediaHeartbeat` instantie: [trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
@@ -62,7 +64,7 @@ ht-degree: 2%
 1. Als het afspelen van het hoofdstuk niet is voltooid omdat de gebruiker het hoofdstuk heeft overgeslagen (bijvoorbeeld als de gebruiker buiten de hoofdstukgrens zoekt), moet u de gebeurtenis `ChapterSkip` volgen: [trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
 
    ```js
-   ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterSkip); 
+   ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterSkip);
    ```
 
 1. Als er nog hoofdstukken zijn, herhaalt u stap 1 tot en met 5.
