@@ -5,7 +5,7 @@ uuid: 7b1f584a-3472-416c-944c-5f5ea0ee5529
 exl-id: 57465c42-b349-439d-b8d7-083b299a8c83
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 0%
@@ -14,9 +14,11 @@ ht-degree: 0%
 
 # Advertenties bijhouden op Chromecast{#track-ads-on-chromecast}
 
+De volgende instructies bieden richtlijnen voor implementatie met behulp van de 2.x SDK&#39;s.
+
 >[!IMPORTANT]
 >
->De volgende instructies bieden richtlijnen voor implementatie met behulp van de 2.x SDK&#39;s. Als u een 1.x-versie van de SDK implementeert, kunt u hier de 1.x-handleidingen voor ontwikkelaars downloaden: [SDK&#39;s downloaden.](/help/sdk-implement/download-sdks.md)
+>Als u een 1.x-versie van de SDK implementeert, kunt u hier de 1.x-handleidingen voor ontwikkelaars downloaden: [SDK&#39;s downloaden.](/help/sdk-implement/download-sdks.md)
 
 ## Constanten voor bijhouden van advertenties
 
@@ -35,7 +37,7 @@ ht-degree: 0%
    Object maken van einde toevoegen: [createAdBreakObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createAdBreakObject)
 
    ```
-   adBreakInfo = ADBMobile.media.createAdBreakObject("First Ad-Break", 1, AD_BREAK_START_TIME, playerName); 
+   adBreakInfo = ADBMobile.media.createAdBreakObject("First Ad-Break", 1, AD_BREAK_START_TIME, playerName);
    ```
 
 1. Roep `trackEvent()` met `AdBreakStart` in de `MediaHeartbeat` instantie aan om het advertentiesonderbreking te volgen: [trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
@@ -49,7 +51,7 @@ ht-degree: 0%
    Object maken toevoegen: [createAdObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createAdObject)
 
    ```
-   adInfo = ADBMobile.media.createAdObject("Sample ad", "001", 1, AD_LENGTH); 
+   adInfo = ADBMobile.media.createAdObject("Sample ad", "001", 1, AD_LENGTH);
    ```
 
 1. Voeg desgewenst standaard- en/of advertentiemetagegevens toe aan de mediatraceringssessie via de variabelen van de contextgegevens.
@@ -68,7 +70,7 @@ ht-degree: 0%
 1. Wanneer het afspelen van het advertentiemiddel het einde van de advertentie bereikt, roept u `trackEvent()` aan met de gebeurtenis `AdComplete`: [trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
 
    ```
-   ADBMobile.media.trackEvent(ADBMobile.media.Event.AdComplete); 
+   ADBMobile.media.trackEvent(ADBMobile.media.Event.AdComplete);
    ```
 
 1. Herhaal stap 3 tot en met 6 opnieuw als er extra advertenties binnen dezelfde `AdBreak` zijn.
