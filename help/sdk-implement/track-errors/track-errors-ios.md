@@ -5,7 +5,7 @@ uuid: 18ea93d3-5948-4375-bcdb-72309268e38d
 exl-id: c4ce7092-a102-41da-80a6-a4359f925708
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 0%
@@ -14,17 +14,19 @@ ht-degree: 0%
 
 # Fouten bijhouden op iOS{#track-errors-on-ios}
 
+De volgende instructies bieden richtlijnen voor implementatie voor alle 2.x SDK&#39;s.
+
 >[!IMPORTANT]
 >
->De volgende instructies bieden richtlijnen voor implementatie voor alle 2.x SDK&#39;s. Als u een 1.x-versie van de SDK implementeert, kunt u de 1.x-handleidingen voor ontwikkelaars hier downloaden: [SDK&#39;s downloaden.](/help/sdk-implement/download-sdks.md)
+>Als u een 1.x-versie van de SDK implementeert, kunt u de 1.x-handleidingen voor ontwikkelaars hier downloaden: [SDK&#39;s downloaden.](/help/sdk-implement/download-sdks.md)
 
 ## Foutopsporing implementeren
 
 1. Fouten met mediaspeler bijhouden:
 
    ```
-   - (void)onPlayerError:(NSNotification *)notification { 
-       [_mediaHeartbeat trackError:@"mediaoErrorId"]; 
+   - (void)onPlayerError:(NSNotification *)notification {
+       [_mediaHeartbeat trackError:@"mediaoErrorId"];
    }
    ```
 
