@@ -4,7 +4,7 @@ description: Leer hoe u buffergebeurtenissen kunt bijhouden in browser-apps (JS)
 exl-id: c6941942-02f9-4f9c-99ad-0c52ed2f793b
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '122'
 ht-degree: 0%
@@ -13,9 +13,11 @@ ht-degree: 0%
 
 # buffering bijhouden met JavaScript 3.x{#track-buffering-on-javascript}
 
+De volgende instructies bieden richtlijnen voor implementatie voor alle 3.x SDK&#39;s.
+
 >[!IMPORTANT]
 >
->De volgende instructies bieden richtlijnen voor implementatie voor alle 3.x SDK&#39;s. Als u eerdere versies van de SDK implementeert, kunt u de ontwikkelaarsgidsen hier downloaden: [SDK&#39;s downloaden.](/help/sdk-implement/download-sdks.md)
+>Als u eerdere versies van de SDK implementeert, kunt u de ontwikkelaarsgidsen hier downloaden: [SDK&#39;s downloaden.](/help/sdk-implement/download-sdks.md)
 
 ## Constanten voor bufferspatiëring
 
