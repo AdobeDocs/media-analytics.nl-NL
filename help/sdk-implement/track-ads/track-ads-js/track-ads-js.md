@@ -5,7 +5,7 @@ uuid: 4d81d29c-c55d-4d48-b505-3260922712ff
 exl-id: 4404d3a6-ab98-40f0-9573-ee32f480f650
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 4%
@@ -14,9 +14,11 @@ ht-degree: 4%
 
 # Advertenties bijhouden met JavaScript 2.x{#track-ads-on-javascript}
 
+De volgende instructies bieden richtlijnen voor implementatie met behulp van de 2.x SDK&#39;s.
+
 >[!IMPORTANT]
 >
->De volgende instructies bieden richtlijnen voor implementatie met behulp van de 2.x SDK&#39;s. Als u een 1.x-versie van de SDK implementeert, kunt u hier de 1.x-handleidingen voor ontwikkelaars downloaden: [SDK&#39;s downloaden.](/help/sdk-implement/download-sdks.md)
+>Als u een 1.x-versie van de SDK implementeert, kunt u hier de 1.x-handleidingen voor ontwikkelaars downloaden: [SDK&#39;s downloaden.](/help/sdk-implement/download-sdks.md)
 
 ## Constanten voor bijhouden van advertenties
 
