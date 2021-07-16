@@ -5,7 +5,7 @@ uuid: 4f4db23a-489b-4b41-bb6e-393ec64d52a2
 exl-id: 5f0a3c4b-7c9e-499d-98d0-6fcf316c4d9c
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 0%
@@ -14,9 +14,11 @@ ht-degree: 0%
 
 # buffering bijhouden op iOS{#track-buffering-on-ios}
 
+De volgende instructies bieden richtlijnen voor implementatie voor alle 2.x SDK&#39;s.
+
 >[!IMPORTANT]
 >
->De volgende instructies bieden richtlijnen voor implementatie voor alle 2.x SDK&#39;s. Als u een 1.x-versie van de SDK implementeert, kunt u de 1.x-handleidingen voor ontwikkelaars hier downloaden: [SDK&#39;s downloaden.](/help/sdk-implement/download-sdks.md)
+>Als u een 1.x-versie van de SDK implementeert, kunt u de 1.x-handleidingen voor ontwikkelaars hier downloaden: [SDK&#39;s downloaden.](/help/sdk-implement/download-sdks.md)
 
 ## Constanten voor bufferspatiëring
 
@@ -31,20 +33,20 @@ ht-degree: 0%
 1. Luister naar de buffergebeurtenissen voor het afspelen vanaf de mediaspeler en volg bij de melding van de gebeurtenis start van de buffer de buffering met de gebeurtenis `BufferStart`:
 
    ```
-   - (void)onBufferStart:(NSNotification *)notification { 
+   - (void)onBufferStart:(NSNotification *)notification {
        [_mediaHeartbeat trackEvent:ADBMediaHeartbeatEventBufferStart  
                         mediaObject:nil  
-                        data:nil]; 
+                        data:nil];
    }
    ```
 
 1. Volg bij het verzenden van het volledige bericht over de buffer vanuit de mediaspeler het einde van de buffering met behulp van de gebeurtenis `BufferComplete`:
 
    ```
-   - (void)onBufferComplete:(NSNotification *)notification { 
+   - (void)onBufferComplete:(NSNotification *)notification {
        [_mediaHeartbeat trackEvent:ADBMediaHeartbeatEventBufferComplete  
                         mediaObject:nil  
-                        data:nil]; 
+                        data:nil];
    }
    ```
 
