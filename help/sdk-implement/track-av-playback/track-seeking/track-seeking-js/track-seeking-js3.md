@@ -4,7 +4,7 @@ description: Leer hoe u de gebeurtenissen Start en Voltooien zoeken bijhoudt met
 exl-id: b7152436-520e-4f38-a8ad-1027ca3f1f6c
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 0%
@@ -13,9 +13,11 @@ ht-degree: 0%
 
 # Zoeken bijhouden met JavaScript 3.x{#track-seeking-on-javascript}
 
+De volgende instructies bieden richtlijnen voor implementatie voor alle 3.x SDK&#39;s.
+
 >[!IMPORTANT]
 >
->De volgende instructies bieden richtlijnen voor implementatie voor alle 3.x SDK&#39;s. Als u eerdere versies van de SDK implementeert, kunt u de ontwikkelaarsgidsen hier downloaden: [SDK&#39;s downloaden.](/help/sdk-implement/download-sdks.md)
+>Als u eerdere versies van de SDK implementeert, kunt u de ontwikkelaarsgidsen hier downloaden: [SDK&#39;s downloaden.](/help/sdk-implement/download-sdks.md)
 
 ## Constanten voor reeksspatiëring zoeken
 
