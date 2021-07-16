@@ -5,7 +5,7 @@ uuid: 3fe32425-5e2a-4886-8fea-d91d15671bb0
 exl-id: d213b633-be3b-4eb8-be71-0ef55e78a570
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 1%
@@ -14,9 +14,11 @@ ht-degree: 1%
 
 # Overzicht{#overview}
 
+De volgende instructies bieden richtlijnen voor implementatie met 2.x SDK&#39;s.
+
 >[!IMPORTANT]
->
->De volgende instructies bieden richtlijnen voor implementatie met 2.x SDK&#39;s. Als u een 1.x-versie van de SDK implementeert, kunt u de Developers Guide hier downloaden: [SDK&#39;s downloaden.](/help/sdk-implement/download-sdks.md)
+> 
+> Als u een 1.x-versie van de SDK implementeert, kunt u de Developers Guide hier downloaden: [SDK&#39;s downloaden.](/help/sdk-implement/download-sdks.md)
 
 Het hoofdstuk en het segment volgen is beschikbaar voor douane-bepaalde media hoofdstukken of segmenten. Bij het bijhouden van hoofdstukken wordt vaak gebruik gemaakt van aangepaste segmenten die zijn gebaseerd op media-inhoud (zoals honkbal-waarschuwingen), of van het definiëren van inhoudssegmenten tussen ad-hocafbrekingen. Het volgen van het hoofdstuk is **niet** vereist voor kernmedia het volgen implementaties.
 
@@ -64,27 +66,27 @@ Het volgen van het hoofdstuk omvat hoofdstukbegin, hoofdstuk voltooit, en hoofds
 In de volgende voorbeeldcode wordt de JavaScript 2.x SDK gebruikt voor een HTML5-mediaspeler. Gebruik deze code met de afspeelcode voor de kernmedia.
 
 ```js
-/* Call on chapter start */ 
-if (e.type == "chapter start") { 
-    var chapterObject = MediaHeartbeat.createChapterObject("Inning 5",5,500,2500); 
-    /* Set custom context data*/ 
-    var chapterCustomMetadata = { 
-        segmentType:"Baseball Innings", 
-        segmentName:"Inning 5", 
-        segmentInfo:"Game Six" 
-    } 
+/* Call on chapter start */
+if (e.type == "chapter start") {
+    var chapterObject = MediaHeartbeat.createChapterObject("Inning 5",5,500,2500);
+    /* Set custom context data*/
+    var chapterCustomMetadata = {
+        segmentType:"Baseball Innings",
+        segmentName:"Inning 5",
+        segmentInfo:"Game Six"
+    }
     this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterStart,  
                                    chapterObject,  
-                                   chapterCustomMetadata); 
-}; 
- 
-/* Call on chapter complete */ 
-if (e.type == "chapter complete") { 
-    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterComplete); 
-}; 
- 
-/* Call on chapter skip */ 
-if (e.type == "chapter skip") { 
-    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterSkip); 
-}; 
+                                   chapterCustomMetadata);
+};
+
+/* Call on chapter complete */
+if (e.type == "chapter complete") {
+    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterComplete);
+};
+
+/* Call on chapter skip */
+if (e.type == "chapter skip") {
+    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterSkip);
+};
 ```
