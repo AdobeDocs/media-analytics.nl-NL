@@ -103,7 +103,7 @@ Deze documentatie behandelt het volgen in versie 2.x van SDK.
 
    * **Standaardmetagegevens**
 
-[Standaardmetadata implementeren in Roku](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+      [Standaardmetadata implementeren in Roku](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
       >[!NOTE]
       >Het is optioneel om het standaardobject voor videometagegevens aan het mediaobject te koppelen.
