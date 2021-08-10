@@ -5,7 +5,7 @@ uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 41023be25308092a1b3e7c40bad2d8085429a0bc
+source-git-commit: 8da6889ecb50edd12b7ea4139500c35b923830f2
 workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 0%
@@ -105,9 +105,13 @@ POST /api/v1/downloaded HTTP/1.1
 }]
 ```
 
-#### Kennisgeving van veroudering
+### Kennisgeving van veroudering
 
-Gedownloade inhoud kan eerder ook naar de `/api/v1/sessions`-API worden verzonden. Deze manier om gedownloade inhoud te volgen is **afgekeurd** en zal **verwijderd** in de toekomst zijn.
+>[!IMPORTANT]
+>
+>Gedownloade inhoud kan eerder ook naar de `/api/v1/sessions`-API worden verzonden. Deze manier om gedownloade inhoud te volgen is **afgekeurd** en zal **verwijderd** in de toekomst zijn.
+
+
 De `/api/v1/sessions` API accepteert alleen sessieinitialisatiegebeurtenissen.
 Wanneer u de nieuwe API gebruikt, is de eerder verplichte `media.downloaded`-markering niet langer nodig.
 We raden u ten zeerste aan de `/api/v1/downloaded`-API te gebruiken voor nieuwe gedownloade inhoudsimplementaties en voor het bijwerken van bestaande implementaties die afhankelijk zijn van de oude API.
