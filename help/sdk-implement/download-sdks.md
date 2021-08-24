@@ -5,7 +5,7 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: ceef739641ae07ea05314fb2bc23028de6ee5efb
 workflow-type: tm+mt
 source-wordcount: '520'
 ht-degree: 5%
@@ -41,8 +41,8 @@ ht-degree: 5%
 
 | MA-opstartcomponent   | Documentatie | Voorbeelden |
 |---|---|---|
-| **Webextensie** | [Adobe Media Analytics voor audio- en video-extensie](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html) | [Adobe Media Analytics voor audio- en video-extensie](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/2.x) |
-| **Webextensie (3.x SDK)** | [Adobe Media Analytics voor audio- en video-extensie](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-3x-extension/overview.html) | [Adobe Media Analytics (3.x SDK) voor audio- en video-extensie](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
+| **Webextensie** | [Adobe Media Analytics voor audio- en video-extensie](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html) | [Adobe Media Analytics voor audio- en video-extensie](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/2.x) |
+| **Webextensie (3.x SDK)** | [Adobe Media Analytics voor audio- en video-extensie](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html) | [Adobe Media Analytics (3.x SDK) voor audio- en video-extensie](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
 | **Mobiele extensie** | [Adobe Analytics - Media Analytics voor audio en video](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics) | [Adobe Analytics - Media Analytics for Audio and Video Extension](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/mobile) |
 
 ## Download de 1.x Media SDKs {#download-the-1.x-media-sDKs}
