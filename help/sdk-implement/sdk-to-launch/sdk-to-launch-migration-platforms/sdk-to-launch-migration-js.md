@@ -4,7 +4,7 @@ description: Leer hoe u van de SDK van Media naar Starten voor JS migreert.
 exl-id: 19b506b2-3070-4a5e-9732-a5cd0867afde
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: ceef739641ae07ea05314fb2bc23028de6ee5efb
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 3%
@@ -52,7 +52,7 @@ De uitbreiding van Media zal de gevormde parameters voor het volgen gebruiken.
 
    ![](assets/launch_config_js.png)
 
-[Gebruikershandleiding starten - De extensie voor media installeren en configureren](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html#install-and-configure-the-ma-extension)
+[Gebruikershandleiding starten - De extensie voor media installeren en configureren](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html#install-and-configure-the-ma-extension)
 
 ## Verschillen in het maken van Beheer
 
@@ -125,5 +125,5 @@ Geef een gedelegeerd object door aan `get-instance` dat `getQoSObject()`- en `ge
 
 ### Starten
 
-* [Overzicht van Launch](https://experienceleague.adobe.com/docs/launch/using/overview.html)
-* [Media Analytics-extensie](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
+* [Overzicht van Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
+* [Media Analytics-extensie](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html)
