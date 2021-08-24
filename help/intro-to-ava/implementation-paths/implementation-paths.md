@@ -4,7 +4,7 @@ description: Meer informatie over implementatiepaden voor Adobe Streaming Media,
 exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: ceef739641ae07ea05314fb2bc23028de6ee5efb
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 1%
@@ -17,15 +17,15 @@ Voor elk implementatiepad moeten klanten contact opnemen met hun verkoper/accoun
 
 * **Adobe Starten met de extensie Adobe Media Analytics**
 
-   Adobe Launch is de volgende generatie oplossing voor tagbeheer van Adobe. De lancering verstrekt een eenvoudige manier om alle analytische, marketing, en reclame markeringen noodzakelijk op te stellen en te beheren om relevante klantenervaringen te drijven. Als u uw eigen integraties met Launch wilt maken en onderhouden, gebruikt u extensies. Een extensie is een JavaScript-, HTML- en CSS-pakket dat de functionaliteit van de opstartinterface en de client uitbreidt. Voor meer informatie, zie [de Gids van de Gebruiker van het Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/overview.html)
+   Adobe Launch is de volgende generatie oplossing voor tagbeheer van Adobe. De lancering verstrekt een eenvoudige manier om alle analytische, marketing, en reclame markeringen noodzakelijk op te stellen en te beheren om relevante klantenervaringen te drijven. Als u uw eigen integraties met Launch wilt maken en onderhouden, gebruikt u extensies. Een extensie is een JavaScript-, HTML- en CSS-pakket dat de functionaliteit van de opstartinterface en de client uitbreidt. Voor meer informatie, zie [de Gids van de Gebruiker van het Experience Platform Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
 
    De extensie Adobe Media Analytics (MA) voegt de kern-JavaScript Media SDK (Media 2.x SDK) toe voor audio en video. Deze extensie biedt de functionaliteit voor het toevoegen van de tracker `MediaHeartbeat` aan een opstartsite of -project.
 
    Voor het starten van Adobe met de extensie Media Analytics is het volgende vereist:
    * Je moet een Adobe Experience Cloud-klant zijn.
    * U moet de code voor Starten of DTM-insluiten op uw webpagina&#39;s implementeren.
-   * [Extensie Analytics](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html)
-   * [Experience Cloud ID-extensie](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html)
+   * [Extensie Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html)
+   * [Experience Cloud ID-extensie](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html)
 
 
 * **Client Side -** Dit zijn integratie van alleen Media Analytics. U kunt kiezen voor de integratie van de SDK van de videorectie en/of de API voor mediagroep. Dit pad kan worden gebruikt voor elke videospeler, inclusief client- en/of OVP-spelers zoals Brightcove, Ooyala, het Platform enzovoort.
