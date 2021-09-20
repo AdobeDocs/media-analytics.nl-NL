@@ -5,9 +5,9 @@ uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
+source-git-commit: d7cb36c2dd6b35da4531ca975c7fc730e387b750
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '729'
 ht-degree: 2%
 
 ---
@@ -103,7 +103,7 @@ Deze documentatie behandelt het volgen in versie 2.x van SDK.
 
    * **Standaardmetagegevens**
 
-      [Standaardmetadata implementeren in Roku](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+[Standaardmetadata implementeren in Roku](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
       >[!NOTE]
       >Het is optioneel om het standaardobject voor videometagegevens aan het mediaobject te koppelen.
@@ -141,6 +141,14 @@ Deze documentatie behandelt het volgen in versie 2.x van SDK.
 
    ```
    ADBMobile().mediaTrackPlay()
+   ```
+
+1. **Waarde van afspeelkop bijwerken**
+
+   Wanneer de afspeelkop van media verandert, wordt de SDK hiervan op de hoogte gebracht door de API `mediaUpdatePlayhead` aan te roepen. Voor video-op-bestelling (VOD), wordt de waarde gespecificeerd in seconden vanaf het begin van het media punt. Voor live streaming wordt de waarde opgegeven als het aantal seconden sinds middernacht van de UTC op die dag.
+
+   ```
+   ADBMobile().mediaUpdatePlayhead(position)
    ```
 
 1. **De voltooiing van het afspelen bijhouden**
