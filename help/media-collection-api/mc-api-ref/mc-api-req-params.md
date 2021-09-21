@@ -5,10 +5,10 @@ uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: d8b10249c542d2875cba4916e4a2c7942c5589c4
 workflow-type: tm+mt
-source-wordcount: '1307'
-ht-degree: 5%
+source-wordcount: '1329'
+ht-degree: 4%
 
 ---
 
@@ -104,7 +104,7 @@ ht-degree: 5%
 
 | Aanvraagsleutel  | Vereist | Sleutel aanvraagtype | Instellen op... |  Beschrijving  |
 | --- | :---: | :---: | :---: | --- |
-| `media.qoe.bitrate` | N | integer | Alle | De bitsnelheid van de stream |
+| `media.qoe.bitrate` | N | integer | Alle | De gemiddelde bitsnelheid (in bps). De gemiddelde bitsnelheid wordt berekend als het gewogen gemiddelde van alle bitsnelheidwaarden die betrekking hebben op de afspeelduur die tijdens een afspeelsessie is opgetreden. |
 | `media.qoe.droppedFrames` | N | integer | Alle | Het aantal gedropte frames in de stream |
 | `media.qoe.framesPerSecond` | N | integer | Alle | Het aantal frames per seconde |
 | `media.qoe.timeToStart` | N | integer | Alle | De hoeveelheid tijd (in milliseconden) die wordt doorgegeven tussen het moment dat de gebruiker in aanraking komt met afspelen en het moment waarop de inhoud wordt geladen en het moment waarop wordt begonnen met afspelen |
