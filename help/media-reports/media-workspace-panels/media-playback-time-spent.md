@@ -4,16 +4,16 @@ description: '"Leer hoe u het deelvenster Afspeeltijd van media kunt gebruiken o
 exl-id: null
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
-source-git-commit: 55d77d1576236fbc1165a41d7a0775b9ee246d8a
+source-git-commit: 60e222e85c593e331d13e804f520a35a682e66a3
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '218'
 ht-degree: 0%
 
 ---
 
 # Tijd van afspelen van media besteed {#media-playback-time-spent}
 
-Door de afspeeltijd te analyseren, kunt u precies zien waar de piekgelijktijdige uitvoering heeft plaatsgevonden of waar de initialen hebben plaatsgevonden. De afspeeltijd van media biedt een waardevol inzicht in de kwaliteit van de inhoud, de betrokkenheid van de viewer en de invloed van de inhoud op overwerk van de kijker. De media playbacktijd bestede eigenschap helpt met het oplossen van problemen of het plannen voor volume of schaal.
+Door de afspeeltijd te analyseren, kunt u precies zien waar de piekgelijktijdige uitvoering heeft plaatsgevonden of waar de initialen hebben plaatsgevonden. De afspeeltijd van media biedt een waardevol inzicht in de kwaliteit van de inhoud, de betrokkenheid van de viewer en de invloed van de inhoud op het kijkerschap in de loop der tijd. De media playbacktijd bestede eigenschap helpt met het oplossen van problemen of het plannen voor volume of schaal.
 
 ## Het deelvenster Tijd voor afspelen van media in Analysis Workspace
 
