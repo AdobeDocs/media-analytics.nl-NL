@@ -5,10 +5,10 @@ user-guide-title: Adobe Analytics for Streaming Media
 breadcrumb-title: Handleiding voor media-analyse
 user-guide-description: Implementeer Adobe Analytics for Streaming Media. Bevat de Media-SDK en de Media Collection-API.
 sub-product: media analytics
-source-git-commit: 55d77d1576236fbc1165a41d7a0775b9ee246d8a
+source-git-commit: 407f17a5b1134362c6be7c6bfae909e9e66077be
 workflow-type: tm+mt
-source-wordcount: '832'
-ht-degree: 92%
+source-wordcount: '840'
+ht-degree: 91%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 92%
 
 + [Streaming media meten in Adobe Analytics](media-overview.md)
 + [Ondersteunde apparaten en platforms](measurement-options/supported-devices.md)
-+ Inleiding tot het analyseren van streaming media {#intro-to-ava}
++ Inleiding tot de analyse van streaming media {#intro-to-ava}
    + [Vereisten](intro-to-ava/prereqs.md)
    + Implementatiepaden {#implementation-paths}
       + [Overzicht](intro-to-ava/implementation-paths/implementation-paths.md)
@@ -44,9 +44,9 @@ ht-degree: 92%
          + [JavaScript 3.x instellen](sdk-implement/setup/setup-javascript/set-up-js-3.md)
       + [Chromecast instellen](sdk-implement/setup/set-up-chromecast.md)
       + [Roku instellen](sdk-implement/setup/set-up-roku.md)
-   + Streaming media afspelen bijhouden {#track-av-playback}
+   + Streaming media afspelen {#track-av-playback}
       + [Overzicht](sdk-implement/track-av-playback/track-core-overview.md)
-      + Core Streaming Media Playback bijhouden {#track-core}
+      + Core Streaming Media afspelen {#track-core}
          + [Core afspelen bijhouden in Android](sdk-implement/track-av-playback/track-core/track-core-android.md)
          + [Core afspelen bijhouden in iOS](sdk-implement/track-av-playback/track-core/track-core-ios.md)
          + Core afspelen bijhouden in JavaScript {#track-core-javascript}
@@ -218,6 +218,7 @@ ht-degree: 92%
       + [Media afspelen tijd besteed, deelvenster](media-reports/media-workspace-panels/media-playback-time-spent.md)
    + [Sjablonen voor Media-werkruimte](media-reports/media-workspace-templates.md)
    + [Gegevens van gelijktijdige viewers ophalen via API](media-reports/media-default-reports/get-concurrent-json20.md)
+   + [Gegevens van afspeeltijd van media ophalen via API](media-reports/media-default-reports/get-mediaplaybacktimespent-json20.md)
 + [Gedownloade content bijhouden](media-collection-api/track-downloaded-content.md)
 + Player-status bijhouden {#player-state-tracking}
    + [Overzicht](sdk-implement/player-state-tracking/player-state-overview.md)

@@ -1,24 +1,24 @@
 ---
-title: Gelijktijdige gebruikers JSON-rapportgegevens ophalen met Analytics 2.0-API's
-description: Leer hoe u gelijktijdige viewers rapportgegevens verkrijgt met de API's Analytics 2.0. Bekijk een voorbeeldverzoek en een antwoord.
-uuid: 9168f114-2459-4951-a06c-57b735d09dc0
-exl-id: f84f63d3-b0d0-45fe-95a7-159f22d60660
+title: Met de API's van Analytics 2.0 worden JSON-rapportgegevens opgehaald voor tijd dat media worden afgespeeld
+description: Leer hoe te om media playbacktijd bestede rapportgegevens te verkrijgen gebruikend Analytics 2.0 APIs. Bekijk een voorbeeldverzoek en een antwoord.
+uuid: null
+exl-id: null
 feature: Media Analytics, Reports & Analytics Basics
 role: User, Admin, Data Engineer
-source-git-commit: 03b274fa0c5580ee2759560efbea45eb308d4278
+source-git-commit: 3118a5eeef56c7768d88df7c658468c356921aac
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 3%
+source-wordcount: '205'
+ht-degree: 2%
 
 ---
 
 
-# Gelijktijdige gebruikers JSON-rapportgegevens ophalen met Analytics 2.0-API&#39;s{#get-concurrent-viewers-json-report-data}
+# Met de API&#39;s van Analytics 2.0 worden JSON-rapportgegevens opgehaald voor tijd dat media worden afgespeeld{#get-media-playback-time-spent-json-report-data}
 
-U kunt rapportgegevens voor gelijktijdige viewers verkrijgen met de opdracht [_*API&#39;s voor Analytics 2.0*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html).
+U kunt de media playbacktijd bestede rapportgegevens verkrijgen gebruikend [_*API&#39;s voor Analytics 2.0*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html).
 
 1. Filter de gegevens gebruikend om het even welk segment dat op UI wordt voortgebouwd. Maak een nieuw segment om te filteren op een specifieke inhoud-id.
-1. Stel de `elements` -> `id` in de verzoekende instantie `metrics/concurrent_viewers_visitors`.
+1. Stel de `elements` -> `id` in de verzoekende instantie `metrics/playback_time_spent_seconds` of `metrics/playback_time_spent_minutes` afhankelijk van of u de uitvoer in seconden of minuten wilt.
 1. Een voldoende hoeveelheid gegevens aanvragen.
 
    * Het gegevensbereik dat u in het rapport opgeeft, verzamelt alle gelijktijdige viewergegevens _op het moment dat de videosessie werd beëindigd._
@@ -37,7 +37,7 @@ Een lading van het steekproefverzoek voor één dag van gegevens zou als het vol
     "dimension": "variables/daterangeminute",
     "globalFilters": [
         {
-            "dateRange": "2020-09-02T00:00/2020-09-03T00:00",
+            "dateRange": "2021-09-02T00:00/2021-09-03T00:00",
             "type": "dateRange"
         }
     ],
@@ -45,7 +45,7 @@ Een lading van het steekproefverzoek voor één dag van gegevens zou als het vol
         "metrics": [
             {
                 "columnId": "column1",
-                "id": "metrics/concurrent_viewers_visitors"
+                "id": "metrics/playback_time_spent_minutes"
             }
         ]
     },
@@ -79,21 +79,21 @@ Een lading van het steekproefverzoek voor één dag van gegevens zou als het vol
    "rows":[
       {
          "itemId":"12008020000",
-         "value":"00:00 2020-09-02",
+         "value":"00:00 2021-09-02",
          "data":[
             123.0
          ]
       },
       {
          "itemId":"12008020001",
-         "value":"00:01 2020-09-02",
+         "value":"00:01 2021-09-02",
          "data":[
             143.0
          ]
       },
       {
          "itemId":"12008020002",
-         "value":"00:02 2020-09-02",
+         "value":"00:02 2021-09-02",
          "data":[
             167.0
          ]
@@ -102,7 +102,7 @@ Een lading van het steekproefverzoek voor één dag van gegevens zou als het vol
       ...
       {
          "itemId":"12008022359",
-         "value":"23:59 2020-09-02",
+         "value":"23:59 2021-09-02",
          "data":[
             768.0
          ]
@@ -121,7 +121,7 @@ Een lading van het steekproefverzoek voor één dag van gegevens zou als het vol
 
 
 <!--
-You can extract the concurrent viewers report data using the Experience Cloud API Explorer as follows.
+You can extract the Media Playback Time Spent report data using the Experience Cloud API Explorer as follows.
 
 1. Navigate to: [https://www.adobe.io.](https://www.adobe.io)
 1. Select and enter the following information in the API Explorer form:
@@ -179,7 +179,7 @@ You can extract the concurrent viewers report data using the Experience Cloud AP
 1. In the form, change **Method** to "Get".
 1. Enter the value of the `reportID` you received in Step 3, and click **Get Response**.
 
-   The concurrent viewers report data, in JSON format, is presented in the Response field.
+   The Media Playback Time Spent report data, in JSON format, is presented in the Response field.
 
    For example:
 
