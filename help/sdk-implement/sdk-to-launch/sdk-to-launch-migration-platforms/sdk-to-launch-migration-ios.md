@@ -1,12 +1,12 @@
 ---
 title: '"Migreren van de standalone Media SDK naar Adobe Launch - iOS"'
-description: Leer hoe u van de SDK van Media naar Starten voor iOS migreert.
+description: Leer hoe u van de SDK van Media naar Launch voor iOS migreert.
 exl-id: f70b8e1b-cb9f-4230-86b2-171bdaed4615
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 7afd4d6ff7fd2dd2c4edb7ad2b5d6462eb7eba2f
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,10 @@ ht-degree: 0%
 
 ### Standalone Media SDK
 
-In de standalone SDK van Media, vormt u de het volgen configuratie in app,
-en geeft deze door aan de SDK wanneer u de Beheer maakt.
+In de standalone SDK van Media, vormt u de het volgen configuratie in app, en gaat het tot SDK over wanneer u de trekker creeert.
 
 ```objective-c
-ADBMediaHeartbeatConfig *config = 
+ADBMediaHeartbeatConfig *config =
   [[ADBMediaHeartbeatConfig alloc] init];
 
 config.trackingServer = @"namespace.hb.omtrdc.net";
@@ -32,14 +31,14 @@ config.playerName = @"native-player";
 config.ssl = YES;
 config.debugLogging = YES;
 
-ADBMediaHeartbeat* tracker = 
-  [[ADBMediaHeartbeat alloc] initWithDelegate:self config:config]; 
+ADBMediaHeartbeat* tracker =
+  [[ADBMediaHeartbeat alloc] initWithDelegate:self config:config];
 ```
 
 ### Extensie starten
 
-1. Klik in Experience Platform Launch op het tabblad [!UICONTROL Extensions] voor uw mobiele eigenschap
-1. Zoek op het tabblad [!UICONTROL Catalog] de Adobe Media Analytics voor de extensie Audio en Video en klik op [!UICONTROL Install].
+1. Klik in het Experience Platform Launch op de knop [!UICONTROL Extensions] tab voor uw mobiele eigenschap
+1. Op de [!UICONTROL Catalog] , zoekt u de Adobe Media Analytics for Audio and Video-extensie en klikt u op [!UICONTROL Install].
 1. In de pagina van de uitbreidingsmontages, vorm de volgende parameters.
 De uitbreiding van Media zal de gevormde parameters voor het volgen gebruiken.
 
@@ -51,8 +50,7 @@ De uitbreiding van Media zal de gevormde parameters voor het volgen gebruiken.
 
 ### Standalone Media SDK
 
-In de standalone SDK van Media maakt u handmatig het `ADBMediaHeartbeatConfig`-object
-en configureert u de volgende parameters. Implementeer de gedelegeerde interface die de
+In de standalone SDK van Media maakt u handmatig de `ADBMediaHeartbeatConfig` en configureert u de volgende parameters. Implementeer de gedelegeerde interface die de
 `getQoSObject()` en `getCurrentPlaybackTime()functions.`
 
 Maak een MediaHeartbone-instantie die u wilt bijhouden:
@@ -86,7 +84,7 @@ config.ssl = YES;
 config.debugLogging = YES;
 ADBMediaHeartbeatDelegate* delegate = [[PlayerDelegate alloc] init];
 
-ADBMediaHeartbeat* tracker = 
+ADBMediaHeartbeat* tracker =
   [[ADBMediaHeartbeat alloc] initWithDelegate:delegate config:config];
 ```
 
@@ -128,22 +126,18 @@ Tracker selecteert automatisch de configuratie van het gevormde lanceringsbezit.
 ### Standalone Media SDK
 
 In de standalone SDK van Media, een afgevaardigde voorwerp dat uitvoert
-`ADBMediaHeartbeartDelegate` protocol wordt overgegaan tijdens de verwezenlijking van de spoorker.
-De implementatie moet de nieuwste QoE en afspeelkop retourneren telkens als de
-tracker roept de `getQoSObject()`- en `getCurrentPlaybackTime()`-interface aan
-methoden.
+`ADBMediaHeartbeartDelegate` protocol wordt overgegaan tijdens het creëren van de trekker.
+De implementatie zou recentste QoE en playhead moeten terugkeren telkens als de trekker de `getQoSObject()` en `getCurrentPlaybackTime()` interfacemethoden.
 
 ### Extensie starten
 
 De huidige afspeelkop van de speler moet worden bijgewerkt met de functie
-`updateCurrentPlayhead` methode blootgesteld door de trekker. Voor nauwkeurige tracering
-u zou deze methode minstens eens per seconde moeten roepen.
+`updateCurrentPlayhead` door de verklikker aan het licht gebrachte methode. Voor het nauwkeurig volgen zou u deze methode minstens eens per seconde moeten roepen.
 
 [Referentie voor media-API: huidige afspeelknop bijwerken](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updatecurrentplayhead)
 
 De implementatie moet de QoE-informatie bijwerken door de
-`updateQoEObject` methode blootgesteld door de trekker. U moet deze methode aanroepen
-wanneer er een wijziging optreedt in de kwaliteitswaarden.
+`updateQoEObject` door de verklikker aan het licht gebrachte methode. U zou deze methode moeten roepen wanneer er een verandering in de kwaliteitsmetriek is.
 
 [Referentie voor media-API - QoE-object bijwerken](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updateqoeobject)
 
@@ -154,11 +148,11 @@ wanneer er een wijziging optreedt in de kwaliteitswaarden.
 * Metagegevens standaardmedia:
 
    ```objective-c
-   ADBMediaObject *mediaObject = 
-     [ADBMediaHeartbeat createMediaObjectWithName:@"media-name" 
-                        mediaId:@"media-id" 
-                        length:60 
-                        streamType:ADBMediaHeartbeatStreamTypeVod 
+   ADBMediaObject *mediaObject =
+     [ADBMediaHeartbeat createMediaObjectWithName:@"media-name"
+                        mediaId:@"media-id"
+                        length:60
+                        streamType:ADBMediaHeartbeatStreamTypeVod
                         mediaType:ADBMediaTypeVideo];
    
    // Standard metadata keys provided by adobe.
@@ -178,28 +172,28 @@ wanneer er een wijziging optreedt in de kwaliteitswaarden.
 * Standaard advertentiemetagegevens:
 
    ```objective-c
-   ADBMediaObject* adObject = 
-     [ADBMediaHeartbeat createAdObjectWithName:[adData objectForKey:@"name"] 
+   ADBMediaObject* adObject =
+     [ADBMediaHeartbeat createAdObjectWithName:[adData objectForKey:@"name"]
                         adId:[adData objectForKey:@"id"]
                         position:[[adData objectForKey:@"position"] doubleValue]
                         length:[[adData objectForKey:@"length"] doubleValue]];
    
    // Standard metadata keys provided by adobe.
-   NSMutableDictionary *standardMetadata = 
+   NSMutableDictionary *standardMetadata =
      [[NSMutableDictionary alloc] init];
-   [standardMetadata setObject:@"Sample Advertiser" 
+   [standardMetadata setObject:@"Sample Advertiser"
                      forKey:ADBAdMetadataKeyADVERTISER];
-   [standardMetadata setObject:@"Sample Campaign" 
+   [standardMetadata setObject:@"Sample Campaign"
                      forKey:ADBAdMetadataKeyCAMPAIGN_ID];
-   [adObject setValue:standardMetadata 
+   [adObject setValue:standardMetadata
                      forKey:ADBMediaObjectKeyStandardAdMetadata];
    
    //Attaching custom metadata
    NSMutableDictionary *adDictionary = [[NSMutableDictionary alloc] init];
    [adDictionary setObject:@"Sample affiliate" forKey:@"affiliate"];
    
-   [tracker trackEvent:ADBMediaHeartbeatEventAdStart 
-            mediaObject:adObject 
+   [tracker trackEvent:ADBMediaHeartbeatEventAdStart
+            mediaObject:adObject
             data:adDictionary];
    ```
 
@@ -208,14 +202,14 @@ wanneer er een wijziging optreedt in de kwaliteitswaarden.
 * Metagegevens standaardmedia:
 
    ```objective-c
-   NSDictionary *mediaObject = 
-     [ACPMedia createMediaObjectWithName:@"media-name" 
-               mediaId:@"media-id" 
-               length:60 
-               streamType:ACPMediaStreamTypeVod 
+   NSDictionary *mediaObject =
+     [ACPMedia createMediaObjectWithName:@"media-name"
+               mediaId:@"media-id"
+               length:60
+               streamType:ACPMediaStreamTypeVod
                mediaType:ACPMediaTypeVideo];
    
-   NSMutableDictionary *mediaMetadata = 
+   NSMutableDictionary *mediaMetadata =
      [[NSMutableDictionary alloc] init];
    
    // Standard metadata keys provided by adobe.
@@ -231,13 +225,13 @@ wanneer er een wijziging optreedt in de kwaliteitswaarden.
 * Standaard advertentiemetagegevens:
 
    ```objective-c
-   NSDictionary* adObject = 
-     [ACPMedia createAdObjectWithName:@"ad-name" 
-               adId:@"ad-id" 
-               position:1 
+   NSDictionary* adObject =
+     [ACPMedia createAdObjectWithName:@"ad-name"
+               adId:@"ad-id"
+               position:1
                length:15];
    
-   NSMutableDictionary* adMetadata = 
+   NSMutableDictionary* adMetadata =
      [[NSMutableDictionary alloc] init];
    
    // Standard metadata keys provided by adobe.
