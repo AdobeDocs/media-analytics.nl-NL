@@ -4,9 +4,9 @@ description: '"Leer hoe u het deelvenster Afspeeltijd van media kunt gebruiken o
 exl-id: null
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
-source-git-commit: 60e222e85c593e331d13e804f520a35a682e66a3
+source-git-commit: d5769f3eed3f0c3770e427420025ff624e775f9f
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '219'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Door de afspeeltijd te analyseren, kunt u precies zien waar de piekgelijktijdige
 In Analysis Workspace is Afspeeltijd de tijd die nodig is om de mediastream(s) op een bepaald tijdstip weer te geven en omvat pauze, buffer en begintijd. Met Afspeeltijd van media kunt u de afspeelduur splitsen met verschillende tijdsintervallen, zoals 5 minuten, 15 minuten, 30 minuten of 1 uur.
 
 
-De afspeeltijd van media helpt bij de analyse van het afspelen in de loop der tijd, met details over de piekconsistentie en de mogelijkheid om af te breken en te vergelijken. Navigeer naar een rapportsuite met Media Analytics-componenten ingeschakeld om het deelvenster Afspeeltijd van media te openen. Klik vervolgens op het deelvensterpictogram helemaal links en sleep het deelvenster naar uw Analysis Workspace-project. [Meer informatie...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent.html)
+De afspeeltijd van media helpt bij de analyse van het afspelen in de loop der tijd, met details over de piekconsistentie en de mogelijkheid om af te breken en te vergelijken. Navigeer naar een rapportsuite met Media Analytics-componenten ingeschakeld om het deelvenster Afspeeltijd van media te openen. Klik vervolgens op het deelvensterpictogram helemaal links en sleep het deelvenster naar uw Analysis Workspace-project. [Meer informatie...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-playback-timespent/media-playback-time-spent.html)
 
 <!-- ## DOES THIS APPLY Get Concurrent Viewers via Analytics Reporting API
 
