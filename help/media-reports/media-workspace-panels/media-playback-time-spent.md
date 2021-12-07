@@ -1,10 +1,9 @@
 ---
 title: Tijd van afspelen van media besteed
 description: '"Leer hoe u het deelvenster Afspeeltijd van media kunt gebruiken om de doorgebrachte afspeeltijd te analyseren en om inzicht te krijgen in de piektijktijktijd en de plaats waar de afspeeltijden zijn opgetreden."'
-exl-id: null
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
-source-git-commit: d5769f3eed3f0c3770e427420025ff624e775f9f
+source-git-commit: 30f71465feac8bbca917630597ece4876b955ca0
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 0%

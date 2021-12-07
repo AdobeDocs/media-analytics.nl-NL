@@ -1,11 +1,9 @@
 ---
 title: Met de API's van Analytics 2.0 worden JSON-rapportgegevens opgehaald voor tijd dat media worden afgespeeld
 description: Leer hoe te om media playbacktijd bestede rapportgegevens te verkrijgen gebruikend Analytics 2.0 APIs. Bekijk een voorbeeldverzoek en een antwoord.
-uuid: null
-exl-id: null
 feature: Media Analytics, Reports & Analytics Basics
 role: User, Admin, Data Engineer
-source-git-commit: 3118a5eeef56c7768d88df7c658468c356921aac
+source-git-commit: 30f71465feac8bbca917630597ece4876b955ca0
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 2%
