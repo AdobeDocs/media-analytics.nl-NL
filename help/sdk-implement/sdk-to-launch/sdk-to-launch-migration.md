@@ -1,29 +1,27 @@
 ---
-seo-title: Migreren van de standalone SDK van Media naar Adobe Launch
+seo-title: Migrating from the standalone Media SDK to Adobe Launch
 title: Migreren van de standalone SDK van Media naar Adobe Launch
-seo-description: Instructies en codevoorbeelden voor het migreren van de Media SDK naar Launch.
+seo-description: Instructions and code samples to assist in migrating from the Media SDK to Launch.
 description: Leer hoe u van de SDK van Media naar Launch migreert.
 exl-id: 5350bbe9-c34f-46d9-a4c4-dbccdbed0bb0
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: ceef739641ae07ea05314fb2bc23028de6ee5efb
+source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '207'
 ht-degree: 1%
 
 ---
 
 # Migreren van de standalone SDK van Media naar Adobe Launch
 
-Deze documentatie is vooral gericht op verschillen in implementatie van Media Analytics
-tussen de standalone Media SDK en de uitbreiding van de Lancering van de Analyse van Media.
+>[!NOTE]
+>Adobe Experience Platform Launch is omgedoopt tot een reeks technologieën voor gegevensverzameling in Experience Platform. Diverse terminologische wijzigingen zijn als gevolg hiervan in de productdocumentatie doorgevoerd. Raadpleeg het volgende [document](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en) voor een geconsolideerde referentie van de terminologische wijzigingen.
 
-De lancering geeft klanten een eenvoudige manier om alle analyses op te stellen en te beheren,
-marketing- en advertentieoplossingen die nodig zijn om de relevante klant
-ervaringen op internet en mobiel. Met Starten kan iedereen bouwen en onderhouden
-hun eigen integratie met Launch. Deze integraties worden extensies genoemd.
-Extensies zijn beschikbaar voor klanten die starten in een app-store-ervaring, zodat ze
-kunnen hun oplossingen snel installeren, configureren en implementeren.
+Deze documentatie concentreert zich hoofdzakelijk op de implementatieverschillen van Media Analytics tussen de standalone Media SDK en de uitbreiding van de Lancering van de Analyse van Media.
+
+De lancering geeft klanten een eenvoudige manier om alle analytische, marketing, en reclameoplossingen te opstellen en te beheren noodzakelijk om relevante klantenervaringen over Web en mobiel te drijven. Met Starten kan iedereen zijn eigen integratie met Launch maken en behouden. Deze integraties worden extensies genoemd.
+De uitbreidingen zijn beschikbaar om klanten in een app-store ervaring te lanceren, zodat kunnen zij, hun oplossingen snel installeren vormen en opstellen.
 
 Adobe Media Analytics for Audio and Video is beschikbaar als een extensie voor Starten voor zowel internet als mobiel:
 

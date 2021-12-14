@@ -4,14 +4,17 @@ description: Leer hoe u van de SDK van Media naar Launch voor iOS migreert.
 exl-id: f70b8e1b-cb9f-4230-86b2-171bdaed4615
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 7afd4d6ff7fd2dd2c4edb7ad2b5d6462eb7eba2f
+source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '409'
 ht-degree: 0%
 
 ---
 
 # Migreren van de standalone Media SDK naar Adobe Launch - iOS
+
+>[!NOTE]
+>Adobe Experience Platform Launch is omgedoopt tot een reeks technologieën voor gegevensverzameling in Experience Platform. Diverse terminologische wijzigingen zijn als gevolg hiervan in de productdocumentatie doorgevoerd. Raadpleeg het volgende [document](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en) voor een geconsolideerde referentie van de terminologische wijzigingen.
 
 ## Configuratie
 

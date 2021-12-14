@@ -4,26 +4,28 @@ description: Leer hoe u van de SDK van Media naar Starten voor JS migreert.
 exl-id: 19b506b2-3070-4a5e-9732-a5cd0867afde
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: ceef739641ae07ea05314fb2bc23028de6ee5efb
+source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: '450'
 ht-degree: 3%
 
 ---
 
 # Migreren van de standalone SDK van Media naar Adobe Launch - Web (JS)
 
+>[!NOTE]
+>Adobe Experience Platform Launch is omgedoopt tot een reeks technologieën voor gegevensverzameling in Experience Platform. Diverse terminologische wijzigingen zijn als gevolg hiervan in de productdocumentatie doorgevoerd. Raadpleeg het volgende [document](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en) voor een geconsolideerde referentie van de terminologische wijzigingen.
+
 ## Verschillen in functies
 
-* *Starten*  - De Lancering voorziet u van een UI die u door vestiging, het vormen, en het opstellen van uw web-based media volgende oplossingen loopt. Start verbetert het dynamisch tagbeheer (DTM).
-* *Media SDK*  - De Media SDK biedt u bibliotheken voor mediatracering die zijn ontworpen voor specifieke platforms (bijvoorbeeld: Android, iOS, enz.). Adobe raadt Media SDK aan om het mediagebruik in uw mobiele apps te volgen.
+* *Starten* - De lancering voorziet u van een UI die u door vestiging, het vormen, en het opstellen van uw web-based media volgende oplossingen loopt. Start verbetert het dynamisch tagbeheer (DTM).
+* *Media SDK* - De Media SDK biedt u bibliotheken voor mediatracering die zijn ontworpen voor specifieke platforms (bijvoorbeeld: Android, iOS, enz.). Adobe raadt Media SDK aan om het mediagebruik in uw mobiele apps te volgen.
 
 ## Configuratie
 
 ### Standalone Media SDK
 
-In de standalone SDK van Media, vormt u de het volgen configuratie in app
-en geeft deze door aan de SDK wanneer u de Beheer maakt.
+In de standalone SDK van Media, vormt u de het volgen configuratie in app en gaat het tot SDK over wanneer u de trekker creeert.
 
 ```javascript
 //Media Heartbeat initialization
@@ -37,16 +39,12 @@ mediaConfig.ssl = true;
 mediaConfig.debugLogging = true;
 ```
 
-Naast de `MediaHeartbeat` configuratie, moet de pagina vormen en overgaan
-de `AppMeasurement`-instantie en `VisitorAPI`-instantie voor mediatracering in volgorde
-naar behoren te werken.
+Naast de `MediaHeartbeat` configuratie, moet de pagina vormen en overgaan `AppMeasurement` instantie en `VisitorAPI` -instantie voor het bijhouden van media voor een juiste werking.
 
 ### Extensie starten
 
-1. Klik in Experience Platform Launch op het tabblad [!UICONTROL Extensions] voor uw
-web-eigenschap.
-1. Zoek op het tabblad [!UICONTROL Catalog] de Adobe Media Analytics voor Audio en
-Video-extensie en klik op [!UICONTROL Install].
+1. Klik in het Experience Platform Launch op de knop [!UICONTROL Extensions] tabblad voor uw webeigenschap.
+1. Op de [!UICONTROL Catalog] , zoekt u de Adobe Media Analytics for Audio and Video-extensie en klikt u op [!UICONTROL Install].
 1. In de pagina van de uitbreidingsmontages, vorm de volgende parameters.
 De uitbreiding van Media zal de gevormde parameters voor het volgen gebruiken.
 
@@ -59,9 +57,9 @@ De uitbreiding van Media zal de gevormde parameters voor het volgen gebruiken.
 ### Media-SDK
 
 1. Voeg de bibliotheek van de Analyse van Media aan uw ontwikkelingsproject toe.
-1. Creeer een config voorwerp (`MediaHeartbeatConfig`).
-1. Voer het afgevaardigde protocol uit, blootstellend `getQoSObject()` en `getCurrentPlaybackTime()` functies.
-1. Creeer een instantie van de Hartslag van Media (`MediaHeartbeat`).
+1. Een configuratieobject maken (`MediaHeartbeatConfig`).
+1. Voer het afgevaardigde protocol uit, blootstellend het `getQoSObject()` en `getCurrentPlaybackTime()` functies.
+1. Een instantie van Media Heartboard maken (`MediaHeartbeat`).
 
 ```
 // Media Heartbeat initialization
@@ -99,21 +97,21 @@ De lancering biedt twee benaderingen aan om de volgende infrastructuur te creër
 
 1. Gebruik de API&#39;s voor het bijhouden van media van een andere extensie voor Starten.
 
-   In dit scenario, gebruikt u media het volgen APIs die door `get-instance` en `media-heartbeat` Gedeelde Modules worden blootgesteld.
+   In dit scenario gebruikt u de API&#39;s voor mediatracering die door de `get-instance` en `media-heartbeat` Gedeelde modules.
 
    >[!NOTE]
    >
    >Gedeelde modules zijn niet beschikbaar voor gebruik in webpagina&#39;s. U kunt Gedeelde Modules van een andere uitbreiding slechts gebruiken.
 
-   Creeer een `MediaHeartbeat` instantie gebruikend `get-instance` Gedeelde Module.
-Geef een gedelegeerd object door aan `get-instance` dat `getQoSObject()`- en `getCurrentPlaybackTime()`-functies beschikbaar maakt.
+   Een `MediaHeartbeat` instantie die de `get-instance` Gedeelde module.
+Een gedelegeerd object doorgeven aan `get-instance` die `getQoSObject()` en `getCurrentPlaybackTime()` functies.
 
    ```
    var getMediaHeartbeatInstance =
    turbine.getSharedModule('adobe-video-analytics', 'get-instance');
    ```
 
-   Open constanten `MediaHeartbeat` via de `media-heartbeat` Gedeelde module.
+   Toegang `MediaHeartbeat` constanten via de `media-heartbeat` Gedeelde module.
 
 ## Verwante documentatie
 

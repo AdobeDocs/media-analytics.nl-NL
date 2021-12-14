@@ -1,14 +1,14 @@
 ---
-title: 'Adobe-streaming media in Adobe Analytics '
+title: Adobe-streaming media in Adobe Analytics
 description: '"Dig dieper in de state-of-the-art het stromen media meting voor inhoud, audio, en reclame. Meer informatie over Adobe Analytics for Streaming Media."'
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
 workflow-type: tm+mt
-source-wordcount: '880'
-ht-degree: 80%
+source-wordcount: '930'
+ht-degree: 76%
 
 ---
 
@@ -27,7 +27,7 @@ U kunt essentiële leveringsstatistieken in verband met QoS meten, zoals dropped
 ## Functies {#features}
 
 De voordelen van Adobe Analytics for Streaming Media zijn onder andere realtime bewaking, gedetailleerde analyse, inzichten in actie en mogelijkheden voor monetisering.
-* **In real time analyse**-maak in real time, actionable besluiten gebruikend zeer belangrijke prestatiesmetriek zoals media begint, over veelvoudige kanalen.
+* **Analyse in realtime**—Maak in real time, uitvoerbare besluiten gebruikend zeer belangrijke prestatiesmetriek zoals media begin, over veelvoudige kanalen.
 * **Betrokkenheid stimuleren**: Betrek gebruikers volledig door minder buffergebeurtenissen en door te begrijpen waar en wanneer de advertenties binnen content moeten worden afgespeeld om een soepele, minder opdringerige ervaring te bieden waardoor bezoeken worden herhaald.
 * **Holistisch beeld**: Combineer meerdere datapunten bij al uw contentdistributeurs om volledig zicht op al uw media-activiteit te krijgen. Meet betrokkenheid en kijk/luister op alle mogelijke kanalen via de Federated Analytics-functie.
 * **Meer granulariteit**: Evalueer het kijkgedrag op het meest gedetailleerde niveau, waaronder het tijdstip van individuele bezoeken, gelijktijdige kijkers/luisteraars per minuut, en de gemiddelde duur van gebruik van de content.
@@ -37,6 +37,10 @@ De voordelen van Adobe Analytics for Streaming Media zijn onder andere realtime 
 ## Hartbeatmeting {#heartbeat}
 
 Adobe Analytics gebruikt ‘heartbeats’ om videostatistieken te verzamelen. Tijdens het afspelen van video worden heartbeats naar de heartbeat-trackingserver verzonden om de afspeeltijd te meten. De heartbeatsignalen worden om de tien seconden verzonden. Heartbeats resulteren in gedetailleerde videobetrokkenheidsstatistieken en nauwkeurigere video-uitvalrapporten. Adobe Analytics for Streaming Media meet hartslagen met behulp van Adobe Launch met de extensie Media Analytics, de Media SDK en de Media Collection API. De componenten `AppMeasurement` en `VisitorID` worden gebruikt om videodata te ontvangen.
+
+>[!NOTE]
+>Adobe Experience Platform Launch is omgedoopt tot een reeks technologieën voor gegevensverzameling in Experience Platform. Diverse terminologische wijzigingen zijn als gevolg hiervan in de productdocumentatie doorgevoerd. Raadpleeg het volgende [document](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en) voor een geconsolideerde referentie van de terminologische wijzigingen.
+
 
 Het gebruik van hartslagen Adobe Analytics voor streamingmedia biedt de volgende voordelen:
 
@@ -48,7 +52,7 @@ Het gebruik van hartslagen Adobe Analytics voor streamingmedia biedt de volgende
 | Prijzen | Transparant bijhouden via mediastream (enkel) |
 | Implementatie en ondersteuning | Gestroomlijnde configuratie met doorlopende updates en verbeteringen<br>Met een gestroomlijnd implementatieproces kunt u snel variabelen toewijzen via de speler-API en implementaties valideren met de Adobe Debug-tool om ervoor te zorgen dat alle benodigde variabelen correct worden bijgehouden. |
 | Delen via partners | Federated Analytics en Certified Metrics<br>Met gedeelde data via Federated Analytics kunt u gebruikmaken van onze toonaangevende mogelijkheden voor delen om data holistisch te evalueren via al uw mediadistributiepartners: operators, programmeurs, en distributeurs. |
-| Geavanceerde tracking | Gedownloade Inhoud bijhouden, Foutherstel bijhouden en Gelijktijdige viewers<br>U kunt streaming media-inhoud bijhouden die op een apparaat wordt gedownload en afgespeeld, ongeacht de connectiviteit. |
+| Geavanceerde tracking | Gedownloade inhoud bijhouden, Foutopsporing bijhouden en Gelijktijdige viewers<br>U kunt streaming media-inhoud bijhouden die op een apparaat wordt gedownload en afgespeeld, ongeacht de connectiviteit ervan. |
 
 
 
