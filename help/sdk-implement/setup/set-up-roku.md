@@ -5,7 +5,7 @@ uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: e10f705e135cc6b9c630059596994d12fc787866
+source-git-commit: 07192eca8bad89d005d88fa084ec891df346f96a
 workflow-type: tm+mt
 source-wordcount: '716'
 ht-degree: 2%
@@ -16,34 +16,34 @@ ht-degree: 2%
 
 ## Vereisten
 
-* **Verkrijg geldige configuratieparameters voor**
-HeartbeatsDeze parameters kunnen bij een vertegenwoordiger van Adobe worden verkregen nadat u uw media analytics-account hebt ingesteld.
+* **Geldige configuratieparameters verkrijgen voor Heartbeats**
+Deze parameters kunt u verkrijgen van een Adobe-medewerker nadat u uw account voor mediacontrole hebt ingesteld.
 * **Biedt de volgende mogelijkheden in uw mediaspeler:**
-   * _Een API die zich moet abonneren op spelergebeurtenissen_ . De Media SDK vereist dat u een set eenvoudige API&#39;s aanroept wanneer gebeurtenissen in de speler plaatsvinden.
-   * _Een API die spelerinformatie_  verschaft. Deze informatie bevat details zoals de medianaam en de positie van de afspeelkop.
+   * _Een API die zich moet abonneren op spelergebeurtenissen_ - De SDK van Media vereist dat u een set eenvoudige API&#39;s oproept wanneer gebeurtenissen in de speler plaatsvinden.
+   * _Een API die spelerinformatie biedt_ - Deze informatie bevat details zoals de medianaam en de positie van de afspeelkop.
 
 Adobe Mobile-services bieden een nieuwe gebruikersinterface waarin mobiele marketingmogelijkheden voor mobiele toepassingen uit de hele Adobe Marketing Cloud worden samengebracht. Aanvankelijk biedt de Mobile-service een naadloze integratie van analysemogelijkheden voor apps en doelgerichte functionaliteit voor de Adobe Analytics- en Adobe Target-oplossingen.
 
-Meer informatie vindt u in de [Adobe Mobile Services-documentatie.](https://experienceleague.adobe.com/docs/mobile-services/using/home.html)
+Meer informatie vindt u op [Adobe Mobile Services-documentatie.](https://experienceleague.adobe.com/docs/mobile-services/using/home.html)
 
 Met Roku SDK 2.x voor Experience Cloud Solutions kunt u Roku-toepassingen meten die in BrightScript zijn geschreven, gegevens voor het publiek verzamelen en benutten via publieksbeheer en de videobetrokkenheid meten via videohartslagen.
 
 ## SDK-implementatie
 
-1. Voeg uw [gedownloade ](/help/sdk-implement/download-sdks.md#download-2x-sdks) bibliotheek van Roku aan uw project toe.
+1. Voeg uw [gedownload](/help/sdk-implement/download-sdks.md#download-2x-sdks) Bibliotheek uitvoeren naar uw project.
 
-   1. Het `AdobeMobileLibrary-2.*-Roku.zip`-downloadbestand bestaat uit de volgende softwarecomponenten:
+   1. De `AdobeMobileLibrary-2.*-Roku.zip` Het downloadbestand bestaat uit de volgende softwarecomponenten:
 
       * `adbmobile.brs`: Dit bibliotheekbestand wordt opgenomen in de bronmap van de Roku-app.
 
       * `ADBMobileConfig.json`: Dit SDK-configuratiebestand is aangepast voor uw app.
    1. Voeg het bibliotheekbestand en het JSON-configuratiebestand toe aan uw projectbron.
 
-      JSON die wordt gebruikt om Adobe Mobile te vormen heeft een exclusieve sleutel voor media hartslagen genoemd `mediaHeartbeat`. Dit is waar de configuratieparameters voor de media hartslagen horen.
+      JSON die wordt gebruikt om Adobe Mobile te vormen heeft een exclusieve sleutel voor media heartbeats genoemd `mediaHeartbeat`. Dit is waar de configuratieparameters voor media hartslagen horen.
 
       >[!TIP]
       >
-      >Het pakket bevat een voorbeeld van het JSON-bestand `ADBMobileConfig`. Neem voor de instellingen contact op met de Adobe-vertegenwoordigers.
+      >Een monster `ADBMobileConfig` Het JSON-bestand wordt bij het pakket geleverd. Neem voor de instellingen contact op met de Adobe-vertegenwoordigers.
 
       Bijvoorbeeld:
 
@@ -100,14 +100,14 @@ Met Roku SDK 2.x voor Experience Cloud Solutions kunt u Roku-toepassingen meten 
 
       >[!IMPORTANT]
       >
-      >Als `mediaHeartbeat` verkeerd wordt gevormd, gaat de media module (VHL) een foutenstaat in en zal ophouden verzendend volgende vraag.
+      >Indien `mediaHeartbeat` wordt verkeerd gevormd, gaat de media module (VHL) een foutenstaat in en zal ophouden verzendend volgende vraag.
 
 
 1. Experience Cloud-bezoeker-id configureren.
 
    De dienst van identiteitskaart van de Bezoeker van Experience Cloud verstrekt universele Bezoeker identiteitskaart over de oplossingen van Experience Cloud. De service voor bezoekers-id is vereist voor Video-hartslag en andere Marketing Cloud-integratie.
 
-   Verifieer dat uw `ADBMobileConfig` config uw `marketingCloud` organisatie ID bevat.
+   Controleer of uw `ADBMobileConfig` config bevat uw `marketingCloud` organisatie-id.
 
    ```
    "marketingCloud": {
@@ -119,21 +119,21 @@ Met Roku SDK 2.x voor Experience Cloud Solutions kunt u Roku-toepassingen meten 
 
    >[!IMPORTANT]
    >
-   >Zorg ervoor dat u `@AdobeOrg` opneemt.
+   >Zorg ervoor dat u `@AdobeOrg`.
 
-   Nadat de configuratie volledig is, wordt een identiteitskaart van de Bezoeker van de Experience Cloud geproduceerd en inbegrepen op alle treffers. Andere bezoeker-id&#39;s, zoals `custom` en `automatically-generated`, worden nog steeds bij elke treffer verzonden.
+   Nadat de configuratie volledig is, wordt een identiteitskaart van de Bezoeker van de Experience Cloud geproduceerd en inbegrepen op alle treffers. Andere bezoeker-id&#39;s, zoals `custom` en `automatically-generated`, blijft bij elke treffer worden verzonden.
 
    **Service-methoden voor Experience Cloud-bezoeker-id**
 
    >[!TIP]
    >
-   >De methodes van identiteitskaart van de Bezoeker van Experience Cloud worden vooraf bepaald met `visitor`.
+   >De methoden voor de Experience Cloud-bezoeker-id worden vooraf bepaald met `visitor`.
 
    |  Methode   | Beschrijving |
    | --- | --- |
    | `visitorMarketingCloudID` | Haalt de Experience Cloud-bezoeker-id op van de bezoeker-id-service.  <br/><br/>`ADBMobile().visitorMarketingCloudID()` |
    | `visitorSyncIdentifiers` | Met de Experience Cloud-bezoeker-id kunt u aanvullende klant-id&#39;s instellen die aan elke bezoeker kunnen worden gekoppeld. De bezoeker-API accepteert meerdere klant-id&#39;s voor dezelfde bezoeker en een id voor het klanttype om het bereik van de verschillende klant-id&#39;s te scheiden. Deze methode komt overeen met `setCustomerIDs`. Bijvoorbeeld: <br/><br/>`identifiers={}` <br/>`identifiers["idType"]="idValue"` <br/>`ADBMobile().visitorSyncIdentifiers(identifiers)` |
-   | `setAdvertisingIdentifier` | Wordt gebruikt om de Roku-id voor advertentie (RIDA) in te stellen op de SDK. Bijvoorbeeld: <br/><br/> `ADBMobile().setAdvertisingIdentifier(`<br/>  `"<sample_roku_identifier_for_advertising>")` <br/><br/><br/>Haal de Roku-id voor advertentie (RIDA) op met de Roku SDK  [getRIDA()](https://developer.roku.com/docs/references/brightscript/interfaces/ifdeviceinfo.md#getrida-as-dynamic) API. |
+   | `setAdvertisingIdentifier` | Wordt gebruikt om de Roku-id voor advertentie (RIDA) in te stellen op de SDK. Bijvoorbeeld: <br/><br/> `ADBMobile().setAdvertisingIdentifier(`<br/>  `"<sample_roku_identifier_for_advertising>")` <br/><br/><br/>Haal de Roku-id voor adverteren (RIDA) op met de Roku-SDK [getRIDA()](https://developer.roku.com/docs/references/brightscript/interfaces/ifdeviceinfo.md#getrida-as-dynamic) API. |
    | `getAllIdentifiers` | Retourneert een lijst met alle id&#39;s die door de SDK zijn opgeslagen, inclusief Analytics, Visitor, Audience Manager en aangepaste id&#39;s. <br/><br/> `identifiers = ADBMobile().getAllIdentifiers()` |
    <!--
     Roku Api Reference:
@@ -141,29 +141,30 @@ Met Roku SDK 2.x voor Experience Cloud Solutions kunt u Roku-toepassingen meten 
     * [GetRIDA()](https://sdkdocs.roku.com/display/sdkdoc/ifDeviceInfo#ifDeviceInfo-GetRIDA())
     -->
 
-   <br/><br/>
-
    **Aanvullende openbare API&#39;s**
 
    **DebugLogging**
-| Methode   | Beschrijving | | — | — | |  `setDebugLogging` | Gebruikt om zuivert het registreren voor SDK toe te laten of onbruikbaar te maken.  <br/><br/>`ADBMobile().setDebugLogging(true)` | |  `getDebugLogging` | Retourneert true als de logboekregistratie voor foutopsporing is ingeschakeld.   <br/><br/>`isDebugLoggingEnabled = ADBMobile().getDebugLogging()` |
 
-   <br/><br/>
+   |  Methode   | Beschrijving |
+   | --- | --- |
+   | `setDebugLogging` | Gebruikt om te toelaten of onbruikbaar te maken zuivert registreren voor SDK.  <br/><br/>`ADBMobile().setDebugLogging(true)` |
+   | `getDebugLogging` | Retourneert true als de logboekregistratie voor foutopsporing is ingeschakeld.  <br/><br/>`isDebugLoggingEnabled = ADBMobile().getDebugLogging()` |
 
    **PrivacyStatus**
-| Constant   | Beschrijving | | — | — | |  `PRIVACY_STATUS_OPT_IN` | Constante die moet worden doorgegeven terwijl setPrivacyStatus wordt aangeroepen om aan te melden. <br/><br/>`optInString = ADBMobile().PRIVACY_STATUS_OPT_IN`| |  `PRIVACY_STATUS_OPT_OUT` | Constante die moet worden doorgegeven terwijl setPrivacyStatus wordt aangeroepen om te weigeren.  <br/><br/>`optOutString = ADBMobile().PRIVACY_STATUS_OPT_OUT`|
 
-   <br/>
+   |  Constante   | Beschrijving |
+   | --- | --- |
+   | `PRIVACY_STATUS_OPT_IN` | Constante die moet worden doorgegeven tijdens het aanroepen van setPrivacyStatus voor aanmelden. <br/><br/>`optInString = ADBMobile().PRIVACY_STATUS_OPT_IN` |
+   | `PRIVACY_STATUS_OPT_OUT` | Constante die moet worden doorgegeven terwijl setPrivacyStatus wordt aangeroepen om te weigeren. <br/><br/>`optOutString = ADBMobile().PRIVACY_STATUS_OPT_OUT` |
 
    |  Methode   | Beschrijving |
    | --- | --- |
    | `setPrivacyStatus` | Hiermee stelt u de privacystatus van de SDK in.  <br/><br/>`ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)` |
    | `getPrivacyStatus` | Haalt de huidige privacystatus op die is ingesteld op de SDK.  <br/><br/>`privacyStatus = ADBMobile().getPrivacyStatus()` |
 
-   <br/><br/>
    >[!IMPORTANT]
    >
-   >Zorg ervoor dat u `processMessages` en `processMediaMessages` functie in de belangrijkste gebeurtenislijn om de 250 ms roept om ervoor te zorgen dat SDK correct pingelt verzendt.
+   >Zorg ervoor dat u roept `processMessages` en `processMediaMessages` functie in de hoofdgebeurtenislijn om de 250 ms om ervoor te zorgen dat SDK pingelt behoorlijk verzendt.
 
    |  Methode   | Beschrijving |
    | --- | --- |
