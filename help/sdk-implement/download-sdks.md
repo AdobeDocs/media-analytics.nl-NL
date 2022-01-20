@@ -5,9 +5,9 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
+source-git-commit: 6c42e5d51a2b23c3fe721a36100fe47b7afb14e6
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '604'
 ht-degree: 4%
 
 ---
@@ -30,7 +30,7 @@ De informatie op deze pagina bevat koppelingen waarmee de huidige 3.x- en 2.x Me
 | 3.x Media SDK&#39;s  | Nieuwste SDK-downloads voor media |  API&#39;s   |  Documentatie  |
 | --- | --- | --- | --- |
 | JavaScript | [Media SDK voor JS v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [JS API-naslaggids](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [JavaScript 3.x instellen](/help/sdk-implement/setup/setup-javascript/set-up-js-3.md) |
-| Chromecast | [Media SDK voor Chromecast v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.2) | [Referentie voor Chromecast API](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Chromecast instellen](/help/sdk-implement/setup/set-up-chromecast.md) |
+| Chromecast | [Media SDK voor Chromecast v3.0.3](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.2) | [Referentie voor Chromecast API](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.3) | [Chromecast instellen](/help/sdk-implement/setup/set-up-chromecast.md) |
 
 
 ## De 2.x Media SDK&#39;s downloaden {#download-2x-sdks}
@@ -40,7 +40,7 @@ De informatie op deze pagina bevat koppelingen waarmee de huidige 3.x- en 2.x Me
 | Android/FireTV | [Media SDK voor Android v2.2.4](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/android-v2.2.4) | [Referentie voor Android API](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/) | [Android instellen](/help/sdk-implement/setup/set-up-android.md) |
 | iOS/AppleTV | [Media SDK voor iOS v2.3.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/ios-v2.3.0) (Contactpersoon [Klantenservice ](https://helpx.adobe.com/marketing-cloud/contact-support.html) om verouderde 2.0 SDK te verkrijgen) | [iOS API-naslag](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/) | [iOS instellen](/help/sdk-implement/setup/set-up-ios.md) |
 | JavaScript | [Media SDK voor JS v2.2.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v2.2.2) | [JS API-naslaggids](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/) | [JavaScript 2.x instellen](/help/sdk-implement/setup/setup-javascript/set-up-js-2.md) |
-| Roku | [Media SDK voor Roku v2.2.3](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.3) |  | [Roku instellen](/help/sdk-implement/setup/set-up-roku.md) |
+| Roku | [Media SDK voor Roku v2.2.6](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.6) |  | [Roku instellen](/help/sdk-implement/setup/set-up-roku.md) |
 | Chromecast | [Media SDK voor Chromecast v2.2.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v2.2.0) | [Referentie voor Chromecast API](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Chromecast instellen](/help/sdk-implement/setup/set-up-chromecast.md) |
 
 ## Extensie voor media-analyse starten {#media-analytics-launch-extension}
