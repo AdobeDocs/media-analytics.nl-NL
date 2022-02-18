@@ -5,9 +5,9 @@ user-guide-title: Adobe Analytics for Streaming Media
 breadcrumb-title: Handleiding voor media-analyse
 user-guide-description: Implementeer Adobe Analytics for Streaming Media. Bevat de Media-SDK en de Media Collection-API.
 sub-product: media analytics
-source-git-commit: 819f4a7035e5d9704d17abce6a7cd4c607b7ce39
+source-git-commit: 5465631bf29e746d7d5dc07603f57fd7033935c4
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '833'
 ht-degree: 91%
 
 ---
@@ -211,8 +211,9 @@ ht-degree: 91%
       + [Rapport Mediaoverdag](media-reports/media-default-reports/media-reports-daypart.md)
       + [Rapport Mediagelijktijdige viewers](media-reports/media-default-reports/media-concurrent-viewers.md)
    + Deelvensters voor Media-werkruimte {#media-workspace-panels}
-      + [Deelvenster voor gelijktijdige mediaviewers](media-reports/media-workspace-panels/media-concurrent-viewers.md)
-      + [Media afspelen tijd besteed, deelvenster](media-reports/media-workspace-panels/media-playback-time-spent.md)
+   + [Deelvenster Gemiddelde media - geluid](media-reports/media-workspace-panels/average-minute-audience.md)
+   + [Deelvenster voor gelijktijdige mediaviewers](media-reports/media-workspace-panels/media-concurrent-viewers.md)
+   + [Media afspelen tijd besteed, deelvenster](media-reports/media-workspace-panels/media-playback-time-spent.md)
    + [Sjablonen voor Media-werkruimte](media-reports/media-workspace-templates.md)
    + [Gegevens van gelijktijdige viewers ophalen via API](media-reports/media-default-reports/get-concurrent-json20.md)
    + [Gegevens van afspeeltijd van media ophalen via API](media-reports/media-default-reports/get-mediaplaybacktimespent-json20.md)
