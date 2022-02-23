@@ -1,12 +1,12 @@
 ---
 title: Gemiddelde mediumgeluid
-description: Leer hoe te om het paneel van het Menggrijze publiek van Media te gebruiken aan _____.
+description: Leer hoe u het deelvenster Mediagemiddelde Minuut publiek kunt gebruiken om een gemiddeld aantal minuten publiek voor een bepaald stuk inhoud of over een aangepaste tijdsperiode te analyseren.
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
 exl-id: af4d430c-1349-4606-b587-da5d40e0fe4b
-source-git-commit: 45a566dd66b7ace05e3b63fb63df9266a9912b91
+source-git-commit: 806d3e68eb32adef2af8629474fa5c69a280e433
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '264'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ In Analysis Workspace is het gemiddelde aantal minuten voor het publiek de tijd 
 
 Het deelvenster Mediagemiddelde Minuut publiek biedt een analyse van het gemiddelde aantal minuten voor het publiek op basis van de specifieke inhoud die is geselecteerd als de duur beschikbaar wordt gesteld met behulp van classificaties.
 
-Het deelvenster Gemiddelde minuten publiek biedt ook analyses over een geselecteerde tijdsperiode die door specifieke inhoud kunnen worden gefilterd, ongeacht of de duur beschikbaar is via classificaties. Als u het deelvenster Mediagemiddelde Minuut publiek wilt openen, navigeert u naar een rapportsuite met ingeschakelde componenten voor Media Analytics. Klik vervolgens op het deelvensterpictogram helemaal links en sleep het deelvenster naar uw Analysis Workspace-project. [Meer informatie...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel.html?lang=en
+Het deelvenster Gemiddelde minuten publiek biedt ook analyses over een geselecteerde tijdsperiode die door specifieke inhoud kunnen worden gefilterd, ongeacht of de duur beschikbaar is via classificaties. Als u het deelvenster Mediagemiddelde Minuut publiek wilt openen, navigeert u naar een rapportsuite met ingeschakelde componenten voor Media Analytics. Klik vervolgens op het deelvensterpictogram helemaal links en sleep het deelvenster naar uw Analysis Workspace-project. [Meer informatie...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel.html?lang=en)
 
 <!-- ## DOES THIS APPLY Get Concurrent Viewers via Analytics Reporting API
 
