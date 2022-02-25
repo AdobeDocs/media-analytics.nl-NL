@@ -4,14 +4,19 @@ description: Leer hoe u het deelvenster Mediagemiddelde Minuut publiek kunt gebr
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
 exl-id: af4d430c-1349-4606-b587-da5d40e0fe4b
-source-git-commit: 806d3e68eb32adef2af8629474fa5c69a280e433
+source-git-commit: a138edbfd7b5136f038cc9397e53521110446076
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '271'
 ht-degree: 0%
 
 ---
 
 # Gemiddelde mediumgeluid {#media-average-minute-audience}
+
+>[!NOTE]
+>
+>Deze functie is momenteel in beperkte tests.
+
 
 Klanten van Media Analytics kunnen het gemiddelde minieme publiek deelvenster gebruiken om het gemiddelde verbruik van hun inhoud beter te begrijpen. Het gemiddelde minutenpubliek maakt vergelijkingen van programmering van om het even welke lengte of genre mogelijk. Bovendien kunnen klanten dit digitale gemiddelde minieme publiek vergelijken of toevoegen aan lineaire gemiddelde de minmetriek van TV. Dit deelvenster biedt meer flexibiliteit om het gemiddelde publiek voor aangepaste tijdsperiodes te meten en om te bepalen wanneer de classificatie van de duur na het feit is bijgewerkt. Het huidige gemiddelde minieme publiek metrisch werkt slechts als de duur bij verwerkingstijd beschikbaar is.
 
