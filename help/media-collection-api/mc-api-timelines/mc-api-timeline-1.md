@@ -5,9 +5,9 @@ uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 88bf699cb5b0872cefa4d6a6609c74f8fa35189a
 workflow-type: tm+mt
-source-wordcount: '1192'
+source-wordcount: '1203'
 ht-degree: 5%
 
 ---
@@ -35,7 +35,7 @@ De volgende diagrammen illustreren de tijdlijn van de afspeelkop en de overeenko
 
 **Implementatiedetail**
 
-Deze vraag signaleert _het voornemen van de gebruiker om_ een video te spelen. <br/><br/>Het keert een identiteitskaart van de Zitting (  `{sid}`) aan de cliënt terug die wordt gebruikt om alle volgende volgende volgende volgende volgende het volgen vraag binnen de zitting te identificeren. De spelerstatus wordt nog niet afgespeeld, maar &#39;gestart&#39;. <br/><br/>[De verplichte sessieparameters  ](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) moeten in de  `params` kaart in de aanvraaginstantie worden opgenomen. <br/><br/>Op de achtergrond, produceert deze vraag Adobe Analytics in werking stelt vraag in werking.
+Deze vraagsignalen _het voornemen van de gebruiker om te spelen_ een video. <br/><br/>Er wordt een sessie-id geretourneerd ( `{sid}`) aan de cliënt die wordt gebruikt om alle volgende het volgen vraag binnen de zitting te identificeren. De spelerstatus wordt nog niet afgespeeld, maar &#39;gestart&#39;. <br/><br/>[Verplichte sessieparameters ](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) moet worden opgenomen in de `params` kaart in de aanvraaginstantie. <br/><br/>Op de achtergrond, produceert deze vraag Adobe Analytics in werking stelt vraag in werking.
 
 **Voorbeeld van de aanvraaginstantie**
 
@@ -105,7 +105,7 @@ Advertenties kunnen alleen worden bijgehouden binnen een advertentie-einde.
 
 **Implementatiedetail**
 
-Volg de eerste advertentie voor de rol, die 15 seconden lang is. Aangepaste metagegevens opnemen met deze `adStart`.
+Volg de eerste advertentie voor de rol, die 15 seconden lang is. Aangepaste metagegevens opnemen met deze functie `adStart` .
 
 **Voorbeeld van de aanvraaginstantie**
 
@@ -136,6 +136,8 @@ Volg de eerste advertentie voor de rol, die 15 seconden lang is. Aangepaste meta
     }
 }
 ```
+
+**OPMERKING: Tussen AdBreakStart- en AdStart-gebeurtenissen hoeven er geen aanvullende afspeelgebeurtenissen te zijn.**
 
 ### Actie 5 - Advertentiepunten {#Action-5}
 
@@ -188,7 +190,7 @@ Pingel de steun om de 1 seconde terwijl binnen een advertentie.
 
 | Handeling | Tijdlijn handeling (seconden) | Positie afspeelkop (seconden) | Aanvraag client |
 | --- | :---: | :---: | --- |
-| App verzendt ping-gebeurtenis | 1 | 0 | `/api/v1/sessions/{sid}/events` |
+| App verzendt ping-gebeurtenis | 3 | 0 | `/api/v1/sessions/{sid}/events` |
 
 **Implementatiedetail**
 
@@ -342,7 +344,7 @@ Het advertentiespoor is voorbij. Tijdens de hele advertentieronde is de spelstat
 
 **Implementatiedetail**
 
-Na de gebeurtenis `adBreakComplete` plaatst u de speler in de afspeelstatus met de gebeurtenis `play`.
+Na de `adBreakComplete` -gebeurtenis, plaats de speler in de afspeelstatus met behulp van de `play` gebeurtenis.
 
 **Voorbeeld van de aanvraaginstantie**
 
@@ -407,7 +409,7 @@ Houd de beweging van de speler naar de bufferstatus bij.
 
 **Implementatiedetail**
 
-Bufferbewerkingen worden na 3 seconden beëindigd. Zet de speler dus terug naar de afspeelstatus. U moet een andere gebeurtenis voor het afspelen van tracks verzenden die buiten de buffering valt.  **De  `play` vraag na een  `bufferStart` infers een &quot;bufferEnd&quot;vraag aan het achtereind,** zodat is er geen behoefte aan een  `bufferEnd` gebeurtenis.
+Bufferbewerkingen worden na 3 seconden beëindigd. Zet de speler dus terug naar de afspeelstatus. U moet een andere gebeurtenis voor het afspelen van tracks verzenden die buiten de buffering valt.  **De `play` bellen na een `bufferStart` Voert een &quot;bufferEnd&quot;vraag aan het achtereind af,** er is dus geen behoefte aan een `bufferEnd` gebeurtenis.
 
 **Voorbeeld van de aanvraaginstantie**
 
@@ -450,7 +452,7 @@ Pingel het achterste eind om de 10 seconden.
 
 **Implementatiedetail**
 
-Midden rol en duur van 8 seconden: `adBreakStart` verzenden.
+Midden rol en duur van 8 seconden: send `adBreakStart` .
 
 **Voorbeeld van de aanvraaginstantie**
 
@@ -642,7 +644,7 @@ Pingel het achterste eind om de 10 seconden. Player bevindt zich nog steeds in d
 
 **Implementatiedetail**
 
-De afspeelstatus verplaatsen naar Afspelen.  **De  `play` vraag na een  `pauseStart` infers een &quot;hervattingsvraag&quot;aan het achtereind,** zodat is er geen behoefte aan een  `resume` gebeurtenis.
+De afspeelstatus verplaatsen naar Afspelen.  **De `play` bellen na een `pauseStart` leidt een &quot;hervattingsvraag&quot;tot het achtereind af,** er is dus geen behoefte aan een `resume` gebeurtenis.
 
 **Voorbeeld van de aanvraaginstantie**
 
@@ -684,7 +686,7 @@ Pingel het achterste eind om de 10 seconden.
 
 **Implementatiedetail**
 
-Verzend `sessionComplete` naar de achtergrond om aan te geven dat de gebruiker klaar is met het bekijken van de volledige inhoud.
+Verzenden `sessionComplete` op de achtergrond om aan te geven dat de gebruiker de volledige inhoud heeft bekeken.
 
 **Voorbeeld van de aanvraaginstantie**
 
