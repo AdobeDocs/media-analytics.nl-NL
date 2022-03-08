@@ -5,9 +5,9 @@ uuid: e92e99f4-c395-48aa-8a30-cbdd2f5fc07c
 exl-id: f6a00ffd-da6a-4d62-92df-15d119cfc426
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 165c7f01a2d2c32df518c89a5c49637107d41086
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '575'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ In dit scenario is er één actief dat gedurende 40 seconden geen advertenties b
 
 | Trigger | Hartslagmethode | Netwerkaanroepen | Notities   |
 |---|---|---|---|
-| Gebruiker klikt **[!UICONTROL Play]** | `trackSessionStart` | Start inhoud analyse, Start inhoud hartslag | Dit kan een gebruiker zijn die **[!UICONTROL Play]** of een auto-playgebeurtenis klikt. |
+| Gebruiker klikt **[!UICONTROL Play]** | `trackSessionStart` | Start inhoud analyse, Start inhoud hartslag | Dit kan een gebruiker zijn die klikt **[!UICONTROL Play]** of een automatisch afspeelbare gebeurtenis. |
 | Het eerste frame van de media wordt afgespeeld. | `trackPlay` | Hartslaginhoud afspelen | Deze methode activeert de timer. Hartslagen worden elke 10 seconden verzonden zolang het afspelen duurt. |
 | De inhoud wordt afgespeeld. |  | Content Heartbeats |  |
 | De sessie is afgelopen. | `trackSessionEnd` |  | `SessionEnd` het einde van een weergavesessie. Deze API moet worden aangeroepen, zelfs als de gebruiker de media niet voor voltooiing gebruikt. |
@@ -33,12 +33,12 @@ Veel van de zelfde waarden die u op de Vraag van het Begin van de Inhoud van Ado
 
 | Parameter | Waarde | Notities |
 |---|---|---|
-| `s:sc:rsid` | &lt;your Adobe=&quot;&quot; Report=&quot;&quot; Suite=&quot;&quot; ID=&quot;&quot;> |  |
-| `s:sc:tracking_serve` | &lt;your Analytics=&quot;&quot; Tracking=&quot;&quot; Server=&quot;&quot; URL=&quot;&quot;> |  |
+| `s:sc:rsid` | &lt;Your Adobe Report Suite ID> |  |
+| `s:sc:tracking_serve` | &lt;Your Analytics Tracking Server URL> |  |
 | `s:user:mid` | `s:user:mid` | Moet overeenkomen met de gemiddelde waarde van de Adobe Analytics Content Start Call |
 | `s:event:type` | &quot;start&quot; |  |
 | `s:asset:type` | &quot;main&quot; |  |
-| `s:asset:mediao_id` | &lt;your Media=&quot;&quot; Name=&quot;&quot;> |  |
+| `s:asset:mediao_id` | &lt;Your Media Name> |  |
 | `s:stream:type` | leven |  |
 | `s:meta:*` | optioneel | Aangepaste metagegevens ingesteld op het medium |
 
@@ -63,13 +63,13 @@ Voor LIVE-streams moet u de waarde van de afspeelkop instellen als het aantal se
 
 ### Bij starten
 
-Wanneer een gebruiker de stream afspeelt bij LIVE-media, moet u `l:event:playhead` instellen op het aantal seconden dat is verstreken sinds middernacht van UTC op die dag. Dit is in tegenstelling tot VOD, waar u playhead aan &quot;0&quot;zou plaatsen.
+Voor LIVE-media moet u instellen dat wanneer een gebruiker de stream afspeelt `l:event:playhead` tot het aantal seconden sinds middernacht UTC op die dag. Dit is in tegenstelling tot VOD, waar u playhead aan &quot;0&quot;zou plaatsen. Opmerking: Wanneer u voortgangsmarkeringen gebruikt, is de duur van de inhoud vereist en moet de afspeelkop worden bijgewerkt als het aantal seconden vanaf het begin van het media-item, te beginnen met 0.
 
-Bijvoorbeeld, zeg een LIVE het stromen gebeurtenis begint bij middernacht en looppas 24 uren (`a.media.length=86400`; `l:asset:length=86400`). Stel vervolgens dat een gebruiker die LIVE-stream begint af te spelen om 12:00 uur. In dit scenario, zou u `l:event:playhead` aan 43200 (12 uren sinds middernacht UTC op die dag in seconden) moeten plaatsen.
+Een LIVE streaming-gebeurtenis start bijvoorbeeld om middernacht en wordt 24 uur uitgevoerd (`a.media.length=86400`; `l:asset:length=86400`). Stel vervolgens dat een gebruiker die LIVE-stream begint af te spelen om 12:00 uur. In dit scenario moet u `l:event:playhead` tot 43200 (12 uur sinds middernacht UTC op die dag in seconden).
 
 ### Bij pauzeren
 
-Dezelfde logica &#39;live playhead&#39; die aan het begin van het afspelen is toegepast, moet worden toegepast wanneer een gebruiker het afspelen pauzeert. Wanneer de gebruiker terugkeert naar het afspelen van de LIVE-stream, moet u de `l:event:playhead`-waarde instellen op basis van het nieuwe aantal seconden sinds middernacht UTC, _niet_ op het punt waar de gebruiker de LIVE-stream heeft gepauzeerd.
+Dezelfde logica &#39;live playhead&#39; die aan het begin van het afspelen is toegepast, moet worden toegepast wanneer een gebruiker het afspelen pauzeert. Wanneer de gebruiker terugkeert naar het afspelen van de LIVE-stream, moet u de instelling `l:event:playhead` waarde volgens het nieuwe aantal seconden sinds middernacht UTC; _niet_ tot het punt waarop de gebruiker de LIVE-stream heeft gepauzeerd.
 
 ## Voorbeeldcode {#sample-code}
 
