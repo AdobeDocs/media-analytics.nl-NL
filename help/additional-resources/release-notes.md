@@ -2,17 +2,17 @@
 title: Opmerkingen bij de release Adobe Analytics for Streaming Media
 description: Bekijk de opmerkingen bij de release van Adobe Analytics.
 feature: Release Notes
-source-git-commit: c9a1007e0d2ae37014faeffebe89a14175c8506f
+exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
+source-git-commit: 232d7ce89e3867527363235f08b492a92193d50e
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '545'
 ht-degree: 13%
 
 ---
 
-
 # Opmerkingen bij de release Adobe Analytics for Streaming Media (maart 2022)
 
-**Laatste update**: 3 maart 2022
+**Laatste update**: 23 maart 2022
 
 ## *Opmerkingen bij de huidige release*
 
@@ -20,7 +20,7 @@ ht-degree: 13%
 
 | Functie | Beschrijving | Doeldatum |
 | ----------- | ---------- | ------- |
-| **Gemiddeld aantal minuten publiek** | Klanten van Media Analytics kunnen het deelvenster Gemiddelde miniatuur gebruiken om een beter inzicht te krijgen in het gemiddelde verbruik van inhoud. <br>Het gemiddelde minutenpubliek maakt vergelijkingen van programmering van om het even welke lengte of genre mogelijk. Bovendien kunt u het digitale gemiddelde minusepubliek vergelijken of toevoegen aan lineaire gemiddelde de minmetriek van TV. Dit deelvenster biedt meer flexibiliteit om het gemiddelde publiek voor aangepaste tijdsperiodes te meten en om te bepalen wanneer de classificatie van de duur is bijgewerkt.  [Meer informatie](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/average-minute-audience.html?lang=en) | **Beperkte release** <br>16 februari 2022 |
+| **Gemiddeld aantal minuten publiek** | Klanten van Media Analytics kunnen het deelvenster Gemiddelde miniatuur gebruiken om een beter inzicht te krijgen in het gemiddelde verbruik van inhoud. <br>Het gemiddelde minutenpubliek maakt vergelijkingen van programmering van om het even welke lengte of genre mogelijk. Bovendien kunt u het digitale gemiddelde minusepubliek vergelijken of toevoegen aan lineaire gemiddelde de minmetriek van TV. Dit deelvenster biedt meer flexibiliteit om het gemiddelde publiek voor aangepaste tijdsperiodes te meten en om te bepalen wanneer de classificatie van de duur is bijgewerkt.  [Meer informatie](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/average-minute-audience.html?lang=en) | 16 maart 2022 |
 
 ## Analyses voor Help-bronnen voor streaming media
 
