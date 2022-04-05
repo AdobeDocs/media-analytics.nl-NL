@@ -3,9 +3,9 @@ title: Opmerkingen bij de release Adobe Analytics for Streaming Media
 description: Bekijk de opmerkingen bij de release van Adobe Analytics.
 feature: Release Notes
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
-source-git-commit: 232d7ce89e3867527363235f08b492a92193d50e
+source-git-commit: 8ca8416ba3dd8f5d3ef4ba9399e7c84335f3abf1
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '525'
 ht-degree: 13%
 
 ---
@@ -48,7 +48,7 @@ Nieuwe zelfstudies en cursussen voor Analytics
 
 | Functie | Algemene beschikbaarheid | Beschrijving |
 | ----------- | ---------- | -------------- |
-| **Tijd van afspelen van media besteed** | 28 september 2021 | Adobe Streaming Media Playback Time Spent biedt een waardevol inzicht in de betrokkenheid van de kijker en stelt mediaorganisaties in staat diepere, meer granulaire inzichten af te leiden met de betrokkenheid van gebruikers van minuut tot minuut door middel van geavanceerde tijdbestede analyse met mogelijkheden voor het parseren van dagen. U kunt de hoeveelheid tijd waarnemen die het bekijken van uw media stromen op een specifiek punt in tijd besteedt. U kunt de afspeelduur splitsen op verschillende granulariteiten, zoals nieuwe granulariteiten van 5 minuten, 15 minuten en 30 minuten. [Meer informatie...](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/media-workspace-panels/media-playback-time-spent.html?lang=en) |
+| **Tijd van afspelen van media besteed** | 28 september 2021 | Adobe Streaming Media Playback Time Spent biedt een waardevol inzicht in de betrokkenheid van de kijker en stelt mediaorganisaties in staat diepere, meer granulaire inzichten af te leiden met de betrokkenheid van gebruikers van minuut tot minuut door middel van geavanceerde tijdbestede analyse met mogelijkheden voor het parseren van dagen. U kunt de hoeveelheid tijd waarnemen die het bekijken van uw media stromen op een specifiek punt in tijd besteedt. U kunt de afspeelduur splitsen op verschillende granulariteiten, zoals nieuwe granulariteiten van 5 minuten, 15 minuten en 30 minuten. [Meer informatie...](/help/media-reports/media-workspace-panels/media-playback-time-spent.md) |
 
 ## Januari 2021
 
@@ -65,7 +65,7 @@ Nieuwe functies in Media Analytics
 
 | Functie | Algemene beschikbaarheid | Beschrijving |
 | -------- | -------------------- | ----------- |
-| **Deelvenster Mediagelijktijdige viewer in werkruimte** | 17 september 2020 | Met het deelvenster Mediagelijktijdige viewers kunt u precies zien waar de piekgelijktijdige optreden heeft plaatsgevonden of waar een vervolgkeuzelijst heeft plaatsgevonden. Het biedt waardevolle inzichten in de kwaliteit van de betrokkenheid van de inhoud en viewer en helpt bij het oplossen van problemen of het plannen van volumes/schaal. [Meer informatie…](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/media-workspace-panels/media-concurrent-viewers.html?lang=en) |
+| **Deelvenster Mediagelijktijdige viewer in werkruimte** | 17 september 2020 | Met het deelvenster Mediagelijktijdige viewers kunt u precies zien waar de piekgelijktijdige optreden heeft plaatsgevonden of waar een vervolgkeuzelijst heeft plaatsgevonden. Het biedt waardevolle inzichten in de kwaliteit van de betrokkenheid van de inhoud en viewer en helpt bij het oplossen van problemen of het plannen van volumes/schaal. [Meer informatie…](/help/media-reports/media-workspace-panels/media-concurrent-viewers.md) |
 
 
 ## Juli 2020
