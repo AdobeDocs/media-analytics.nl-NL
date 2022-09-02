@@ -1,19 +1,18 @@
 ---
 title: Meerdere spelerstatussen tegelijk bijwerken
 description: Dit onderwerp beschrijft de Veelvoudige eigenschap van het Volgen van de Staat van de Speler.
-exl-id: a77bc882-ac03-40b4-ac64-87f26a09707b
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 7a28674024739593431a942d5e0a498294bbe793
+source-git-commit: fdbb777547181422b81ff6f7874bec3d317d02e9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '186'
+ht-degree: 4%
 
 ---
 
 # Meerdere spelerstatussen bijhouden
 
-Er zijn situaties waarin twee spelerstaten tegelijkertijd beginnen en eindigen of wanneer het einde van een status ook het begin van een andere status is. Kijk naar het volgende voorbeeld:
+Soms is het begin en einde van twee spelerstaten tegelijkertijd of is het einde van een status ook het begin van een andere status, zoals in de volgende afbeelding wordt getoond:
 
 ![Meerdere spelstatussen](assets/multiple-player-states.svg)
 
@@ -25,18 +24,22 @@ De huidige implementatie staat beide scenario&#39;s toe:
 - `stateStart(fullScreen)` - t1
 - `stateEnd(fullScreen)` - t2
 
-De client moet echter veel `stateStart` en `stateEnd` gebeurtenissen om meerdere gelijktijdige statuswijzigingen aan te geven. Om dit algemene gedrag te optimaliseren, moet u een nieuwe `statesUpdate` gebeurtenistype is geïmplementeerd, dat een lijst met staten beëindigt en een lijst met nieuwe staten start.
+Hiervoor moet u echter meerdere `stateStart` en `stateEnd` gebeurtenissen om meerdere gelijktijdige statuswijzigingen aan te geven. Om dit algemene gedrag te optimaliseren, moet u een nieuwe `statesUpdate` gebeurtenistype is geïmplementeerd, dat een lijst met staten beëindigt en een lijst met nieuwe staten start.
 
 De nieuwe `statesUpdate` wordt de bovenstaande lijst met gebeurtenissen:
 - `statesUpdate(statesEnd=[], statesStart=[pictureInPicture, mute])` - t0
 - `statesUpdate(statesEnd=[mute, pictureInPicture], statesStart=[fullScreen])` - t1
 - `statesUpdate(statesEnd=[fullScreen], statesStart=[])` - t2
 
-Het aantal vraag van staatsupdates is verminderd van 6 tot slechts 3 voor het zelfde gedrag. De laatste gebeurtenis had ook eenvoudig kunnen zijn `stateEnd(fullScreen)`.
+Het aantal vraag van staatsupdates is verminderd van zes tot drie voor het zelfde gedrag. De laatste gebeurtenis had ook eenvoudig kunnen zijn `stateEnd(fullScreen)`.
 
-## API-implementatie voor mediaverzameling
+## API-implementatie voor mediaverzameling {#mpst-api}
 
-Voorbeelden:
+U kunt de API voor mediagroep gebruiken om meerdere statussen van spelers te implementeren.
+
+### Voorbeeld
+
+In het volgende voorbeeld ziet u een voorbeeld van een API-implementatie voor Media Collection voor het bijhouden van meerdere spelerstatussen.
 
 ```
 // statesUpdate (ex: mute and pictureInPicture are switched on)
