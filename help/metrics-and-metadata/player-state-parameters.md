@@ -1,11 +1,11 @@
 ---
 title: Parameters van de Player-status
-description: '"Meer informatie over de parameters voor het bijhouden van de spelerstatus voor volledig scherm, bijschrift sluiten, dempen en beeld-in-beeld-eigenschappen."'
+description: "Meer informatie over de parameters voor het bijhouden van de spelerstatus voor volledig scherm, bijschrift sluiten, dempen en beeld-in-beeld-eigenschappen."
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
 exl-id: cd51ed3a-fe37-41e9-8243-dfd9deb514c1
-feature: Media Analytics, Variables
+feature: "Media Analytics, Variables"
 role: User, Admin, Data Engineer
-source-git-commit: 01afcf648f13af4d47b5fb41b7c9e89c2a89f590
+source-git-commit: 7e5ce452a9c96c4e34150ae0e06d73b0cff98741
 workflow-type: tm+mt
 source-wordcount: '2331'
 ht-degree: 1%
@@ -41,7 +41,7 @@ Beschrijving van tabelgegevens:
 
 ## Eigenschappen van spelerstatus {#player-state-properties}
 
-De mogelijkheden voor het bijhouden van de spelerstatus kunnen worden gekoppeld aan een audio- of videostream. De gestandaardiseerde metriek voor het bijhouden van spelerstatussen worden opgeslagen als oplossingsvariabelen. De standaardstatussen zijn: fullScreen, dempen, closeCaption, pictureInPicture en inFocus.
+De mogelijkheden voor het bijhouden van de spelerstatus kunnen worden gekoppeld aan een audio- of videostream. De gestandaardiseerde metriek voor het bijhouden van spelerstatussen worden opgeslagen als oplossingsvariabelen. De standaardstatussen zijn: volledig scherm, dempen, closedCaptioning, pictureInPicture, en inFocus.
 
 ### Eigenschappen van Volledig scherm
 

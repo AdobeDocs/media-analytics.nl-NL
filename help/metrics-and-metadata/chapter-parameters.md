@@ -1,11 +1,11 @@
 ---
 title: Hoofdstukparameters
-description: '"Leer over hoofdstukparameters voor implementatie, netwerk, en rapportering."'
+description: "Leer over hoofdstukparameters voor implementatie, netwerk, en rapportering."
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
 exl-id: 73da3e52-9498-478e-bfd7-8ff6c8e6bfc5
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 01afcf648f13af4d47b5fb41b7c9e89c2a89f590
+source-git-commit: 7e5ce452a9c96c4e34150ae0e06d73b0cff98741
 workflow-type: tm+mt
 source-wordcount: '1169'
 ht-degree: 2%
@@ -68,8 +68,8 @@ Beschrijving van tabelgegevens:
 ### Hoofdstuk
 
 |   Implementatie   | Netwerkparameters | Rapportage |
-| --- | --- |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK-sleutel:**<br/> Automatisch instellen </li> <li> **API-sleutel:**<br/> N.v.t. </li> <li> **Vereist:**<br/> Nee </li> <li> **Type:**<br/> string </li> <li> **Verzonden met:**<br/> Hoofdstuk sluiten </li> <li> **Min. SDK-versie:** 1,3 </li> <li> **Samplewaarde:**<br/> </li><li> **Omschrijving:**<br/> De automatisch gegenereerde id van het hoofdstuk.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.chapter.<br/>name) </li> <li> **Hartslag:**<br/> (s:stream:hoofdstuk_id) </li> </ul> | <ul> <li> **Beschikbaar:**<br/> Ja </li> <li> **Gereserveerde variabele:**<br/> eVar </li> <li> **Verlopen:**<br/> Op HIT </li> <li> **Rapportnaam:**<br/> Hoofdstuk </li> <li> **Contextgegevens:**<br/> (a.media.chapter.<br/>name) </li> <li> **Gegevensfeed:**<br/> videohoofdstuk </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.chapter.<br/>name) </li> <li> **XDM-veldpad:**<br/> media.mediaTimed.mediaChapter.<br/>hoofdstukAssetReference.@id </li> <li> **XDM-veldpad rapporteren:**<br/> mediaReporting.chapterDetails.chapterID </li> </ul> |
+| --- | --- |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <ul> <li> **SDK-sleutel:**<br/> Automatisch instellen </li> <li> **API-sleutel:**<br/> N.v.t. </li> <li> **Vereist:**<br/> Nee </li> <li> **Type:**<br/> string </li> <li> **Verzonden met:**<br/> Hoofdstuk sluiten </li> <li> **Min. SDK-versie:** 1,3 </li> <li> **Samplewaarde:**<br/> </li><li> **Omschrijving:**<br/> De automatisch gegenereerde id van het hoofdstuk.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.chapter.<br/>name) </li> <li> **Hartslag:**<br/> (s:stream:hoofdstuk_id) </li> </ul> | <ul> <li> **Beschikbaar:**<br/> Ja </li> <li> **Gereserveerde variabele:**<br/> eVar </li> <li> **Verlopen:**<br/> Op HIT </li> <li> **Rapportnaam:**<br/> Hoofdstuk </li> <li> **Contextgegevens:**<br/> (a.media.chapter.<br/>name) </li> <li> **Gegevensfeed:**<br/> videohoofdstuk </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.chapter.<br/>name) </li> <li> **XDM-veldpad:**<br/> media.mediaTimed.mediaChapter.<br/>hoofdstukAssetReference.@id </li> <li> **XDM-veldpad rapporteren:**<br/> mediaReporting.chapterDetails.ID </li> </ul> |
 
 ## Hoofdstukmetriek {#chapter-Metrics}
 
