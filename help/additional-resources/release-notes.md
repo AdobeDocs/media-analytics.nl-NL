@@ -3,16 +3,16 @@ title: Opmerkingen bij de release Adobe Analytics for Streaming Media
 description: Bekijk de opmerkingen bij de release van Adobe Analytics.
 feature: Release Notes
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
-source-git-commit: 24471de7f56212d29001ce23aea155fb56dbad8b
+source-git-commit: 5a7d1725333f9f47fb13469a0877402f4fff506f
 workflow-type: tm+mt
 source-wordcount: '854'
 ht-degree: 7%
 
 ---
 
-# Opmerkingen bij de release Adobe Analytics for Streaming Media (maart 2022)
+# Opmerkingen bij de release Adobe Analytics for Streaming Media (september 2022)
 
-**Laatste update**: 23 september 2022
+**Laatste update**: 22 september 2022
 
 ## Gerelateerde bronnen
 
