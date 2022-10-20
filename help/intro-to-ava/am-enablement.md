@@ -4,9 +4,9 @@ description: Leer hoe u handelingen van toepassingen koppelt aan gegevens voor m
 exl-id: c0d73bc2-4713-498a-8882-ff66c7f3dd50
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 3e996d243d060a6fd07d2ddbabf05e39eca40758
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '402'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 Met Adobe Audience Manager (AAM), een DMP-Platform (Data Management ), kunt u uw publieksgegevens samenbrengen, zodat u eenvoudig commercieel relevante informatie over sitebezoekers kunt verzamelen, verhandelbare segmenten kunt maken en doelgerichte reclame en inhoud aan het juiste publiek kunt leveren.
 
-Met AAM bent u niet gebonden aan een gegevensverkoper, -uitwisseling of -platform. Bovendien, is AAM volledig agnostisch wanneer het op de gegevensactiva van uw partners komt. Met toegang tot meerdere gegevensbronnen biedt AAM digitale uitgevers de mogelijkheid om een grote verscheidenheid aan gegevens van derden en onze persoonlijke datacommunicatie te gebruiken. Voor meer informatie over AAM, zie de AAM documentatie [de Documentatie van het Product van de Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/aam-home.html).
+Met AAM bent u niet gebonden aan een gegevensverkoper, -uitwisseling of -platform. Bovendien, is AAM volledig agnostisch wanneer het op de gegevensactiva van uw partners komt. Met toegang tot meerdere gegevensbronnen biedt AAM digitale uitgevers de mogelijkheid om een groot aantal gegevens van derden te gebruiken. Raadpleeg de AAM documentatie voor meer informatie over AAM [Productdocumentatie Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/aam-home.html).
 
-**VA naar AAM gegevensoverdracht -** Voor zowel video-inhoud als video-advertenties kunnen de gegevens en metagegevens die met behulp van (gereserveerde) oplossingsvariabelen zijn verzameld, automatisch naar AAM worden verzonden. De gegevensoverdracht is beschikbaar op alle platforms, inclusief desktopcomputers, mobiele apparaten en OTT. Om deze server-zijgegevensoverdracht toe te laten, moet u uit naar de Zorg van de Adobe Cliënt reiken en om deze voer vragen worden toegelaten.
+**VA naar AAM gegevensoverdracht -** Voor zowel video-inhoud als video-advertenties kunnen de metagegevens en metagegevens die met behulp van (gereserveerde) oplossingsvariabelen zijn verzameld, automatisch naar AAM worden verzonden. De gegevensoverdracht is beschikbaar op alle platforms, inclusief desktopcomputers, mobiele apparaten en OTT. Om deze server-zijgegevensoverdracht toe te laten, moet u uit naar de Zorg van de Adobe Cliënt reiken en om deze voer vragen worden toegelaten.
 
 >[!IMPORTANT]
 >
