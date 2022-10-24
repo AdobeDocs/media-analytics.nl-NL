@@ -1,13 +1,13 @@
 ---
-title: Meer informatie over vereisten voor streamingmedia
+title: Meer informatie over vereisten voor streaming media
 description: Aan de slag met Adobe Analytics Streaming Media. Leer wat u nodig hebt om Adobe Analytics for Streaming Media te implementeren.
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
-feature: '"Media Analytics, System Requirements"'
+feature: "Media Analytics, System Requirements"
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: e5d1d86a2534a8c0fac63948e37a14b1dc1e896e
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '394'
 ht-degree: 0%
 
 ---
@@ -18,13 +18,13 @@ ht-degree: 0%
 
 Voordat u begint met het volgen van de implementatie, moet u enkele beslissingen nemen over de implementatie die het meest zinvol is voor uw situatie:
 
-* **Media Analytics -** De nieuwste media SDK&#39;s (de standaard, aanbevolen implementatie) en/of de Media Collection API (RESTful) gebruiken
-* **Mijlpaal -** De oudere implementatie voor het bijhouden van Adobe
-* **API&#39;s voor het invoegen van gegevens -** Tekstspatiëring implementeren zonder gebruik te maken van Media SDK&#39;s
+* **Media Analytics -** De meest recente Media SDK&#39;s (de standaard, aanbevolen implementatie) en/of de Media Collection API (RESTful) gebruiken
+* **Mijlsteen -** De oudere implementatie voor het bijhouden van Adobe
+* **API&#39;s voor gegevensinvoeging -** Het uitvoeren van het volgen zonder Media SDKs te gebruiken
 
 ## Taken {#prereq-tasks}
 
-Voor een *Media Analytics* implementatie, zijn hier de taken u moet voltooien alvorens u begint:
+Voor een *Media Analytics* implementatie, hier zijn de taken u moet voltooien alvorens u begint:
 
 1. **Experience Cloud inschakelen.**
 
@@ -34,17 +34,13 @@ Voor een *Media Analytics* implementatie, zijn hier de taken u moet voltooien al
 
    ![](assets/mc_id_service_graphic.png)
 
-   De dienst van identiteitskaart kan verschillende oplossing-specifieke IDs (bijvoorbeeld, Analytics HULP) ook vervangen. Via de [Klanten-id&#39;s en verificatiestatus](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html)-functionaliteit kunt u met de id-service uw eigen klant-id&#39;s doorgeven aan de Experience Cloud. Houd er echter rekening mee dat de id-service alleen werkt met de oplossingen waarop u zich al hebt geabonneerd. Als u niet bent aangemeld voor toegang tot andere producten, biedt de id-service geen toegang.
+   De dienst van identiteitskaart kan verschillende oplossing-specifieke IDs (bijvoorbeeld, Analytics HULP) ook vervangen. Via de [Klant-id&#39;s en verificatiestatus](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html) functionaliteit, laat de dienst van identiteitskaart u in uw eigen klant IDs tot de Experience Cloud overgaan. Houd er echter rekening mee dat de id-service alleen werkt met de oplossingen waarop u zich al hebt geabonneerd. Als u niet bent aangemeld voor toegang tot andere producten, biedt de id-service geen toegang.
 
-   De id-service is een integraal onderdeel van vele huidige en toekomstige functies, verbeteringen en services voor Experience Cloud. De id-service biedt momenteel ondersteuning voor [Analytics,](https://www.adobe.com/marketing-cloud/web-analytics.html) [Audience Manager,](https://www.adobe.com/marketing-cloud/data-management-platform.html) en [Target.](https://www.adobe.com/marketing-cloud/testing-targeting.html)
+   De id-service is een integraal onderdeel van vele huidige en toekomstige functies, verbeteringen en services voor Experience Cloud. De id-service biedt momenteel ondersteuning voor [Analytics](https://www.adobe.com/marketing-cloud/web-analytics.html) [Audience Manager,](https://www.adobe.com/marketing-cloud/data-management-platform.html) en [Doel.](https://www.adobe.com/marketing-cloud/testing-targeting.html)
 
-   >[!IMPORTANT]
-   >
-   >Als u wilt deelnemen aan de Adobe Experience Cloud Device Co-op, is de Experience Cloud-id-service vereist.
+   Als u de id-service niet hebt geïmplementeerd, is het nu tijd om een migratiestrategie te overwegen. Voor meer informatie over het belang en de rol van de dienst van identiteitskaart, zie [Waarom de Identiteitsdienst op Uw Radar zou moeten zijn.](https://theblog.adobe.com/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)
 
-   Als u de id-service niet hebt geïmplementeerd, is het nu tijd om een migratiestrategie te overwegen. Voor meer informatie over het belang en de rol van de dienst van identiteitskaart, zie [Waarom de Dienst van de Identiteit op Uw Radar zou moeten zijn.](https://theblog.adobe.com/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)
-
-   Voor extra informatie over Experience Cloud ID, zie [Overzicht van identiteitskaart van de Experience Cloud,](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html) en [de Dienst van de Identiteit van Adobe Experience Platform](https://experienceleague.adobe.com/docs/id-service/using/home.html).
+   Voor meer informatie over de Experience Cloud-id raadpleegt u [Overzicht van Experience Cloud-id](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html) en [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html).
 
 1. **Adobe Analytics-rapporten inschakelen.**
 
