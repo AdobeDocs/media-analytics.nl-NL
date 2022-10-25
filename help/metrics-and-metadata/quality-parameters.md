@@ -3,9 +3,9 @@ title: Parameters voor kwaliteit
 description: Leer meer over de QoE-parameters (Quality of Experience) die worden gebruikt om metagegevens van hoge kwaliteit vast te leggen.
 uuid: 0d9fa764-edef-4178-8650-90c9a0852a57
 exl-id: aac178dc-5a46-4ce3-80e9-ec82cbfbfff5
-feature: Media Analytics, Variables
+feature: "Media Analytics, Variables"
 role: User, Admin, Data Engineer
-source-git-commit: 01afcf648f13af4d47b5fb41b7c9e89c2a89f590
+source-git-commit: 6c311eea2b748ba5409935208c048c43d7bbe39b
 workflow-type: tm+mt
 source-wordcount: '3320'
 ht-degree: 1%
@@ -184,8 +184,8 @@ Beschrijving van tabelgegevens:
 ### Druppels voor starten
 
 |   Implementatie   | Netwerkparameters | Rapportage |
-| --- | --- |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK-sleutel:**<br/> Automatisch instellen </li> <li> **API-sleutel:**<br/> N.v.t. </li> <li> **Vereist:**<br/> Nee </li> <li> **Type:**<br/> string </li> <li> **Verzonden met:**<br/> Media sluiten </li> <li> **Min. SDK-versie:** Alle </li> <li> **Samplewaarde:**<br/> TRUE </li><li> **Omschrijving:**<br/> Het aantal keren dat een gebruiker de video heeft afgesloten voordat deze wordt gestart. Deze metrische waarde wordt alleen op 1 ingesteld als er geen inhoud is gerenderd, ongeacht advertenties.  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.qoe.<br/>dropBeforeStart) </li> <li> **Hartslag:**<br/> (s:event:<br/>type=aa_start) </li> </ul> | <ul> <li> **Beschikbaar:**<br/> Ja </li> <li> **Gereserveerde variabele:**<br/> event </li> <li> **Rapportnaam:**<br/> Druppels voor starten </li> <li> **Contextgegevens:**<br/> (a.media.qoe.<br/>dropBeforeStart) </li> <li> **Gegevensfeed:**<br/> N.v.t. </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.qoe.<br/>dropBeforeStart) </li> <li> **XDM-veldpad:**<br/>  media.mediaTimed.primaryAssetViewDetails.<br/>qoe.dropBeforeStarts.value >= 1 => &quot;TRUE&quot; </li> <li> **XDM-veldpad rapporteren:**<br/> mediaReporting.qoeDataDetails.<br/>hasDroppedBeforeStart </li> </ul> |
+| --- | --- |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <ul> <li> **SDK-sleutel:**<br/> Automatisch instellen </li> <li> **API-sleutel:**<br/> N.v.t. </li> <li> **Vereist:**<br/> Nee </li> <li> **Type:**<br/> string </li> <li> **Verzonden met:**<br/> Media sluiten </li> <li> **Min. SDK-versie:** Alle </li> <li> **Samplewaarde:**<br/> TRUE </li><li> **Omschrijving:**<br/> Het aantal keren dat een gebruiker de video heeft afgesloten voordat deze wordt gestart. Deze metrische waarde wordt alleen op 1 ingesteld als er geen inhoud is gerenderd, ongeacht advertenties.  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.qoe.<br/>dropBeforeStart) </li> <li> **Hartslag:**<br/> (s:event:<br/>type=aa_start) </li> </ul> | <ul> <li> **Beschikbaar:**<br/> Ja </li> <li> **Gereserveerde variabele:**<br/> event </li> <li> **Rapportnaam:**<br/> Druppels voor starten </li> <li> **Contextgegevens:**<br/> (a.media.qoe.<br/>dropBeforeStart) </li> <li> **Gegevensfeed:**<br/> N.v.t. </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.qoe.<br/>dropBeforeStart) </li> <li> **XDM-veldpad:**<br/>  media.mediaTimed.primaryAssetViewDetails.<br/>qoe.dropBeforeStarts.value >= 1 => &quot;TRUE&quot; </li> <li> **XDM-veldpad rapporteren:**<br/> mediaReporting.qoeDataDetails.<br/>isDroppedBeforeStart </li> </ul> |
 
 
 
