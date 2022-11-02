@@ -3,11 +3,11 @@ title: Overzicht van media
 description: Gebruik het dashboard Overzicht van Media om gezamenlijke metingen weer te geven. Leer hoe u de mediaprestaties snel kunt controleren.
 uuid: bdbd998f-9b5e-40c9-a8ea-12dfa5acd35c
 exl-id: 4fe91372-da41-44c5-bea9-2bba762512ef
-feature: '"Grondbeginselen van media-analyse, rapporten en analyses"'
+feature: "Media Analytics, Reports & Analytics Basics"
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---

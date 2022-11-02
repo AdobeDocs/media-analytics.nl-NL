@@ -7,7 +7,7 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 1682a10a1d24e55854a77a8f44b43f92893adaa2
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '914'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ Geavanceerde klanten kunnen de mediapanelen in Analysis Workspace alleen gebruik
 1. In [Rapporten en analyses](https://my.omniture.com/login/) klikken **[!UICONTROL Admin > Report Suites].**
 1. Selecteer de rapportsuite(s) waar u mediadata verzamelt en klik op **[!UICONTROL Edit Settings > Media Management > Media Reporting].**
 
-   ![](assets/media-reporting.png){width=&quot;400px&quot;}
+   ![](assets/media-reporting.png){width="400px"}
 
 1. Op de **[!UICONTROL Media Reporting]** pagina, inschakelen **[!UICONTROL Media Core],** en optioneel inschakelen **[!UICONTROL Media Ads],** **[!UICONTROL Media Chapters],** en **[!UICONTROL Media Quality].**
 
