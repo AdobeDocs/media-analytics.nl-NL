@@ -3,7 +3,7 @@ title: Opmerkingen bij de release Adobe Analytics for Streaming Media
 description: Bekijk de opmerkingen bij de release van Adobe Analytics.
 feature: Release Notes
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
-source-git-commit: 5a7d1725333f9f47fb13469a0877402f4fff506f
+source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
 workflow-type: tm+mt
 source-wordcount: '854'
 ht-degree: 7%
@@ -54,8 +54,8 @@ Voor informatie over nieuwe eigenschappen, moeilijke situaties, en belangrijke i
 
 | Functie | Beschrijving | Doeldatum of Bijgewerkte datum |
 | ----------- | ---------- | -------------- |
-| Tijd van afspelen van media besteed | Adobe Streaming Media Playback Time Spent biedt een waardevol inzicht in de betrokkenheid van de kijker en stelt mediaorganisaties in staat diepere, meer granulaire inzichten af te leiden met de betrokkenheid van gebruikers van minuut tot minuut door middel van geavanceerde tijdbestede analyse met mogelijkheden voor het parseren van dagen. U kunt de hoeveelheid tijd waarnemen die het bekijken van uw media stromen op een specifiek punt in tijd besteedt. U kunt de afspeelduur splitsen op verschillende granulariteiten, zoals nieuwe granulariteiten van 5 minuten, 15 minuten en 30 minuten. [Meer informatie...](/help/media-reports/media-workspace-panels/media-playback-time-spent.md) | September 2021 |
-| Deelvenster Mediagelijktijdige viewer in de werkruimte Analyse | Begrijp waar de piekgelijktijdig voorkwam of waar drop-outs voorkwamen. Krijg waardevol inzicht in de kwaliteit van inhoud en viewerbetrokkenheid, en hulp bij het oplossen van problemen of het plannen voor volume en schaal. [Meer informatie...](/help/media-reports/media-workspace-panels/media-concurrent-viewers.md) <br><br>[Deelvenster Mediagelijktijdige viewers in de werkruimte Analytics (zelfstudie)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace.html?lang=en#analysis-workspace) | september 2020 <br><br><br>Januari 2021 |
+| Tijd van afspelen van media besteed | Adobe Streaming Media Playback Time Spent biedt een waardevol inzicht in de betrokkenheid van de kijker en stelt mediaorganisaties in staat diepere, meer granulaire inzichten af te leiden met de betrokkenheid van gebruikers van minuut tot minuut door middel van geavanceerde tijdbestede analyse met mogelijkheden voor het parseren van dagen. U kunt de hoeveelheid tijd waarnemen die het bekijken van uw media stromen op een specifiek punt in tijd besteedt. U kunt de afspeelduur splitsen op verschillende granulariteiten, zoals nieuwe granulariteiten van 5 minuten, 15 minuten en 30 minuten. [Meer informatie...](/help/reporting/workspace/media-playback-time-spent.md) | September 2021 |
+| Deelvenster Mediagelijktijdige viewer in de werkruimte Analyse | Begrijp waar de piekgelijktijdig voorkwam of waar drop-outs voorkwamen. Krijg waardevol inzicht in de kwaliteit van inhoud en viewerbetrokkenheid, en hulp bij het oplossen van problemen of het plannen voor volume en schaal. [Meer informatie...](/help/reporting/workspace/media-concurrent-viewers-overview.md) <br><br>[Deelvenster Mediagelijktijdige viewers in de werkruimte Analytics (zelfstudie)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace.html?lang=en#analysis-workspace) | september 2020 <br><br><br>Januari 2021 |
 | Ondersteunde apparaten en platforms | De extensie Media Launch met AEP SDK ondersteunt nu de volgende OTT-apparaten: <div><ul><li>Apple TV (tvOS)</li><li>Fire TV (Fire OS)</li><li>Android-tv</li></ul></div> | Juni 2020 |
 
 
