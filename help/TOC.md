@@ -5,10 +5,10 @@ user-guide-title: Adobe Analytics for Streaming Media
 breadcrumb-title: Handleiding voor media-analyse
 user-guide-description: Implementeer Adobe Analytics for Streaming Media. Bevat de Media-SDK en de Media Collection-API.
 sub-product: media analytics
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: 1d30415b0874c1e0f35045026cb341bab1833d98
 workflow-type: tm+mt
-source-wordcount: '846'
-ht-degree: 71%
+source-wordcount: '869'
+ht-degree: 69%
 
 ---
 
@@ -179,6 +179,8 @@ ht-degree: 71%
    + [Gedownloade inhoud offline volgen](use-cases/track-downloaded-content.md)
    + [Federated Analytics](use-cases/federated-analytics.md)
    + [Handlingstoepassing onderbreekt tijdens afspelen](use-cases/cookbook/app-interrupts.md)
+   + [Overzicht van oudere SDK-cookboeken](use-cases/cookbook/sdk-cookbook-overview.md)
+   + [Verouderd - Media Analytics Cookbook](use-cases/media-analytics-cookbook/media-analytics-cookbook.md)
    + [Attributie van mediastream](use-cases/media-analytics-cookbook/media-dimensions.md)
    + [Niet-actieve sessies hervatten](use-cases/cookbook/resuming-inactive.md)
    + [Roku-tracking in SceneGraph](use-cases/cookbook/sdk-track-scenegraph.md)
@@ -214,7 +216,10 @@ ht-degree: 71%
    + [Adobe Primetime en Streaming Media Analytics](legacy/intro-to-ava/implementation-paths/primetime-path.md)
    + [Adobe Audience Management Enablement](legacy/intro-to-ava/am-enablement.md)
    + [Implementatie van aangepaste koppeling](legacy/measurement-options/cl-in-aa/cl-impl-guide.md)
-   + [Legacy Mijlpaal-opvolging](legacy/measurement-options/mm-milestone-tracking/milestone-overview.md)
+   + Legacy Mijlpaal-opvolging {#legacy-milestone-tracking}
+      + [Legacy Mijlpaal-opvolging](legacy/measurement-options/mm-milestone-tracking/milestone-overview.md)
+      + [Migrate migreren naar VA](legacy/measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
+      + [Migrate migreren naar CL](legacy/measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
    + Validatie {#validation}
       + [Validatieoverzicht](legacy/validation/validation-overview.md)
       + [Test 1: Standaard afspelen](legacy/validation/test1-standard-playback.md)
@@ -227,4 +232,5 @@ ht-degree: 71%
    + [JavaScript 2.x instellen](legacy/media-sdk/setup/setup-javascript/set-up-js-2.md)
    + [Codevergelijking v1.x naar v2.x](legacy/va-1x-to-2x/code-comparison-1x-2x.md)
    + [API&#39;s 1x tot 2x bijhouden](legacy/va-1x-to-2x/1x-2x-api-change.md)
+   + [Verouderd - Intro op AVA](legacy/intro-to-ava/implementation-paths/implementation-paths.md)
    + [Pad aan clientzijde](legacy/intro-to-ava/implementation-paths/client-side-path.md)

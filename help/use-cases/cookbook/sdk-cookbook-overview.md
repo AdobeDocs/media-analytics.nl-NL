@@ -4,7 +4,7 @@ description: "Ontdek SDK-specifieke cookbook-onderwerpen "
 exl-id: 68230d3f-d1fd-4be3-ba67-689965d85771
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: 9ba64b68efec5dd8b52010ac1a13afd7703448d0
 workflow-type: tm+mt
 source-wordcount: '56'
 ht-degree: 32%
@@ -16,7 +16,7 @@ ht-degree: 32%
 
 PAGINA HERZIEN OF VERWIJDEREN - ONDERWERPEN NAAR DE HOOFDsectie GEBRUIKEN
 
-Gebruiksscenario&#39;s voor Media SDK en de Media Collection API: [Media Analytics Cookbook.](/help/media-analytics-cookbook/media-analytics-cookbook.md)
+Gebruiksscenario&#39;s voor Media SDK en de Media Collection API: [Media Analytics Cookbook.](/help/use-cases/media-analytics-cookbook/media-analytics-cookbook.md)
 
 ## Gebruiksscenario&#39;s van SDK voor media
 

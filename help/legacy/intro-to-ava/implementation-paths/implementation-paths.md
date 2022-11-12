@@ -4,7 +4,7 @@ description: Meer informatie over implementatiepaden voor Adobe Streaming Media,
 exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: 9ba64b68efec5dd8b52010ac1a13afd7703448d0
 workflow-type: tm+mt
 source-wordcount: '650'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Voor gegevensverzameling Adobe met de extensie Media Analytics is het volgende v
 
 Dit zijn integratie van alleen Media Analytics. U kunt kiezen voor de integratie van de SDK van de videorectie en/of de API voor mediagroep. Dit pad kan worden gebruikt voor elke videospeler, inclusief client- en/of OVP-spelers zoals Brightcove, Ooyala, het Platform enzovoort.
 
-Als Media Analytics uw voorgenomen weg is, zie [Implementatie van SDK voor media](/help/implementation/media-sdk/setup/setup-overview.md) en de [Media Collection API.](/help/media-collection-api/mc-api-overview.md)
+Als Media Analytics uw voorgenomen weg is, zie [Implementatie van SDK voor media](/help/legacy/setup/legacy-setup-overview.md) en de [Media Collection API.](/help/implementation/media-collection-api/mc-api-overview.md)
 
 >[!IMPORTANT]
 >Als klanten Media Analytics willen gebruiken, moeten ze ook Adobe Analytics gebruiken.
@@ -60,6 +60,6 @@ Primetime elimineert de ingewikkeldheid van het bereiken van, het monetiseren va
 * Geïntegreerde ondersteuning voor Nielsen DTVR (lineair) met ID3-metagegevens en DCR met CMS-metagegevens.
 
 
-TVSDK is al geïntegreerd met de Media Analtyics (Heartbeats) SDK, waardoor de implementatie voor elk ondersteund platform veel eenvoudiger en sneller verloopt. Volg dezelfde richtlijnen en voorwaarden als in [Client-kant](/help/intro-to-ava/implementation-paths/client-side-path.md) samen met de volgende documenten voor uw platform(s): [Primetime gebruikershandleiding.](https://helpx.adobe.com/nl/primetime/user-guide.html)
+TVSDK is al geïntegreerd met de Media Analtyics (Heartbeats) SDK, waardoor de implementatie voor elk ondersteund platform veel eenvoudiger en sneller verloopt. Volg dezelfde richtlijnen en voorwaarden als in [Client-kant](/help/legacy/intro-to-ava/implementation-paths/client-side-path.md) samen met de volgende documenten voor uw platform(s): [Primetime gebruikershandleiding.](https://helpx.adobe.com/nl/primetime/user-guide.html)
 
 Neem ook contact op met uw verkoper/accountmanager om te bespreken wat u moet doen om TVSDK te kopen.
