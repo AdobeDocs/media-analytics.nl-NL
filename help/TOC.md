@@ -5,9 +5,9 @@ user-guide-title: Adobe Analytics for Streaming Media
 breadcrumb-title: Handleiding voor media-analyse
 user-guide-description: Implementeer Adobe Analytics for Streaming Media. Bevat de Media-SDK en de Media Collection-API.
 sub-product: media analytics
-source-git-commit: 5ea67e55448ccdcfc098c6bead78ba23d0fe8e96
+source-git-commit: 4c68f5997a9d336e8c3545cdfb7b9cb955602b69
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '865'
 ht-degree: 70%
 
 ---
@@ -54,10 +54,6 @@ ht-degree: 70%
          + [Time-outvoorwaarden](implementation/media-collection-api/mc-api-impl/mc-api-timeout.md)
          + [De volgorde van gebeurtenissen bepalen](implementation/media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
          + [Gebeurtenissen in wachtrij plaatsen wanneer de reactie op sessies traag is](implementation/media-collection-api/mc-api-impl/mc-api-queuing.md)
-      + Tijdlijnen voor mediatracking {#mc-api-timelines}
-         + [Tijdlijn 1 - Weergeven tot einde van content](implementation/media-collection-api/mc-api-timelines/mc-api-timeline-1.md)
-         + [Tijdlijn 2 - Gebruiker verlaat sessie](implementation/media-collection-api/mc-api-timelines/mc-api-timeline-2.md)
-         + [Tijdlijn 3 - Hoofdstukken](implementation/media-collection-api/mc-api-timelines/mc-api-timeline-3.md)
    + Variabelen {#variables}
       + [Streaming mediaparameters](implementation/variables/audio-video-parameters.md)
       + [Advertentieparameters](implementation/variables/ad-parameters.md)
@@ -174,6 +170,7 @@ ht-degree: 70%
    + [Gegevens van gelijktijdige viewers ophalen via API](reporting/reports-and-analytics/get-concurrent-json20.md)
    + [Gegevens van afspeeltijd van media ophalen via API](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
 + Gevallen gebruiken {#media-use-cases}
+   + [Gebruiksscenario&#39;s van SDK voor media](use-cases/cookbook/sdk-cookbook-overview.md)
    + Player-status bijhouden {#player-state-tracking}
       + [Overzicht](use-cases/player-state-tracking/player-state-overview.md)
       + [Standaard en aangepaste statussen](use-cases/player-state-tracking/standard-and-custom-states.md)
@@ -183,7 +180,6 @@ ht-degree: 70%
    + [Gedownloade inhoud offline volgen](use-cases/track-downloaded-content.md)
    + [Federated Analytics](use-cases/federated-analytics.md)
    + [Handlingstoepassing onderbreekt tijdens afspelen](use-cases/cookbook/app-interrupts.md)
-   + [Gebruiksscenario&#39;s van SDK voor media](use-cases/cookbook/sdk-cookbook-overview.md)
    + [Attributie van mediastream](use-cases/media-analytics-cookbook/media-dimensions.md)
    + [Niet-actieve sessies hervatten](use-cases/cookbook/resuming-inactive.md)
    + [Roku-tracking in SceneGraph](use-cases/cookbook/sdk-track-scenegraph.md)
