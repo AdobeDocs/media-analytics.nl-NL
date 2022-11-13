@@ -4,7 +4,7 @@ description: Informatie over gevallen van gebruik van streaming media
 exl-id: 68230d3f-d1fd-4be3-ba67-689965d85771
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 5ea67e55448ccdcfc098c6bead78ba23d0fe8e96
+source-git-commit: c569ea265f6e467b19d58a870ac7b24b8bf355b1
 workflow-type: tm+mt
 source-wordcount: '78'
 ht-degree: 47%
@@ -14,7 +14,7 @@ ht-degree: 47%
 # Gebruiksscenario&#39;s voor streaming media {#media-sdk-use-cases}
 
 * [Player-status bijhouden](/help/use-cases/player-state-tracking/player-state-overview.md)
-* [Gedownloade inhoud offline volgen](using/media-use-cases/track-downloaded-content.html)
+* [Gedownloade inhoud offline volgen](/help/use-cases/track-downloaded-content.md)
 * [Handlingstoepassing onderbreekt tijdens afspelen](/help/use-cases/cookbook/app-interrupts.md)
 * [Tussenruimten tussen advertenties verwerken](/help/use-cases/cookbook/fix-ad-play-ad.md)
 * [Inactieve sessies hervatten](/help/use-cases/cookbook/resuming-inactive.md)
