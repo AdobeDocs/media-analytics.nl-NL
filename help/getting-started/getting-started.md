@@ -4,13 +4,13 @@ description: Ga aan de slag met Adobe Analytics for Streaming Media.
 uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+exl-id: 660aa29a-2a3d-4a4f-acd6-471551d1047b
+source-git-commit: 8b939da2374acb5d573a553c848ba880345e64b5
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '439'
 ht-degree: 1%
 
 ---
-
 
 # Aan de slag {#getting-started}
 
@@ -47,10 +47,6 @@ De **Media Collection-API&#39;s** kunt u de implementatie van de mediacontrole 
 Voor informatie over het gebruiken van de Inzameling APIs van Media, zie [Steaming Media API-documentatie](/help/implementation/media-collection-api/mc-api-overview.md).
 
 ## Adobe-extensies {#adobe-extensions}
-
->[!NOTE]
->
->INTRO NODIG VOOR DE EXTENSIES
 
 * De [**Adobe Media Analytics voor audio- en video-extensie**](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=en) (Media Analytics-extensie) is vereist voor iOS- en tvOS-implementaties. Het verstrekt de functionaliteit voor het toevoegen van de tracker instantie aan een markeringsplaats of een project. De extensie MA vereist ook de extensie Analytics en de extensie Experience Cloud ID.
 
