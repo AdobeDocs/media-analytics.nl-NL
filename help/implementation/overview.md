@@ -4,19 +4,19 @@ description: Leer meer over de implementatiepaden voor Streaming Media.
 uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
+source-git-commit: 85e1d5223cec7168bbf592d941e6a5aece249459
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 0%
 
 ---
 
-
 # Streaming media implementeren voor Adobe Analytics
 
 Het implementatiepad dat u volgt, is afhankelijk van de vraag of u de ingebouwde logica van de Media SDK&#39;s (de standaard, aanbevolen implementatie) wilt gebruiken of dat u ervoor kiest om de simple-nog krachtige en aanpasbare Media Collection API&#39;s (RESTful) te gebruiken.
 
-Kies het implementatiepad afhankelijk van de ondersteunde platforms. Sommige spelers worden niet ondersteund door de SDK&#39;s van Media of Adobe Experience Platform Media SDK en de API&#39;s voor Media Collection bieden een manier om deze spelers te ondersteunen. Voor informatie over ondersteunde apparaten raadpleegt u [Ondersteunde apparaten en platforms](/help/getting-started/supported-devices.md).
+Kies het implementatiepad afhankelijk van de ondersteunde platforms. Sommige spelers worden niet ondersteund door de Media SDK&#39;s of de Adobe Experience Platform Media Extensions. Met de API&#39;s voor mediaszameling kunt u deze spelers ondersteunen. Voor informatie over ondersteunde apparaten raadpleegt u [Ondersteunde apparaten en platforms](/help/getting-started/supported-devices.md).
 
 ![Mediastroom](media-sdk/assets/choose-media-flow2.png)
 

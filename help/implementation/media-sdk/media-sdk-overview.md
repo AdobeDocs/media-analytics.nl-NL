@@ -1,15 +1,15 @@
 ---
 title: Hoe te om Adobe het stromen Media SDKs uit te voeren
-description: Leer hoe u Adobe Analytics for Streaming Media implementeert met de Media SDK's.
+description: Leer hoe u Adobe Analytics voor Streaming Media implementeert met de SDK's van Media.
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+exl-id: dc1b9fe0-6c75-4f93-a558-a3f3186bcf22
+source-git-commit: 85e1d5223cec7168bbf592d941e6a5aece249459
 workflow-type: tm+mt
 source-wordcount: '202'
 ht-degree: 0%
 
 ---
-
 
 # Overzicht SDK van media {#implementation-overview}
 
@@ -22,7 +22,7 @@ Implementeer de SDK&#39;s voor Streaming Media in uw videoverslagframework en vi
 | Platform | Versie |
 |:----:|:----|
 | <img src="assets/javascript-icon.png"> | [Media SDK voor JavaScript v3.x](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) |
-| <img src="assets/javascript-icon.png"> | [Adobe Media Analytics-extensie met tags (gegevensverzameling) voor JavaScript v3.x](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) |
+| <img src="assets/javascript-icon.png"> | [Extensie Adobe Media Analytics met tags (gegevensverzameling) voor JavaScript v3.x](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) |
 
 ### Mobiele implementatie
 

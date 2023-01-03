@@ -1,13 +1,13 @@
 ---
 title: Aan de slag
-description: Ga aan de slag met Adobe Analytics for Streaming Media.
+description: Ga aan de slag met Adobe Analytics voor Streaming Media.
 uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 660aa29a-2a3d-4a4f-acd6-471551d1047b
-source-git-commit: 8b939da2374acb5d573a553c848ba880345e64b5
+source-git-commit: b022bed6b7be0cc97caaaf6b7bbc42474a57b400
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '298'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ De Adobe Analytics Streaming Media-oplossing is beschikbaar voor de volgende med
 * Boven aan boven
 * Een aangesloten apparaat dat kan worden gebruikt voor streaming media of voor integratie van server naar server
 
-Zie voor meer informatie [Ondersteunde apparaten en Platforms](#_Supported_devices_and).
+Zie voor meer informatie [Ondersteunde apparaten en Platforms](/help/getting-started/supported-devices.md).
 
 >[!IMPORTANT]
 >
@@ -45,11 +45,3 @@ Voor informatie over het downloaden en installeren van Media SDKs, zie [SDK&#39;
 De **Media Collection-API&#39;s** kunt u de implementatie van de mediacontrole aanpassen. Gebruik de Inzameling APIs van Media om Adobe direct te roepen die u bijna om het even welke actie kunt uitvoeren gebruikend SDKs en meer. Pas uw gegevensverzameling aan om rapporten te maken die belangrijke vragen over uw streaming mediagegevens verkennen, begrijpen of beantwoorden.
 
 Voor informatie over het gebruiken van de Inzameling APIs van Media, zie [Steaming Media API-documentatie](/help/implementation/media-collection-api/mc-api-overview.md).
-
-## Adobe-extensies {#adobe-extensions}
-
-* De [**Adobe Media Analytics voor audio- en video-extensie**](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=en) (Media Analytics-extensie) is vereist voor iOS- en tvOS-implementaties. Het verstrekt de functionaliteit voor het toevoegen van de tracker instantie aan een markeringsplaats of een project. De extensie MA vereist ook de extensie Analytics en de extensie Experience Cloud ID.
-
-* [Analyse Extension v1.6 of hoger](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=en)—Met deze extensie kunt u de Javascript-bibliotheek van de Adobe Experience Platform Web SDK laden om gegevens naar Adobe-oplossingen te verzenden.
-
-* [Experience Cloud ID-extensie](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=en)—Deze extensie implementeert de Experience Cloud ID Service, die bezoekers identificeert voor alle Experience Cloud-oplossingen. De Experience Cloud ID Service is een personalisatie-uitbreiding in Adobe Experience Platform.

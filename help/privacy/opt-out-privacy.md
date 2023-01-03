@@ -5,9 +5,9 @@ uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: d2d0f34c64ecb2a900412d5959449c8c36328730
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '362'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 U kunt bepalen of traceringsactiviteit is toegestaan op een specifiek apparaat:
 
-* **Mobiele apps -** De VA-bibliotheek eerbiedigt de `AdobeMobile` de privacy- en opt-outinstellingen van de bibliotheek. Als u niet wilt bijhouden, moet u de opdracht `AdobeMobile` bibliotheek. Voor meer informatie over de `AdobeMobile` de optie om te weigeren en privacy-instellingen van de bibliotheek, raadpleegt u [Instellingen voor Weigeren en Privacy](https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html).
+* **Mobiele apps -** De extensies Media respecteren de privacyinstellingen in Gegevensverzameling. Als u het bijhouden wilt uitschakelen, moet u de privacy instellen op [Weigeren in tags](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/#create-a-mobile-property) of [Privacy-status bijwerken in Mobile SDK](https://developer.adobe.com/client-sdks/documentation/privacy-and-gdpr/#getprivacystatus).
 * **JavaScript-/browsertoepassingen -** De VA-bibliotheek eerbiedigt de `VisitorAPI` privacy- en optout-instellingen. Als u het bijhouden wilt uitschakelen, moet u zich afmelden bij de service voor de Bezoeker-API. Voor meer informatie over optout en privacy raadpleegt u [Adobe Experience Platform Identity Service.](https://experienceleague.adobe.com/docs/id-service/using/home.html).
 * **OTT-apps (Chromecast, Roku) -** De OTT SDK&#39;s bieden API&#39;s die geschikt zijn voor algemene gegevensbeschermingsregels (General Data Protection Regulation, GDPR), waarmee u de volgende instellingen kunt instellen `opt` statusvlaggen voor gegevensinzameling en transmissie, en om lokaal opgeslagen identiteiten terug te winnen.
 

@@ -1,13 +1,13 @@
 ---
-title: Overzicht van Adobe Analytics for Streaming Media
+title: Overzicht van Adobe Analytics voor Streaming Media
 description: Gebruik de Analyse van de Media van de Streaming om krachtig inzicht voor inhoud, audio, en reclame te krijgen.
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: b022bed6b7be0cc97caaaf6b7bbc42474a57b400
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '531'
 ht-degree: 9%
 
 ---
@@ -24,7 +24,7 @@ U kunt vitale leveringsmetriek met betrekking tot de Kwaliteit van Ervaring (QoE
 
 ## Hoe werkt het
 
-Gegevens voor het bijhouden van streaming media worden verzameld bij een speler met behulp van de Media SDK&#39;s, de Media Collection API&#39;s of de Media Extensions (met tags). Alle korrelgegevens (tot 10 seconden) worden verzonden naar de Dienst van de Analyse van Media die de gegevens voor elke individuele playbackzitting verzamelt en verwerkt. Nadat een afspeelsessie is beëindigd, worden de berekende gegevens voor bijhouden naar Adobe Analytics verzonden voor opslag en rapportage. Met Adobe Customer Journey Analytics (CJA) implementaties, kunnen de gegevens naar CJA worden verzonden gebruikend de Verbinding van Gegevens van de Analyse (ADC) zodat de klanten CJA als rapporteringshulpmiddel konden gebruiken.
+Gegevens voor het bijhouden van streaming media worden verzameld bij een speler met behulp van de Media SDK&#39;s of de Adobe Experience Platform Media Extensions en de Media Collection API&#39;s. Alle korrelgegevens (tot 10 seconden) worden verzonden naar de Dienst van de Analyse van Media die de gegevens voor elke individuele playbackzitting verzamelt en verwerkt. Nadat een afspeelsessie is beëindigd, worden de berekende gegevens voor bijhouden naar Adobe Analytics verzonden voor opslag en rapportage. Met Adobe Customer Journey Analytics (CJA) implementaties, kunnen de gegevens naar CJA worden verzonden gebruikend de Verbinding van Gegevens van de Analyse (ADC) zodat de klanten CJA als rapporteringshulpmiddel konden gebruiken.
 
 <!-- ![streaming media process](./assets/streaming-process1.png) -->
 
@@ -34,7 +34,7 @@ Gegevens voor het bijhouden van streaming media worden verzameld bij een speler 
 
 ## Functies
 
-De voordelen van Adobe Analytics for Streaming Media zijn onder andere realtime bewaking, gedetailleerde analyse, inzichten in actie en mogelijkheden voor monetisering.
+Adobe-analysemogelijkheden voor de voordelen van streaming media zijn onder andere realtime bewaking, gedetailleerde analyse, inzichten die in actie kunnen worden gebracht en monetiseringsmogelijkheden.
 
 * **Analyse in realtime**: Maak real-time, uitvoerbare besluiten gebruikend zeer belangrijke prestatiesmetriek zoals media begin, over veelvoudige kanalen.
 

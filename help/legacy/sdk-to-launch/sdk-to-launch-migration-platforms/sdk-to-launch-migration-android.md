@@ -4,7 +4,7 @@ description: Leer hoe u van de SDK van Media naar Starten voor Android migreert.
 exl-id: 26764835-4781-417b-a6c0-ea6ae78d76ae
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: fb09280ae6fb9f0ab7e67bd6ae134e6e26f88ec8
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 0%
@@ -45,7 +45,7 @@ De uitbreiding van Media zal de gevormde parameters voor het volgen gebruiken.
 
 ![](assets/launch_config_mobile.png)
 
-[Mobiele extensies gebruiken](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
+[Mobiele extensies gebruiken](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)
 
 ## Beheer maken
 
@@ -87,7 +87,7 @@ MediaHeartbeatDelegate delegate = new MediaHeartbeatDelegate() {
 
 ### Extensie starten
 
-[Referentie voor media-API - Een mediabeheer maken](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#create-a-media-tracker)
+[Referentie voor media-API - Een mediabeheer maken](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createtracker)
 
 Voordat u Beheer maakt, moet u de media-extensie en afhankelijke extensies registreren bij de mobiele kern.
 
@@ -138,12 +138,12 @@ In de standalone SDK van Media, gaat u een afgevaardigde voorwerp over dat uitvo
 De huidige afspeelkop van de speler moet in de implementatie worden bijgewerkt door de
 `updateCurrentPlayhead` door de verklikker aan het licht gebrachte methode. Voor het nauwkeurig volgen zou u deze methode minstens eens per seconde moeten roepen.
 
-[Referentie voor media-API: huidige speler bijwerken](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updatecurrentplayhead)
+[Referentie voor media-API: huidige speler bijwerken](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#updatecurrentplayhead)
 
 De implementatie moet de QoE-informatie bijwerken door de `updateQoEObject`
 door de verklikker aan het licht gebrachte methode. We verwachten dat deze methode wordt aangeroepen wanneer de kwaliteitswaarden veranderen.
 
-[Referentie voor media-API - QoE-object bijwerken](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updateqoeobject)
+[Referentie voor media-API - QoE-object bijwerken](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createqoeobject)
 
 ## Standaardmedia/metagegevens doorgeven
 
