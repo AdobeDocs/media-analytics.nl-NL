@@ -5,10 +5,10 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a9366d5bf590f16b193c7e2905cadca0f7afd636
+source-git-commit: d1e7a74a03c68e08987f03a295edc69989d9a4c6
 workflow-type: tm+mt
 source-wordcount: '385'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -32,7 +32,7 @@ Tags in Adobe Experience Platform zijn de volgende generatie mogelijkheden voor 
 
 | Ondersteund Platform | Versie |  API&#39;s   |  Documentatie  |  Monster  |
 |:---:|---|---|---|---|
-| ![JavaScript-pictogram](assets/javascript-icon.png) | Web - [Media SDK voor JS v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [JavaScript API-naslaggids](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [Analytics implementeren met JavaScript](/help/implementation/media-sdk/setup/web-implementation.md) | [Media SDK voor JS v3.0.2-voorbeeld](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
+| ![JavaScript-pictogram](assets/javascript-icon.png) | Web - [Media SDK voor JS v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [JavaScript API-naslaggids](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [Analyses installeren met JavaScript](/help/implementation/media-sdk/setup/web-implementation.md) | [Media SDK voor JS v3.0.2-voorbeeld](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
 | ![JavaScript-pictogram](assets/javascript-icon.png) | Web - Media-extensie |  | [Adobe Media Analytics (3.x SDK) voor audio- en videoextensie — gebruik van Tags (gegevensverzameling)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=en) | [Voorbeeld van Adobe Media-analyse (3.x SDK) voor audio- en video-extensie](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
 
 ### Mobiele implementatie {#get-mobile-extension}

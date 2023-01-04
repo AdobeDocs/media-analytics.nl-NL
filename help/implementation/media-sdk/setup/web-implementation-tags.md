@@ -3,14 +3,15 @@ title: Een webimplementatie instellen voor Analytics voor Streaming Media
 description: Leer hoe u Adobe Streaming Media voor webapps implementeert.
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a9366d5bf590f16b193c7e2905cadca0f7afd636
+exl-id: 05c68b0a-f387-4bcc-8792-f6b1caa40706
+source-git-commit: a6dba33839bba976b67a9b1e9669fce266d1cabd
 workflow-type: tm+mt
 source-wordcount: '121'
 ht-degree: 0%
 
 ---
 
-# Analyses implementeren met de extensie Media Analytics
+# Analyses installeren met de extensie Media Analytics
 
 U kunt de uitbreiding van Analytics van Adobe Media gebruiken om Analytics uit te voeren. De uitbreiding Media Analytics voegt de kernJavaScript Media SDK (Media 3.x SDK) toe. Deze extensie biedt de functionaliteit voor het toevoegen van de instantie Media tracker aan een site of project waarvoor tags zijn ingeschakeld.
 
