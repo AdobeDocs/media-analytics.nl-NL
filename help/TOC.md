@@ -5,10 +5,10 @@ user-guide-title: Adobe Analytics for Streaming Media
 breadcrumb-title: Handleiding voor media-analyse
 user-guide-description: Implementeer Adobe Analytics for Streaming Media. Bevat de Media-SDK en de Media Collection-API.
 sub-product: media analytics
-source-git-commit: d1e7a74a03c68e08987f03a295edc69989d9a4c6
+source-git-commit: f25a661c9ad4af1aa1cd97854c26fda44cc6816e
 workflow-type: tm+mt
-source-wordcount: '887'
-ht-degree: 69%
+source-wordcount: '894'
+ht-degree: 68%
 
 ---
 
@@ -23,7 +23,13 @@ ht-degree: 69%
    + [SDK&#39;s, bibliotheken en extensies](getting-started/download-sdks.md)
    + [Ondersteunde apparaten](getting-started/supported-devices.md)
    + [Vereisten](getting-started/prereqs.md)
-   + [Einde van ondersteuning](additional-resources/end-of-support-faqs.md)
+   + Einde van ondersteuning {#end-of-support}
+      + [Media Analytics Mobile SDK End of Support](additional-resources/end-of-support-faqs.md)
+      + Verouderd - Media SDK om migratie te starten {#sdk-to-launch}
+      + [Overzicht](legacy/sdk-to-launch/sdk-to-launch-migration.md)
+      + [Android - SDK van media om te starten](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
+      + [iOS - SDK van media om te starten](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
+      + [JavaScript - SDK van media om te starten](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
    + [Documentatie voor streamingmedia](getting-started/implementation-documentation.md)
 + Implementatie {#implementation}
    + [Overzicht van implementatie](implementation/overview.md)
@@ -160,11 +166,6 @@ ht-degree: 69%
       + [iOS instellen](legacy/media-sdk/setup/set-up-ios.md)
       + JavaScript instellen {#setup-javascript}
          + [JavaScript 3.x instellen](legacy/media-sdk/setup/setup-javascript/set-up-js-3.md)
-   + Verouderd - Media SDK om migratie te starten {#sdk-to-launch}
-      + [Overzicht](legacy/sdk-to-launch/sdk-to-launch-migration.md)
-      + [Android - SDK van media om te starten](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
-      + [iOS - SDK van media om te starten](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
-      + [JavaScript - SDK van media om te starten](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
    + [Informatie over hartslagmeting](legacy/heartbeat-measurement.md)
    + [Adobe Primetime en Streaming Media Analytics](legacy/intro-to-ava/implementation-paths/primetime-path.md)
    + [Adobe Audience Management Enablement](legacy/intro-to-ava/am-enablement.md)
