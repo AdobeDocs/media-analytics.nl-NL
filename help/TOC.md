@@ -5,7 +5,7 @@ user-guide-title: Adobe Analytics for Streaming Media
 breadcrumb-title: Handleiding voor media-analyse
 user-guide-description: Implementeer Adobe Analytics for Streaming Media. Bevat de Media-SDK en de Media Collection-API.
 sub-product: media analytics
-source-git-commit: f25a661c9ad4af1aa1cd97854c26fda44cc6816e
+source-git-commit: 97d5d1df35bb282cac803500e1ddd72d654aef6e
 workflow-type: tm+mt
 source-wordcount: '894'
 ht-degree: 68%
@@ -26,10 +26,10 @@ ht-degree: 68%
    + Einde van ondersteuning {#end-of-support}
       + [Media Analytics Mobile SDK End of Support](additional-resources/end-of-support-faqs.md)
       + Verouderd - Media SDK om migratie te starten {#sdk-to-launch}
-      + [Overzicht](legacy/sdk-to-launch/sdk-to-launch-migration.md)
-      + [Android - SDK van media om te starten](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
-      + [iOS - SDK van media om te starten](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
-      + [JavaScript - SDK van media om te starten](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
+         + [Overzicht](legacy/sdk-to-launch/sdk-to-launch-migration.md)
+         + [Android - SDK van media om te starten](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
+         + [iOS - SDK van media om te starten](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
+         + [JavaScript - SDK van media om te starten](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
    + [Documentatie voor streamingmedia](getting-started/implementation-documentation.md)
 + Implementatie {#implementation}
    + [Overzicht van implementatie](implementation/overview.md)
