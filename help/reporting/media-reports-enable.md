@@ -5,10 +5,10 @@ uuid: d306068d-a308-4b6e-8a72-742dda0de428
 exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: e0a8d2d16a746a717d54bdb171f66f3a7d112251
 workflow-type: tm+mt
-source-wordcount: '914'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 Elke rapportsuite die mediametriek verzamelt, moet worden geconfigureerd voordat mediagegevens worden verzonden.
 
-Geavanceerde klanten kunnen de mediapanelen in Analysis Workspace alleen gebruiken nadat Media Core is ingeschakeld en tracking is ingeschakeld voor [Kwaliteit van de ervaring](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-qos/track-qos-overview.html?lang=en).
+Geavanceerde klanten kunnen de mediapanelen in Analysis Workspace alleen gebruiken nadat Media Core is ingeschakeld en tracking is ingeschakeld voor [Kwaliteit van de ervaring](/help/use-cases/track-qos/track-qos-overview.md).
 
 >[!TIP]
 >
