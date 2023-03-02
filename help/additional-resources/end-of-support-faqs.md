@@ -4,24 +4,23 @@ description: Dit onderwerp omvat FAQs over het eind van steun voor Media Analyti
 exl-id: 9601ec17-8421-49d0-9d81-1cfa5e8f37cf
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b022bed6b7be0cc97caaaf6b7bbc42474a57b400
+source-git-commit: b955b20495a504020a214c3a9e32b676701ee4cc
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '617'
 ht-degree: 0%
 
 ---
 
 # Veelgestelde vragen over einde ondersteuning voor Media Analytics Mobile SDK
 
-Met het einde van de ondersteuning voor versie 4 Mobile SDK&#39;s op 31 augustus 2021 beëindigt Adobe ook de ondersteuning voor de Media Analytics Mobile SDK&#39;s voor iOS en Android. Na 31 augustus 2021 biedt Adobe geen oplossingen, updates voor het besturingssysteem of ondersteuning voor de Media Analytics Mobile SDK.  Houd er tijdens het migratieproces naar deze nieuwe SDK&#39;s voor Experience Platforms rekening mee dat de [Media Analytics-extensies](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) moet worden geïmplementeerd om Adobe Analytics voor Streaming Media in te schakelen.
+Met het einde van de ondersteuning voor versie 4 Mobile SDK&#39;s op 31 augustus 2021 beëindigde Adobe ook de ondersteuning voor de Media Analytics Mobile SDK&#39;s voor iOS en Android. (Dit omvat niet de Media Analytics SDK voor Web (JS) en OTT platforms zoals Chromecast en Roku, die nog worden gesteund.)
 
->[!NOTE]
->Adobe Experience Platform Launch is omgedoopt tot een reeks technologieën voor gegevensverzameling in Experience Platform. Diverse terminologische wijzigingen zijn als gevolg hiervan in de productdocumentatie doorgevoerd. Raadpleeg het volgende [document](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en) voor een geconsolideerde referentie van de terminologische wijzigingen.
+Dit betekent dat Adobe niet langer oplossingen, updates met betrekking tot het besturingssysteem of ondersteuning voor de Media Analytics Mobile SDK biedt. Houd er bij het migreren naar de nieuwe Experience Platform-SDK&#39;s rekening mee dat de [Media Analytics-extensies](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) moet worden geïmplementeerd om Adobe Analytics voor Streaming Media in te schakelen.
 
 
 ## Top 5 van dingen die u moet weten
 
-1. Mobiele v4-SDK&#39;s worden na 31 augustus 2021 niet meer ondersteund. Migreer naar de Adobe Experience Platform (AEP) Mobile SDK&#39;s voor iOS en Android. Zie voor meer informatie [Versie 4 Veelgestelde vragen over de end-of-support van mobiele SDK&#39;s](https://developer.adobe.com/client-sdks/documentation/v4-end-of-life-faq/).
+1. Mobiele v4-SDK&#39;s worden niet meer ondersteund vanaf 31 augustus 2021. Migreer naar de Adobe Experience Platform (AEP) Mobile SDK&#39;s voor iOS en Android. Zie voor meer informatie [Versie 4 Veelgestelde vragen over de end-of-support van mobiele SDK&#39;s](https://developer.adobe.com/client-sdks/documentation/v4-end-of-life-faq/).
 
 1. Voor analyse voor de implementatie van Streaming Media is de AEP Mobile SDK en het gebruik van de extensies Analytics en Media Analytics vereist. Vanaf 1 september 2021 moet u de nieuwe AEP Mobile SDK&#39;s en uitbreidingen gebruiken.  De uitbreidingen van de Analytics van media worden gevormd gebruikend de Markeringen van Adobe (gegevensinzameling). Zie voor meer informatie [Migreren van zelfstandige media SDK naar Adobe Launch](/help/legacy/sdk-to-launch/sdk-to-launch-migration.md)
 
@@ -29,9 +28,7 @@ Met het einde van de ondersteuning voor versie 4 Mobile SDK&#39;s op 31 augustus
 
 1. De SDK&#39;s van Roku en Chromecast blijven beschikbaar voor Analytics voor klanten van Streaming Media. De SDK&#39;s van Roku en Chromecast zullen verder worden verbeterd en ondersteund als zelfstandige SDK&#39;s. Als u JS SDK voor de Analytics van Media gebruikt, kunt u de stand-alone SDK blijven gebruiken of de uitbreiding van de Analyse van Media toelaten gebruikend de Inzameling van Gegevens van Adobe (vroeger de Lancering van de Adobe).
 
-1. Vóór 1 september 2021 kan Adobe naar eigen goeddunken nieuwe correcties voor problemen met een hoog technisch effect of blootstelling van ondernemingen ontwikkelen. Op basis van de input van de klant bepaalt Adobe de mate van impact en blootstelling en de daaruit voortvloeiende activiteiten.
-
-Neem contact op met uw Adobe Customer Success Manager als u vragen hebt.
+Neem contact op met uw Adobe-accountteam als u vragen hebt.
 
 ## Veelgestelde vragen
 
