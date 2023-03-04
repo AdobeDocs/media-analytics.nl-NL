@@ -4,9 +4,9 @@ description: Meer informatie over implementatiepaden voor Adobe Streaming Media,
 exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 9ba64b68efec5dd8b52010ac1a13afd7703448d0
+source-git-commit: 0c1382c9c4f1488fba81575097d154301a9b8e70
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '651'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 **DEZE INHOUD IS VERPLAATST NAAR HET HUIDIGE BESTAND MET IMPLEMENTATIEPADEN**
 
-Voor elk implementatiepad moeten klanten contact opnemen met hun verkoper/accountmanager om een nieuwe verkooporder te ondertekenen omdat de Streaming Media Analytics een unieke SKU heeft en wijzigingen doorvoert van een prijsmodel dat is gebaseerd op serveraanroepen naar een model dat is gebaseerd op videostreams.
+Voor elk implementatiepad moeten klanten contact opnemen met hun Adobe-/verkoopaccountteam om een nieuwe verkooporder te ondertekenen omdat de Streaming Media Analytics een unieke SKU heeft en wijzigingen doorvoert van een prijsmodel op basis van serveraanroepen naar een model op basis van videostreams.
 
 ## Adobe Experience Platform Data Collection met de uitbreiding van de Analytics van Adobe Media
 

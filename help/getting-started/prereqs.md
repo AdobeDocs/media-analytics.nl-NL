@@ -1,13 +1,13 @@
 ---
 title: Meer informatie over vereisten voor streaming media
-description: Aan de slag met Adobe Analytics Streaming Media. Leer wat u nodig hebt om Adobe Analytics for Streaming Media te implementeren.
+description: Aan de slag met Adobe Analytics Streaming Media. Leer wat u nodig hebt om Adobe Analytics voor Streaming Media te implementeren.
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: "Media Analytics, System Requirements"
 role: User, Admin, Data Engineer
-source-git-commit: b022bed6b7be0cc97caaaf6b7bbc42474a57b400
+source-git-commit: 0c1382c9c4f1488fba81575097d154301a9b8e70
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 Voer de volgende taken uit om Adobe Analytics voor Streaming Media te implementeren:
 
 1. **Bevestig uw prijsmodel voor streamingmedia**<br>
-Het huidige prijsmodel is gebaseerd op videostromen. Neem indien nodig contact op met uw verkoper of accountmanager om een nieuwe verkooporder te ondertekenen, aangezien de Streaming Media Analytics los van Adobe Analytics wordt verkocht.
+Het huidige prijsmodel is gebaseerd op videostromen. Neem indien nodig contact op met uw verkoper of Adobe-accountteam om een nieuwe verkooporder te ondertekenen omdat de Streaming Media Analytics los van Adobe Analytics wordt verkocht.
 
 1. **Bevestig dat je Adobe Analytics implementeert**<br>
 Voor streamingmedia voor Adobe Analytics is ook een Adobe Analytics-basisimplementatie vereist. Zie [Adobe Analytics implementeren](https://experienceleague.adobe.com/docs/analytics/implementation/home.html) voor meer informatie .
