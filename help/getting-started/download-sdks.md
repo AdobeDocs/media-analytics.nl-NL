@@ -5,10 +5,10 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 5c0195ab6945b65cd37f2e8fd9ddc8c8e91507f0
+source-git-commit: 0c02fec77d6484774ea81e997529accddb19d175
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 3%
+source-wordcount: '405'
+ht-degree: 2%
 
 ---
 
@@ -24,25 +24,28 @@ Tags in Adobe Experience Platform zijn de volgende generatie mogelijkheden voor 
 >Voor informatie over het downloaden van verouderde SDK&#39;s raadpleegt u [Verouderd—SDK&#39;s downloaden](/help/legacy/legacy-download-sdks.md).<br>
 >Voor belangrijke informatie over eind-van-steun, zie [Veelgestelde vragen over einde ondersteuning](/help/additional-resources/end-of-support-faqs.md).
 
-## Media SDK&#39;s en mobiele bibliotheken {#media-sdks-libraries}
+## Media-SDK&#39;s en mobiele bibliotheken {#media-sdks-libraries}
 
 ### Webimplementatie {#download-web-sdk}
 
-| Ondersteund Platform | Versie |  API&#39;s   |  Documentatie  |  Monster  |
+| Ondersteund platform | Versie |  API&#39;s   |  Documentatie  |  Monster  |
 |:---:|---|---|---|---|
 | ![JavaScript-pictogram](assets/javascript-icon.png) | Web - [Media SDK voor JS v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [JavaScript API-naslaggids](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [Analyses installeren met JavaScript](/help/implementation/media-sdk/setup/web-implementation.md) | [Media SDK voor JS v3.0.2-voorbeeld](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
 | ![JavaScript-pictogram](assets/javascript-icon.png) | Web - Media-extensie |  | [Adobe Media Analytics (3.x SDK) voor audio- en videoextensie — gebruik van Tags (gegevensverzameling)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=en) | [Voorbeeld van Adobe Media-analyse (3.x SDK) voor audio- en video-extensie](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
+| ![JavaScript-pictogram](assets/javascript-icon.png) | Web - Rand Experience Platform (binnenkort beschikbaar) |  | [Analyses installeren met Experience Platform Edge](/help/implementation/media-sdk/implementation-edge.md) |  |
 
 ### Mobiele implementatie {#get-mobile-extension}
 
-| Ondersteund Platform | Versie |  Documentatie   |  Voorbeelden  |
+| Ondersteund platform | Versie |  Documentatie   |  Voorbeelden  |
 |:---:|---|---|---|
 | ![Android-pictogram](assets/android-icon.png) | Android - Media-extensie | [Mobiele SDK-documentatie](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics - Media Analytics for Audio and Video Sample](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/mobile/android) |
-| ![Apple iOS-pictogram](assets/ios-icon.png)<br>tvOS-pictogram toevoegen | iOS / tvOS - Media Extension | [Mobiele SDK-documentatie](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics - Media Analytics for Audio and Video Sample](https://github.com/adobe/aepsdk-media-ios/tree/main/TestApp) |
+| ![Apple iOS-pictogram ](assets/ios-icon.png)<br>**tvOS** | iOS / tvOS - Media Extension | [Mobiele SDK-documentatie](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics - Media Analytics for Audio and Video Sample](https://github.com/adobe/aepsdk-media-ios/tree/main/TestApp) |
+| ![Android-pictogram](assets/android-icon.png) | Android - Rand Experience Platform | [Analyses installeren met Experience Platform Edge](/help/implementation/media-sdk/implementation-edge.md) |  |
+| ![Apple iOS-pictogram ](assets/ios-icon.png)<br>**tvOS** | iOS / tvOS - Experience Platform Edge | [Analyses installeren met Experience Platform Edge](/help/implementation/media-sdk/implementation-edge.md) |  |
 
 ### Bovenste implementatie {#download-ott-libraries}
 
-| Ondersteund Platform | Versie |  API&#39;s   |  Documentatie  |
+| Ondersteund platform | Versie |  API&#39;s   |  Documentatie  |
 |:---:|---|---|---|
 | ![Chromecast-pictogram](assets/chromecast-icon.png) | [SDK voor Chromecast v3.0.3](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.3) | [Referentie voor Chromecast API](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Mobile SDK v3.x voor Chromecast instellen](/help/implementation/media-sdk/setup/set-up-chromecast.md) |
 | ![Roku-pictogram](assets/roku-icon.png) | [SDK voor Roku v2.2.6](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.6) | [Roku API-naslaggids](/help/implementation/media-sdk/setup/set-up-roku.md) | [Mobile SDK v2.x voor Roku instellen](/help/implementation/media-sdk/setup/set-up-roku.md) |

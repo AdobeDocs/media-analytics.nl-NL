@@ -5,9 +5,9 @@ user-guide-title: Adobe Analytics for Streaming Media
 breadcrumb-title: Gids voor Media Analytics
 user-guide-description: Implementeer Adobe Analytics for Streaming Media. Bevat de Media-SDK en de Media Collection-API.
 sub-product: media analytics
-source-git-commit: 5c0195ab6945b65cd37f2e8fd9ddc8c8e91507f0
+source-git-commit: 9b448c75604abe2683ab4d522a7197dfe1af55be
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '902'
 ht-degree: 70%
 
 ---
@@ -40,6 +40,7 @@ ht-degree: 70%
             + [Analyses installeren met JavaScript](implementation/media-sdk/setup/web-implementation.md)
             + [Analyses installeren met de extensie Media Analytics](implementation/media-sdk/setup/web-implementation-tags.md)
          + [Mobiele SDK&#39;s installeren](implementation/media-sdk/setup/mobile-implementation.md)
+         + [Analyses installeren met Adobe Experience Platform Edge](implementation/media-sdk/implementation-edge.md)
          + OTT SDK&#39;s installeren {#ott-setup}
             + [De Chromecast SDK installeren](implementation/media-sdk/setup/set-up-chromecast.md)
             + [De Roku SDK installeren](implementation/media-sdk/setup/set-up-roku.md)
@@ -193,19 +194,19 @@ ht-degree: 70%
       + [Core afspelen bijhouden in iOS](use-cases/track-av-playback/track-core/track-core-ios.md)
       + Core afspelen bijhouden in JavaScript {#track-core-javascript}
          + [Core afspelen bijhouden in JavaScript 2.x](use-cases/track-av-playback/track-core/track-core-javascript/track-core-js.md)
-      + [Buffer bijhouden in Android](use-cases/track-av-playback/track-buffering/track-buffering-android.md)
-      + [Buffer bijhouden in iOS](use-cases/track-av-playback/track-buffering/track-buffering-ios.md)
-      + Buffer bijhouden in JavaScript {#track-buffering-js}
-         + [Buffer bijhouden in JavaScript 2.x](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js.md)
-      + [Zoekopdrachten bijhouden in Android](use-cases/track-av-playback/track-seeking/track-seeking-android.md)
-      + [Zoekopdrachten bijhouden in iOS](use-cases/track-av-playback/track-seeking/track-seeking-ios.md)
-      + Zoekopdrachten bijhouden in JavaScript {#track-seeking-js}
-         + [Zoekopdrachten bijhouden in JavaScript 2.x ](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js.md)
-      + [Standaardmetadata implementeren in Android](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
-      + [Standaardmetadata implementeren in iOS](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
-      + [iOS-metadatatoetsen](use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
-      + Standaardmetadata implementeren in JavaScript {#impl-std-md-js}
-         + [Standaardmetadata implementeren in JavaScript 2.x](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
+         + [Buffer bijhouden in Android](use-cases/track-av-playback/track-buffering/track-buffering-android.md)
+         + [Buffer bijhouden in iOS](use-cases/track-av-playback/track-buffering/track-buffering-ios.md)
+         + Buffer bijhouden in JavaScript {#track-buffering-js}
+            + [Buffer bijhouden in JavaScript 2.x](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js.md)
+         + [Zoekopdrachten bijhouden in Android](use-cases/track-av-playback/track-seeking/track-seeking-android.md)
+         + [Zoekopdrachten bijhouden in iOS](use-cases/track-av-playback/track-seeking/track-seeking-ios.md)
+         + Zoekopdrachten bijhouden in JavaScript {#track-seeking-js}
+            + [Zoekopdrachten bijhouden in JavaScript 2.x ](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js.md)
+         + [Standaardmetadata implementeren in Android](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
+         + [Standaardmetadata implementeren in iOS](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
+         + [iOS-metadatatoetsen](use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
+         + Standaardmetadata implementeren in JavaScript {#impl-std-md-js}
+            + [Standaardmetadata implementeren in JavaScript 2.x](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
       + Advertenties bijhouden {#track-ads}
          + [Advertenties bijhouden in Android](use-cases/track-ads/track-ads-android.md)
          + [Advertenties bijhouden in iOS](use-cases/track-ads/track-ads-ios.md)
