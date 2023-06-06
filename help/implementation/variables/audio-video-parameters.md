@@ -5,9 +5,9 @@ uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 exl-id: 9dc84377-6eca-482f-89e7-c4008d1c0f07
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: cdc5ea361829c749dfbb457288ac5ba51a530961
 workflow-type: tm+mt
-source-wordcount: '7004'
+source-wordcount: '7002'
 ht-degree: 1%
 
 ---
@@ -130,7 +130,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   Implementatie   | Netwerkparameters | Rapportage |
 | --- | --- |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK-sleutel:**<br/> `config.downloadedcontent` </li> <li> **API-sleutel:**<br/> Verkregen van backend </li> <li> **Vereist:**<br/> Nee </li> <li> **Type:**<br/> boolean </li> <li> **Verzonden met:**<br/> Media starten, Media sluiten </li> <li> **Min. SDK-versie:** <br/>Android- en iOS-extensie v1.1.0 starten </li> <li> **Samplewaarde:**<br/> true </li> <li> **Omschrijving:**<br/> Ingesteld op true wanneer de hit wordt gegenereerd als gevolg van het afspelen van een gedownloade mediasessie voor inhoud. Niet aanwezig wanneer gedownloade inhoud niet wordt afgespeeld.<br/><br/>[Starten](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#create-a-media-tracker-with-optional-configuration)  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.download) </li> <li> **Hartslag:**<br/> (s:meta:a.media.downloaded) </li> </ul> | <ul> <li> **Beschikbaar:**<br/> Aangepaste verwerkingsregel gebruiken </li> <li> **Gereserveerde variabele:**<br/> N.v.t. </li> <li> **Rapportnaam:**<br/> Aangepast </li> <li> **Contextgegevens:**<br/> (a.media.download) </li> <li> **Gegevensfeed:**<br/> N.v.t. </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.downloaded) </li> <li> **XDM-veldpad:**<br/> media.mediaTimed.primaryAssetViewDetails.<br/>downloadedPlayback </li> <li> **XDM-veldpad rapporteren:**<br/> mediaReporting.sessionDetails.isDownloaded </li> </ul> |
+| <ul> <li> **SDK-sleutel:**<br/> `config.downloadedcontent` </li> <li> **API-sleutel:**<br/> Verkregen van backend </li> <li> **Vereist:**<br/> Nee </li> <li> **Type:**<br/> boolean </li> <li> **Verzonden met:**<br/> Media starten, Media sluiten </li> <li> **Min. SDK-versie:** <br/>Android- en iOS-extensie v1.1.0 starten </li> <li> **Samplewaarde:**<br/> true </li> <li> **Omschrijving:**<br/> Ingesteld op true wanneer de hit wordt gegenereerd als gevolg van het afspelen van een gedownloade mediasessie voor inhoud. Niet aanwezig wanneer gedownloade inhoud niet wordt afgespeeld.<br/><br/>[Starten](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.download) </li> <li> **Hartslag:**<br/> (s:meta:a.media.downloaded) </li> </ul> | <ul> <li> **Beschikbaar:**<br/> Aangepaste verwerkingsregel gebruiken </li> <li> **Gereserveerde variabele:**<br/> N.v.t. </li> <li> **Rapportnaam:**<br/> Aangepast </li> <li> **Contextgegevens:**<br/> (a.media.download) </li> <li> **Gegevensfeed:**<br/> N.v.t. </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.downloaded) </li> <li> **XDM-veldpad:**<br/> media.mediaTimed.primaryAssetViewDetails.<br/>downloadedPlayback </li> <li> **XDM-veldpad rapporteren:**<br/> mediaReporting.sessionDetails.isDownloaded </li> </ul> |
 
 ### Naam van inhoudspeler
 

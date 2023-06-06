@@ -4,9 +4,9 @@ description: Leer meer over de functie voor het bijhouden van spelerstatussen, z
 exl-id: 3c492055-d471-4147-aa78-b058d6b931f4
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: cdc5ea361829c749dfbb457288ac5ba51a530961
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '278'
 ht-degree: 0%
 
 ---
@@ -42,4 +42,4 @@ De gegevens worden op dezelfde manier berekend voor standaard- en aangepaste sta
 
 Met de mogelijkheid om aangepaste statussen te maken, kunt u aangepaste handelingen vastleggen en aangepaste metagegevens bijwerken tijdens een afspeelsessie.
 
-Voor informatie over het maken van aangepaste staten raadpleegt u de [Referentiehandleiding voor media-API: `createStateObject`](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#createstateobject)
+Voor informatie over het maken van aangepaste staten raadpleegt u de [Referentiehandleiding voor media-API: `createStateObject`](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/)

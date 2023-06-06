@@ -3,13 +3,13 @@ title: Koppelingen naar verouderde media-SDK's openen
 description: Koppelingen naar verouderde SDK-downloads voor beschikbare platforms, zoals Android, iOS, JavaScript, Chromecast en Roku.
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+exl-id: d1066f05-f46f-46fa-897f-039657704d05
+source-git-commit: cdc5ea361829c749dfbb457288ac5ba51a530961
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '334'
 ht-degree: 4%
 
 ---
-
 
 # Verouderd — SDK&#39;s downloaden{#legacy-download-sdks}
 
@@ -27,7 +27,7 @@ De Inzameling van Gegevens van Adobe met de uitbreiding van de Analyse van Media
 * Je moet een Adobe Experience Cloud-klant zijn.
 * U moet gegevensverzameling of DTM-insluitcode op uw webpagina&#39;s implementeren.
 * U moet de [Extensie Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html).
-* U moet de [Adobe Media Analytics voor audio- en videostartextensie](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics).
+* U moet de [Adobe Media Analytics voor audio- en video-extensie](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html).
 * U moet de [Experience Cloud ID-extensie](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html).
 
 ## De 2.x Media SDK&#39;s downloaden {#download-2x-sdks}
