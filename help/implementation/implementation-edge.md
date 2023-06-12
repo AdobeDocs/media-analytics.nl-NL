@@ -4,9 +4,9 @@ description: Leer hoe u Adobe Streaming Media implementeert.
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 29d58b41-9a49-4b71-bdc5-4e2848cd3236
-source-git-commit: e3380ad898b551b6e0bbf5624d8419c5a95496f6
+source-git-commit: bcab6a94547b79a565dc2303ab640dc1b8994bd4
 workflow-type: tm+mt
-source-wordcount: '1888'
+source-wordcount: '1879'
 ht-degree: 0%
 
 ---
@@ -344,7 +344,7 @@ Een schema maken en instellen:
 
 ## Gegevens naar Experience Platform Edge verzenden met AEP Mobile SDK
 
-Met de Adobe Experience Platform Mobile SDK kunt u mobiele gegevens naar Experience platform Edge verzenden. (U kunt ook een aangepaste implementatie van de rand-API&#39;s gebruiken.<!-- I guess we don't need/want to document this? -->)
+Met de Adobe Experience Platform Mobile SDK kunt u mobiele gegevens naar Experience platform Edge verzenden. (U kunt ook een aangepaste implementatie van de rand-API&#39;s gebruiken.<!-- Waiting for link from John -->)
 
 Gebruik de volgende documentatiebronnen om de implementatie voor zowel iOS als Android te voltooien:
 
@@ -352,5 +352,5 @@ Gebruik de volgende documentatiebronnen om de implementatie voor zowel iOS als A
 
 * [API-referentie](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/api-reference/)
 
-* [Migreren naar Adobe-streaming media voor Edge Network-extensie](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/) (Voor gebruikers die migreren van de extensie Media naar Edge)
+* [Migreren naar Adobe-streaming media voor Edge Network-extensie](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
