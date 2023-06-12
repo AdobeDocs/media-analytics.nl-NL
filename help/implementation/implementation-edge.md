@@ -3,9 +3,10 @@ title: Eerste stappen bij het instellen van een implementatie voor Analytics voo
 description: Leer hoe u Adobe Streaming Media implementeert.
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a5d458f6c2826941cb01d1cbd5850851c769a2ab
+exl-id: 29d58b41-9a49-4b71-bdc5-4e2848cd3236
+source-git-commit: e3380ad898b551b6e0bbf5624d8419c5a95496f6
 workflow-type: tm+mt
-source-wordcount: '1956'
+source-wordcount: '1888'
 ht-degree: 0%
 
 ---
@@ -85,7 +86,7 @@ Een schema maken en instellen:
 
    * In de `endUserIds` > `_experience` > `Adobe Analytics Cloud Custom end user IDs` veldgroep, alle velden verbergen behalve de `Identifier` veld.
 
-      ![te verbergen velden](assets/schema-hide-fields.png)
+     ![te verbergen velden](assets/schema-hide-fields.png)
 
 1. Selecteren [!UICONTROL **Bevestigen**] om uw wijzigingen op te slaan.
 
@@ -93,7 +94,7 @@ Een schema maken en instellen:
 
    * In de `Implementation Details` > `Implementation details` veldgroep, alle velden verbergen behalve `version`.
 
-      ![te verbergen velden](assets/schema-hide-fields2.png)
+     ![te verbergen velden](assets/schema-hide-fields2.png)
 
 1. Selecteren [!UICONTROL **Bevestigen**] om uw wijzigingen op te slaan.
 
@@ -101,7 +102,7 @@ Een schema maken en instellen:
 
    * In de `Media Collection Details` veldgroep, de `List Of States` veldgroep.
 
-      ![Media-verzamelingsstaten verbergen](assets/schema-hide-media-collection-states.png)
+     ![Media-verzamelingsstaten verbergen](assets/schema-hide-media-collection-states.png)
 
    * In de `Media Collection Details` > `Advertising Details` veldgroep, verbergt de volgende rapportvelden: `Ad Completed`, `Ad Started`, en `Ad Time Played`.
 
@@ -115,7 +116,7 @@ Een schema maken en instellen:
 
    * In de `Media Collection Details` > `List Of States End` en `Media Collection Details` > `List Of States Start` de volgende rapportvelden verbergen in veldgroepen: `Player State Count`, `Player State Set`, en `Player State Time`.
 
-      ![te verbergen velden](assets/schema-hide-listofstates.png)
+     ![te verbergen velden](assets/schema-hide-listofstates.png)
 
 1. Selecteren [!UICONTROL **Bevestigen**] om uw wijzigingen op te slaan.
 
@@ -167,28 +168,27 @@ Een schema maken en instellen:
 
    * In de [!UICONTROL **Gebeurtenisschema**] veld bij het maken van de gegevensstroom, zorg ervoor dat u het schema selecteert waarin u hebt gemaakt [Schema instellen in Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform). Selecteren [!UICONTROL **Opslaan**].
 
-      >[!IMPORTANT]
-          >
-      > Niet selecteren [!UICONTROL **Save and Add Mapping**] omdat dit leidt tot toewijzingsfouten voor het veld Tijdstempel.
-      
-
-      ![Gegevensstroom maken en schema selecteren](assets/datastream-create-schema.png)
+     >[!IMPORTANT]
+     >
+         > Niet selecteren [!UICONTROL **Save and Add Mapping**] omdat dit leidt tot toewijzingsfouten voor het veld Tijdstempel.
+     
+     ![Gegevensstroom maken en schema selecteren](assets/datastream-create-schema.png)
 
    * Voeg een van de volgende services toe aan de gegevensstroom, afhankelijk van of u Adobe Analytics of Customer Journey Analytics gebruikt:
 
       * [!UICONTROL **Adobe Analytics**] (als u Adobe Analytics gebruikt)
 
-         Als u Adobe Analytics gebruikt, moet u een rapportsuite definiëren, zoals wordt beschreven in de sectie [Een rapportsuite definiëren](#define-a-report-suite) in dit artikel.
+        Als u Adobe Analytics gebruikt, moet u een rapportsuite definiëren, zoals wordt beschreven in de sectie [Een rapportsuite definiëren](#define-a-report-suite) in dit artikel.
 
       * [!UICONTROL **Adobe Experience Platform**] (bij gebruik van Customer Journey Analytics)
-      Voor informatie over hoe te om de dienst aan een datastream toe te voegen, zie de &quot;Add diensten aan een datastream&quot;sectie in [Een gegevensstroom configureren](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details).
 
-      ![De Adobe Analytics-service toevoegen](assets/datastream-add-service.png)
+     Voor informatie over hoe te om de dienst aan een datastream toe te voegen, zie de &quot;Add diensten aan een datastream&quot;sectie in [Een gegevensstroom configureren](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details).
+
+     ![De Adobe Analytics-service toevoegen](assets/datastream-add-service.png)
 
    * Uitbreiden [!UICONTROL **Geavanceerde opties**] en stelt vervolgens de [!UICONTROL **Media Analytics**] optie.
 
-      ![Media Analytics, optie](assets/datastream-media-check.png)
-
+     ![Media Analytics, optie](assets/datastream-media-check.png)
 
 1. Doorgaan met [Verbinding maken in Customer Journey Analytics](#create-a-connection-in-customer-journey-analytics).
 
@@ -346,351 +346,11 @@ Een schema maken en instellen:
 
 Met de Adobe Experience Platform Mobile SDK kunt u mobiele gegevens naar Experience platform Edge verzenden. (U kunt ook een aangepaste implementatie van de rand-API&#39;s gebruiken.<!-- I guess we don't need/want to document this? -->)
 
-Gebruik de volgende documentatiebronnen om de implementatie te voltooien:
+Gebruik de volgende documentatiebronnen om de implementatie voor zowel iOS als Android te voltooien:
 
+* [Aan de slag](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/)
 
-| Mobiel besturingssysteem | Bronnen |
-|---------|----------|
-| **iOS** | De volgende bronnen zijn beschikbaar voor het verzenden van mobiele iOS-gegevens: <ul><li>[Mobiele SDK configureren met gebruikersinterface voor gegevensverzameling](https://github.com/adobe/aepsdk-edgemedia-ios/blob/dev/Documentation/getting-started.md)</li><li>[Migreren van de SDK van Media naar Edge Media SDK](https://github.com/adobe/aepsdk-edgemedia-ios/blob/dev/Documentation/migration-guide.md)</li><li>[Referentie voor Edge Media API](https://github.com/adobe/aepsdk-edgemedia-ios/blob/dev/Documentation/api-reference.md)</li></ul> |
-| **Android** | De volgende bronnen zijn beschikbaar voor het verzenden van mobiele Android-gegevens: <ul><li>[Mobiele SDK configureren met gebruikersinterface voor gegevensverzameling](https://github.com/adobe/aepsdk-edgemedia-android/blob/dev/Documentation/getting-started.md)</li><li>[Migreren van de SDK van Media naar Edge Media SDK](https://github.com/adobe/aepsdk-edgemedia-android/blob/dev/Documentation/migration-guide.md)</li><li>[Referentie voor Edge Media API](https://github.com/adobe/aepsdk-edgemedia-android/blob/dev/Documentation/api-reference.md)</li></ul> |
+* [API-referentie](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/api-reference/)
 
-
-<!--
-
-+++Adobe Experience Platform Mobile SDK
-
-If you plan to use the Mobile SDK extension in Adobe Experience Platform Data Collection to send data to Edge, complete the following sections:
-
-### Create a mobile property
-
-Create a mobile property, as described in [Set up a mobile property](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/). 
-
-Content initially copied from here: https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/mobile-sdk/overview.html?lang=en 
-
-The Adobe Experience Platform Mobile SDK helps power Adobe's Experience Cloud solutions and services in your mobile apps. It is available for Android, iOS, and various cross-platform development frameworks. Configuration is handled through Adobe Experience Platform Data Collection.
->[!IMPORTANT]
->
->An Adobe Analytics extension is also available in Adobe Experience Platform Data Collection. If you install this extension, you do not take advantage of XDM or the Edge Network.
-
-### Register the extensions and load your tag configuration
-
-Use code in your app to register the necessary extensions and load your tag configuration. For more information, see [Set up the configuration](https://developer.adobe.com/client-sdks/documentation/user-guides/getting-started-with-platform/overview/#set-up-the-configuration) in [Getting started with Adobe Experience Platform](https://developer.adobe.com/client-sdks/documentation/user-guides/getting-started-with-platform/overview/#set-up-the-configuration).
-
-### Implement and test fuctionality
-
-Implement and test app functionality using a combination of tags data elements, rules, additional extensions, and SDK API calls. Inspect, validate, and debug data collection and experiences for your mobile application.
-
-For more information, see [Use the sample application](https://developer.adobe.com/client-sdks/documentation/user-guides/getting-started-with-platform/overview/#use-the-sample-application) in [Getting started with Adobe Experience Platform](https://developer.adobe.com/client-sdks/documentation/user-guides/getting-started-with-platform/overview/#set-up-the-configuration).
-
-### Extend and validate your mobile app implementation
-
-Before pushing the mobile app extension to your production environment, first validate that it works.
-
-(What are the steps to do this?)
-
--->
-
-<!--
-
-+++Adobe Experience Platform Web SDK (Coming soon)
-
->[!NOTE]
->
->The Adobe Experience Platform Web SDK is not yet available. This page will be updated when it becomes available.
-
-<!-- Content initially copied from here: https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/web-sdk/overview.html?lang=en -->
-
-<!-- Use the Web SDK extension in Adobe Experience Platform Data Collection to send data to Edge.
-
-You can use the [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/sdk/overview.html) to send data to Adobe Analytics. This implementation method works by translating the [Experience Data Model (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) into a format used by Analytics.
-
-You can send data to Experience Edge directly using the Web SDK, or through the Web SDK extension in Tags. -->
-
-<!-- ### Web SDK
-
-A high-level overview of the implementation tasks:
-
-![Implement Adobe Analytics using Web SDK workflow](../../assets/websdk-annotated.png)
-
-<table style="width:100%">
-
-<tr>
-<th style="width:5%"></th><th style="width:60%"><b>Task</b></th><th style="width:35%"><b>More Information</b></th>
-</tr>
-
-<tr>
-<td>1</td>
-<td>Ensure you have <b>defined a report suite</b>.</td>
-<td><a href="../../../admin/admin/c-manage-report-suites/report-suites-admin.md">Report Suite Manager</a></td>
-</tr>
-
-<tr>
-<td>2</td>
-<td><b>Setup schemas and datasets</b>. To standardize data collection for use across applications that leverage Adobe Experience Platform, Adobe has created the open and publicly documented standard, Experience Data Model (XDM).</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en">Schemas UI overview</a> and <a href="https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=en">Datasets UI overview</a></td>
-</tr>
-
-<tr>
-<td>3</td>
-<td><b>Create a data layer</b> to manage the tracking of the data on your website.</td>
-<td><a href="../../prepare/data-layer.md">Create a data layer</a></td>
-</tr>
-
-<tr>
-<td> 4</td>
-<td><b>Install the prebuilt standalone version</b>. You can reference the library (<code>alloy.js</code>) on the CDN directly on your page or download and host it on your own infrastructure. Alternatively, you can use the NPM package.</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=en#option-2%3A-installing-the-prebuilt-standalone-version">Installing the prebuilt standalone version</a> and <a href="https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=en#option-3%3A-using-the-npm-package">Using the NPM package</a></td>
-</tr>
-
-<tr>
-<td>5</td>
-<td><b>Configure a datastream</b>. A datastream represents the server-side configuration when implementing the Adobe Experience Platform Web SDK.</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en">Configure a datastream<a></td> 
-</tr>
-
-<td>6</td>
-<td><b>Add an Adobe Analytics service</b> to your datastream. That service controls whether and how data is sent to Adobe Analytics.</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#analytics">Add Adobe Analytics service to a datastream</a></td>
-</tr>
-
-<tr>
-<td>7</td>
-<td><b>Configure the Web SDK</b>. Ensure the library that you installed in step 4 is properly configured with the datastream ID (formerly known as edge configuration id (<code>edgeConfigId</code>)), organization id (<code>orgId</code>), and other available options.</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=en">Configure the Web SDK</a></td>
-</tr>
-
-<tr>
-<td>8</td>
-<td><b>Execute commands</b> and/or <b>track events</b>. After the base code has been implemented on your webpage, you can begin executing commands and tracking events with the SDK.
-</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/executing-commands.html?lang=en">Execute commands</a> and <a href="https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=en">Track events</a></td>
-</tr>
-
-<tr>
-<td>9</td><td><b>Extend and validate your implementation</b> before pushing it out to production.</td><td></td> 
-</tr>
-</table>
-
-
-### Web SDK extension
-
-A high-level overview of the implementation tasks:
-
-![Implement Adobe Analytics using Web SDK extension workflow](../../assets/websdk-extension-annotated.png)
-
-<table style="width:100%">
-
-<tr>
-<th style="width:5%"></th><th style="width:60%"><b>Task</b></th><th style="width:35%"><b>More Information</b></th>
-</tr>
-
-<tr>
-<td>1</td>
-<td>Ensure you have <b>defined a report suite</b>.</td>
-<td><a href="../../../admin/admin/c-manage-report-suites/report-suites-admin.md">Report Suite Manager</a></td>
-</tr>
-
-<tr>
-<td>2</td>
-<td><b>Setup schemas and datasets</b>. To standardize data collection for use across applications that leverage Adobe Experience Platform, Adobe has created the open and publicly documented standard, Experience Data Model (XDM).</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en">Schemas UI overview</a> and <a href="https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=en">Datasets UI overview</a></td>
-</tr>
-
-<tr>
-<td>3</td>
-<td><b>Create a data layer</b> to manage the tracking of the data on your website.</td>
-<td><a href="../../prepare/data-layer.md">Create a data layer</a></td>
-</tr>
-
-<tr>
-<td>4</td>
-<td><b>Configure a datastream</b>. A datastream represents the server-side configuration when implementing the Adobe Experience Platform Web SDK.</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en">Configure a datastream<a></td> 
-</tr>
-
-<tr>
-<td>5</td> 
-<td><b>Add an Adobe Analytics service</b> to your datastream. That service controls whether and how data is sent to Adobe Analytics.</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#analytics">Add Adobe Analytics service to a datastream</a></td>
-</tr>
-
-<tr>
-<td>6</td>
-<td><b>Create a tag property</b>. Properties are overarching containers used to reference tag management data.</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=en#for-web">Create or configure a tag property for web</a></td>
-</tr>
-
-<tr>
-<td>7</td> 
-<td><b>Install and configure the Web SDK extension</b> in your tag property. Configure the Web SDK extension to send data to the datastream configured in step 4.</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/sdk/overview.html?lang=en">Adobe Experience Platform Web SDK extension overview</a></td>
-</tr>
-
-<tr>
-<td>8</td>
-<td><b>Iterate, validate, and publish</b> to production. Add the tag property to your web site. Then use data elements, rules, and so on, to customize your implementation.</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=en">Publishing overview</a></td>
-</tr>
-
-</table>
-
-
-### Additional resources
-
-Tags can be highly customized. Learn more about how you can get the most out of Adobe Analytics by including the right data in your implementation.
-
--   [Tags documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html#): Learn how the interface works and what extensions are available.
-
--   [Adobe Experience Platform Web SDK documentation](https://experienceleague.adobe.com/docs/web-sdk.html?lang=en)
-
-
-+++
-
--->
-
-
-<!--
-
-### Adobe Experience Platform SDK
-
-A high-level overview of the implementation tasks:
-
-![Adobe Analytics using the Analytics extension workflow](../../assets/mobilesdk-annotated.png)
-
-<table style="width:100%">
-
-<tr>
-<th style="width:5%"></th><th style="width:60%"><b>Task</b></th><th style="width:35%"><b>More Information</b></th>
-</tr>
-
-<tr>
-<td>1</td>
-<td>Ensure you have <b>defined a report suite</b>.</td>
-<td><a href="../../../admin/admin/c-manage-report-suites/report-suites-admin.md">Report Suite Manager</a></td>
-</tr>
-
-<tr>
-<td>2</td>
-<td><b>Setup schemas and datasets</b>. To standardize data collection for use across applications that leverage Adobe Experience Platform, Adobe has created the open and publicly documented standard, Experience Data Model (XDM).</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en">Schemas UI overview</a> and <a href="https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=en">Datasets UI overview</a></td>
-</tr>
-
-<tr>
-<td>3</td>
-<td><b>Configure a datastream</b>. A datastream represents the server-side configuration when implementing the Adobe Experience Platform Web SDK.</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en">Configure a datastream<a></td> 
-</tr>
-
-<td>4</td>
-<td><b>Add an Adobe Analytics service</b> to your datastream. That service controls whether and how data is sent to Adobe Analytics.</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#analytics">Add Adobe Analytics service to a datastream</a></td>
-</tr>
-
-<tr>
-<td>5</td>
-<td><b>Create a mobile property</b>. A property is a container that you fill with extensions, rules, data elements, and libraries.</td>
-<td><a href="https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/">Set up a mobile property</a></tr>
-
-<tr>
-<td>6</td>
-<td><b>Install the Adobe Experience Platform Edge Network extension</b> in the mobile tag property and configure the datastream in the extension.</td>
-<td><a href="https://developer.adobe.com/client-sdks/documentation/edge-network/">Adobe Experience Platform Edge Network</a>
-</tr>
-
-<tr>
-<td>7</td>
-<td><b>Use code in your app</b> to register the necessary extensions and load your tag configuration.</td>
-<td><a href="https://developer.adobe.com/client-sdks/documentation/user-guides/getting-started-with-platform/overview/#set-up-the-configuration">Set up the configuration</a></td>
-</tr>
-
-<tr>
-<td>8</td>
-<td><b>Implement and test functionality</b> using combination of tag's data elements, rules, additional extensions, and SDK API calls in your app. Inspect, validate, and debug data collection and experiences for your mobile application.</td>
-<td><a href="https://developer.adobe.com/client-sdks/documentation/user-guides/getting-started-with-platform/overview/#use-the-sample-application">Use the sample application</a>
-</tr>
-
-<tr>
-<td>9</td>
-<td><b>Extend and validate your mobile app implementation</b> before pushing it out to production.</td>
-<td></td> 
-</tr>
-
-</table>
-
-
-### Adobe Analytics extension.
-
-A high-level overview of the implementation tasks:
-
-![Adobe Analytics using the Analytics extension workflow](../../assets/mobilesdk-analytics-annotated.png)
-
-<table style="width:100%">
-
-<tr>
-<th style="width:5%"></th><th style="width:60%"><b>Task</b></th><th style="width:35%"><b>More Information</b></th>
-</tr>
-
-<tr>
-<td>1</td>
-<td>Ensure you have <b>defined a report suite</b>.</td>
-<td><a href="../../../admin/admin/c-manage-report-suites/report-suites-admin.md">Report Suite Manager</a></td>
-</tr>
-
-<tr>
-<td>2</td>
-<td><b>Setup schemas and datasets</b>. To standardize data collection for use across applications that leverage Adobe Experience Platform, Adobe has created the open and publicly documented standard, Experience Data Model (XDM).</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en">Schemas UI overview</a> and <a href="https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=en">Datasets UI overview</a></td>
-</tr>
-
-<tr>
-<td>3</td>
-<td><b>Install the Adobe Analytics extension</b> in the mobile tag property and configure the extension to point to your report suite.</td>
-<td><a href="https://developer.adobe.com/client-sdks/documentation/adobe-analytics/">Adobe Analytics extension for mobile property</a>
-</tr>
-
-<tr>
-<td>4</td>
-<td><b>Use code in your app</b> to register the necessary extensions and load your tag configuration.</td>
-<td><a href="https://developer.adobe.com/client-sdks/documentation/user-guides/getting-started-with-platform/overview/#set-up-the-configuration">Set up the configuration</a></td>
-</tr>
-
-<tr>
-<td>5</td>
-<td><b>Implement and test functionality</b> using combination of tag's data elements, rules, additional extensions, and SDK API calls in your app. Inspect, validate, and debug data collection and experiences for your mobile application.</td>
-<td><a href="https://developer.adobe.com/client-sdks/documentation/user-guides/getting-started-with-platform/overview/#use-the-sample-application">Use the sample application</a>
-</tr>
-
-<tr>
-<td>6</td>
-<td><b>Extend and validate your mobile app implementation</b> before pushing it out to production.</td>
-<td></td> 
-</tr>
-
-</table>
-
-### Additional resources
-
--   [Tags documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html#)
-
--   [Mobile SDK documentation](https://developer.adobe.com/client-sdks/documentation/)
-
--->
-
-<!--
-
-+++
-
-+++Edge Network Server API
-
-Send data directly to Edge using an API.
-
-Content initially copied from here: https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/edge-api/overview.html?lang=en 
-
-If you are unable to use the Adobe Experience Platform [Web SDK](../web-sdk/overview.md) or [Mobile SDK](../mobile-sdk/overview.md), you can send data to the Edge Network directly through an API.
-
-See [Edge Network Server API documentation](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html), and an example [integrating with Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/interacting-other-adobe-solutions/interacting-adobe-analytics.html).
-
-+++ 
-
--->
+* [Migreren naar Adobe-streaming media voor Edge Network-extensie](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/) (Voor gebruikers die migreren van de extensie Media naar Edge)
 
