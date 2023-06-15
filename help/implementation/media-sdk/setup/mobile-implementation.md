@@ -3,9 +3,10 @@ title: Een mobiele SDK instellen met tags voor streaming media
 description: Leer hoe u Adobe Streaming Media voor mobiele apps implementeert.
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+exl-id: b4944b5f-cbae-4efc-9ef7-962d3f342240
+source-git-commit: 1e4babe0df218342fc4836155139d908ba113510
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '195'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,9 @@ Als u streaming media voor mobiele apps wilt implementeren op Android of iOS, in
 
 * **Adobe Experience Platform Mobile SDK**
 
-   Als u gegevens wilt verzamelen, gebruikt u Tags in Adobe Experience Platform. Tags in Adobe Experience Platform zijn een oplossing voor tagbeheer waarmee u naast andere coderingsvereisten ook analytische code kunt implementeren.
+  Gebruik een van de volgende twee opties om gegevens te verzamelen:
+   * Tags in Adobe Experience Platform. Tags in Adobe Experience Platform zijn een oplossing voor tagbeheer waarmee u naast andere coderingsvereisten ook analytische code kunt implementeren.
+   * Adobe Experience Platform Edge
 
 * **Media SDK voor Android** of **Media SDK voor iOS**
 
@@ -26,7 +29,7 @@ Zie voor informatie over het downloaden van SDK&#39;s en aanvullende documentati
 
 * **Geldige configuratieparameters verkrijgen**
 
-   Deze parameters kunt u verkrijgen van een Adobe-medewerker nadat u uw analyseaccount hebt ingesteld.
+  Deze parameters kunt u verkrijgen van een Adobe-medewerker nadat u uw analyseaccount hebt ingesteld.
 
 * **De volgende API&#39;s opnemen in uw mediaspeler**
 

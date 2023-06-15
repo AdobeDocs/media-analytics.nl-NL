@@ -4,9 +4,9 @@ description: Leer hoe u Adobe Analytics voor Streaming Media implementeert met d
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dc1b9fe0-6c75-4f93-a558-a3f3186bcf22
-source-git-commit: e75eb6ddbcf693cd200159392dd3026ca55fc22d
+source-git-commit: 1e4babe0df218342fc4836155139d908ba113510
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Implementeer de SDK&#39;s voor Streaming Media in uw videoverslagframework en vi
 |:----:|:----|
 | <img src="assets/javascript-icon.png"> | [Media SDK voor JavaScript v3.x](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) |
 | <img src="assets/javascript-icon.png"> | [Extensie Adobe Media Analytics met tags (gegevensverzameling) voor JavaScript v3.x](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) |
-| <img src="assets/javascript-icon.png"> | [Rand Experience Platform](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) |
+| <img src="assets/javascript-icon.png"> | [Rand Experience Platform](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) (Binnenkort beschikbaar) |
 
 ### Mobiele implementatie
 
