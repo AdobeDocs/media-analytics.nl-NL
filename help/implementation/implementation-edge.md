@@ -4,9 +4,9 @@ description: Leer hoe u Adobe Streaming Media implementeert.
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 29d58b41-9a49-4b71-bdc5-4e2848cd3236
-source-git-commit: b57db92ae4ce01e259424e3d71e36311af88ccac
+source-git-commit: 008f5a694ffa6416c0ff64f4f0ba06bf807ff5a6
 workflow-type: tm+mt
-source-wordcount: '1781'
+source-wordcount: '1774'
 ht-degree: 0%
 
 ---
@@ -46,60 +46,61 @@ Een schema maken en instellen:
 
    ![Toegevoegde veldgroepen](assets/schema-field-groups-added.png)
 
-
-De volgende stappen in deze sectie zijn optioneel en aanvragen naar de Media Edge API werken zelfs zonder de opgegeven velden in de interface van het AEP-schema te verbergen.
-Als u de velden verbergt, wordt het schema echter beter leesbaar en begrijpelijk, omdat de verborgen velden niet worden gebruikt door de Media Edge API.
-De volgende stappen verwijzen alleen naar de velden in de `MediaAnalytics Interaction Details` veldgroep.
-
-1. In de [!UICONTROL **Structuur**] gebied, selecteert u de `Media Collection Details` veld, selecteren [!UICONTROL **Gerelateerde velden beheren**] Vervolgens werkt u het schema als volgt bij:
-
-   ![beheergerelateerde velden](assets/manage-related-fields.png)
-
-   * In de `Media Collection Details` veld, verbergen `List Of States` veld.
-
-     ![Media-verzamelingsstaten verbergen](assets/schema-hide-media-collection-states.png)
-
-   * In de `Media Collection Details` > `Advertising Details` veld, verbergt u de volgende rapportvelden: `Ad Completed`, `Ad Started`, en `Ad Time Played`.
-
-   * In de `Media Collection Details` > `Advertising Pod Details` veld, verbergt u het volgende rapportveld: `Ad Break ID`
-
-   * In de `Media Collection Details` > `Chapter Details` veld, verbergt u de volgende rapportvelden: `Chapter ID`, `Chapter Completed`, `Chapter Started`, en `Chapter Time Played`.
-
-   * In de `Media Collection Details` > `Qoe Data Details` veld, verbergt u de volgende rapportvelden: `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Changes`, `Buffer Events`, `Total Buffer Duration`, `Errors`, `External Error IDs`, `Bitrate Change Impacted Streams`, `Buffer Impacted Streams`, `Dropped Frame Impacted Streams`, `Error Impacted Streams`, `Stalling Impacted Streams`, `Drops Before Starts`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Events`, en `Total Stalling Duration`.
-
-   * In de `Media Collection Details` > `Session Details` veld, verbergt u de volgende rapportvelden: `Media Session ID`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Estimated Streams`, `Pause Impacted Streams`, `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Media Segment Views`, `Content Completes`, `Media Downloaded Flag`, `Federated Data`, `Content Starts`, `Media Starts`, `Pause Events`, `Total Pause Duration`, `Media Session Server Timeout`, `Video Segment`, `Content Time Spent`, `Media Time Spent`, `Unique Time Played`, `Pev3`, en `Pccr`.
-
-   * In de `Media Collection Details` > `List Of States End` en `Media Collection Details` > `List Of States Start` veld, verbergt u de volgende rapportvelden: `Player State Count`, `Player State Set`, en `Player State Time`.
-
-     ![te verbergen velden](assets/schema-hide-listofstates.png)
-
 1. Selecteren [!UICONTROL **Bevestigen**] om uw wijzigingen op te slaan.
 
-1. In de [!UICONTROL **Structuur**] gebied, selecteert u de `List Of Media Collection Downloaded Content Events` veld, selecteren [!UICONTROL **Gerelateerde velden beheren**] Vervolgens werkt u het schema als volgt bij:
+1. (Optioneel) U kunt bepaalde velden verbergen die niet worden gebruikt door de Media Edge-API. Het verbergen van deze gebieden maakt het schema gemakkelijker te lezen en te begrijpen, maar het wordt niet vereist. Deze velden verwijzen alleen naar de velden in de `MediaAnalytics Interaction Details` veldgroep.
 
-   * In de `List Of Media Collection Downloaded Content Events` > `Media Details` veld, verbergen `List Of States` veld.
++++ Vouw hier uit om instructies weer te geven voor velden die u kunt verbergen.
 
-   * In de `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Details` veld, verbergt u de volgende rapportvelden: `Ad Completed`, `Ad Started`, en `Ad Time Played`.
+   1. In de [!UICONTROL **Structuur**] gebied, selecteert u de `Media Collection Details` veld, selecteren [!UICONTROL **Gerelateerde velden beheren**] Vervolgens werkt u het schema als volgt bij:
 
-   * In de `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Pod Details` veld, verbergt u het volgende rapportveld: `Ad Break ID`
+      ![beheergerelateerde velden](assets/manage-related-fields.png)
 
-   * In de `List Of Media Collection Downloaded Content Events` > `Media Details` > `Chapter Details` veld, verbergt u de volgende rapportvelden: `Chapter ID`, `Chapter Completed`, `Chapter Started`, en `Chapter Time Played`.
+      * In de `Media Collection Details` veld, verbergen `List Of States` veld.
 
-   * In de `List Of Media Collection Downloaded Content Events` > `Media Details` > `Qoe Data Details` veld, verbergt u de volgende rapportvelden: `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Changes`, `Buffer Events`, `Total Buffer Duration`, `Errors`, `External Error IDs`, `Bitrate Change Impacted Streams`, `Buffer Impacted Streams`, `Dropped Frame Impacted Streams`, `Error Impacted Streams`, `Stalling Impacted Streams`, `Drops Before Starts`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Events`, en `Total Stalling Duration`.
+        ![Media-verzamelingsstaten verbergen](assets/schema-hide-media-collection-states.png)
 
-   * In de `List Of Media Collection Downloaded Content Events` > `Media Details` > `Session Details` veld, verbergt u de volgende rapportvelden: `Media Session ID`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Estimated Streams`, `Pause Impacted Streams`, `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Media Segment Views`, `Content Completes`, `Media Downloaded Flag`, `Federated Data`, `Content Starts`, `Media Starts`, `Pause Events`, `Total Pause Duration`, `Media Session Server Timeout`, `Video Segment`, `Content Time Spent`, `Media Time Spent`, `Unique Time Played`, `Pev3`, en `Pccr`.
+      * In de `Media Collection Details` > `Advertising Details` veld, verbergt u de volgende rapportvelden: `Ad Completed`, `Ad Started`, en `Ad Time Played`.
 
-   * In de `List Of Media Collection Downloaded Content Events` > `Media Details` > `List Of States End` en `Media Collection Details` > `List Of States Start` veld, verbergt u de volgende rapportvelden: `Player State Count`, `Player State Set`, en `Player State Time`.
+      * In de `Media Collection Details` > `Advertising Pod Details` veld, verbergt u het volgende rapportveld: `Ad Break ID`
 
-   * In de `List Of Media Collection Downloaded Content Events` > `Media Details`  veld, verbergen `Media Session ID` veld.
+      * In de `Media Collection Details` > `Chapter Details` veld, verbergt u de volgende rapportvelden: `Chapter ID`, `Chapter Completed`, `Chapter Started`, en `Chapter Time Played`.
 
-1. Selecteren [!UICONTROL **Bevestigen**] om uw wijzigingen op te slaan.
+      * In de `Media Collection Details` > `Qoe Data Details` veld, verbergt u de volgende rapportvelden: `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Changes`, `Buffer Events`, `Total Buffer Duration`, `Errors`, `External Error IDs`, `Bitrate Change Impacted Streams`, `Buffer Impacted Streams`, `Dropped Frame Impacted Streams`, `Error Impacted Streams`, `Stalling Impacted Streams`, `Drops Before Starts`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Events`, en `Total Stalling Duration`.
 
-1. In de [!UICONTROL **Structuur**] gebied, selecteert u de `Media Reporting Details` veld, selecteren [!UICONTROL **Gerelateerde velden beheren**] Vervolgens werkt u het schema als volgt bij:
+      * In de `Media Collection Details` > `Session Details` veld, verbergt u de volgende rapportvelden: `Media Session ID`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Estimated Streams`, `Pause Impacted Streams`, `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Media Segment Views`, `Content Completes`, `Media Downloaded Flag`, `Federated Data`, `Content Starts`, `Media Starts`, `Pause Events`, `Total Pause Duration`, `Media Session Server Timeout`, `Video Segment`, `Content Time Spent`, `Media Time Spent`, `Unique Time Played`, `Pev3`, en `Pccr`.
 
-   * In de `Media Reporting Details` veld, verbergt u de volgende velden: `Error Details`, `List Of States End`, `List of States Start`, en `Media Session ID`.
+      * In de `Media Collection Details` > `List Of States End` en `Media Collection Details` > `List Of States Start` veld, verbergt u de volgende rapportvelden: `Player State Count`, `Player State Set`, en `Player State Time`.
 
-1. Selecteren [!UICONTROL **Bevestigen**] > [!UICONTROL **Opslaan**]  om uw wijzigingen op te slaan.
+        ![te verbergen velden](assets/schema-hide-listofstates.png)
+
+   1. Selecteren [!UICONTROL **Bevestigen**] om uw wijzigingen op te slaan.
+
+   1. In de [!UICONTROL **Structuur**] gebied, selecteert u de `List Of Media Collection Downloaded Content Events` veld, selecteren [!UICONTROL **Gerelateerde velden beheren**] Vervolgens werkt u het schema als volgt bij:
+
+      * In de `List Of Media Collection Downloaded Content Events` > `Media Details` veld, verbergen `List Of States` veld.
+
+      * In de `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Details` veld, verbergt u de volgende rapportvelden: `Ad Completed`, `Ad Started`, en `Ad Time Played`.
+
+      * In de `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Pod Details` veld, verbergt u het volgende rapportveld: `Ad Break ID`
+
+      * In de `List Of Media Collection Downloaded Content Events` > `Media Details` > `Chapter Details` veld, verbergt u de volgende rapportvelden: `Chapter ID`, `Chapter Completed`, `Chapter Started`, en `Chapter Time Played`.
+
+      * In de `List Of Media Collection Downloaded Content Events` > `Media Details` > `Qoe Data Details` veld, verbergt u de volgende rapportvelden: `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Changes`, `Buffer Events`, `Total Buffer Duration`, `Errors`, `External Error IDs`, `Bitrate Change Impacted Streams`, `Buffer Impacted Streams`, `Dropped Frame Impacted Streams`, `Error Impacted Streams`, `Stalling Impacted Streams`, `Drops Before Starts`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Events`, en `Total Stalling Duration`.
+
+      * In de `List Of Media Collection Downloaded Content Events` > `Media Details` > `Session Details` veld, verbergt u de volgende rapportvelden: `Media Session ID`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Estimated Streams`, `Pause Impacted Streams`, `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Media Segment Views`, `Content Completes`, `Media Downloaded Flag`, `Federated Data`, `Content Starts`, `Media Starts`, `Pause Events`, `Total Pause Duration`, `Media Session Server Timeout`, `Video Segment`, `Content Time Spent`, `Media Time Spent`, `Unique Time Played`, `Pev3`, en `Pccr`.
+
+      * In de `List Of Media Collection Downloaded Content Events` > `Media Details` > `List Of States End` en `Media Collection Details` > `List Of States Start` veld, verbergt u de volgende rapportvelden: `Player State Count`, `Player State Set`, en `Player State Time`.
+
+      * In de `List Of Media Collection Downloaded Content Events` > `Media Details`  veld, verbergen `Media Session ID` veld.
+
+   1. Selecteren [!UICONTROL **Bevestigen**] om uw wijzigingen op te slaan.
+
+   1. In de [!UICONTROL **Structuur**] gebied, selecteert u de `Media Reporting Details` veld, selecteren [!UICONTROL **Gerelateerde velden beheren**] Vervolgens werkt u het schema als volgt bij:
+
+      * In de `Media Reporting Details` veld, verbergt u de volgende velden: `Error Details`, `List Of States End`, `List of States Start`, en `Media Session ID`.
+
+   1. Selecteren [!UICONTROL **Bevestigen**] > [!UICONTROL **Opslaan**]  om uw wijzigingen op te slaan.
 
 1. Doorgaan met [Een gegevensset maken in Adobe Experience Platform](#create-a-dataset-in-adobe-experience-platform).
 
