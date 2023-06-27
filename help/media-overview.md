@@ -5,18 +5,18 @@ uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b022bed6b7be0cc97caaaf6b7bbc42474a57b400
+source-git-commit: 355b3b079d53ae8e83822f61fc79e60e47f6d715
 workflow-type: tm+mt
-source-wordcount: '531'
-ht-degree: 9%
+source-wordcount: '559'
+ht-degree: 8%
 
 ---
 
-# Overzicht van Adobe Analytics for Streaming Media
+# Overzicht van Adobe Analytics voor Streaming Media
 
 ![Banner](./assets/media_analytics_banner.png)
 
-Adobe Analytics for Streaming Media is een invoegtoepassing voor Adobe Analytics die krachtige meetgereedschappen biedt voor audio, video en advertenties. Met Analytics voor Streaming Media krijgt u bijna real-time, gedetailleerde details over de duur, stops en start, waarmee u video- en audiomeetgegevens kunt evalueren en combineren. Met deze inzichten kunt u de kijkgewoonten en de luistergewoonten van uw klanten begrijpen en de betrokkenheid met zeer persoonlijke aanbevelingen verhogen.
+Adobe Analytics for Streaming Media is een invoegtoepassing voor Adobe Analytics die krachtige meetgereedschappen biedt voor audio, video en advertenties. Met Analytics voor Streaming Media krijgt u bijna real-time, gedetailleerde details over de duur, stops en het begin waarmee u video- en audiomeetgegevens kunt evalueren en combineren. Met deze inzichten kunt u de kijkgewoonten en de luistergewoonten van uw klanten begrijpen en de betrokkenheid met zeer persoonlijke aanbevelingen verhogen.
 
 Met Adobe Analytics for Streaming Media kunt u de volledige reis van de klant over uw site en streaming apps volgen. U kunt de meetgegevens van streaming media combineren met andere Adobe Analytics-mogelijkheden, zoals Audience Analytics, Mobiel of Apparaatanalyse. De meetgegevens kunnen eenvoudig worden geïntegreerd in Adobe Analytics Reports en andere Adobe Experience Platform-producten. Met mediameting kunt u uw data indelen in meerdere dimensies en segmenten, en zo alle metadata vastleggen die u nodig hebt voor een volledige en gedetailleerde analyse. Vervolgens kunt u data analyseren en succescriteria toewijzen aan volledig verbruikte media, gemiddelde bestede tijd en voltooide advertenties.
 
@@ -24,13 +24,18 @@ U kunt vitale leveringsmetriek met betrekking tot de Kwaliteit van Ervaring (QoE
 
 ## Hoe werkt het
 
-Gegevens voor het bijhouden van streaming media worden verzameld bij een speler met behulp van de Media SDK&#39;s of de Adobe Experience Platform Media Extensions en de Media Collection API&#39;s. Alle korrelgegevens (tot 10 seconden) worden verzonden naar de Dienst van de Analyse van Media die de gegevens voor elke individuele playbackzitting verzamelt en verwerkt. Nadat een afspeelsessie is beëindigd, worden de berekende gegevens voor bijhouden naar Adobe Analytics verzonden voor opslag en rapportage. Met Adobe Customer Journey Analytics (CJA) implementaties, kunnen de gegevens naar CJA worden verzonden gebruikend de Verbinding van Gegevens van de Analyse (ADC) zodat de klanten CJA als rapporteringshulpmiddel konden gebruiken.
+Gegevens voor het bijhouden van streaming media worden verzameld bij een speler met de Media for Edge Network SDK/Extension, Media Extension with Tags, Media SDKs, Media Edge API of de Media Collection API.
 
-<!-- ![streaming media process](./assets/streaming-process1.png) -->
+Alle korrelgegevens (maximaal 10 seconden) worden naar de Media Analytics Service of Experience Edge verzonden (afhankelijk van de [uitvoeringsmethode](/help/implementation/overview.md) u kiest), die de gegevens voor elke afzonderlijke afspeelsessie verzamelen en verwerken.
 
-<div style="text-align: center;">
-<img src="./assets/streaming-process1.png" alt="Streaming media-proces" width="75%">
-</div>
+Nadat een afspeelsessie is beëindigd, worden de gegevens voor het bijhouden van de gegevens naar Adobe Analytics of Customer Journey Analytics verzonden voor opslag en rapportage.
+
+>[!NOTE]
+>
+>Met Customer Journey Analytics-implementaties kunnen gegevens naar Customer Journey Analytics worden verzonden met Experience Edge of met ADC (Analytics Data Connector).
+
+
+Zie [Streaming media implementeren voor Adobe Analytics of Customer Journey Analytics](/help/implementation/overview.md) voor meer informatie .
 
 ## Functies
 

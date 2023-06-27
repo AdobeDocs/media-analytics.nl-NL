@@ -5,9 +5,9 @@ uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
-source-git-commit: ade20d7ae3cbb525b3a8390a27e1d93201d83003
+source-git-commit: 355b3b079d53ae8e83822f61fc79e60e47f6d715
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '403'
 ht-degree: 0%
 
 ---
@@ -18,9 +18,9 @@ Er zijn verschillende manieren om streaming media te implementeren. Voor een ged
 
 ## Implementatiemethoden voor Edge
 
-In de meeste gevallen raden we u aan Edge te gebruiken bij de implementatie van Media Analytics voor alle nieuwe Adobe Analytics- of Customer Journey Analytics (CJA)-klanten.
+In de meeste gevallen raden we u aan Edge te gebruiken bij de implementatie van Media Analytics voor alle nieuwe Adobe Analytics- of Customer Journey Analytics-klanten.
 
-* **Media voor Edge Network SDK / Extensie:** Verzamelt gegevens van iOS- en Android-apparaten en verzendt deze naar Edge. Gegevens kunnen vervolgens naar CJA of Adobe Analytics worden verzonden.
+* **Media voor Edge Network SDK / Extensie:** Verzamelt gegevens van iOS- en Android-apparaten en verzendt deze naar Edge. Gegevens kunnen vervolgens naar Customer Journey Analytics of Adobe Analytics worden verzonden.
 
   Voor meer informatie over Media voor het Netwerk SDK van Edge/de Uitbreiding, zie [Media Analytics installeren met Experience Platform Edge](/help/implementation/implementation-edge.md).
 
@@ -28,7 +28,7 @@ In de meeste gevallen raden we u aan Edge te gebruiken bij de implementatie van 
   >
   >Deze implementatiemethode steunt momenteel niet het Web SDK of Roku. Beide toepassingen worden echter ondersteund bij de implementatie met de Media Edge-API.
 
-* **Mediarand-API:** Kan worden aangepast om gegevens van om het even welk apparaat of formaat (met inbegrip van, mobiele, Web, en over-de-hoogste apparaten) te verzamelen en gegevens naar Rand te verzenden. Gegevens kunnen vervolgens naar CJA of Adobe Analytics worden verzonden.
+* **Mediarand-API:** Kan worden aangepast om gegevens van om het even welk apparaat of formaat (met inbegrip van, mobiele, Web, en over-de-hoogste apparaten) te verzamelen en gegevens naar Rand te verzenden. Gegevens kunnen vervolgens naar Customer Journey Analytics of Adobe Analytics worden verzonden.
 
   <!-- For more information about the Media Edge API, see (link to John's docs when they're ready) -->
 
@@ -36,9 +36,9 @@ In de meeste gevallen raden we u aan Edge te gebruiken bij de implementatie van 
 
 ## Andere uitvoeringsmethoden
 
-In de meeste gevallen worden de hierboven beschreven Edge-implementatiemethoden aanbevolen voor zowel CJA als Adobe Analytics, vooral voor nieuwe implementaties.
+In de meeste gevallen worden de hierboven beschreven Edge-implementatiemethoden aanbevolen voor zowel Customer Journey Analytics als Adobe Analytics, vooral voor nieuwe implementaties.
 
-Naast de implementatiemethoden van Edge zijn er andere implementatiemethoden beschikbaar. Deze implementatiemethoden zijn oorspronkelijk ontworpen voor gebruik met Adobe Analytics. Klanten met een van de volgende implementatiemethoden kunnen echter nog steeds gegevens in CJA beschikbaar maken door een [Bronverbinding voor analyse](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html).
+Naast de implementatiemethoden van Edge zijn er andere implementatiemethoden beschikbaar. Deze implementatiemethoden zijn oorspronkelijk ontworpen voor gebruik met Adobe Analytics. Klanten met een van de volgende implementatiemethoden kunnen echter nog steeds gegevens in Customer Journey Analytics beschikbaar stellen door een [Bronverbinding voor analyse](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html).
 
 * **Media Extension met tags:** De Adobe Media Analytics voor Audio en Video uitbreiding verstrekt de functionaliteit voor het toevoegen van de instantie van de Tracker van Media aan een markering-toegelaten plaats of een project. Gegevens worden naar Adobe Analytics verzonden.
 
