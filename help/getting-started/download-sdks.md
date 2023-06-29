@@ -5,7 +5,7 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 0046f182f0288f164d6918cab3fa7db6c14e7b53
+source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 2%
@@ -32,7 +32,7 @@ Tags in Adobe Experience Platform zijn de volgende generatie mogelijkheden voor 
 |:---:|---|---|---|---|
 | ![JavaScript-pictogram](assets/javascript-icon.png) | Web - [Media SDK voor JS v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [JavaScript API-naslaggids](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [Analyses installeren met JavaScript](/help/implementation/media-sdk/setup/web-implementation.md) | [Media SDK voor JS v3.0.2-voorbeeld](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
 | ![JavaScript-pictogram](assets/javascript-icon.png) | Web - Media-extensie |  | [Adobe Media Analytics (3.x SDK) voor audio- en videoextensie — gebruik van Tags (gegevensverzameling)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=en) | [Voorbeeld van Adobe Media-analyse (3.x SDK) voor audio- en video-extensie](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
-| ![JavaScript-pictogram](assets/javascript-icon.png) | Web - Rand Experience Platform (binnenkort beschikbaar) |  | [Analyses installeren met Experience Platform Edge](/help/implementation/implementation-edge.md) |  |
+| ![JavaScript-pictogram](assets/javascript-icon.png) | Web - Rand Experience Platform (binnenkort beschikbaar) |  | [Analyses installeren met Experience Platform Edge](/help/implementation/edge/implementation-edge.md) | |
 
 ### Mobiele implementatie {#get-mobile-extension}
 
@@ -40,8 +40,8 @@ Tags in Adobe Experience Platform zijn de volgende generatie mogelijkheden voor 
 |:---:|---|---|---|
 | ![Android-pictogram](assets/android-icon.png) | Android - Media-extensie | [Mobiele SDK-documentatie](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics - Media Analytics for Audio and Video Sample](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/mobile/android) |
 | ![Apple iOS-pictogram ](assets/ios-icon.png)<br>**tvOS** | iOS / tvOS - Media Extension | [Mobiele SDK-documentatie](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics - Media Analytics for Audio and Video Sample](https://github.com/adobe/aepsdk-media-ios/tree/main/TestApp) |
-| ![Android-pictogram](assets/android-icon.png) | Android - Rand Experience Platform | [Analyses installeren met Experience Platform Edge](/help/implementation/implementation-edge.md) |  |
-| ![Apple iOS-pictogram ](assets/ios-icon.png)<br>**tvOS** | iOS / tvOS - Experience Platform Edge | [Analyses installeren met Experience Platform Edge](/help/implementation/implementation-edge.md) |  |
+| ![Android-pictogram](assets/android-icon.png) | Android - Rand Experience Platform | [Analyses installeren met Experience Platform Edge](/help/implementation/edge/implementation-edge.md) | |
+| ![Apple iOS-pictogram ](assets/ios-icon.png)<br>**tvOS** | iOS / tvOS - Experience Platform Edge | [Analyses installeren met Experience Platform Edge](/help/implementation/edge/implementation-edge.md) |  |
 
 ### Bovenste implementatie {#download-ott-libraries}
 

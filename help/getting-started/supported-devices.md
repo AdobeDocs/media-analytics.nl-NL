@@ -4,7 +4,7 @@ description: "Meer informatie over de belangrijkste apparaten die Adobe Analytic
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: deae677d9e8b4dc241765cf5d168fcd71b9c8310
+source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
 workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 10%
@@ -25,7 +25,7 @@ Voor apparaten die momenteel geen SDK-ondersteuning hebben of in situaties waari
 
 De onderstaande tabel bevat een lijst met momenteel ondersteunde apparaten. Als een apparaat niet in de lijst staat, neemt u contact op met uw klantenservice of oplossingsconsultant voor de status van dat apparaat.
 
-Voor meer informatie over het implementeren van Media op Edge raadpleegt u [Media Analytics installeren met Experience Platform Edge](/help/implementation/implementation-edge.md).
+Voor meer informatie over het implementeren van Media op Edge raadpleegt u [Media Analytics installeren met Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
 
 | Streaming Platforms en apparaten | | Media voor Edge Network SDK / Extension | Media Edge-API | Media Extension met tags of AEP mobile SDK | Media-SDK | Media Collection-API |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|

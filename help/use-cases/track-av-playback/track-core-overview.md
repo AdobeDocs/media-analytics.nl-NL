@@ -5,7 +5,7 @@ uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 exl-id: 98ad2783-c9e3-48de-88df-8549f26114a0
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 0%
@@ -66,7 +66,7 @@ Wijzigingen annuleren
 
 >[!TIP]
 >
->De positie van de afspeelkop wordt ingesteld als onderdeel van de instellings- en configuratiecode. Meer informatie over `getCurrentPlayheadTime`, zie [Overzicht: Algemene uitvoeringsrichtsnoeren.](/help/implementation/media-sdk/media-sdk-overview.md)
+>De positie van de afspeelkop wordt ingesteld als onderdeel van de instellings- en configuratiecode. Meer informatie over `getCurrentPlayheadTime`, zie [Overzicht: Algemene uitvoeringsrichtsnoeren.](/help/implementation/media-sdk-overview.md)
 
 
 ## Implementeren {#implement}
@@ -107,13 +107,13 @@ Wijzigingen annuleren
 
    * **Standaardmetagegevens -**
 
-      >[!NOTE]
-      >
-      >Het koppelen van het standaardobject voor metagegevens aan het mediaobject is optioneel.
+     >[!NOTE]
+     >
+     >Het koppelen van het standaardobject voor metagegevens aan het mediaobject is optioneel.
 
-      Instantiëren van een standaard metagegevensobject, vullen van de gewenste variabelen en stellen het metagegevensobject in op het Media Heartbone-object.
+     Instantiëren van een standaard metagegevensobject, vullen van de gewenste variabelen en stellen het metagegevensobject in op het Media Heartbone-object.
 
-      Zie de uitgebreide lijst met metagegevens hier: [Parameters voor audio en video.](../../implementation/variables/audio-video-parameters.md)
+     Zie de uitgebreide lijst met metagegevens hier: [Parameters voor audio en video.](../../implementation/variables/audio-video-parameters.md)
 
    * **Aangepaste metagegevens -** Maak een veranderlijk object voor de douanevariabelen en bevolk met de gegevens voor deze inhoud.
 

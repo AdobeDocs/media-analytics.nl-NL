@@ -3,7 +3,7 @@ title: Opmerkingen bij de release Adobe Analytics for Streaming Media
 description: Bekijk de opmerkingen bij de release van Adobe Analytics.
 feature: Release Notes
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
-source-git-commit: 355b3b079d53ae8e83822f61fc79e60e47f6d715
+source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
 workflow-type: tm+mt
 source-wordcount: '925'
 ht-degree: 7%
@@ -30,7 +30,7 @@ Voor informatie over nieuwe eigenschappen, moeilijke situaties, en belangrijke i
 
 | Functie | Beschrijving | Doeldatum |
 | ----------- | ---------- | ------- |
-| Media-verzameling: Integratie met Experience Edge (API en mobiele SDK) | Met de Experience Edge API en de Mobile SDK kunt u nu streaming media implementeren, zodat u meer persoonlijke campagnes kunt maken en meer persoonlijke inhoud kunt bieden, waardoor er meer trackinggegevens beschikbaar komen om op te geven.<p>Deze verbetering verstrekt een verenigde inzamelingsmethode over alle oplossingen, zoals Customer Journey Analytics rapportering, RT-CDP, AJO, en Gebeurtenis door:sturen.  [Meer informatie](/help/implementation/implementation-edge.md) | 12 mei 2023 |
+| Media-verzameling: Integratie met Experience Edge (API en mobiele SDK) | Met de Experience Edge API en de Mobile SDK kunt u nu streaming media implementeren, zodat u meer persoonlijke campagnes kunt maken en meer persoonlijke inhoud kunt bieden, waardoor er meer trackinggegevens beschikbaar komen om op te geven.<p>Deze verbetering verstrekt een verenigde inzamelingsmethode over alle oplossingen, zoals Customer Journey Analytics rapportering, RT-CDP, AJO, en Gebeurtenis door:sturen.  [Meer informatie](/help/implementation/edge/implementation-edge.md) | 12 mei 2023 |
 | Deelvenster Mediagelijktijdige viewer | Begrijp waar de piekgelijktijdig voorkwam of waar drop-outs voorkwamen. Krijg waardevol inzicht in de kwaliteit van inhoud en viewerbetrokkenheid, en hulp bij het oplossen van problemen of het plannen voor volume en schaal. [Meer informatie](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=en) | 9 augustus 2022 |
 | Media afspelen tijd besteed, deelvenster | Media Playback Time Spent biedt een waardevol inzicht in de betrokkenheid van de kijker en stelt mediaorganisaties in staat diepere, meer korrelige inzichten af te leiden met de betrokkenheid van gebruikers van minuut tot minuut door middel van geavanceerde tijdbestede analyse met mogelijkheden voor het parseren van dagen. U kunt de hoeveelheid tijd waarnemen die het bekijken van uw media stromen op een specifiek punt in tijd besteedt. U kunt de afspeelduur splitsen op verschillende granulariteiten, zoals nieuwe granulariteiten van 5 minuten, 15 minuten en 30 minuten. [Meer informatie](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html) | 9 augustus 2022 |
 | Annotaties delen op mobiele scorecards | U kunt annotaties weergeven die zijn gemaakt in Workspace, in Mobiele Scorecards. Hierdoor kunt u contextuele gegevensnuances en inzichten over uw organisatie en campagnes rechtstreeks delen binnen Mobile Scorecard-projecten, die kunnen worden weergegeven in de mobiele app Analytics dashboards. [Meer informatie](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/annotations/mobile-annotations.html?lang=en) | 15 juni 2022 |
