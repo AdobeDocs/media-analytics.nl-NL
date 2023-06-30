@@ -4,16 +4,16 @@ description: Koppelingen naar verouderde SDK-downloads voor beschikbare platform
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: d1066f05-f46f-46fa-897f-039657704d05
-source-git-commit: cdc5ea361829c749dfbb457288ac5ba51a530961
+source-git-commit: c546a8cf4cf471d47e1ae43661821f3c3a6b4a44
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '339'
 ht-degree: 4%
 
 ---
 
 # Verouderd — SDK&#39;s downloaden{#legacy-download-sdks}
 
-De informatie op deze pagina bevat koppelingen waarmee u de **verouderd**  2.x Media SDKS en 1.x erfenis Media SDKs.
+De informatie op deze pagina bevat koppelingen waarmee u de **verouderd**  2.x Media SDKS en **verouderd** 1.x Media SDK&#39;s.
 
 Voor informatie over downloaden **huidig** SDK&#39;s, zie [SDK&#39;s downloaden](/help/getting-started/download-sdks.md).
 
@@ -34,8 +34,8 @@ De Inzameling van Gegevens van Adobe met de uitbreiding van de Analyse van Media
 
 | 2.x Media SDK&#39;s  | Nieuwste SDK-downloads voor media |  API&#39;s   |  Documentatie  |
 | --- | --- | --- | --- |
-| Android/Fire TV | [Media SDK voor Android v2.2.4](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/android-v2.2.4) | [Referentie voor Android API](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/) | [Android instellen](/help/legacy/media-sdk/setup/set-up-android.md) |
-| iOS/Apple TV | [Media SDK voor iOS v2.3.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/ios-v2.3.0) (Contactpersoon [Klantenservice](https://helpx.adobe.com/marketing-cloud/contact-support.html) om verouderde 2.0 SDK te verkrijgen) | [iOS API-naslag](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/) | [iOS instellen](/help/legacy/media-sdk/setup/set-up-ios.md) |
-| JavaScript | [Media SDK voor JS v2.2.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v2.2.2) | [JS API-naslaggids](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/) | [JavaScript 2.x instellen](/help/legacy/media-sdk/setup/setup-javascript/set-up-js-2.md) |
-| Roku | [Media SDK voor Roku v2.2.6](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.6) |  | [Roku instellen](/help/implementation/media-sdk/setup/set-up-roku.md) |
-| Chromecast | [Media SDK voor Chromecast v2.2.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v2.2.0) | [Referentie voor Chromecast API](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Chromecast instellen](/help/implementation/media-sdk/setup/set-up-chromecast.md) |
+| Android/Fire TV | [Legacy Media SDK voor Android v2.2.4](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/android-v2.2.4) | [Referentie voor Android API](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/) | [Android instellen](/help/legacy/media-sdk/setup/set-up-android.md) |
+| iOS/Apple TV | [Legacy Media SDK voor iOS v2.3.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/ios-v2.3.0) (Contactpersoon [Klantenservice](https://helpx.adobe.com/marketing-cloud/contact-support.html) om verouderde 2.0 SDK te verkrijgen) | [iOS API-naslag](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/) | [iOS instellen](/help/legacy/media-sdk/setup/set-up-ios.md) |
+| JavaScript | [Legacy Media SDK voor JS v2.2.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v2.2.2) | [JS API-naslaggids](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/) | [JavaScript 2.x instellen](/help/legacy/media-sdk/setup/setup-javascript/set-up-js-2.md) |
+| Roku | [Legacy Media SDK voor Roku v2.2.6](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.6) | | [Roku instellen](/help/implementation/media-sdk/setup/set-up-roku.md) |
+| Chromecast | [Legacy Media SDK voor Chromecast v2.2.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v2.2.0) | [Referentie voor Chromecast API](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Chromecast instellen](/help/implementation/media-sdk/setup/set-up-chromecast.md) |

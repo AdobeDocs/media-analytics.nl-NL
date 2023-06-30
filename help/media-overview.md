@@ -5,9 +5,9 @@ uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 355b3b079d53ae8e83822f61fc79e60e47f6d715
+source-git-commit: c546a8cf4cf471d47e1ae43661821f3c3a6b4a44
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '563'
 ht-degree: 8%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 8%
 
 ![Banner](./assets/media_analytics_banner.png)
 
-Adobe Analytics for Streaming Media is een invoegtoepassing voor Adobe Analytics die krachtige meetgereedschappen biedt voor audio, video en advertenties. Met Analytics voor Streaming Media krijgt u bijna real-time, gedetailleerde details over de duur, stops en het begin waarmee u video- en audiomeetgegevens kunt evalueren en combineren. Met deze inzichten kunt u de kijkgewoonten en de luistergewoonten van uw klanten begrijpen en de betrokkenheid met zeer persoonlijke aanbevelingen verhogen.
+Adobe Analytics for Streaming Media is een invoegtoepassing voor Adobe Analytics en Customer Journey Analytics die krachtige meetgereedschappen voor audio, video en advertenties biedt. Met Analytics voor Streaming Media krijgt u bijna real-time, gedetailleerde details over de duur, stops en het begin waarmee u video- en audiomeetgegevens kunt evalueren en combineren. Met deze inzichten kunt u de kijkgewoonten en de luistergewoonten van uw klanten begrijpen en de betrokkenheid met zeer persoonlijke aanbevelingen verhogen.
 
 Met Adobe Analytics for Streaming Media kunt u de volledige reis van de klant over uw site en streaming apps volgen. U kunt de meetgegevens van streaming media combineren met andere Adobe Analytics-mogelijkheden, zoals Audience Analytics, Mobiel of Apparaatanalyse. De meetgegevens kunnen eenvoudig worden geïntegreerd in Adobe Analytics Reports en andere Adobe Experience Platform-producten. Met mediameting kunt u uw data indelen in meerdere dimensies en segmenten, en zo alle metadata vastleggen die u nodig hebt voor een volledige en gedetailleerde analyse. Vervolgens kunt u data analyseren en succescriteria toewijzen aan volledig verbruikte media, gemiddelde bestede tijd en voltooide advertenties.
 
