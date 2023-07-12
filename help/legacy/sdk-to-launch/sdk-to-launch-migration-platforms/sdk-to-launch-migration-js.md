@@ -4,10 +4,10 @@ description: Leer hoe u van de SDK van Media naar Starten voor JS migreert.
 exl-id: 19b506b2-3070-4a5e-9732-a5cd0867afde
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: 73ef5e55c9ab57a5a2ba22aa1e4b646c530cc53f
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 3%
+source-wordcount: '446'
+ht-degree: 2%
 
 ---
 
@@ -115,7 +115,6 @@ Een gedelegeerd object doorgeven aan `get-instance` die `getQoSObject()` en `get
 ### Media-SDK
 
 * [JavaScript 2.x instellen](/help/legacy/media-sdk/setup/setup-javascript/set-up-js-2.md)
-* [JavaScript 3.x instellen](/help/legacy/media-sdk/setup/setup-javascript/set-up-js-3.md)
 * [Media SDK JS API](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html)
 
 ### Starten
