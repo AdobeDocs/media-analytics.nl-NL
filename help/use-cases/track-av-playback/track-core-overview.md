@@ -5,9 +5,9 @@ uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 exl-id: 98ad2783-c9e3-48de-88df-8549f26114a0
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
+source-git-commit: 0d53e62069a65b252e004e21943ecdbd011a3658
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '874'
 ht-degree: 0%
 
 ---
@@ -63,10 +63,6 @@ Wijzigingen annuleren
 ### Wanneer het bufferen eindigt
 
 * Bellen `trackEvent(BufferComplete);`
-
->[!TIP]
->
->De positie van de afspeelkop wordt ingesteld als onderdeel van de instellings- en configuratiecode. Meer informatie over `getCurrentPlayheadTime`, zie [Overzicht: Algemene uitvoeringsrichtsnoeren.](/help/implementation/media-sdk-overview.md)
 
 
 ## Implementeren {#implement}
