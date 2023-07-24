@@ -5,9 +5,9 @@ uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
-source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
+source-git-commit: 984f058fda15b1c5e960e4c8d8e2378308d2b541
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '471'
 ht-degree: 0%
 
 ---
@@ -44,11 +44,13 @@ Naast de implementatiemethoden van Edge zijn er andere implementatiemethoden bes
 
   Voor informatie over het installeren, configureren en implementeren van de Media Extension met tags raadpleegt u [Overzicht van Adobe Media Analytics (3.x SDK) voor audio- en video-extensie](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics-3x/overview.html).
 
-* **Media SDK:**  Gegevens worden naar Adobe Analytics verzonden.
+* **Media SDK:**  Met de Media SDK kunt u meerdere mediaplatforms meten, zoals websites, mobiele telefoons, aangesloten tv&#39;s, tablets, OTT-apparaten, set-top boxes en gameconsoles. (Zie voor meer informatie [Ondersteunde apparaten en platforms](/help/getting-started/supported-devices.md).)
+
+  De Media SDK&#39;s gebruiken de Media Collection API&#39;s voor het bijhouden van gegevens. Gegevens worden naar Adobe Analytics verzonden.
 
   Voor informatie over het downloaden en installeren van Media SDKs en uitbreidingen, zie [SDK&#39;s van media, extensies met tags en OTT SDK&#39;s ophalen](/help/getting-started/download-sdks.md).
 
-* **Media Collection-API:** Audio- en videogebeurtenissen bijhouden met RESTful HTTP-aanroepen. Gegevens worden naar Adobe Analytics verzonden.
+* **Media Collection-API&#39;s:** Omdat de API&#39;s van de Media Collection aanpasbaar zijn, kunnen ze worden gebruikt voor toepassingen die aangepaste volgmogelijkheden vereisen en voor apparaten die niet door de Media SDK&#39;s worden ondersteund. De API&#39;s van de Media Collection houden audio- en videogebeurtenissen bij met behulp van RESTful HTTP-aanroepen. Gegevens worden naar Adobe Analytics verzonden.
 
   Voor informatie over het gebruiken van de Inzameling APIs van Media, zie [Media Collection-API&#39;s](media-collection-api/mc-api-overview.md).
 

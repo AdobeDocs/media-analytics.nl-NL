@@ -5,9 +5,9 @@ uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: c546a8cf4cf471d47e1ae43661821f3c3a6b4a44
+source-git-commit: 984f058fda15b1c5e960e4c8d8e2378308d2b541
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '589'
 ht-degree: 8%
 
 ---
@@ -21,6 +21,11 @@ Adobe Analytics for Streaming Media is een invoegtoepassing voor Adobe Analytics
 Met Adobe Analytics for Streaming Media kunt u de volledige reis van de klant over uw site en streaming apps volgen. U kunt de meetgegevens van streaming media combineren met andere Adobe Analytics-mogelijkheden, zoals Audience Analytics, Mobiel of Apparaatanalyse. De meetgegevens kunnen eenvoudig worden geïntegreerd in Adobe Analytics Reports en andere Adobe Experience Platform-producten. Met mediameting kunt u uw data indelen in meerdere dimensies en segmenten, en zo alle metadata vastleggen die u nodig hebt voor een volledige en gedetailleerde analyse. Vervolgens kunt u data analyseren en succescriteria toewijzen aan volledig verbruikte media, gemiddelde bestede tijd en voltooide advertenties.
 
 U kunt vitale leveringsmetriek met betrekking tot de Kwaliteit van Ervaring (QoE) zoals gelaten vallen kaders, tijd doorgebrachte het als buffer optreden voor, en gemiddelde bitrate meten. En de metriek kan met uw website of toepassingsgegevens worden gecombineerd om het klantenweg en de rente-te visualiseren - om verbeterde aanbevelingen te verstrekken en klantenervaringen te personaliseren gebruikend Adobe Experience Platform.
+
+>[!IMPORTANT]
+>
+>Als u Adobe Analytics Streaming Media wilt implementeren, neemt u contact op met uw Adobe-verkoper of Adobe-accountteam om ervoor te zorgen dat Streaming Media deel uitmaakt van uw productportfolio.
+
 
 ## Hoe werkt het
 
