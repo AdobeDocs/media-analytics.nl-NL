@@ -5,9 +5,9 @@ user-guide-title: Adobe Analytics for Streaming Media
 breadcrumb-title: Gids voor Media Analytics
 user-guide-description: Implementeer Adobe Analytics for Streaming Media. Bevat de Media-SDK en de Media Collection-API.
 sub-product: media analytics
-source-git-commit: fa72159d968e50c3b3e02853e8509533d91f1785
+source-git-commit: b807359636e17bf36e33ca20e9dc4dee4d7f2a8f
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '896'
 ht-degree: 70%
 
 ---
@@ -19,7 +19,6 @@ ht-degree: 70%
 + Release-opmerkingen {#release-notes}
    + [Opmerkingen bij de release Streaming media](additional-resources/release-notes.md)
 + Aan de slag {#getting-started}
-   + [Overzicht](getting-started/getting-started.md)
    + [Vereisten](getting-started/prereqs.md)
    + [Ondersteunde apparaten](getting-started/supported-devices.md)
    + [Documentatie voor streamingmedia](getting-started/implementation-documentation.md)
