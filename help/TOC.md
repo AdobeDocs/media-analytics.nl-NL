@@ -5,9 +5,9 @@ user-guide-title: Adobe Analytics for Streaming Media
 breadcrumb-title: Gids voor Media Analytics
 user-guide-description: Implementeer Adobe Analytics for Streaming Media. Bevat de Media-SDK en de Media Collection-API.
 sub-product: media analytics
-source-git-commit: b807359636e17bf36e33ca20e9dc4dee4d7f2a8f
+source-git-commit: b33a6205d5c6921c4ee0fcfc968593c62461c2a0
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '895'
 ht-degree: 70%
 
 ---
@@ -73,7 +73,7 @@ ht-degree: 70%
       + [Berekende standaarden](implementation/variables/calculated-metrics.md)
 + Rapportage {#media-reports}
    + [Mediarapporten inschakelen](reporting/media-reports-enable.md)
-   + [Segmenten](reporting/segments.md)
+   + [Informatie over segmenten](reporting/segments.md)
    + Standaardrapporten van media {#media-default-reports}
       + [Overzicht van standaardrapporten](reporting/reports-and-analytics/default-reports-overview.md)
       + [Overzicht van media](reporting/reports-and-analytics/media-reports-overview.md)
@@ -113,49 +113,48 @@ ht-degree: 70%
       + [OTT en Audience Manager](use-cases/analytics-with-ott/ott-am.md)
       + [OTT en Experience Cloud](use-cases/analytics-with-ott/ott-experience-cloud.md)
 + Tekstspatiëring {#tracking}
-   + Tekstspatiëring {#track-av-playback}
-      + [Overzicht](use-cases/track-av-playback/track-core-overview.md)
-      + Core Streaming Media afspelen {#track-core}
-         + [Core afspelen bijhouden in JavaScript 3.x](use-cases/track-av-playback/track-core/track-core-javascript/track-core-js3.md)
-         + [Core afspelen bijhouden in Chromecast](use-cases/track-av-playback/track-core/track-core-chromecast.md)
-         + [Core afspelen bijhouden in Roku](use-cases/track-av-playback/track-core/track-core-roku.md)
-      + Buffer bijhouden {#track-buffering}
-         + [Buffer bijhouden in JavaScript 3.x](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js3.md)
-         + [Buffer bijhouden in Chromecast](use-cases/track-av-playback/track-buffering/track-buffering-chromecast.md)
-         + [Buffer bijhouden in Roku](use-cases/track-av-playback/track-buffering/track-buffering-roku.md)
-      + Zoekopdrachten bijhouden {#track-seeking}
-         + [Zoekopdrachten bijhouden in JavaScript 3.x ](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js3.md)
-         + [Zoekopdrachten bijhouden in Chromecast](use-cases/track-av-playback/track-seeking/track-seeking-chromecast.md)
-         + [Zoekopdrachten bijhouden in Roku](use-cases/track-av-playback/track-seeking/track-seeking-roku.md)
-      + Standaardmetadata implementeren {#impl-std-metadata}
-         + [Standaardmetadata implementeren in JavaScript 3.x](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js3.md)
-         + [Standaardmetadata implementeren in Chromecast](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
-         + [Standaardmetadataparameters - Chromecast](use-cases/track-av-playback/impl-std-metadata/chromecast-metadata.md)
-         + [Standaardmetadata implementeren in Roku](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
-         + [Standaardmetadataparameters - Roku](use-cases/track-av-playback/impl-std-metadata/roku-metadata.md)
-      + Advertenties bijhouden {#track-ads}
-         + [Overzicht](use-cases/track-ads/track-ads-overview.md)
-         + [Advertenties bijhouden in JavaScript 3.x ](use-cases/track-ads/track-ads-js/track-ads-js3.md)
-         + [Advertenties bijhouden in Chromecast](use-cases/track-ads/track-ads-chromecast.md)
-         + [Advertenties bijhouden in Roku](use-cases/track-ads/track-ads-roku.md)
-         + Standaardmetadata voor advertenties implementeren {#impl-std-ad-metadata}
-            + [Standaardmetadata implementeren in JavaScript 3.x](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
-            + [Standaardmetadata voor advertenties implementeren in Roku](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
-      + Hoofdstukken en segmenten bijhouden {#track-chapters}
-         + [Overzicht](use-cases/track-chapters/track-chapters-overview.md)
-         + [Hoofdstukken en segmenten bijhouden in JavaScript 3.x](use-cases/track-chapters/track-chapters-js/track-chapters-js3.md)
-         + [Hoofdstuk en segment bijhouden in Chromecast](use-cases/track-chapters/track-chapters-chromecast.md)
-         + [Hoofdstukken en segmenten bijhouden in Roku](use-cases/track-chapters/track-chapters-roku.md)
-      + Kwaliteit van Experience bijhouden {#track-qos}
-         + [Overzicht](use-cases/track-qos/track-qos-overview.md)
-         + [Kwaliteit van Experience bijhouden in JavaScript 3.x](use-cases/track-qos/track-qos-js/track-qos-js3.md)
-         + [Kwaliteit van Experience bijhouden in Chromecast](use-cases/track-qos/track-qos-chromecast.md)
-         + [Kwaliteit van Experience bijhouden in Roku](use-cases/track-qos/track-qos-roku.md)
-      + Fouten bijhouden {#track-errors}
-         + [Overzicht](use-cases/track-errors/track-errors-overview.md)
-         + [Fouten bijhouden in JavaScript 3.x ](use-cases/track-errors/track-errors-js/track-errors-js3.md)
-         + [Fouten bijhouden in Chromecast](use-cases/track-errors/track-errors-chromecast.md)
-         + [Fouten bijhouden in Roku](use-cases/track-errors/track-errors-roku.md)
+   + [Overzicht](use-cases/track-av-playback/track-core-overview.md)
+   + Core Streaming Media afspelen {#track-core}
+      + [Core afspelen bijhouden in JavaScript 3.x](use-cases/track-av-playback/track-core/track-core-javascript/track-core-js3.md)
+      + [Core afspelen bijhouden in Chromecast](use-cases/track-av-playback/track-core/track-core-chromecast.md)
+      + [Core afspelen bijhouden in Roku](use-cases/track-av-playback/track-core/track-core-roku.md)
+   + Buffer bijhouden {#track-buffering}
+      + [Buffer bijhouden in JavaScript 3.x](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js3.md)
+      + [Buffer bijhouden in Chromecast](use-cases/track-av-playback/track-buffering/track-buffering-chromecast.md)
+      + [Buffer bijhouden in Roku](use-cases/track-av-playback/track-buffering/track-buffering-roku.md)
+   + Zoekopdrachten bijhouden {#track-seeking}
+      + [Zoekopdrachten bijhouden in JavaScript 3.x ](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js3.md)
+      + [Zoekopdrachten bijhouden in Chromecast](use-cases/track-av-playback/track-seeking/track-seeking-chromecast.md)
+      + [Zoekopdrachten bijhouden in Roku](use-cases/track-av-playback/track-seeking/track-seeking-roku.md)
+   + Standaardmetadata implementeren {#impl-std-metadata}
+      + [Standaardmetadata implementeren in JavaScript 3.x](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js3.md)
+      + [Standaardmetadata implementeren in Chromecast](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
+      + [Standaardmetadataparameters - Chromecast](use-cases/track-av-playback/impl-std-metadata/chromecast-metadata.md)
+      + [Standaardmetadata implementeren in Roku](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+      + [Standaardmetadataparameters - Roku](use-cases/track-av-playback/impl-std-metadata/roku-metadata.md)
+   + Advertenties bijhouden {#track-ads}
+      + [Overzicht](use-cases/track-ads/track-ads-overview.md)
+      + [Advertenties bijhouden in JavaScript 3.x ](use-cases/track-ads/track-ads-js/track-ads-js3.md)
+      + [Advertenties bijhouden in Chromecast](use-cases/track-ads/track-ads-chromecast.md)
+      + [Advertenties bijhouden in Roku](use-cases/track-ads/track-ads-roku.md)
+      + Standaardmetadata voor advertenties implementeren {#impl-std-ad-metadata}
+         + [Standaardmetadata implementeren in JavaScript 3.x](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
+         + [Standaardmetadata voor advertenties implementeren in Roku](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
+   + Hoofdstukken en segmenten bijhouden {#track-chapters}
+      + [Overzicht](use-cases/track-chapters/track-chapters-overview.md)
+      + [Hoofdstukken en segmenten bijhouden in JavaScript 3.x](use-cases/track-chapters/track-chapters-js/track-chapters-js3.md)
+      + [Hoofdstuk en segment bijhouden in Chromecast](use-cases/track-chapters/track-chapters-chromecast.md)
+      + [Hoofdstukken en segmenten bijhouden in Roku](use-cases/track-chapters/track-chapters-roku.md)
+   + Kwaliteit van Experience bijhouden {#track-qos}
+      + [Overzicht](use-cases/track-qos/track-qos-overview.md)
+      + [Kwaliteit van Experience bijhouden in JavaScript 3.x](use-cases/track-qos/track-qos-js/track-qos-js3.md)
+      + [Kwaliteit van Experience bijhouden in Chromecast](use-cases/track-qos/track-qos-chromecast.md)
+      + [Kwaliteit van Experience bijhouden in Roku](use-cases/track-qos/track-qos-roku.md)
+   + Fouten bijhouden {#track-errors}
+      + [Overzicht](use-cases/track-errors/track-errors-overview.md)
+      + [Fouten bijhouden in JavaScript 3.x ](use-cases/track-errors/track-errors-js/track-errors-js3.md)
+      + [Fouten bijhouden in Chromecast](use-cases/track-errors/track-errors-chromecast.md)
+      + [Fouten bijhouden in Roku](use-cases/track-errors/track-errors-roku.md)
 + Privacy en beveiliging {#streaming-media-privacy}
    + [Instellingen voor Uitschakelen en Privacy](privacy/opt-out-privacy.md)
    + [Beveiliging](privacy/security.md)
@@ -170,7 +169,7 @@ ht-degree: 70%
          + [JavaScript 2.x instellen](legacy/media-sdk/setup/setup-javascript/set-up-js-2.md)
    + [Informatie over hartslagmeting](legacy/heartbeat-measurement.md)
    + [Adobe Primetime en Streaming Media Analytics](legacy/intro-to-ava/implementation-paths/primetime-path.md)
-   + [Adobe Audience Management Enablement](legacy/intro-to-ava/am-enablement.md)
+   + [Adobe Audience Management](legacy/intro-to-ava/am-enablement.md)
    + [Implementatie van aangepaste koppeling](legacy/measurement-options/cl-in-aa/cl-impl-guide.md)
    + Legacy Mijlpaal-opvolging {#legacy-milestone-tracking}
       + [Legacy Mijlpaal-opvolging](legacy/measurement-options/mm-milestone-tracking/milestone-overview.md)
