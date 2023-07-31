@@ -5,9 +5,9 @@ uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: "Media Analytics, System Requirements"
 role: User, Admin, Data Engineer
-source-git-commit: 60702b2cf466df7a1b328743c5d5f4c1834d9554
+source-git-commit: b12e6547ef32bfad7e8d6787a26d6467bcfeb23c
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '442'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Voordat u begint met het implementeren van streaming media, moet u de volgende t
 Voordat u begint met het implementeren van streaming media, moet u de [Overzicht van streaming media](/help/media-overview.md) om ervoor te zorgen dat de streamingmedia aan uw behoeften voldoen.
 
 1. **Bevestig uw prijsmodel voor streamingmedia**<br>
-Het huidige prijsmodel is gebaseerd op videostromen. Neem indien nodig contact op met uw verkoper of Adobe-accountteam om een nieuwe verkooporder te ondertekenen omdat de Streaming Media Analytics los van Adobe Analytics wordt verkocht.
+Het huidige prijsmodel is gebaseerd op videostromen. Neem indien nodig contact op met uw verkoper of Adobe-accountteam, omdat streaming media afzonderlijk wordt verkocht als invoegtoepassing voor Adobe Analytics.<!--update when media SKUs are added to other AEP apps -->
 
 1. **Adobe Analytics-rapporten inschakelen**<br>
 Om rapporten in Analytics toe te laten en de inhoud en de gegevens te bekijken die u verzamelt, moet u rapporten in Analytics toelaten. Zie [Media-rapporten inschakelen](/help/reporting/media-reports-enable.md).
@@ -46,3 +46,5 @@ Om rapporten in Analytics toe te laten en de inhoud en de gegevens te bekijken d
    * [Vereisten voor alleen Adobe Analytics-implementaties](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
 
    * [Vereisten voor Edge-implementaties](/help/implementation/edge/prerequisites-edge.md)
+
+   Gebruik de [Overzicht van implementatie](/help/implementation/overview.md) om te bepalen welke implementatiemethode geschikt is voor u.
