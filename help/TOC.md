@@ -5,10 +5,10 @@ user-guide-title: Adobe Analytics for Streaming Media
 breadcrumb-title: Gids voor Media Analytics
 user-guide-description: Implementeer Adobe Analytics for Streaming Media. Bevat de Media-SDK en de Media Collection-API.
 sub-product: media analytics
-source-git-commit: 8a0f2c0b367b48ee5ac94e7fc6bcd0eadafbc5d8
+source-git-commit: ee147c2446162257b03f2f0b972e591435d787a9
 workflow-type: tm+mt
 source-wordcount: '897'
-ht-degree: 70%
+ht-degree: 68%
 
 ---
 
@@ -74,22 +74,23 @@ ht-degree: 70%
       + [Kwaliteitsparameters](implementation/variables/quality-parameters.md)
       + [Berekende standaarden](implementation/variables/calculated-metrics.md)
 + Rapportage {#media-reports}
-   + [Mediarapporten inschakelen](reporting/media-reports-enable.md)
-   + [Informatie over segmenten](reporting/segments.md)
-   + Standaardrapporten van media {#media-default-reports}
-      + [Overzicht van standaardrapporten](reporting/reports-and-analytics/default-reports-overview.md)
-      + [Overzicht van media](reporting/reports-and-analytics/media-reports-overview.md)
-      + [Details van media](reporting/reports-and-analytics/media-reports-detail.md)
-      + [Rapport Mediaoverdag](reporting/reports-and-analytics/media-reports-daypart.md)
-      + [Rapport Mediagelijktijdige viewers](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
-   + Deelvensters voor Media-werkruimte {#media-workspace-panels}
+   + [Media-rapporten inschakelen](reporting/media-reports-enable.md)
+   + Deelvensters Media in werkruimte {#media-workspace-panels}
       + [Deelvenster Gemiddelde media - geluid](reporting/workspace/average-minute-audience.md)
       + [Deelvenster voor gelijktijdige mediaviewers](reporting/workspace/media-concurrent-viewers-overview.md)
       + [Media afspelen tijd besteed, deelvenster](reporting/workspace/media-playback-time-spent.md)
-   + [Sjablonen voor Media-werkruimte](reporting/workspace/media-workspace-templates.md)
-   + [Gegevens van gelijktijdige viewers ophalen via API](reporting/reports-and-analytics/get-concurrent-json20.md)
-   + [Gegevens van afspeeltijd van media ophalen via API](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
-+ Gevallen gebruiken {#media-use-cases}
+   + [Mediarapporten in Workspace](reporting/workspace/media-workspace-templates.md)
+   + [Mediasegmenten](reporting/segments.md)
+   + Standaardrapporten voor media {#media-default-reports}
+      + [Overzicht van standaardrapporten](reporting/reports-and-analytics/default-reports-overview.md)
+      + [Overzicht van media](reporting/reports-and-analytics/media-reports-overview.md)
+      + [Media-details](reporting/reports-and-analytics/media-reports-detail.md)
+      + [Mediadagrapport](reporting/reports-and-analytics/media-reports-daypart.md)
+      + [Rapport voor gelijktijdige viewers voor media](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
+   + Media-API {#media-api}
+      + [Gelijktijdige viewergegevens ophalen](reporting/reports-and-analytics/get-concurrent-json20.md)
+      + [Betaalde gegevens voor afspeeltijd van media ophalen](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
++ Gebruiksscenario’s {#media-use-cases}
    + [Gebruiksscenario&#39;s van SDK voor media](use-cases/cookbook/sdk-cookbook-overview.md)
    + Player-status bijhouden {#player-state-tracking}
       + [Overzicht](use-cases/player-state-tracking/player-state-overview.md)
@@ -171,7 +172,7 @@ ht-degree: 70%
          + [JavaScript 2.x instellen](legacy/media-sdk/setup/setup-javascript/set-up-js-2.md)
    + [Informatie over hartslagmeting](legacy/heartbeat-measurement.md)
    + [Adobe Primetime en Streaming Media Analytics](legacy/intro-to-ava/implementation-paths/primetime-path.md)
-   + [Adobe Audience Management](legacy/intro-to-ava/am-enablement.md)
+   + [Adobe Audience Management Enablement](legacy/intro-to-ava/am-enablement.md)
    + [Implementatie van aangepaste koppeling](legacy/measurement-options/cl-in-aa/cl-impl-guide.md)
    + Legacy Mijlpaal-opvolging {#legacy-milestone-tracking}
       + [Legacy Mijlpaal-opvolging](legacy/measurement-options/mm-milestone-tracking/milestone-overview.md)
