@@ -4,7 +4,7 @@ description: Leer hoe u core tracking implementeert met de Media SDK in een brow
 exl-id: f3145450-82ba-4790-91a4-9d2cc97bbaa5
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: 59e03f550a35edecc949f7ef5e70c1cb2a784725
 workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 0%
@@ -16,7 +16,8 @@ ht-degree: 0%
 Deze documentatie behandelt het volgen in versie 3.x van SDK.
 
 >[!IMPORTANT]
-> Als u eerdere versies van de SDK implementeert, kunt u de ontwikkelaarsgidsen hier downloaden: [SDK&#39;s downloaden](/help/getting-started/download-sdks.md)
+>
+>Als u eerdere versies van de SDK implementeert, kunt u de ontwikkelaarsgidsen hier downloaden: [SDK&#39;s downloaden](/help/getting-started/download-sdks.md)
 
 1. **Eerste instelling voor bijhouden**
 
@@ -29,8 +30,8 @@ Deze documentatie behandelt het volgen in versie 3.x van SDK.
    | `name` | string | Niet-lege tekenreeks die de medianaam aangeeft. |
    | `id` | string | Niet-lege tekenreeks die unieke media-id aangeeft. |
    | `length` | getal | Positief getal dat de lengte van het medium in seconden aangeeft. Gebruik 0 als de lengte onbekend is. |
-   | `streamType` | string |  |
-   | `mediaType` |  | Type media (audio of video). |
+   | `streamType` | string |   |
+   | `mediaType` | | Type media (audio of video). |
 
    **`StreamType`constanten:**
 
@@ -60,30 +61,30 @@ Deze documentatie behandelt het volgen in versie 3.x van SDK.
 
    * **Standaardmetagegevens**
 
-      >[!NOTE]
-      >
-      >Het koppelen van de standaardmetagegevens is optioneel.
+     >[!NOTE]
+     >
+     >U kunt de standaardmetagegevens niet koppelen.
 
       * API-naslaggids voor metagegevens van media - [Standaardmetagegevenstoetsen - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
 
-         Hier vindt u de uitgebreide set met beschikbare metagegevens: [Parameters voor audio en video](/help/implementation/variables/audio-video-parameters.md)
+        Hier vindt u de uitgebreide set met beschikbare metagegevens: [Parameters voor audio en video](/help/implementation/variables/audio-video-parameters.md)
+
    * **Aangepaste metagegevens**
 
-      Maak een veranderlijk object voor de douanevariabelen en bevolk met de gegevens voor deze media. Bijvoorbeeld:
+     Maak een veranderlijk object voor de douanevariabelen en bevolk met de gegevens voor deze media. Bijvoorbeeld:
 
-      ```js
-      /* Set context data */
-       var contextData = {};
-      
-       //Standard metadata
-       contextData[ADB.Media.VideoMetadataKeys] = "Sample Episode";
-       contextData[ADB.Media.VideoMetadataKeys] = "Sample Show";
-      
-       //Custom metadata
-       contextData["isUserLoggedIn"] = "false";
-       contextData["tvStation"] = "Sample TV Station";
-      ```
-
+     ```js
+     /* Set context data */
+      var contextData = {};
+     
+      //Standard metadata
+      contextData[ADB.Media.VideoMetadataKeys] = "Sample Episode";
+      contextData[ADB.Media.VideoMetadataKeys] = "Sample Show";
+     
+      //Custom metadata
+      contextData["isUserLoggedIn"] = "false";
+      contextData["tvStation"] = "Sample TV Station";
+     ```
 
 1. **Houd de intentie bij om het afspelen te starten**
 
@@ -155,7 +156,7 @@ Deze documentatie behandelt het volgen in versie 3.x van SDK.
 
    **Scenario&#39;s pauzeren**
 
-   Identificeer om het even welk scenario waarin de media speler zal pauzeren en zorg ervoor dat `trackPause` wordt correct geroepen. De volgende scenario&#39;s vereisen allemaal dat uw app wordt aangeroepen `trackPause()`:
+   Identificeer om het even welk scenario waarin de media speler zal pauzeren en zorg ervoor dat `trackPause` wordt correct aangeroepen. De volgende scenario&#39;s vereisen allemaal dat uw app wordt aangeroepen `trackPause()`:
 
    * De gebruiker raakt expliciet de pauze in de app.
    * De speler plaatst zichzelf in de pauzestatus.

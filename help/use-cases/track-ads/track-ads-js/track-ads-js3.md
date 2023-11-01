@@ -4,9 +4,9 @@ description: Implementeer en volg in browser (JS) toepassingen gebruikend Media 
 exl-id: 6b34b2c0-5e50-471a-b52c-b9c760fa3169
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: fd9f0a7f4592c01082bcad015351d9128df2f8c9
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '394'
 ht-degree: 3%
 
 ---
@@ -29,7 +29,7 @@ De volgende instructies bieden richtlijnen voor implementatie met behulp van de 
 | `AdComplete` | Constante voor het bijhouden van de gebeurtenis Advertentie voltooid |
 | `AdSkip` | Constante voor het bijhouden van de gebeurtenis Advertentie overslaan |
 
-## Uitvoeringsstappen
+## Implementatiestappen
 
 1. Identificeer wanneer de grens van de advertentie begint, met inbegrip van pre-rol, en creeer een `AdBreakObject` met behulp van de informatie over het advertentieeinde.
 
@@ -41,7 +41,7 @@ De volgende instructies bieden richtlijnen voor implementatie met behulp van de 
    | `position` | getal | De getalpositie van het advertentiespoor dat met 1 begint. |
    | `startTime` | getal | Waarde van afspeelkop aan het begin van het advertentieeinde. |
 
-   Object maken van einde toevoegen:
+   Object maken van advertentie-einde:
 
    ```js
    var adBreakObject =
@@ -77,22 +77,22 @@ De volgende instructies bieden richtlijnen voor implementatie met behulp van de 
                                    <LENGTH>);
    ```
 
-1. Voeg desgewenst standaard- en/of advertentiemetagegevens toe aan de mediatraceringssessie via de variabelen van de contextgegevens.
+1. (Optioneel) Voeg standaard- en/of advertentiemetagegevens toe aan de mediatraceringssessie via de variabelen van de contextgegevens.
 
    * [Standaardmetadata voor advertenties implementeren in JavaScript](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
    * **Aangepaste en metagegevens -** Voor aangepaste metagegevens maakt u een variabelenobject voor de aangepaste gegevensvariabelen en vult u de gegevens voor de huidige advertentie in:
 
-      ```js
-      /* Set context data */
-      // Standard metadata keys provided by adobe.
-      adMetadata[ADB.Media.AdMetadataKeys]  ="Sample Advertiser";
-      adMetadata[ADB.Media.AdMetadataKeys] = "Sample Campaign";
-      
-      // Custom metadata keys
-      adMetadata["affiliate"] = "Sample affiliate";
-      adMetadata["campaign"] = "Sample ad campaign";
-      adMetadata["creative"] = "Sample creative";
-      ```
+     ```js
+     /* Set context data */
+     // Standard metadata keys provided by adobe.
+     adMetadata[ADB.Media.AdMetadataKeys]  ="Sample Advertiser";
+     adMetadata[ADB.Media.AdMetadataKeys] = "Sample Campaign";
+     
+     // Custom metadata keys
+     adMetadata["affiliate"] = "Sample affiliate";
+     adMetadata["campaign"] = "Sample ad campaign";
+     adMetadata["creative"] = "Sample creative";
+     ```
 
 1. Bellen `trackEvent()` met de `AdStart` in de `MediaHeartbeat` -instantie om het afspelen van de advertentie te volgen.
 
@@ -130,3 +130,33 @@ De volgende instructies bieden richtlijnen voor implementatie met behulp van de 
    ```
 
 Zie het volgende scenario [VOD afspelen met pre-roll-advertenties](/help/use-cases/tracking-scenarios/vod-preroll-ads.md) voor meer informatie .
+
+## Korrelige advertentie bijhouden
+
+U kunt granulaire advertentietracering instellen om `1 second` advertentie bijhouden.
+
+Deze informatie moet worden verstrekt wanneer het beginnen van een volgende zitting.
+
+>[!NOTE]
+>
+>   Het standaardinterval voor toevoegen en pingelen is `10 seconds`.
+
+
+**Syntaxis**
+
+```javascript
+ADB.Media.MediaObjectKey = {
+   GranularAdTracking: "media.granularadtracking"
+   }
+```
+
+**Voorbeeld**
+
+```javascript
+var mediaObject = ADB.Media.createMediaObject("media-name", "media-id", 60, ADB.Media.StreamType.VOD, ADB.Media.MediaType.Video);
+
+// Enable granular ad tracking
+mediaObject[ADB.Media.MediaObjectKey.GranularAdTracking] = true;
+
+tracker.trackSessionStart(mediaObject);
+```
