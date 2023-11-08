@@ -5,9 +5,9 @@ uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
 workflow-type: tm+mt
-source-wordcount: '771'
+source-wordcount: '792'
 ht-degree: 1%
 
 ---
@@ -17,6 +17,7 @@ ht-degree: 1%
 Deze documentatie behandelt het volgen in versie 2.x van SDK.
 
 >[!IMPORTANT]
+>
 >Als u een 1.x-versie van de SDK implementeert, kunt u hier de 1.x-handleidingen voor ontwikkelaars downloaden: [SDK&#39;s downloaden](/help/getting-started/download-sdks.md)
 
 1. **Eerste instelling voor bijhouden**
@@ -28,7 +29,7 @@ Deze documentatie behandelt het volgen in versie 2.x van SDK.
    | Naam variabele | Beschrijving | Vereist |
    | --- | --- | :---: |
    | `name` | Videonaam | Ja |
-   | `mediaid` | Unieke videoid | Ja |
+   | `mediaid` | Unieke video-id | Ja |
    | `length` | Videolengte | Ja |
    | `streamType` | Type stream (zie _StreamType-constanten_ hieronder) | Ja |
    | `mediaType` | Mediatype (zie _MediaType-constanten_ hieronder) | Ja |
@@ -99,24 +100,25 @@ Deze documentatie behandelt het volgen in versie 2.x van SDK.
 
 1. **Metagegevens koppelen**
 
-   Koppel standaard- en/of aangepaste metagegevensobjecten optioneel aan de volgende sessie via de variabelen van de contextgegevens.
+   Koppel standaard- en/of aangepaste metagegevensobjecten optioneel aan de volgende sessie via variabelen voor contextgegevens.
 
    * **Standaardmetagegevens**
 
 [Standaardmetadata implementeren in Roku](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
-      >[!NOTE]
-      >Het is optioneel om het standaardobject voor videometagegevens aan het mediaobject te koppelen.
+     >[!NOTE]
+     >
+     >Het is optioneel om het standaardobject voor videometagegevens aan het mediaobject te koppelen.
 
    * **Aangepaste metagegevens**
 
-      Maak een veranderlijk object voor de douanevariabelen en bevolk met de gegevens voor deze video. Bijvoorbeeld:
+     Maak een veranderlijk object voor de douanevariabelen en bevolk met de gegevens voor deze video. Bijvoorbeeld:
 
-      ```
-      mediaContextData = {}
-      mediaContextData["cmk1"] = "cmv1"
-      mediaContextData["cmk2"] = "cmv2"
-      ```
+     ```
+     mediaContextData = {}
+     mediaContextData["cmk1"] = "cmv1"
+     mediaContextData["cmk2"] = "cmv2"
+     ```
 
 1. **Houd de intentie bij om het afspelen te starten**
 
@@ -127,12 +129,15 @@ Deze documentatie behandelt het volgen in versie 2.x van SDK.
    ```
 
    >[!TIP]
+   >
    >De tweede waarde is de aangepaste objectnaam voor videometagegevens die u in stap 2 hebt gemaakt.
 
    >[!IMPORTANT]
+   >
    >`trackSessionStart` Hiermee wordt bijgehouden wat de gebruiker wil afspelen, niet het begin van het afspelen. Deze API wordt gebruikt om de videogegevens/meta-gegevens te laden en tijd-aan-begin metrische QoS (de tijdsduur tussen `trackSessionStart` en `trackPlay`).
 
    >[!NOTE]
+   >
    >Als u geen aangepaste videometagegevens gebruikt, kunt u gewoon een leeg object verzenden voor de `data` argument in `trackSessionStart`, zoals getoond in de commentaarlijn in het iOS voorbeeld hierboven.
 
 1. **Het feitelijke begin van het afspelen bijhouden**
@@ -145,12 +150,18 @@ Deze documentatie behandelt het volgen in versie 2.x van SDK.
 
 1. **Waarde van afspeelkop bijwerken**
 
-   Wanneer de veranderingen van de media playhead de SDK door te roepen op de hoogte brengen `mediaUpdatePlayhead` API. <br /> Voor video-op-bestelling (VOD), wordt de waarde gespecificeerd in seconden vanaf het begin van het media punt. <br /> Wanneer de speler voor live streaming geen informatie over de duur van de inhoud geeft, kan de waarde worden opgegeven als het aantal seconden dat is verstreken sinds middernacht UTC van die dag. <br /> Opmerking: Wanneer u voortgangsmarkeringen gebruikt, is de duur van de inhoud vereist en moet de afspeelkop worden bijgewerkt als het aantal seconden vanaf het begin van het media-item, te beginnen met 0.
-
+   Wanneer de afspeelkop van media verandert, geeft u een melding aan de SDK door de `mediaUpdatePlayhead` API. <br /> Voor video-op-bestelling (VOD), wordt de waarde gespecificeerd in seconden vanaf het begin van het media punt. <br /> Wanneer de speler voor live streaming geen informatie over de duur van de inhoud geeft, kan de waarde worden opgegeven als het aantal seconden dat is verstreken sinds middernacht UTC van die dag.
 
    ```
    ADBMobile().mediaUpdatePlayhead(position)
    ```
+
+   >[!NOTE]
+   >
+   >Overweeg het volgende wanneer het roepen van `mediaUpdatePlayhead` API:
+   >* Wanneer u voortgangsmarkeringen gebruikt, is de duur van de inhoud vereist en moet de afspeelkop worden bijgewerkt als het aantal seconden vanaf het begin van het media-item, te beginnen met 0.
+   >* Als u media-SDK&#39;s gebruikt, moet u de `mediaUpdatePlayhead` API minstens één keer per seconde.
+
 
 1. **De voltooiing van het afspelen bijhouden**
 
@@ -181,21 +192,21 @@ Deze documentatie behandelt het volgen in versie 2.x van SDK.
 
    **Scenario&#39;s pauzeren**
 
-   Identificeer om het even welk scenario waarin VideoPlayer zal pauzeren en zorg ervoor dat `trackPause` wordt correct geroepen. De volgende scenario&#39;s vereisen allemaal dat uw app wordt aangeroepen `trackPause()`:
+   Identificeer om het even welk scenario waarin VideoPlayer zal pauzeren en zorg ervoor dat `trackPause` wordt correct aangeroepen. De volgende scenario&#39;s vereisen allemaal dat uw app wordt aangeroepen `trackPause()`:
 
    * De gebruiker raakt expliciet de pauze in de app.
    * De speler plaatst zichzelf in de pauzestatus.
    * (*Mobiele apps*) - De gebruiker plaatst de toepassing op de achtergrond, maar u wilt dat de toepassing de sessie geopend houdt.
    * (*Mobiele apps*) - Elk type onderbreking van het systeem treedt op waardoor een toepassing achteraan wordt geplaatst. Bijvoorbeeld, ontvangt de gebruiker een vraag, of een pop-up van een andere toepassing komt voor, maar u wilt de toepassing de zitting levend houden om de gebruiker de kans te geven om de video van het punt van onderbreking te hervatten.
 
-1. De gebeurtenis van de speler identificeren voor het afspelen van video en/of het hervatten van video vanaf het pauzeren en aanroepen `trackPlay`:
+1. De gebeurtenis van de speler identificeren voor het afspelen van video en/of het hervatten van video vanaf het pauzeren en oproepen `trackPlay`:
 
    ```
    ADBMobile().mediaTrackPlay()
    ```
 
    >[!TIP]
-   >Dit kan de zelfde gebeurtenisbron zijn die in Stap 4 werd gebruikt. Zorg ervoor dat elk `trackPause()` API-aanroep is gekoppeld aan het volgende `trackPlay()` API-aanroep wanneer het afspelen van de video wordt hervat.
+   >Dit kan de zelfde gebeurtenisbron zijn die in Stap 4 werd gebruikt. Zorg ervoor dat elk `trackPause()` API-aanroep is gekoppeld aan het volgende `trackPlay()` API-aanroep wanneer de video wordt afgespeeld.
 
 * Volgscenario&#39;s: [VOD afspelen zonder advertenties](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)
 * Voorbeeldspeler die is opgenomen in de SDK van Roku voor een volledig voorbeeld van bijhouden.

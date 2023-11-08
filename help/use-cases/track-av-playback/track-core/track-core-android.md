@@ -5,17 +5,18 @@ uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
 exl-id: d5f5a3f0-f1e0-4d68-af7f-88a30faed0db
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
 workflow-type: tm+mt
 source-wordcount: '708'
 ht-degree: 2%
 
 ---
 
-# Core playback bijhouden op Android{#track-core-playback-on-android}
+# Muziekweergave bijhouden op Android{#track-core-playback-on-android}
 
 Deze documentatie behandelt het volgen in versie 2.x van SDK.
 >[!IMPORTANT]
+>
 >Als u een 1.x-versie van de SDK implementeert, kunt u de 1.x-handleiding voor ontwikkelaars voor Android hier downloaden: [SDK&#39;s downloaden](/help/getting-started/download-sdks.md)
 
 1. **Eerste instelling voor bijhouden**
@@ -37,7 +38,7 @@ Deze documentatie behandelt het volgen in versie 2.x van SDK.
    | Naam van constante | Beschrijving |
    |---|---|
    | `VOD` | Het type van stroom voor Video op bestelling. |
-   | `LIVE` | Het type van stroom voor Levende inhoud. |
+   | `LIVE` | Streamtype voor Live-inhoud. |
    | `LINEAR` | Het type van stroom voor Lineaire inhoud. |
    | `AOD` | Stroomtype voor audio op aanvraag |
    | `AUDIOBOOK` | Streaming type voor audioboek |
@@ -57,30 +58,30 @@ Deze documentatie behandelt het volgen in versie 2.x van SDK.
 
 1. **Metagegevens koppelen**
 
-   Koppel standaard- en/of aangepaste metagegevensobjecten optioneel aan de volgende sessie via de variabelen van de contextgegevens.
+   Koppel standaard- en/of aangepaste metagegevensobjecten optioneel aan de volgende sessie via variabelen voor contextgegevens.
 
    * **Standaardmetagegevens**
 
-      [Standaardmetadata implementeren in Android](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
+     [Standaardmetadata implementeren in Android](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
 
-      >[!NOTE]
-      >
-      >Het koppelen van het standaardobject voor metagegevens aan het mediaobject is optioneel.
+     >[!NOTE]
+     >
+     >Het koppelen van het standaardobject voor metagegevens aan het mediaobject is optioneel.
 
       * API-naslaggids voor metagegevens van media - [Standaardmetagegevenstoetsen - Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
       * Bekijk hier de uitgebreide set met beschikbare videometagegevens: [Parameters voor audio en video](/help/implementation/variables/audio-video-parameters.md)
+
    * **Aangepaste metagegevens**
 
-      Maak een woordenboek voor de aangepaste variabelen en vul de gegevens voor deze media in. Bijvoorbeeld:
+     Maak een woordenboek voor de aangepaste variabelen en vul de gegevens voor deze media in. Bijvoorbeeld:
 
-      ```java
-      HashMap<String, String> mediaMetadata =  
-        new HashMap<String, String>();
-      mediaMetadata.put("isUserLoggedIn", "false");
-      mediaMetadata.put("tvStation", "Sample TV Station");
-      mediaMetadata.put("programmer", "Sample programmer");
-      ```
-
+     ```java
+     HashMap<String, String> mediaMetadata =  
+       new HashMap<String, String>();
+     mediaMetadata.put("isUserLoggedIn", "false");
+     mediaMetadata.put("tvStation", "Sample TV Station");
+     mediaMetadata.put("programmer", "Sample programmer");
+     ```
 
 1. **Houd de intentie bij om het afspelen te starten**
 
@@ -153,7 +154,7 @@ Deze documentatie behandelt het volgen in versie 2.x van SDK.
 
    **Scenario&#39;s pauzeren**
 
-   Identificeer om het even welk scenario waarin VideoPlayer zal pauzeren en zorg ervoor dat `trackPause` wordt correct geroepen. De volgende scenario&#39;s vereisen allemaal dat uw app wordt aangeroepen `trackPause()`:
+   Identificeer om het even welk scenario waarin VideoPlayer zal pauzeren en zorg ervoor dat `trackPause` wordt correct aangeroepen. De volgende scenario&#39;s vereisen allemaal dat uw app wordt aangeroepen `trackPause()`:
 
    * De gebruiker raakt expliciet de pauze in de app.
    * De speler plaatst zichzelf in de pauzestatus.

@@ -4,9 +4,9 @@ description: Leer hoe u core tracking implementeert met de Media SDK in een brow
 exl-id: f3145450-82ba-4790-91a4-9d2cc97bbaa5
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 59e03f550a35edecc949f7ef5e70c1cb2a784725
+source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '755'
 ht-degree: 0%
 
 ---
@@ -125,6 +125,20 @@ Deze documentatie behandelt het volgen in versie 3.x van SDK.
    ```js
    tracker.trackPlay();
    ```
+
+1. **Waarde van afspeelkop bijwerken**
+
+   Wanneer de afspeelkop van media verandert, geeft u een melding aan de SDK door de `mediaUpdatePlayhead` API. <br /> Voor video-op-bestelling (VOD), wordt de waarde gespecificeerd in seconden vanaf het begin van het media punt. <br /> Wanneer de speler voor live streaming geen informatie over de duur van de inhoud geeft, kan de waarde worden opgegeven als het aantal seconden dat is verstreken sinds middernacht UTC van die dag.
+
+   ```
+   tracker.updatePlayhead(position)
+   ```
+
+   >[!NOTE]
+   >
+   >Overweeg het volgende wanneer het roepen van `tracker.updatePlayhead` API:
+   >* Wanneer u voortgangsmarkeringen gebruikt, is de duur van de inhoud vereist en moet de afspeelkop worden bijgewerkt als het aantal seconden vanaf het begin van het media-item, te beginnen met 0.
+   >* Als u media-SDK&#39;s gebruikt, moet u de `tracker.updatePlayhead` API minstens één keer per seconde.
 
 1. **De voltooiing van het afspelen bijhouden**
 
