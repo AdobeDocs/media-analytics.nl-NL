@@ -4,9 +4,9 @@ description: Dit onderwerp omvat FAQs over het eind van steun voor Media Analyti
 exl-id: 9601ec17-8421-49d0-9d81-1cfa5e8f37cf
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b955b20495a504020a214c3a9e32b676701ee4cc
+source-git-commit: c00c9850d5ea924cef6b4842ecb770df1e78eb21
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '602'
 ht-degree: 0%
 
 ---
@@ -15,20 +15,20 @@ ht-degree: 0%
 
 Met het einde van de ondersteuning voor versie 4 Mobile SDK&#39;s op 31 augustus 2021 beëindigde Adobe ook de ondersteuning voor de Media Analytics Mobile SDK&#39;s voor iOS en Android. (Dit omvat niet de Media Analytics SDK voor Web (JS) en OTT platforms zoals Chromecast en Roku, die nog worden gesteund.)
 
-Dit betekent dat Adobe niet langer oplossingen, updates met betrekking tot het besturingssysteem of ondersteuning voor de Media Analytics Mobile SDK biedt. Houd er bij het migreren naar de nieuwe Experience Platform-SDK&#39;s rekening mee dat de [Media Analytics-extensies](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) moet worden geïmplementeerd om Adobe Analytics voor Streaming Media in te schakelen.
+Dit betekent dat Adobe niet langer oplossingen, updates met betrekking tot het besturingssysteem of ondersteuning voor de Media Analytics Mobile SDK biedt. Houd er bij het migreren naar de nieuwe Experience Platform-SDK&#39;s rekening mee dat de [Media Analytics-extensies](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) moet worden geïmplementeerd om Adobe Analytics para medios de streaming mogelijk te maken.
 
 
 ## Top 5 van dingen die u moet weten
 
-1. Mobiele v4-SDK&#39;s worden niet meer ondersteund vanaf 31 augustus 2021. Migreer naar de Adobe Experience Platform (AEP) Mobile SDK&#39;s voor iOS en Android. Zie voor meer informatie [Versie 4 Veelgestelde vragen over de end-of-support van mobiele SDK&#39;s](https://developer.adobe.com/client-sdks/documentation/v4-end-of-life-faq/).
+1. Mobiele v4-SDK&#39;s worden niet meer ondersteund vanaf 31 augustus 2021. Migreer naar de Adobe Experience Platform (AEP) Mobile SDK&#39;s voor iOS en Android.
 
-1. Voor analyse voor de implementatie van Streaming Media is de AEP Mobile SDK en het gebruik van de extensies Analytics en Media Analytics vereist. Vanaf 1 september 2021 moet u de nieuwe AEP Mobile SDK&#39;s en uitbreidingen gebruiken.  De uitbreidingen van de Analytics van media worden gevormd gebruikend de Markeringen van Adobe (gegevensinzameling). Zie voor meer informatie [Migreren van zelfstandige media SDK naar Adobe Launch](/help/legacy/sdk-to-launch/sdk-to-launch-migration.md)
+1. Voor Analytics para medios de streaming-implementatie is de AEP Mobile SDK en het gebruik van de extensies Analytics en Media Analytics vereist. Vanaf 1 september 2021 moet u de nieuwe AEP Mobile SDK&#39;s en uitbreidingen gebruiken.  De uitbreidingen van de Analytics van media worden gevormd gebruikend de Markeringen van de Adobe (gegevensinzameling). Zie voor meer informatie [Migreren van stand-alone media SDK naar Adobe Launch](/help/legacy/sdk-to-launch/sdk-to-launch-migration.md)
 
 1. De ontwikkeling van functies voor de Media Analytics SDK&#39;s voor iOS en Android is beëindigd. Nieuwe functies die zijn geïntroduceerd vanaf Fall 2019 worden ingeschakeld met de extensies Media Analytics en Media Collection API.
 
-1. De SDK&#39;s van Roku en Chromecast blijven beschikbaar voor Analytics voor klanten van Streaming Media. De SDK&#39;s van Roku en Chromecast zullen verder worden verbeterd en ondersteund als zelfstandige SDK&#39;s. Als u JS SDK voor de Analytics van Media gebruikt, kunt u de stand-alone SDK blijven gebruiken of de uitbreiding van de Analyse van Media toelaten gebruikend de Inzameling van Gegevens van Adobe (vroeger de Lancering van de Adobe).
+1. De SDK&#39;s van Roku en Chromecast blijven beschikbaar voor Analytics para medios de streaming-klanten. De SDK&#39;s van Roku en Chromecast zullen verder worden verbeterd en ondersteund als zelfstandige SDK&#39;s. Als u JS SDK voor de Analytics van Media gebruikt, kunt u de stand-alone SDK blijven gebruiken of de uitbreiding van de Analyse van Media toelaten gebruikend de Inzameling van Gegevens van de Adobe (vroeger de Lancering van de Adobe).
 
-Neem contact op met uw Adobe-accountteam als u vragen hebt.
+Neem contact op met het accountteam van uw Adobe als u vragen hebt.
 
 ## Veelgestelde vragen
 
@@ -44,13 +44,13 @@ Neem contact op met uw Adobe-accountteam als u vragen hebt.
 
 [Extensies voor media-analyse: Android-migratie](/help/legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
 
-[Extensies voor media-analyse: iOS-migratie](/help/legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
+[Media Analytics Extensions: iOS-migratie](/help/legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
 
-   [Extensies voor media-analyse: nieuwe implementaties](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)
+   [Extensies voor medianalyse: nieuwe implementaties](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)
 
 1. **Moet ik Starten als systeem voor tagbeheer hebben? Wat gebeurt er als ik Launch niet wil gebruiken?**
 
-   Voor het gebruik van de mobiele app wordt Launch niet gebruikt als een systeem voor tagbeheer zoals voor het web. Het gebruiken van de UI van de Lancering wordt vereist voor het vormen van de uitbreidingen van SDK. Dit is vergelijkbaar met de manier waarop u de gebruikersinterface van Adobe Mobile Services gebruikt om de mobiele v4 SDK te configureren. Voor installatie, is het voordeel van het gebruiken van Lancering dat het u aangepaste installatieinstructies geeft die op de uitbreiding worden gebaseerd u kiest.
+   Voor het gebruik van de mobiele app wordt Launch niet gebruikt als een systeem voor tagbeheer zoals voor het web. Het gebruiken van de UI van de Lancering wordt vereist voor het vormen van de uitbreidingen van SDK. Dit is gelijkaardig aan hoe u de Mobiele UI van de Diensten van de Adobe gebruikt om mobiele v4 SDK te vormen. Voor installatie, is het voordeel van het gebruiken van Lancering dat het u aangepaste installatieinstructies geeft die op de uitbreiding worden gebaseerd u kiest.
 
 1. **Heeft dit einde van de ondersteuning invloed op de SDK voor tvOS?**
 

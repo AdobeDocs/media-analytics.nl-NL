@@ -5,7 +5,7 @@ uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: d2d0f34c64ecb2a900412d5959449c8c36328730
+source-git-commit: c00c9850d5ea924cef6b4842ecb770df1e78eb21
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 1%
@@ -18,15 +18,15 @@ ht-degree: 1%
 
 U kunt bepalen of traceringsactiviteit is toegestaan op een specifiek apparaat:
 
-* **Mobiele apps -** De extensies Media respecteren de privacyinstellingen in Gegevensverzameling. Als u het bijhouden wilt uitschakelen, moet u de privacy instellen op [Weigeren in tags](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/#create-a-mobile-property) of [Privacy-status bijwerken in Mobile SDK](https://developer.adobe.com/client-sdks/documentation/privacy-and-gdpr/#getprivacystatus).
-* **JavaScript-/browsertoepassingen -** De VA-bibliotheek eerbiedigt de `VisitorAPI` privacy- en optout-instellingen. Als u het bijhouden wilt uitschakelen, moet u zich afmelden bij de service voor de Bezoeker-API. Voor meer informatie over optout en privacy raadpleegt u [Adobe Experience Platform Identity Service.](https://experienceleague.adobe.com/docs/id-service/using/home.html).
+* **Mobiele apps -** De extensies Media respecteren de privacyinstellingen in Gegevensverzameling. Als u het bijhouden wilt uitschakelen, moet u de privacy instellen op [Weigeren in tags](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/#create-a-mobile-property) of [Privacy-status bijwerken in Mobile SDK](https://developer.adobe.com/client-sdks/resources/privacy-and-gdpr/#getprivacystatus).
+* **JavaScript-/browsertoepassingen -** De VA-bibliotheek eerbiedigt de `VisitorAPI` privacy- en optout-instellingen. Als u het bijhouden wilt uitschakelen, moet u zich afmelden bij de service voor de Bezoeker-API. Zie voor meer informatie over plug-out en privacy [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html).
 * **OTT-apps (Chromecast, Roku) -** De OTT SDK&#39;s bieden API&#39;s die geschikt zijn voor algemene gegevensbeschermingsregels (General Data Protection Regulation, GDPR), waarmee u de volgende instellingen kunt instellen `opt` statusvlaggen voor gegevensinzameling en transmissie, en om lokaal opgeslagen identiteiten terug te winnen.
 
-   >[!NOTE]
-   >
-   >Aanroepen voor het bijhouden van de hartslag van media worden ook uitgeschakeld als de privacystatus is ingesteld op Weigeren.
+  >[!NOTE]
+  >
+  >Aanroepen voor het bijhouden van de hartslag van media worden ook uitgeschakeld als de privacystatus is ingesteld op Weigeren.
 
-   Met de volgende instellingen kunt u bepalen of analysegegevens op een specifiek apparaat worden verzonden:
+  Met de volgende instellingen kunt u bepalen of analysegegevens op een specifiek apparaat worden verzonden:
 
    * De `privacyDefault` in het dialoogvenster `ADBMobile.json` configuratiebestand. Hiermee bepaalt u de eerste instelling en gaat u door totdat deze in de code wordt gewijzigd.
 
@@ -36,46 +36,49 @@ U kunt bepalen of traceringsactiviteit is toegestaan op een specifiek apparaat:
 
          * **Chromecast:**
 
-            ```
-            ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_OUT)
-            ```
+           ```
+           ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_OUT)
+           ```
 
          * **Roku:**
 
-            ```
-            ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_OUT)
-            ```
-         >[!IMPORTANT]
-         >
-         >Wanneer een gebruiker het bijhouden uitschakelt, worden alle gegevens en id&#39;s van het apparaat gewist totdat de gebruiker weer inklikt.
+           ```
+           ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_OUT)
+           ```
+
+        >[!IMPORTANT]
+        >
+        >Wanneer een gebruiker het bijhouden uitschakelt, worden alle gegevens en id&#39;s van het apparaat gewist totdat de gebruiker weer inklikt.
 
       * **Opnieuw aanmelden:**
 
          * **Chromecast:**
 
-            ```
-            ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_IN)
-            ```
+           ```
+           ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_IN)
+           ```
 
          * **Roku:**
 
-            ```
-            ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)
-            ```
+           ```
+           ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)
+           ```
+
       * **Retourneer de huidige instelling:**
 
          * **Chromecast:**
 
-            ```
-            ADBMobile.config.getPrivacyStatus()
-            ```
+           ```
+           ADBMobile.config.getPrivacyStatus()
+           ```
 
          * **Roku:**
 
-            ```
-            ADBMobile().getPrivacyStatus()
-            ```
-   Nadat u de privacyinstelling hebt gewijzigd met `setPrivacyStatus`, is de wijziging permanent totdat deze opnieuw wordt gewijzigd met deze methode, of de toepassing wordt verwijderd en opnieuw geïnstalleerd.
+           ```
+           ADBMobile().getPrivacyStatus()
+           ```
+
+  Nadat u de privacyinstelling hebt gewijzigd met `setPrivacyStatus`, is de wijziging permanent totdat deze opnieuw wordt gewijzigd met deze methode, of de toepassing wordt verwijderd en opnieuw geïnstalleerd.
 
 ## Opgeslagen id&#39;s ophalen (OTT-apps) {#retrieving-stored-identifiers-ott-apps}
 
@@ -91,19 +94,19 @@ De lokaal opgeslagen identiteiten worden geretourneerd in een JSON-tekenreeks, d
 * Gebruikersnamen
 * Experience Cloud-id (MCID)
 * Gegevensbron-id&#39;s (DPID, DPUUID)
-* Analytische id&#39;s (AVID, AID, VID en bijbehorende RSID&#39;s)
+* Analyse-id&#39;s (AVID, AID, VID en bijbehorende RSID&#39;s)
 * Audience Manager-id (UUID)
 
 Bijvoorbeeld:
 
 * **Chromecast:**
 
-   ```
-   ADBMobile.config.getAllIdentifiersAsync(callback)
-   ```
+  ```
+  ADBMobile.config.getAllIdentifiersAsync(callback)
+  ```
 
 * **Roku:**
 
-   ```
-   vids = ADBMobile().getAllIdentifiers()
-   ```
+  ```
+  vids = ADBMobile().getAllIdentifiers()
+  ```
