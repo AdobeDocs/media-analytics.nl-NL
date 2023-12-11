@@ -4,8 +4,8 @@ description: Gebruik het dashboard Overzicht van Media om gezamenlijke metingen 
 uuid: bdbd998f-9b5e-40c9-a8ea-12dfa5acd35c
 exl-id: 4fe91372-da41-44c5-bea9-2bba762512ef
 feature: "Media Analytics, Reports & Analytics Basics"
-role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+role: User, Admin
+source-git-commit: 7eeee7f035e5d9e7e327e60910c78bbdf02abff8
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 0%
@@ -34,9 +34,9 @@ Snel media metriek tonen door apparaat of geo land:
 
 ## Mediaprestaties {#media-performance}
 
-Klik en sleep om in te zoomen en houd de muisaanwijzer vervolgens boven korrelige metriek voor bepaalde media. Klik op  ![](assets/video-overview-report-revert.png)
+Klik en sleep om in te zoomen en houd de muisaanwijzer vervolgens boven korrelige metriek voor bepaalde media. Klikken  ![](assets/video-overview-report-revert.png)
 
-om de weergave opnieuw in te stellen nadat u hebt ingezoomd.
+om de weergave na het zoomen opnieuw in te stellen.
 
 ![](assets/media_overview_zoom.png)
 

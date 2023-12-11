@@ -1,13 +1,13 @@
 ---
-title: Mediagelijktijdige viewers
+title: Gelijktijdige viewers voor media
 description: "Leer meer over het dashboard Medium Gelijktijdige Viewers dat wordt gebruikt om gelijktijdige viewers gedurende één dag weer te geven. De gegevens kunnen door inhoud, apparatentype, of land worden gefiltreerd."
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
 exl-id: 2c679c1a-a4bd-44fc-8e11-173c8544ab06
 feature: "Media Analytics, Reports & Analytics Basics"
-role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+role: User, Admin
+source-git-commit: 7eeee7f035e5d9e7e327e60910c78bbdf02abff8
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '285'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,7 @@ Op het dashboard Medium Gelijktijdige viewers worden gedurende één dag gelijkt
 >[!TIP]
 >
 > Dit rapport is gebaseerd op gelijktijdige actieve mediasessies.  Als u gelijktijdige viewers wilt zien door een unieke bezoeker, met de extra mogelijkheden om een segment toe te passen, op te delen en te vergelijken, gebruikt u de opdracht [Deelvenster Mediagelijktijdige viewers in Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html).
+>
 
 ![](assets/video-concurrent-viewers.png)
 
@@ -30,7 +31,7 @@ Dit rapport bevat enkele kenmerken:
 * Het verslag bestrijkt een tijdsbestek van 24 uur. De x-as is tijd-van-dag die op de tijdzone van de rapportreeks wordt gebaseerd.
 * Dit toont gelijktijdige kijkers bij minieme granulariteit.
 * Er is een *Rapport Mediagelijktijdige viewers* Hiermee kunt u zien hoeveel kijkers in alle inhoud kijken of luisteren.
-* Er is een rapport voor gelijktijdige viewers in het dialoogvenster *Details media* een rapport waarin wordt aangegeven hoeveel viewers naar een bepaald media-item luisteren.
+* Er is een rapport voor gelijktijdige viewers in het dialoogvenster *Mediadetails* een rapport waarin wordt aangegeven hoeveel viewers naar een bepaald media-item luisteren.
 * Het rapport werkt slechts over één dag.
 * De klant kan naar historische gelijktijdige viewerrapporten (beperkt tot één dag) kijken.
 
