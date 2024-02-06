@@ -5,9 +5,9 @@ uuid: bc4f75a7-ea22-47eb-a50d-5f41274c6d41
 exl-id: f2919e69-8b03-45b4-b9cd-365222a061e0
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: 06f24e828fb7795d55599ea1fa7913182dd357e6
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Verzonden wanneer de status van de speler verandert in &quot;afspelen&quot; in e
 * **Hoofdinhoud -** Moet om de 10 seconden worden verzonden tijdens het afspelen van de hoofdinhoud, ongeacht andere API-gebeurtenissen die zijn verzonden. De eerste pingel gebeurtenis zou 10 seconden moeten in brand steken nadat de belangrijkste inhoud is begonnen te spelen.
 * **Inhoud advertentie -** Moet elke 1 seconde worden verzonden tijdens het bijhouden van advertenties.
 
-Ping-gebeurtenissen moeten *niet* de `params` kaart in de aanvraaginstantie.
+Ping-gebeurtenissen moeten *niet* inclusief de `params` kaart in de aanvraaginstantie.
 
 ## bitrateChange
 
@@ -35,11 +35,11 @@ Verzonden wanneer de bitrage verandert.
 
 ## bufferStart
 
-Verzonden wanneer de buffering begint. Er is geen `bufferResume` gebeurtenistype. A `bufferResume` wordt afgeleid wanneer u een `play` gebeurtenis na `bufferStart`.
+Verzonden wanneer de buffering begint. Er is `bufferResume` gebeurtenistype. A `bufferResume` wordt afgeleid wanneer u een `play` gebeurtenis na `bufferStart`.
 
 ## pauseStart
 
-Verzonden wanneer de gebruiker op Pauzeren drukt. Er is geen `resume` gebeurtenistype. A `resume` wordt afgeleid wanneer u een `play` gebeurtenis na een `pauseStart`.
+Verzonden wanneer de gebruiker op Pauzeren drukt. Er is `resume` gebeurtenistype. A `resume` wordt afgeleid wanneer u een `play` gebeurtenis na een `pauseStart`.
 
 ## adBreakStart
 
@@ -63,7 +63,7 @@ Geeft aan dat een advertentie-einde is voltooid
 
 ## hoofdstukStart
 
-Geeft het begin van een hoofdstuksegment aan
+Geeft het begin van een hoofdstuksegment aan.
 
 ## hoofdstukSkip
 
@@ -81,7 +81,7 @@ Geeft aan dat er een fout is opgetreden.
 
 Dit wordt gebruikt om de achtergrond van de Analyse van Media op de hoogte te brengen om de zitting onmiddellijk te sluiten wanneer de gebruiker hun het bekijken van de inhoud heeft verlaten en zij waarschijnlijk niet zullen terugkeren.
 
-Als u geen `sessionEnd`, zal een verlaten zitting tijd-uit normaal (nadat geen gebeurtenissen 10 minuten worden ontvangen, of wanneer geen playhead beweging voor 30 minuten voorkomt), en de zitting wordt geschrapt door het achtereind.
+Indien een `sessionEnd` wordt niet verzonden, wordt een verlaten zitting [time-out, normaal](../mc-api-impl/mc-api-timeout.md) (ofwel nadat er gedurende 10 minuten geen gebeurtenissen zijn ontvangen, of wanneer er gedurende 30 minuten geen beweging van de afspeelkop plaatsvindt). Bovendien, zullen alle verdere Vraag van Media die met die Zitting ID wordt gemaakt worden gelaten vallen.
 
 ## sessionComplete
 
@@ -89,4 +89,4 @@ Verzonden wanneer het einde van de hoofdinhoud is bereikt
 
 >[!IMPORTANT]
 >
->Raadpleeg de [JSON-validatieschema&#39;s](mc-api-json-validation.md) voor elk gebeurtenistype, om de correcte types en de vereisten van gebeurtenisparameters te verifiëren.
+>U moet de [JSON-validatieschema&#39;s](mc-api-json-validation.md) voor elk gebeurtenistype, om de correcte types en de vereisten van gebeurtenisparameters te verifiëren.
