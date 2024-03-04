@@ -1,12 +1,12 @@
 ---
 title: Media Analytics installeren met Experience Platform Edge
-description: Leer hoe u Adobe Streaming Media met Experience Platform Edge implementeert.
+description: Leer hoe u Adobe streaming media met Experience Platform Edge implementeert.
 feature: Media Analytics
 role: User, Admin, Data Engineer
-exl-id: 29d58b41-9a49-4b71-bdc5-4e2848cd3236
-source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
+exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
+source-git-commit: 68710e8d68266c62ded94a14892ddc78a0807a49
 workflow-type: tm+mt
-source-wordcount: '1773'
+source-wordcount: '1734'
 ht-degree: 0%
 
 ---
@@ -29,15 +29,15 @@ Of u nu de SDK van Mobile of de API gebruikt om streaming media met Experience E
 
 ## Schema instellen in Adobe Experience Platform
 
-Om gegevensinzameling voor gebruik over toepassingen te standaardiseren die hefboomwerking Adobe Experience Platform, heeft Adobe de open en openbaar gedocumenteerde norm, het Model van de Gegevens van de Ervaring (XDM) gecreeerd.
+Om gegevensinzameling voor gebruik over toepassingen te standaardiseren die hefboomwerking Adobe Experience Platform, heeft de Adobe de open en openbaar gedocumenteerde norm, het Model van de Gegevens van de Ervaring (XDM) gecreeerd.
 
 Een schema maken en instellen:
 
 1. Maak in Adobe Experience Platform het schema zoals beschreven in [Schema&#39;s maken en bewerken in de gebruikersinterface](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en).
 
-   Kies bij het maken van het schema de optie [!UICONTROL **XDM ExperienceEvent**] van de [!UICONTROL **Schema maken**] vervolgkeuzemenu.
+   Kies bij het maken van het schema [!UICONTROL **XDM ExperienceEvent**] van de [!UICONTROL **Schema maken**] vervolgkeuzelijst.
 
-1. In de [!UICONTROL **Samenstelling**] in de [!UICONTROL **Veldgroepen**] sectie, selecteert u [!UICONTROL **Toevoegen**] en voegt u vervolgens de volgende nieuwe veldgroepen toe aan het schema:
+1. In de [!UICONTROL **Samenstelling**] in het gebied [!UICONTROL **Veldgroepen**] sectie, selecteert u [!UICONTROL **Toevoegen**], dan onderzoek naar en voeg de volgende nieuwe gebiedsgroepen aan het schema toe:
    * `Adobe Analytics ExperienceEvent Template`
    * `Implementation Details`
    * `MediaAnalytics Interaction Details`
@@ -52,51 +52,58 @@ Een schema maken en instellen:
 
 +++ Vouw hier uit om instructies weer te geven voor velden die u kunt verbergen.
 
-   1. In de [!UICONTROL **Structuur**] gebied, selecteert u de `Media Collection Details` veld, selecteren [!UICONTROL **Gerelateerde velden beheren**] Vervolgens werkt u het schema als volgt bij:
+   1. In de [!UICONTROL **Structuur**] gebied, selecteert u de `Media Collection Details` veld, selecteer vervolgens [!UICONTROL **Gerelateerde velden beheren**].
 
       ![beheergerelateerde velden](assets/manage-related-fields.png)
 
-      * In de `Media Collection Details` veld, verbergen `List Of States` veld.
-
-        ![Media-verzamelingsstaten verbergen](assets/schema-hide-media-collection-states.png)
+   1. Schakel de optie in om [!UICONTROL **Weergavenamen voor velden tonen**] Vervolgens werkt u het schema als volgt bij:
 
       * In de `Media Collection Details` > `Advertising Details` veld, verbergt u de volgende rapportvelden: `Ad Completed`, `Ad Started`, en `Ad Time Played`.
 
       * In de `Media Collection Details` > `Advertising Pod Details` veld, verbergt u het volgende rapportveld: `Ad Break ID`
 
-      * In de `Media Collection Details` > `Chapter Details` veld, verbergt u de volgende rapportvelden: `Chapter ID`, `Chapter Completed`, `Chapter Started`, en `Chapter Time Played`.
+      * In de `Media Collection Details` > `Chapter Details` veld, verbergt u de volgende rapportvelden: `Chapter Completed`, `Chapter ID`, `Chapter Started`, en `Chapter Time Played`.
 
-      * In de `Media Collection Details` > `Qoe Data Details` veld, verbergt u de volgende rapportvelden: `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Changes`, `Buffer Events`, `Total Buffer Duration`, `Errors`, `External Error IDs`, `Bitrate Change Impacted Streams`, `Buffer Impacted Streams`, `Dropped Frame Impacted Streams`, `Error Impacted Streams`, `Stalling Impacted Streams`, `Drops Before Starts`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Events`, en `Total Stalling Duration`.
+      * In de `Media Collection Details` veld, verbergen `List Of States` veld.
 
-      * In de `Media Collection Details` > `Session Details` veld, verbergt u de volgende rapportvelden: `Media Session ID`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Estimated Streams`, `Pause Impacted Streams`, `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Media Segment Views`, `Content Completes`, `Media Downloaded Flag`, `Federated Data`, `Content Starts`, `Media Starts`, `Pause Events`, `Total Pause Duration`, `Media Session Server Timeout`, `Video Segment`, `Content Time Spent`, `Media Time Spent`, `Unique Time Played`, `Pev3`, en `Pccr`.
+        ![Media-verzamelingsstaten verbergen](assets/schema-hide-media-collection-states.png)
 
       * In de `Media Collection Details` > `List Of States End` en `Media Collection Details` > `List Of States Start` veld, verbergt u de volgende rapportvelden: `Player State Count`, `Player State Set`, en `Player State Time`.
 
         ![te verbergen velden](assets/schema-hide-listofstates.png)
 
+      * In de `Media Collection Details` > `Qoe Data Details` veld, verbergt u de volgende rapportvelden: `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Change Impacted Streams`, `Bitrate Changes`, `Buffer Impacted Streams`, `Buffer Events`, `Dropped Frame Impacted Streams`, `Drops Before Starts`, `Errors`, `External Error IDs`, `Error Impacted Streams`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Impacted Streams`, `Stalling Events`, `Total Buffer Duration`, en `Total Stalling Duration`.
+
+      * In de `Media Collection Details` > `Session Details` veld, verbergt u de volgende rapportvelden: `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Ad Count`, `Average Minute Audience`, `Content Completes`, `Chapter Count`, `Content Starts`, `Content Time Spent`, `Estimated Streams`, `Federated Data`, `Media Segment Views`, `Media Downloaded Flag`, `Media Starts`, `Media Session ID`, `Media Session Server Timeout`, `Media Time Spent`, `Pause Events`, `Pause Impacted Streams`, `Pev3`, `Pccr`, `Total Pause Duration`, `Unique Time Played`, en `Video Segment`.
+
    1. Selecteren [!UICONTROL **Bevestigen**] om uw wijzigingen op te slaan.
 
-   1. In de [!UICONTROL **Structuur**] gebied, selecteert u de `List Of Media Collection Downloaded Content Events` veld, selecteren [!UICONTROL **Gerelateerde velden beheren**] Vervolgens werkt u het schema als volgt bij:
+   1. In de [!UICONTROL **Structuur**] gebied, inschakelen van de optie [!UICONTROL **Weergavenamen voor velden tonen**] en selecteert u vervolgens de `List Of Media Collection Downloaded Content Events` veld.
 
-      * In de `List Of Media Collection Downloaded Content Events` > `Media Details` veld, verbergen `List Of States` veld.
+   1. Selecteren [!UICONTROL **Gerelateerde velden beheren**] Vervolgens werkt u het schema als volgt bij:
+
 
       * In de `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Details` veld, verbergt u de volgende rapportvelden: `Ad Completed`, `Ad Started`, en `Ad Time Played`.
 
       * In de `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Pod Details` veld, verbergt u het volgende rapportveld: `Ad Break ID`
 
-      * In de `List Of Media Collection Downloaded Content Events` > `Media Details` > `Chapter Details` veld, verbergt u de volgende rapportvelden: `Chapter ID`, `Chapter Completed`, `Chapter Started`, en `Chapter Time Played`.
+      * In de `List Of Media Collection Downloaded Content Events` > `Media Details` > `Chapter Details` veld, verbergt u de volgende rapportvelden: `Chapter Completed`, `Chapter ID`, `Chapter Started`, en `Chapter Time Played`.
 
-      * In de `List Of Media Collection Downloaded Content Events` > `Media Details` > `Qoe Data Details` veld, verbergt u de volgende rapportvelden: `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Changes`, `Buffer Events`, `Total Buffer Duration`, `Errors`, `External Error IDs`, `Bitrate Change Impacted Streams`, `Buffer Impacted Streams`, `Dropped Frame Impacted Streams`, `Error Impacted Streams`, `Stalling Impacted Streams`, `Drops Before Starts`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Events`, en `Total Stalling Duration`.
-
-      * In de `List Of Media Collection Downloaded Content Events` > `Media Details` > `Session Details` veld, verbergt u de volgende rapportvelden: `Media Session ID`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Estimated Streams`, `Pause Impacted Streams`, `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Media Segment Views`, `Content Completes`, `Media Downloaded Flag`, `Federated Data`, `Content Starts`, `Media Starts`, `Pause Events`, `Total Pause Duration`, `Media Session Server Timeout`, `Video Segment`, `Content Time Spent`, `Media Time Spent`, `Unique Time Played`, `Pev3`, en `Pccr`.
+      * In de `List Of Media Collection Downloaded Content Events` > `Media Details` veld, verbergen `List Of States` veld.
 
       * In de `List Of Media Collection Downloaded Content Events` > `Media Details` > `List Of States End` en `Media Collection Details` > `List Of States Start` veld, verbergt u de volgende rapportvelden: `Player State Count`, `Player State Set`, en `Player State Time`.
+
+      * In de `List Of Media Collection Downloaded Content Events` > `Media Details` > `Qoe Data Details` veld, verbergt u de volgende rapportvelden: `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Change Impacted Streams`, `Bitrate Changes`, `Buffer Events`, `Buffer Impacted Streams`, `Drops Before Starts`, `Dropped Frame Impacted Streams`, `Error Impacted Streams`, `Errors`, `External Error IDs`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Events`, `Stalling Impacted Streams`, `Total Buffer Duration`, en `Total Stalling Duration`.
+
+      * In de `List Of Media Collection Downloaded Content Events` > `Media Details` > `Session Details` veld, verbergt u de volgende rapportvelden: `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Content Completes`, `Content Starts`, `Content Time Spent`, `Estimated Streams`, `Federated Data`, `Media Downloaded Flag`, `Media Segment Views`, `Media Session ID`, `Media Session Server Timeout`, `Media Starts`, `Media Time Spent`, `Pause Events`, `Pause Impacted Streams`, `Pccr`, `Pev3`, `Total Pause Duration`, `Unique Time Played`, en `Video Segment`.
 
       * In de `List Of Media Collection Downloaded Content Events` > `Media Details`  veld, verbergen `Media Session ID` veld.
 
    1. Selecteren [!UICONTROL **Bevestigen**] om uw wijzigingen op te slaan.
 
-   1. In de [!UICONTROL **Structuur**] gebied, selecteert u de `Media Reporting Details` veld, selecteren [!UICONTROL **Gerelateerde velden beheren**] Vervolgens werkt u het schema als volgt bij:
+   1. In de [!UICONTROL **Structuur**] gebied, selecteert u de `Media Reporting Details` veld, selecteren [!UICONTROL **Gerelateerde velden beheren**].
+
+   1. Schakel de optie in om [!UICONTROL **Weergavenamen voor velden tonen**] Vervolgens werkt u het schema als volgt bij:
 
       * In de `Media Reporting Details` veld, verbergt u de volgende velden: `Error Details`, `List Of States End`, `List of States Start`, en `Media Session ID`.
 
@@ -142,11 +149,13 @@ Een schema maken en instellen:
 
      ![De Adobe Analytics-service toevoegen](assets/datastream-add-service.png)
 
-   * Uitbreiden [!UICONTROL **Geavanceerde opties**] en stelt vervolgens de [!UICONTROL **Media Analytics**] optie.
+   * Uitbreiden [!UICONTROL **Geavanceerde opties**] en stelt vervolgens de [!UICONTROL **Media Analytics**] -optie.
 
      ![Media Analytics, optie](assets/datastream-media-check.png)
 
-1. Doorgaan met [Verbinding maken in Customer Journey Analytics](#create-a-connection-in-customer-journey-analytics).
+1. U bent nu klaar om het [Media Edge-API](/help/implementation/edge/implementation-edge-api.md) of [Media Edge SDK](/help/implementation/edge/edge-mobile-sdk.md) om gegevens van mediaconalyse te verzamelen.
+
+   Nadat u gegevens hebt verzameld, kunt u [Verbinding maken in Customer Journey Analytics](#create-a-connection-in-customer-journey-analytics).
 
 ## Verbinding maken in Customer Journey Analytics
 
@@ -173,7 +182,7 @@ Een schema maken en instellen:
 >
 >De volgende procedure is alleen vereist als u Customer Journey Analytics gebruikt.
 
-1. Zorg ervoor dat u een verbinding hebt gemaakt in Customer Journey Analytics zoals beschreven in [Verbinding maken in Customer Journey Analytics](#create-a-connection-in-customer-journey-analytics).
+1. Zorg ervoor dat u een verbinding hebt gemaakt in de Customer Journey Analytics zoals beschreven in [Verbinding maken in Customer Journey Analytics](#create-a-connection-in-customer-journey-analytics).
 
 1. In de Analtyics van de Reis van de Klant, creeer een gegevensmening zoals die in [Een gegevensweergave maken of bewerken](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en).
 
@@ -183,7 +192,7 @@ Een schema maken en instellen:
 
       Het kan 15 minuten duren voordat de verbinding die u hebt gemaakt beschikbaar is om te selecteren.
 
-   1. Op de [!UICONTROL **Componenten**] tabblad, in het dialoogvenster [!UICONTROL **Schema-velden**] , zoekt u naar elke component in de onderstaande tabellen en sleept u deze naar de [!UICONTROL **Metrisch**] deelvenster. Als er meerdere velden met dezelfde naam bestaan, gebruikt u het XDM-pad om te controleren of dit het juiste veld is.
+   1. Op de [!UICONTROL **Componenten**] tabblad, in de [!UICONTROL **Schema-velden**] , zoekt u naar elke component in de onderstaande tabellen en sleept u deze naar de [!UICONTROL **Metrisch**] deelvenster. Als er meerdere velden met dezelfde naam bestaan, gebruikt u het XDM-pad om te controleren of dit het juiste veld is.
 
       **Belangrijkste inhoud - Metrische inhoud**
 
@@ -196,11 +205,11 @@ Een schema maken en instellen:
       | Tijd van inhoud besteed | mediaReporting.sessionDetails.timePlayed |
       | Tijd besteed aan media | mediaReporting.sessionDetails.totalTimePlayed |
       | Unieke afgespeelde tijd | mediaReporting.sessionDetails.uniqueTimePlayed |
-      | 10% voortgangsmarkering | mediaReporting.sessionDetails.hasProgress10 |
+      | Voortgangsmarkering 10% | mediaReporting.sessionDetails.hasProgress10 |
       | Gemiddeld aantal minuten publiek | mediaReporting.sessionDetails.averageMinuteAudience |
 
 
-      **Hoofdstuk en advertenties - Metriek voor hoofdstuk en advertenties**
+      **Hoofdstuk en advertenties - Metrische hoofdstuk en advertenties**
 
       | Componentnaam | XDM-pad |
       |----------|---------|
@@ -232,7 +241,7 @@ Een schema maken en instellen:
 
       | Componentnaam | XDM-pad |
       |----------|---------|
-      | Status van speler instellen | mediaReporting.states.isSet |
+      | Set spelerstatussen | mediaReporting.states.isSet |
       | Aantal statussen van speler | mediaReporting.states.count |
       | Frametijd van speler | mediaReporting.states.time |
 
@@ -241,30 +250,30 @@ Een schema maken en instellen:
 
       | Componentnaam | Contextlabel |
       |---------|----------|
-      | Tijdslimiet mediasessie | Media: Seconden sinds laatste Vraag |
-      | Tijd besteed aan media | Media: Tijd besteed aan media |
-      | Totale bufferduur | Media: Totale bufferduur |
+      | Tijdslimiet mediasessie | Media: Seconden sinds laatste vraag |
+      | Tijd besteed aan media | Media: media-tijd besteed |
+      | Totale bufferduur | Media: totale bufferduur |
       | Te starten tijd | Media: Te starten tijd |
-      | Totale pauzeduur | Media: Totale pauzeduur |
+      | Totale pauzeduur | Media: totale pauzeduur |
 
-   1. Om onderverdelingen aan uw project van Customer Journey Analytics toe te voegen, voeg de volgende afmetingen aan toe [!UICONTROL **Dimension**] paneel:
+   1. Om onderverdelingen aan uw project van de Customer Journey Analytics toe te voegen, voeg de volgende afmetingen aan toe [!UICONTROL **Dimensionen**] paneel:
 
       | XDM-pad | Componentnaam |
       |---------|----------|
       | mediaReporting.states.name | Framenaam van speler |
       | mediaReporting.sessionDetails.ID | Mediasessie-id |
 
-      Naast de afmetingen in deze tabel kunt u alle andere dimensies toevoegen die u beschikbaar wilt maken om gegevens te filteren op basis van Customer Journey Analytics-projecten.
+      Naast de afmetingen in deze lijst, kunt u in om het even welke andere afmetingen toevoegen die u aan filtergegevens door in projecten van de Customer Journey Analytics ter beschikking wilt stellen.
 
 1. Selecteren [!UICONTROL **Opslaan en doorgaan**] > [!UICONTROL **Opslaan en voltooien**] om uw wijzigingen op te slaan.
 
-1. Doorgaan met [Een project maken en configureren in Customer Journey Analytics](#create-and-configure-a-project-in-customer-journey-analytics).
+1. Doorgaan met [Creeer en vorm een project in Customer Journey Analytics](#create-and-configure-a-project-in-customer-journey-analytics).
 
-## Een project maken en configureren in Customer Journey Analytics
+## Creeer en vorm een project in Customer Journey Analytics
 
-1. Zorg ervoor dat u een gegevensweergave in Customer Journey Analytics hebt gemaakt zoals beschreven in [Een gegevensweergave maken in Customer Journey Analytics](#create-a-new-data-view-in-customer-journey-analytics).
+1. Zorg ervoor dat u een gegevensweergave hebt gemaakt in Customer Journey Analytics zoals beschreven in [Een gegevensweergave maken in Customer Journey Analytics](#create-a-new-data-view-in-customer-journey-analytics).
 
-1. In Customer Journey Analytics, in de [!UICONTROL **Werkruimte**] tabblad, in het dialoogvenster [!UICONTROL **Projecten**] gebied selecteren [!UICONTROL **Project maken**].
+1. In Customer Journey Analytics, in [!UICONTROL **Werkruimte**] tabblad, in de [!UICONTROL **Projecten**] gebied, selecteren [!UICONTROL **Project maken**].
 
 1. Selecteren [!UICONTROL **Leeg project**] > [!UICONTROL **Maken**].
 
@@ -282,7 +291,7 @@ Een schema maken en instellen:
 
    ![Deelvenster Frame later](assets/player-state-panel.png)
 
-1. Selecteer **Deelvensters** pictogram in de linkerspoorstaaf, dan belemmering in [!UICONTROL **Mediagelijktijdige viewers**] en de [!UICONTROL **De afspeeltijd van media is verstreken**] deelvenster.
+1. Selecteer de **Deelvensters** pictogram in de linkerspoorstaaf, dan belemmering in [!UICONTROL **Gelijktijdige viewers voor media**] en de [!UICONTROL **De afspeeltijd van media is verstreken**] deelvenster.
 
    De twee deelvensters moeten er als volgt uitzien:
 
@@ -294,7 +303,7 @@ Een schema maken en instellen:
 
    >[!NOTE]
    >
-   >   Als de gebruikers met u wilt delen niet beschikbaar zijn, zorg ervoor de gebruikers gebruiker en admin toegang tot Customer Journey Analytics in Adobe Admin Console hebben.
+   >   Als de gebruikers u wilt delen met niet beschikbaar zijn, zorg ervoor de gebruikers gebruiker en admin toegang tot Customer Journey Analytics in Adobe Admin Console hebben.
 
 1. Doorgaan met [Gegevens verzenden naar Experience Platform Edge](#send-data-to-experience-platform-edge).
 
@@ -308,7 +317,7 @@ Gebruik de volgende documentatiebronnen om de implementatie voor zowel iOS als A
 
 * [API-referentie](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/api-reference/)
 
-* [Migreren naar Adobe-streaming media voor Edge Network-extensie](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
+* [Migreren naar Adobe streamingmedia voor Edge Network-extensie](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
 U kunt ook een aangepaste implementatie van de Edge API&#39;s gebruiken met de volgende bronnen:
 
