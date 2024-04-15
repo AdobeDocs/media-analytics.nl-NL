@@ -4,9 +4,9 @@ description: Leer hoe u Adobe streaming media met Experience Platform Edge imple
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: 68710e8d68266c62ded94a14892ddc78a0807a49
+source-git-commit: 798a2b155742476f0bf648b482c75e0b03449977
 workflow-type: tm+mt
-source-wordcount: '1734'
+source-wordcount: '1803'
 ht-degree: 0%
 
 ---
@@ -307,9 +307,11 @@ Een schema maken en instellen:
 
 1. Doorgaan met [Gegevens verzenden naar Experience Platform Edge](#send-data-to-experience-platform-edge).
 
-## Gegevens naar Experience Platform Edge verzenden met AEP Mobile SDK
+## Gegevens verzenden naar Experience Platform Edge
 
-U kunt de Adobe Experience Platform Mobile SDK gebruiken om mobiele gegevens naar Experience Platform Edge te verzenden.
+Afhankelijk van het type gegevens dat u naar Rand van Experience Platform wilt verzenden, kunt u een van de volgende methoden gebruiken:
+
+### Mobiel: gebruik de Adobe Experience Platform Mobile SDK
 
 Gebruik de volgende documentatiebronnen om de implementatie voor zowel iOS als Android te voltooien:
 
@@ -317,9 +319,23 @@ Gebruik de volgende documentatiebronnen om de implementatie voor zowel iOS als A
 
 * [API-referentie](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/api-reference/)
 
-* [Migreren naar Adobe streamingmedia voor Edge Network-extensie](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
+* [Migreren naar Adobe streamingmedia voor extensie Edge Network](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
-U kunt ook een aangepaste implementatie van de Edge API&#39;s gebruiken met de volgende bronnen:
+### Roku: Adobe Experience Platform Roku SDK
+
+* [Aan de slag](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/)
+
+* [Adobe Experience Platform Roku SDK](https://github.com/adobe/aepsdk-roku/tree/main)
+
+* [Migreren naar Adobe streamingmedia voor extensie Edge Network](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/) <!-- is the information here also applicable for Roku? -->
+
+### API: Web en andere
+
+De API is momenteel de enige ondersteunde manier om webgegevens naar Experience Platform Edge te verzenden.
+
+De API is ook beschikbaar als u een aangepaste implementatie van de Edge API&#39;s wilt gebruiken.
+
+Zie de volgende bronnen voor meer informatie over de Media Edge API:
 
 * [Overzicht van de Media Edge API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/overview.html)
 

@@ -4,9 +4,9 @@ description: "Meer informatie over de belangrijkste apparaten die Adobe Analytic
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin
-source-git-commit: 7eeee7f035e5d9e7e327e60910c78bbdf02abff8
+source-git-commit: 1cc995959aa9070f895e0d03be62533bd3a0ca0d
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '306'
 ht-degree: 6%
 
 ---
@@ -37,7 +37,7 @@ Voor meer informatie over het implementeren van Media op Edge raadpleegt u [Medi
 | | Windows-apparaten | | ![Ondersteund](/help/assets/icon-blue-check.png) | | | ![Ondersteund](/help/assets/icon-blue-check.png) |
 | OTT | | | | | | |
 | | Apple TV (tvOS) | ![Ondersteund](/help/assets/icon-blue-check.png) | ![Ondersteund](/help/assets/icon-blue-check.png) | ![Ondersteund](/help/assets/icon-blue-check.png) | | ![Ondersteund](/help/assets/icon-blue-check.png) |
-| | Roku | (In planning) | ![Ondersteund](/help/assets/icon-blue-check.png) | | ![Ondersteund](/help/assets/icon-blue-check.png)<br>(BrightScript) | ![Ondersteund](/help/assets/icon-blue-check.png)<br>(native) |
+| | Roku | ![Ondersteund](/help/assets/icon-blue-check.png) | ![Ondersteund](/help/assets/icon-blue-check.png) | | ![Ondersteund](/help/assets/icon-blue-check.png)<br>(BrightScript) | ![Ondersteund](/help/assets/icon-blue-check.png)<br>(native) |
 | | Fire TV (Fire OS) | ![Ondersteund](/help/assets/icon-blue-check.png) | ![Ondersteund](/help/assets/icon-blue-check.png) | ![Ondersteund](/help/assets/icon-blue-check.png) | | ![Ondersteund](/help/assets/icon-blue-check.png) |
 | | Android-tv | ![Ondersteund](/help/assets/icon-blue-check.png) | ![Ondersteund](/help/assets/icon-blue-check.png) | ![Ondersteund](/help/assets/icon-blue-check.png) | | ![Ondersteund](/help/assets/icon-blue-check.png) |
 | | Chromecast | | ![Ondersteund](/help/assets/icon-blue-check.png) | | ![Ondersteund](/help/assets/icon-blue-check.png) | ![Ondersteund](/help/assets/icon-blue-check.png) |
