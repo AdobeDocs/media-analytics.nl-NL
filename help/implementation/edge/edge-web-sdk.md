@@ -3,7 +3,7 @@ title: Webgegevens naar Edge verzenden met de SDK van Adobe Experience Platform 
 description: Leer hoe u Adobe Streaming Media-gegevens naar Experience Platform Edge kunt verzenden met de Adobe Experience Platform Web SDK.
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 4e6ae687175b45680d8de071dbc3011f18921a44
+source-git-commit: ad40260d29bd5b739184cb551f084565d05e65a7
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 0%
@@ -75,7 +75,7 @@ Voor klanten die de Media JS SDK gebruiken, verstrekt het Web SDK een migratiewe
 
 [!DNL Web SDK] bevat een opdracht om een Media Analytics Tracker op te halen. U kunt deze opdracht gebruiken om een objectinstantie te maken en vervolgens dezelfde API&#39;s te gebruiken als de API&#39;s die door de [Media JS-bibliotheek](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/APIReference.html), media-gebeurtenissen volgen.
 
-Zie de [`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/getMediaAnalyticsTracker) documentatie voor volledige informatie over de ondersteunde methoden.
+Zie de [`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker) documentatie voor volledige informatie over de ondersteunde methoden.
 
 In het onderstaande fragment ziet u hoe u de instantie van de mediatracker in Media JS kunt ophalen.
 

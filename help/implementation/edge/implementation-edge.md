@@ -4,9 +4,9 @@ description: Leer hoe u Adobe streaming media met Experience Platform Edge imple
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: 39869d5eeea02e81c204d995ac158b3e7b7541c7
+source-git-commit: ad40260d29bd5b739184cb551f084565d05e65a7
 workflow-type: tm+mt
-source-wordcount: '1833'
+source-wordcount: '1858'
 ht-degree: 0%
 
 ---
@@ -315,7 +315,11 @@ Afhankelijk van het type gegevens dat u naar Rand van Experience Platform wilt v
 
 ### Web: De SDK van het Web van Adobe Experience Platform gebruiken
 
+* [Aan de slag](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/)
 
+* [Webgegevens naar Edge verzenden met de SDK van Adobe Experience Platform Web](/help/implementation/edge/edge-web-sdk.md)
+
+* [Migreren naar Adobe streamingmedia voor extensie Edge Network](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
 ### Mobiel: gebruik de Adobe Experience Platform Mobile SDK
 

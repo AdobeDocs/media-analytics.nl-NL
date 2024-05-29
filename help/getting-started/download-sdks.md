@@ -5,9 +5,9 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a9c772e77a2b049e6e4bd65877940b0398a23f7f
+source-git-commit: ad40260d29bd5b739184cb551f084565d05e65a7
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '426'
 ht-degree: 9%
 
 ---
@@ -32,7 +32,7 @@ Tags in Adobe Experience Platform zijn de volgende generatie van websitetags en 
 |:---:|---|---|---|---| ---| ---|
 | ![JavaScript-pictogram ](assets/javascript-icon.png)</br>**JavaScript-API** | Adobe Analytics | Alleen analyse | Web - [Media SDK voor JS v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [JavaScript API-naslag](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [Media Analytics installeren met JavaScript](/help/implementation/media-sdk/setup/web-implementation.md) | [Media SDK voor JS v3.0.2-voorbeeld](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
 | ![JavaScript-pictogram ](assets/javascript-icon.png)</br>**JavaScript-API** | Adobe Analytics | Alleen analyse | Web - Media Extension |  | [Adobe Media Analytics (3.x SDK) voor audio- en videoextensie — gebruik van Tags (gegevensverzameling)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=en) | [Voorbeeld van Adobe Media-analyse (3.x SDK) voor audio- en video-extensie](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
-| ![JavaScript-pictogram ](assets/javascript-icon.png)</br>**JavaScript-API** | <p>Adobe Analytics</p><p>Customer Journey Analytics</p><p>Adobe Journey Optimizer</p><p>Real-Time CDP</p> | Rand | Web - Rand Experience Platform (binnenkort beschikbaar) |  | [Media Analytics installeren met Experience Platform Edge](/help/implementation/edge/implementation-edge.md) | |
+| </br>**Web** | Adobe Analytics<p>Customer Journey Analytics</p><p>Adobe Journey Optimizer</p><p>Real-Time CDP</p> | Rand | Web - Rand Experience Platform |  | [Media Analytics installeren met Experience Platform Edge](/help/implementation/edge/implementation-edge.md) <p>en</p><p>[Webgegevens naar Edge verzenden met de SDK van Adobe Experience Platform Web](/help/implementation/edge/edge-web-sdk.md)</p> | |
 
 ### Mobiele implementatie {#get-mobile-extension}
 
