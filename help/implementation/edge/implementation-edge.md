@@ -4,9 +4,9 @@ description: Leer hoe u Adobe streaming media met Experience Platform Edge imple
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: 798a2b155742476f0bf648b482c75e0b03449977
+source-git-commit: 39869d5eeea02e81c204d995ac158b3e7b7541c7
 workflow-type: tm+mt
-source-wordcount: '1803'
+source-wordcount: '1833'
 ht-degree: 0%
 
 ---
@@ -17,15 +17,11 @@ Met Adobe Experience Platform Edge kunt u gegevens die bestemd zijn voor meerder
 
 In de volgende afbeelding ziet u hoe een Media Analytics-implementatie Experience Platform Edge kan gebruiken om gegevens beschikbaar te maken in Analysis Workspace, in Adobe Analytics of Customer Journey Analytics:
 
-![CJA-workflow](assets/cja-implementation.png)
+![CJA-workflow](assets/streaming-media-edge.png)
 
 Voor een overzicht van alle implementatieopties, met inbegrip van implementatiemethodes die geen Rand van het Experience Platform gebruiken, zie [Streaming media implementeren voor Adobe Analytics of Customer Journey Analytics](/help/implementation/overview.md).
 
->[!IMPORTANT]
->
->Streaming media is nog niet geïntegreerd met de AEP Web SDK.
-
-Of u nu de SDK van Mobile of de API gebruikt om streaming media met Experience Edge te implementeren, u moet eerst de volgende secties voltooien:
+Ongeacht of u de Adobe Experience Platform Web SDK, de Adobe Experience Platform Mobile SDK, de Adobe Experience Platform Roku SDK of de API gebruikt om Streaming Media met Experience Edge te implementeren, moet u eerst de volgende secties voltooien:
 
 ## Schema instellen in Adobe Experience Platform
 
@@ -35,7 +31,13 @@ Een schema maken en instellen:
 
 1. Maak in Adobe Experience Platform het schema zoals beschreven in [Schema&#39;s maken en bewerken in de gebruikersinterface](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en).
 
-   Kies bij het maken van het schema [!UICONTROL **XDM ExperienceEvent**] van de [!UICONTROL **Schema maken**] vervolgkeuzelijst.
+1. Kies op de pagina Schema-details bij het maken van het schema de optie [!UICONTROL **Experience Event**] wanneer u de basisklasse voor het schema kiest.
+
+   ![Toegevoegde veldgroepen](assets/schema-experience-event.png)
+
+1. Selecteren [!UICONTROL **Volgende**].
+
+1. Geef een naam en beschrijving voor de schemaweergave op en selecteer [!UICONTROL **Voltooien**].
 
 1. In de [!UICONTROL **Samenstelling**] in het gebied [!UICONTROL **Veldgroepen**] sectie, selecteert u [!UICONTROL **Toevoegen**], dan onderzoek naar en voeg de volgende nieuwe gebiedsgroepen aan het schema toe:
    * `Adobe Analytics ExperienceEvent Template`
@@ -46,7 +48,7 @@ Een schema maken en instellen:
 
    ![Toegevoegde veldgroepen](assets/schema-field-groups-added.png)
 
-1. Selecteren [!UICONTROL **Bevestigen**] om uw wijzigingen op te slaan.
+1. Selecteren [!UICONTROL **Opslaan**] om uw wijzigingen op te slaan.
 
 1. (Optioneel) U kunt bepaalde velden verbergen die niet worden gebruikt door de Media Edge-API. Het verbergen van deze gebieden maakt het schema gemakkelijker te lezen en te begrijpen, maar het wordt niet vereist. Deze velden verwijzen alleen naar de velden in de `MediaAnalytics Interaction Details` veldgroep.
 
@@ -141,7 +143,7 @@ Een schema maken en instellen:
 
       * [!UICONTROL **Adobe Analytics**] (als u Adobe Analytics gebruikt)
 
-        Als u Adobe Analytics gebruikt, moet u een rapportsuite definiëren, zoals wordt beschreven in de sectie [Een rapportsuite definiëren](#define-a-report-suite) in dit artikel.
+        Als u Adobe Analytics gebruikt, moet u een rapportsuite definiëren, zoals beschreven in [Een rapportsuite maken](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
       * [!UICONTROL **Adobe Experience Platform**] (bij gebruik van Customer Journey Analytics)
 
@@ -310,6 +312,10 @@ Een schema maken en instellen:
 ## Gegevens verzenden naar Experience Platform Edge
 
 Afhankelijk van het type gegevens dat u naar Rand van Experience Platform wilt verzenden, kunt u een van de volgende methoden gebruiken:
+
+### Web: De SDK van het Web van Adobe Experience Platform gebruiken
+
+
 
 ### Mobiel: gebruik de Adobe Experience Platform Mobile SDK
 

@@ -5,9 +5,9 @@ uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
-source-git-commit: 984f058fda15b1c5e960e4c8d8e2378308d2b541
+source-git-commit: 39869d5eeea02e81c204d995ac158b3e7b7541c7
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '452'
 ht-degree: 0%
 
 ---
@@ -18,27 +18,23 @@ Er zijn verschillende manieren om streaming media te implementeren. Voor een ged
 
 ## Implementatiemethoden voor Edge
 
-We raden u aan Edge te gebruiken bij de implementatie van Media Analytics voor alle nieuwe Adobe Analytics- of Customer Journey Analytics-klanten.
+We raden u aan Edge te gebruiken bij de implementatie van Media Analytics voor alle nieuwe klanten van Adobe Analytics of Customer Journey Analytics.
 
-* **Media voor Edge Network SDK / Extensie:** Verzamelt gegevens van iOS- en Android-apparaten en verzendt deze naar Edge. Gegevens kunnen vervolgens naar Customer Journey Analytics of Adobe Analytics worden verzonden.
+* **Media voor Edge Network SDK / Extensie:** Verzamelt gegevens van het web, iOS en Android-apparaten of Roku-apparaten en verzendt deze naar de Edge Network. Gegevens kunnen vervolgens naar Customer Journey Analytics of Adobe Analytics worden verzonden.
 
-  Voor meer informatie over Media voor het Netwerk SDK van Edge/de Uitbreiding, zie [Media Analytics installeren met Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
+  Voor meer informatie over Media voor Edge Network SDK / Uitbreiding, zie [Media Analytics installeren met Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
 
-  >[!NOTE]
-  >
-  >Deze implementatiemethode steunt momenteel niet het Web SDK of Roku. Beide toepassingen worden echter ondersteund bij de implementatie met de Media Edge-API.
+* **Mediarand-API:** Kan worden aangepast om gegevens van om het even welk apparaat of formaat (met inbegrip van, mobiele, Web, en over-de-hoogste apparaten) te verzamelen en gegevens naar Edge Network te verzenden. Gegevens kunnen vervolgens naar Customer Journey Analytics of Adobe Analytics worden verzonden.
 
-* **Mediarand-API:** Kan worden aangepast om gegevens van om het even welk apparaat of formaat (met inbegrip van, mobiele, Web, en over-de-hoogste apparaten) te verzamelen en gegevens naar Rand te verzenden. Gegevens kunnen vervolgens naar Customer Journey Analytics of Adobe Analytics worden verzonden.
+  Zie voor meer informatie over de Media Edge API [Overzicht van de Media Edge API](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/).
 
-  <!-- For more information about the Media Edge API, see (link to John's docs when they're ready) -->
-
-![CJA-workflow](assets/cja-implementation.png)
+![CJA-workflow](assets/streaming-media-edge.png)
 
 ## Implementatiemethoden die alleen voor Adobe Analytics gelden
 
 De hierboven beschreven Edge-implementatiemethoden worden aanbevolen voor zowel Customer Journey Analytics als Adobe Analytics, vooral voor nieuwe implementaties.
 
-Naast de implementatiemethoden van Edge zijn er andere implementatiemethoden beschikbaar. Deze implementatiemethoden zijn ontworpen voor gebruik met Adobe Analytics. Bestaande klanten met een van de volgende implementatiemethoden kunnen echter nog steeds gegevens beschikbaar stellen in Customer Journey Analytics door een [Bronverbinding voor analyse](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html).
+Naast de implementatiemethoden van Edge zijn er andere implementatiemethoden beschikbaar. Deze implementatiemethoden zijn ontworpen voor gebruik met Adobe Analytics. Bestaande klanten met een van de volgende implementatiemethoden kunnen echter nog steeds gegevens in de Customer Journey Analytics beschikbaar maken door een [Bronverbinding voor analyse](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html).
 
 * **Media Extension met tags:** De Adobe Media Analytics voor Audio en Video uitbreiding verstrekt de functionaliteit voor het toevoegen van de instantie van de Tracker van Media aan een markering-toegelaten plaats of een project. Gegevens worden naar Adobe Analytics verzonden.
 

@@ -4,9 +4,9 @@ description: "Meer informatie over de belangrijkste apparaten die Adobe Analytic
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin
-source-git-commit: 1cc995959aa9070f895e0d03be62533bd3a0ca0d
+source-git-commit: b538b973509ee2a2c2010da300cbed1ce06ec2af
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '305'
 ht-degree: 6%
 
 ---
@@ -30,7 +30,7 @@ Voor meer informatie over het implementeren van Media op Edge raadpleegt u [Medi
 | Streaming platforms en apparaten | | Media voor Edge Network SDK / Extensie | Media Edge-API | Media Extension met tags of AEP mobile SDK | Media-SDK | Media Collection-API |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|
 | Web/Mobiel web | | | | | |
-| | JavaScript-browsers | (Binnenkort beschikbaar) | ![Ondersteund](/help/assets/icon-blue-check.png) | ![Ondersteund](/help/assets/icon-blue-check.png) | ![Ondersteund](/help/assets/icon-blue-check.png) | ![Ondersteund](/help/assets/icon-blue-check.png) |
+| | JavaScript-browsers | ![Ondersteund](/help/assets/icon-blue-check.png) | ![Ondersteund](/help/assets/icon-blue-check.png) | ![Ondersteund](/help/assets/icon-blue-check.png) | ![Ondersteund](/help/assets/icon-blue-check.png) | ![Ondersteund](/help/assets/icon-blue-check.png) |
 | Mobiele app | | | | | |
 | | iOS-apparaten | ![Ondersteund](/help/assets/icon-blue-check.png) | ![Ondersteund](/help/assets/icon-blue-check.png) | ![Ondersteund](/help/assets/icon-blue-check.png) | | ![Ondersteund](/help/assets/icon-blue-check.png) | |
 | | Android-apparaten | ![Ondersteund](/help/assets/icon-blue-check.png) | ![Ondersteund](/help/assets/icon-blue-check.png) | ![Ondersteund](/help/assets/icon-blue-check.png) | | ![Ondersteund](/help/assets/icon-blue-check.png) |
