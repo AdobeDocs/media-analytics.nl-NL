@@ -4,7 +4,7 @@ description: Bekijk de opmerkingen bij de release van Adobe Analytics.
 feature: Release Notes
 role: User, Admin, Data Engineer
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
-source-git-commit: 3c5fa1dd0cb795f0d908b7aa61d8c09f803e94f2
+source-git-commit: 9c138248ed8494aa5edb398370ac0100f8cdaa49
 workflow-type: tm+mt
 source-wordcount: '971'
 ht-degree: 7%
@@ -31,7 +31,7 @@ Voor informatie over nieuwe eigenschappen, moeilijke situaties, en belangrijke i
 
 | Functie | Beschrijving | Doeldatum |
 | ----------- | ---------- | ------- |
-| Webgegevens naar Adobe Experience Platform Edge Network verzenden met de Web SDK | U kunt nu [Adobe Experience Platform Web SDK gebruiken om webgegevens voor streamingmedia naar Adobe Experience Platform Edge Network te verzenden](/help/implementation/edge/edge-web-sdk.md), zodat u meer gepersonaliseerde campagnes kunt maken en meer gepersonaliseerde inhoud kunt bieden. Hierdoor worden er meer gegevens bijgehouden die u kunt melden.<p>Deze verbetering verstrekt een verenigde inzamelingsmethode voor Webimplementaties over alle oplossingen van het Platform, zoals Customer Journey Analytics, rt-CDP, AJO, en Gebeurtenis door:sturen. Eerder was de enige manier om webgegevens van Streaming media naar Edge Network te verzenden met de Media Edge API. | zaterdag 31 mei 2024 |
+| Webgegevens naar Adobe Experience Platform Edge Network verzenden met de Web SDK | U kunt nu [Adobe Experience Platform Web SDK gebruiken om webgegevens voor streamingmedia naar Adobe Experience Platform Edge Network te verzenden](/help/implementation/edge/edge-web-sdk.md), zodat u meer gepersonaliseerde campagnes kunt maken en meer gepersonaliseerde inhoud kunt bieden. Hierdoor worden er meer gegevens bijgehouden die u kunt melden.<p>Deze verbetering verstrekt een verenigde inzamelingsmethode voor Webimplementaties over alle oplossingen van het Platform, zoals Customer Journey Analytics, rt-CDP, AJO, en Gebeurtenis door:sturen. Eerder was de enige manier om webgegevens van Streaming media naar Edge Network te verzenden met de Media Edge API. | donderdag 29 mei 2024 |
 | Roku-gegevens naar Adobe Experience Platform Edge verzenden | Wanneer [Media Analytics installeren met Experience Platform Edge](/help/implementation/edge/implementation-edge.md)kunt u de Adobe Experience Platform Roku SDK gebruiken om streaming Media-gegevens naar Adobe Experience Platform te verzenden. | zaterdag 12 april 2024 |
 | Media Collection: Integratie met Experience Edge (API en mobiele SDK) | Met de Experience Edge API en de Mobile SDK kunt u nu streaming media implementeren, zodat u meer persoonlijke campagnes kunt maken en meer persoonlijke inhoud kunt bieden, waardoor er meer trackinggegevens beschikbaar komen om op te geven.<p>Deze verbetering verstrekt een verenigde inzamelingsmethode over alle oplossingen, zoals Customer Journey Analytics het melden, RT-CDP, AJO, en Gebeurtenis het Door:sturen.  [Meer informatie](/help/implementation/edge/implementation-edge.md) | zaterdag 12 mei 2023 |
 | Deelvenster Mediagelijktijdige viewer | Begrijp waar de piekgelijktijdig voorkwam of waar drop-outs voorkwamen. Krijg waardevol inzicht in de kwaliteit van inhoud en viewerbetrokkenheid, en hulp bij het oplossen van problemen of het plannen voor volume en schaal. [Meer informatie](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=en) | woensdag 9 augustus 2022 |
