@@ -4,9 +4,9 @@ description: Dit onderwerp omvat FAQs over het eind van steun voor Media Analyti
 exl-id: 9601ec17-8421-49d0-9d81-1cfa5e8f37cf
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: c00c9850d5ea924cef6b4842ecb770df1e78eb21
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '601'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Met het einde van de ondersteuning voor versie 4 Mobile SDK&#39;s op 31 augustus 2021 beëindigde Adobe ook de ondersteuning voor de Media Analytics Mobile SDK&#39;s voor iOS en Android. (Dit omvat niet de Media Analytics SDK voor Web (JS) en OTT platforms zoals Chromecast en Roku, die nog worden gesteund.)
 
-Dit betekent dat Adobe niet langer oplossingen, updates met betrekking tot het besturingssysteem of ondersteuning voor de Media Analytics Mobile SDK biedt. Houd er bij het migreren naar de nieuwe Experience Platform-SDK&#39;s rekening mee dat de [Media Analytics-extensies](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) moet worden geïmplementeerd om Adobe Analytics para medios de streaming mogelijk te maken.
+Dit betekent dat Adobe niet langer oplossingen, updates met betrekking tot het besturingssysteem of ondersteuning voor de Media Analytics Mobile SDK biedt. Houd er bij het migreren naar de nieuwe Experience Platform-SDK&#39;s rekening mee dat de [Media Analytics-extensies](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) moet worden geïmplementeerd om de invoegtoepassing voor het streamen van Adobe Media Collection in te schakelen.
 
 
 ## Top 5 van dingen die u moet weten
@@ -42,7 +42,7 @@ Neem contact op met het accountteam van uw Adobe als u vragen hebt.
 
    LOE is afhankelijk van de implementatie van elke klant, dus het zal variëren.  Nadat u de migratiedocumentatie hieronder hebt bekeken, neemt u contact op met de consultant en/of de klantenservice voor extra ondersteuning.
 
-[Extensies voor media-analyse: Android-migratie](/help/legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
+[Media Analytics Extensions: Android-migratie](/help/legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
 
 [Media Analytics Extensions: iOS-migratie](/help/legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
 

@@ -5,10 +5,10 @@ uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
 source-wordcount: '618'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -19,7 +19,7 @@ Nadat u de SDK van Media voor uw video-app of -speler hebt gedownload, volgt u d
 
 ## Algemene uitvoeringsrichtsnoeren {#general-implementation-guidelines}
 
-Er worden drie belangrijke SDK-componenten gebruikt voor het bijhouden van Adobe-streaming media:
+Er zijn drie belangrijke componenten SDK die in het volgen met de Streaming Invoegtoepassing van de Inzameling van Media worden gebruikt:
 * Configuratie van de mediaritmische hartslag: `MediaHeartbeatConfig` bevat de basisinstellingen voor rapportage.
 * Media Heartbeat Delegate—De `MediaHeartbeatDelegate` Bepaalt de afspeeltijd en het object QoS.
 * Media Heartbone—De `MediaHeartbeat` is de primaire bibliotheek met leden en methoden.
@@ -45,7 +45,7 @@ Voer de volgende implementatiestappen uit om de SDK voor Streaming Media in te s
    |  Naam van methode  |  Beschrijving  | Vereist |
    | --- | --- | :---: |
    | `getQoSObject()` | Hiermee wordt het `MediaObject` instantie die de huidige informatie QoS bevat. Deze methode wordt meerdere keren aangeroepen tijdens een afspeelsessie. De implementatie van de speler moet altijd de recentst beschikbare gegevens terugkeren QoS. | Ja |
-   | `getCurrentPlaybackTime()` | Retourneert de huidige positie van de afspeelkop. <br /> Voor het bijhouden van VOD wordt de waarde opgegeven in seconden vanaf het begin van het media-item. <br /> Wanneer de speler voor live streaming geen informatie over de duur van de inhoud geeft, kan de waarde worden opgegeven als het aantal seconden dat is verstreken sinds middernacht UTC van die dag. <br /> Opmerking: Wanneer u voortgangsmarkeringen gebruikt, is de duur van de inhoud vereist en moet de afspeelkop worden bijgewerkt als het aantal seconden vanaf het begin van het media-item, te beginnen met 0. | Ja |
+   | `getCurrentPlaybackTime()` | Retourneert de huidige positie van de afspeelkop. <br /> Voor het bijhouden van VOD wordt de waarde opgegeven in seconden vanaf het begin van het media-item. <br /> Wanneer de speler voor live streaming geen informatie over de duur van de inhoud geeft, kan de waarde worden opgegeven als het aantal seconden dat is verstreken sinds middernacht UTC van die dag. <br /> Opmerking: wanneer u voortgangsmarkeringen gebruikt, is de duur van de inhoud vereist en moet de afspeelkop worden bijgewerkt in het aantal seconden vanaf het begin van het media-item, te beginnen met 0. | Ja |
 
    >[!TIP]
    >
@@ -114,18 +114,18 @@ Voer de volgende implementatiestappen uit om de SDK voor Streaming Media in te s
 
 De volgende implementaties van de Analytics van media produceren twee soorten het volgen vraag:
 
-* Aanroepen voor media en advertenties worden rechtstreeks naar de Adobe Analytics-server (AppMeasurement) verzonden.
+* De vraag van de media en van het begin van de advertentie wordt verzonden rechtstreeks naar de server van Adobe Analytics (AppMeasurement).
 * De vraag van de hartslag wordt verzonden naar de Media Analytics (hartslagen) volgende server, daar verwerkt, en tot de server van Adobe Analytics overgegaan.
 
 * **Adobe Analytics-server (AppMeasurement)**
 Voor meer informatie over het volgen van serveropties, zie [De variabelen trackingServer en trackingServerSecure correct vullen.](https://helpx.adobe.com/analytics/kb/determining-data-center.html)
 
-   >[!IMPORTANT]
-   >
-   >Voor de Experience Cloud Bezoeker-id-service is een RDC-trackingserver of CNAME vereist die een RDC-server oplost.
+  >[!IMPORTANT]
+  >
+  >Een RDC-trackingserver of CNAME die een RDC-server oplost, is vereist voor de service Bezoeker-id van Experience Cloud.
 
-   De analysetrackingserver moet eindigen op &quot;`.sc.omtrdc.net`&quot; of een CNAME zijn.
+  De analysetrackingserver moet eindigen op &quot;`.sc.omtrdc.net`&quot; of een CNAME zijn.
 
-* ** Media Analytics (Heartbeats) server** Dit heeft altijd de indeling &quot;`[your_namespace].hb.omtrdc.net`&quot;. De waarde van &quot;`[your_namespace]`&quot; geeft uw bedrijf aan en wordt opgegeven door Adobe.
+* ** Media Analytics (Heartbeats) server** Dit heeft altijd de indeling &quot;`[your_namespace].hb.omtrdc.net`&quot;. De waarde van &quot;`[your_namespace]`&quot; geeft uw bedrijf aan en wordt via Adobe verstrekt.
 
 Mediatracering werkt op alle platformen hetzelfde, zowel op het bureaublad als op mobiele apparaten. Audio bijhouden werkt momenteel op mobiele platforms. Voor alle volgende vraag zijn er een paar zeer belangrijke universele variabelen die moeten worden bevestigd:

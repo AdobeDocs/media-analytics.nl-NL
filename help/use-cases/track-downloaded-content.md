@@ -1,13 +1,13 @@
 ---
-title: Offline gedownloade inhoud bijhouden in Adobe Streaming Media
+title: Hoe te om off-line gedownloade inhoud in de het stromen Invoegsel van de Inzameling van Media te volgen
 description: Leer hoe u de functie Gedownloade inhoud kunt gebruiken om het mediaconsumptie bij te houden wanneer een gebruiker offline is.
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: cdc5ea361829c749dfbb457288ac5ba51a530961
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
@@ -22,14 +22,14 @@ Vergelijk de twee benaderingen:
 
 * Online
 
-   Met deze real-time aanpak verzendt de mediaspeler trackinggegevens voor elke spelergebeurtenis. Het verzendt elke tien seconden (elke seconde voor advertenties) een voor een naar de back-end.
+  Met deze real-time aanpak verzendt de mediaspeler trackinggegevens voor elke spelergebeurtenis. Het verzendt elke tien seconden (elke seconde voor advertenties) een voor een naar de back-end.
 
 * Off line (functie Gedownloade inhoud)
 
-   Bij deze batchverwerkingsmethode moeten dezelfde sessiegebeurtenissen worden gegenereerd, maar deze worden op het apparaat opgeslagen totdat ze als één sessie naar de back-end worden verzonden (zie het onderstaande voorbeeld).
+  Bij deze batchverwerkingsmethode moeten dezelfde sessiegebeurtenissen worden gegenereerd, maar deze worden op het apparaat opgeslagen totdat ze als één sessie naar de back-end worden verzonden (zie het onderstaande voorbeeld).
 
 Elke aanpak heeft zijn voor- en nadelen:
-* Het online scenario volgt in real time; dit vereist een connectiviteitscontrole vóór elke netwerkvraag.
+* De online scenario sporen in real time; dit vereist een connectiviteitscontrole vóór elke netwerkvraag.
 * Het off-line scenario (de Gedownloade eigenschap van de Inhoud) vereist slechts één controle van de netwerkconnectiviteit, maar vereist ook een grotere geheugenvoetafdruk op het apparaat.
 
 ## Implementatie {#implementation}
@@ -52,8 +52,8 @@ De functie Gedownloade inhoud is de offlineversie van de (standaard) online API 
 
 ### Antwoordcodes
 
-* 201 - Gemaakt: Aanvraag met succes; de gegevens zijn geldig en de sessie is gemaakt en wordt verwerkt.
-* 400 - Ongeldig verzoek; schemavalidatie is mislukt, alle gegevens worden verwijderd, er worden geen sessiegegevens verwerkt.
+* 201 - Gemaakt: Aanvraag geslaagd. De gegevens zijn geldig en de sessie is gemaakt en wordt verwerkt.
+* 400 - Onjuiste aanvraag; schemavalidatie is mislukt, alle gegevens worden verwijderd, er worden geen sessiegegevens verwerkt.
 
 ## Integratie met Adobe Analtyics {#integration-with-adobe-analtyics}
 

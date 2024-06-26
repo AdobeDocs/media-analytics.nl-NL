@@ -1,18 +1,18 @@
 ---
 title: Leer de kwaliteit van de ervaring bij te houden met JavaScript 2.x
-description: "Leer over het uitvoeren van kwaliteit van ervaring (QoE, QoS) het volgen gebruikend Media SDK in browser apps gebruikend JavaScript 2.x."
+description: "Leer hoe u de kwaliteit van de ervaring (QoE, QoS) kunt bijhouden met de Media SDK in browsertoepassingen met JavaScript 2.x."
 uuid: 3bc762a2-9706-4b62-aa91-747f461dd13d
 exl-id: 5924eba4-15a9-405b-9a05-8a7308ddec47
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 2%
 
 ---
 
-# Kwaliteit van ervaring bijhouden met JavaScript 2.x{#track-quality-of-experience-on-javascript}
+# Trackkwaliteit van ervaringen met JavaScript 2.x{#track-quality-of-experience-on-javascript}
 
 De volgende instructies bieden richtlijnen voor implementatie voor alle 2.x SDK&#39;s.
 

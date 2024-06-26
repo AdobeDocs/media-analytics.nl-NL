@@ -1,27 +1,27 @@
 ---
-title: Media Analytics installeren met Experience Platform Edge
-description: Leer hoe u Adobe streaming media met Experience Platform Edge implementeert.
+title: Implementeer de invoegtoepassing voor het streamen van media-verzamelingen met de Edge Network
+description: Leer hoe de invoegtoepassing voor het streamen van media-verzamelingen kan worden geïmplementeerd met Experience Platform Edge.
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: ad40260d29bd5b739184cb551f084565d05e65a7
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
-source-wordcount: '1858'
+source-wordcount: '1879'
 ht-degree: 0%
 
 ---
 
-# Media Analytics installeren met Experience Platform Edge
+# Implementeer de invoegtoepassing voor het streamen van media-verzamelingen met de Edge Network
 
-Met Adobe Experience Platform Edge kunt u gegevens die bestemd zijn voor meerdere producten naar een gecentraliseerde locatie verzenden. De ervaring Edge stuurt de juiste informatie door naar de gewenste producten. Met dit concept kunt u de implementatie-inspanningen consolideren, met name voor het overspannen van meerdere gegevensoplossingen.
+Met de Adobe Experience Platform-Edge Network kunt u gegevens die bestemd zijn voor meerdere producten naar een gecentraliseerde locatie verzenden. De ervaring met Edge geeft de juiste informatie door aan de gewenste producten. Met dit concept kunt u de implementatie-inspanningen consolideren, met name voor het overspannen van meerdere gegevensoplossingen.
 
-In de volgende afbeelding ziet u hoe een Media Analytics-implementatie Experience Platform Edge kan gebruiken om gegevens beschikbaar te maken in Analysis Workspace, in Adobe Analytics of Customer Journey Analytics:
+In de volgende afbeelding ziet u hoe de invoegtoepassing voor het streamen van media-Adobe kan worden geïmplementeerd om Experience Platform Edge te gebruiken om gegevens beschikbaar te maken in Analysis Workspace, in Adobe Analytics of Customer Journey Analytics:
 
 ![CJA-workflow](assets/streaming-media-edge.png)
 
-Voor een overzicht van alle implementatieopties, met inbegrip van implementatiemethodes die geen Rand van het Experience Platform gebruiken, zie [Streaming media implementeren voor Adobe Analytics of Customer Journey Analytics](/help/implementation/overview.md).
+Voor een overzicht van alle implementatieopties, inclusief implementatiemethoden die geen Experience Platform Edge gebruiken, raadpleegt u [Implementeer de invoegtoepassing voor het streamen van media-verzamelingen](/help/implementation/overview.md).
 
-Ongeacht of u de Adobe Experience Platform Web SDK, de Adobe Experience Platform Mobile SDK, de Adobe Experience Platform Roku SDK of de API gebruikt om Streaming Media met Experience Edge te implementeren, moet u eerst de volgende secties voltooien:
+Ongeacht of u de Adobe Experience Platform Web SDK, de Adobe Experience Platform Mobile SDK, de Adobe Experience Platform Roku SDK, of API gebruikt om de Invoegtoepassing van de Inzameling van de Media van de Verzameling van het Streaming met Ervaring Edge uit te voeren, moet u eerst de volgende secties voltooien:
 
 ## Schema instellen in Adobe Experience Platform
 
@@ -50,7 +50,7 @@ Een schema maken en instellen:
 
 1. Selecteren [!UICONTROL **Opslaan**] om uw wijzigingen op te slaan.
 
-1. (Optioneel) U kunt bepaalde velden verbergen die niet worden gebruikt door de Media Edge-API. Het verbergen van deze gebieden maakt het schema gemakkelijker te lezen en te begrijpen, maar het wordt niet vereist. Deze velden verwijzen alleen naar de velden in de `MediaAnalytics Interaction Details` veldgroep.
+1. (Optioneel) U kunt bepaalde velden verbergen die niet worden gebruikt door de Media Edge API. Het verbergen van deze gebieden maakt het schema gemakkelijker te lezen en te begrijpen, maar het wordt niet vereist. Deze velden verwijzen alleen naar de velden in de `MediaAnalytics Interaction Details` veldgroep.
 
 +++ Vouw hier uit om instructies weer te geven voor velden die u kunt verbergen.
 
@@ -155,7 +155,7 @@ Een schema maken en instellen:
 
      ![Media Analytics, optie](assets/datastream-media-check.png)
 
-1. U bent nu klaar om het [Media Edge-API](/help/implementation/edge/implementation-edge-api.md) of [Media Edge SDK](/help/implementation/edge/edge-mobile-sdk.md) om gegevens van mediaconalyse te verzamelen.
+1. U bent nu klaar om het [Media Edge API](/help/implementation/edge/implementation-edge-api.md) of [Media Edge SDK](/help/implementation/edge/edge-mobile-sdk.md) om gegevens van mediaconalyse te verzamelen.
 
    Nadat u gegevens hebt verzameld, kunt u [Verbinding maken in Customer Journey Analytics](#create-a-connection-in-customer-journey-analytics).
 
@@ -170,7 +170,7 @@ Een schema maken en instellen:
 
 1. Maak in Customer Journey Analytics een verbinding zoals beschreven in [Verbinding maken](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en).
 
-   Bij het maken van de verbinding zijn de volgende configuratieselecties vereist voor de implementatie van streaming media:
+   Bij het maken van de verbinding zijn de volgende configuratieselecties vereist voor de implementatie van de invoegtoepassing voor het streamen van media-verzamelingen:
 
    1. Selecteer de gegevensset die u eerder hebt gemaakt, zoals beschreven in [Een gegevensset maken in Adobe Experience Platform](#create-a-dataset-in-adobe-experience-platform).
 
@@ -188,7 +188,7 @@ Een schema maken en instellen:
 
 1. In de Analtyics van de Reis van de Klant, creeer een gegevensmening zoals die in [Een gegevensweergave maken of bewerken](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en).
 
-   Bij het maken van de gegevensweergave zijn de volgende configuratieselecties vereist voor de implementatie van streaming media:
+   Wanneer het creëren van de gegevensmening, worden de volgende configuratieselecties vereist voor het uitvoeren van de Streaming Invoegtoepassing van de Inzameling van Media:
 
    1. In de [!UICONTROL **Verbinding**] , selecteert u de verbinding die u eerder hebt gemaakt, zoals beschreven in [Verbinding maken in Customer Journey Analytics](#create-a-connection-in-customer-journey-analytics).
 
@@ -275,7 +275,7 @@ Een schema maken en instellen:
 
 1. Zorg ervoor dat u een gegevensweergave hebt gemaakt in Customer Journey Analytics zoals beschreven in [Een gegevensweergave maken in Customer Journey Analytics](#create-a-new-data-view-in-customer-journey-analytics).
 
-1. In Customer Journey Analytics, in [!UICONTROL **Werkruimte**] tabblad, in de [!UICONTROL **Projecten**] gebied, selecteren [!UICONTROL **Project maken**].
+1. In Customer Journey Analytics, in [!UICONTROL **Workspace**] tabblad, in de [!UICONTROL **Projecten**] gebied, selecteren [!UICONTROL **Project maken**].
 
 1. Selecteren [!UICONTROL **Leeg project**] > [!UICONTROL **Maken**].
 
@@ -311,13 +311,13 @@ Een schema maken en instellen:
 
 ## Gegevens verzenden naar Experience Platform Edge
 
-Afhankelijk van het type gegevens dat u naar Rand van Experience Platform wilt verzenden, kunt u een van de volgende methoden gebruiken:
+Afhankelijk van het type gegevens dat u naar Experience Platform Edge wilt verzenden, kunt u een van de volgende methoden gebruiken:
 
 ### Web: De SDK van het Web van Adobe Experience Platform gebruiken
 
 * [Aan de slag](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/)
 
-* [Webgegevens naar Edge verzenden met de SDK van Adobe Experience Platform Web](/help/implementation/edge/edge-web-sdk.md)
+* [Webgegevens naar Edge verzenden met de Adobe Experience Platform Web SDK](/help/implementation/edge/edge-web-sdk.md)
 
 * [Migreren naar Adobe streamingmedia voor extensie Edge Network](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
@@ -345,12 +345,12 @@ De API is momenteel de enige ondersteunde manier om webgegevens naar Experience 
 
 De API is ook beschikbaar als u een aangepaste implementatie van de Edge API&#39;s wilt gebruiken.
 
-Zie de volgende bronnen voor meer informatie over de Media Edge API:
+Zie de volgende bronnen voor meer informatie over de media Edge API:
 
-* [Overzicht van de Media Edge API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/overview.html)
+* [Overzicht van Media Edge API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/overview.html)
 
 * [Media Edge API aan de slag](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/getting-started.html)
 
-* [Handleiding voor het oplossen van problemen met de Media Edge API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/troubleshooting.html)
+* [Handleiding voor problemen met Edge API voor media](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/troubleshooting.html)
 
-* [Het API-specificatiebestand van de Open-API gebruiken voor Media Edge-API&#39;s](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/swagger.html)
+* [Het API-specificatiebestand voor openen gebruiken voor Media Edge API&#39;s](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/swagger.html)

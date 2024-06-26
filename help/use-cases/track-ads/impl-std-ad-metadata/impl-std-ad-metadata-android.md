@@ -5,14 +5,14 @@ uuid: 19b98bc1-c659-4182-a4ff-b3340fe2453c
 exl-id: f1aa017f-b2ae-40ca-b4d9-b508cf45cb0c
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
 workflow-type: tm+mt
 source-wordcount: '63'
-ht-degree: 11%
+ht-degree: 0%
 
 ---
 
-# Standaardmetadata voor advertenties implementeren in Android{#implement-standard-ad-metadata-on-android}
+# Standaard en metagegevens implementeren op Android{#implement-standard-ad-metadata-on-android}
 
 ## Advertentieconstanten
 
@@ -20,7 +20,7 @@ ht-degree: 11%
 |---|---|
 | `MediaHeartbeat.MediaObjectKey.StandardAdMetadata` | Constante voor het koppelen van standaard- en metagegevens op advertentie `MediaObject`. |
 
-## Implementatiestandaard en metagegevens
+## Standaardinstellingen en metagegevens implementeren
 
 Voor standaard- en metagegevens maakt u een woordenboek van standaard- en metagegevenssleutelwaardeparen met behulp van de toetsen voor uw platform:
 

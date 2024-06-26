@@ -4,18 +4,18 @@ description: Leer hoe u handelingen van toepassingen koppelt aan gegevens voor m
 exl-id: 75cc9088-776d-4b10-b358-9fff956a7eb7
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '233'
 ht-degree: 1%
 
 ---
 
-# Attributie van mediastream {#media-stream-attribution}
+# Attributie van mediastroom {#media-stream-attribution}
 
 Met de Attributie van de Stroom van Media, kunt u toepassingsacties met media volgende gegevens verbinden zonder de behoefte aan extra verwerkingsregels en douanevariabelen.
 
-## Media-Dimension buiten mediatracering
+## Media-Dimensionen buiten mediatracering
 
 U kunt mediumafmetingen toevoegen aan analytische aanroepen, zoals paginaweergaven en aangepaste koppelingen. Tijdens implementatie, moet u de gegevensparameters van de media context aan de het spoorvraag van Analytics toevoegen. Als u de volledige lijst met beschikbare parameters voor contextgegevens wilt weergeven die voor media worden gebruikt, raadpleegt u [Parameters voor audio en video.](/help/implementation/variables/audio-video-parameters.md)
 
@@ -23,11 +23,11 @@ Om deze eigenschap voor een specifiek rapport toe te laten, re-enable de media v
 
 >[!NOTE]
 >
->De mediakwaliteit is _niet_ beschikbaar voor gebruik buiten het bijhouden van media, omdat de meeste hiervan worden berekend via Streaming Media Analytics op basis van hartslaggebeurtenissen. Ook, is het belangrijk dat de media metriek niet door verschillende implementaties worden opgeblazen.
+>De mediakwaliteit is _niet_ beschikbaar voor gebruik buiten media het volgen omdat de meeste van deze gegevens door de Invoegtoepassing van de Inzameling van Media van de Streaming worden berekend die op hartslaggebeurtenissen wordt gebaseerd. Ook, is het belangrijk dat de media metriek niet door verschillende implementaties worden opgeblazen.
 
 ## Kenmerken van mediastroom gebruiken
 
-In het onderstaande JavaScript-voorbeeld wordt een aanroep voor het bijhouden van aangepaste koppelingen gegenereerd met de naam &quot;Hero Banner&quot;.
+In het onderstaande JavaScript-voorbeeld wordt een aanroep voor het bijhouden van een aangepaste koppeling gegenereerd waarvoor de naam is ingesteld op &quot;Hero Banner&quot;.
 
 ```javascript
 s.contextData["a.media.show"]="Mi Amore"
@@ -38,7 +38,7 @@ In Analytics-rapportage kunt u de opdracht `Show` eVar om de gegevens op te dele
 
 ![](/assets/myShow-rpt-1.png)
 
-## Gevallen gebruiken
+## Gebruiksscenario’s
 
 In het volgende voorbeeld worden praktijkgevallen getoond voor het volgende:
 

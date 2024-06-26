@@ -5,16 +5,16 @@ uuid: 20a437d7-18b8-4099-ac81-9f3628384236
 exl-id: d2c0a1e0-8d40-4f60-a82d-5860550ac152
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
 workflow-type: tm+mt
 source-wordcount: '50'
-ht-degree: 12%
+ht-degree: 0%
 
 ---
 
-# Standaardmetadata voor advertenties implementeren in Roku{#implement-standard-ad-metadata-on-roku}
+# Standaard en metagegevens implementeren op Roku{#implement-standard-ad-metadata-on-roku}
 
-## Implementatiestandaard en metagegevens
+## Standaardinstellingen en metagegevens implementeren
 
 Voor standaard- en metagegevens maakt u een woordenboek van standaard- en metagegevenssleutelwaardeparen met behulp van de toetsen voor uw platform:
 

@@ -1,18 +1,18 @@
 ---
 title: Implementatie aangepaste koppeling beschreven
-description: Leer hoe u Aangepaste koppeling bijhouden in Streaming Media Analytics implementeert.
+description: Leer hoe te om het volgen van de Verbinding van de Douane in het Streamen toe:voegen-on van de Inzameling van Media uit te voeren.
 uuid: 83315e73-20ca-4db5-9d43-33daade45a13
 exl-id: ee6f931a-ef80-4ebe-8ccb-cdbf970516e6
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 2%
+source-wordcount: '178'
+ht-degree: 0%
 
 ---
 
-# Custom Link Implementatiehandleiding{#custom-link-implementation-guide}
+# Custom Link Implementation Guide{#custom-link-implementation-guide}
 
 Bij Aangepaste videotracering wordt handmatig koppelingen bijgehouden met behulp van aangepaste koppelingscode in Analytics `appMeasurement`.
 Het meest wordt aangepaste videotracering van koppelingen gebruikt op platforms en apparaten waar minimale videometing nodig is.
@@ -56,7 +56,7 @@ if (e.type == "ended") {
 * Heel eenvoudig zonder verborgen bibliotheken of scripts
 * Totale controle over elk aspect van de videogegevens
 
-## Voorbeeld JavaScript voor HTML5 Player
+## Voorbeeld JavaScript for HTML5 Player
 
 ```javascript
 <script type="text/javascript">

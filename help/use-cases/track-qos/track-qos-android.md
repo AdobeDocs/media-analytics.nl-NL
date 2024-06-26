@@ -5,14 +5,14 @@ uuid: 81ff3939-48a6-45c1-8837-ddfa33490559
 exl-id: cee8b119-bca2-4a5c-8111-2b49f7eede66
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 3%
 
 ---
 
-# Traceerkwaliteit van ervaringen op Android{#track-quality-of-experience-on-android}
+# Kwaliteit van ervaring bijhouden op Android{#track-quality-of-experience-on-android}
 
 De volgende instructies bieden richtlijnen voor implementatie voor alle 2.x SDK&#39;s.
 
@@ -20,7 +20,7 @@ De volgende instructies bieden richtlijnen voor implementatie voor alle 2.x SDK&
 >
 >Als u een 1.x-versie van de SDK implementeert, kunt u de 1.x-handleidingen voor ontwikkelaars hier downloaden: [SDK&#39;s downloaden.](/help/getting-started/download-sdks.md)
 
-## QoS implementeren
+## QoS uitvoeren
 
 1. Bepaal wanneer de bitsnelheid verandert tijdens het afspelen van media en maak de opdracht `MediaObject` instantie die de informatie QoS gebruikt.
 

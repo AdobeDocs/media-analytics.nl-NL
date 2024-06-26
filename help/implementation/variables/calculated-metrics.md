@@ -1,20 +1,20 @@
 ---
-title: Berekende meetwaarden voor streamingmedia
-description: Leer over Adobe die Media berekende metriek en metrische formules stroomt.
+title: Berekende standaarden
+description: Leer over berekende metriek en metrische formules in de Streaming Invoegsel van de Inzameling van Media.
 uuid: 9dd35155-58aa-4f05-896e-c5cbc4b13d59
 exl-id: 253f6c61-70b5-4bdf-8e79-840545aeca0e
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 917c87d759a43f124dfb3e3ac7f6a441c65fde94
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 2%
+source-wordcount: '246'
+ht-degree: 3%
 
 ---
 
 # Berekende cijfers{#calculated-metrics}
 
-Berekende meetgegevens voor streamingmedia zijn aangepaste meetwaarden waarmee u doelgerichte streaming-mediagegevens kunt verkrijgen, zoals gemiddelde en doorgebrachte tijd of gemiddelde advertenties per mediastream.
+De berekende metriek voor de Adobe die toe:voegen-on van de Inzameling van Media van de Verzameling is douanemetriek die u toestaat om gerichte het stromen media gegevens zoals gemiddelde gebruikte tijd of gemiddelde advertenties per media stroom te verkrijgen.
 
 Voor informatie over berekende metriek van Adobe Analytics, zie [Berekende en geavanceerde berekende (afgeleide) cijfers](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/cm-overview.html?lang=en) in de Adobe Analytics Components Guide.
 

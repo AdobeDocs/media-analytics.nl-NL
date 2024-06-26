@@ -4,16 +4,16 @@ description: Leer hoe u Adobe Streaming Media voor mobiele apps implementeert.
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: b4944b5f-cbae-4efc-9ef7-962d3f342240
-source-git-commit: 1e4babe0df218342fc4836155139d908ba113510
+source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '198'
 ht-degree: 0%
 
 ---
 
 # Mobiele SDK&#39;s installeren {#install-mobile-sdks}
 
-Als u streaming media voor mobiele apps wilt implementeren op Android of iOS, installeert en configureert u het volgende:
+Installeer en configureer de volgende toepassingen om de invoegtoepassing voor streaming Media Collection te implementeren voor mobiele apps op Android of iOS:
 
 * **Adobe Experience Platform Mobile SDK**
 

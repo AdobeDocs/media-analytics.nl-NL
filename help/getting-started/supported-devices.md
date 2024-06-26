@@ -1,19 +1,19 @@
 ---
 title: Meer informatie over ondersteunde apparaten en platforms
-description: "Meer informatie over de belangrijkste apparaten die Adobe Analytics para medios de streaming ondersteunt, zoals iOS, Android, OTT-apparaten en JavaScript-browsers."
+description: "Leer over de belangrijkste apparaten zoals iOS, Android, OTT apparaten, en de browsers van JavaScript die de het stromen Invoegsel van de Inzameling van Media steunt."
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin
-source-git-commit: b538b973509ee2a2c2010da300cbed1ce06ec2af
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '313'
 ht-degree: 6%
 
 ---
 
 # Ondersteunde apparaten en platforms {#devices-supported}
 
-Adobe Analytics para medios de streaming ondersteunt alle belangrijke apparaten, waaronder:
+De Adobe die Invoegsel van de Inzameling van Media van de Inzameling stroomt steunt alle belangrijke apparaten, met inbegrip van:
 
 * iOS- en Android-smartphones en -tablets
 * OTT-apparaten voor Roku, Fire TV en Android TV
@@ -21,16 +21,16 @@ Adobe Analytics para medios de streaming ondersteunt alle belangrijke apparaten,
 
 SDK&#39;s worden regelmatig bijgewerkt wanneer nieuwe versies van apparaten worden uitgebracht en u kunt de SDK&#39;s gebruiken om te integreren met native spelers van elk afzonderlijk platform of elke andere beschikbare mediaspeler.
 
-Voor apparaten die momenteel geen SDK-ondersteuning hebben of in situaties waarin u uw implementatie moet aanpassen, kunt u de Media Collection API of Media Edge API gebruiken. Met deze API&#39;s kunt u RESTful API-aanroepen rechtstreeks van een apparaat naar de achtergrond voor Media Analytics maken.
+Voor apparaten die momenteel geen SDK-ondersteuning hebben of in situaties waarin u uw implementatie moet aanpassen, kunt u de Media Collection API of Media Edge API gebruiken. Met deze API&#39;s kunt u RESTful API-aanroepen rechtstreeks van een apparaat naar de achtergrond van de invoegtoepassing voor het streamen van media maken.
 
 De onderstaande tabel bevat een lijst met momenteel ondersteunde apparaten. Als een apparaat niet in de lijst staat, neemt u contact op met uw klantenservice of oplossingsconsultant voor de status van dat apparaat.
 
-Voor meer informatie over het implementeren van Media op Edge raadpleegt u [Media Analytics installeren met Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
+Ga voor meer informatie over het implementeren van Media op Edge naar [De invoegtoepassing voor streaming media Collection installeren met Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
 
-| Streaming platforms en apparaten | | Media voor Edge Network SDK / Extensie | Media Edge-API | Media Extension met tags of AEP mobile SDK | Media-SDK | Media Collection-API |
+| Streaming platforms en apparaten | | Media voor Edge Network SDK / Extensie | Media Edge API | Media Extension met tags of AEP mobile SDK | Media-SDK | Media Collection-API |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|
 | Web/Mobiel web | | | | | |
-| | JavaScript-browsers | ![Ondersteund](/help/assets/icon-blue-check.png) | ![Ondersteund](/help/assets/icon-blue-check.png) | ![Ondersteund](/help/assets/icon-blue-check.png) | ![Ondersteund](/help/assets/icon-blue-check.png) | ![Ondersteund](/help/assets/icon-blue-check.png) |
+| | JavaScript Browsers | ![Ondersteund](/help/assets/icon-blue-check.png) | ![Ondersteund](/help/assets/icon-blue-check.png) | ![Ondersteund](/help/assets/icon-blue-check.png) | ![Ondersteund](/help/assets/icon-blue-check.png) | ![Ondersteund](/help/assets/icon-blue-check.png) |
 | Mobiele app | | | | | |
 | | iOS-apparaten | ![Ondersteund](/help/assets/icon-blue-check.png) | ![Ondersteund](/help/assets/icon-blue-check.png) | ![Ondersteund](/help/assets/icon-blue-check.png) | | ![Ondersteund](/help/assets/icon-blue-check.png) | |
 | | Android-apparaten | ![Ondersteund](/help/assets/icon-blue-check.png) | ![Ondersteund](/help/assets/icon-blue-check.png) | ![Ondersteund](/help/assets/icon-blue-check.png) | | ![Ondersteund](/help/assets/icon-blue-check.png) |

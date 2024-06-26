@@ -5,31 +5,31 @@ uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: c37aeea2-7c8f-4815-ae28-634ae691e84f
-source-git-commit: ad40260d29bd5b739184cb551f084565d05e65a7
+source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 4%
+source-wordcount: '259'
+ht-degree: 3%
 
 ---
 
-# Documentatie voor implementatie van streaming media {#streaming-media-documentation}
+# Implementatiedocumentatie voor de streamingmedia Collection {#streaming-media-documentation}
 
-Adobe Analytics para medios de streaming-documentatie bevindt zich op meerdere productwebsites. Afhankelijk van de manier waarop u Streaming Media Analytics implementeert, moet u mogelijk naar een of meer documentatiesets verwijzen.
+Documentatie voor de invoegtoepassing voor het streamen van media-verzamelingen bevindt zich op meerdere productwebsites. Afhankelijk van hoe u de het stromen media inzameling uitvoert, kunt u één of meerdere documentatiereeksen moeten van verwijzingen voorzien.
 
 Gebruik de informatie in de volgende lijst om van documentatie voor uw gekozen implementatiemethode de plaats te bepalen.
 
-## Documentatie voor implementatie van streaming media {#media-documentation}
+## Implementatiedocumentatie {#media-documentation}
 
 | Implementatie | Documentatie |
 |:-----------------------:|----------------|
-| **Web** | * [Webgegevens naar Edge verzenden met de SDK van Adobe Experience Platform Web](/help/implementation/edge/edge-web-sdk.md) <br> * [Webimplementatie voor streamingmedia](/help/implementation/media-sdk/setup/web-implementation.md) <br>* [Web Implementation met Adobe Media Analytics for Audio and Video extension](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=en) |
-| **Mobiel** | * [Mobiele gegevens naar Edge verzenden met de Adobe Experience Platform Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md) <br> *[Handleiding Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/) <br> *[Adobe Media Analytics voor audio- en video-extensie](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br> *[Huidige mobiele SDK-versies](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/) <br> *[Mobiele implementatie voor streaming media](/help/implementation/media-sdk/setup/mobile-implementation.md) | |  |
+| **Web** | * [Webgegevens naar Edge verzenden met de Adobe Experience Platform Web SDK](/help/implementation/edge/edge-web-sdk.md) <br> * [Webimplementatie voor streamingmedia](/help/implementation/media-sdk/setup/web-implementation.md) <br>* [Web Implementation met Adobe Media Analytics for Audio and Video extension](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=en) |
+| **Mobiel** | * [Mobiele gegevens naar Edge verzenden met de Adobe Experience Platform mobile SDK](/help/implementation/edge/edge-mobile-sdk.md) <br> *[Handleiding Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/) <br> *[Adobe Media Analytics voor audio- en video-extensie](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br> *[Huidige mobiele SDK-versies](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/) <br> *[Mobiele implementatie voor streaming media](/help/implementation/media-sdk/setup/mobile-implementation.md) | |  |
 | **OTT** | *[Chromecast 3.0 SDK voor Adobe Marketing Cloud-oplossingen](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/)<br> *[Chromecast instellen](/help/implementation/media-sdk/setup/set-up-chromecast.md)<br> * [Adobe Experience Platform Roku SDK](/help/implementation/edge/implementation-edge.md) <br> *[Roku instellen](/help/implementation/media-sdk/setup/set-up-roku.md) |
 | **Adobe Experience Platform API&#39;s** | *[Media Collection-API&#39;s](/help/implementation/media-collection-api/mc-api-overview.md) |
 
 ## Aanvullende documentatie {#additional-documentation}
 
-In de onderstaande tabel vindt u documentatie over Adobe-producten die worden gebruikt bij Streaming Media Analytics.
+In de onderstaande tabel vindt u documentatie over Adobe-producten die worden gebruikt met de invoegtoepassing voor het streamen van media-verzamelingen.
 
 | Product | Documentatie |
 |:-----------------------:|----------------|

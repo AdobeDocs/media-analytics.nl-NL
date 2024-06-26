@@ -6,16 +6,16 @@ uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
 exl-id: 58430636-7fab-433a-8ead-52ccaa45d920
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 0%
 
 ---
 
-# API-overzicht van mediagroep{#overview}
+# API-overzicht van mediagroep {#overview}
 
-De API van de Inzameling van Media is RESTful alternatief aan de cliënt-zijMedia SDK. Met de Media Collection API kan uw speler audio en videogebeurtenissen volgen gebruikend vraag RESTful van HTTP.
+De Media Collection API is het RESTful alternatief van Adobe aan de cliënt-kant Media SDK. Met de Media Collection API kan uw speler audio en videogebeurtenissen volgen gebruikend vraag RESTful van HTTP.
 
 De API voor mediaverzamelingen is in wezen een adapter die fungeert als een serverversie van de SDK van Media. Dit betekent dat sommige aspecten van de documentatie van SDK van Media ook relevant voor de Inzameling API van Media zijn. Beide oplossingen gebruiken bijvoorbeeld hetzelfde [Streaming mediaparameters](../variables/audio-video-parameters.md)en de verzamelde gegevens voor het bijhouden van streaming media leiden tot hetzelfde [Rapportage en analyse.](/help/reporting/media-reports-enable.md)
 
@@ -29,21 +29,21 @@ De volggegevens die met de Media Collection API worden gevangen worden verzonden
 
 ## API-overzicht {#api-overview}
 
-**URI:** Vraag dit aan uw Adobe-vertegenwoordiger.
+**URI:** Vraag dit aan uw Adobe.
 
 **HTTP-methode:** POST, met de JSON-aanvraaginstantie.
 
 ### API-aanroepen {#mc-api-calls}
 
-* **`sessions`-** Hiermee wordt een sessie met de server ingesteld en wordt een sessie-id geretourneerd die in de volgende sessies wordt gebruikt `events` oproepen. Uw app roept dit eenmaal aan het begin van een volgende sessie aan.
+* **`sessions`-** Vestigt een zitting met de server, en keert een Zitting ID terug die in volgende wordt gebruikt `events` oproepen. Uw app roept dit eenmaal aan het begin van een volgende sessie aan.
 
-   `{uri}/api/v1/sessions`
+  `{uri}/api/v1/sessions`
 
 * **`events`-** Hiermee verzendt u gegevens voor het bijhouden van media.
 
-   `{uri}/api/v1/sessions/{session-id}/events`
+  `{uri}/api/v1/sessions/{session-id}/events`
 
-### Verzoek {#mc-api-request-body}
+### Indieningsinstantie {#mc-api-request-body}
 
 ```json
 {
@@ -69,12 +69,12 @@ De volggegevens die met de Media Collection API worden gevangen worden verzonden
 
 * `playerTime` - Verplicht voor alle verzoeken.
 * `eventType` - Verplicht voor alle verzoeken.
-* `params` - Verplicht voor bepaalde `eventTypes`; controleren [JSON-validatieschema](mc-api-ref/mc-api-json-validation.md) om te bepalen welke eventTypes verplicht zijn, en die facultatief zijn.
+* `params` - Verplicht voor bepaalde `eventTypes`; controleer de [JSON-validatieschema](mc-api-ref/mc-api-json-validation.md) om te bepalen welke eventTypes verplicht zijn, en die facultatief zijn.
 
 * `qoeData` - Optioneel voor alle aanvragen.
 * `customMetadata` - Optioneel voor alle aanvragen, maar alleen verzonden met `sessionStart`, `adStart`, en `chapterStart` gebeurtenistypen.
 
-Voor elke `eventType`er een openbaar [JSON-validatieschema](mc-api-ref/mc-api-json-validation.md) die u moet gebruiken om parametertypen te verifiëren en of een parameter optioneel of vereist is voor een bepaalde gebeurtenis.
+Voor elke `eventType`er een openbaar beschikbare [JSON-validatieschema](mc-api-ref/mc-api-json-validation.md) die u moet gebruiken om parametertypen te verifiëren en of een parameter optioneel of vereist is voor een bepaalde gebeurtenis.
 
 ### Gebeurtenistypen {#mc-api-event-types}
 

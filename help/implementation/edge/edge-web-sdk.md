@@ -1,16 +1,17 @@
 ---
-title: Webgegevens naar Edge verzenden met de SDK van Adobe Experience Platform Web
-description: Leer hoe u Adobe Streaming Media-gegevens naar Experience Platform Edge kunt verzenden met de Adobe Experience Platform Web SDK.
+title: Webgegevens naar Edge verzenden met de Adobe Experience Platform Web SDK
+description: Leer hoe u Adobe Streaming Media-gegevens naar Experience Platform Edge verzendt met de Adobe Experience Platform Web SDK.
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: ad40260d29bd5b739184cb551f084565d05e65a7
+exl-id: de40ebd9-46be-4a52-866f-7bb2589fce28
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '527'
 ht-degree: 0%
 
 ---
 
-# Webgegevens naar Edge verzenden met de SDK van Adobe Experience Platform Web
+# Webgegevens naar Edge verzenden met de Adobe Experience Platform Web SDK
 
 Vanaf versie 2.20.0 worden de `streamingMedia` onderdeel van de Adobe Experience Platform [Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home) kunt u gegevens verzamelen die betrekking hebben op mediasessies op uw website. De verzamelde gegevens kunnen informatie over media playbacks, pauzes, voltooiing, en andere verwante gebeurtenissen omvatten.
 
@@ -22,14 +23,14 @@ Voor klanten die de Media JS SDK gebruiken, verstrekt het Web SDK een migratiewe
 
 Als u de opdracht `streamingMedia` component van Web SDK, moet u aan de volgende voorwaarden voldoen:
 
-* Voordat u gegevens van Media Analytics naar Edge kunt verzenden, voert u eerst de stappen in [Media Analytics installeren met Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
+* Voordat u streaming mediagegevens naar Edge kunt verzenden, voert u eerst de stappen in [De invoegtoepassing voor streaming media Collection installeren met Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
 * Zorg ervoor dat u toegang hebt tot Adobe Experience Platform en/of Adobe Analytics.
 * U moet Web SDK versie 2.20.0 of later gebruiken. Zie de [Overzicht van de installatie van Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/overview) voor informatie over het installeren van de nieuwste versie.
 * De optie **[[!UICONTROL Media Analytics]](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)** voor de gegevensstroom die u gebruikt.
 * Zorg ervoor dat het schema dat door uw gegevensstroom wordt gebruikt de het schemagebieden van de Inzameling van Media omvat.
 * Vorm de Streaming eigenschap van Media in de configuratie van SDK van het Web, zoals aangetoond in deze pagina, of door [tagextensie](#tag-extension) of via de [JavaScript-bibliotheek](#library).
 
-Voer de stappen uit die in deze pagina worden beschreven om uw Analytics para medios de streaming-implementatie te migreren van Media JS naar Web SDK.
+Voer de stappen uit die in deze pagina worden beschreven om uw invoegtoepassing voor het streamen van media-verzamelingen te migreren van Media JS naar Web SDK.
 
 ### Stap 1: SDK van Web Experience Platform installeren
 
