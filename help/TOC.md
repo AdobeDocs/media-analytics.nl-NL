@@ -123,35 +123,35 @@ ht-degree: 12%
       + [Core Playback bijhouden op Chromecast](use-cases/track-av-playback/track-core/track-core-chromecast.md)
       + [Core Playback bijhouden op Roku](use-cases/track-av-playback/track-core/track-core-roku.md)
    + Buffer bijhouden {#track-buffering}
-      + [Trackbuffering op JavaScript 3.x](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js3.md)
+      + [Buffering bijhouden in JavaScript 3.x](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js3.md)
       + [De Buffer van het spoor op Chromecast](use-cases/track-av-playback/track-buffering/track-buffering-chromecast.md)
       + [Buffering bijhouden op Roku](use-cases/track-av-playback/track-buffering/track-buffering-roku.md)
    + Zoekopdrachten bijhouden {#track-seeking}
-      + [Trackzoekopdracht voor JavaScript 3.x](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js3.md)
+      + [Zoeken bijhouden in JavaScript 3.x](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js3.md)
       + [Trackzoekopdracht op chroecast](use-cases/track-av-playback/track-seeking/track-seeking-chromecast.md)
       + [Track Seeking op Roku](use-cases/track-av-playback/track-seeking/track-seeking-roku.md)
    + Standaardmetadata implementeren {#impl-std-metadata}
-      + [Standaardmetagegevens implementeren op JavaScript 3.x](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js3.md)
+      + [Standaardmetagegevens implementeren in JavaScript 3.x](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js3.md)
       + [Standaardmetagegevens toepassen op Chromecast](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
       + [Standaardmetagegevensparameters - Chromecast](use-cases/track-av-playback/impl-std-metadata/chromecast-metadata.md)
       + [Standaardmetagegevens implementeren op Roku](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
       + [Standaardmetagegevensparameters - Roku](use-cases/track-av-playback/impl-std-metadata/roku-metadata.md)
    + Advertenties bijhouden {#track-ads}
       + [Overzicht](use-cases/track-ads/track-ads-overview.md)
-      + [Advertenties bijhouden op JavaScript 3.x](use-cases/track-ads/track-ads-js/track-ads-js3.md)
+      + [Advertenties bijhouden in JavaScript 3.x](use-cases/track-ads/track-ads-js/track-ads-js3.md)
       + [Advertenties bijhouden bij chroecast](use-cases/track-ads/track-ads-chromecast.md)
       + [Advertenties bijhouden op Roku](use-cases/track-ads/track-ads-roku.md)
       + Standaardmetadata voor advertenties implementeren {#impl-std-ad-metadata}
-         + [Standaard en metagegevens implementeren op JavaScript 3.x](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
+         + [Standaard en metagegevens implementeren in JavaScript 3.x](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
          + [Standaard en metagegevens implementeren op Roku](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
    + Hoofdstukken en segmenten bijhouden {#track-chapters}
       + [Overzicht](use-cases/track-chapters/track-chapters-overview.md)
-      + [Hoofdstukken en segmenten bijhouden op JavaScript 3.x](use-cases/track-chapters/track-chapters-js/track-chapters-js3.md)
+      + [Hoofdstukken en segmenten bijhouden in JavaScript 3.x](use-cases/track-chapters/track-chapters-js/track-chapters-js3.md)
       + [Hoofdstuk en segment bijhouden op Chromecast](use-cases/track-chapters/track-chapters-chromecast.md)
       + [Hoofdstukken en segmenten bijhouden op Roku](use-cases/track-chapters/track-chapters-roku.md)
    + Kwaliteit van Experience bijhouden {#track-qos}
       + [Overzicht](use-cases/track-qos/track-qos-overview.md)
-      + [Trackkwaliteit van ervaring op JavaScript 3.x](use-cases/track-qos/track-qos-js/track-qos-js3.md)
+      + [Kwaliteit van ervaring bijhouden in JavaScript 3.x](use-cases/track-qos/track-qos-js/track-qos-js3.md)
       + [Trackkwaliteit van ervaring op chroomecast](use-cases/track-qos/track-qos-chromecast.md)
       + [Trackkwaliteit van ervaring op Roku](use-cases/track-qos/track-qos-roku.md)
    + Fouten bijhouden {#track-errors}
@@ -200,34 +200,34 @@ ht-degree: 12%
          + [Buffering bijhouden op Android](use-cases/track-av-playback/track-buffering/track-buffering-android.md)
          + [Buffering bijhouden op iOS](use-cases/track-av-playback/track-buffering/track-buffering-ios.md)
          + Buffer bijhouden in JavaScript {#track-buffering-js}
-            + [Trackbuffering op JavaScript 2.x](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js.md)
+            + [Buffering bijhouden in JavaScript 2.x](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js.md)
          + [Zoeken volgen op Android](use-cases/track-av-playback/track-seeking/track-seeking-android.md)
          + [Zoeken volgen op iOS](use-cases/track-av-playback/track-seeking/track-seeking-ios.md)
          + Zoekopdrachten bijhouden in JavaScript {#track-seeking-js}
-            + [Trackzoekopdrachten op JavaScript 2.x](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js.md)
+            + [Zoeken bijhouden in JavaScript 2.x](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js.md)
          + [Standaardmetagegevens implementeren op Android](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
          + [Standaardmetagegevens implementeren op iOS](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
          + [iOS-metagegevenstoetsen](use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
          + Standaardmetadata implementeren in JavaScript {#impl-std-md-js}
-            + [Standaardmetagegevens implementeren op JavaScript 2.x](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
+            + [Standaardmetagegevens implementeren in JavaScript 2.x](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
       + Advertenties bijhouden {#track-ads}
          + [Advertenties volgen op Android](use-cases/track-ads/track-ads-android.md)
          + [Advertenties volgen op iOS](use-cases/track-ads/track-ads-ios.md)
          + Advertenties bijhouden in JavaScript {#track-ads-js}
-            + [Advertenties bijhouden op JavaScript 2.x](use-cases/track-ads/track-ads-js/track-ads-js.md)
+            + [Advertenties bijhouden in JavaScript 2.x](use-cases/track-ads/track-ads-js/track-ads-js.md)
             + [Standaard en metagegevens implementeren op Android](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
             + [Standaard en metagegevens implementeren op iOS](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
             + Standaardmetadata voor advertenties implementeren in JavaScript {#impl-std-ad-md-js}
-               + [Standaard en metagegevens implementeren op JavaScript 2.x](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js.md)
+               + [Standaard en metagegevens implementeren in JavaScript 2.x](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js.md)
       + Hoofdstukken en segmenten bijhouden {#track-chapters}
          + [Hoofdstukken en segmenten bijhouden op Android](use-cases/track-chapters/track-chapters-android.md)
          + [Hoofdstukken en segmenten bijhouden op iOS](use-cases/track-chapters/track-chapters-ios.md)
          + Hoofdstukken en segmenten bijhouden in JavaScript {#track-chapters-js}
-            + [Hoofdstukken en segmenten bijhouden op JavaScript 2.x](use-cases/track-chapters/track-chapters-js/track-chapters-js.md)
+            + [Hoofdstukken en segmenten bijhouden in JavaScript 2.x](use-cases/track-chapters/track-chapters-js/track-chapters-js.md)
          + [Trackkwaliteit van ervaring op Android](use-cases/track-qos/track-qos-android.md)
          + [Trackkwaliteit van ervaring op iOS](use-cases/track-qos/track-qos-ios.md)
          + Kwaliteit van Experience bijhouden in JavaScript {#track-qos-js}
-            + [Trackkwaliteit van ervaring op JavaScript 2.x](use-cases/track-qos/track-qos-js/track-qos-js.md)
+            + [Kwaliteit van ervaring bijhouden in JavaScript 2.x](use-cases/track-qos/track-qos-js/track-qos-js.md)
       + Fouten bijhouden {#track-errors}
          + [Fouten bijhouden op Android](use-cases/track-errors/track-errors-android.md)
          + [Fouten bijhouden op iOS](use-cases/track-errors/track-errors-ios.md)
