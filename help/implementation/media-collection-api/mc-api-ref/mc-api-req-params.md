@@ -5,9 +5,9 @@ uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: 0079116bcf39bb6d20b4fd5f14bd3c19137c46e3
 workflow-type: tm+mt
-source-wordcount: '1329'
+source-wordcount: '1337'
 ht-degree: 4%
 
 ---
@@ -21,15 +21,15 @@ ht-degree: 4%
 | `analytics.trackingServer` | Y | string | `sessionStart` | De URL van uw Adobe Analytics-server |
 | `analytics.reportSuite` | Y | string | `sessionStart` | De id die uw analysegegevens identificeert |
 | `analytics.enableSSL` | N | boolean | `sessionStart` | Waar of onwaar voor het inschakelen van SSL |
-| `analytics.visitorId` | N | string | `sessionStart` | De Adobe-bezoeker-id is een aangepaste id die u kunt gebruiken in meerdere Adobe-toepassingen. De hartslag `visitorId` is gelijk aan de analysemogelijkheden `VID.` |
+| `analytics.visitorId` | N | string | `sessionStart` | De Adobe Bezoeker-id is een aangepaste id die u kunt gebruiken in meerdere Adobe-toepassingen. De hartslag `visitorId` is gelijk aan de analyse `VID.` |
 
 ## Bezoekersgegevens
 
 | Aanvraagsleutel  | Vereist | Sleutel aanvraagtype | Instellen op... |  Beschrijving  |
 | --- | :---: | :---: | :---: | --- |
-| `visitor.marketingCloudOrgId` | Y | string | `sessionStart` | de Experience Cloud Organisatie-id; identificeert uw organisatie binnen het ecosysteem van Adobe Experience Cloud |
-| `visitor.marketingCloudUserId` | N | string | `sessionStart` | Dit is de Experience Cloud-gebruikersnaam (ECID). In de meeste gevallen is dit de id die u moet gebruiken om een gebruiker te identificeren. De hartslag `marketingCloudUserId` is gelijk aan de `MID` in Adobe Analytics. Hoewel deze parameter technisch niet vereist is, is deze vereist voor toegang tot de Experience Cloud-reeks apps. |
-| `visitor.aamLocationHint` | N | integer | `sessionStart` | Biedt Adobe Audience Manager Edge-gegevens — Als geen waarde wordt ingevoerd, is de waarde null. |
+| `visitor.marketingCloudOrgId` | Y | string | `sessionStart` | De organisatie-id van het Experience Cloud; identificeert uw organisatie binnen het Adobe Experience Cloud-ecosysteem |
+| `visitor.marketingCloudUserId` | N | string | `sessionStart` | Dit is de gebruikersnaam van de Experience Cloud (ECID). In de meeste gevallen is dit de id die u moet gebruiken om een gebruiker te identificeren. De hartslag `marketingCloudUserId` is gelijk aan de `MID` in Adobe Analytics. Hoewel deze parameter technisch niet vereist is, is deze vereist voor toegang tot de Experience Cloud-apps. |
+| `visitor.aamLocationHint` | N | integer | `sessionStart` | Biedt Adobe Audience Manager Edge-gegevens: als geen waarde wordt ingevoerd, is de waarde null. |
 | `appInstallationId` | N | string | `sessionStart` | De appInstallationId identificeert de app en het apparaat op unieke wijze |
 
 ## Inhoudsgegevens
@@ -49,7 +49,7 @@ ht-degree: 4%
 
 | Aanvraagsleutel  | Vereist | Sleutel aanvraagtype | Instellen op... |  Beschrijving  |
 | --- | :---: | :---: | :---: | --- |
-| `media.streamFormat` | N | string | `sessionStart` | Stroomindeling, bijvoorbeeld &quot;HD&quot; |
+| `media.streamFormat` | N | string | `sessionStart` | Stream-indeling, bijvoorbeeld &quot;HD&quot; |
 | `media.show` | N | string | `sessionStart` | De naam van het programma of de serie |
 | `media.season` | N | string | `sessionStart` | Het seizoensnummer waartoe de show of serie behoort |
 | `media.episode` | N | string | `sessionStart` | Het nummer van de episode |
@@ -74,9 +74,9 @@ ht-degree: 4%
 | `media.ad.podFriendlyName` | N | string | `adBreakStart` | Vriendschappelijke naam van het advertentiepad |
 | `media.ad.podIndex` | Y | integer | `adBreakStart` | De index van de advertentiepod in de video |
 | `media.ad.podSecond` | Y | getal | `adBreakStart` | De tweede waarmee de pod is gestart |
-| `media.ad.podPosition` | Y | integer | `adStart` | De index van de advertentie binnen het advertentiespoor dat bij 1 begint |
-| `media.ad.name` | N | string | `adStart` | Vriendelijke naam van de advertentie |
-| `media.ad.id` | Y | string | `adStart` | Naam van de advertentie |
+| `media.ad.podPosition` | Y | integer | `adStart` | De index van de advertentie binnen het advertentie-einde begint bij 1 |
+| `media.ad.name` | N | tekenreeks | `adStart` | Vriendelijke naam van de advertentie |
+| `media.ad.id` | Y | tekenreeks | `adStart` | Naam van de advertentie |
 | `media.ad.length` | Y | getal | `adStart` | Lengte van de video en in seconden |
 | `media.ad.playerName` | Y | string | `adStart` | De naam van de speler die verantwoordelijk is voor het renderen van de advertentie |
 
@@ -113,28 +113,28 @@ ht-degree: 4%
 
 | Aanvraagsleutel  | Vereist | Sleutel aanvraagtype | Instellen op... |  Beschrijving  |
 | --- | :---: | :---: | :---: | --- |
-| `analytics.optOutServerSideForwarding` | N | boolean | `sessionStart` | Ingesteld op true wanneer de eindgebruiker ervoor heeft gekozen geen gegevens meer te delen tussen Adobe Analytics en andere Experience Cloud-oplossingen (bijvoorbeeld Audience Manager) |
+| `analytics.optOutServerSideForwarding` | N | boolean | `sessionStart` | Ingesteld op true wanneer de eindgebruiker ervoor heeft gekozen geen gegevens meer te delen tussen Adobe Analytics en andere oplossingen voor Experiencen Cloud (bijvoorbeeld Audience Manager) |
 | `analytics.optOutShare` | N | boolean | `sessionStart` | Wordt ingesteld op true wanneer de eindgebruiker heeft opgegeven dat zijn gegevens niet meer worden gefedereerd (bijvoorbeeld aan andere Adobe Analytics-clients). |
 
 ## Aanvullende details {#additional-details}
 
 ### visitor.marketingCloudUserId
 
-Geef de Experience Cloud-gebruikersnaam door (ook wel de `MID` of `MCID`) over de `sessionStart` vraag door het binnen te omvatten `params` kaart die de volgende sleutel gebruikt: **bezoeker.marketingCloudUserId**. Dit is een handige functie als u al met andere Experience Cloud-producten hebt geïntegreerd en de MCID al hebt verkregen.
+Geef de Experience Cloud Gebruiker - identiteitskaart (ook genoemd geworden `MID` of `MCID`) op de `sessionStart` vraag door het binnen de `params` kaart te omvatten gebruikend de volgende sleutel: **bezoekor.marketingCloudUserId**. Dit is een handige functie als u al met andere producten van het Experience Cloud hebt geïntegreerd en de MCID al hebt verkregen.
 
 >[!NOTE]
 >
->Media Analytics (MA) is geïntegreerd met de Experience Cloud-reeks apps (Adobe Analytics, Audience Manager, Doel, enzovoort). U hebt een Experience Cloud-id nodig om deze apps te openen. _ECID is wat u zou moeten gebruiken om gebruikers in de meeste scenario&#39;s te identificeren._
+>Media Analytics (MA) is geïntegreerd met de Experience Cloud-apps (Adobe Analytics, Audience Manager, Doel, enzovoort). U hebt een Experience Cloud-id nodig om deze apps te openen. _ECID is wat u zou moeten gebruiken om gebruikers in de meeste scenario&#39;s te identificeren._
 
 ### appInstallationId
 
-* **Als u *niet* passeren `appInstallationId` waarde -** De back-end voor MA genereert niet langer een MCID, maar vertrouwt in plaats daarvan op Adobe Analytics om dit te doen. of een MCID-nummer wordt verzonden `appInstallationId` (samen met de nog steeds verplichte `marketingCloudOrgId`) zodat de API van de Inzameling van Media MCID produceert en het op alle vraag verzendt.
+* **als u *niet* een `appInstallationId` waarde -** het achterste eind van MA niet meer MCID zal produceren, maar in plaats daarvan op Adobe Analytics zal vertrouwen om dit te doen. De aanbeveling van de Adobe is een MCID te verzenden als deze beschikbaar is, of een `appInstallationId` (samen met de nog steeds verplichte `marketingCloudOrgId` ), zodat de Media Collection-API de MCID genereert en deze op alle aanroepen verzendt.
 
-* **Als u *do* passeren `appInstallationId` waarde -** De MCID *kan* gegenereerd door het achterste deel van het MA als u waarden doorgeeft voor `appInstallationId` en de (vereiste) `marketingCloudOrgId` parameters. Als u `appInstallationId` zelf, moet u zijn waarde op de cliëntkant voortzetten. De toepassing moet uniek zijn voor de toepassing op een apparaat en moet blijvend zijn zolang de toepassing niet opnieuw wordt geïnstalleerd.
+* **als u ** `appInstallationId` waarde** overgaat MCID ** kan worden geproduceerd door het achterste eind van MA, als u waarden voor `appInstallationId` en (vereiste) `marketingCloudOrgId` parameters overgaat. Als u `appInstallationId` zelf doorgeeft, moet u de waarde ervan aan de clientzijde behouden. De toepassing moet uniek zijn voor de toepassing op een apparaat en moet blijvend zijn zolang de toepassing niet opnieuw wordt geïnstalleerd.
 
 >[!NOTE]
 >
->De `appInstallationId` de app op unieke wijze identificeert *en het apparaat*. Deze moet uniek zijn voor elke toepassing op elk apparaat, d.w.z. twee gebruikers die dezelfde versie van dezelfde app op verschillende apparaten gebruiken, moeten elk een andere (unieke) versie verzenden `appInstallationId`.
+>`appInstallationId` identificeert uniek app *en het apparaat*. De klasse moet uniek zijn voor elke toepassing op elk apparaat, d.w.z. twee gebruikers die dezelfde versie van dezelfde app op verschillende apparaten gebruiken, moeten elk een andere (unieke) `appInstallationId` verzenden.
 
 <!-- Initially, there were no browser-based customers. In future this will be part of a two-bullet list, one bullet for Native Apps, the other for Browser apps. The .
 \<ul id="ul_iwc_fqt_pbb"\>
@@ -143,33 +143,33 @@ Geef de Experience Cloud-gebruikersnaam door (ook wel de `MID` of `MCID`) over d
 
 ### visitor.marketingCloudOrgId
 
-Deze parameter is niet alleen nodig voor het genereren van MCID wanneer dat niet is opgegeven, maar wordt ook gebruikt als de waarde voor de uitgevers-id (op basis waarvan Media Analytics uitvoert [overeenkomende federatieregel.](/help/use-cases/federated-analytics.md))
+Naast noodzakelijk voor generatie MCID wanneer dat niet wordt verstrekt, wordt deze parameter ook gebruikt als waarde voor uitgevers identiteitskaart (die op wordt gebaseerd die de Analyse van Media [ aanpassing van de federatieregel uitvoert.](/help/use-cases/federated-media.md))
 
 ### Verouderde gebruikersnaam (hulp) en gedeclareerde gebruikers-id&#39;s (CustomerID&#39;s) voor analyse
 
 * **analytics.aid:**
 
-   De waarde van deze sleutel moet een tekenreeks zijn die de oude gebruikers-id voor Analytics vertegenwoordigt
+  De waarde van deze sleutel moet een tekenreeks zijn die de oude gebruikers-id voor Analytics vertegenwoordigt
 * **bezoeker.customerIDs:**
 
-   De waarde van deze sleutel moet een voorwerp van het volgende formaat zijn:
+  De waarde van deze sleutel moet een voorwerp van het volgende formaat zijn:
 
-   ```js
-   "<<insert your ID name here>>": {  
-     "id": " <<insert your id here>>",  
-      "authState": <<insert one of 0, 1, 2>>
-   }
-   ```
+  ```js
+  "<<insert your ID name here>>": {  
+    "id": " <<insert your id here>>",  
+     "authState": <<insert one of 0, 1, 2>>
+  }
+  ```
 
-De `visitor.customerIDs` De waarde kan om het even welk aantal voorwerpen in het voorgestelde formaat hebben.
+De waarde `visitor.customerIDs` kan een willekeurig aantal objecten in de weergegeven indeling hebben.
 
 ### visitor.aamLocationHint
 
-Deze parameter geeft aan welke Adobe Audience Manager (AAM) Edge wordt bereikt wanneer Adobe Analytics de klantgegevens naar de Audience Manager verzendt. Wanneer geen waarde wordt ingevoerd, is de waarde null. Dit is met name van belang wanneer eindgebruikers hun apparaten doorgaans gebruiken op geografisch afgelegen locaties (bijvoorbeeld VS-Oost, VS-West, Europa, Azië). Anders worden de gebruikersgegevens over meerdere AAM Randen verspreid.
+Deze parameter geeft aan welke Adobe Audience Manager (AAM) Edge wordt getroffen wanneer Adobe Analytics de klantgegevens naar de Audience Manager verzendt. Wanneer geen waarde wordt ingevoerd, is de waarde null. Dit is met name van belang wanneer eindgebruikers hun apparaten doorgaans gebruiken op geografisch afgelegen locaties (bijvoorbeeld VS-Oost, VS-West, Europa, Azië). Anders worden de gebruikersgegevens over meerdere AAM Randen verspreid.
 
 ### media.resume
 
-Als de app bepaalt dat een sessie is gesloten en later wordt hervat, bijvoorbeeld wanneer de gebruiker de video heeft verlaten maar uiteindelijk is teruggekeerd en de speler de video heeft hervat vanaf de afspeelkop waar deze is gestopt, kunt u een optionele booleaanse video verzenden **media.resume** parameter binnen de paramentenemmer van de `sessionStart` vraag.
+Als app bepaalt dat een zitting werd gesloten en dan op een recentere tijd hervat, b.v., verliet de gebruiker de video maar kwam uiteindelijk terug, en de speler hervat de video van playhead waar het werd tegengehouden, kunt u een facultatieve booleaanse **media.resume** parameter binnen het paramentenemmer van de `sessionStart` vraag verzenden.
 
 <!--
 | `media.uniqueTimePlayed` | N | Close | The value in seconds of the unique segments of content played during a session. Excludes time played on seek back scenarios in which a viewer is watching the same segment of the content multiple times.  |

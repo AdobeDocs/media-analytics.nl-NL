@@ -3,9 +3,9 @@ product: adobe analytics
 audience: end-user
 user-guide-title: Invoegtoepassing voor streaming media-verzameling
 breadcrumb-title: Handleiding voor het streamen van media
-user-guide-description: Streaming media implementeren. Bevat de Media-SDK en de Media Collection-API.
+user-guide-description: Implementeer streaming media. Bevat de Media-SDK en de Media Collection-API.
 sub-product: media analytics
-source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
+source-git-commit: 0079116bcf39bb6d20b4fd5f14bd3c19137c46e3
 workflow-type: tm+mt
 source-wordcount: '895'
 ht-degree: 12%
@@ -21,27 +21,27 @@ ht-degree: 12%
 + Aan de slag {#getting-started}
    + [Vereisten](getting-started/prereqs.md)
    + [Ondersteunde apparaten](getting-started/supported-devices.md)
-   + [Implementatiedocumentatie voor streamingmedia-verzameling](getting-started/implementation-documentation.md)
+   + [Implementatiedocumentatie voor Streaming Media Collection](getting-started/implementation-documentation.md)
    + [SDK&#39;s, bibliotheken en extensies](getting-started/download-sdks.md)
    + Einde van ondersteuning {#end-of-support}
       + [Media Analytics Mobile SDK End of Support](additional-resources/end-of-support-faqs.md)
       + Verouderd - Standalone Media SDK om migratie te starten {#sdk-to-launch}
          + [Overzicht](legacy/sdk-to-launch/sdk-to-launch-migration.md)
-         + [Android - SDK van media om te starten](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
-         + [iOS - SDK van media om te starten](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
-         + [JavaScript - SDK van media om te starten](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
+         + [Android - SDK voor media om te starten](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
+         + [iOS - Media-SDK om te starten](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
+         + [ JavaScript - SDK van Media aan Lanceren ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
 + Implementatie {#implementation}
    + [Overzicht van implementatie](implementation/overview.md)
    + Edge-implementaties (aanbevolen) {#edge-recommended}
       + [Vereisten](/help/implementation/edge/prerequisites-edge.md)
-      + Media Edge SDK&#39;s / Extensie {#media-edge-sdk}
+      + Media Edge SDKs / Extension {#media-edge-sdk}
          + [Media Edge SDK&#39;s / Extensie instellen](/help/implementation/edge/implementation-edge.md)
          + [Media Edge Web SDK](/help/implementation/edge/edge-web-sdk.md)
          + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
       + [Media Edge API](/help/implementation/edge/implementation-edge-api.md)
    + Alleen Adobe Analytics-implementaties {#analytics-only}
       + [Vereisten](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
-      + Media-SDK&#39;s / extensie {#media-sdk}
+      + Media SDK&#39;s / Extensie {#media-sdk}
          + [JavaScript Web SDK](implementation/media-sdk/setup/web-implementation.md)
          + [Media Analytics-extensie](implementation/media-sdk/setup/web-implementation-tags.md)
          + [Mobiele SDK&#39;s](implementation/media-sdk/setup/mobile-implementation.md)
@@ -74,24 +74,24 @@ ht-degree: 12%
       + [Parameters spelerstatus](implementation/variables/player-state-parameters.md)
       + [Kwaliteitsparameters](implementation/variables/quality-parameters.md)
       + [Berekende standaarden](implementation/variables/calculated-metrics.md)
-+ Rapportage {#media-reports}
-   + [Media-rapporten inschakelen](reporting/media-reports-enable.md)
-   + Media-deelvensters in Workspace {#media-workspace-panels}
++ Rapporteren {#media-reports}
+   + [Inschakelen van mediarapporten](reporting/media-reports-enable.md)
+   + Mediadeelvensters in Workspace {#media-workspace-panels}
       + [Deelvenster Gemiddelde media - geluid](reporting/workspace/average-minute-audience.md)
       + [Deelvenster Mediagelijktijdige viewers](reporting/workspace/media-concurrent-viewers-overview.md)
-      + [Media afspelen tijd besteed, deelvenster](reporting/workspace/media-playback-time-spent.md)
+      + [Het deelvenster Tijd voor afspelen van media](reporting/workspace/media-playback-time-spent.md)
    + [Mediarapporten in Workspace](reporting/workspace/media-workspace-templates.md)
    + [Mediasegmenten](reporting/segments.md)
    + Standaardrapporten voor media {#media-default-reports}
       + [Overzicht van standaardrapporten](reporting/reports-and-analytics/default-reports-overview.md)
-      + [Overzicht van media](reporting/reports-and-analytics/media-reports-overview.md)
-      + [Media-details](reporting/reports-and-analytics/media-reports-detail.md)
-      + [Mediadagrapport](reporting/reports-and-analytics/media-reports-daypart.md)
-      + [Rapport voor gelijktijdige viewers voor media](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
+      + [ Overzicht van Media ](reporting/reports-and-analytics/media-reports-overview.md)
+      + [ detail van Media ](reporting/reports-and-analytics/media-reports-detail.md)
+      + [ Rapport van Media daypart ](reporting/reports-and-analytics/media-reports-daypart.md)
+      + [Rapport Mediagelijktijdige viewers](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
    + Media-API {#media-api}
-      + [Gelijktijdige viewergegevens ophalen](reporting/reports-and-analytics/get-concurrent-json20.md)
-      + [Betaalde gegevens voor afspeeltijd van media ophalen](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
-+ Gevallen gebruiken {#media-use-cases}
+      + [Gegevens over gelijktijdige viewers ophalen](reporting/reports-and-analytics/get-concurrent-json20.md)
+      + [ krijg de bestede gegevens van de Tijd van de Playback van Media ](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
++ Gebruiksscenario&#39;s {#media-use-cases}
    + [Gebruiksscenario&#39;s van SDK voor media](use-cases/cookbook/sdk-cookbook-overview.md)
    + Player-status bijhouden {#player-state-tracking}
       + [Overzicht](use-cases/player-state-tracking/player-state-overview.md)
@@ -100,7 +100,7 @@ ht-degree: 12%
       + [Meerdere statussen van spelers bijhouden](use-cases/player-state-tracking/multiple-player-states.md)
       + [Voorbeelden van statussen van Player bijhouden](use-cases/player-state-tracking/player-state-examples.md)
    + [Gedownloade inhoud bijhouden](use-cases/track-downloaded-content.md)
-   + [Federated Analytics](use-cases/federated-analytics.md)
+   + [Federale media](use-cases/federated-media.md)
    + [Toepassing onderbreekt tijdens afspelen](use-cases/cookbook/app-interrupts.md)
    + [Attributie van mediastroom](use-cases/media-analytics-cookbook/media-dimensions.md)
    + [Niet-actieve sessies hervatten](use-cases/cookbook/resuming-inactive.md)
@@ -118,41 +118,41 @@ ht-degree: 12%
       + [OTT en Experience Cloud](use-cases/analytics-with-ott/ott-experience-cloud.md)
 + Tekstspatiëring {#tracking}
    + [Overzicht](use-cases/track-av-playback/track-core-overview.md)
-   + Core Streaming Media afspelen {#track-core}
+   + Core Streaming Media Playback bijhouden {#track-core}
       + [Core Playback bijhouden op JavaScript 3.x](use-cases/track-av-playback/track-core/track-core-javascript/track-core-js3.md)
       + [Core Playback bijhouden op Chromecast](use-cases/track-av-playback/track-core/track-core-chromecast.md)
       + [Core Playback bijhouden op Roku](use-cases/track-av-playback/track-core/track-core-roku.md)
    + Buffer bijhouden {#track-buffering}
-      + [Buffering bijhouden in JavaScript 3.x](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js3.md)
+      + [Trackbuffering op JavaScript 3.x](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js3.md)
       + [De Buffer van het spoor op Chromecast](use-cases/track-av-playback/track-buffering/track-buffering-chromecast.md)
       + [Buffering bijhouden op Roku](use-cases/track-av-playback/track-buffering/track-buffering-roku.md)
    + Zoekopdrachten bijhouden {#track-seeking}
-      + [Zoeken bijhouden in JavaScript 3.x](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js3.md)
+      + [Trackzoekopdracht voor JavaScript 3.x](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js3.md)
       + [Trackzoekopdracht op chroecast](use-cases/track-av-playback/track-seeking/track-seeking-chromecast.md)
       + [Track Seeking op Roku](use-cases/track-av-playback/track-seeking/track-seeking-roku.md)
    + Standaardmetadata implementeren {#impl-std-metadata}
       + [Standaardmetagegevens implementeren in JavaScript 3.x](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js3.md)
-      + [Standaardmetagegevens toepassen op Chromecast](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
+      + [Standaardmetagegevens implementeren op Chromecast](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
       + [Standaardmetagegevensparameters - Chromecast](use-cases/track-av-playback/impl-std-metadata/chromecast-metadata.md)
       + [Standaardmetagegevens implementeren op Roku](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
       + [Standaardmetagegevensparameters - Roku](use-cases/track-av-playback/impl-std-metadata/roku-metadata.md)
    + Advertenties bijhouden {#track-ads}
       + [Overzicht](use-cases/track-ads/track-ads-overview.md)
-      + [Advertenties bijhouden in JavaScript 3.x](use-cases/track-ads/track-ads-js/track-ads-js3.md)
-      + [Advertenties bijhouden bij chroecast](use-cases/track-ads/track-ads-chromecast.md)
+      + [Advertenties bijhouden op JavaScript 3.x](use-cases/track-ads/track-ads-js/track-ads-js3.md)
+      + [Advertenties bijhouden op chroecast](use-cases/track-ads/track-ads-chromecast.md)
       + [Advertenties bijhouden op Roku](use-cases/track-ads/track-ads-roku.md)
       + Standaardmetadata voor advertenties implementeren {#impl-std-ad-metadata}
-         + [Standaard en metagegevens implementeren in JavaScript 3.x](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
-         + [Standaard en metagegevens implementeren op Roku](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
+         + [Standaardadvertentiemetagegevens implementeren in JavaScript 3.x](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
+         + [Standaardadvertentiemetagegevens implementeren op Roku](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
    + Hoofdstukken en segmenten bijhouden {#track-chapters}
       + [Overzicht](use-cases/track-chapters/track-chapters-overview.md)
-      + [Hoofdstukken en segmenten bijhouden in JavaScript 3.x](use-cases/track-chapters/track-chapters-js/track-chapters-js3.md)
-      + [Hoofdstuk en segment bijhouden op Chromecast](use-cases/track-chapters/track-chapters-chromecast.md)
+      + [Hoofdstukken en segmenten bijhouden op JavaScript 3.x](use-cases/track-chapters/track-chapters-js/track-chapters-js3.md)
+      + [Volg hoofdstukken en segmenten op Chromecast](use-cases/track-chapters/track-chapters-chromecast.md)
       + [Hoofdstukken en segmenten bijhouden op Roku](use-cases/track-chapters/track-chapters-roku.md)
    + Kwaliteit van Experience bijhouden {#track-qos}
       + [Overzicht](use-cases/track-qos/track-qos-overview.md)
-      + [Kwaliteit van ervaring bijhouden in JavaScript 3.x](use-cases/track-qos/track-qos-js/track-qos-js3.md)
-      + [Trackkwaliteit van ervaring op chroomecast](use-cases/track-qos/track-qos-chromecast.md)
+      + [Houd de kwaliteit van ervaring bij in JavaScript 3.x](use-cases/track-qos/track-qos-js/track-qos-js3.md)
+      + [Trackkwaliteit van ervaring op chromatest](use-cases/track-qos/track-qos-chromecast.md)
       + [Trackkwaliteit van ervaring op Roku](use-cases/track-qos/track-qos-roku.md)
    + Fouten bijhouden {#track-errors}
       + [Overzicht](use-cases/track-errors/track-errors-overview.md)
@@ -191,8 +191,8 @@ ht-degree: 12%
    + [Codevergelijking v1.x naar v2.x](legacy/va-1x-to-2x/code-comparison-1x-2x.md)
    + [API&#39;s 1x tot 2x bijhouden](legacy/va-1x-to-2x/1x-2x-api-change.md)
    + [Verouderd - Intro op AVA](legacy/intro-to-ava/implementation-paths/implementation-paths.md)
-   + [Pad aan clientzijde](legacy/intro-to-ava/implementation-paths/client-side-path.md)
-   + Oudere reeksspatiëring {#track-av-playback}
+   + [Pad op clientzijde](legacy/intro-to-ava/implementation-paths/client-side-path.md)
+   + Oudere tracking {#track-av-playback}
       + [Core Playback bijhouden op Android](use-cases/track-av-playback/track-core/track-core-android.md)
       + [Core Playback bijhouden op iOS](use-cases/track-av-playback/track-core/track-core-ios.md)
       + Core afspelen bijhouden in JavaScript {#track-core-javascript}
@@ -201,10 +201,10 @@ ht-degree: 12%
          + [Buffering bijhouden op iOS](use-cases/track-av-playback/track-buffering/track-buffering-ios.md)
          + Buffer bijhouden in JavaScript {#track-buffering-js}
             + [Buffering bijhouden in JavaScript 2.x](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js.md)
-         + [Zoeken volgen op Android](use-cases/track-av-playback/track-seeking/track-seeking-android.md)
-         + [Zoeken volgen op iOS](use-cases/track-av-playback/track-seeking/track-seeking-ios.md)
+         + [Track zoeken op Android](use-cases/track-av-playback/track-seeking/track-seeking-android.md)
+         + [Track zoeken op iOS](use-cases/track-av-playback/track-seeking/track-seeking-ios.md)
          + Zoekopdrachten bijhouden in JavaScript {#track-seeking-js}
-            + [Zoeken bijhouden in JavaScript 2.x](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js.md)
+            + [Trackzoekopdrachten op JavaScript 2.x](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js.md)
          + [Standaardmetagegevens implementeren op Android](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
          + [Standaardmetagegevens implementeren op iOS](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
          + [iOS-metagegevenstoetsen](use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
@@ -214,20 +214,20 @@ ht-degree: 12%
          + [Advertenties volgen op Android](use-cases/track-ads/track-ads-android.md)
          + [Advertenties volgen op iOS](use-cases/track-ads/track-ads-ios.md)
          + Advertenties bijhouden in JavaScript {#track-ads-js}
-            + [Advertenties bijhouden in JavaScript 2.x](use-cases/track-ads/track-ads-js/track-ads-js.md)
+            + [Advertenties bijhouden op JavaScript 2.x](use-cases/track-ads/track-ads-js/track-ads-js.md)
             + [Standaard en metagegevens implementeren op Android](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
             + [Standaard en metagegevens implementeren op iOS](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
             + Standaardmetadata voor advertenties implementeren in JavaScript {#impl-std-ad-md-js}
-               + [Standaard en metagegevens implementeren in JavaScript 2.x](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js.md)
+               + [Standaard en metagegevens implementeren op JavaScript 2.x](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js.md)
       + Hoofdstukken en segmenten bijhouden {#track-chapters}
          + [Hoofdstukken en segmenten bijhouden op Android](use-cases/track-chapters/track-chapters-android.md)
          + [Hoofdstukken en segmenten bijhouden op iOS](use-cases/track-chapters/track-chapters-ios.md)
          + Hoofdstukken en segmenten bijhouden in JavaScript {#track-chapters-js}
-            + [Hoofdstukken en segmenten bijhouden in JavaScript 2.x](use-cases/track-chapters/track-chapters-js/track-chapters-js.md)
+            + [Hoofdstukken en segmenten bijhouden op JavaScript 2.x](use-cases/track-chapters/track-chapters-js/track-chapters-js.md)
          + [Trackkwaliteit van ervaring op Android](use-cases/track-qos/track-qos-android.md)
          + [Trackkwaliteit van ervaring op iOS](use-cases/track-qos/track-qos-ios.md)
          + Kwaliteit van Experience bijhouden in JavaScript {#track-qos-js}
-            + [Kwaliteit van ervaring bijhouden in JavaScript 2.x](use-cases/track-qos/track-qos-js/track-qos-js.md)
+            + [Trackkwaliteit van ervaring op JavaScript 2.x](use-cases/track-qos/track-qos-js/track-qos-js.md)
       + Fouten bijhouden {#track-errors}
          + [Fouten bijhouden op Android](use-cases/track-errors/track-errors-android.md)
          + [Fouten bijhouden op iOS](use-cases/track-errors/track-errors-ios.md)
