@@ -4,7 +4,7 @@ description: Bronnen voor het installeren van Media Analytics met Experience Pla
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 762abfd4-dc84-40dc-9142-fbebbb892e15
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 380d3ea192162226816d2e269e5cca20f981ac0f
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 0%
@@ -13,14 +13,14 @@ ht-degree: 0%
 
 # Implementeer de invoegtoepassing voor het streamen van media-verzamelingen met de Edge Network-API
 
-Als u de [Adobe Experience Platform Mobile SDK](/help/implementation/edge/implementation-edge.md)kunt u gegevens rechtstreeks via een API naar de Adobe Experience Platform-Edge Network verzenden.
+Als u niet [ Adobe Experience Platform Mobile SDK ](/help/implementation/edge/implementation-edge.md) kunt gebruiken, kunt u gegevens naar de Edge Network van Adobe Experience Platform direct door API verzenden.
 
 Gebruik de volgende bronnen voor informatie over het uitvoeren van een aangepaste implementatie van de Edge API&#39;s:
 
-* [Overzicht van Media Edge API](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/)
+* [ het overzicht van Edge API van Media ](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/)
 
-* [Media Edge API aan de slag](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/getting-started/)
+* [ Aan de slag Edge API van Media ](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/getting-started/)
 
-* [Handleiding voor problemen met Edge API voor media](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/troubleshooting/)
+* [ het oplossen van problemengids van Edge API van Media ](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/troubleshooting/)
 
-* [Het API-specificatiebestand voor openen gebruiken voor Media Edge API&#39;s](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/swagger/)
+* [ Gebruikend het Open API specificatiedossier voor Media Edge APIs ](https://developer.adobe.com/data-collection-apis/docs/api/media-edge/)
