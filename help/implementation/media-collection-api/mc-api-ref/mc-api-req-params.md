@@ -1,6 +1,6 @@
 ---
 title: API voor streaming media-verzameling � aanvraagparameters
-description: "Wat zijn de de verzoekparameters van de Inzameling van Media, verzoeksleutels, en beschrijvingen."
+description: Wat zijn de de verzoekparameters van de Inzameling van Media, verzoeksleutels, en beschrijvingen.
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 feature: Media Analytics
@@ -74,9 +74,9 @@ ht-degree: 4%
 | `media.ad.podFriendlyName` | N | string | `adBreakStart` | Vriendschappelijke naam van het advertentiepad |
 | `media.ad.podIndex` | Y | integer | `adBreakStart` | De index van de advertentiepod in de video |
 | `media.ad.podSecond` | Y | getal | `adBreakStart` | De tweede waarmee de pod is gestart |
-| `media.ad.podPosition` | Y | integer | `adStart` | De index van de advertentie binnen het advertentie-einde begint bij 1 |
-| `media.ad.name` | N | tekenreeks | `adStart` | Vriendelijke naam van de advertentie |
-| `media.ad.id` | Y | tekenreeks | `adStart` | Naam van de advertentie |
+| `media.ad.podPosition` | Y | integer | `adStart` | De index van de advertentie binnen het advertentiespoor dat bij 1 begint |
+| `media.ad.name` | N | string | `adStart` | Vriendelijke naam van de advertentie |
+| `media.ad.id` | Y | string | `adStart` | Naam van de advertentie |
 | `media.ad.length` | Y | getal | `adStart` | Lengte van de video en in seconden |
 | `media.ad.playerName` | Y | string | `adStart` | De naam van de speler die verantwoordelijk is voor het renderen van de advertentie |
 

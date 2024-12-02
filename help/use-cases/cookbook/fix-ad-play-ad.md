@@ -1,13 +1,13 @@
 ---
 title: Hoofdafspelen tussen advertenties oplossen
-description: "Leer hoe u onverwachte hoofd-/afspeelaanroepen tussen advertenties kunt afhandelen."
+description: Leer hoe u onverwachte hoofd-elementen kunt afhandelen:aanroepen afspelen tussen advertenties.
 uuid: 228b4812-c23e-40c8-ae2b-e15ca69b0bc2
 exl-id: f27ce2ba-7584-4601-8837-d8316c641708
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '450'
 ht-degree: 0%
 
 ---
@@ -17,68 +17,68 @@ ht-degree: 0%
 
 ## PROBLEEM
 
-In sommige scenario&#39;s voor het bijhouden van een advertentie kunt u `main:play` oproepen die onverwacht tussen het eind van één en het begin van volgende advertentie voorkwamen. Als de vertraging tussen de volledige vraag van de advertentie en de volgende vraag van het ad begin groter is dan 250 milliseconden, zal SDK van Media terug naar het verzenden vallen `main:play` oproepen. Als dit terugvalt op `main:play` komt tijdens een pre-rol en onderbreking voor, kan de metrisch van de inhoudstart vroeg worden geplaatst.
+In sommige scenario&#39;s kunt u `main:play` aanroepen tegenkomen die onverwacht plaatsvinden tussen het einde van de ene advertentie en het begin van de volgende advertentie. Als de vertraging tussen de volledige advertentie en de volgende aanroep van het ad-start meer dan 250 milliseconden bedraagt, zal de Media SDK terugvallen op het verzenden van `main:play` aanroepen. Als deze fallback naar `main:play` optreedt tijdens een pre-roll en break, kan de metrische waarde voor het starten van de inhoud vroeg worden ingesteld.
 
 Een tussenruimte tussen advertenties zoals hierboven beschreven, wordt door de Media SDK geïnterpreteerd als hoofdinhoud, omdat er geen overlapping met advertentie-inhoud is. Op de Media SDK is geen advertentie-informatie ingesteld en de speler bevindt zich in de afspeelstatus. Als er geen Advertentie-informatie is en de spelerstatus wordt afgespeeld, dan meldt de Media SDK de duur van het hiaat aan belangrijkste inhoud door gebrek. De duur van het afspelen kan niet naar null-advertentiegegevens worden gekopieerd.
 
 ## IDENTIFICATIE
 
-Terwijl het gebruiken van Adobe zuivert of een sniffer van het netwerkpakket zoals Charles, als u de volgende Hartslagvraag in deze orde tijdens een pre-rol en onderbreking ziet:
+Terwijl het gebruiken van Adobe zuivert of een sniffer van het netwerkpakket zoals Charles, als u de volgende Hartmaatvraag in deze orde tijdens een pre-rol en onderbreking ziet:
 
 * Begin sessie: `s:event:type=start` &amp; `s:asset:type=main`
-* Begin van advertentie: `s:event:type=start` &amp; `s:asset:type=ad`
+* Begin toevoegen: `s:event:type=start` &amp; `s:asset:type=ad`
 * Advertentiespel: `s:event:type=play` &amp; `s:asset:type=ad`
 * Toevoegen voltooid: `s:event:type=complete` &amp; `s:asset:type=ad`
-* Afspelen van hoofdinhoud: `s:event:type=play` &amp; `s:asset:type=main` **(onverwacht)**
+* Afspelen van hoofdinhoud: `s:event:type=play` &amp; `s:asset:type=main` **(onverwacht)**
 
-* Begin van advertentie: `s:event:type=start` &amp; `s:asset:type=ad`
+* Begin toevoegen: `s:event:type=start` &amp; `s:asset:type=ad`
 * Advertentiespel: `s:event:type=play` &amp; `s:asset:type=ad`
 * Toevoegen voltooid: `s:event:type=complete` &amp; `s:asset:type=ad`
-* Afspelen van hoofdinhoud: `s:event:type=play` &amp; `s:asset:type=main` **(verwacht)**
+* Afspelen van hoofdinhoud: `s:event:type=play` &amp; `s:asset:type=main` **(verwacht)**
 
 ## RESOLUTIE
 
-***Vertraging die de Ad Complete vraag teweegbrengt.***
+***Vertraging die de Ad Volledige vraag teweegbrengt.***
 
-Handel de tussenruimte vanuit de speler af door `trackEvent:AdComplete` laat voor de eerste advertentie, onmiddellijk gevolgd door `trackEvent:AdStart` voor de tweede advertentie. De app moet het oproepen van de `AdComplete` gebeurtenis nadat de eerste bewerking is voltooid. Zorg ervoor dat u belt `trackEvent:AdComplete` voor de laatste advertentie in het advertentieeinde. Als de speler kan vaststellen dat het huidige advertentie-element het laatste element in het advertentiespoor is, roept u `trackEvent:AdComplete` onmiddellijk. Deze resolutie zal ertoe leiden dat minder dan één seconde van extra bestede tijd aan de voorafgaande advertentie-eenheid wordt toegeschreven.
+Verwerk de tussenruimte vanuit de speler door `trackEvent:AdComplete` laat aan te roepen voor de eerste advertentie, onmiddellijk gevolgd door `trackEvent:AdStart` voor de tweede advertentie. De toepassing moet het aanroepen van de gebeurtenis `AdComplete` blokkeren nadat het eerste bericht is voltooid. Roep `trackEvent:AdComplete` aan voor de laatste advertentie in het ad-einde. Roep `trackEvent:AdComplete` onmiddellijk aan als de speler kan zien dat het huidige advertentie-element het laatste element in het advertentiespoor is. Deze resolutie zal ertoe leiden dat minder dan één seconde van extra bestede tijd aan de voorafgaande advertentie-eenheid wordt toegeschreven.
 
-**Bij starten ad-break, inclusief pre-roll:**
+**op en onderbrekingsbegin, met inbegrip van pre-rol:**
 
-* Maak de `adBreak` objectinstantie voor het ad-einde; bijvoorbeeld: `adBreakObject`.
+* Maak de objectinstantie `adBreak` voor het advertentie-einde, bijvoorbeeld `adBreakObject` .
 
-* Bellen `trackEvent(MediaHeartbeat.Event.AdBreakStart, adBreakObject);`.
+* Roep `trackEvent(MediaHeartbeat.Event.AdBreakStart, adBreakObject);` aan.
 
-**Bij elke advertentie-asset start:**
+**op elk ad activabegin:**
 
-* **Bellen`trackEvent(MediaHeartbeat.Event.AdComplete);`**
+* **Vraag`trackEvent(MediaHeartbeat.Event.AdComplete);`**
 
-   >[!NOTE]
-   >
-   >Roep dit alleen aan als de vorige advertentie niet volledig was. Neem bijvoorbeeld een Booleaanse waarde om een &quot;`isinAd`&quot; staat voor de vorige advertentie.
+  >[!NOTE]
+  >
+  >Roep dit alleen aan als de vorige advertentie niet volledig was. Overweeg een waarde Van Boole om &quot;`isinAd`&quot;staat voor de vorige advertentie te handhaven.
 
-* Maak de instantie van het advertentieobject voor het advertentie-element: bijvoorbeeld: `adObject`.
-* De metagegevens van de advertentie invullen, `adCustomMetadata`.
-* Bellen `trackEvent(MediaHeartbeat.Event.AdStart, adObject, adCustomMetadata);`.
-* Bellen `trackPlay()` als dit de eerste advertentie in een pre-rol en onderbreking is.
+* Maak de instantie van het advertentieobject voor het advertentie-element: bijvoorbeeld `adObject` .
+* Vul de metagegevens van de advertentie in, `adCustomMetadata` .
+* Roep `trackEvent(MediaHeartbeat.Event.AdStart, adObject, adCustomMetadata);` aan.
+* Roep `trackPlay()` aan als dit de eerste advertentie in een pre-rol en onderbreking is.
 
-**Op elk advertentiemiddel voltooid:**
+**op elk geëindigd advertentiemiddel:**
 
-* **Geen vraag maken**
+* **maak geen vraag**
 
-   >[!NOTE]
-   >
-   >Als de toepassing weet dat dit de laatste advertentie in het advertentiesonderbreking is, roept u `trackEvent:AdComplete` hier en slaat instelling over `trackEvent:AdComplete` in de `trackEvent:AdBreakComplete`
+  >[!NOTE]
+  >
+  >Als de toepassing weet dat dit de laatste advertentie in het advertentiespoor is, roept u `trackEvent:AdComplete` hier aan en slaat u de instelling `trackEvent:AdComplete` in het dialoogvenster `trackEvent:AdBreakComplete` over
 
-**Op advertentie slaat u over:**
+**op ad overslaan:**
 
-* Bellen `trackEvent(MediaHeartbeat.Event.AdSkip);`.
+* Roep `trackEvent(MediaHeartbeat.Event.AdSkip);` aan.
 
-**Bij ad-break voltooid:**
+**op en volledige onderbreking:**
 
-* **Bellen`trackEvent(MediaHeartbeat.Event.AdComplete);`**
+* **Vraag`trackEvent(MediaHeartbeat.Event.AdComplete);`**
 
-   >[!NOTE]
-   >
-   >Als deze stap al is uitgevoerd als onderdeel van de laatste `trackEvent:AdComplete` Deze aanroep kan worden overgeslagen.
+  >[!NOTE]
+  >
+  >Als deze stap al is uitgevoerd als onderdeel van de laatste aanroep van `trackEvent:AdComplete` , kan deze worden overgeslagen.
 
-* Bellen `trackEvent(MediaHeartbeat.Event.AdBreakComplete);`.
+* Roep `trackEvent(MediaHeartbeat.Event.AdBreakComplete);` aan.

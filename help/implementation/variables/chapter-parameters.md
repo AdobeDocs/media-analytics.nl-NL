@@ -1,6 +1,6 @@
 ---
 title: Hoofdstukparameters
-description: "Leer over hoofdstukparameters voor implementatie, netwerk, en rapportering."
+description: Leer over hoofdstukparameters voor implementatie, netwerk, en rapportering.
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
 exl-id: 73da3e52-9498-478e-bfd7-8ff6c8e6bfc5
 feature: Media Analytics

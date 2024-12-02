@@ -1,6 +1,6 @@
 ---
 title: Mediagelijktijdige rapportage
-description: "Leer hoe u het deelvenster Mediagelijktijdige viewers kunt gebruiken om gelijktijdige viewers te analyseren en om inzicht te krijgen in de piekconsistentie en vervolgkeuzemogelijkheden."
+description: Leer hoe u het deelvenster Mediagelijktijdige viewers kunt gebruiken om gelijktijdige viewers te analyseren en om inzicht te krijgen in de piekconsistentie en vervolgkeuzemogelijkheden.
 exl-id: 2eadd5e7-45de-4275-aac5-d16e2a6a9fed
 feature: "Media Analytics, Workspace Basics"
 role: User, Admin
@@ -21,4 +21,4 @@ In Analysis Workspace is Gelijktijdige viewers het aantal unieke bezoekers dat u
 
 ## Gelijktijdige viewers ophalen via Analytics Reporting API
 
-Met de Analytics Reporting API 2.0 kunt u ook gelijktijdige viewergegevens voor maximaal één maand tegelijk ophalen bij granulariteit op minaniveau. De API voor rapportage gebruikt dezelfde definitie van gelijktijdige viewers als Analysis Workspace.  Zie voor meer informatie [_*Gelijktijdige viewers voor JSON-rapportgegevens ophalen met Analytics 2.0-API&#39;s*_](/help/reporting/reports-and-analytics/get-concurrent-json20.md).
+Met de Analytics Reporting API 2.0 kunt u ook gedurende maximaal één maand gelijktijdige viewergegevens verkrijgen voor granulariteit op minaniveau. De API voor rapportage gebruikt dezelfde definitie van gelijktijdige viewers als Analysis Workspace.  Voor meer informatie zie [_*gezamenlijke kijkers JSON- rapportgegevens met Analytics 2.0 APIs*_](/help/reporting/reports-and-analytics/get-concurrent-json20.md) krijgen.

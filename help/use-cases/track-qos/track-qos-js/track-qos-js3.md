@@ -1,6 +1,6 @@
 ---
 title: Leer de kwaliteit van de ervaring bij te houden met JavaScript 3.x
-description: "Leer hoe u de kwaliteit van de ervaring (QoE, QoS) kunt bijhouden met de Media SDK in browsertoepassingen met JavaScript 3x."
+description: Leer hoe u het bijhouden van de kwaliteit van de ervaring (QoE, QoS) implementeert met de Media SDK in browsertoepassingen met JavaScript 3x.
 exl-id: b5570e9c-8fb1-4458-bd1a-86ff6fce7813
 feature: Media Analytics
 role: User, Admin, Data Engineer
@@ -17,11 +17,11 @@ De volgende instructies bieden richtlijnen voor implementatie voor alle 2.x SDK&
 
 >[!IMPORTANT]
 >
->Als u eerdere versies van de SDK implementeert, kunt u de ontwikkelaarsgidsen hier downloaden: [SDK&#39;s downloaden.](/help/getting-started/download-sdks.md)
+>Als u om het even welke vorige versies van SDK uitvoert, kunt u de Gidsen van Ontwikkelaars hier downloaden: [ Download SDKs.](/help/getting-started/download-sdks.md)
 
 ## QOE implementeren
 
-1. Bepaal wanneer de bitsnelheid verandert tijdens het afspelen van media en maak de opdracht `qoeObject` instantie die de informatie QoE gebruikt.
+1. Bepaal wanneer de bitsnelheid verandert tijdens het afspelen van media en maak de `qoeObject` -instantie met behulp van de QoE-informatie.
 
    QoEObject-variabelen:
 
@@ -48,7 +48,7 @@ De volgende instructies bieden richtlijnen voor implementatie voor alle 2.x SDK&
    tracker.updateQoEObject(qoeObject);
    ```
 
-1. Als bij het afspelen wordt geschakeld naar een andere bitsnelheid, roept u de `BitrateChange` -gebeurtenis in de Media Heartbone-instantie:
+1. Roep de gebeurtenis `BitrateChange` in de Media Heartbeat-instantie aan wanneer er wordt geschakeld naar een andere bitsnelheid:
 
    ```js
    _onBitrateChange = function() {
@@ -64,9 +64,9 @@ De volgende instructies bieden richtlijnen voor implementatie voor alle 2.x SDK&
    >
    >Werk het object QoE bij en roep de gebeurtenis bitsnelheidwijziging aan bij elke wijziging in de bitsnelheid. Dit verstrekt de nauwkeurigste gegevens QoE.
 
-1. Zorg ervoor om te roepen `updateQoEObject()` methode om de meest bijgewerkte informatie QoE aan SDK te verstrekken.
-1. Wanneer de mediaspeler een fout aantreft en de foutgebeurtenis beschikbaar is voor de speler-API, gebruikt u `trackError()` om de foutinformatie vast te leggen. (Zie [Overzicht](/help/use-cases/track-errors/track-errors-overview.md).)
+1. Zorg ervoor dat u de methode `updateQoEObject()` aanroept om de meest bijgewerkte QoE-informatie aan de SDK te verstrekken.
+1. Wanneer de mediaspeler een fout aantreft en de foutgebeurtenis beschikbaar is voor de speler-API, gebruikt u `trackError()` om de foutinformatie vast te leggen. (Zie [ Overzicht ](/help/use-cases/track-errors/track-errors-overview.md).)
 
    >[!TIP]
    >
-   >Fouten bij het bijhouden van mediaspeler stoppen de mediatrackingsessie niet. Als de fout in de mediaspeler voorkomt dat het afspelen wordt voortgezet, controleert u of de mediatrackingsessie is gesloten door `trackSessionEnd()` na het aanroepen `trackError()`.
+   >Fouten bij het bijhouden van mediaspeler stoppen de mediatrackingsessie niet. Als de fout in de mediaspeler voorkomt dat het afspelen wordt voortgezet, controleert u of de mediatrackingsessie is gesloten door `trackSessionEnd()` aan te roepen na het aanroepen van `trackError()` .

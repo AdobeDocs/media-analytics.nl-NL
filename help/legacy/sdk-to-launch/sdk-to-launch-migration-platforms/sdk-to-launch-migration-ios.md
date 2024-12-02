@@ -1,26 +1,27 @@
 ---
-title: "Migreren van de standalone Media SDK naar Adobe Launch - iOS"
+title: Migreren van de standalone SDK van Media naar Adobe Launch - iOS
 description: Leer hoe u van de SDK van Media naar Launch voor iOS migreert.
 exl-id: f70b8e1b-cb9f-4230-86b2-171bdaed4615
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: fb09280ae6fb9f0ab7e67bd6ae134e6e26f88ec8
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 0%
+source-wordcount: '380'
+ht-degree: 7%
 
 ---
 
 # Migreren van de standalone Media SDK naar Adobe Launch - iOS
 
 >[!NOTE]
->Adobe Experience Platform Launch is omgedoopt tot een reeks technologieën voor gegevensverzameling in Experience Platform. Diverse terminologische wijzigingen zijn als gevolg hiervan in de productdocumentatie doorgevoerd. Raadpleeg het volgende [document](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en) voor een geconsolideerde referentie van de terminologische wijzigingen.
+>Adobe Experience Platform Launch is omgedoopt tot een reeks technologieën voor gegevensverzameling in Experience Platform. Als gevolg hiervan zijn er verschillende terminologiewijzigingen in de productdocumentatie doorgevoerd. Raadpleeg het volgende [ document ](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en) voor een geconsolideerde referentie van de terminologiewijzigingen.
 
 ## Configuratie
 
 ### Standalone Media SDK
 
-In de standalone SDK van Media, vormt u de het volgen configuratie in app, en gaat het tot SDK over wanneer u de trekker creeert.
+In de standalone SDK van Media, vormt u de het volgen configuratie in app,
+en geeft deze door aan de SDK wanneer u de Beheer maakt.
 
 ```objective-c
 ADBMediaHeartbeatConfig *config =
@@ -40,20 +41,21 @@ ADBMediaHeartbeat* tracker =
 
 ### Extensie starten
 
-1. Klik in het Experience Platform Launch op de knop [!UICONTROL Extensions] tab voor uw mobiele eigenschap
-1. Op de [!UICONTROL Catalog] , zoekt u de Adobe Media Analytics for Audio and Video-extensie en klikt u op [!UICONTROL Install].
+1. Klik in het Experience Platform Launch op de tab [!UICONTROL Extensions] voor de eigenschap mobile
+1. Zoek op het tabblad [!UICONTROL Catalog] de Adobe Media Analytics voor de extensie Audio en Video en klik op [!UICONTROL Install] .
 1. In de pagina van de uitbreidingsmontages, vorm de volgende parameters.
 De uitbreiding van Media zal de gevormde parameters voor het volgen gebruiken.
 
    ![](assets/launch_config_mobile.png)
 
-[De extensie Media Analytics configureren](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)
+[ vorm de uitbreiding van Analytics van Media ](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)
 
 ## Beheer maken
 
 ### Standalone Media SDK
 
-In de standalone SDK van Media maakt u handmatig de `ADBMediaHeartbeatConfig` en configureert u de volgende parameters. Implementeer de gedelegeerde interface die de
+In de zelfstandige SDK van Media maakt u handmatig het `ADBMediaHeartbeatConfig` -object
+en configureert u de volgende parameters. Implementeer de gedelegeerde interface die de
 `getQoSObject()` en `getCurrentPlaybackTime()functions.`
 
 Maak een MediaHeartbone-instantie die u wilt bijhouden:
@@ -93,7 +95,7 @@ ADBMediaHeartbeat* tracker =
 
 ### Extensie starten
 
-[Referentie voor media-API: Media Beheer maken](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createtracker)
+[ Media API verwijzing - creeer de Trekker van Media ](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createtracker)
 
 Registreer de media-extensie en de afhankelijke extensies bij de mobiele kern voordat u de Beheer maakt.
 
@@ -129,20 +131,24 @@ Tracker selecteert automatisch de configuratie van het gevormde lanceringsbezit.
 ### Standalone Media SDK
 
 In de standalone SDK van Media, een afgevaardigde voorwerp dat uitvoert
-`ADBMediaHeartbeartDelegate` protocol wordt overgegaan tijdens het creëren van de trekker.
-De implementatie zou recentste QoE en playhead moeten terugkeren telkens als de trekker de `getQoSObject()` en `getCurrentPlaybackTime()` interfacemethoden.
+`ADBMediaHeartbeartDelegate` -protocol wordt doorgegeven tijdens het maken van tracker.
+De implementatie moet de nieuwste QoE en afspeelkop retourneren telkens als de
+tracker roept de interface `getQoSObject()` en `getCurrentPlaybackTime()` aan
+methoden.
 
 ### Extensie starten
 
 De huidige afspeelkop van de speler moet worden bijgewerkt met de functie
-`updateCurrentPlayhead` door de verklikker aan het licht gebrachte methode. Voor het nauwkeurig volgen zou u deze methode minstens eens per seconde moeten roepen.
+`updateCurrentPlayhead` -methode die door de tracker beschikbaar wordt gemaakt. Voor nauwkeurige tracering
+u zou deze methode minstens eens per seconde moeten roepen.
 
-[Referentie voor media-API: huidige afspeelknop bijwerken](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#updatecurrentplayhead)
+[ Verwijzing van media API - Update Huidige Playhead ](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#updatecurrentplayhead)
 
 De implementatie moet de QoE-informatie bijwerken door de
-`updateQoEObject` door de verklikker aan het licht gebrachte methode. U zou deze methode moeten roepen wanneer er een verandering in de kwaliteitsmetriek is.
+`updateQoEObject` -methode die door de tracker beschikbaar wordt gemaakt. U moet deze methode aanroepen
+wanneer er een wijziging optreedt in de kwaliteitswaarden.
 
-[Referentie voor media-API - QoE-object bijwerken](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createqoeobject)
+[ Media API verwijzing - het Voorwerp van QoE van de Update ](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createqoeobject)
 
 ## Standaardmedia/metagegevens doorgeven
 
@@ -150,99 +156,99 @@ De implementatie moet de QoE-informatie bijwerken door de
 
 * Metagegevens standaardmedia:
 
-   ```objective-c
-   ADBMediaObject *mediaObject =
-     [ADBMediaHeartbeat createMediaObjectWithName:@"media-name"
-                        mediaId:@"media-id"
-                        length:60
-                        streamType:ADBMediaHeartbeatStreamTypeVod
-                        mediaType:ADBMediaTypeVideo];
-   
-   // Standard metadata keys provided by adobe.
-   NSMutableDictionary *standardMetadata = [[NSMutableDictionary alloc] init];
-   [standardMetadata setObject:@"Sample show" forKey:ADBVideoMetadataKeySHOW];
-   [standardMetadata setObject:@"Sample season" forKey:ADBVideoMetadataKeySEASON];
-   [mediaObject setValue:standardMetadata forKey:ADBMediaObjectKeyStandardMediaMetadata];
-   
-   //Attaching custom metadata
-   NSMutableDictionary *videoMetadata = [[NSMutableDictionary alloc] init];
-   [mediaMetadata setObject:@"false" forKey:@"isUserLoggedIn"];
-   [mediaMetadata setObject:@"Sample TV station" forKey:@"tvStation"];
-   
-   [tracker trackSessionStart:mediaObject data:mediaMetadata];
-   ```
+  ```objective-c
+  ADBMediaObject *mediaObject =
+    [ADBMediaHeartbeat createMediaObjectWithName:@"media-name"
+                       mediaId:@"media-id"
+                       length:60
+                       streamType:ADBMediaHeartbeatStreamTypeVod
+                       mediaType:ADBMediaTypeVideo];
+  
+  // Standard metadata keys provided by adobe.
+  NSMutableDictionary *standardMetadata = [[NSMutableDictionary alloc] init];
+  [standardMetadata setObject:@"Sample show" forKey:ADBVideoMetadataKeySHOW];
+  [standardMetadata setObject:@"Sample season" forKey:ADBVideoMetadataKeySEASON];
+  [mediaObject setValue:standardMetadata forKey:ADBMediaObjectKeyStandardMediaMetadata];
+  
+  //Attaching custom metadata
+  NSMutableDictionary *videoMetadata = [[NSMutableDictionary alloc] init];
+  [mediaMetadata setObject:@"false" forKey:@"isUserLoggedIn"];
+  [mediaMetadata setObject:@"Sample TV station" forKey:@"tvStation"];
+  
+  [tracker trackSessionStart:mediaObject data:mediaMetadata];
+  ```
 
-* Standaard advertentiemetagegevens:
+* Standaard Advertentiemetagegevens:
 
-   ```objective-c
-   ADBMediaObject* adObject =
-     [ADBMediaHeartbeat createAdObjectWithName:[adData objectForKey:@"name"]
-                        adId:[adData objectForKey:@"id"]
-                        position:[[adData objectForKey:@"position"] doubleValue]
-                        length:[[adData objectForKey:@"length"] doubleValue]];
-   
-   // Standard metadata keys provided by adobe.
-   NSMutableDictionary *standardMetadata =
-     [[NSMutableDictionary alloc] init];
-   [standardMetadata setObject:@"Sample Advertiser"
-                     forKey:ADBAdMetadataKeyADVERTISER];
-   [standardMetadata setObject:@"Sample Campaign"
-                     forKey:ADBAdMetadataKeyCAMPAIGN_ID];
-   [adObject setValue:standardMetadata
-                     forKey:ADBMediaObjectKeyStandardAdMetadata];
-   
-   //Attaching custom metadata
-   NSMutableDictionary *adDictionary = [[NSMutableDictionary alloc] init];
-   [adDictionary setObject:@"Sample affiliate" forKey:@"affiliate"];
-   
-   [tracker trackEvent:ADBMediaHeartbeatEventAdStart
-            mediaObject:adObject
-            data:adDictionary];
-   ```
+  ```objective-c
+  ADBMediaObject* adObject =
+    [ADBMediaHeartbeat createAdObjectWithName:[adData objectForKey:@"name"]
+                       adId:[adData objectForKey:@"id"]
+                       position:[[adData objectForKey:@"position"] doubleValue]
+                       length:[[adData objectForKey:@"length"] doubleValue]];
+  
+  // Standard metadata keys provided by adobe.
+  NSMutableDictionary *standardMetadata =
+    [[NSMutableDictionary alloc] init];
+  [standardMetadata setObject:@"Sample Advertiser"
+                    forKey:ADBAdMetadataKeyADVERTISER];
+  [standardMetadata setObject:@"Sample Campaign"
+                    forKey:ADBAdMetadataKeyCAMPAIGN_ID];
+  [adObject setValue:standardMetadata
+                    forKey:ADBMediaObjectKeyStandardAdMetadata];
+  
+  //Attaching custom metadata
+  NSMutableDictionary *adDictionary = [[NSMutableDictionary alloc] init];
+  [adDictionary setObject:@"Sample affiliate" forKey:@"affiliate"];
+  
+  [tracker trackEvent:ADBMediaHeartbeatEventAdStart
+           mediaObject:adObject
+           data:adDictionary];
+  ```
 
 ### Extensie starten
 
 * Metagegevens standaardmedia:
 
-   ```objective-c
-   NSDictionary *mediaObject =
-     [ACPMedia createMediaObjectWithName:@"media-name"
-               mediaId:@"media-id"
-               length:60
-               streamType:ACPMediaStreamTypeVod
-               mediaType:ACPMediaTypeVideo];
-   
-   NSMutableDictionary *mediaMetadata =
-     [[NSMutableDictionary alloc] init];
-   
-   // Standard metadata keys provided by adobe.
-   [mediaMetadata setObject:@"Sample show" forKey:ACPVideoMetadataKeyShow];
-   [mediaMetadata setObject:@"Sample season" forKey:ACPVideoMetadataKeySeason];
-   
-   // Custom metadata keys
-   [mediaMetadata setObject:@"false" forKey:@"isUserLoggedIn"];
-   [mediaMetadata setObject:@"Sample TV station" forKey:@"tvStation"];
-   [_tracker trackSessionStart:mediaObject data:mediaMetadata];
-   ```
+  ```objective-c
+  NSDictionary *mediaObject =
+    [ACPMedia createMediaObjectWithName:@"media-name"
+              mediaId:@"media-id"
+              length:60
+              streamType:ACPMediaStreamTypeVod
+              mediaType:ACPMediaTypeVideo];
+  
+  NSMutableDictionary *mediaMetadata =
+    [[NSMutableDictionary alloc] init];
+  
+  // Standard metadata keys provided by adobe.
+  [mediaMetadata setObject:@"Sample show" forKey:ACPVideoMetadataKeyShow];
+  [mediaMetadata setObject:@"Sample season" forKey:ACPVideoMetadataKeySeason];
+  
+  // Custom metadata keys
+  [mediaMetadata setObject:@"false" forKey:@"isUserLoggedIn"];
+  [mediaMetadata setObject:@"Sample TV station" forKey:@"tvStation"];
+  [_tracker trackSessionStart:mediaObject data:mediaMetadata];
+  ```
 
-* Standaard advertentiemetagegevens:
+* Standaard Advertentiemetagegevens:
 
-   ```objective-c
-   NSDictionary* adObject =
-     [ACPMedia createAdObjectWithName:@"ad-name"
-               adId:@"ad-id"
-               position:1
-               length:15];
-   
-   NSMutableDictionary* adMetadata =
-     [[NSMutableDictionary alloc] init];
-   
-   // Standard metadata keys provided by adobe.
-   [adMetadata setObject:@"Sample Advertiser" forKey:ACPAdMetadataKeyAdvertiser];
-   [adMetadata setObject:@"Sample Campaign" forKey:ACPAdMetadataKeyCampaignId];
-   
-   // Custom metadata keys
-   [adMetadata setObject:@"Sample affiliate" forKey:@"affiliate"];
-   
-   [tracker trackEvent:ACPMediaEventAdStart mediaObject:adObject data:adMetadata];
-   ```
+  ```objective-c
+  NSDictionary* adObject =
+    [ACPMedia createAdObjectWithName:@"ad-name"
+              adId:@"ad-id"
+              position:1
+              length:15];
+  
+  NSMutableDictionary* adMetadata =
+    [[NSMutableDictionary alloc] init];
+  
+  // Standard metadata keys provided by adobe.
+  [adMetadata setObject:@"Sample Advertiser" forKey:ACPAdMetadataKeyAdvertiser];
+  [adMetadata setObject:@"Sample Campaign" forKey:ACPAdMetadataKeyCampaignId];
+  
+  // Custom metadata keys
+  [adMetadata setObject:@"Sample affiliate" forKey:@"affiliate"];
+  
+  [tracker trackEvent:ACPMediaEventAdStart mediaObject:adObject data:adMetadata];
+  ```

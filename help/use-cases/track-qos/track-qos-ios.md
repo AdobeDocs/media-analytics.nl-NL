@@ -1,6 +1,6 @@
 ---
 title: Leer hoe u de kwaliteit van ervaring kunt bijhouden op iOS
-description: "Leer over het uitvoeren van kwaliteit van ervaring (QoE, QoS) het volgen gebruikend Media SDK op iOS."
+description: Leer over het uitvoeren van kwaliteit van ervaring (QoE, QoS) het volgen gebruikend Media SDK op iOS.
 uuid: cae2c142-ed39-4234-a711-765dcabc5415
 exl-id: 7f01e6eb-95bd-4e3d-93d0-8a2e68323313
 feature: Media Analytics
@@ -18,11 +18,11 @@ De volgende instructies bieden richtlijnen voor implementatie voor alle 2.x SDK&
 
 >[!IMPORTANT]
 >
->Als u een 1.x-versie van de SDK implementeert, kunt u de 1.x-handleidingen voor ontwikkelaars hier downloaden: [SDK&#39;s downloaden.](/help/getting-started/download-sdks.md)
+>Als u een 1.x versie van SDK uitvoert, kunt u de 1.x Gidsen van Ontwikkelaars hier downloaden: [ Download SDKs.](/help/getting-started/download-sdks.md)
 
 ## QOS implementeren
 
-1. Bepaal wanneer de bitsnelheid verandert tijdens het afspelen van media en maak de opdracht `MediaObject` instantie die de informatie QoS gebruikt.
+1. Bepaal wanneer de bitsnelheid verandert tijdens het afspelen van media en maak de `MediaObject` -instantie met behulp van de QoS-informatie.
 
    QoSObject-variabelen:
 
@@ -46,8 +46,8 @@ De volgende instructies bieden richtlijnen voor implementatie voor alle 2.x SDK&
                                      droppedFrames:[DROPPED_FRAMES]];
    ```
 
-1. Controleer of `getQoSObject` De methode keert de meest bijgewerkte informatie QoS terug.
-1. Als bij het afspelen wordt geschakeld naar een andere bitsnelheid, roept u de `BitrateChange` -gebeurtenis in de Media Heartbone-instantie:
+1. Zorg ervoor dat de `getQoSObject` methode de meest bijgewerkte informatie QoS terugkeert.
+1. Roep de gebeurtenis `BitrateChange` in de Media Heartbeat-instantie aan wanneer er wordt geschakeld naar een andere bitsnelheid:
 
    ```
    - (void)onBitrateChange:(NSNotification *)notification {

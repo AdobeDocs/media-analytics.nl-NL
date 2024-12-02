@@ -1,27 +1,28 @@
 ---
-title: "Migreren van de standalone Media SDK naar Adobe Launch - Android"
-description: Leer hoe u van de SDK van Media naar Starten voor Android migreert.
+title: Migreren van de standalone SDK van Media naar Adobe Launch - Android
+description: Leer hoe u van de SDK van Media naar Launch voor Android migreert.
 exl-id: 26764835-4781-417b-a6c0-ea6ae78d76ae
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: fb09280ae6fb9f0ab7e67bd6ae134e6e26f88ec8
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 0%
+source-wordcount: '379'
+ht-degree: 7%
 
 ---
 
 # Migreren van de standalone Media SDK naar Adobe Launch - Android
 
 >[!NOTE]
->Adobe Experience Platform Launch is omgedoopt tot een reeks technologieën voor gegevensverzameling in Experience Platform. Diverse terminologische wijzigingen zijn als gevolg hiervan in de productdocumentatie doorgevoerd. Raadpleeg het volgende [document](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en) voor een geconsolideerde referentie van de terminologische wijzigingen.
+>Adobe Experience Platform Launch is omgedoopt tot een reeks technologieën voor gegevensverzameling in Experience Platform. Als gevolg hiervan zijn er verschillende terminologiewijzigingen in de productdocumentatie doorgevoerd. Raadpleeg het volgende [ document ](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en) voor een geconsolideerde referentie van de terminologiewijzigingen.
 
 
 ## Configuratie
 
 ### Standalone Media SDK
 
-In de standalone SDK van Media, vormt u het volgen in app, en gaat het tot SDK over wanneer u de trekker creeert.
+In de standalone SDK van Media, vormt u het volgen in app en gaat het tot
+de SDK wanneer u de Beheer maakt.
 
 ```java
 MediaHeartbeatConfig config = new MediaHeartbeatConfig();
@@ -38,22 +39,25 @@ MediaHeartbeat tracker = new MediaHeartbeat(... , config);
 
 ### Extensie starten
 
-1. Klik in het Experience Platform Launch op de knop [!UICONTROL Extensions] tabblad voor uw eigenschap mobile.
-1. Op de [!UICONTROL Catalog] , zoekt u de Adobe Media Analytics for Audio and Video-extensie en klikt u op [!UICONTROL Install].
+1. Klik in het Experience Platform Launch op de tab [!UICONTROL Extensions] voor uw
+eigenschap mobile.
+1. Zoek op het tabblad [!UICONTROL Catalog] de Adobe Media Analytics for Audio
+en Video en klik op [!UICONTROL Install] .
 1. In de pagina van de uitbreidingsmontages, vorm de volgende parameters.
 De uitbreiding van Media zal de gevormde parameters voor het volgen gebruiken.
 
 ![](assets/launch_config_mobile.png)
 
-[Mobiele extensies gebruiken](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)
+[ Gebruikend Mobiele Uitbreidingen ](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)
 
 ## Beheer maken
 
 ### Standalone Media SDK
 
-In de standalone SDK van Media maakt u handmatig de `MediaHeartbeatConfig` en configureert u de volgende parameters. Implementeer de gedelegeerde interface die blootstelt
+In de zelfstandige SDK van Media maakt u handmatig het `MediaHeartbeatConfig` -object
+en configureert u de volgende parameters. Implementeer de gedelegeerde interface die blootstelt
 `getQoSObject()` en `getCurrentPlaybackTime()functions.`
-Een `MediaHeartbeat` -instantie voor reeksspatiëring.
+Maak een `MediaHeartbeat` -instantie om te volgen.
 
 ```java
 MediaHeartbeatConfig config = new MediaHeartbeatConfig();
@@ -87,9 +91,10 @@ MediaHeartbeatDelegate delegate = new MediaHeartbeatDelegate() {
 
 ### Extensie starten
 
-[Referentie voor media-API - Een mediabeheer maken](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createtracker)
+[ Verwijzing van media API - creeer een Trekker van Media ](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createtracker)
 
-Voordat u Beheer maakt, moet u de media-extensie en afhankelijke extensies registreren bij de mobiele kern.
+Voordat u de Beheer maakt, moet u de media-extensie registreren en
+afhankelijke extensies met de mobiele kern.
 
 ```java
 // Register the extension once during app launch
@@ -130,20 +135,23 @@ Media.createTracker(new AdobeCallback<MediaTracker>() {
 ### Standalone Media SDK
 
 In de standalone SDK van Media, gaat u een afgevaardigde voorwerp over dat uitvoert
-`MediaHeartbeartDelegate` interface tijdens het maken van tracker.  De implementatie zou recentste QoE en playhead moeten terugkeren telkens als de trekker de
+`MediaHeartbeartDelegate` -interface tijdens het maken van Beheer.  De uitvoering
+zou recentste QoE en playhead moeten terugkeren telkens als de trekker de
 `getQoSObject()` en `getCurrentPlaybackTime()` interfacemethoden.
 
 ### Extensie starten
 
 De huidige afspeelkop van de speler moet in de implementatie worden bijgewerkt door de
-`updateCurrentPlayhead` door de verklikker aan het licht gebrachte methode. Voor het nauwkeurig volgen zou u deze methode minstens eens per seconde moeten roepen.
+`updateCurrentPlayhead` -methode die door de tracker beschikbaar wordt gemaakt. Voor nauwkeurige tracering
+u zou deze methode minstens eens per seconde moeten roepen.
 
-[Referentie voor media-API: huidige speler bijwerken](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#updatecurrentplayhead)
+[ Bron van Media API - Update Huidige Speler ](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#updatecurrentplayhead)
 
 De implementatie moet de QoE-informatie bijwerken door de `updateQoEObject`
-door de verklikker aan het licht gebrachte methode. We verwachten dat deze methode wordt aangeroepen wanneer de kwaliteitswaarden veranderen.
+door de verklikker aan het licht gebrachte methode. We verwachten dat deze methode altijd wordt gebruikt
+Dit is een wijziging in de kwaliteitswaarden.
 
-[Referentie voor media-API - QoE-object bijwerken](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createqoeobject)
+[ Media API verwijzing - het Voorwerp van QoE van de Update ](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createqoeobject)
 
 ## Standaardmedia/metagegevens doorgeven
 
@@ -151,111 +159,111 @@ door de verklikker aan het licht gebrachte methode. We verwachten dat deze metho
 
 * Metagegevens standaardmedia:
 
-   ```java
-   MediaObject mediaInfo =
-     MediaHeartbeat.createMediaObject("media-name",
-                                      "media-id",
-                                      60D,
-                                      MediaHeartbeat.StreamType.VOD,
-                                      MediaHeartbeat.MediaType.Video);
-   
-   // Standard metadata keys provided by adobe.
-   Map <String, String> standardVideoMetadata =
-     new HashMap<String, String>();
-   standardVideoMetadata.put(MediaHeartbeat.VideoMetadataKeys.EPISODE,
-                             "Sample Episode");
-   standardVideoMetadata.put(MediaHeartbeat.VideoMetadataKeys.SHOW,
-                             "Sample Show");
-   standardVideoMetadata.put(MediaHeartbeat.VideoMetadataKeys.SEASON,
-                             "Sample Season");
-   mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.StandardMediaMetadata,
-                      standardVideoMetadata);
-   
-   // Custom metadata keys
-   HashMap<String, String> mediaMetadata = new HashMap<String, String>();
-   mediaMetadata.put("isUserLoggedIn", "false");
-   mediaMetadata.put("tvStation", "Sample TV Station");
-   tracker.trackSessionStart(mediaInfo, mediaMetadata);
-   ```
+  ```java
+  MediaObject mediaInfo =
+    MediaHeartbeat.createMediaObject("media-name",
+                                     "media-id",
+                                     60D,
+                                     MediaHeartbeat.StreamType.VOD,
+                                     MediaHeartbeat.MediaType.Video);
+  
+  // Standard metadata keys provided by adobe.
+  Map <String, String> standardVideoMetadata =
+    new HashMap<String, String>();
+  standardVideoMetadata.put(MediaHeartbeat.VideoMetadataKeys.EPISODE,
+                            "Sample Episode");
+  standardVideoMetadata.put(MediaHeartbeat.VideoMetadataKeys.SHOW,
+                            "Sample Show");
+  standardVideoMetadata.put(MediaHeartbeat.VideoMetadataKeys.SEASON,
+                            "Sample Season");
+  mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.StandardMediaMetadata,
+                     standardVideoMetadata);
+  
+  // Custom metadata keys
+  HashMap<String, String> mediaMetadata = new HashMap<String, String>();
+  mediaMetadata.put("isUserLoggedIn", "false");
+  mediaMetadata.put("tvStation", "Sample TV Station");
+  tracker.trackSessionStart(mediaInfo, mediaMetadata);
+  ```
 
-* Standaard advertentiemetagegevens:
+* Standaard Advertentiemetagegevens:
 
-   ```java
-   MediaObject adInfo =
-     MediaHeartbeat.createAdObject("ad-name",
-                                   "ad-id",
-                                   1L,
-                                   15D);
-   
-   // Standard metadata keys provided by adobe.
-   Map <String, String> standardAdMetadata =
-     new HashMap<String, String>();
-   standardAdMetadata.put(MediaHeartbeat.AdMetadataKeys.ADVERTISER,
-                          "Sample Advertiser");
-   standardAdMetadata.put(MediaHeartbeat.AdMetadataKeys.CAMPAIGN_ID,
-                          "Sample Campaign");
-   adInfo.setValue(MediaHeartbeat.MediaObjectKey.StandardAdMetadata,
-                   standardAdMetadata);
-   
-   HashMap<String, String> adMetadata =
-     new HashMap<String, String>();
-   adMetadata.put("affiliate",
-                  "Sample affiliate");
-   
-   tracker.trackEvent(MediaHeartbeat.Event.AdStart,
-                      adObject,
-                      adMetadata);
-   ```
+  ```java
+  MediaObject adInfo =
+    MediaHeartbeat.createAdObject("ad-name",
+                                  "ad-id",
+                                  1L,
+                                  15D);
+  
+  // Standard metadata keys provided by adobe.
+  Map <String, String> standardAdMetadata =
+    new HashMap<String, String>();
+  standardAdMetadata.put(MediaHeartbeat.AdMetadataKeys.ADVERTISER,
+                         "Sample Advertiser");
+  standardAdMetadata.put(MediaHeartbeat.AdMetadataKeys.CAMPAIGN_ID,
+                         "Sample Campaign");
+  adInfo.setValue(MediaHeartbeat.MediaObjectKey.StandardAdMetadata,
+                  standardAdMetadata);
+  
+  HashMap<String, String> adMetadata =
+    new HashMap<String, String>();
+  adMetadata.put("affiliate",
+                 "Sample affiliate");
+  
+  tracker.trackEvent(MediaHeartbeat.Event.AdStart,
+                     adObject,
+                     adMetadata);
+  ```
 
 ### Extensie starten
 
 * Metagegevens standaardmedia:
 
-   ```java
-   HashMap<String, Object> mediaObject =
-     Media.createMediaObject("media-name",
-                             "media-id",
-                             60D,
-                             MediaConstants.StreamType.VOD,
-                             Media.MediaType.Video);
-   
-   HashMap<String, String> mediaMetadata =
-     new HashMap<String, String>();
-   
-   // Standard metadata keys provided by adobe.
-   mediaMetadata.put(MediaConstants.VideoMetadataKeys.EPISODE,
-                     "Sample Episode");
-   mediaMetadata.put(MediaConstants.VideoMetadataKeys.SHOW,
-                     "Sample Show");
-   
-   // Custom metadata keys
-   mediaMetadata.put("isUserLoggedIn", "false");
-   mediaMetadata.put("tvStation", "Sample TV Station");
-   
-   tracker.trackSessionStart(mediaInfo, mediaMetadata);
-   ```
+  ```java
+  HashMap<String, Object> mediaObject =
+    Media.createMediaObject("media-name",
+                            "media-id",
+                            60D,
+                            MediaConstants.StreamType.VOD,
+                            Media.MediaType.Video);
+  
+  HashMap<String, String> mediaMetadata =
+    new HashMap<String, String>();
+  
+  // Standard metadata keys provided by adobe.
+  mediaMetadata.put(MediaConstants.VideoMetadataKeys.EPISODE,
+                    "Sample Episode");
+  mediaMetadata.put(MediaConstants.VideoMetadataKeys.SHOW,
+                    "Sample Show");
+  
+  // Custom metadata keys
+  mediaMetadata.put("isUserLoggedIn", "false");
+  mediaMetadata.put("tvStation", "Sample TV Station");
+  
+  tracker.trackSessionStart(mediaInfo, mediaMetadata);
+  ```
 
-* Standaard advertentiemetagegevens:
+* Standaard Advertentiemetagegevens:
 
-   ```java
-   HashMap<String, Object> adObject =
-     Media.createAdObject("ad-name",
-                          "ad-id",
-                          1L,
-                          15D);
-   HashMap<String, String> adMetadata =
-     new HashMap<String, String>();
-   
-   // Standard metadata keys provided by adobe.
-   adMetadata.put(MediaConstants.AdMetadataKeys.ADVERTISER,
-                  "Sample Advertiser");
-   adMetadata.put(MediaConstants.AdMetadataKeys.CAMPAIGN_ID,
-                  "Sample Campaign");
-   
-   // Custom metadata keys
-   adMetadata.put("affiliate",
-                  "Sample affiliate");
-   _tracker.trackEvent(Media.Event.AdStart,
-                       adObject,
-                       adMetadata);
-   ```
+  ```java
+  HashMap<String, Object> adObject =
+    Media.createAdObject("ad-name",
+                         "ad-id",
+                         1L,
+                         15D);
+  HashMap<String, String> adMetadata =
+    new HashMap<String, String>();
+  
+  // Standard metadata keys provided by adobe.
+  adMetadata.put(MediaConstants.AdMetadataKeys.ADVERTISER,
+                 "Sample Advertiser");
+  adMetadata.put(MediaConstants.AdMetadataKeys.CAMPAIGN_ID,
+                 "Sample Campaign");
+  
+  // Custom metadata keys
+  adMetadata.put("affiliate",
+                 "Sample affiliate");
+  _tracker.trackEvent(Media.Event.AdStart,
+                      adObject,
+                      adMetadata);
+  ```

@@ -1,14 +1,14 @@
 ---
 title: Streaming Media Collection API — Sessieverzoek-eindpunt
-description: "Wat zijn de de zittingen van de Inzameling van Media verzoeken eindpuntparameters en reacties?"
+description: Wat zijn de de zittingen van de Inzameling van Media verzoeken eindpuntparameters en reacties?
 uuid: 9609192d-4f7f-4fb5-844f-ea89d47c4e30
 exl-id: f55f5838-610f-4f82-b3c5-72165ea2c86b
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
 workflow-type: tm+mt
-source-wordcount: '130'
-ht-degree: 5%
+source-wordcount: '133'
+ht-degree: 3%
 
 ---
 
@@ -23,7 +23,7 @@ https://{uri}/api/v1/sessions
 
 Geen
 
-## Verzoek
+## Indieningsinstantie
 
 De aanvraaginstantie moet JSON zijn en dezelfde structuur hebben als deze instantie die het verzoek indient:
 
@@ -61,15 +61,15 @@ De aanvraaginstantie moet JSON zijn en dezelfde structuur hebben als deze instan
 }
 ```
 
-* `playerTime` (Verplicht)
+* `playerTime` (verplicht)
    * `playhead` - Als de inhoud live is, moet de afspeelkop de huidige seconde van de dag zijn, 0 &lt;= playhead &lt; 86400. Als de inhoud wordt opgenomen, moet de afspeelkop de huidige seconde van de inhoud zijn, 0 &lt;= playhead &lt; lengte van de inhoud. De waarde kan een drijvende-kommagetal zijn.
    * `ts` - Tijdstempel; moet in milliseconden zijn; Coordinated Universal Time (UTC).
-* `eventType` (Verplicht)
+* `eventType` (verplicht)
 
-   **Geldige waarde:** `sessionStart`
-* `params` (Verplicht)
-* `customMetadata` (Optioneel)
-* `qoeData` (Optioneel)
+  **Geldige waarde:** `sessionStart`
+* `params` (verplicht)
+* `customMetadata` (optioneel)
+* `qoeData` (optioneel)
 
 ## Antwoord
 
@@ -88,7 +88,7 @@ Age: 0
 Via: 1.1 wsg.sanjose08
 ```
 
-`Location:` header - De `/api/v1/` biedt de API-versie. Het onderdeel na `[…]sessions/` is de sessie-id.
+`Location:` header - Het `/api/v1/` -onderdeel biedt de API-versie. Het deel na `[…]sessions/` is de sessie-id.
 
 ## Antwoordcodes
 

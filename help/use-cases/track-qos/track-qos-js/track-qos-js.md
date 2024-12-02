@@ -1,6 +1,6 @@
 ---
 title: Leer de kwaliteit van de ervaring bij te houden met JavaScript 2.x
-description: "Leer hoe u de kwaliteit van de ervaring (QoE, QoS) kunt bijhouden met de Media SDK in browsertoepassingen met JavaScript 2.x."
+description: Leer hoe u de kwaliteit van de ervaring (QoE, QoS) kunt bijhouden met de Media SDK in browsertoepassingen met JavaScript 2.x.
 uuid: 3bc762a2-9706-4b62-aa91-747f461dd13d
 exl-id: 5924eba4-15a9-405b-9a05-8a7308ddec47
 feature: Media Analytics
@@ -18,11 +18,11 @@ De volgende instructies bieden richtlijnen voor implementatie voor alle 2.x SDK&
 
 >[!IMPORTANT]
 >
->Als u een 1.x-versie van de SDK implementeert, kunt u de 1.x-handleidingen voor ontwikkelaars hier downloaden: [SDK&#39;s downloaden.](/help/getting-started/download-sdks.md)
+>Als u een 1.x versie van SDK uitvoert, kunt u de 1.x Gidsen van Ontwikkelaars hier downloaden: [ Download SDKs.](/help/getting-started/download-sdks.md)
 
 ## QOS implementeren
 
-1. Bepaal wanneer de bitsnelheid verandert tijdens het afspelen van media en maak de opdracht `MediaObject` instantie die de informatie QoS gebruikt.
+1. Bepaal wanneer de bitsnelheid verandert tijdens het afspelen van media en maak de `MediaObject` -instantie met behulp van de QoS-informatie.
 
    QoSObject-variabelen:
 
@@ -48,7 +48,7 @@ De volgende instructies bieden richtlijnen voor implementatie voor alle 2.x SDK&
                                                   <droppedFrames>);
    ```
 
-1. Als bij het afspelen wordt geschakeld naar een andere bitsnelheid, roept u de `BitrateChange` -gebeurtenis in de Media Heartbone-instantie:
+1. Roep de gebeurtenis `BitrateChange` in de Media Heartbeat-instantie aan wanneer er wordt geschakeld naar een andere bitsnelheid:
 
    ```js
    _onBitrateChange = function() {
@@ -60,9 +60,9 @@ De volgende instructies bieden richtlijnen voor implementatie voor alle 2.x SDK&
    >
    >Werk het object QoS bij en roep de gebeurtenis Bitrate change aan bij elke wijziging in de bitsnelheid. Dit verstrekt de nauwkeurigste gegevens QoS.
 
-1. Controleer of `getQoSObject()` De methode keert de meest bijgewerkte informatie QoS terug.
-1. Wanneer de mediaspeler een fout aantreft en de foutgebeurtenis beschikbaar is voor de speler-API, gebruikt u `trackError()` om de foutinformatie vast te leggen. (Zie [Overzicht](/help/use-cases/track-errors/track-errors-overview.md).)
+1. Zorg ervoor dat de `getQoSObject()` methode de meest bijgewerkte informatie QoS terugkeert.
+1. Wanneer de mediaspeler een fout aantreft en de foutgebeurtenis beschikbaar is voor de speler-API, gebruikt u `trackError()` om de foutinformatie vast te leggen. (Zie [ Overzicht ](/help/use-cases/track-errors/track-errors-overview.md).)
 
    >[!TIP]
    >
-   >Fouten bij het bijhouden van mediaspeler stoppen de mediatrackingsessie niet. Als de fout in de mediaspeler voorkomt dat het afspelen wordt voortgezet, controleert u of de mediatrackingsessie is gesloten door `trackSessionEnd()` na het aanroepen `trackError()`.
+   >Fouten bij het bijhouden van mediaspeler stoppen de mediatrackingsessie niet. Als de fout in de mediaspeler voorkomt dat het afspelen wordt voortgezet, controleert u of de mediatrackingsessie is gesloten door `trackSessionEnd()` aan te roepen na het aanroepen van `trackError()` .

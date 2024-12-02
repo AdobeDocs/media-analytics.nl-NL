@@ -1,6 +1,6 @@
 ---
 title: Meer informatie over ondersteunde apparaten en platforms
-description: "Leer over de belangrijkste apparaten zoals iOS, Android, OTT apparaten, en de browsers van JavaScript die de het stromen Invoegsel van de Inzameling van Media steunt."
+description: Leer over de belangrijkste apparaten zoals iOS, Android, OTT apparaten, en de browsers van JavaScript die de het stromen Invoegsel van de Inzameling van Media steunt.
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin
@@ -25,26 +25,26 @@ Voor apparaten die momenteel geen SDK-ondersteuning hebben of in situaties waari
 
 De onderstaande tabel bevat een lijst met momenteel ondersteunde apparaten. Als een apparaat niet in de lijst staat, neemt u contact op met uw klantenservice of oplossingsconsultant voor de status van dat apparaat.
 
-Ga voor meer informatie over het implementeren van Media op Edge naar [De invoegtoepassing voor streaming media Collection installeren met Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
+Voor meer informatie over het uitvoeren van Media op Edge, zie [ de Streaming Invoegtoepassing van de Inzameling van Media met Experience Platform Edge ](/help/implementation/edge/implementation-edge.md) installeren.
 
 | Streaming platforms en apparaten | | Media voor Edge Network SDK / Extensie | Media Edge API | Media Extension met tags of AEP mobile SDK | Media-SDK | Media Collection-API |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|
 | Web/Mobiel web | | | | | |
-| | JavaScript Browsers | ![Ondersteund](/help/assets/icon-blue-check.png) | ![Ondersteund](/help/assets/icon-blue-check.png) | ![Ondersteund](/help/assets/icon-blue-check.png) | ![Ondersteund](/help/assets/icon-blue-check.png) | ![Ondersteund](/help/assets/icon-blue-check.png) |
+| | JavaScript Browsers | ![ Gesteund ](/help/assets/icon-blue-check.png) | ![ Gesteund ](/help/assets/icon-blue-check.png) | ![ Gesteund ](/help/assets/icon-blue-check.png) | ![ Gesteund ](/help/assets/icon-blue-check.png) | ![ Gesteund ](/help/assets/icon-blue-check.png) |
 | Mobiele app | | | | | |
-| | iOS-apparaten | ![Ondersteund](/help/assets/icon-blue-check.png) | ![Ondersteund](/help/assets/icon-blue-check.png) | ![Ondersteund](/help/assets/icon-blue-check.png) | | ![Ondersteund](/help/assets/icon-blue-check.png) | |
-| | Android-apparaten | ![Ondersteund](/help/assets/icon-blue-check.png) | ![Ondersteund](/help/assets/icon-blue-check.png) | ![Ondersteund](/help/assets/icon-blue-check.png) | | ![Ondersteund](/help/assets/icon-blue-check.png) |
-| | Windows-apparaten | | ![Ondersteund](/help/assets/icon-blue-check.png) | | | ![Ondersteund](/help/assets/icon-blue-check.png) |
+| | iOS-apparaten | ![ Gesteund ](/help/assets/icon-blue-check.png) | ![ Gesteund ](/help/assets/icon-blue-check.png) | ![ Gesteund ](/help/assets/icon-blue-check.png) | | ![ Gesteund ](/help/assets/icon-blue-check.png) | |
+| | Android-apparaten | ![ Gesteund ](/help/assets/icon-blue-check.png) | ![ Gesteund ](/help/assets/icon-blue-check.png) | ![ Gesteund ](/help/assets/icon-blue-check.png) | | ![ Gesteund ](/help/assets/icon-blue-check.png) |
+| | Windows-apparaten | | ![ Gesteund ](/help/assets/icon-blue-check.png) | | | ![ Gesteund ](/help/assets/icon-blue-check.png) |
 | OTT | | | | | | |
-| | Apple TV (tvOS) | ![Ondersteund](/help/assets/icon-blue-check.png) | ![Ondersteund](/help/assets/icon-blue-check.png) | ![Ondersteund](/help/assets/icon-blue-check.png) | | ![Ondersteund](/help/assets/icon-blue-check.png) |
-| | Roku | ![Ondersteund](/help/assets/icon-blue-check.png) | ![Ondersteund](/help/assets/icon-blue-check.png) | | ![Ondersteund](/help/assets/icon-blue-check.png)<br>(BrightScript) | ![Ondersteund](/help/assets/icon-blue-check.png)<br>(native) |
-| | Fire TV (Fire OS) | ![Ondersteund](/help/assets/icon-blue-check.png) | ![Ondersteund](/help/assets/icon-blue-check.png) | ![Ondersteund](/help/assets/icon-blue-check.png) | | ![Ondersteund](/help/assets/icon-blue-check.png) |
-| | Android-tv | ![Ondersteund](/help/assets/icon-blue-check.png) | ![Ondersteund](/help/assets/icon-blue-check.png) | ![Ondersteund](/help/assets/icon-blue-check.png) | | ![Ondersteund](/help/assets/icon-blue-check.png) |
-| | Chromecast | | ![Ondersteund](/help/assets/icon-blue-check.png) | | ![Ondersteund](/help/assets/icon-blue-check.png) | ![Ondersteund](/help/assets/icon-blue-check.png) |
-| | Gamingconsoles (bijvoorbeeld Xbox ONE, Sony PS3/PS4) | | ![Ondersteund](/help/assets/icon-blue-check.png) | | | ![Ondersteund](/help/assets/icon-blue-check.png) |
-| | Bovenste vakken instellen (bijvoorbeeld x1 x xfinity) | | ![Ondersteund](/help/assets/icon-blue-check.png) | | | ![Ondersteund](/help/assets/icon-blue-check.png) |
-| | Slimme tv&#39;s (bijvoorbeeld Samsung, LG, Sony, Vizio) | | ![Ondersteund](/help/assets/icon-blue-check.png) | | | ![Ondersteund](/help/assets/icon-blue-check.png) |
+| | Apple TV (tvOS) | ![ Gesteund ](/help/assets/icon-blue-check.png) | ![ Gesteund ](/help/assets/icon-blue-check.png) | ![ Gesteund ](/help/assets/icon-blue-check.png) | | ![ Gesteund ](/help/assets/icon-blue-check.png) |
+| | Roku | ![ Gesteund ](/help/assets/icon-blue-check.png) | ![ Gesteund ](/help/assets/icon-blue-check.png) | | ![ Gesteund ](/help/assets/icon-blue-check.png)<br> (BrightScript) | ![ Gesteund ](/help/assets/icon-blue-check.png)<br> (inheems) |
+| | Fire TV (Fire OS) | ![ Gesteund ](/help/assets/icon-blue-check.png) | ![ Gesteund ](/help/assets/icon-blue-check.png) | ![ Gesteund ](/help/assets/icon-blue-check.png) | | ![ Gesteund ](/help/assets/icon-blue-check.png) |
+| | Android-tv | ![ Gesteund ](/help/assets/icon-blue-check.png) | ![ Gesteund ](/help/assets/icon-blue-check.png) | ![ Gesteund ](/help/assets/icon-blue-check.png) | | ![ Gesteund ](/help/assets/icon-blue-check.png) |
+| | Chromecast | | ![ Gesteund ](/help/assets/icon-blue-check.png) | | ![ Gesteund ](/help/assets/icon-blue-check.png) | ![ Gesteund ](/help/assets/icon-blue-check.png) |
+| | Gamingconsoles (bijvoorbeeld Xbox ONE, Sony PS3/PS4) | | ![ Gesteund ](/help/assets/icon-blue-check.png) | | | ![ Gesteund ](/help/assets/icon-blue-check.png) |
+| | Bovenste vakken instellen (bijvoorbeeld x1 x xfinity) | | ![ Gesteund ](/help/assets/icon-blue-check.png) | | | ![ Gesteund ](/help/assets/icon-blue-check.png) |
+| | Slimme tv&#39;s (bijvoorbeeld Samsung, LG, Sony, Vizio) | | ![ Gesteund ](/help/assets/icon-blue-check.png) | | | ![ Gesteund ](/help/assets/icon-blue-check.png) |
 | Overige | | | | | | |
-| | Nieuwe aangesloten apparaten | | ![Ondersteund](/help/assets/icon-blue-check.png) | | | ![Ondersteund](/help/assets/icon-blue-check.png) |
+| | Nieuwe aangesloten apparaten | | ![ Gesteund ](/help/assets/icon-blue-check.png) | | | ![ Gesteund ](/help/assets/icon-blue-check.png) |
 
 {style="table-layout:auto"}

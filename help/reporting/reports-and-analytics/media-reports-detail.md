@@ -1,6 +1,6 @@
 ---
 title: Media-details
-description: "Gedetailleerde meetgegevens weergeven voor gelijktijdige viewers of listeners, het begin van de inhoud, de voltooiingssnelheid, de doorgebrachte tijd en het begin van de advertentie op het dashboard voor mediadetail."
+description: Gedetailleerde meetgegevens weergeven voor gelijktijdige viewers of listeners, het begin van de inhoud, de voltooiingssnelheid, de doorgebrachte tijd en het begin van de advertentie op het dashboard voor mediadetail.
 uuid: 57d7f5b0-41dd-41d7-9a5a-474528839be5
 exl-id: 3c707539-95a4-4e16-97f0-f3fe0be4fe74
 feature: "Media Analytics, Reports & Analytics Basics"

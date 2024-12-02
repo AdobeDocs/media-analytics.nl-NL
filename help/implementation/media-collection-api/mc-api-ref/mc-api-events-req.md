@@ -1,14 +1,14 @@
 ---
 title: API voor streaming media Collection � Events Request Endpoint
-description: "Wat zijn de gebeurtenissen van de Inzameling van Media API verzoeken eindpuntparameters en reacties?"
+description: Wat zijn de gebeurtenissen van de Inzameling van Media API verzoeken eindpuntparameters en reacties?
 uuid: b237f0a0-dc29-418b-89ee-04c596a27f39
 exl-id: ee0dd8a6-1529-4258-af12-0e2f5948ec38
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 4%
+source-wordcount: '262'
+ht-degree: 1%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 4%
 
 ## URI-parameter
 
-`sid`: De sessie-id die door een [Aanvraag voor sessies](mc-api-sessions-req.md).
+`sid`: Sessieidentiteitskaart die van het verzoek van a [ Sessies ](mc-api-sessions-req.md) is teruggekeerd.
 
-## Verzoek
+## Indieningsinstantie
 
 De aanvraaginstantie moet JSON zijn en dezelfde structuur hebben als deze instantie die het verzoek indient:
 
@@ -37,21 +37,21 @@ De aanvraaginstantie moet JSON zijn en dezelfde structuur hebben als deze instan
 }
 ```
 
-* `playerTime` (Verplicht)
-   * `playhead` - Moet in seconden zijn, maar het kan een float zijn.
+* `playerTime` (verplicht)
+   * `playhead` - Moet in seconden zijn, maar het kan een zwevende waarde zijn.
    * `ts` - Tijdstempel; moet in milliseconden zijn.
-* `eventType` (Verplicht)
-* `params` (Optioneel)
-* `customMetadata` (facultatief; alleen verzenden met `adStart` en `chapterStart` gebeurtenistypen)
-* `qoeData` (Optioneel)
+* `eventType` (verplicht)
+* `params` (optioneel)
+* `customMetadata` (Optioneel; alleen verzenden met gebeurtenistypen `adStart` en `chapterStart` )
+* `qoeData` (optioneel)
 
-Zie voor een lijst met geldige gebeurtenistypen voor deze release [Gebeurtenistypen en beschrijvingen.](mc-api-event-types.md)
+Voor een lijst van geldige gebeurtenistypen voor deze versie, zie {de types en de beschrijvingen van 0} Gebeurtenis.](mc-api-event-types.md)[
 
 >[!IMPORTANT]
 >
->***Advertentie bijhouden -**U kunt alleen advertenties bijhouden in een`adBreak`*.
+>***Advertentie die -**volgt kunt slechts advertenties binnen een`adBreak`* volgen.
 >
->Bij gebrek aan `adBreakStart` en `adBreakComplete` &quot;bookends&quot; rondom advertenties, `adStart` en `adComplete` gebeurtenissen worden gewoon genegeerd en de corresponderende duur van de advertentie wordt bijgehouden als de duur van de hoofdinhoud. Dit kan een aanzienlijke invloed hebben op de geaggregeerde gegevens die in Adobe Analytics beschikbaar zullen zijn.
+>Als de gebeurtenissen `adBreakStart` en `adBreakComplete` &quot;bookends&quot; rondom advertenties ontbreken, worden `adStart` en `adComplete` gewoon genegeerd en wordt de bijbehorende duur van de advertentie bijgehouden als de duur van de hoofdinhoud. Dit kan een aanzienlijke invloed hebben op de geaggregeerde gegevens die in Adobe Analytics beschikbaar zullen zijn.
 
 ## Antwoord
 
@@ -70,8 +70,8 @@ Access-Control-Expose-Headers Location
 
 | HTTP-antwoordcode | Beschrijving | Client-actiepunten |
 |---|---|---|
-| **204** | **Geen inhoud.** <br/><br/>Aanroep hartslag is gelukt. | N.v.t. |
-| **400** | **Onjuist verzoek.** <br/><br/>Verzoek had onjuiste indeling. | Controleer de [JSON-validatieschema&#39;s](mc-api-json-validation.md) voor het type aanvraag. |
-| **404** | **Niet gevonden.** <br/><br/>De sessie-id voor de mediasessie is niet gevonden in de back-endservice. | De clienttoepassing moet de opdracht [Aanvraag voor sessies](mc-api-sessions-req.md) API om een andere mediasessie te maken en rapport bijhouden. |
-| **410** | **Kegel.** <br/><br/>De mediasessie is gevonden in de back-endservice, maar de client kan er geen activiteiten meer over rapporteren. | De clienttoepassing moet de opdracht [Aanvraag voor sessies](mc-api-sessions-req.md) API om een andere mediasessie te maken en rapport bijhouden. |
-| **500** | **Serverfout** | N.v.t. |
+| **204** | **Geen inhoud.** <br/><br/> De hartslagvraag was succesvol. | N.v.t. |
+| **400** | **Onjuist Verzoek.** <br/><br/> Verzoek had onjuist formaat. | Controleer de [ JSON bevestigingsschema&#39;s ](mc-api-json-validation.md) voor het verzoektype. |
+| **404** | **niet gevonden.** <br/><br/> Sessie-id voor de mediasessie is niet gevonden in de back-end service. | De cliënttoepassing zou het [ verzoek van Sessies ](mc-api-sessions-req.md) API moeten gebruiken om een andere media zitting tot stand te brengen en het volgen op het te melden. |
+| **410** | **Gone.** <br/><br/> de media zitting werd gevonden in de achterste-einddienst maar de cliënt kan activiteit niet meer op het melden. | De cliënttoepassing zou het [ verzoek van Sessies ](mc-api-sessions-req.md) API moeten gebruiken om een andere media zitting tot stand te brengen en het volgen op het te melden. |
+| **500** | **fout van de Server** | N.v.t. |
