@@ -4,17 +4,17 @@ description: Leer hoe u Adobe Streaming Media voor webapps implementeert.
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 05c68b0a-f387-4bcc-8792-f6b1caa40706
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '119'
+source-wordcount: '117'
 ht-degree: 0%
 
 ---
 
-# De invoegtoepassing voor de verzameling van streaming media installeren met de extensie Media Analytics
+# De verzameling streamingmedia installeren met de extensie Media Analytics
 
-U kunt de uitbreiding van de Analyse van Adobe Media gebruiken om de Adobe uit te voeren die toe:voegen-op de Inzameling van Media stroomt. De extensie Media Analytics voegt de core JavaScript Media SDK (Media 3.x SDK) toe. Deze extensie biedt de functionaliteit voor het toevoegen van de instantie Media tracker aan een site of project waarvoor tags zijn ingeschakeld.
+Met de extensie Adobe Media Analytics kunt u de Adobe Streaming Media Collection implementeren. De extensie Media Analytics voegt de core JavaScript Media SDK (Media 3.x SDK) toe. Deze extensie biedt de functionaliteit voor het toevoegen van de instantie Media tracker aan een site of project waarvoor tags zijn ingeschakeld.
 
-Voor informatie over het installeren en gebruiken van de extensie raadpleegt u [Adobe Media Analytics (3.x SDK) voor audio- en videoextensie — gebruik van Tags (gegevensverzameling)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=en).
+Voor informatie over hoe te om de uitbreiding te installeren en te gebruiken, zie [ Analytics van Adobe Media (3.x SDK) voor Audio en Video uitbreiding - gebruikend Markeringen (de Inzameling van Gegevens) ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=en).
 
-U kunt ook Analytics implementeren met JavaScript, zoals beschreven in [Analyses implementeren met JavaScript](/help/implementation/media-sdk/setup/web-implementation.md).
+Alternatief, kunt u Analytics uitvoeren gebruikend JavaScript, zoals die in [ wordt beschreven voert Analytics uit gebruikend JavaScript ](/help/implementation/media-sdk/setup/web-implementation.md).

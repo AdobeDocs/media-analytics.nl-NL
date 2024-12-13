@@ -1,19 +1,19 @@
 ---
 product: adobe analytics
 audience: end-user
-user-guide-title: Invoegtoepassing voor het streamen van media
+user-guide-title: Streaming media-verzameling
 breadcrumb-title: Handleiding voor het streamen van mediaverzameling
 user-guide-description: Implementeer streaming van media. Bevat de Media-SDK en de Media Collection-API.
 sub-product: media analytics
-source-git-commit: 0079116bcf39bb6d20b4fd5f14bd3c19137c46e3
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '895'
-ht-degree: 14%
+source-wordcount: '893'
+ht-degree: 13%
 
 ---
 
 
-# Invoegtoepassing voor het streamen van media {#using}
+# Streaming media-verzameling {#using}
 
 + [Handleiding voor het streamen van mediaverzameling](media-overview.md)
 + Opmerkingen bij de release {#release-notes}
@@ -25,11 +25,11 @@ ht-degree: 14%
    + [SDK&#39;s, bibliotheken en extensies](getting-started/download-sdks.md)
    + Einde van ondersteuning {#end-of-support}
       + [Media Analytics Mobile SDK End of Support](additional-resources/end-of-support-faqs.md)
-      + Verouderd - Standalone Media SDK om migratie te starten {#sdk-to-launch}
+      + Verouderd - Standalone media SDK om migratie te starten {#sdk-to-launch}
          + [Overzicht](legacy/sdk-to-launch/sdk-to-launch-migration.md)
-         + [Android - SDK van media om te starten](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
-         + [iOS - SDK van media om te starten](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
-         + [ JavaScript - SDK van Media aan Lancering ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
+         + [Android - Media SDK om te starten](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
+         + [iOS - Media SDK om te starten](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
+         + [ JavaScript - Media SDK om ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md) te lanceren
 + Implementatie {#implementation}
    + [Overzicht van implementatie](implementation/overview.md)
    + Edge-implementaties (aanbevolen) {#edge-recommended}
@@ -46,7 +46,7 @@ ht-degree: 14%
          + [Media Analytics-extensie](implementation/media-sdk/setup/web-implementation-tags.md)
          + [Mobiele SDK&#39;s](implementation/media-sdk/setup/mobile-implementation.md)
          + OTT SDK&#39;s {#ott-setup}
-            + [De Chromecast SDK installeren](implementation/media-sdk/setup/set-up-chromecast.md)
+            + [Chromecast SDK installeren](implementation/media-sdk/setup/set-up-chromecast.md)
             + [De Roku SDK installeren](implementation/media-sdk/setup/set-up-roku.md)
       + Media Collection-API&#39;s - Implementatie {#streaming-media-apis}
          + [Media-verzameling](implementation/media-collection-api/mc-api-overview.md)
@@ -92,7 +92,7 @@ ht-degree: 14%
       + [Gelijktijdige viewergegevens ophalen](reporting/reports-and-analytics/get-concurrent-json20.md)
       + [ krijgt de Gegevens van de Tijd van de Playback van Media van de Tijd bestede ](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
 + Gevallen gebruiken {#media-use-cases}
-   + [Gebruiksscenario&#39;s van SDK voor media](use-cases/cookbook/sdk-cookbook-overview.md)
+   + [Gebruiksscenario&#39;s voor Media SDK](use-cases/cookbook/sdk-cookbook-overview.md)
    + Player-status bijhouden {#player-state-tracking}
       + [Overzicht](use-cases/player-state-tracking/player-state-overview.md)
       + [Standaard- en aangepaste frames](use-cases/player-state-tracking/standard-and-custom-states.md)
@@ -166,7 +166,7 @@ ht-degree: 14%
    + [Verouderd - Overzicht](legacy/setup/legacy-setup-overview.md)
    + [Verouderd — SDK&#39;s downloaden](legacy/legacy-download-sdks.md)
    + Verouderd - SDK&#39;s voor media {#legacy-media-sdks}
-      + [Verouderd - Overzicht van Media SDK](legacy/media-sdk/setup/setup-overview.md)
+      + [Verouderd - Media SDK - Overzicht](legacy/media-sdk/setup/setup-overview.md)
       + [Android instellen](legacy/media-sdk/setup/set-up-android.md)
       + [IOS instellen](legacy/media-sdk/setup/set-up-ios.md)
       + JavaScript instellen {#setup-javascript}
@@ -238,10 +238,10 @@ ht-degree: 14%
          + [VOD afspelen met pre-roll-advertenties](use-cases/tracking-scenarios/vod-preroll-ads.md)
          + [VOD afspelen met overgeslagen advertenties](use-cases/tracking-scenarios/vod-skipped-ads.md)
          + [VOD afspelen met één hoofdstuk](use-cases/tracking-scenarios/vod-one-chapter.md)
-         + [VOD afspelen met een overgeslagen hoofdstuk](use-cases/tracking-scenarios/vod-skipped-chapter.md)
+         + [VOD afspelen met overgeslagen hoofdstuk](use-cases/tracking-scenarios/vod-skipped-chapter.md)
          + [VOD afspelen met zoeken in de hoofdinhoud](use-cases/tracking-scenarios/vod-seeking.md)
          + [VOD afspelen met bufferen](use-cases/tracking-scenarios/vod-buffering.md)
-         + [Meerdere VOD-trackers parallel](use-cases/tracking-scenarios/vod-multi-trackers.md)
+         + [Meerdere trackers van VOD parallel](use-cases/tracking-scenarios/vod-multi-trackers.md)
          + [VOD één tracker voor meerdere sessies](use-cases/tracking-scenarios/vod-multi-track-one-session.md)
          + [Actieve hoofdinhoud](use-cases/tracking-scenarios/live-main-content.md)
          + [Actieve hoofdinhoud met opeenvolgende spatiëring](use-cases/tracking-scenarios/live-sequential.md)

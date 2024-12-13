@@ -1,32 +1,32 @@
 ---
 title: Uitvoeren van Uitgevoerde Media SDKs
-description: Leer hoe u de SDK van Media instelt voor het bijhouden van media in uw mobiele, OTT- en browser-toepassingen (JS).
+description: Leer hoe u de Media SDK instelt voor het bijhouden van media in uw mobiele, OTT- en browsertoepassingen (JS).
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '617'
 ht-degree: 1%
 
 ---
 
-# Verouderd - Overzicht van de installatie van Media SDK {#setup-overview}
+# Verouderd - Media SDK Setup - Overzicht {#setup-overview}
 
-Nadat u de SDK van Media voor uw video-app of -speler hebt gedownload, volgt u de informatie in deze sectie om de SDK van Media in te stellen en te implementeren.
+Nadat u de Media SDK voor uw video-app of -speler hebt gedownload, volgt u de informatie in deze sectie om de Media SDK in te stellen en te implementeren.
 
 
 ## Algemene uitvoeringsrichtsnoeren {#general-implementation-guidelines}
 
-Er zijn drie belangrijke componenten SDK die in het volgen met de Streaming Invoegtoepassing van de Inzameling van Media worden gebruikt:
+Er zijn drie belangrijke SDK-componenten die worden gebruikt voor het bijhouden van streaming media Collection:
 * Configuratie van mediageletterdheid - De `MediaHeartbeatConfig` bevat de basisinstellingen voor rapportage.
 * Media Heartmaatdelegatie - De `MediaHeartbeatDelegate` bestuurt de afspeeltijd en het QoS-object.
 * Mediahartslag - De `MediaHeartbeat` is de primaire bibliotheek met leden en methoden.
 
-## De SDK voor streaming media implementeren
+## Implementeer de Streaming Media SDK
 
-Voer de volgende implementatiestappen uit om de SDK voor Streaming Media in te stellen en te gebruiken:
+Voer de volgende implementatiestappen uit om de Streaming Media SDK in te stellen en te gebruiken:
 
 1. Maak een `MediaHeartbeatConfig` -instantie en stel de parameterwaarden voor de configuratie in.
 
@@ -45,7 +45,7 @@ Voer de volgende implementatiestappen uit om de SDK voor Streaming Media in te s
    |  Naam van methode  |  Beschrijving  | Vereist |
    | --- | --- | :---: |
    | `getQoSObject()` | Retourneert de `MediaObject` -instantie die de huidige QoS-informatie bevat. Deze methode wordt meerdere keren aangeroepen tijdens een afspeelsessie. De implementatie van de speler moet altijd de recentst beschikbare gegevens terugkeren QoS. | Ja |
-   | `getCurrentPlaybackTime()` | Retourneert de huidige positie van de afspeelkop. <br /> Voor VOD-tracking wordt de waarde opgegeven in seconden vanaf het begin van het media-item. <br /> Als de speler voor live streaming geen informatie geeft over de duur van de inhoud, kan de waarde worden opgegeven als het aantal seconden sinds middernacht UTC van die dag. <br /> Opmerking: wanneer u voortgangsmarkeringen gebruikt, is de duur van de inhoud vereist en moet de afspeelkop worden bijgewerkt tot het aantal seconden vanaf het begin van het media-item, te beginnen met 0. | Ja |
+   | `getCurrentPlaybackTime()` | Retourneert de huidige positie van de afspeelkop. <br /> Voor het bijhouden van VOD wordt de waarde opgegeven in seconden vanaf het begin van het media-item. <br /> Als de speler voor live streaming geen informatie geeft over de duur van de inhoud, kan de waarde worden opgegeven als het aantal seconden sinds middernacht UTC van die dag. <br /> Opmerking: wanneer u voortgangsmarkeringen gebruikt, is de duur van de inhoud vereist en moet de afspeelkop worden bijgewerkt tot het aantal seconden vanaf het begin van het media-item, te beginnen met 0. | Ja |
 
    >[!TIP]
    >

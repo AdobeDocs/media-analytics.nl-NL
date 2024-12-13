@@ -1,13 +1,13 @@
 ---
-title: Hoe te opstelling SDK van Media voor Roku
+title: Media SDK instellen voor Roku
 description: Voer de volgende stappen uit om de Media SDK-toepassing in te stellen op Roku.
 uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 1375fb3260d5c4ca703827b3d73174f4e475f76d
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '664'
 ht-degree: 1%
 
 ---
@@ -16,15 +16,15 @@ ht-degree: 1%
 
 ## Vereisten {#roku-prerequisites}
 
-* **verkrijg geldige configuratieparameters voor de Streaming Invoegtoepassing van de Inzameling van Media**
+* **verkrijg geldige configuratieparameters voor de Streaming Inzameling van Media**
 
-  Deze parameters kunnen van een vertegenwoordiger van de Adobe worden verkregen nadat u opstelling uw Adobe het Stromen toe:voegen-op rekening van de Inzameling van Media.
+  Deze parameters kunt u verkrijgen van een Adobe-medewerker nadat u uw account voor het streamen van Adobe-media verzameling hebt ingesteld.
 * **omvat volgende APIs in uw media speler**
 
-   * _API om aan spelergebeurtenissen_ in te tekenen - SDK van Media vereist dat u een reeks eenvoudige APIs roept wanneer de gebeurtenissen in uw speler voorkomen.
+   * _API om aan spelergebeurtenissen_ in te tekenen - de Media SDK vereist dat u een reeks eenvoudige APIs roept wanneer de gebeurtenissen in uw speler voorkomen.
    * _API die spelerinformatie_ verstrekt - Deze informatie omvat details zoals de media naam en de positie van het spelhoofd.
 
-Met Roku SDK 2.x voor Experience Cloud Solutions kunt u Roku-toepassingen die in BrightScript zijn geschreven, gebruiken en gegevens van het publiek verzamelen via het beheer van het publiek en de betrokkenheid van video meten via videogebeurtenissen.
+Met Roku SDK 2.x for Experience Cloud Solutions kunt u Roku-toepassingen die in BrightScript zijn geschreven, gebruiken en gegevens van het publiek verzamelen via publieksbeheer en de betrokkenheid van video&#39;s meten via videogebeurtenissen.
 
 ## Implementatie van mobiele bibliotheek / SDK
 
@@ -34,7 +34,7 @@ Met Roku SDK 2.x voor Experience Cloud Solutions kunt u Roku-toepassingen die in
 
       * `adbmobile.brs`: Dit bibliotheekbestand wordt opgenomen in de bronmap van de Roku-app.
 
-      * `ADBMobileConfig.json`: Dit SDK-configuratiebestand is aangepast voor uw app.
+      * `ADBMobileConfig.json`: Dit SDK-configuratiebestand wordt aangepast voor uw app.
 
    1. Voeg het bibliotheekbestand en het JSON-configuratiebestand toe aan uw projectbron.
 
@@ -159,16 +159,16 @@ Met Roku SDK 2.x voor Experience Cloud Solutions kunt u Roku-toepassingen die in
    |  Methode   | Beschrijving |
    | --- | --- |
    | `setPrivacyStatus` | Stelt de privacystatus in op de SDK. <br/><br/>`ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)` |
-   | `getPrivacyStatus` | Haalt de huidige privacystatus op die is ingesteld op de SDK. <br/><br/>`privacyStatus = ADBMobile().getPrivacyStatus()` |
+   | `getPrivacyStatus` | Haalt de huidige privacystatus op die op de SDK is ingesteld. <br/><br/>`privacyStatus = ADBMobile().getPrivacyStatus()` |
 
    >[!IMPORTANT]
    >
-   >Zorg ervoor dat u de functies `processMessages` en `processMediaMessages` om de 250 ms aanroept in de hoofdgebeurtenislus om ervoor te zorgen dat de SDK de pingelt correct verzendt.
+   >Zorg ervoor dat u de `processMessages` - en `processMediaMessages` -functie om de 250 ms aanroept in de hoofdgebeurtenislus om ervoor te zorgen dat de SDK de pingelt correct verzendt.
 
    |  Methode   | Beschrijving |
    | --- | --- |
-   | `processMessages` | Verantwoordelijk om de gebeurtenissen van de Analytics tot SDK over te gaan die moeten worden behandeld.  <br/><br/>`ADBMobile().processMessages()` |
-   | `processMediaMessages` | Verantwoordelijk om de gebeurtenissen van Media tot SDK over te gaan die moeten worden behandeld. <br/><br/>`ADBMobile().processMediaMessages()` |
+   | `processMessages` | Verantwoordelijk om de gebeurtenissen van de Analytics tot SDK over te gaan om worden behandeld.  <br/><br/>`ADBMobile().processMessages()` |
+   | `processMediaMessages` | Verantwoordelijk om de Media-gebeurtenissen door te geven aan de SDK die moet worden afgehandeld. <br/><br/>`ADBMobile().processMediaMessages()` |
 
 
 <!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->

@@ -1,36 +1,36 @@
 ---
 title: Implementatie aangepaste koppeling beschreven
-description: Leer hoe te om het volgen van de Verbinding van de Douane in het Streamen toe:voegen-on van de Inzameling van Media uit te voeren.
+description: Leer hoe u het bijhouden van aangepaste koppelingen kunt implementeren in de verzameling Streaming media.
 uuid: 83315e73-20ca-4db5-9d43-33daade45a13
 exl-id: ee6f931a-ef80-4ebe-8ccb-cdbf970516e6
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '178'
+source-wordcount: '177'
 ht-degree: 0%
 
 ---
 
 # Custom Link Implementation Guide{#custom-link-implementation-guide}
 
-Bij Aangepaste videotracering wordt handmatig koppelingen bijgehouden met behulp van aangepaste koppelingscode in Analytics `appMeasurement`.
+Bij Aangepaste videotracering wordt handmatig koppelingen bijgehouden met behulp van aangepaste koppelingscode in Analytics `appMeasurement` .
 Het meest wordt aangepaste videotracering van koppelingen gebruikt op platforms en apparaten waar minimale videometing nodig is.
 
-* In JavaScript: de `s.tl()` function
-* In mobiele toepassingen: [trackAction() Android](https://experienceleague.adobe.com/docs/mobile-services/android/analytics-android/actions.html), [trackAction() iOS](https://experienceleague.adobe.com/docs/mobile-services/ios/analytics-ios/actions.html), [trackAction() OTT](/help/use-cases/analytics-with-ott/track-app-actions.md)
-* In de API voor gegevensinvoeging: [linktype-tag](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
+* In JavaScript: de functie `s.tl()`
+* In Mobiele Apps: [ trackAction () Android ](https://experienceleague.adobe.com/docs/mobile-services/android/analytics-android/actions.html), [ trackAction () iOS ](https://experienceleague.adobe.com/docs/mobile-services/ios/analytics-ios/actions.html), [ trackAction () OTT ](/help/use-cases/analytics-with-ott/track-app-actions.md)
+* In de Invoeging API van Gegevens: [ linktype markering ](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
 
 ## Vereisten
 
 * Toegang tot API-gebeurtenissen en -gegevens van videospeler
-* Mogelijkheid om scripts toe te voegen bij gebruik van Analytics SDK
+* Scripts toevoegen met Analytics SDK
 * Mogelijkheid om tekstspatiëringsbakens toe te voegen (aangepaste scripts of hardcode) bij gebruik van de API voor gegevensinvoeging
 
 ## Metagegevens
 
 * Metagegevens kunnen aan elke volgende aanroep worden toegevoegd als onderdeel van de koppelingsgegevens
-* Vergeet niet de `linkTrackVars` en `linkTrackEvents`
+* Vergeet niet de `linkTrackVars` en `linkTrackEvents` bij te werken
 
 ```javascript
 /* Call on video complete */

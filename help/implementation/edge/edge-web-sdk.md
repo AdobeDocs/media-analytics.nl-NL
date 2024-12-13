@@ -4,39 +4,39 @@ description: Leer hoe u Adobe Streaming Media-gegevens naar Experience Platform 
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: de40ebd9-46be-4a52-866f-7bb2589fce28
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
 
 # Webgegevens naar Edge verzenden met de Adobe Experience Platform Web SDK
 
-Vanaf versie 2.20.0 worden de `streamingMedia` onderdeel van de Adobe Experience Platform [Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home) kunt u gegevens verzamelen die betrekking hebben op mediasessies op uw website. De verzamelde gegevens kunnen informatie over media playbacks, pauzes, voltooiing, en andere verwante gebeurtenissen omvatten.
+Beginnend met versie 2.20.0, laat de `streamingMedia` component van Adobe Experience Platform [ Web SDK ](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home) u toe om gegevens te verzamelen met betrekking tot media zittingen op uw website. De verzamelde gegevens kunnen informatie over media playbacks, pauzes, voltooiing, en andere verwante gebeurtenissen omvatten.
 
 Nadat gegevens zijn verzameld, kunt u deze naar Adobe Experience Platform en/of Adobe Analytics verzenden om rapporten te genereren. Deze functie biedt een uitgebreide oplossing voor het bijhouden en begrijpen van het gedrag van het mediaconsumptie op uw website.
 
-Voor klanten die de Media JS SDK gebruiken, verstrekt het Web SDK een migratieweg om van Media JS SDK aan Web SDK te bewegen, terwijl het omvat steun voor bestaande de functionaliteit van Media JS, zoals het behandelen van media gebeurtenissen.
+Voor klanten die Media JS SDK gebruiken, verstrekt Web SDK een migratieweg om zich van Media JS SDK aan Web SDK te bewegen, terwijl het omvat steun voor bestaande functionaliteit van Media JS, zoals het behandelen van media gebeurtenissen.
 
 ## Vereisten {#prerequisites}
 
-Als u de opdracht `streamingMedia` component van Web SDK, moet u aan de volgende voorwaarden voldoen:
+Als u de `streamingMedia` -component van Web SDK wilt gebruiken, moet u aan de volgende voorwaarden voldoen:
 
-* Voordat u streaming mediagegevens naar Edge kunt verzenden, voert u eerst de stappen in [De invoegtoepassing voor streaming media Collection installeren met Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
+* Alvorens u het stromen media gegevens naar Edge kunt verzenden, voltooi eerst de stappen in [ installeer de het stromen Inzameling van Media met Experience Platform Edge ](/help/implementation/edge/implementation-edge.md).
 * Zorg ervoor dat u toegang hebt tot Adobe Experience Platform en/of Adobe Analytics.
-* U moet Web SDK versie 2.20.0 of later gebruiken. Zie de [Overzicht van de installatie van Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/overview) voor informatie over het installeren van de nieuwste versie.
-* De optie **[[!UICONTROL Media Analytics]](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)** voor de gegevensstroom die u gebruikt.
+* U moet Web SDK versie 2.20.0 of later gebruiken. Zie het [ de installatieoverzicht van SDK van het Web ](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/overview) leren hoe te om de recentste versie te installeren.
+* Laat de **[[!UICONTROL Media Analytics]](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)** optie voor de gegevensstroom toe u gebruikt.
 * Zorg ervoor dat het schema dat door uw gegevensstroom wordt gebruikt de het schemagebieden van de Inzameling van Media omvat.
-* Vorm de Streaming eigenschap van Media in de configuratie van SDK van het Web, zoals aangetoond in deze pagina, of door [tagextensie](#tag-extension) of via de [JavaScript-bibliotheek](#library).
+* Vorm de Streaming eigenschap van Media in de configuratie van SDK van het Web, zoals aangetoond in deze pagina, of door de [ markeringsuitbreiding ](#tag-extension) of door de [ bibliotheek van JavaScript ](#library).
 
-Voer de stappen uit die in deze pagina worden beschreven om uw invoegtoepassing voor het streamen van media-verzamelingen te migreren van Media JS naar Web SDK.
+Voer de stappen uit die in deze pagina worden beschreven om uw implementatie van de verzameling van streaming media te migreren van Media JS naar Web SDK.
 
-### Stap 1: SDK van Web Experience Platform installeren
+### Stap 1: Installeer Experience Platform Web SDK
 
-Zie de [speciale documentatie](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/overview) voor meer informatie over het installeren van Web SDK op uw wegeigenschappen.
+Zie [ specifieke documentatie ](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/overview) leren hoe te om SDK van het Web op uw Webeigenschappen te installeren.
 
-### Stap 2: Vorm SDK van het Web `streamingMedia` component.
+### Stap 2: Configureer de Web SDK `streamingMedia` -component.
 
 **Voorbeeld**
 
@@ -54,7 +54,7 @@ mediaConfig.ssl = true;
 ADB.Media.configure(mediaConfig, appMeasurement);
 ```
 
-In plaats daarvan, moet u vormen `streamingMedia` in de Web SDK zoals hieronder wordt geïllustreerd.
+In plaats daarvan moet u de `streamingMedia` -component configureren in de Web SDK, zoals hieronder wordt geïllustreerd.
 
 ```js
 alloy("configure", {
@@ -68,15 +68,15 @@ alloy("configure", {
 });
 ```
 
-Zie de Web SDK `streamingMedia` component [documentatie](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/streamingmedia) voor volledige details over hoe te om het te vormen.
+Zie het Web SDK `streamingMedia` component [ documentatie ](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/streamingmedia) voor volledige details over hoe te om het te vormen.
 
 ### Stap 3: Haal de instantie van de mediatracker op wanneer u migreert van de Media JS SDK
 
-Voor klanten die de Media JS SDK gebruiken, verstrekt het Web SDK een migratieweg om van Media JS SDK aan Web SDK te bewegen, terwijl het omvat steun voor bestaande de functionaliteit van Media JS, zoals het behandelen van media gebeurtenissen.
+Voor klanten die Media JS SDK gebruiken, verstrekt Web SDK een migratieweg om zich van Media JS SDK aan Web SDK te bewegen, terwijl het omvat steun voor bestaande functionaliteit van Media JS, zoals het behandelen van media gebeurtenissen.
 
-[!DNL Web SDK] bevat een opdracht om een Media Analytics Tracker op te halen. U kunt deze opdracht gebruiken om een objectinstantie te maken en vervolgens dezelfde API&#39;s te gebruiken als de API&#39;s die door de [Media JS-bibliotheek](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/APIReference.html), media-gebeurtenissen volgen.
+[!DNL Web SDK] bevat een opdracht voor het ophalen van een Media Analytics Tracker. U kunt dit bevel gebruiken om een objecten instantie tot stand te brengen en dan, gebruikend zelfde APIs zoals die door de [ bibliotheek JS van Media ](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/APIReference.html) worden verstrekt, de gebeurtenissen van de spoormedia.
 
-Zie de [`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker) documentatie voor volledige informatie over de ondersteunde methoden.
+Zie de [`getMediaAnalyticsTracker` ](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker) documentatie voor volledige details over de gesteunde methodes.
 
 In het onderstaande fragment ziet u hoe u de instantie van de mediatracker in Media JS kunt ophalen.
 
@@ -84,7 +84,7 @@ In het onderstaande fragment ziet u hoe u de instantie van de mediatracker in Me
 var tracker = ADB.Media.getInstance();
 ```
 
-Gebruik in plaats daarvan de opdracht `getMediaAnalyticsTracker` bevel in Web SDK om het zelfde resultaat, zoals hieronder getoond te bereiken.
+Gebruik in plaats daarvan de opdracht `getMediaAnalyticsTracker` in Web SDK om hetzelfde resultaat te bereiken, zoals hieronder wordt weergegeven.
 
 ```js
 // aquire Media Analytics APIs
@@ -93,7 +93,7 @@ const Media = await window.alloy("getMediaAnalyticsTracker", {});
 const trackerInstance = Media.getInstance();
 ```
 
-Alle hulpmethoden zijn beschikbaar op de `Media` object. De trackermethoden zijn beschikbaar op de tracker-instantie, zoals hieronder wordt weergegeven.
+Alle hulpmethoden zijn beschikbaar voor het `Media` -object. De trackermethoden zijn beschikbaar op de tracker-instantie, zoals hieronder wordt weergegeven.
 
 ```js
 const mediaInfo = Media.createMediaObject(

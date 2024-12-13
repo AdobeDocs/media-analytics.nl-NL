@@ -1,27 +1,27 @@
 ---
-title: Implementeer de invoegtoepassing voor het streamen van media-verzamelingen met de Edge Network
-description: Leer hoe de invoegtoepassing voor het streamen van media-verzamelingen kan worden geïmplementeerd met Experience Platform Edge.
+title: Implementeer de Streaming Media Collection gebruikend de Edge Network
+description: Leer hoe de Verzameling van Media van de Streaming met Experience Platform Edge kan worden uitgevoerd.
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: 380d3ea192162226816d2e269e5cca20f981ac0f
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '2154'
+source-wordcount: '2146'
 ht-degree: 0%
 
 ---
 
-# Implementeer de invoegtoepassing voor het streamen van media-verzamelingen met de Edge Network
+# Implementeer de Streaming Media Collection gebruikend de Edge Network
 
 Met de Adobe Experience Platform-Edge Network kunt u gegevens die bestemd zijn voor meerdere producten naar een gecentraliseerde locatie verzenden. De ervaring met Edge geeft de juiste informatie door aan de gewenste producten. Met dit concept kunt u de implementatie-inspanningen consolideren, met name voor het overspannen van meerdere gegevensoplossingen.
 
-In de volgende afbeelding ziet u hoe de invoegtoepassing voor het streamen van media-Adobe kan worden geïmplementeerd om Experience Platform Edge te gebruiken om gegevens beschikbaar te maken in Analysis Workspace, in Adobe Analytics of Customer Journey Analytics:
+In de volgende afbeelding ziet u hoe de Adobe Streaming Media Collection kan worden geïmplementeerd om Experience Platform Edge te gebruiken om gegevens beschikbaar te maken in Analysis Workspace, in Adobe Analytics of Customer Journey Analytics:
 
 ![ CJA werkschema ](assets/streaming-media-edge.png)
 
-Voor een overzicht van alle implementatieopties, met inbegrip van implementatiemethodes die geen Experience Platform Edge gebruiken, zie [ de Streaming Invoegtoepassing van de Inzameling van Media uitvoeren ](/help/implementation/overview.md).
+Voor een overzicht van alle implementatieopties, met inbegrip van implementatiemethodes die geen Experience Platform Edge gebruiken, zie [ de Streaming Inzameling van Media uitvoeren ](/help/implementation/overview.md).
 
-Ongeacht of u de Adobe Experience Platform Web SDK, de Adobe Experience Platform Mobile SDK, de Adobe Experience Platform Roku SDK, of API gebruikt om de Invoegtoepassing van de Inzameling van de Media van de Verzameling van het Streaming met Ervaring Edge uit te voeren, moet u eerst de volgende secties voltooien:
+Ongeacht of u de Adobe Experience Platform Web SDK, Adobe Experience Platform Mobile SDK, Adobe Experience Platform Roku SDK, of API gebruikt om de het stromen Media Inzameling met Ervaring Edge uit te voeren, moet u eerst de volgende secties voltooien:
 
 ## Schema instellen in Adobe Experience Platform
 
@@ -193,7 +193,7 @@ Een schema maken en instellen:
 
 1. In Customer Journey Analytics, creeer een verbinding zoals die in [ wordt beschreven creeer een verbinding ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en).
 
-   Bij het maken van de verbinding zijn de volgende configuratieselecties vereist voor de implementatie van de invoegtoepassing voor het streamen van media-verzamelingen:
+   Wanneer u de verbinding maakt, zijn de volgende configuratieselecties vereist voor de implementatie van de streamingmedia-verzameling:
 
    1. Selecteer de dataset die u eerder creeerde, zoals die in [ wordt beschreven creeer een dataset in Adobe Experience Platform ](#create-a-dataset-in-adobe-experience-platform).
 
@@ -211,7 +211,7 @@ Een schema maken en instellen:
 
 1. In de Analtyics van de Reis van de Klant, creeer een gegevensmening zoals die in [ wordt beschreven creeer of geef een gegevensmening ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en) uit.
 
-   Wanneer het creëren van de gegevensmening, worden de volgende configuratieselecties vereist voor het uitvoeren van de Streaming Invoegtoepassing van de Inzameling van Media:
+   Bij het maken van de gegevensweergave zijn de volgende configuratieselecties vereist voor de implementatie van de Streaming Media Collection:
 
    1. Op het [!UICONTROL **gebied van de Verbinding**], selecteer de verbinding die u eerder creeerde, zoals die in [ wordt beschreven creeer een verbinding in Customer Journey Analytics ](#create-a-connection-in-customer-journey-analytics).
 
@@ -347,7 +347,7 @@ Een schema maken en instellen:
 
 Afhankelijk van het type gegevens dat u naar Experience Platform Edge wilt verzenden, kunt u een van de volgende methoden gebruiken:
 
-### Web: De SDK van het Web van Adobe Experience Platform gebruiken
+### Web: De Adobe Experience Platform Web SDK gebruiken
 
 * [ begonnen worden ](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/)
 
@@ -355,7 +355,7 @@ Afhankelijk van het type gegevens dat u naar Experience Platform Edge wilt verze
 
 * [ Migreer aan Adobe het Streamen Media voor de uitbreiding van de Edge Network ](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
-### Mobiel: gebruik de Adobe Experience Platform Mobile SDK
+### Mobiel: Adobe Experience Platform Mobile SDK gebruiken
 
 Gebruik de volgende documentatiebronnen om de implementatie voor zowel iOS als Android te voltooien:
 

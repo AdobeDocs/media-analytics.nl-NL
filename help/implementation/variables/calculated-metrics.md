@@ -1,22 +1,22 @@
 ---
 title: Berekende standaarden
-description: Leer over berekende metriek en metrische formules in de Streaming Invoegsel van de Inzameling van Media.
+description: Leer over berekende metriek en metrische formules in de het stromen Inzameling van Media.
 uuid: 9dd35155-58aa-4f05-896e-c5cbc4b13d59
 exl-id: 253f6c61-70b5-4bdf-8e79-840545aeca0e
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '244'
 ht-degree: 3%
 
 ---
 
 # Berekende cijfers{#calculated-metrics}
 
-De berekende metriek voor de Adobe die toe:voegen-on van de Inzameling van Media van de Verzameling is douanemetriek die u toestaat om gerichte het stromen media gegevens zoals gemiddelde gebruikte tijd of gemiddelde advertenties per media stroom te verkrijgen.
+Berekende meetwaarden voor de Adobe die de Verzameling van Media stroomt zijn douanemetriek die u toestaan om gerichte het stromen media gegevens zoals gemiddelde gebruikte tijd of gemiddelde advertenties per media stroom te verkrijgen.
 
-Voor informatie over berekende metriek van Adobe Analytics, zie [Berekende en geavanceerde berekende (afgeleide) cijfers](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/cm-overview.html?lang=en) in de Adobe Analytics Components Guide.
+Voor informatie over Adobe Analytics berekende metriek, zie [ Berekende en Geavanceerde Berekende (Afgeleid) Metriek ](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/cm-overview.html?lang=en) in de Gids van de Componenten van Adobe Analytics.
 
 >[!NOTE]
 >
@@ -26,10 +26,10 @@ Voor informatie over berekende metriek van Adobe Analytics, zie [Berekende en ge
 |---|---|---|
 | Gem. Advertenties per mediastroom | Advertentie start per mediumstart | `Ad Starts / Media Starts` |
 | Gem. Hoofdstukken per mediastroom | Hoofdstuk start per medium | `Chapter Start / Media Starts` |
-| Gem. Tijd besteed aan media | Totale tijd die per medium wordt besteed (`HH:MM:SS`) | `Media Time Spent / Media Starts` |
-| Gem. Tijd van inhoud besteed | Tijd van inhoud die per inhoud wordt besteed, begint (`HH:MM:SS`) | `Content Time Spent / Content Start` |
-| Gem. Toegevoegde tijd | Advertentietijd per advertentiestart (`HH:MM:SS`) | `Ad Time Spent / Ad Start` |
-| Gem. Tijd besteed aan hoofdstuk | Tijdstip van hoofdstuk per hoofdstukbegin (`HH:MM:SS`) | `Chapter Time Spent / Chapter Start` |
+| Gem. Tijd besteed aan media | Totale tijd die per Media begint (`HH:MM:SS`) | `Media Time Spent / Media Starts` |
+| Gem. Tijd van inhoud besteed | Tijd van inhoud die per Content begint (`HH:MM:SS`) | `Content Time Spent / Content Start` |
+| Gem. Toegevoegde tijd | Advertentietijd doorgebracht per Advertentiestart (`HH:MM:SS`) | `Ad Time Spent / Ad Start` |
+| Gem. Tijd besteed aan hoofdstuk | De Tijd die van het hoofdstuk per Hoofdstuk begint (`HH:MM:SS`) | `Chapter Time Spent / Chapter Start` |
 | Voltooiingssnelheid van media | Percentage voltooide inhoud versus geïnitieerde media (%) | `Content Completes/ Media Starts` |
 | Voltooiingssnelheid van inhoud | Percentage van voltooide inhoud versus begin van inhoud (%) | `Content Completes / Content Starts` |
 | Voltooiingssnelheid van advertentie | Percentage voltooide advertenties vs Advertentiestart (%) | `Ad Completes / Ad Starts` |

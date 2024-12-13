@@ -5,16 +5,16 @@ uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: c37aeea2-7c8f-4815-ae28-634ae691e84f
-source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '259'
-ht-degree: 3%
+source-wordcount: '256'
+ht-degree: 4%
 
 ---
 
-# Implementatiedocumentatie voor de streamingmedia Collection {#streaming-media-documentation}
+# Implementatiedocumentatie voor streamingmedia-verzameling {#streaming-media-documentation}
 
-Documentatie voor de invoegtoepassing voor het streamen van media-verzamelingen bevindt zich op meerdere productwebsites. Afhankelijk van hoe u de het stromen media inzameling uitvoert, kunt u één of meerdere documentatiereeksen moeten van verwijzingen voorzien.
+Documentatie voor de verzameling streamingmedia bevindt zich op meerdere productwebsites. Afhankelijk van hoe u de het stromen media inzameling uitvoert, kunt u één of meerdere documentatiereeksen moeten van verwijzingen voorzien.
 
 Gebruik de informatie in de volgende lijst om van documentatie voor uw gekozen implementatiemethode de plaats te bepalen.
 
@@ -22,20 +22,20 @@ Gebruik de informatie in de volgende lijst om van documentatie voor uw gekozen i
 
 | Implementatie | Documentatie |
 |:-----------------------:|----------------|
-| **Web** | * [Webgegevens naar Edge verzenden met de Adobe Experience Platform Web SDK](/help/implementation/edge/edge-web-sdk.md) <br> * [Webimplementatie voor streamingmedia](/help/implementation/media-sdk/setup/web-implementation.md) <br>* [Web Implementation met Adobe Media Analytics for Audio and Video extension](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=en) |
-| **Mobiel** | * [Mobiele gegevens naar Edge verzenden met de Adobe Experience Platform mobile SDK](/help/implementation/edge/edge-mobile-sdk.md) <br> *[Handleiding Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/) <br> *[Adobe Media Analytics voor audio- en video-extensie](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br> *[Huidige mobiele SDK-versies](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/) <br> *[Mobiele implementatie voor streaming media](/help/implementation/media-sdk/setup/mobile-implementation.md) | |  |
-| **OTT** | *[Chromecast 3.0 SDK voor Adobe Marketing Cloud-oplossingen](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/)<br> *[Chromecast instellen](/help/implementation/media-sdk/setup/set-up-chromecast.md)<br> * [Adobe Experience Platform Roku SDK](/help/implementation/edge/implementation-edge.md) <br> *[Roku instellen](/help/implementation/media-sdk/setup/set-up-roku.md) |
-| **Adobe Experience Platform API&#39;s** | *[Media Collection-API&#39;s](/help/implementation/media-collection-api/mc-api-overview.md) |
+| **Web** | * [ verzendt de gegevens van het Web naar Edge met het Web SDK van Adobe Experience Platform ](/help/implementation/edge/edge-web-sdk.md) <br> * [ implementatie van het Web voor het stromen media ](/help/implementation/media-sdk/setup/web-implementation.md) <br> * [ Implementatie van het Web met de Analytics van Adobe Media voor Audio en Video uitbreiding ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=en) |
+| **Mobiel** | * [ verzendt Mobiele gegevens naar Edge met Adobe Experience Platform mobiele SDK ](/help/implementation/edge/edge-mobile-sdk.md) <br> * [ de Mobiele Gids van SDK van Adobe Experience Platform ](https://developer.adobe.com/client-sdks/documentation/) <br> * [ Analytics van Adobe Media voor Audio en Video uitbreiding ](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) <br> *[ Huidige Mobiele Versies van SDK ](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/) <br> * [ Mobiele implementatie voor het stromen media ](/help/implementation/media-sdk/setup/mobile-implementation.md) | |  |
+| **OTT** | *[ Chromecast 3.0 SDK voor de Oplossingen van Adobe Marketing Cloud ](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) <br> * [ Opstelling Chromecast ](/help/implementation/media-sdk/setup/set-up-chromecast.md)<br> * [ Adobe Experience Platform Roku SDK ](/help/implementation/edge/implementation-edge.md) <br> * [ Opstelling Roku ](/help/implementation/media-sdk/setup/set-up-roku.md) |
+| **Adobe Experience Platform APIs** | *[ de Inzameling APIs van Media ](/help/implementation/media-collection-api/mc-api-overview.md) |
 
 ## Aanvullende documentatie {#additional-documentation}
 
-In de onderstaande tabel vindt u documentatie over Adobe-producten die worden gebruikt met de invoegtoepassing voor het streamen van media-verzamelingen.
+In de onderstaande tabel vindt u documentatie over Adobe-producten die worden gebruikt met de verzameling Streaming media.
 
 | Product | Documentatie |
 |:-----------------------:|----------------|
-| **Adobe Analytics** | *[Adobe Analytics-implementatiehandleiding](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=en)<br>  *[Handleiding voor Adobe Analytics-componenten](https://experienceleague.adobe.com/docs/analytics/components/home.html?lang=en)<br> *[Adobe Analytics Tools Guide](https://experienceleague.adobe.com/docs/analytics/analyze/home.html?lang=en)<br> *[Adobe Analytics Tutorials](https://experienceleague.adobe.com/docs/analytics.html?lang=en#tutorials) <br> *[Adobe Analytics API&#39;s](https://developer.adobe.com/analytics-apis/docs/2.0/)<br> *[Mobiele implementatie voor Analytics](https://developer.adobe.com/client-sdks/documentation/adobe-analytics/) |
-| **Tags** | *[Adobe Experience Platform-tagdocumentatie](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) |
+| **Adobe Analytics** | *[ Gids van de Implementatie van Adobe Analytics ](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=en) <br> *[ de Gids van de Componenten van Adobe Analytics ](https://experienceleague.adobe.com/docs/analytics/components/home.html?lang=en) <br> *[ de Gids van de Hulpmiddelen van Adobe Analytics ](https://experienceleague.adobe.com/docs/analytics/analyze/home.html?lang=en) <br> *[ Tutorials van Adobe Analytics ](https://experienceleague.adobe.com/docs/analytics.html?lang=en#tutorials) <br> *[ Adobe Analytics APIs ](https://developer.adobe.com/analytics-apis/docs/2.0/) <br> *[ Mobiele implementatie voor Analytics ](https://developer.adobe.com/client-sdks/documentation/adobe-analytics/) |
+| **Markeringen** | *[ de documentatie van de Markeringen van Adobe Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) |
 
 ## Tutorials voor Adobe Enterprise {#adobe-tutorials}
 
-Gebruiken [Zelfstudies voor Adobe-ondernemingen](https://experienceleague.adobe.com/docs/home-tutorials.html) om Adobe bedrijfstoepassingen voor uw bedrijfsbehoeften te gebruiken. U vindt nuttige zelfstudies en training in Adobe Experience Cloud, Adobe Experience Platform en Adobe Analytics.
+De ondernemingsleerprogramma&#39;s van de Adobe van het gebruik ](https://experienceleague.adobe.com/docs/home-tutorials.html) aan hefboomwerkings de bedrijfstoepassingen van de Adobe voor uw bedrijfsbehoeften. [ U vindt nuttige zelfstudies en training in Adobe Experience Cloud, Adobe Experience Platform en Adobe Analytics.

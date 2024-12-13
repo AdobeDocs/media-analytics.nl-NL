@@ -1,13 +1,13 @@
 ---
-title: Hoe te om off-line gedownloade inhoud in de het stromen Invoegsel van de Inzameling van Media te volgen
+title: Offline gedownloade inhoud bijhouden in de streamingmedia-verzameling
 description: Leer hoe u de functie Gedownloade inhoud kunt gebruiken om het mediaconsumptie bij te houden wanneer een gebruiker offline is.
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '696'
 ht-degree: 0%
 
 ---
@@ -46,8 +46,8 @@ De functie Gedownloade inhoud is de offlineversie van de (standaard) online API 
 
 ### Volgorde van de gebeurtenissen
 
-* De eerste gebeurtenis in de batch-lading moet `sessionStart` zoals gebruikelijk met de API van de Inzameling van Media.
-* **U moet`media.downloaded: true`** in de standaardmetagegevensparameters (`params` key) op de `sessionStart` om aan de achterkant aan te geven dat u gedownloade inhoud verzendt. Als deze parameter niet aanwezig is of op vals wordt geplaatst wanneer u gedownloade gegevens verzendt, zal API een 400 antwoordcode (Onjuiste Verzoek) terugkeren. Deze parameter maakt onderscheid tussen gedownloade en live inhoud naar de back-end. Indien `media.downloaded: true` is ingesteld op een live sessie, resulteert dit ook in een 400-respons van de API.
+* De eerste gebeurtenis in de batch-lading moet `sessionStart` zijn zoals gebruikelijk met de Media Collection API.
+* **u moet`media.downloaded: true`** in de standaardmeta-gegevensparameters (`params` sleutel) op de `sessionStart` gebeurtenis omvatten om aan het achtereind erop te wijzen dat u gedownloade inhoud verzendt. Als deze parameter niet aanwezig is of op vals wordt geplaatst wanneer u gedownloade gegevens verzendt, zal API een 400 antwoordcode (Onjuiste Verzoek) terugkeren. Deze parameter maakt onderscheid tussen gedownloade en live inhoud naar de back-end. Als `media.downloaded: true` wordt ingesteld op een live sessie, resulteert dit ook in een 400-respons van de API.
 * Het is de verantwoordelijkheid van de implementatie om spelergebeurtenissen correct op te slaan in de volgorde waarin ze worden weergegeven.
 
 ### Antwoordcodes
@@ -57,7 +57,7 @@ De functie Gedownloade inhoud is de offlineversie van de (standaard) online API 
 
 ## Integratie met Adobe Analtyics {#integration-with-adobe-analtyics}
 
-Bij het berekenen van het begin/de dichte vraag van Analytics voor het gedownloade inhoudsscenario, plaatst het achterste eind een extra gebied van Analytics genoemd `ts.` Dit zijn tijdstempels voor de eerste en laatste ontvangen gebeurtenissen (begin en volledig). Dankzij dit mechanisme kan een voltooide mediasessie op het juiste tijdstip worden geplaatst (zelfs als de gebruiker enkele dagen niet online terugkomt, wordt gemeld dat de mediasessie heeft plaatsgevonden op het moment dat de inhoud daadwerkelijk werd bekeken). U moet dit mechanisme aan Adobe Analytics-zijde inschakelen door een _optionele rapportsuite met tijdstempel._ Als u een optionele rapportsuite met tijdstempels wilt inschakelen, raadpleegt u [Tijdstempels optioneel.](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/timestamp-optional.html)
+Bij het berekenen van de aanroepen van Analytics start/close voor het gedownloade inhoudsscenario stelt de back-end een extra Analytics-veld met de naam `ts.` Dit zijn tijdstempels voor de eerste en laatste ontvangen gebeurtenissen (start en voltooid). Dankzij dit mechanisme kan een voltooide mediasessie op het juiste tijdstip worden geplaatst (zelfs als de gebruiker enkele dagen niet online terugkomt, wordt gemeld dat de mediasessie heeft plaatsgevonden op het moment dat de inhoud daadwerkelijk werd bekeken). U moet dit mechanisme op de kant van Adobe Analytics toelaten door a _te creëren timestamp facultatieve rapportreeks._ om een timestamp facultatieve rapportreeks toe te laten, zie [ Facultatieve Tijdstempels.](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/timestamp-optional.html)
 
 ## Samplesessievergelijking {#sample-session-comparison}
 
@@ -109,12 +109,12 @@ POST /api/v1/downloaded HTTP/1.1
 
 >[!IMPORTANT]
 >
->Gedownloade inhoud kon eerder ook worden verzonden naar `/api/v1/sessions` API. Deze manier om gedownloade inhoud te volgen is **verouderd** en zal **verwijderd** in de toekomst.
+>Gedownloade inhoud kon eerder ook naar de `/api/v1/sessions` API worden verzonden. Deze manier om gedownloade inhoud te volgen is **afgekeurd** en zal **worden verwijderd** in de toekomst.
 
 
 De `/api/v1/sessions` API accepteert alleen sessieinitialisatiegebeurtenissen.
-Wanneer u de nieuwe API gebruikt, is de vorige vereiste `media.downloaded` markering is niet langer nodig.
-We raden u ten zeerste aan de `/api/v1/downloaded` API voor nieuwe gedownloade inhoudsimplementaties, evenals het bijwerken van bestaande implementaties die op oude API baseren.
+Wanneer u de nieuwe API gebruikt, is de eerder verplichte markering `media.downloaded` niet meer nodig.
+We raden u ten zeerste aan de API van `/api/v1/downloaded` te gebruiken voor nieuwe gedownloade content-implementaties en voor het bijwerken van bestaande implementaties die afhankelijk zijn van de oude API.
 
 
 ```
@@ -147,4 +147,4 @@ POST /api/v1/sessions HTTP/1.1
 
 ## Referentie voor API voor mediatracker
 
-Voor informatie over hoe te om gedownloade inhoud te vormen, zie [Referentie voor API voor mediatracker](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/).
+Voor informatie over hoe te om gedownloade inhoud te vormen, zie de [ Trekker API van Media verwijzing ](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/).

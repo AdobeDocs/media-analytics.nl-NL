@@ -4,9 +4,9 @@ description: Leer hoe u handelingen van toepassingen koppelt aan gegevens voor m
 exl-id: 75cc9088-776d-4b10-b358-9fff956a7eb7
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '232'
 ht-degree: 1%
 
 ---
@@ -17,13 +17,13 @@ Met de Attributie van de Stroom van Media, kunt u toepassingsacties met media vo
 
 ## Media-Dimensionen buiten mediatracering
 
-U kunt mediumafmetingen toevoegen aan analytische aanroepen, zoals paginaweergaven en aangepaste koppelingen. Tijdens implementatie, moet u de gegevensparameters van de media context aan de het spoorvraag van Analytics toevoegen. Als u de volledige lijst met beschikbare parameters voor contextgegevens wilt weergeven die voor media worden gebruikt, raadpleegt u [Parameters voor audio en video.](/help/implementation/variables/audio-video-parameters.md)
+U kunt mediumafmetingen toevoegen aan analytische aanroepen, zoals paginaweergaven en aangepaste koppelingen. Tijdens implementatie, moet u de gegevensparameters van de media context aan de het spoorvraag van Analytics toevoegen. Om de volledige lijst van beschikbare parameters van contextgegevens te bekijken die voor media worden gebruikt, zie [ Audio en videoparameters.](/help/implementation/variables/audio-video-parameters.md)
 
 Om deze eigenschap voor een specifiek rapport toe te laten, re-enable de media volgende configuratie van de Admin console.
 
 >[!NOTE]
 >
->De mediakwaliteit is _niet_ beschikbaar voor gebruik buiten media het volgen omdat de meeste van deze gegevens door de Invoegtoepassing van de Inzameling van Media van de Streaming worden berekend die op hartslaggebeurtenissen wordt gebaseerd. Ook, is het belangrijk dat de media metriek niet door verschillende implementaties worden opgeblazen.
+>De media metriek zijn _niet_ beschikbaar voor gebruik buiten media het volgen omdat de meeste van deze gegevens door de Streaming Inzameling van Media die op hartslaggebeurtenissen worden gebaseerd worden gegevens verwerkt. Ook, is het belangrijk dat de media metriek niet door verschillende implementaties worden opgeblazen.
 
 ## Kenmerken van mediastroom gebruiken
 
@@ -34,7 +34,7 @@ s.contextData["a.media.show"]="Mi Amore"
 s.tl(this,'o','Hero Banner');
 ```
 
-In Analytics-rapportage kunt u de opdracht `Show` eVar om de gegevens op te delen, en u zult de instanties van de spoorverbinding kunnen tellen. De rapportage zou er ongeveer als volgt uitzien:
+Bij Analytics-rapportage kunt u de `Show` -eVar gebruiken om de gegevens op te splitsen en u kunt de instanties van trackkoppelingen tellen. De rapportage zou er ongeveer als volgt uitzien:
 
 ![](/assets/myShow-rpt-1.png)
 

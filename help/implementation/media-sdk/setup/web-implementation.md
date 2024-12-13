@@ -4,62 +4,62 @@ description: Leer hoe u Adobe Streaming Media voor webapps implementeert.
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '441'
 ht-degree: 1%
 
 ---
 
-# De SDK van Media installeren met JavaScript {#install-web-sdks}
+# Media SDK installeren met JavaScript {#install-web-sdks}
 
-In de informatie op deze pagina wordt beschreven hoe u de zelfstandige SDK voor het web installeert en JavaScript instelt.
+In de informatie op deze pagina wordt beschreven hoe u de zelfstandige webversie van SDK kunt installeren en JavaScript kunt instellen.
 
-Alternatief, kunt u de uitbreiding van Analytics van Adobe Media gebruiken om de Adobe uit te voeren die toe:voegen-op van de Inzameling van Media stromen, zoals die in wordt beschreven [Analyses implementeren met de extensie Media Analytics](/help/implementation/media-sdk/setup/web-implementation-tags.md).
+Alternatief, kunt u de uitbreiding van Analytics van Adobe Media gebruiken om de Adobe uit te voeren die de Inzameling van Media stromen, zoals die in [ wordt beschreven voert Analytics uit gebruikend de uitbreiding van Analytics van Media ](/help/implementation/media-sdk/setup/web-implementation-tags.md).
 
 ## Vereisten {#prerequesites}
 
-* **Geldige configuratieparameters verkrijgen**
+* **verkrijg geldige configuratieparameters**
 
   Deze parameters kunt u verkrijgen van een Adobe-medewerker nadat u uw analyseaccount hebt ingesteld.
 
-* **Implementeren `AppMeasurement` en `Experience Cloud Identity Service` voor JavaScript in uw mediatoepassing**
+* **voer `AppMeasurement` en `Experience Cloud Identity Service` voor JavaScript in uw media toepassing uit**
 
-  Zie voor meer informatie [Analyses implementeren met JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html) en [Uitvoeren van identiteitsdienst van Experience Cloud](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html).
+  Voor meer informatie, zie [ het Uitvoeren Analytics Gebruikend JavaScript ](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html) en [ het Uitvoeren van de Dienst van de Identiteit van het Experience Cloud ](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html).
 
-* **De volgende API&#39;s opnemen in uw mediaspeler**
+* **omvat volgende APIs in uw media speler**
 
-   * *Een API die zich moet abonneren op spelergebeurtenissen* - De SDK van Media vereist dat u een set eenvoudige API&#39;s oproept wanneer gebeurtenissen in de speler plaatsvinden.
-   * *Een API die spelerinformatie biedt* - Hier vindt u informatie over het afspelen van media, advertenties en hoofdstuk.
+   * *API om aan spelergebeurtenissen* in te tekenen - de Media SDK vereist dat u een reeks eenvoudige APIs roept wanneer de gebeurtenissen in uw speler voorkomen.
+   * *API die spelerinformatie* verstrekt - dit omvat informatie over momenteel het spelen media, advertenties, en hoofdstuk.
 
 ## JavaScript 3.x instellen {#set-up-javascript}
 
-1. Voeg uw [gedownload](/help/getting-started/download-sdks.md) bibliotheek naar uw project. Maak lokale verwijzingen naar de klassen voor het gemak.
+1. Voeg uw [ gedownload ](/help/getting-started/download-sdks.md) bibliotheek aan uw project toe. Maak lokale verwijzingen naar de klassen voor het gemak.
 
-   1. Breid uit `MediaSDK-js-v3*.zip` bestand dat u hebt gedownload.
-   1. Controleer of de `MediaSDK.js` bestand bestaat in `libs` directory.
+   1. Vouw het `MediaSDK-js-v3*.zip` -bestand uit dat u hebt gedownload.
+   1. Controleer of het `MediaSDK.js` -bestand in de map `libs` staat.
 
-   1. De gastheer van `MediaSDK.js` bestand.
+   1. Het `MediaSDK.js` -bestand hosten.
 
       Dit JavaScript-kernbestand moet worden gehost op een webserver die toegankelijk is voor alle pagina&#39;s op uw site. Voor de volgende stap hebt u het pad naar deze bestanden nodig.
 
-   1. Referentie `MediaSDK.js` op alle sitepagina&#39;s.
+   1. Verwijzing `MediaSDK.js` op alle sitepagina&#39;s.
 
-      Inclusief `MediaSDK` voor JavaScript door de volgende coderegel toe te voegen in de `<head>` of `<body>` -code op elke pagina. Bijvoorbeeld:
+      Neem `MediaSDK` op voor JavaScript door de volgende coderegel toe te voegen in de tag `<head>` of `<body>` op elke pagina. Bijvoorbeeld:
 
       ```html
       <script type="text/javascript" src="https://INSERT-DOMAIN-AND-PATH-TO-CODE-HERE/MediaSDK.js"></script>
       ```
 
-   1. Als u snel wilt controleren of de bibliotheek is geïmporteerd, controleert u `ADB.Media` wordt geëxporteerd op het Window-object.
+   1. Als u snel wilt controleren of de bibliotheek is geïmporteerd, schakelt u `ADB.Media` in op het object Window.
 
       >[!NOTE]
       >
-      >De SDK van JavaScript is compatibel met de specificaties van de AMD- en CommonJS-module, en `MediaSDK.js` kan ook worden gebruikt met compatibele modulelezers.
+      >De JavaScript SDK is compatibel met de AMD- en CommonJS-modulespecificaties en `MediaSDK.js` kan ook worden gebruikt met compatibele modulelaadapparaten.
 
-1. Een instantie maken van `AppMeasurement` en configureren `visitor`.
+1. Maak een instantie van `AppMeasurement` en configureer `visitor` .
 
-   De configuratie van Media SDK vereist een geval van `AppMeasurement` with `visitor` geconfigureerd.
+   Voor de configuratie van Media SDK is een instantie van `AppMeasurement` met `visitor` geconfigureerd vereist.
 
    ```js
     var appMeasurement = new AppMeasurement("<rsid>");
@@ -67,9 +67,9 @@ Alternatief, kunt u de uitbreiding van Analytics van Adobe Media gebruiken om de
     appMeasurement.trackingServer = "<visitor_namespace>.sc.omtrdc.net";
    ```
 
-1. SDK van media configureren
+1. Media SDK configureren
 
-   De SDK van media moet één keer per webpagina worden geconfigureerd en de configuratie is van toepassing op alle gemaakte tracker-instanties.
+   Media SDK moet één keer per webpagina worden geconfigureerd en de configuratie is van toepassing op alle instanties van Beheer die worden gemaakt.
 
    >[!IMPORTANT]
    >
@@ -92,7 +92,7 @@ Alternatief, kunt u de uitbreiding van Analytics van Adobe Media gebruiken om de
 
 1. Maak de `MediaTracker` -instantie.
 
-   Nadat u de SDK van Media hebt geconfigureerd, kunnen tracker-instanties voor het bijhouden van media-inhoud worden gemaakt met `getInstance` API.
+   Nadat u Media SDK hebt geconfigureerd, kunnen tracker-instanties voor het bijhouden van media-inhoud worden gemaakt met de `getInstance` API.
 
    ```js
    var tracker = ADB.Media.getInstance();
@@ -100,10 +100,10 @@ Alternatief, kunt u de uitbreiding van Analytics van Adobe Media gebruiken om de
 
    >[!IMPORTANT]
    >
-   >Zorg ervoor dat uw `tracker` -instantie is toegankelijk en wordt pas aan het einde van de mediasessie toegewezen. Deze instantie wordt gebruikt voor het bijhouden van alle volgende gebeurtenissen voor die sessie.
+   >Zorg ervoor dat uw `tracker` -instantie toegankelijk is en pas aan het einde van de mediasessie wordt gedealiteerd. Deze instantie wordt gebruikt voor het bijhouden van alle volgende gebeurtenissen voor die sessie.
 
 ## Migreren van JavaScript 2.x naar 3.x
 
-Voor gedetailleerde informatie over het migreren van 2.x naar 3.x, zie [Migratie van 2.x naar 3.x.](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/MigrationGuide.html)
+Voor gedetailleerde informatie over het migreren van 2.x naar 3.x, zie [ 2.x aan migratie 3.x.](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/MigrationGuide.html)
 
-Zie voor verouderde inhoud [Oudere implementaties](/help/legacy/media-sdk/setup/setup-overview.md)
+Voor erfenisinhoud, zie [ uitvoeringen van de Oudheid ](/help/legacy/media-sdk/setup/setup-overview.md)

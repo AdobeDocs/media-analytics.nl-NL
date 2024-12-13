@@ -5,9 +5,9 @@ uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 exl-id: 81970370-663c-49d5-b13c-628d294be178
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 05a1335daa8164324c7f33de373d96e14cb9f4f7
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '571'
 ht-degree: 60%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 60%
 # Federale media{#federated-media}
 
 De Federated Media-service biedt een systeem voor het delen van streaming mediagegevens (audio en video) tussen twee partners.
-De gestandaardiseerde meetgegevens die door de Invoegtoepassing van de Inzameling van Media van de Streaming worden gecreeerd zijn het merkteken voor Federatieve Media, die de zelfde gegevens toestaan om in één enkel rapport van veelvoudige bronnen te stromen.
+De gestandaardiseerde meetgegevens die door de Verzameling van Media van de Streaming worden gecreeerd zijn het merkteken voor Federale Media, die de zelfde gegevens toestaan om in één enkel rapport van veelvoudige bronnen te stromen.
 Via de regels en logica die de Federatieve Media bepalen, worden de gegevens gemakkelijk gecontroleerd en geïndividualiseerd om aan de behoeften van elk partnerschap te voldoen.
 Met Federale media worden audio- en videometingen efficiënter, gestroomlijnder en actiever.
 
@@ -44,7 +44,7 @@ Met Federale media worden audio- en videometingen efficiënter, gestroomlijnder 
 * **Contract voor mediastreams:** ontvanger en afzender moeten een contract voor Adobe Analytics voor Media Streams hebben voordat ze toegang krijgen tot audio- en videodata in Adobe Analytics. Neem contact op met uw accountteam voor meer informatie.
 * **Federated addendum:** zowel afzender als ontvanger moet beschikken over een ondertekend addendum bij Adobe voordat data worden verzonden of ontvangen. Eén addendum per klant is vereist, niet één addendum per partnerschap. Neem contact op met uw accountteam voor meer informatie.
 
-* **het stromen toe:voegen-op Implementatie van de Inzameling van Media:** de Afzender moet het Stromen toe:voegen-op van de Inzameling van Media hebben die op alle spelers wordt uitgevoerd die deel van de gefedereerde gegevensreeks zullen uitmaken. Alleen streaming-mediagegevens zijn beschikbaar voor federatie. Voor meer informatie, zie [ Adobe het Stromen toe:voegen-op overzicht van de Inzameling van Media ](/help/media-overview.md).
+* **het stromen de Implementatie van de Inzameling van Media:** de Afzender moet de het stromen Inzameling hebben van Media die op alle spelers wordt uitgevoerd die deel van de gefedereerde gegevensreeks zullen uitmaken. Alleen streaming-mediagegevens zijn beschikbaar voor federatie. Voor meer informatie, zie [ Adobe het Streamen overzicht van de Inzameling van Media ](/help/media-overview.md).
 
 * **Adobe Consulting-contract:** voor de eerste instelling van gefedereerde regels tussen ontvanger en afzender is het waardevol om met adviesdiensten te werken voor het beoordelen van data en een datasharingovereenkomst te maken.
 

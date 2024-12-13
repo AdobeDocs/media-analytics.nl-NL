@@ -4,16 +4,16 @@ description: Leer hoe u Adobe Streaming Media voor mobiele apps implementeert.
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: b4944b5f-cbae-4efc-9ef7-962d3f342240
-source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '198'
+source-wordcount: '197'
 ht-degree: 0%
 
 ---
 
 # Mobiele SDK&#39;s installeren {#install-mobile-sdks}
 
-Installeer en configureer de volgende toepassingen om de invoegtoepassing voor streaming Media Collection te implementeren voor mobiele apps op Android of iOS:
+Installeer en configureer de volgende toepassingen om de Streaming Media Collection voor mobiele apps te implementeren op Android of iOS:
 
 * **Adobe Experience Platform Mobile SDK**
 
@@ -21,18 +21,18 @@ Installeer en configureer de volgende toepassingen om de invoegtoepassing voor s
    * Tags in Adobe Experience Platform. Tags in Adobe Experience Platform zijn een oplossing voor tagbeheer waarmee u naast andere coderingsvereisten ook analytische code kunt implementeren.
    * Adobe Experience Platform Edge
 
-* **Media SDK voor Android** of **Media SDK voor iOS**
+* **SDK van Media voor Android** of **SDK van Media voor iOS**
 
-* **Adobe Media Analytics voor audio- en video-extensie**
+* **Analytics van Adobe Media voor Audio en Video uitbreiding**
 
-Zie voor informatie over het downloaden van SDK&#39;s en aanvullende documentatiebronnen de [SDK&#39;s van media, extensies met tags en OTT SDK&#39;s ophalen](/help/getting-started/download-sdks.md)
+Om SDKs en voor extra documentatiemiddelen te downloaden, zie [ Media SDKs, Uitbreidingen krijgen die Markeringen gebruiken, en OTT SDKs ](/help/getting-started/download-sdks.md)
 
-* **Geldige configuratieparameters verkrijgen**
+* **verkrijg geldige configuratieparameters**
 
   Deze parameters kunt u verkrijgen van een Adobe-medewerker nadat u uw analyseaccount hebt ingesteld.
 
-* **De volgende API&#39;s opnemen in uw mediaspeler**
+* **omvat volgende APIs in uw media speler**
 
-   * *Een API die zich moet abonneren op spelergebeurtenissen* - De SDK van Media vereist dat u een set eenvoudige API&#39;s oproept wanneer gebeurtenissen in de speler plaatsvinden.
+   * *API om aan spelergebeurtenissen* in te tekenen - de Media SDK vereist dat u een reeks eenvoudige APIs roept wanneer de gebeurtenissen in uw speler voorkomen.
 
-   * *Een API die spelerinformatie biedt* - Dit omvat informatie over het momenteel afspelen, zoals de medianaam, de positie van de afspeelkop, advertenties of het hoofdstuk.
+   * *API die spelerinformatie* verstrekt - dit omvat informatie over momenteel het spelen zoals de media naam, de positie van het spelhoofd, advertenties, of hoofdstuk.

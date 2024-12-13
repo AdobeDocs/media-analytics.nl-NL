@@ -1,32 +1,32 @@
 ---
-title: Hoe te opstelling SDK van Media voor Chromecast
-description: Voer de volgende stappen uit om de Media SDK-toepassing in Chromecast in te stellen.
+title: De Media SDK instellen voor Chromecast
+description: Voer de volgende stappen uit om de Media SDK-toepassing op Chromecast in te stellen.
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 exl-id: 5dfe3407-2858-48c0-a70c-8ea87967ac47
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '570'
 ht-degree: 0%
 
 ---
 
 # Mobiele SDK v3.x instellen voor Chromecast {#set-up-chromecast}
 
-In deze sectie worden de voorwaarden beschreven voor het instellen van een Chromecast-installatie voor de invoegtoepassing voor het streamen van media-verzamelingen.
+In deze sectie worden de voorwaarden beschreven voor het instellen van een Chromecast-installatie voor de streamingmedia-verzameling.
 
 ## Vereisten
 
-* **Geldige configuratieparameters verkrijgen**
+* **verkrijg geldige configuratieparameters**
 
   Deze parameters kunt u verkrijgen van een Adobe die u vertegenwoordigt nadat u een account voor de mediaanalyse hebt ingesteld.
-* **De volgende API&#39;s opnemen in uw mediaspeler**
+* **omvat volgende APIs in uw media speler**
 
-   * *Een API die zich moet abonneren op spelergebeurtenissen* - De SDK van Media vereist dat u een set eenvoudige API&#39;s oproept wanneer gebeurtenissen in de speler plaatsvinden.
-   * *Een API die spelerinformatie biedt* - Deze informatie bevat details zoals de medianaam en de positie van de afspeelkop.
+   * *API om aan spelergebeurtenissen* in te tekenen - de Media SDK vereist dat u een reeks eenvoudige APIs roept wanneer de gebeurtenissen in uw speler voorkomen.
+   * *API die spelerinformatie* verstrekt - Deze informatie omvat details zoals de media naam en de positie van het spelhoofd.
 
-Adobe Mobile-services biedt een nieuwe gebruikersinterface waarin mobiele marketingmogelijkheden voor mobiele toepassingen vanuit de hele Adobe Marketing Cloud worden samengebracht. Aanvankelijk biedt de Mobile-service een naadloze integratie van analysemogelijkheden voor apps en doelgerichte functionaliteit voor de Adobe Analytics- en Adobe Target-oplossingen. Meer informatie over [Adobe van documentatie voor mobiele services.](https://experienceleague.adobe.com/docs/mobile-services/using/home.html)
+Adobe Mobile-services biedt een nieuwe gebruikersinterface waarin mobiele marketingmogelijkheden voor mobiele toepassingen vanuit de hele Adobe Marketing Cloud worden samengebracht. Aanvankelijk biedt de Mobile-service een naadloze integratie van analysemogelijkheden voor apps en doelgerichte functionaliteit voor de Adobe Analytics- en Adobe Target-oplossingen. Leer meer bij [ de documentatie van de Diensten van de Adobe Mobiele.](https://experienceleague.adobe.com/docs/mobile-services/using/home.html)
 
 Met de Adobe Mobile Library for Chromecast v3.x for Experience Cloud Solutions kunt u Chromecast-toepassingen die in JavaScript zijn geschreven, optimaliseren en publieksgegevens verzamelen via publieksbeheer en de betrokkenheid van video meten.
 
@@ -34,7 +34,7 @@ Met de Adobe Mobile Library for Chromecast v3.x for Experience Cloud Solutions k
 
 1. Voeg uw gedownloade Chromecast-bibliotheek toe aan uw project.
 
-   1. De `AdobeMobileLibrary-Chromecast-[version]` ZIP-bestand bestaat uit de volgende softwareonderdelen:
+   1. Het ZIP-bestand van `AdobeMobileLibrary-Chromecast-[version]` bestaat uit de volgende softwarecomponenten:
 
       * `adbmobile-chromecast.min.js`:
 
@@ -42,9 +42,9 @@ Met de Adobe Mobile Library for Chromecast v3.x for Experience Cloud Solutions k
 
       * `ADBMobileConfig` config
 
-        Dit SDK-configuratiebestand is aangepast voor uw app. Een monster `ADBMobileConfig` de implementatie wordt geleverd bij de SDK (onder `samples/`). Verkrijg de juiste montages van een vertegenwoordiger van de Adobe.
+        Dit SDK-configuratiebestand is aangepast voor uw app. Bij de SDK wordt een voorbeeldimplementatie `ADBMobileConfig` geleverd (onder `samples/` ). Verkrijg de juiste montages van een vertegenwoordiger van de Adobe.
 
-   1. Voeg het bibliotheekbestand toe aan uw `index.html` en maakt u de `ADBMobileConfig` globale variabele als volgt (de globale variabele die wordt gebruikt om Adobe Mobile voor de Analyse van Media te vormen heeft een exclusieve sleutel genoemd `mediaHeartbeat`):
+   1. Voeg het bibliotheekbestand toe aan het `index.html` -bestand en maak de globale variabele `ADBMobileConfig` als volgt (de algemene variabele die wordt gebruikt om Adobe Mobile voor Media Analytics te configureren heeft een exclusieve sleutel met de naam `mediaHeartbeat` ):
 
       ```js
       <script>
@@ -89,7 +89,7 @@ Met de Adobe Mobile Library for Chromecast v3.x for Experience Cloud Solutions k
 
       >[!IMPORTANT]
       >
-      >Indien `mediaHeartbeat` wordt verkeerd gevormd, gaat de media module een foutenstaat in en zal ophouden verzendend volgende vraag.
+      >Als `mediaHeartbeat` verkeerd wordt gevormd, gaat de media module een foutenstaat in en zal ophouden verzendend volgende vraag.
 
       ADBMobile Config-parameters voor de MediaHeartbeat-sleutel:
 
@@ -108,7 +108,7 @@ Met de Adobe Mobile Library for Chromecast v3.x for Experience Cloud Solutions k
 
    De dienst van identiteitskaart van de Bezoeker van het Experience Cloud verstrekt een universele identiteitskaart van de Bezoeker over de oplossingen van het Experience Cloud. De service voor bezoekers-id is vereist voor Media Analytics en andere Marketing Cloud-integraties.
 
-   Controleren of uw `ADBMobileConfig` config bevat uw `marketingCloud` organisatie-id.
+   Controleer of de `ADBMobileConfig` config uw `marketingCloud` -organisatie-id bevat.
 
    ```
    "marketingCloud": {
@@ -116,15 +116,15 @@ Met de Adobe Mobile Library for Chromecast v3.x for Experience Cloud Solutions k
    }
    ```
 
-   Identiteitskaart van de organisatie van het Experience Cloud identificeert uniek elk cliëntbedrijf in Adobe Marketing Cloud en lijkt gelijkaardig aan de volgende waarde: `016D5C175213CCA80A490D05@AdobeOrg`.
+   ID&#39;s van organisaties van Experiencen Cloud identificeren elk clientbedrijf in de Adobe Marketing Cloud op unieke wijze en lijken op de volgende waarde: `016D5C175213CCA80A490D05@AdobeOrg` .
 
    >[!IMPORTANT]
    >
-   >Zorg ervoor dat u `@AdobeOrg`.
+   >Zorg ervoor dat u `@AdobeOrg` opneemt.
 
-   Nadat de configuratie volledig is, wordt een identiteitskaart van de Bezoeker van het Experience Cloud geproduceerd en inbegrepen op alle treffers. Andere bezoeker-id&#39;s, zoals `custom` en `automatically-generated`, blijft bij elke treffer worden verzonden.
+   Nadat de configuratie volledig is, wordt een identiteitskaart van de Bezoeker van het Experience Cloud geproduceerd en inbegrepen op alle treffers. Andere bezoeker-id&#39;s, zoals `custom` en `automatically-generated` , worden bij elke treffer verzonden.
 
-   **De Methoden van de Dienst van de Bezoeker van het Experience Cloud ID**
+   **Methoden van de Dienst van identiteitskaart van de Bezoeker van het Experience Cloud**
 
    >[!TIP]
    >
