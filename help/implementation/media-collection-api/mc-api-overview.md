@@ -6,7 +6,7 @@ uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
 exl-id: 58430636-7fab-433a-8ead-52ccaa45d920
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
+source-git-commit: 7a1ae72af231659bd794fb18ce9e76685e6beff4
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 0%
@@ -17,29 +17,29 @@ ht-degree: 0%
 
 De Media Collection API is het RESTful alternatief van Adobe aan de cliënt-kant Media SDK. Met de Media Collection API kan uw speler audio en videogebeurtenissen volgen gebruikend vraag RESTful van HTTP.
 
-De API voor mediaverzamelingen is in wezen een adapter die fungeert als een serverversie van de SDK van Media. Dit betekent dat sommige aspecten van de documentatie van SDK van Media ook relevant voor de Inzameling API van Media zijn. Beide oplossingen gebruiken bijvoorbeeld hetzelfde [Streaming mediaparameters](../variables/audio-video-parameters.md)en de verzamelde gegevens voor het bijhouden van streaming media leiden tot hetzelfde [Rapportage en analyse.](/help/reporting/media-reports-enable.md)
+De Media Collection API is hoofdzakelijk een adapter, handelend als server-zijversie van Media SDK. Dit betekent dat sommige aspecten van de documentatie van Media SDK ook relevant zijn voor de API van de Inzameling van Media. Bijvoorbeeld, gebruiken beide oplossingen de zelfde [ Streaming Parameters van Media ](../variables/audio-video-parameters.md), en de verzamelde het stromen media volgende gegevens leiden tot het zelfde [ Melden en Analyse.](/help/reporting/media-reports-enable.md)
 
 ## Gegevensstromen voor het bijhouden van media {#media-tracking-data-flows}
 
-Een mediaspeler die de Media Collection API implementeert, maakt RESTful API-traceringsaanroepen rechtstreeks naar de back-endserver voor mediatracering, terwijl een speler die de Media SDK implementeert, traceeraanroepen uitvoert naar de SDK API&#39;s in de speler-app. Één effect van het maken van vraag over het Web is dat de speler die de API van de Inzameling van Media uitvoert enkele verwerking moet behandelen die de Media SDK automatisch behandelt. (Details in [Implementatie van media-collectie.](mc-api-impl/mc-api-quick-start.md))
+Een mediaspeler die de Media Collection API implementeert, maakt RESTful API-tracking-aanroepen rechtstreeks naar de back-endserver voor het bijhouden van media, terwijl een speler die de Media SDK implementeert, traceeraanroepen uitvoert naar de SDK API&#39;s in de speler-app. Één effect van het maken van vraag over het Web is dat de speler die de inzameling API van Media uitvoert enkele verwerking moet behandelen die de Media SDK automatisch behandelt. (Details in [ Implementatie van de Inzameling van Media.](mc-api-impl/mc-api-quick-start.md))
 
-De volggegevens die met de Media Collection API worden gevangen worden verzonden en aanvankelijk verwerkt verschillend dan de volggegevens die in een speler van SDK van Media worden gevangen, maar de zelfde verwerkingsmotor op het achterste eind wordt gebruikt voor beide oplossingen.
+De volggegevens die met de Media Collection API worden gevangen worden verzonden en aanvankelijk verwerkt verschillend dan de volggegevens die in een speler van Media SDK worden gevangen, maar de zelfde verwerkingsmotor op het achterste eind wordt gebruikt voor beide oplossingen.
 
 ![](assets/col_api_overview_simple.png)
 
 ## API-overzicht {#api-overview}
 
-**URI:** Vraag dit aan uw Adobe.
+**URI:** verkrijg dit van uw vertegenwoordiger van de Adobe.
 
-**HTTP-methode:** POST, met de JSON-aanvraaginstantie.
+**Methode van HTTP:** POST, met JSON- verzoeklichaam.
 
 ### API-aanroepen {#mc-api-calls}
 
-* **`sessions`-** Vestigt een zitting met de server, en keert een Zitting ID terug die in volgende wordt gebruikt `events` oproepen. Uw app roept dit eenmaal aan het begin van een volgende sessie aan.
+* **`sessions`-** vestigt een zitting met de server, en keert een Zitting ID terug die in verdere `events` vraag wordt gebruikt. Uw app roept dit eenmaal aan het begin van een volgende sessie aan.
 
   `{uri}/api/v1/sessions`
 
-* **`events`-** Hiermee verzendt u gegevens voor het bijhouden van media.
+* **`events`-** verzendt gegevens voor het bijhouden van media.
 
   `{uri}/api/v1/sessions/{session-id}/events`
 
@@ -69,12 +69,12 @@ De volggegevens die met de Media Collection API worden gevangen worden verzonden
 
 * `playerTime` - Verplicht voor alle verzoeken.
 * `eventType` - Verplicht voor alle verzoeken.
-* `params` - Verplicht voor bepaalde `eventTypes`; controleer de [JSON-validatieschema](mc-api-ref/mc-api-json-validation.md) om te bepalen welke eventTypes verplicht zijn, en die facultatief zijn.
+* `params` - Verplicht voor bepaalde `eventTypes`; controleer het [ JSON bevestigingsschema ](mc-api-ref/mc-api-json-validation.md) om te bepalen welke eventTypes verplicht zijn, en die facultatief zijn.
 
 * `qoeData` - Optioneel voor alle aanvragen.
-* `customMetadata` - Optioneel voor alle aanvragen, maar alleen verzonden met `sessionStart`, `adStart`, en `chapterStart` gebeurtenistypen.
+* `customMetadata` - Optioneel voor alle aanvragen, maar alleen verzonden met de gebeurtenistypen `sessionStart` , `adStart` en `chapterStart` .
 
-Voor elke `eventType`er een openbaar beschikbare [JSON-validatieschema](mc-api-ref/mc-api-json-validation.md) die u moet gebruiken om parametertypen te verifiëren en of een parameter optioneel of vereist is voor een bepaalde gebeurtenis.
+Voor elk `eventType`, is er openbaar beschikbaar [ JSON bevestigingsschema ](mc-api-ref/mc-api-json-validation.md) dat u zou moeten gebruiken om parametertypes te verifiëren en of een parameter voor een bepaalde gebeurtenis facultatief of vereist is.
 
 ### Gebeurtenistypen {#mc-api-event-types}
 
@@ -93,3 +93,5 @@ Voor elke `eventType`er een openbaar beschikbare [JSON-validatieschema](mc-api-r
 * `chapterComplete`
 * `sessionEnd`
 * `sessionComplete`
+* `stateStart`
+* `stateEnd`

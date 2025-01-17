@@ -5,9 +5,9 @@ uuid: bc4f75a7-ea22-47eb-a50d-5f41274c6d41
 exl-id: f2919e69-8b03-45b4-b9cd-365222a061e0
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 06f24e828fb7795d55599ea1fa7913182dd357e6
+source-git-commit: 98722998606af3761652e282c31338bb966eb654
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '394'
 ht-degree: 0%
 
 ---
@@ -90,3 +90,15 @@ Verzonden wanneer het einde van de hoofdinhoud is bereikt
 >[!IMPORTANT]
 >
 >U zou naar de [ JSON bevestigingsschema&#39;s ](mc-api-json-validation.md) voor elk gebeurtenistype moeten verwijzen, om de correcte types en de vereisten van de gebeurtenisparameter te verifiëren.
+
+## stateStart
+
+Geeft het begin van bijhouden van spelerstatus aan.
+
+Voor meer informatie, zie [ Implementatie en het melden ](/help/use-cases/player-state-tracking/implementation-and-reporting.md).
+
+## stateEnd
+
+Geeft het einde van de status tracking van de speler aan.
+
+Voor meer informatie, zie [ Implementatie en het melden ](/help/use-cases/player-state-tracking/implementation-and-reporting.md).
