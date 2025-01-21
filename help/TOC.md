@@ -1,19 +1,19 @@
 ---
 product: adobe analytics
 audience: end-user
-user-guide-title: Streaming media-verzameling
+user-guide-title: Mediaverzameling streamen
 breadcrumb-title: Handleiding voor het streamen van mediaverzameling
 user-guide-description: Implementeer streaming van media. Bevat de Media-SDK en de Media Collection-API.
 sub-product: media analytics
 source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
 source-wordcount: '893'
-ht-degree: 13%
+ht-degree: 14%
 
 ---
 
 
-# Streaming media-verzameling {#using}
+# Mediaverzameling streamen {#using}
 
 + [Handleiding voor het streamen van mediaverzameling](media-overview.md)
 + Opmerkingen bij de release {#release-notes}
