@@ -143,7 +143,7 @@ Voor meer informatie over het volgen van serveropties, zie [De variabelen tracki
 
    De analysetrackingserver moet eindigen op &quot;`.sc.omtrdc.net`&quot; of een CNAME zijn.
 
-* ** Media Analytics (Heartbeats) server** Dit heeft altijd de indeling &quot;`[your_namespace].hb.omtrdc.net`&quot;. De waarde van &quot;`[your_namespace]`&quot; geeft uw bedrijf aan en wordt opgegeven door Adobe.
+* **&#x200B; Media Analytics (Heartbeats) server** Dit heeft altijd de indeling &quot;`[your_namespace].hb.omtrdc.net`&quot;. De waarde van &quot;`[your_namespace]`&quot; geeft uw bedrijf aan en wordt opgegeven door Adobe.
 
 Mediatracering werkt op alle platformen hetzelfde, zowel op het bureaublad als op mobiele apparaten. Audio bijhouden werkt momenteel op mobiele platforms. Voor alle volgende vraag zijn er een paar zeer belangrijke universele variabelen die moeten worden bevestigd:
 

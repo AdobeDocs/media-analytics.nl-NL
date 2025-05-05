@@ -38,4 +38,4 @@ In de onderstaande tabel vindt u documentatie over Adobe-producten die worden ge
 
 ## Tutorials voor Adobe Enterprise {#adobe-tutorials}
 
-De ondernemingsleerprogramma&#39;s van de Adobe van het gebruik ](https://experienceleague.adobe.com/docs/home-tutorials.html) aan hefboomwerkings de bedrijfstoepassingen van de Adobe voor uw bedrijfsbehoeften. [ U vindt nuttige zelfstudies en training in Adobe Experience Cloud, Adobe Experience Platform en Adobe Analytics.
+De ondernemingsleerprogramma&#39;s van de Adobe van het gebruik [&#128279;](https://experienceleague.adobe.com/docs/home-tutorials.html) aan hefboomwerkings de bedrijfstoepassingen van de Adobe voor uw bedrijfsbehoeften.  U vindt nuttige zelfstudies en training in Adobe Experience Cloud, Adobe Experience Platform en Adobe Analytics.

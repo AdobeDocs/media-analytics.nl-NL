@@ -22,13 +22,13 @@ ht-degree: 11%
 |---|---|
 | `pev2` | ms_s |
 | `a.media.friendlyName` | Episodetitel |
-| _**`a.media.name`**_ | _**123456**_ |
-| _**`a.media.length`**_ | _**120**_ |
+| _&#x200B;**`a.media.name`**&#x200B;_ | _&#x200B;**123456**&#x200B;_ |
+| _&#x200B;**`a.media.length`**&#x200B;_ | _&#x200B;**120**&#x200B;_ |
 | `a.media.playerName` | HTML5 |
-| _**`a.media.view`**_ | _**true**_ |
+| _&#x200B;**`a.media.view`**&#x200B;_ | _&#x200B;**true**&#x200B;_ |
 | `a.contentType` | vod |
-| _**`custom.[value]`**_ | _**Aangepaste metagegevensvelden**_ |
-| _**`a.media.[value]`**_ | _**Standaardmetagegevensvelden**_ |
+| _&#x200B;**`custom.[value]`**&#x200B;_ | _&#x200B;**Aangepaste metagegevensvelden**&#x200B;_ |
+| _&#x200B;**`a.media.[value]`**&#x200B;_ | _&#x200B;**Standaardmetagegevensvelden**&#x200B;_ |
 
 **Opmerkingen:**
 
@@ -66,15 +66,15 @@ ht-degree: 11%
 | Parameter |  Waarde (monster)  |
 |---|---|
 | `s:event:type` | start |
-| _**`l:event:playhead`**_ | _**0**_ |
+| _&#x200B;**`l:event:playhead`**&#x200B;_ | _&#x200B;**0**&#x200B;_ |
 | `l:event:duration` | 4 |
 | `s:asset:name` | Episodetitel |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
 | `s:stream:type` | vod |
 | `s:asset:type` | hoofd |
-| _**`s:meta:custom.[value]`**_ | _**Aangepaste metagegevensvelden**_ |
-| _**`s:meta:a.media.[value]`**_ | _**Standaardmetagegevensvelden**_ |
+| _&#x200B;**`s:meta:custom.[value]`**&#x200B;_ | _&#x200B;**Aangepaste metagegevensvelden**&#x200B;_ |
+| _&#x200B;**`s:meta:a.media.[value]`**&#x200B;_ | _&#x200B;**Standaardmetagegevensvelden**&#x200B;_ |
 
 **Opmerkingen:**
 
@@ -111,7 +111,7 @@ ht-degree: 11%
 
 | Parameter |  Waarde (monster)  |
 |---|---|
-| _**`s:event:type`**_ | _**aa_start**_ |
+| _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**aa_start**&#x200B;_ |
 | `l:event:playhead` | 0 |
 | `l:event:duration` | 4 |
 | `s:asset:name` | Episodetitel |
@@ -131,19 +131,19 @@ ht-degree: 11%
 
 | Parameter |  Waarde (monster)  |
 |---|---|
-| _**`pev2`**_ | _**msa_s**_ |
+| _&#x200B;**`pev2`**&#x200B;_ | _&#x200B;**msa_s**&#x200B;_ |
 | `a.media.name` | 123456 |
-| _**`a.media.ad.name`**_ | _**9378**_ |
+| _&#x200B;**`a.media.ad.name`**&#x200B;_ | _&#x200B;**9378**&#x200B;_ |
 | `a.media.ad.friendlyName` | Video_VPAID_DFA |
 | `a.media.ad.podFriendlyName` | preroll |
-| _**`a.media.ad.length`**_ | _**15**_ |
+| _&#x200B;**`a.media.ad.length`**&#x200B;_ | _&#x200B;**15**&#x200B;_ |
 | `a.media.ad.playerName` | HTML5 |
 | `a.media.ad.pod` | c27aaf3ff8224bb6b9ebfe1b2e79073d_1 |
 | `a.media.ad.podPosition` | 1 |
 | `a.media.ad.podSecond` | 0,0 |
-| _**`a.media.ad.view`**_ | _**Waar**_ |
-| _**`custom.[value]`**_ | _**Metagegevensvelden**_ |
-| _**`a.media.[value]`**_ | _**Standaardmetagegevensvelden**_ |
+| _&#x200B;**`a.media.ad.view`**&#x200B;_ | _&#x200B;**Waar**&#x200B;_ |
+| _&#x200B;**`custom.[value]`**&#x200B;_ | _&#x200B;**Metagegevensvelden**&#x200B;_ |
+| _&#x200B;**`a.media.[value]`**&#x200B;_ | _&#x200B;**Standaardmetagegevensvelden**&#x200B;_ |
 
 **Opmerkingen:**
 
@@ -180,15 +180,15 @@ ht-degree: 11%
 
 | Parameter |  Waarde (monster)  |
 |---|---|
-| _**`s:event:type`**_ | _**start**_ |
+| _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**start**&#x200B;_ |
 | `l:event:playhead` | 0 |
 | `l:event:duration` | 4 |
 | `s:asset:ad_id` | 9378 |
-| _**`l:asset:length`**_ | _**120**_ |
+| _&#x200B;**`l:asset:length`**&#x200B;_ | _&#x200B;**120**&#x200B;_ |
 | `s:stream:type` | vod |
-| _**`s:asset:type`**_ | _**advertentie**_ |
-| _**`s:meta:custom.[value]`**_ | _**Aangepaste metagegevensvelden**_ |
-| _**`s:meta:a.media.[value]`**_ | _**Standaardmetagegevensvelden**_ |
+| _&#x200B;**`s:asset:type`**&#x200B;_ | _&#x200B;**advertentie**&#x200B;_ |
+| _&#x200B;**`s:meta:custom.[value]`**&#x200B;_ | _&#x200B;**Aangepaste metagegevensvelden**&#x200B;_ |
+| _&#x200B;**`s:meta:a.media.[value]`**&#x200B;_ | _&#x200B;**Standaardmetagegevensvelden**&#x200B;_ |
 
 **Opmerkingen:**
 
@@ -225,7 +225,7 @@ ht-degree: 11%
 
 | Parameter |  Waarde (monster)  |
 |---|---|
-| _**`s:event:type`**_ | _**aa_ad_start**_ |
+| _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**aa_ad_start**&#x200B;_ |
 | `l:event:playhead` | 0 |
 | `l:event:duration` | 0 |
 | `s:asset:ad_id` | 9378 |
@@ -237,37 +237,37 @@ ht-degree: 11%
 
 | Parameter |  Waarde (monster)  |
 |---|---|
-| _**`s:event:type`**_ | _**play**_ |
+| _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**play**&#x200B;_ |
 | `l:event:playhead` | 15 |
 | `l:event:duration` | 0 |
 | `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
 | `s:stream:type` | vod |
-| _**`s:asset:type`**_ | _**advertentie**_ |
+| _&#x200B;**`s:asset:type`**&#x200B;_ | _&#x200B;**advertentie**&#x200B;_ |
 
 ### Media Analytics (hartslagen) en Pauze vraag {#ma-ad-pause-call}
 
 | Parameter |  Waarde (monster)  |
 |---|---|
-| _**`s:event:type`**_ | _**pauzeren**_ |
+| _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**pauzeren**&#x200B;_ |
 | `l:event:playhead` | 15 |
 | `l:event:duration` | 0 |
 | `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
 | `s:stream:type` | vod |
-| _**`s:asset:type`**_ | _**advertentie**_ |
+| _&#x200B;**`s:asset:type`**&#x200B;_ | _&#x200B;**advertentie**&#x200B;_ |
 
 ### Media Analytics (heartbeats) Adobe Analytics Ad Complete call {#ma-aa-ad-complete-call}
 
 | Parameter |  Waarde (monster)  |
 |---|---|
-| _**`s:event:type`**_ | _**complete**_ |
+| _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**complete**&#x200B;_ |
 | `l:event:playhead` | 15 |
 | `l:event:duration` | 0 |
 | `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
 | `s:stream:type` | vod |
-| _**`s:asset:type`**_ | _**advertentie**_ |
+| _&#x200B;**`s:asset:type`**&#x200B;_ | _&#x200B;**advertentie**&#x200B;_ |
 
 ## Hoofdinhoud afspelen {#play-main-content}
 
@@ -276,8 +276,8 @@ ht-degree: 11%
 | Parameter |  Waarde (monster)  |
 |---|---|
 | `s:event:type` | play |
-| _**`l:event:playhead`**_ | _**29**_ |
-| _**`l:event:duration`**_ | _**10189**_ |
+| _&#x200B;**`l:event:playhead`**&#x200B;_ | _&#x200B;**29**&#x200B;_ |
+| _&#x200B;**`l:event:duration`**&#x200B;_ | _&#x200B;**10189**&#x200B;_ |
 | `s:asset:name` | Episodetitel |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
@@ -295,8 +295,8 @@ ht-degree: 11%
 
 | Parameter |  Waarde (monster)  |
 |---|---|
-| _**`s:event:type`**_ | _**pauzeren**_ |
-| _**`l:event:playhead`**_ | _**29**_ |
+| _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**pauzeren**&#x200B;_ |
+| _&#x200B;**`l:event:playhead`**&#x200B;_ | _&#x200B;**29**&#x200B;_ |
 | `l:event:duration` | 10189 |
 | `s:asset:name` | Episodetitel |
 | `s:asset:video_id` | 123456 |

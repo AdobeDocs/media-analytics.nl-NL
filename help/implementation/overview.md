@@ -38,7 +38,7 @@ Naast de implementatiemethoden van Edge zijn andere implementatiemethoden beschi
 
 * **Uitbreiding van Media met markeringen:** De Analytics van Adobe Media voor Audio en de Videouitbreiding verstrekt de functionaliteit voor het toevoegen van de instantie van de Tracker van Media aan een markering-toegelaten plaats of project. Gegevens worden naar Adobe Analytics verzonden.
 
-  Voor informatie bij het installeren van, het vormen van, en het uitvoeren van de Uitbreiding van Media met markeringen, zie {Analytics 0} Adobe Media (3.x SDK) voor Audio en Video uitbreidingsoverzicht ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics-3x/overview.html).[
+  Voor informatie bij het installeren van, het vormen van, en het uitvoeren van de Uitbreiding van Media met markeringen, zie {Analytics 0} Adobe Media (3.x SDK) voor Audio en Video uitbreidingsoverzicht [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics-3x/overview.html).
 
 * **Media SDK:** Media SDK staat u toe om veelvoudige media platforms, met inbegrip van websites, mobiele telefoons, aangesloten TVs, tablets, ETT apparaten, reeks-hoogste dozen, en gokkenconsoles te meten. (Voor meer informatie, zie [ Ondersteunde apparaten en platforms ](/help/getting-started/supported-devices.md).)
 
