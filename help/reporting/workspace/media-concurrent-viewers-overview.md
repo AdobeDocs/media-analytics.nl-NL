@@ -17,7 +17,7 @@ Door gelijktijdige viewers te analyseren, kunt u precies zien waar de piekgelijk
 
 ## Deelvenster Mediagelijktijdige viewers in Analysis Workspace
 
-In Analysis Workspace is Gelijktijdige viewers het aantal unieke bezoekers dat uw mediastream(s) op een bepaald tijdstip weergeeft, ongeacht het aantal sessies. Het deelvenster Mediagelijktijdige viewers is beschikbaar voor het visualiseren van gelijktijdige viewers, het indelen en vergelijken van viewers. [Meer informatie...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html)
+In Analysis Workspace is Gelijktijdige viewers het aantal unieke bezoekers dat uw mediastream(s) op een bepaald tijdstip weergeeft, ongeacht het aantal sessies. Het deelvenster Mediagelijktijdige viewers is beschikbaar voor het visualiseren van gelijktijdige viewers, het indelen en vergelijken van viewers. [Meer informatie...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html?lang=nl-NL)
 
 ## Gelijktijdige viewers ophalen via Analytics Reporting API
 

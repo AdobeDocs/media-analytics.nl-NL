@@ -20,10 +20,10 @@ Of u de Streaming Inzameling van Media voor Adobe Analytics-slechts implementati
 
 1. **bevestigt dat u een oplossing van de Adobe compatibel met Edge Network en de Streaming Inzameling van Media**<br> uitvoert
 Wanneer u de verzameling streamingmedia met Edge implementeert, moet u ook over een werkende Customer Journey Analytics, Adobe Analytics, Adobe Journey Optimizer of een Real-time Customer Data Platform-implementatie beschikken. Zie de volgende documentatiebronnen voor meer informatie:
-   * [ gids van de Customer Journey Analytics ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=en)
-   * [ voer Adobe Analytics ](https://experienceleague.adobe.com/docs/analytics/implementation/home.html) uit
-   * [ documentatie van Adobe Journey Optimizer ](https://experienceleague.adobe.com/docs/journey-optimizer.html)
-   * [ documentatie van Real-time Customer Data Platform ](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html)
+   * [ gids van de Customer Journey Analytics ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=nl-NL)
+   * [ voer Adobe Analytics ](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=nl-NL) uit
+   * [ documentatie van Adobe Journey Optimizer ](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=nl-NL)
+   * [ documentatie van Real-time Customer Data Platform ](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html?lang=nl-NL)
 
 1. **verkrijg media het volgen server URL**<br>
 Vraag uw Customer Journey Analytics-vertegenwoordiger naar de URL van de mediatrackingserver. <!-- This is the `collection-api-server` URL for the Mobile SDK, the JavaScript SDK, and the non-collection-api tracking server for Roku. Domain names for API implementation is: `[your_namespace].hb-api.omtrdc.net`. -->

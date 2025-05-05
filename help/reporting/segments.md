@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Mediasegmenten{#segments}
 
-Met segmenten kunt u subsets bezoekers identificeren op basis van kenmerken of interacties op de website. Met streaming-mediasegmenten kunt u het stroomtype van de bezoeker identificeren, zoals audio-, live- of podcast-streams. Voor informatie over de segmenten van Adobe Analytics, zie [ Ongeveer segmenten en containers ](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=en) in de Gids van de Componenten van Adobe Analytics.
+Met segmenten kunt u subsets bezoekers identificeren op basis van kenmerken of interacties op de website. Met streaming-mediasegmenten kunt u het stroomtype van de bezoeker identificeren, zoals audio-, live- of podcast-streams. Voor informatie over de segmenten van Adobe Analytics, zie [ Ongeveer segmenten en containers ](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=nl-NL) in de Gids van de Componenten van Adobe Analytics.
 
 >[!NOTE]
 >

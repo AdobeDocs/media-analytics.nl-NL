@@ -18,7 +18,7 @@ ht-degree: 0%
 >
 >*Rapporten* in Workspace voorheen bekend als *sjablonen*.
 
-Analysis Workspace biedt een set vooraf gebouwde rapporten die standaard beschikbaar zijn en die u kunt gebruiken om gegevens te analyseren. Voor meer informatie over alle standaardrapporten die beschikbaar zijn, zie [Rapporten weergeven](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#menus) in [Adobe Analytics-landingspagina](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html).
+Analysis Workspace biedt een set vooraf gebouwde rapporten die standaard beschikbaar zijn en die u kunt gebruiken om gegevens te analyseren. Voor meer informatie over alle standaardrapporten die beschikbaar zijn, zie [Rapporten weergeven](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=nl-NL#menus) in [Adobe Analytics-landingspagina](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=nl-NL).
 
 Sommige van deze rapporten zijn met name handig voor het analyseren van streaming mediagegevens, zoals wordt beschreven in de volgende secties.
 
@@ -40,6 +40,6 @@ Als u bijvoorbeeld de optie  [!UICONTROL **Streaming media-verbruik**] rapport ,
 
 U kunt de standaardrapporten van Media op de volgende manieren gebruiken: wanneer het creëren van een nieuw project. U kunt of wanneer het wijzigen van een bestaand project ook.
 
-* **Bij het maken van een nieuw project:** Voor informatie over hoe te om een nieuw project van een standaardrapport tot stand te brengen, zie [Creeer een project van een leeg project of een rapport](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=en#create-a-project-from-a-blank-project-or-a-report) in [Projecten maken in Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=en#create-a-project-from-a-blank-project-or-a-report).
+* **Bij het maken van een nieuw project:** Voor informatie over hoe te om een nieuw project van een standaardrapport tot stand te brengen, zie [Creeer een project van een leeg project of een rapport](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=nl-NL#create-a-project-from-a-blank-project-or-a-report) in [Projecten maken in Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=nl-NL#create-a-project-from-a-blank-project-or-a-report).
 
-* **Wanneer het creëren van een rapport van het douanebedrijf:** Voor informatie over hoe te om een rapport van het douanebedrijf tot stand te brengen, zie [Een aangepast bedrijfsrapport maken](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#company-report) in [Adobe Analytics-landingspagina](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html).
+* **Wanneer het creëren van een rapport van het douanebedrijf:** Voor informatie over hoe te om een rapport van het douanebedrijf tot stand te brengen, zie [Een aangepast bedrijfsrapport maken](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=nl-NL#company-report) in [Adobe Analytics-landingspagina](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=nl-NL).

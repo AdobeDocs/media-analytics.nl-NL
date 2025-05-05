@@ -16,7 +16,7 @@ ht-degree: 3%
 
 Berekende meetwaarden voor de Adobe die de Verzameling van Media stroomt zijn douanemetriek die u toestaan om gerichte het stromen media gegevens zoals gemiddelde gebruikte tijd of gemiddelde advertenties per media stroom te verkrijgen.
 
-Voor informatie over Adobe Analytics berekende metriek, zie [ Berekende en Geavanceerde Berekende (Afgeleid) Metriek ](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/cm-overview.html?lang=en) in de Gids van de Componenten van Adobe Analytics.
+Voor informatie over Adobe Analytics berekende metriek, zie [ Berekende en Geavanceerde Berekende (Afgeleid) Metriek ](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/cm-overview.html?lang=nl-NL) in de Gids van de Componenten van Adobe Analytics.
 
 >[!NOTE]
 >

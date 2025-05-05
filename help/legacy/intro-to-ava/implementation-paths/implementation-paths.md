@@ -20,22 +20,22 @@ Voor elk implementatiepad moeten klanten contact opnemen met hun Adobe-/verkoopa
 ## Adobe Experience Platform Data Collection met de uitbreiding van de Analytics van Adobe Media
 
 >[!NOTE]
->Adobe Experience Platform Launch is omgedoopt tot een reeks technologieën voor gegevensverzameling in Experience Platform. Diverse terminologische wijzigingen zijn als gevolg hiervan in de productdocumentatie doorgevoerd. Raadpleeg het volgende [document](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en) voor een geconsolideerde referentie van de terminologische wijzigingen.
+>Adobe Experience Platform Launch is omgedoopt tot een reeks technologieën voor gegevensverzameling in Experience Platform. Diverse terminologische wijzigingen zijn als gevolg hiervan in de productdocumentatie doorgevoerd. Raadpleeg het volgende [document](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=nl-NL) voor een geconsolideerde referentie van de terminologische wijzigingen.
 
 
 Tags in Adobe Experience Platform zijn de volgende generatie mogelijkheden voor tagbeheer van Adobe. Met labels kunnen klanten eenvoudig alle analytische, marketing- en advertentietags implementeren en beheren die nodig zijn om relevante klantervaringen te stimuleren. Tags worden aan Adobe Experience Cloud-klanten aangeboden als een inbegrepen functie voor het toevoegen van waarden.
 
 Tags stellen iedereen in staat zijn eigen integraties te maken en te onderhouden, zogenaamde extensies. Deze extensies zijn beschikbaar voor Adobe Experience Cloud-klanten in een app-store-ervaring, zodat ze hun tags snel kunnen installeren, configureren en implementeren.
 
-Een extensie is een pakket code (JavaScript, HTML en CSS) dat de functionaliteit voor tags uitbreidt. Ontwikkel, beheer, en werk uw integratie bij gebruikend een vrijwel zelfbedienings interface. U kunt extensies beschouwen als toepassingen die u gebruikt om uw taken uit te voeren. Zie de *Overzicht van codes* in het [Adobe Experience Platform-documentatie](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
+Een extensie is een pakket code (JavaScript, HTML en CSS) dat de functionaliteit voor tags uitbreidt. Ontwikkel, beheer, en werk uw integratie bij gebruikend een vrijwel zelfbedienings interface. U kunt extensies beschouwen als toepassingen die u gebruikt om uw taken uit te voeren. Zie de *Overzicht van codes* in het [Adobe Experience Platform-documentatie](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl-NL)
 
 De extensie Adobe Media Analytics (MA) voegt de kern-JavaScript Media SDK (Media 2.x SDK) toe voor audio en video. Deze extensie biedt de functionaliteit voor het toevoegen van de `MediaHeartbeat` tracker-instantie naar een gegevensverzamelingssite of -project.
 
 Voor gegevensverzameling Adobe met de extensie Media Analytics is het volgende vereist:
 * Je moet een Adobe Experience Cloud-klant zijn.
 * U moet gegevensverzameling of DTM-insluitcode op uw webpagina&#39;s implementeren.
-* [Extensie Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html)
-* [Experience Cloud ID-extensie](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html)
+* [Extensie Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=nl-NL)
+* [Experience Cloud ID-extensie](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=nl-NL)
 
 
 ## Client-zijde

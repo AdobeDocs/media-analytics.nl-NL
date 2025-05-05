@@ -19,7 +19,7 @@ ht-degree: 3%
 * **Geldige configuratieparameters verkrijgen**
 Deze parameters kunt u verkrijgen van een Adobe-medewerker nadat u uw analyseaccount hebt ingesteld.
 * **Implementeren `AppMeasurement` voor JavaScript in uw mediatoepassing**
-Voor meer informatie over de documentatie van Adobe Mobile SDK, zie [Analyses implementeren met JavaScript.](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html)
+Voor meer informatie over de documentatie van Adobe Mobile SDK, zie [Analyses implementeren met JavaScript.](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=nl-NL)
 
 * **Biedt de volgende mogelijkheden in uw mediaspeler:**
 

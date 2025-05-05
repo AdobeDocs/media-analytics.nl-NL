@@ -12,7 +12,7 @@ De volgende inhoud is gekopieerd uit de opmerkingen bij de release Experience Cl
 
 Meer informatie over de nieuwste release-updates voor [Adobe Experience Cloud-producten](https://business.adobe.com/products/adobe-experience-cloud-products.html). De nieuwste zelfhulpdocumentatie, zelfstudies en cursussen over Experience League.
 
-Meer informatie over de nieuwste release-updates voor [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=en). De nieuwste zelfhulpdocumentatie, zelfstudies en cursussen over Experience League.
+Meer informatie over de nieuwste release-updates voor [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=nl-NL). De nieuwste zelfhulpdocumentatie, zelfstudies en cursussen over Experience League.
 
 
 ## Huidige versie (maart 2022)
@@ -21,7 +21,7 @@ Nieuwe functies in Media Analytics
 
 | Functie | Algemene beschikbaarheid | Beschrijving |
 | -------- | -------------------- | ----------- |
-| Deelvenster Mediagemiddelde miniatuur in Workspace | maart 2022<br> (beperkte tests) | Met het deelvenster Mediagemiddelde Minuut publiek kunnen klanten van Media Analytics het gemiddelde verbruik van inhoud beter begrijpen. Het gemiddelde minutenpubliek maakt vergelijkingen van programmering van om het even welke lengte of genre mogelijk. Bovendien kunnen klanten dit digitale gemiddelde minieme publiek vergelijken of toevoegen aan lineaire gemiddelde de minmetriek van TV. Dit deelvenster biedt meer flexibiliteit om het gemiddelde publiek voor aangepaste tijdsperiodes te meten en om te bepalen wanneer de classificatie van de duur na het feit is bijgewerkt. [Meer informatie…](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/average-minute-audience.html?lang=en) |
+| Deelvenster Mediagemiddelde miniatuur in Workspace | maart 2022<br> (beperkte tests) | Met het deelvenster Mediagemiddelde Minuut publiek kunnen klanten van Media Analytics het gemiddelde verbruik van inhoud beter begrijpen. Het gemiddelde minutenpubliek maakt vergelijkingen van programmering van om het even welke lengte of genre mogelijk. Bovendien kunnen klanten dit digitale gemiddelde minieme publiek vergelijken of toevoegen aan lineaire gemiddelde de minmetriek van TV. Dit deelvenster biedt meer flexibiliteit om het gemiddelde publiek voor aangepaste tijdsperiodes te meten en om te bepalen wanneer de classificatie van de duur na het feit is bijgewerkt. [Meer informatie…](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/average-minute-audience.html?lang=nl-NL) |
 
 
 
@@ -44,7 +44,7 @@ Nieuwe zelfstudies en cursussen voor Analytics
 
 | Functie | Beschrijving |
 | ----------- | ---------- |
-| Tijd van afspelen van media besteed | Adobe Streaming Media Playback Time Spent biedt een waardevol inzicht in de betrokkenheid van de kijker en stelt mediaorganisaties in staat diepere, meer granulaire inzichten af te leiden met de betrokkenheid van gebruikers van minuut tot minuut door middel van geavanceerde tijdbestede analyse met mogelijkheden voor het parseren van dagen. U kunt de hoeveelheid tijd waarnemen die het bekijken van uw media stromen op een specifiek punt in tijd besteedt. U kunt de afspeelduur splitsen op verschillende granulariteiten, zoals nieuwe granulariteiten van 5 minuten, 15 minuten en 30 minuten. [Meer informatie...](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/media-workspace-panels/media-playback-time-spent.html?lang=en) |
+| Tijd van afspelen van media besteed | Adobe Streaming Media Playback Time Spent biedt een waardevol inzicht in de betrokkenheid van de kijker en stelt mediaorganisaties in staat diepere, meer granulaire inzichten af te leiden met de betrokkenheid van gebruikers van minuut tot minuut door middel van geavanceerde tijdbestede analyse met mogelijkheden voor het parseren van dagen. U kunt de hoeveelheid tijd waarnemen die het bekijken van uw media stromen op een specifiek punt in tijd besteedt. U kunt de afspeelduur splitsen op verschillende granulariteiten, zoals nieuwe granulariteiten van 5 minuten, 15 minuten en 30 minuten. [Meer informatie...](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/media-workspace-panels/media-playback-time-spent.html?lang=nl-NL) |
 
 
 
@@ -52,7 +52,7 @@ Nieuwe zelfstudies en cursussen voor Analytics
 
 | Functie | Beschrijving |
 | ----------- | ---------- |
-| Tijd van afspelen van media besteed | Adobe Streaming Media Playback Time Spent biedt een waardevol inzicht in de betrokkenheid van de kijker en stelt mediaorganisaties in staat diepere, meer granulaire inzichten af te leiden met de betrokkenheid van gebruikers van minuut tot minuut door middel van geavanceerde tijdbestede analyse met mogelijkheden voor het parseren van dagen. U kunt de hoeveelheid tijd waarnemen die het bekijken van uw media stromen op een specifiek punt in tijd besteedt. U kunt de afspeelduur splitsen op verschillende granulariteiten, zoals nieuwe granulariteiten van 5 minuten, 15 minuten en 30 minuten. [Meer informatie...](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/media-workspace-panels/media-playback-time-spent.html?lang=en) |
+| Tijd van afspelen van media besteed | Adobe Streaming Media Playback Time Spent biedt een waardevol inzicht in de betrokkenheid van de kijker en stelt mediaorganisaties in staat diepere, meer granulaire inzichten af te leiden met de betrokkenheid van gebruikers van minuut tot minuut door middel van geavanceerde tijdbestede analyse met mogelijkheden voor het parseren van dagen. U kunt de hoeveelheid tijd waarnemen die het bekijken van uw media stromen op een specifiek punt in tijd besteedt. U kunt de afspeelduur splitsen op verschillende granulariteiten, zoals nieuwe granulariteiten van 5 minuten, 15 minuten en 30 minuten. [Meer informatie...](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/media-workspace-panels/media-playback-time-spent.html?lang=nl-NL) |
 
 ## Januari 2021
 
@@ -60,7 +60,7 @@ Nieuwe zelfstudies en cursussen voor Analytics
 
 | Gepubliceerd | Naam | type | Beschrijving |
 | ----------- | ---------- | ---------- | --------- |
-| 6 januari 2021 | [Deelvenster Mediagelijktijdige viewers in Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace.html?lang=en#analysis-workspace) | Video | Begrijp waar de piekgelijktijdig voorkwam of waar drop-outs voorkwamen. Krijg waardevol inzicht in de kwaliteit van inhoud en viewerbetrokkenheid, en hulp bij het oplossen van problemen of het plannen voor volume en schaal. |
+| 6 januari 2021 | [Deelvenster Mediagelijktijdige viewers in Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace.html?lang=nl-NL#analysis-workspace) | Video | Begrijp waar de piekgelijktijdig voorkwam of waar drop-outs voorkwamen. Krijg waardevol inzicht in de kwaliteit van inhoud en viewerbetrokkenheid, en hulp bij het oplossen van problemen of het plannen voor volume en schaal. |
 
 
 ## November 2020
@@ -87,12 +87,12 @@ Nieuwe functies in Media Analytics
 
 | Functie | Algemene beschikbaarheid | Beschrijving |
 | -------- | -------------------- | ----------- |
-| [Ondersteunde apparaten en platforms](https://experienceleague.adobe.com/docs/media-analytics/using/supported-devices.html?lang=en) | 18 juni 2020 | De extensie Media Launch met AEP SDK ondersteunt nu de volgende OTT-apparaten: <div><ul><li>Apple TV (tvOS)</li><li>Fire TV (Fire OS)</li><li>Android-tv</li></ul></div> |
+| [Ondersteunde apparaten en platforms](https://experienceleague.adobe.com/docs/media-analytics/using/supported-devices.html?lang=nl-NL) | 18 juni 2020 | De extensie Media Launch met AEP SDK ondersteunt nu de volgende OTT-apparaten: <div><ul><li>Apple TV (tvOS)</li><li>Fire TV (Fire OS)</li><li>Android-tv</li></ul></div> |
 
 
 
 ## Bronnen voor Analytics Help
 
-[Adobe Analytics-tutorials](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=en)
+[Adobe Analytics-tutorials](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=nl-NL)
 
-[Adobe Analytics-productdocumentatie](https://experienceleague.adobe.com/docs/analytics.html?lang=en)
+[Adobe Analytics-productdocumentatie](https://experienceleague.adobe.com/docs/analytics.html?lang=nl-NL)
