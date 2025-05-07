@@ -31,7 +31,7 @@ Een schema maken en instellen:
 
 1. In Adobe Experience Platform, begin creërend het schema zoals die in [ wordt beschreven creeer en geef schema&#39;s in UI ](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en) uit.
 
-1. Op de pagina van de details van het Schema wanneer het creëren van het schema, kies {de Gebeurtenis van de 0} Ervaring **]wanneer het kiezen van de basisklasse voor het schema.[!UICONTROL **
+1. Op de pagina van de details van het Schema wanneer het creëren van het schema, kies {de Gebeurtenis van de 0} Ervaring **wanneer het kiezen van de basisklasse voor het schema.**
 
    ![ Toegevoegde gebiedsgroepen ](assets/schema-experience-event.png)
 
@@ -39,7 +39,7 @@ Een schema maken en instellen:
 
 1. Specificeer een naam en een beschrijving van de schemavertoning, dan uitgezochte [!UICONTROL **Afwerking**].
 
-1. In het **]gebied van de Samenstelling[!UICONTROL **, in de [!UICONTROL **3} sectie van de Groepen van het Gebied {, uitgezocht[!UICONTROL ** voeg **]toe, dan onderzoek naar en voeg de volgende nieuwe gebiedsgroepen aan het schema toe:**]
+1. In het **gebied van de Samenstelling**, in de [!UICONTROL **3&rbrace; sectie van de Groepen van het Gebied &lbrace;, uitgezocht[!UICONTROL **&#x200B; voeg &#x200B;**]toe, dan onderzoek naar en voeg de volgende nieuwe gebiedsgroepen aan het schema toe:**]
    * `End User ID Details`
    * `Implementation Details`
    * `MediaAnalytics Interaction Details`
@@ -74,9 +74,9 @@ Een schema maken en instellen:
 
         ![ te verbergen gebieden ](assets/schema-hide-listofstates.png)
 
-      * Verberg in het veld `Media Collection Details` > `Qoe Data Details` de volgende rapporteringsvelden: `Average Bitrate` , `Average Bitrate Bucket`, `Bitrate Change Impacted Streams` , `Bitrate Changes`, `Buffer Impacted Streams` , `Buffer Events`, `Dropped Frame Impacted Streams`, `Drops Before Starts`, `Errors`, `External Error IDs`, `Error Impacted Streams`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Impacted Streams`, `Stalling Events`, `Total Buffer Duration` en `Total Stalling Duration` 8}.
+      * Verberg in het veld `Media Collection Details` > `Qoe Data Details` de volgende rapporteringsvelden: `Average Bitrate` , `Average Bitrate Bucket`, `Bitrate Change Impacted Streams` , `Bitrate Changes`, `Buffer Impacted Streams` , `Buffer Events`, `Dropped Frame Impacted Streams`, `Drops Before Starts`, `Errors`, `External Error IDs`, `Error Impacted Streams`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Impacted Streams`, `Stalling Events`, `Total Buffer Duration` en `Total Stalling Duration` 8&rbrace;.
 
-      * Verberg in het veld `Media Collection Details` > `Session Details` de volgende rapporteringsvelden: `10% Progress Marker` , `25% Progress Marker`, `50% Progress Marker` , `75% Progress Marker`, `95% Progress Marker` , `Ad Count`, `Average Minute Audience`, `Content Completes`, `Chapter Count`, `Content Starts`, `Content Time Spent`, `Estimated Streams`, `Federated Data`, `Media Segment Views`, `Media Downloaded Flag`, `Media Starts`, `Pause Impacted Streams` 8}, `Media Session Server Timeout`, `Media Time Spent`, `Pause Events`, `Media Session ID`, `Pev3`, `Pccr`, `Total Pause Duration`, `Unique Time Played` en `Video Segment` .
+      * Verberg in het veld `Media Collection Details` > `Session Details` de volgende rapporteringsvelden: `10% Progress Marker` , `25% Progress Marker`, `50% Progress Marker` , `75% Progress Marker`, `95% Progress Marker` , `Ad Count`, `Average Minute Audience`, `Content Completes`, `Chapter Count`, `Content Starts`, `Content Time Spent`, `Estimated Streams`, `Federated Data`, `Media Segment Views`, `Media Downloaded Flag`, `Media Starts`, `Pause Impacted Streams` 8&rbrace;, `Media Session Server Timeout`, `Media Time Spent`, `Pause Events`, `Media Session ID`, `Pev3`, `Pccr`, `Total Pause Duration`, `Unique Time Played` en `Video Segment` .
 
    1. Selecteer [!UICONTROL **bevestigen**] om uw veranderingen te bewaren.
 
@@ -95,9 +95,9 @@ Een schema maken en instellen:
 
       * Verberg in het veld `List Of Media Collection Downloaded Content Events` > `Media Details` > `List Of States End` en `Media Collection Details` > `List Of States Start` de volgende rapportvelden: `Player State Count`, `Player State Set` en `Player State Time` .
 
-      * Verberg in het veld `List Of Media Collection Downloaded Content Events` > `Media Details` > `Qoe Data Details` de volgende rapporteringsvelden: `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Change Impacted Streams`, `Bitrate Changes`, `Buffer Events`, `Buffer Impacted Streams`, `Drops Before Starts`, `Dropped Frame Impacted Streams`, `Error Impacted Streams`, `Errors`, `External Error IDs`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Events`, `Stalling Impacted Streams`, `Total Buffer Duration` 8} en `Total Stalling Duration` .
+      * Verberg in het veld `List Of Media Collection Downloaded Content Events` > `Media Details` > `Qoe Data Details` de volgende rapporteringsvelden: `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Change Impacted Streams`, `Bitrate Changes`, `Buffer Events`, `Buffer Impacted Streams`, `Drops Before Starts`, `Dropped Frame Impacted Streams`, `Error Impacted Streams`, `Errors`, `External Error IDs`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Events`, `Stalling Impacted Streams`, `Total Buffer Duration` 8&rbrace; en `Total Stalling Duration` .
 
-      * Verberg in het veld `List Of Media Collection Downloaded Content Events` > `Media Details` > `Session Details` de volgende rapporteringsvelden: `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Content Completes`, `Content Starts`, `Content Time Spent`, `Estimated Streams`, `Federated Data`, `Media Downloaded Flag`, `Media Segment Views`, `Pause Events` 8}, `Media Session Server Timeout`, `Media Starts`, `Media Time Spent`, `Media Session ID`, `Pause Impacted Streams`, `Pccr`, `Pev3`, `Total Pause Duration`, `Unique Time Played` en `Video Segment` .
+      * Verberg in het veld `List Of Media Collection Downloaded Content Events` > `Media Details` > `Session Details` de volgende rapporteringsvelden: `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Content Completes`, `Content Starts`, `Content Time Spent`, `Estimated Streams`, `Federated Data`, `Media Downloaded Flag`, `Media Segment Views`, `Pause Events` 8&rbrace;, `Media Session Server Timeout`, `Media Starts`, `Media Time Spent`, `Media Session ID`, `Pause Impacted Streams`, `Pccr`, `Pev3`, `Total Pause Duration`, `Unique Time Played` en `Video Segment` .
 
       * Verberg het veld `Media Session ID` in het veld `List Of Media Collection Downloaded Content Events` > `Media Details` .
 
@@ -290,7 +290,7 @@ Een schema maken en instellen:
 
       Naast de afmetingen in deze tabel kunt u alle andere afmetingen toevoegen die u beschikbaar wilt maken om gegevens te filteren op basis van Customer Journey Analytics-projecten.
 
-1. Selecteer [!UICONTROL **sparen en ga**] > [!UICONTROL ****] verder sparen en beëindigen om uw veranderingen te bewaren.
+1. Selecteer [!UICONTROL **sparen en ga**] > [!UICONTROL **&#x200B;**] verder sparen en beëindigen om uw veranderingen te bewaren.
 
 1. Ga met [ verder creeer en vorm een project in Customer Journey Analytics ](#create-and-configure-a-project-in-customer-journey-analytics).
 
