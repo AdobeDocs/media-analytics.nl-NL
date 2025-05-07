@@ -29,7 +29,7 @@ Om gegevensinzameling voor gebruik over toepassingen te standaardiseren die hefb
 
 Een schema maken en instellen:
 
-1. In Adobe Experience Platform, begin creërend het schema zoals die in [ wordt beschreven creeer en geef schema&#39;s in UI ](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en) uit.
+1. In Adobe Experience Platform, begin creërend het schema zoals die in [ wordt beschreven creeer en geef schema&#39;s in UI ](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=nl-NL) uit.
 
 1. Op de pagina van de details van het Schema wanneer het creëren van het schema, kies {de Gebeurtenis van de 0} Ervaring **wanneer het kiezen van de basisklasse voor het schema.**
 
@@ -129,7 +129,7 @@ Een schema maken en instellen:
 
       ![ toe:voegen-douane-meta-gegevens ](assets/add-custom-fields.png)
 
-   1. [ Gebruik de weg die ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties) voor het douanegebied in uw verzoeklading wordt geproduceerd.
+   1. [ Gebruik de weg die ](https://experienceleague.adobe.com/nl/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties) voor het douanegebied in uw verzoeklading wordt geproduceerd.
 
       ![ toe:voegen-douane-meta-gegevens ](assets/custom-fields-path.png)
 
@@ -141,7 +141,7 @@ Een schema maken en instellen:
 
 1. Zorg ervoor dat u opstelling een schema zoals die in [ wordt beschreven opstelling het Schema in Adobe Experience Platform ](#set-up-the-schema-in-adobe-experience-platform).
 
-1. In Adobe Experience Platform, begin creërend de dataset zoals die in [ wordt beschreven gids UI van Datasets ](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=en#create).
+1. In Adobe Experience Platform, begin creërend de dataset zoals die in [ wordt beschreven gids UI van Datasets ](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=nl-NL#create).
 
    Wanneer het selecteren van een schema voor uw dataset, kies het schema dat u eerder creeerde, zoals die in [ wordt beschreven Opstelling het Schema in Adobe Experience Platform ](#set-up-the-schema-in-adobe-experience-platform).
 
@@ -151,7 +151,7 @@ Een schema maken en instellen:
 
 1. Zorg ervoor dat u een dataset zoals die in [ wordt beschreven creeerde een dataset in Adobe Experience Platform ](#create-a-dataset-in-adobe-experience-platform).
 
-1. Creeer een nieuwe gegevensstroom zoals die in [ wordt beschreven vormt een datastream ](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en).
+1. Creeer een nieuwe gegevensstroom zoals die in [ wordt beschreven vormt een datastream ](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=nl-NL).
 
    Zorg er bij het maken van de gegevensstroom voor dat u de volgende configuratieselecties maakt:
 
@@ -167,11 +167,11 @@ Een schema maken en instellen:
 
       * [!UICONTROL **Adobe Analytics**] (als het gebruiken van Adobe Analytics)
 
-        Als u Adobe Analytics gebruikt, zorg ervoor u een rapportreeks bepaalt, zoals die in [ wordt beschreven creeer een rapportreeks ](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
+        Als u Adobe Analytics gebruikt, zorg ervoor u een rapportreeks bepaalt, zoals die in [ wordt beschreven creeer een rapportreeks ](https://experienceleague.adobe.com/nl/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
       * [!UICONTROL **Adobe Experience Platform**] (als het gebruiken van Customer Journey Analytics)
 
-     Voor informatie over hoe te om de dienst aan een datastream toe te voegen, zie de &quot;diensten aan een datastream&quot;sectie in [ een datastream ](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details) vormen.
+     Voor informatie over hoe te om de dienst aan een datastream toe te voegen, zie de &quot;diensten aan een datastream&quot;sectie in [ een datastream ](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=nl-NL#view-details) vormen.
 
      ![ voeg de dienst van Adobe Analytics ](assets/datastream-add-service.png) toe
 
@@ -191,7 +191,7 @@ Een schema maken en instellen:
 
 1. Zorg ervoor dat u een gegevensstroom zoals die in [ wordt beschreven vormde een gegevensstroom in Customer Journey Analytics ](#configure-a-datastream-in-adobe-experience-platform).
 
-1. In Customer Journey Analytics, creeer een verbinding zoals die in [ wordt beschreven creeer een verbinding ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en).
+1. In Customer Journey Analytics, creeer een verbinding zoals die in [ wordt beschreven creeer een verbinding ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=nl-NL).
 
    Wanneer u de verbinding maakt, zijn de volgende configuratieselecties vereist voor de implementatie van de streamingmedia-verzameling:
 
@@ -209,7 +209,7 @@ Een schema maken en instellen:
 
 1. Zorg ervoor dat u een verbinding in Customer Journey Analytics zoals die in [ wordt beschreven creeerde een verbinding in Customer Journey Analytics ](#create-a-connection-in-customer-journey-analytics).
 
-1. In de Analtyics van de Reis van de Klant, creeer een gegevensmening zoals die in [ wordt beschreven creeer of geef een gegevensmening ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en) uit.
+1. In de Analtyics van de Reis van de Klant, creeer een gegevensmening zoals die in [ wordt beschreven creeer of geef een gegevensmening ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=nl-NL) uit.
 
    Bij het maken van de gegevensweergave zijn de volgende configuratieselecties vereist voor de implementatie van de Streaming Media Collection:
 
@@ -324,7 +324,7 @@ Een schema maken en instellen:
 
    ![ de playbacktijd van media bestede paneel ](assets/media-playback-time-spent-panels.png)
 
-1. (Voorwaardelijk) als u douanemetagegevens aan uw schema toevoegde, zoals die in Stap 8 van [ worden beschreven opstelling het schema in Adobe Experience Platform ](#set-up-the-schema-in-adobe-experience-platform), dan moet u de persistentie voor de douanegebieden plaatsen, zoals die in [ de montages van de componenten van de Persistentie ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/persistence) in de gids van Customer Journey Analytics wordt beschreven.
+1. (Voorwaardelijk) als u douanemetagegevens aan uw schema toevoegde, zoals die in Stap 8 van [ worden beschreven opstelling het schema in Adobe Experience Platform ](#set-up-the-schema-in-adobe-experience-platform), dan moet u de persistentie voor de douanegebieden plaatsen, zoals die in [ de montages van de componenten van de Persistentie ](https://experienceleague.adobe.com/nl/docs/analytics-platform/using/cja-dataviews/component-settings/persistence) in de gids van Customer Journey Analytics wordt beschreven.
 
    Wanneer gegevens in Customer Journey Analytics worden ontvangen, is de dimensie Aangepaste gebruikersnaam beschikbaar.
 
@@ -332,9 +332,9 @@ Een schema maken en instellen:
 
    >[!NOTE]
    >
-   >Als u Adobe Analytics instelt als een upstream voor uw gegevensstroom, zijn de aangepaste metagegevens ook aanwezig in ContextData, met de naam die u instelt in het schema (zonder het voorvoegsel van de huurder, bijvoorbeeld myCustomField). Dit maakt het mogelijk om alle eigenschappen van Adobe Analytics beschikbaar voor ContextData, zoals [ te gebruiken creërend een verwerkingsregel ](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules).
+   >Als u Adobe Analytics instelt als een upstream voor uw gegevensstroom, zijn de aangepaste metagegevens ook aanwezig in ContextData, met de naam die u instelt in het schema (zonder het voorvoegsel van de huurder, bijvoorbeeld myCustomField). Dit maakt het mogelijk om alle eigenschappen van Adobe Analytics beschikbaar voor ContextData, zoals [ te gebruiken creërend een verwerkingsregel ](https://experienceleague.adobe.com/nl/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules).
 
-1. Deel het project zoals die in [ wordt beschreven de projecten van het Aandeel ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en).
+1. Deel het project zoals die in [ wordt beschreven de projecten van het Aandeel ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=nl-NL).
 
    >[!NOTE]
    >
@@ -381,10 +381,10 @@ De API is ook beschikbaar als u een aangepaste implementatie van de Edge API&#39
 
 Zie de volgende bronnen voor meer informatie over de media Edge API:
 
-* [ het overzicht van Edge API van Media ](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/overview.html)
+* [ het overzicht van Edge API van Media ](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/overview.html?lang=nl-NL)
 
-* [ Aan de slag Edge API van Media ](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/getting-started.html)
+* [ Aan de slag Edge API van Media ](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/getting-started.html?lang=nl-NL)
 
-* [ het oplossen van problemengids van Edge API van Media ](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/troubleshooting.html)
+* [ het oplossen van problemengids van Edge API van Media ](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/troubleshooting.html?lang=nl-NL)
 
 * [ Gebruikend het Open API specificatiedossier voor Media Edge APIs ](https://developer.adobe.com/data-collection-apis/docs/api/media-edge/)
