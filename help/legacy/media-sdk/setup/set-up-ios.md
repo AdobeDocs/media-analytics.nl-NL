@@ -25,7 +25,7 @@ Leer de verzameling Streaming Media voor iOS-apparaten in te stellen.
 * **verkrijg geldige configuratieparameters voor de Media SDK**
 Deze parameters kunt u verkrijgen van een Adobe-medewerker nadat u uw analyseaccount hebt ingesteld.
 * **voert ADBMobile voor iOS in uw toepassing uit**
-Voor meer informatie over de documentatie van Adobe Mobile SDK, zie [ iOS SDK 4.x voor de Oplossingen van het Experience Cloud.](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html)
+Voor meer informatie over de documentatie van Adobe Mobile SDK, zie [ iOS SDK 4.x voor de Oplossingen van het Experience Cloud.](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html?lang=nl-NL)
 
   >[!IMPORTANT]
   >
