@@ -29,7 +29,7 @@ Voor meer informatie over de documentatie van Adobe Mobile SDK, zie [ iOS SDK 4.
 
   >[!IMPORTANT]
   >
-  >Vanaf iOS 9 introduceerde Apple de functie App Transport Security (ATS). Deze functie is bedoeld om de netwerkbeveiliging te verbeteren door ervoor te zorgen dat uw apps alleen industriestandaard protocollen en ciphers gebruiken. Deze functie is standaard ingeschakeld, maar u hebt configuratieopties die u opties bieden voor het werken met ATS. Voor details op ATS, zie [ de Veiligheid van het Vervoer van de Toepassing.](https://experienceleague.adobe.com/docs/mobile-services/ios/config-ios/app-transport-security.html)
+  >Vanaf iOS 9 introduceerde Apple de functie App Transport Security (ATS). Deze functie is bedoeld om de netwerkbeveiliging te verbeteren door ervoor te zorgen dat uw apps alleen industriestandaard protocollen en ciphers gebruiken. Deze functie is standaard ingeschakeld, maar u hebt configuratieopties die u opties bieden voor het werken met ATS. Voor details op ATS, zie [ de Veiligheid van het Vervoer van de Toepassing.](https://experienceleague.adobe.com/docs/mobile-services/ios/config-ios/app-transport-security.html?lang=nl-NL)
 
 * **verstrek de volgende mogelijkheden in uw media speler:**
 
