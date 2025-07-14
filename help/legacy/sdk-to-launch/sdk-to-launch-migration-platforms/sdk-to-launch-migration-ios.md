@@ -1,10 +1,10 @@
 ---
-title: Migreren van de standalone SDK van Media naar Adobe Launch - iOS
-description: Leer hoe u van de SDK van Media naar Launch voor iOS migreert.
+title: Migreren van de standalone Media SDK naar Adobe Launch - iOS
+description: Leer hoe u van Media SDK naar Launch voor iOS kunt migreren.
 exl-id: f70b8e1b-cb9f-4230-86b2-171bdaed4615
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: fb09280ae6fb9f0ab7e67bd6ae134e6e26f88ec8
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 7%
@@ -14,13 +14,13 @@ ht-degree: 7%
 # Migreren van de standalone Media SDK naar Adobe Launch - iOS
 
 >[!NOTE]
->Adobe Experience Platform Launch is omgedoopt tot een reeks technologieën voor gegevensverzameling in Experience Platform. Als gevolg hiervan zijn er verschillende terminologiewijzigingen in de productdocumentatie doorgevoerd. Raadpleeg het volgende [ document ](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=nl-NL) voor een geconsolideerde referentie van de terminologiewijzigingen.
+>Adobe Experience Platform Launch is omgedoopt tot een reeks technologieën voor gegevensverzameling in Experience Platform. Als gevolg hiervan zijn er verschillende terminologiewijzigingen in de productdocumentatie doorgevoerd. Raadpleeg het volgende [ document ](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en) voor een geconsolideerde referentie van de terminologiewijzigingen.
 
 ## Configuratie
 
 ### Standalone Media SDK
 
-In de standalone SDK van Media, vormt u de het volgen configuratie in app,
+In de standalone Media SDK configureert u de trackingconfiguratie in de app.
 en geeft deze door aan de SDK wanneer u de Beheer maakt.
 
 ```objective-c
@@ -41,8 +41,8 @@ ADBMediaHeartbeat* tracker =
 
 ### Extensie starten
 
-1. Klik in het Experience Platform Launch op de tab [!UICONTROL Extensions] voor de eigenschap mobile
-1. Zoek op het tabblad [!UICONTROL Catalog] de Adobe Media Analytics voor de extensie Audio en Video en klik op [!UICONTROL Install] .
+1. Klik in Experience Platform Launch op het tabblad [!UICONTROL Extensions] voor uw mobiele eigenschap
+1. Zoek op het tabblad [!UICONTROL Catalog] de extensie Adobe Media Analytics for Audio and Video en klik op [!UICONTROL Install] .
 1. In de pagina van de uitbreidingsmontages, vorm de volgende parameters.
 De uitbreiding van Media zal de gevormde parameters voor het volgen gebruiken.
 
@@ -54,7 +54,7 @@ De uitbreiding van Media zal de gevormde parameters voor het volgen gebruiken.
 
 ### Standalone Media SDK
 
-In de zelfstandige SDK van Media maakt u handmatig het `ADBMediaHeartbeatConfig` -object
+In de zelfstandige Media SDK maakt u handmatig het `ADBMediaHeartbeatConfig` -object
 en configureert u de volgende parameters. Implementeer de gedelegeerde interface die de
 `getQoSObject()` en `getCurrentPlaybackTime()functions.`
 
@@ -130,7 +130,7 @@ Tracker selecteert automatisch de configuratie van het gevormde lanceringsbezit.
 
 ### Standalone Media SDK
 
-In de standalone SDK van Media, een afgevaardigde voorwerp dat uitvoert
+In de standalone Media SDK, een afgevaardigde voorwerp dat uitvoert
 `ADBMediaHeartbeartDelegate` -protocol wordt doorgegeven tijdens het maken van tracker.
 De implementatie moet de nieuwste QoE en afspeelkop retourneren telkens als de
 tracker roept de interface `getQoSObject()` en `getCurrentPlaybackTime()` aan

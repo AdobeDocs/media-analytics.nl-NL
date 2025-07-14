@@ -1,10 +1,10 @@
 ---
-title: Een webimplementatie voor Analytics para medios de streaming instellen
-description: Leer hoe u Adobe Streaming Media voor webapps implementeert.
-feature: Media Analytics
+title: Een webimplementatie instellen voor Analytics voor Streaming Media
+description: Leer hoe u Adobe Streaming Media voor web-apps implementeert.
+feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 In de informatie op deze pagina wordt beschreven hoe u de zelfstandige webversie van SDK kunt installeren en JavaScript kunt instellen.
 
-Alternatief, kunt u de uitbreiding van Analytics van Adobe Media gebruiken om de Adobe uit te voeren die de Inzameling van Media stromen, zoals die in [ wordt beschreven voert Analytics uit gebruikend de uitbreiding van Analytics van Media ](/help/implementation/media-sdk/setup/web-implementation-tags.md).
+Alternatief, kunt u de uitbreiding van de Analyse van de Media van Adobe gebruiken om de Verzameling van Media van Adobe uit te voeren Streaming, zoals die in [ wordt beschreven voert Analytics uit gebruikend de uitbreiding van Analytics van Media ](/help/implementation/media-sdk/setup/web-implementation-tags.md).
 
 ## Vereisten {#prerequesites}
 
@@ -25,7 +25,7 @@ Alternatief, kunt u de uitbreiding van Analytics van Adobe Media gebruiken om de
 
 * **voer `AppMeasurement` en `Experience Cloud Identity Service` voor JavaScript in uw media toepassing uit**
 
-  Voor meer informatie, zie [ het Uitvoeren Analytics Gebruikend JavaScript ](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=nl-NL) en [ het Uitvoeren van de Dienst van de Identiteit van het Experience Cloud ](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=nl-NL).
+  Voor meer informatie, zie [ het Uitvoeren Analytics Gebruikend JavaScript ](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html) en [ het Uitvoeren van de Dienst van de Identiteit van Experience Cloud ](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html).
 
 * **omvat volgende APIs in uw media speler**
 
@@ -73,7 +73,7 @@ Alternatief, kunt u de uitbreiding van Analytics van Adobe Media gebruiken om de
 
    >[!IMPORTANT]
    >
-   > Media SDK (3.x) gebruikt Media Collection API voor het volgen van media die van het eindpunt HB verschillend is dat in 2.x SDKs wordt gebruikt. Neem contact op met uw Adobe voor meer informatie.
+   > Media SDK (3.x) gebruikt Media Collection API voor het volgen van media die van het eindpunt HB verschillend is dat in 2.x SDKs wordt gebruikt. Neem contact op met je Adobe-vertegenwoordiger voor meer informatie.
 
    Hier volgt een voorbeeld van initialisatie van `MediaConfig`:
 

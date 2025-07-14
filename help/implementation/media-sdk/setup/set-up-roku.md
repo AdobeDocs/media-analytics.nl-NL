@@ -3,9 +3,9 @@ title: Media SDK instellen voor Roku
 description: Voer de volgende stappen uit om de Media SDK-toepassing in te stellen op Roku.
 uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 * **verkrijg geldige configuratieparameters voor de Streaming Inzameling van Media**
 
-  Deze parameters kunt u verkrijgen van een Adobe-medewerker nadat u uw account voor het streamen van Adobe-media verzameling hebt ingesteld.
+  Deze parameters kunt u verkrijgen van een Adobe-medewerker nadat u uw Adobe Streaming Media Collection-account hebt ingesteld.
 * **omvat volgende APIs in uw media speler**
 
    * _API om aan spelergebeurtenissen_ in te tekenen - de Media SDK vereist dat u een reeks eenvoudige APIs roept wanneer de gebeurtenissen in uw speler voorkomen.
@@ -38,11 +38,11 @@ Met Roku SDK 2.x for Experience Cloud Solutions kunt u Roku-toepassingen die in 
 
    1. Voeg het bibliotheekbestand en het JSON-configuratiebestand toe aan uw projectbron.
 
-      JSON die wordt gebruikt om Adobe Mobile te vormen heeft een exclusieve sleutel voor media analyse genoemd `mediaHeartbeat`. Dit is waar de configuratieparameters voor media analyses behoren.
+      De JSON die wordt gebruikt om Adobe Mobile te configureren, heeft een exclusieve sleutel voor mediaverlichtingen met de naam `mediaHeartbeat` . Dit is waar de configuratieparameters voor media analyses behoren.
 
       >[!TIP]
       >
-      >Het pakket bevat een voorbeeld van een JSON-bestand van het type `ADBMobileConfig` . Neem voor de instellingen contact op met de Adobe.
+      >Het pakket bevat een voorbeeld van een JSON-bestand van het type `ADBMobileConfig` . Neem voor de instellingen contact op met uw Adobe-vertegenwoordigers.
 
       Bijvoorbeeld:
 
@@ -101,9 +101,9 @@ Met Roku SDK 2.x for Experience Cloud Solutions kunt u Roku-toepassingen die in 
       >
       >Als `mediaHeartbeat` verkeerd wordt gevormd, gaat de media module (VHL) een foutenstaat in en zal ophouden verzendend volgende vraag.
 
-1. Vorm identiteitskaart van de Bezoeker van het Experience Cloud.
+1. Experience Cloud-bezoeker-id configureren.
 
-   De dienst van identiteitskaart van de Bezoeker van het Experience Cloud verstrekt een universele identiteitskaart van de Bezoeker over de oplossingen van het Experience Cloud. De service voor bezoekers-id is vereist voor videogebeurtenissen en andere Marketing Cloud-integratie.
+   De Experience Cloud Visitor ID-service biedt een universele bezoeker-id voor alle Experience Cloud-oplossingen. De service voor bezoekers-id is vereist voor videogebeurtenissen en andere Marketing Cloud-integratie.
 
    Controleer of de `ADBMobileConfig` config uw `marketingCloud` -organisatie-id bevat.
 
@@ -113,24 +113,24 @@ Met Roku SDK 2.x for Experience Cloud Solutions kunt u Roku-toepassingen die in 
    }
    ```
 
-   ID&#39;s van organisaties van Experiencen Cloud identificeren elk clientbedrijf in de Adobe Marketing Cloud op unieke wijze en lijken op de volgende waarde: `016D5C175213CCA80A490D05@AdobeOrg` .
+   Experience Cloud-organisatie-id&#39;s identificeren elk clientbedrijf op unieke wijze in de Adobe Marketing Cloud en lijken op de volgende waarde: `016D5C175213CCA80A490D05@AdobeOrg` .
 
    >[!IMPORTANT]
    >
    >Zorg ervoor dat u `@AdobeOrg` opneemt.
 
-   Nadat de configuratie volledig is, wordt een identiteitskaart van de Bezoeker van het Experience Cloud geproduceerd en inbegrepen op alle treffers. Andere bezoeker-id&#39;s, zoals `custom` en `automatically-generated` , worden bij elke treffer verzonden.
+   Nadat de configuratie volledig is, wordt een identiteitskaart van de Bezoeker van Experience Cloud geproduceerd en inbegrepen op alle treffers. Andere bezoeker-id&#39;s, zoals `custom` en `automatically-generated` , worden bij elke treffer verzonden.
 
-   **Methoden van de Dienst van identiteitskaart van de Bezoeker van het Experience Cloud**
+   **Methoden van de Dienst van identiteitskaart van de Bezoeker van Experience Cloud**
 
    >[!TIP]
    >
-   >De methodes van identiteitskaart van de Bezoeker van het Experience Cloud worden vooraf bepaald met `visitor`.
+   >De methoden voor Experience Cloud Visitor ID worden vooraf ingesteld door `visitor` .
 
    |  Methode   | Beschrijving |
    | --- | --- |
-   | `visitorMarketingCloudID` | Haalt de bezoeker-id van het Experience Cloud op bij de bezoeker-id-service.  <br/><br/>`ADBMobile().visitorMarketingCloudID()` |
-   | `visitorSyncIdentifiers` | Met de Experience Cloud Bezoeker-id kunt u extra klant-id&#39;s instellen die aan elke bezoeker kunnen worden gekoppeld. De bezoeker-API accepteert meerdere klant-id&#39;s voor dezelfde bezoeker en een id voor het klanttype om het bereik van de verschillende klant-id&#39;s te scheiden. Deze methode komt overeen met `setCustomerIDs` . Bijvoorbeeld: <br/><br/>`identifiers={}` <br/>`identifiers["idType"]="idValue"` <br/>`ADBMobile().visitorSyncIdentifiers(identifiers)` |
+   | `visitorMarketingCloudID` | Haalt de Experience Cloud-bezoeker-id op van de bezoeker-id-service.  <br/><br/>`ADBMobile().visitorMarketingCloudID()` |
+   | `visitorSyncIdentifiers` | Met de Experience Cloud-bezoeker-id kunt u aanvullende klant-id&#39;s instellen die aan elke bezoeker kunnen worden gekoppeld. De bezoeker-API accepteert meerdere klant-id&#39;s voor dezelfde bezoeker en een id voor het klanttype om het bereik van de verschillende klant-id&#39;s te scheiden. Deze methode komt overeen met `setCustomerIDs` . Bijvoorbeeld: <br/><br/>`identifiers={}` <br/>`identifiers["idType"]="idValue"` <br/>`ADBMobile().visitorSyncIdentifiers(identifiers)` |
    | `setAdvertisingIdentifier` | Wordt gebruikt om de Roku-id voor Advertising (RIDA) in te stellen op de SDK. Bijvoorbeeld: <br/><br/> `ADBMobile().setAdvertisingIdentifier(`<br/>  `"<sample_roku_identifier_for_advertising>")` <br/><br/><br/> krijgt identiteitskaart van Roku voor Advertising (RIDA) gebruikend Roku SDK [ getRIDA () ](https://developer.roku.com/docs/references/brightscript/interfaces/ifdeviceinfo.md#getrida-as-dynamic) API. |
    | `getAllIdentifiers` | Retourneert een lijst met alle id&#39;s die door de SDK zijn opgeslagen, inclusief Analytics, Visitor, Audience Manager en aangepaste id&#39;s. <br/><br/> `identifiers = ADBMobile().getAllIdentifiers()` |
 
@@ -171,4 +171,4 @@ Met Roku SDK 2.x for Experience Cloud Solutions kunt u Roku-toepassingen die in 
    | `processMediaMessages` | Verantwoordelijk om de Media-gebeurtenissen door te geven aan de SDK die moet worden afgehandeld. <br/><br/>`ADBMobile().processMediaMessages()` |
 
 
-<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html?lang=nl-NL) -->
+<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->

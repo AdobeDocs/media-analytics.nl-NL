@@ -3,18 +3,18 @@ title: iOS-metagegevenstoetsen beschreven
 description: Meer informatie over de beschikbare iOS-metagegevenstoetsen.
 uuid: 8eb90111-c9dd-4ca7-9766-91530a8ae6cf
 exl-id: a4bbbcba-9644-486a-95f4-65e5dc57623e
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
-source-wordcount: '115'
+source-wordcount: '111'
 ht-degree: 20%
 
 ---
 
 # iOS-metagegevenssleutels{#ios-metadata-keys}
 
-[iOS API-naslag](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/)
+[ iOS API Verwijzing ](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/)
 
 Van `ADBStandardMetadataKeys.h`:
 
@@ -60,4 +60,4 @@ Van `ADBStandardMetadataKeys.h`:
 | `ADBAdMetadataKeyCREATIVE_ID` | Creative-id | Advertentie |
 | `ADBAdMetadataKeyPLACEMENT_ID` | Plaatsing-id | Advertentie |
 | `ADBAdMetadataKeySITE_ID` | Site-id | Advertentie |
-| `ADBAdMetadataKeyCREATIVE_URL` | Creative URL | Advertentie |
+| `ADBAdMetadataKeyCREATIVE_URL` | CREATIVE URL | Advertentie |

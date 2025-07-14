@@ -3,9 +3,9 @@ title: Meer informatie over tijdlijnen voor het bijhouden van media
 description: Dig dieper in de playhead chronologie en overeenkomstige acties van de gebruiker. Meer informatie over de details van elke actie en de bijbehorende verzoeken.
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a1c3bdbec223ab0141d922dce07ba2128b52e794
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '1120'
 ht-degree: 5%
@@ -179,7 +179,7 @@ Pingel de steun om de 1 seconde terwijl binnen een advertentie.
 >[!NOTE]
 >
 >De volgende advertenties in de chronologie zullen overslaan die de reeks van één-tweede pingelt tonen
->in het belang van de beknoptheid...
+>>in het belang van de beknoptheid...
 
 ```json
 {

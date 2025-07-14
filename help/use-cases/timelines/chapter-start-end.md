@@ -3,24 +3,24 @@ title: Wat is de begin- en eindtijdlijn van het hoofdstuk over streaming media
 description: Leer meer over de tijdlijn van de afspeelkop en wanneer een hoofdstuk begint en eindigt.
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
 exl-id: e3f5bbdb-7007-435b-920c-566d163e57ad
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
-source-wordcount: '1106'
+source-wordcount: '1159'
 ht-degree: 5%
 
 ---
 
-# Tijdlijn: Hoofdstukken {#timeline-3-chapters}
+# Tijdlijn: hoofdstukken {#timeline-3-chapters}
 
 ## VOD, pre-roll advertenties, pauzeren, bufferen, inhoud weergeven tot het einde
 
 De volgende diagrammen illustreren de tijdlijn van de afspeelkop en de bijbehorende tijdlijn van de handelingen van een gebruiker. De bijzonderheden van elke actie en de bijbehorende verzoeken worden hieronder weergegeven.
 
-![API-inhoud](assets/va_api_content_3.png)
+![ API inhoud ](assets/va_api_content_3.png)
 
-![API-handelingen](assets/va_api_actions_3.png)
+![ API acties ](assets/va_api_actions_3.png)
 
 ## Handelingsdetails
 
@@ -30,7 +30,7 @@ De volgende diagrammen illustreren de tijdlijn van de afspeelkop en de bijbehore
 | --- | :---: | :---: | --- |
 | De knop Automatisch afspelen of Afspelen is ingedrukt, de video wordt geladen. | 0 | 0 | `/api/v1/sessions` |
 
-Deze vraagsignalen _het voornemen van de gebruiker om te spelen_ een video. Er wordt een sessie-id geretourneerd ( `{sid}` ) aan de cliënt die wordt gebruikt om alle volgende het volgen vraag binnen de zitting te identificeren. De spelerstatus wordt nog niet afgespeeld, maar &#39;gestart&#39;.  De verplichte sessieparameters moeten in de `params` kaart in de aanvraaginstantie.  Op de achtergrond, produceert deze vraag Adobe Analytics in werking stelt vraag in werking. Zie de documentatie van de API voor mediagroep voor informatie over sessies.
+Deze vraag signaleert _de intentie van de gebruiker om_ een video te spelen. Er wordt een sessie-id ( `{sid}` ) geretourneerd aan de client die wordt gebruikt om alle volgende opvolgende opvolgende aanroepen binnen de sessie te identificeren. De spelerstatus wordt nog niet afgespeeld, maar &#39;gestart&#39;.  Verplichte sessieparameters moeten in de `params` -kaart in de aanvraaginstantie worden opgenomen.  Op de achtergrond, produceert deze vraag Adobe Analytics in werking stelt vraag in werking. Zie de documentatie van de API voor mediagroep voor informatie over sessies.
 
 ```json
 {
@@ -60,7 +60,7 @@ Deze vraagsignalen _het voornemen van de gebruiker om te spelen_ een video. Er w
 
 | Handeling | Tijdlijn handeling (seconden) | Positie afspeelkop (seconden) | Aanvraag client |
 | --- | :---: | :---: | --- |
-| App start gebeurtenistimer | 0 | 0 |  |
+| App start gebeurtenistimer | 0 | 0 | |
 
 Begin pingelt tijdopnemer. De eerste pingel gebeurtenis zou dan 1 seconde binnen moeten in brand steken als er pre-roladvertenties zijn, anders 10 seconden.
 
@@ -92,7 +92,7 @@ Advertenties kunnen alleen worden bijgehouden binnen een advertentie-einde.
 | --- | :---: | :---: | --- |
 | Begin van advertentie 1 vóór de rol bijhouden | 0 | 0 | `/api/v1/sessions/{sid}/events` |
 
-Volg de eerste advertentie voor de rol, die 15 seconden lang is. Aangepaste metagegevens opnemen met deze functie `adStart` .
+Volg de eerste advertentie voor de rol, die 15 seconden lang is. Aangepaste metagegevens opnemen met deze `adStart` .
 
 ```json
 {
@@ -212,7 +212,7 @@ Pingel de achterkant om de 1 seconde. (Opeenvolgende en pingels die niet in het 
 
 | Handeling | Tijdlijn handeling (seconden) | Positie afspeelkop (seconden) | Aanvraag client |
 | --- | :---: | :---: | --- |
-| Volg de voorrol advertentie 2 voltooid | 22 | 0 | `/api/v1/sessions/{sid}/events` |
+| Volg de instructies voor de rol Advertentie 2 voltooid | 22 | 0 | `/api/v1/sessions/{sid}/events` |
 
 Het einde van de tweede advertentie vóór de rol bijhouden.
 
@@ -232,7 +232,7 @@ Het einde van de tweede advertentie vóór de rol bijhouden.
 | --- | :---: | :---: | --- |
 | Track voor rol en break voltooid | 22 | 0 | `/api/v1/sessions/{sid}/events` |
 
-Het advertentiespoor is voorbij. Tijdens de hele advertentieronde is de spelstatus blijven spelen.
+Het advertentiespoor is voorbij. Tijdens de hele advertentiesessie is de spelstatus blijven spelen.
 
 ```json
 {
@@ -250,7 +250,7 @@ Het advertentiespoor is voorbij. Tijdens de hele advertentieronde is de spelstat
 | --- | :---: | :---: | --- |
 | Gebeurtenis track afspelen | 22 | 0 | `/api/v1/sessions/{sid}/events` |
 
-Na de `adBreakComplete` -gebeurtenis, plaats de speler in de afspeelstatus met behulp van de `play` gebeurtenis.
+Na de gebeurtenis `adBreakComplete` plaatst u de speler in de afspeelstatus met de gebeurtenis `play` .
 
 ```json
 {
@@ -326,7 +326,7 @@ Houd de verplaatsing naar de bufferstatus bij.
 | --- | :---: | :---: | --- |
 | Buffering beëindigd, de app volgt hervatting van inhoud | 36 | 11 | `/api/v1/sessions/{sid}/events` |
 
-Bufferbewerkingen worden na 3 seconden beëindigd. Zet de speler dus terug naar de afspeelstatus. U moet een andere gebeurtenis voor het afspelen van tracks verzenden die buiten de buffering valt.  **De `play` bellen na een `bufferStart` Voert een &quot;bufferEnd&quot;vraag aan het achtereind af,** er is dus geen behoefte aan een `bufferEnd` gebeurtenis.
+Bufferbewerkingen worden na 3 seconden beëindigd. Zet de speler dus terug naar de afspeelstatus. U moet een andere gebeurtenis voor het afspelen van tracks verzenden die buiten de buffering valt.  **de `play` vraag na a `bufferStart` leidt tot een &quot;bufferEnd&quot;vraag aan het achtereind,** zodat is er geen behoefte aan een `bufferEnd` gebeurtenis.
 
 ```json
 {
@@ -380,7 +380,7 @@ Het eerste hoofdstuk eindigt, vlak voor het tweede en het tweede einde.
 | --- | :---: | :---: | --- |
 | Begin middelste rol en onderbreking volgen | 46 | 21 | `/api/v1/sessions/{sid}/events` |
 
-Midden rol en duur van 8 seconden: send `adBreakStart` .
+Midden rol en duur van 8 seconden: verzenden `adBreakStart` .
 
 ```json
 {
@@ -546,7 +546,7 @@ De handeling van de gebruiker verplaatst de afspeelstatus naar &quot;gepauzeerd&
 | --- | :---: | :---: | --- |
 | App verzendt ping-gebeurtenis | 70 | 31 | `/api/v1/sessions/{sid}/events` |
 
-Pingel het achterste eind om de 10 seconden. Player bevindt zich nog steeds in de bufferstatus; de gebruiker zit vast op 20 seconden inhoud . Fuming...
+Pingel het achterste eind om de 10 seconden. Player bevindt zich nog steeds in de bufferstatus. De gebruiker blijft 20 seconden aan inhoud vastzitten. Fuming...
 
 ```json
 {
@@ -564,7 +564,7 @@ Pingel het achterste eind om de 10 seconden. Player bevindt zich nog steeds in d
 | --- | :---: | :---: | --- |
 | Gebruiker heeft op Afspelen gedrukt om de hoofdinhoud te hervatten | 74 | 31 | `/api/v1/sessions/{sid}/events` |
 
-De afspeelstatus verplaatsen naar Afspelen.  **De `play` bellen na een `pauseStart` leidt een &quot;hervattingsvraag&quot;tot het achtereind**, zodat er geen behoefte is aan een `resume` gebeurtenis.
+De afspeelstatus verplaatsen naar Afspelen.  **de `play` vraag na a `pauseStart` trekt een &quot;hervattingsvraag&quot;aan het achtereind** af, zodat is er geen behoefte aan een `resume` gebeurtenis.
 
 ```json
 {
@@ -618,7 +618,7 @@ Het einde van het tweede en laatste hoofdstuk bijhouden.
 | --- | :---: | :---: | --- |
 | De gebruiker heeft de inhoud tot het einde bekeken. | 88 | 45 | `/api/v1/sessions/{sid}/events` |
 
-Verzenden `sessionComplete` op de achtergrond om aan te geven dat de gebruiker de volledige inhoud heeft bekeken.
+Verzend `sessionComplete` naar de achtergrond om aan te geven dat de gebruiker klaar is met het bekijken van de volledige inhoud.
 
 ```json
 {
@@ -633,4 +633,4 @@ Verzenden `sessionComplete` op de achtergrond om aan te geven dat de gebruiker d
 
 >[!NOTE]
 >
->**Geen zoekgebeurtenissen? -** Er is geen expliciete steun in de Inzameling API van Media voor `seekStart` of `seekComplete` gebeurtenissen. Dit is omdat bepaalde spelers een zeer groot aantal dergelijke gebeurtenissen produceren wanneer de eindgebruiker schrobt, en verscheidene honderden gebruikers de netwerkbandbreedte van een backenddienst gemakkelijk konden knelpen. Adobe werkt aan expliciete ondersteuning voor zoekgebeurtenissen door de hartslagduur te berekenen op basis van de tijdstempel van het apparaat in plaats van de positie van de afspeelkop.
+>**Geen de Gebeurtenissen van het Onderzoek? -** Er is geen expliciete ondersteuning voor `seekStart` - of `seekComplete` -gebeurtenissen in de Media Collection API. Dit is omdat bepaalde spelers een zeer groot aantal dergelijke gebeurtenissen produceren wanneer de eindgebruiker schrobt, en verscheidene honderden gebruikers de netwerkbandbreedte van een backenddienst gemakkelijk konden knelpen. Adobe biedt expliciete ondersteuning voor zoekgebeurtenissen door de hartslagduur te berekenen op basis van de tijdstempel van het apparaat in plaats van de positie van de afspeelkop.

@@ -1,21 +1,21 @@
 ---
 title: Wat zijn Media Analytics en cliënt-zijintegratie?
-description: Leer hoe de Analytics van Media met cliënt-zijintegratie en de SDK van Media en/of de Inzameling API van Media werkt.
+description: Leer hoe Media Analytics met cliënt-zijintegratie en Media SDK en/of de Inzameling API van Media werkt.
 uuid: ba0496e2-585a-4176-b583-c705726fecc6
 exl-id: 6fd4e82e-b471-4ed1-864d-5dd77cc6ffe0
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0a8ce64891b7174b0d6d7b6b5a83d7379a63a72f
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 0%
 
 ---
 
-# Clientzijde{#client-side}
+# Client-kant{#client-side}
 
-Media Analytics (Heartbeats) is een gestandaardiseerde oplossing voor mediatracering met Adobe.
+Media Analytics (Heartbeats) is een gestandaardiseerde oplossing voor mediatracering van Adobe.
 
-Integraties aan de clientzijde worden alleen geïmplementeerd met Media Analytics. U kunt kiezen of u de SDK van Media of de API voor mediagroep (of beide) wilt implementeren. Het pad naar de client-side kan worden gebruikt voor elke speler, inclusief client- en/of OVP-spelers zoals Brightcove, Ooyala, het Platform enzovoort.
+Integraties aan de clientzijde worden alleen geïmplementeerd met Media Analytics. U kunt kiezen of u de Media SDK of de Media Collection API (of beide) wilt implementeren. Het pad naar de client-side kan worden gebruikt voor elke speler, inclusief client- en/of OVP-spelers zoals Brightcove, Ooyala, het Platform enzovoort.
 
-Als Media Analytics het bedoelde pad is, raadpleegt u [SDK&#39;s van media, extensies met tags en OTT SDK&#39;s ophalen](/help/getting-started/download-sdks.md) en [Media Collection API.](/help/implementation/media-collection-api/mc-api-overview.md)
+Als de Analytics van Media uw voorgenomen weg is, zie [ Media SDKs, Uitbreidingen gebruikend Markeringen, en OTT SDKs ](/help/getting-started/download-sdks.md) en [ de Inzameling API van Media krijgen.](/help/implementation/media-collection-api/mc-api-overview.md)

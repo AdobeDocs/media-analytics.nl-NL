@@ -1,14 +1,14 @@
 ---
-title: Gebruikers-ID's instellen
+title: Gebruikersnaam instellen
 description: API's voor het instellen van gebruikers-id's, welke server een unieke klant-id is.
 uuid: fdd54fec-79cd-4bf8-b17e-4d61d84f6310
 exl-id: 6b451082-47f3-4e65-9fe0-cecb2d20dc2d
-feature: "Media Analytics, API"
+feature: "Streaming Media, API"
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: 70900e305c3ed7a2be4069c6f296d56f1f6e0966
 workflow-type: tm+mt
 source-wordcount: '53'
-ht-degree: 9%
+ht-degree: 0%
 
 ---
 
@@ -16,32 +16,32 @@ ht-degree: 9%
 
 De gebruikers-id is een unieke aangepaste bezoeker-id die door de toepassing voor een gebruiker is gedefinieerd.
 
-Stel de unieke gebruikers-id in de SDK van ADBMobile in en ontvang deze als volgt:
+Stel de unieke gebruikersnaam als volgt in op de ADBMobile SDK en krijg deze als volgt:
 
-* **Instellen:**
-
-   * **Roku:**
-
-      ```
-      ADBMobile().setUserIdentifer("app-generated-unique-id")
-      ```
-
-   * **Chromecast:**
-
-      ```
-      ADBMobile().config.setUserIdentifer("app-generated-unique-id");
-      ```
-
-* **Ophalen:**
+* **Reeks:**
 
    * **Roku:**
 
-      ```
-      vid = ADBMobile().userIdentifer()
-      ```
+     ```
+     ADBMobile().setUserIdentifer("app-generated-unique-id")
+     ```
 
    * **Chromecast:**
 
-      ```
-      vid = ADBMobile().config.getUserIdentifer();
-      ```
+     ```
+     ADBMobile().config.setUserIdentifer("app-generated-unique-id");
+     ```
+
+* **krijgt:**
+
+   * **Roku:**
+
+     ```
+     vid = ADBMobile().userIdentifer()
+     ```
+
+   * **Chromecast:**
+
+     ```
+     vid = ADBMobile().config.getUserIdentifer();
+     ```

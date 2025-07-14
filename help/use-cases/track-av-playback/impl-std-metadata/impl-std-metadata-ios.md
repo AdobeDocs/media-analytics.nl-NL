@@ -3,16 +3,16 @@ title: Meer informatie over het implementeren van standaardmetagegevens op iOS
 description: Leer hoe u standaardvideo- en advertentiemetagegevens instelt die moeten worden verzonden met trackingoproepen op iOS.
 uuid: 75a80f08-4a95-49d4-a27a-8ce531d64d31
 exl-id: e0981346-3d3c-4a0c-82a4-19942634fd03
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '100'
-ht-degree: 9%
+ht-degree: 3%
 
 ---
 
-# Standaardmetadata implementeren in iOS{#implement-standard-metadata-on-ios}
+# Standaardmetagegevens implementeren op iOS{#implement-standard-metadata-on-ios}
 
 ## Metagegevensconstanten
 
@@ -22,12 +22,12 @@ ht-degree: 9%
 
 ## Implementatie
 
-1. Een woordenboek maken van standaardwaardeparen voor metagegevens met de opdracht `ADBStandardMetadataKeys`
-   [iOS-metagegevenssleutels](/help/use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
+1. Een woordenboek maken van standaardwaardeparen voor metagegevens met de `ADBStandardMetadataKeys`
+   [ de meta-gegevenssleutels van IOS ](/help/use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
 
-1. Het standaardmetagegevenswoordenboek instellen op `MediaInfo` `ADBMediaObject` instantie met de standaardmetagegevensconstante voor metagegevens.
+1. Stel het standaardmetagegevenswoordenboek voor een `MediaInfo` `ADBMediaObject` -instantie in met de standaardmetagegevensconstante voor metagegevens.
 
-1. Geef deze `MediaInfo` object terwijl het `trackSessionStart` API.
+1. Geef dit `MediaInfo` -object op terwijl de `trackSessionStart` API wordt aangeroepen.
 
 ### Voorbeeldimplementatie
 

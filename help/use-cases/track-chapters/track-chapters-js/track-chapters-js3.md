@@ -2,11 +2,11 @@
 title: Leer hoofdstukken en segmenten bij te houden met JavaScript 3.x
 description: Leer hoe u hoofdstuk- en segmenttracering implementeert met de Media SDK in browser-apps (JS).
 exl-id: 00ba11df-d226-45a2-a561-dc9f15dcf714
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '221'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,11 @@ De volgende instructies bieden richtlijnen voor implementatie met 3.x SDK&#39;s.
 
 >[!IMPORTANT]
 >
-> Als u eerdere versies van de SDK implementeert, kunt u de Developers Guide hier downloaden: [SDK&#39;s downloaden.](/help/getting-started/download-sdks.md)
+> Als u om het even welke vorige versies van SDK uitvoert, kunt u de Gids van Ontwikkelaars hier downloaden: [ Download SDKs.](/help/getting-started/download-sdks.md)
 
-1. Identificeer wanneer de hoofdstukbegingebeurtenis voorkomt en creeer `ChapterObject` door de hoofdstukinformatie te gebruiken.
+1. Bepaal wanneer de hoofdstukstartgebeurtenis plaatsvindt en maak de `ChapterObject` -instantie met behulp van de hoofdstukinformatie.
 
-   `ChapterObject` hoofdstuk volgende verwijzing:
+   `ChapterObject` referentie voor het bijhouden van hoofdstukken:
 
    >[!NOTE]
    >
@@ -51,7 +51,7 @@ De volgende instructies bieden richtlijnen voor implementatie met 3.x SDK&#39;s.
    chapterMetadata["segmentType"] = "Sample segment type";
    ```
 
-1. Als u wilt beginnen met het afspelen van het hoofdstuk, roept u de `ChapterStart` in de `MediaHeartbeat` instantie:
+1. Roep de gebeurtenis `ChapterStart` in de `MediaHeartbeat` -instantie aan om het afspelen van het hoofdstuk te starten:
 
    ```js
    _onChapterStart = function() {
@@ -60,7 +60,7 @@ De volgende instructies bieden richtlijnen voor implementatie met 3.x SDK&#39;s.
    };
    ```
 
-1. Wanneer de playback de hoofdstukeindgrens bereikt, zoals die door uw douanecode wordt bepaald, roep `ChapterComplete` in de `MediaHeartbeat` instantie:
+1. Wanneer het afspelen de eindgrens van het hoofdstuk bereikt, zoals gedefinieerd door uw aangepaste code, roept u de gebeurtenis `ChapterComplete` op in de instantie `MediaHeartbeat` :
 
    ```js
    _onChapterComplete = function() {
@@ -68,7 +68,7 @@ De volgende instructies bieden richtlijnen voor implementatie met 3.x SDK&#39;s.
    };
    ```
 
-1. Als het afspelen van het hoofdstuk niet is voltooid omdat de gebruiker het hoofdstuk heeft overgeslagen (bijvoorbeeld als de gebruiker buiten de hoofdstukgrens zoekt), roept u het dialoogvenster `ChapterSkip` -gebeurtenis in de MediaHeartbeat-instantie:
+1. Als het afspelen van het hoofdstuk niet is voltooid omdat de gebruiker het hoofdstuk heeft overgeslagen (bijvoorbeeld als de gebruiker buiten de hoofdstukgrens zoekt), roept u de gebeurtenis `ChapterSkip` in de MediaHeartbeat-instantie aan:
 
    ```js
    _onChapterSkip = function() {

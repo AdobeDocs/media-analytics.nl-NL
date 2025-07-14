@@ -1,26 +1,26 @@
 ---
-title: Meerdere VOD-tracks naast elkaar
+title: Parallel VOD Multiple Trackers
 description: Bekijk een voorbeeld van hoe u VOD kunt bijhouden met meerdere trackers tegelijk.
 uuid: 6e25dd92-522f-455c-8e71-99d71d352e06
 exl-id: 318beba8-bb26-4cec-81d7-c6fc446ec7b4
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '245'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
-# Meerdere parallelle VOD-trackers{#vod-multiple-trackers-in-parallel}
+# Meerdere trackers van VOD parallel{#vod-multiple-trackers-in-parallel}
 
 ## Scenario {#scenario}
 
-In dit scenario worden twee sessies parallel uitgevoerd voor twee afzonderlijke media en worden twee afzonderlijke instanties van `MediaHeartbeat`.
+In dit scenario worden twee sessies parallel uitgevoerd voor twee afzonderlijke media en worden twee afzonderlijke instanties van `MediaHeartbeat` gebruikt.
 
-Dit scenario is identiek aan het [VOD afspelen zonder advertenties](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario, behalve zijn er twee zittingen die parallel voor twee afzonderlijke media lopen. Voor elk van deze sessies wordt een apart exemplaar van `MediaHeartbeat`.
+Dit scenario is identiek aan de [ playback van VOD zonder advertenties ](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario, behalve zijn er twee zittingen die parallel voor twee afzonderlijke media lopen. Voor elk van deze sessies wordt een aparte instantie van `MediaHeartbeat` gebruikt.
 
-Tenzij gespecificeerd, zijn de netwerkvraag het zelfde als [VOD afspelen zonder advertenties](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario.
+Tenzij gespecificeerd, zijn de netwerkvraag het zelfde als de [ playback van VOD zonder advertenties ](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario.
 
 ## Parameters {#parameters}
 
@@ -28,7 +28,7 @@ Tenzij gespecificeerd, zijn de netwerkvraag het zelfde als [VOD afspelen zonder 
 
 | Parameter | Waarde | Notities   |
 |---|---|---|
-| `s:event:sid` | Unieke sessie-id | Een unieke zitting-identiteitskaart die in alle hartslagnetwerkvraag bestaat tot `trackSessionEnd` wordt aangeroepen. |
+| `s:event:sid` | Unieke sessie-id | Een unieke sessie-id die bestaat in alle aanroepen van het hartslagnetwerk tot de methode `trackSessionEnd` wordt aangeroepen. |
 
 ## Voorbeeldcode {#sample-code}
 
@@ -112,7 +112,7 @@ protected void onCreate(Bundle savedInstanceState) {
 } 
 ```
 
-Beide instanties van `MediaAnalyticsProvider` en `MediaHeartbeat` Volg twee afzonderlijke sessies, elk met een eigen unieke sessie-id. De twee zittingen in het het zuiveren van Charles hulpmiddel of zuiveren logboeken kunnen worden geïdentificeerd door de waarde van zittingidentiteitskaart te gebruiken. Stel de volgende code in om dit scenario in Android weer te geven:
+Zowel instanties van `MediaAnalyticsProvider` als `MediaHeartbeat` houden twee afzonderlijke sessies bij, elk met een eigen unieke sessie-id. De twee zittingen in het het zuiveren van Charles hulpmiddel of zuiveren logboeken kunnen worden geïdentificeerd door de waarde van zittingidentiteitskaart te gebruiken. Stel de volgende code in om dit scenario in Android weer te geven:
 
 ```java
 // Set up mediaObject 
@@ -276,7 +276,7 @@ _mediaHeartbeat.trackSessionEnd();
 } 
 ```
 
-Beide instanties van `MediaAnalyticsProvider` en `ADBMediaHeartbeat` Volg twee afzonderlijke sessies, elk met een eigen unieke sessie-id. De twee zittingen in het het zuiveren van Charles hulpmiddel of zuiveren logboeken kunnen worden geïdentificeerd door de waarde van zittingidentiteitskaart te gebruiken.
+Zowel instanties van `MediaAnalyticsProvider` als `ADBMediaHeartbeat` houden twee afzonderlijke sessies bij, elk met een eigen unieke sessie-id. De twee zittingen in het het zuiveren van Charles hulpmiddel of zuiveren logboeken kunnen worden geïdentificeerd door de waarde van zittingidentiteitskaart te gebruiken.
 
 Stel de volgende code in om dit scenario in iOS weer te geven:
 
@@ -377,4 +377,4 @@ analyticsProvider2 = new MediaAnalyticsProvider(_player2);
 _player2.loadContent(URL_TO_MEDIA_2); 
 ```
 
-Beide instanties van `MediaAnalyticsProvider` en `MediaHeartbeat` Volg twee afzonderlijke sessies, elk met een eigen unieke sessie-id. U kunt de twee sessies zien in het foutopsporingsprogramma Charles.
+Zowel instanties van `MediaAnalyticsProvider` als `MediaHeartbeat` houden twee afzonderlijke sessies bij, elk met een eigen unieke sessie-id. U kunt de twee sessies zien in het foutopsporingsprogramma Charles.

@@ -3,9 +3,9 @@ title: Hoofdafspelen tussen advertenties oplossen
 description: Leer hoe u onverwachte hoofd-elementen kunt afhandelen:aanroepen afspelen tussen advertenties.
 uuid: 228b4812-c23e-40c8-ae2b-e15ca69b0bc2
 exl-id: f27ce2ba-7584-4601-8837-d8316c641708
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 0%
@@ -17,13 +17,13 @@ ht-degree: 0%
 
 ## PROBLEEM
 
-In sommige scenario&#39;s kunt u `main:play` aanroepen tegenkomen die onverwacht plaatsvinden tussen het einde van de ene advertentie en het begin van de volgende advertentie. Als de vertraging tussen de volledige advertentie en de volgende aanroep van het ad-start meer dan 250 milliseconden bedraagt, zal de Media SDK terugvallen op het verzenden van `main:play` aanroepen. Als deze fallback naar `main:play` optreedt tijdens een pre-roll en break, kan de metrische waarde voor het starten van de inhoud vroeg worden ingesteld.
+In sommige scenario&#39;s kunt u `main:play` aanroepen tegenkomen die onverwacht plaatsvinden tussen het einde van de ene advertentie en het begin van de volgende advertentie. Als de vertraging tussen de volledige advertentie en de volgende aanroep van het ad-start meer dan 250 milliseconden bedraagt, zal Media SDK terugvallen op het verzenden van `main:play` aanroepen. Als deze fallback naar `main:play` optreedt tijdens een pre-roll en break, kan de metrische waarde voor het starten van de inhoud vroeg worden ingesteld.
 
-Een tussenruimte tussen advertenties zoals hierboven beschreven, wordt door de Media SDK geïnterpreteerd als hoofdinhoud, omdat er geen overlapping met advertentie-inhoud is. Op de Media SDK is geen advertentie-informatie ingesteld en de speler bevindt zich in de afspeelstatus. Als er geen Advertentie-informatie is en de spelerstatus wordt afgespeeld, dan meldt de Media SDK de duur van het hiaat aan belangrijkste inhoud door gebrek. De duur van het afspelen kan niet naar null-advertentiegegevens worden gekopieerd.
+Een tussenruimte tussen advertenties zoals hierboven beschreven, wordt door de Media SDK geïnterpreteerd als hoofdinhoud, omdat er geen overlapping met advertentie-inhoud is. Op de Media SDK is geen advertentie-informatie ingesteld en de speler bevindt zich in de afspeelstatus. Als er geen advertentie-informatie is en de spelerstatus wordt afgespeeld, geeft de Media SDK de duur van de tussenruimte standaard weer in hoofdinhoud. De duur van het afspelen kan niet naar null-advertentiegegevens worden gekopieerd.
 
 ## IDENTIFICATIE
 
-Terwijl het gebruiken van Adobe zuivert of een sniffer van het netwerkpakket zoals Charles, als u de volgende Hartmaatvraag in deze orde tijdens een pre-rol en onderbreking ziet:
+Wanneer het gebruiken van Adobe zuivert of een sniffer van het netwerkpakket zoals Charles, als u de volgende Hartslagvraag in deze orde tijdens een pre-rol en onderbreking ziet:
 
 * Begin sessie: `s:event:type=start` &amp; `s:asset:type=main`
 * Begin toevoegen: `s:event:type=start` &amp; `s:asset:type=ad`

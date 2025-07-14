@@ -1,20 +1,20 @@
 ---
-title: Een sessie-ID verkrijgen
+title: Zitting-id verkrijgen
 description: Leer hoe u een verzoek van Sessies codeert om de sessie-id te verkrijgen van de koptekst Locatie in een reactie.
 uuid: fc8712fa-848f-4564-af5d-5dd9d6b088d8
 exl-id: 4a1c4ade-4a5e-4af0-8117-19d718dd8bda
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '61'
-ht-degree: 6%
+ht-degree: 0%
 
 ---
 
 # Sessie-id ophalen{#obtaining-a-session-id}
 
-Dit codefragment van de Speler van de Verwijzing toont één manier om te coderen [Aanvraag voor sessies](../mc-api-ref/mc-api-sessions-req.md), samen met het extraheren van de sessie-id (en de media Collection API-versie) uit de locatiekoptekst in de reactie:
+Dit codefragment van de Speler van de Verwijzing toont één manier om a [ verzoek van Sessies ](../mc-api-ref/mc-api-sessions-req.md) te coderen, samen met het halen van identiteitskaart van de Zitting (en de Verzameling API van Media versie) van de kopbal van de Plaats in de reactie:
 
 ```js
 var  

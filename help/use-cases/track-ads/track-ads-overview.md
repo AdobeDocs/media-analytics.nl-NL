@@ -1,14 +1,14 @@
 ---
-title: Extra's bijhouden
+title: Extra's bijhouden beschreven
 description: Overzicht van het implementeren en volgen van de Media SDK.
 uuid: 1607798b-c6ef-4d60-8e40-e958c345b09c
 exl-id: c714d31f-3d08-4ded-a413-2762d53bec75
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 2%
+source-wordcount: '510'
+ht-degree: 1%
 
 ---
 
@@ -18,9 +18,9 @@ De volgende instructies bieden richtlijnen voor implementatie met behulp van de 
 
 >[!IMPORTANT]
 >
->Als u een 1.x-versie van de SDK implementeert, kunt u hier de 1.x-handleidingen voor ontwikkelaars downloaden: [SDK&#39;s downloaden.](/help/getting-started/download-sdks.md)
+>Als u een 1.x versie van SDK uitvoert, kunt u 1.x de Gidsen van Ontwikkelaars hier downloaden: [ Download SDKs.](/help/getting-started/download-sdks.md)
 
-Het afspelen van advertenties omvat het bijhouden en afbreken, het starten, voltooien en het overslaan van advertenties. Gebruik de API van de mediaspeler om toetsspelergebeurtenissen te identificeren en de vereiste en optionele advertentievariabelen te vullen. Zie de uitgebreide lijst met metagegevens hier: [Toegevoegde parameters.](../../implementation/variables/ad-parameters.md)
+Het afspelen van advertenties omvat het bijhouden en afbreken, het starten, voltooien en het overslaan van advertenties. Gebruik de API van de mediaspeler om toetsspelergebeurtenissen te identificeren en de vereiste en optionele advertentievariabelen te vullen. Zie de uitvoerige lijst van meta-gegevens hier: [ Advertentieparameters.](../../implementation/variables/ad-parameters.md)
 
 ## Gebeurtenissen van Player {#player-events}
 
@@ -30,27 +30,27 @@ Het afspelen van advertenties omvat het bijhouden en afbreken, het starten, volt
 >[!NOTE]
 >Met inbegrip van voorrol
 
-* Een `adBreak` -objectinstantie voor het ad-einde. Bijvoorbeeld, `adBreakObject`.
+* Maak een `adBreak` -objectinstantie voor het ad-einde. Bijvoorbeeld `adBreakObject` .
 
-* Bellen `trackEvent` voor het afbreken van de advertentie begint u met uw `adBreakObject`.
+* Roep `trackEvent` aan voor het begin van het advertentieeinde met uw `adBreakObject` .
 
 ### Bij elke advertentie-asset start
 
-* Maak een instantie van een advertentieobject voor het advertentie-element. Bijvoorbeeld, `adObject`.
-* De metagegevens van de advertentie invullen, `adCustomMetadata`.
-* Bellen `trackEvent` voor het begin van de advertentie.
+* Maak een instantie van een advertentieobject voor het advertentie-element. Bijvoorbeeld `adObject` .
+* Vul de metagegevens van de advertentie in, `adCustomMetadata` .
+* Roep `trackEvent` aan voor het starten van de advertentie.
 
 ### Op elke advertentie compleet
 
-* Bellen `trackEvent` voor de advertentie is voltooid.
+* Roep `trackEvent` aan voor de advertentie is voltooid.
 
-### Op advertentie slaat u over
+### Op advertentie slaan
 
-* Bellen `trackEvent` voor de advertentie.
+* Roep `trackEvent` aan voor de advertentie.
 
 ### Bij voltooiing van advertentie
 
-* Bellen `trackEvent` voor het advertentieeinde is voltooid.
+* Roep `trackEvent` aan voor het advertentieeinde is voltooid.
 
 ## Toevoegen en bijhouden {#implement-ad-tracking}
 
@@ -64,11 +64,11 @@ Het afspelen van advertenties omvat het bijhouden en afbreken, het starten, volt
 | `AdComplete` | Constante voor het bijhouden van de gebeurtenis Advertentie voltooid |
 | `AdSkip` | Constante voor het bijhouden van de gebeurtenis Advertentie overslaan |
 
-### Uitvoeringsstappen
+### Implementatiestappen
 
-1. Identificeer wanneer de grens van de advertentie begint, met inbegrip van pre-rol, en creeer een `AdBreakObject` met behulp van de informatie over het advertentieeinde.
+1. Bepaal wanneer de grens van de advertentieruimte begint, met inbegrip van pre-rol, en creeer `AdBreakObject` door de informatie van de advertentierak te gebruiken.
 
-   `AdBreakObject` referentie:
+   `AdBreakObject` reference:
 
    | Naam variabele | Beschrijving | Vereist |
    | --- | --- | :---: |
@@ -76,11 +76,11 @@ Het afspelen van advertenties omvat het bijhouden en afbreken, het starten, volt
    | `position` | De getalpositie van het advertentierak binnen de inhoud, beginnend met 1. | Ja |
    | `startTime` | Waarde van afspeelkop aan het begin van het advertentieeinde. | Ja |
 
-1. Bellen `trackEvent()` with `AdBreakStart` in de `MediaHeartbeat` -instantie om het ad-einde te volgen.
+1. Roep `trackEvent()` aan met `AdBreakStart` in de `MediaHeartbeat` -instantie om het ad-einde te volgen.
 
-1. Identificeer wanneer de advertentie begint en creeer `AdObject` -instantie die de advertentiegegevens gebruikt.
+1. Bepaal wanneer de advertentie begint en creeer een `AdObject` instantie gebruikend de advertentieinformatie.
 
-   `AdObject` referentie:
+   `AdObject` reference:
 
    | Naam variabele | Beschrijving | Vereist |
    | --- | --- | :---: |
@@ -91,22 +91,22 @@ Het afspelen van advertenties omvat het bijhouden en afbreken, het starten, volt
 
 1. Voeg desgewenst standaard- en/of advertentiemetagegevens toe aan de volgende sessie via de variabelen van de contextgegevens.
 
-   * **Standaard en metagegevens -** Voor standaard- en metagegevens maakt u een woordenboek van standaard- en metagegevenssleutelwaardeparen met de toetsen voor uw platform.
-   * **Aangepaste en metagegevens -** Voor aangepaste metagegevens maakt u een variabelenobject voor de aangepaste gegevensvariabelen en vult u de gegevens voor de huidige advertentie in.
+   * **Standaard en meta-gegevens -** voor norm en meta-gegevens, creeer een woordenboek van standaard en de waardeparen van de meta-gegevens zeer belangrijke gebruikend de sleutels voor uw platform.
+   * **Douane en meta-gegevens -** voor douanemetagegevens, creeer een veranderlijk voorwerp voor de variabelen van douanegegevens en bevolk met de gegevens voor de huidige advertentie.
 
-1. Bellen `trackEvent()` met de `AdStart` in de `MediaHeartbeat` -instantie om het afspelen van de advertentie te volgen.
+1. Roep `trackEvent()` aan met de gebeurtenis `AdStart` in de instantie `MediaHeartbeat` om het afspelen van de advertentie te volgen.
 
    Neem een verwijzing naar de aangepaste metagegevensvariabele (of een leeg object) op als de derde parameter in de gebeurtenisaanroep.
 
-1. Wanneer het afspelen van de advertentie het einde van de advertentie heeft bereikt, roept u `trackEvent()` met de `AdComplete` gebeurtenis.
+1. Wanneer het afspelen van de advertentie het einde van de advertentie heeft bereikt, roept u `trackEvent()` aan met de gebeurtenis `AdComplete` .
 
-1. Als het afspelen van de advertentie niet is voltooid omdat de gebruiker de advertentie heeft overgeslagen, voert u de `AdSkip` gebeurtenis.
-1. Als er extra advertenties zijn binnen dezelfde `AdBreak`Herhaal stap 3 tot en met 7 opnieuw.
-1. Wanneer het advertentieeinde is voltooid, gebruikt u de `AdBreakComplete` om de gebeurtenis te volgen.
+1. Als het afspelen van de advertentie niet is voltooid omdat de gebruiker de advertentie heeft overgeslagen, houdt u de gebeurtenis `AdSkip` bij.
+1. Herhaal stap 3 tot en met 7 opnieuw als er extra advertenties binnen dezelfde `AdBreak` zijn.
+1. Wanneer het ad-einde is voltooid, gebruikt u de gebeurtenis `AdBreakComplete` om het bij te houden.
 
 >[!IMPORTANT]
 >
->Zorg ervoor dat u de afspeelkop van de inhoudsspeler NIET verhoogt (`l:event:playhead`) tijdens het afspelen van advertenties (`s:asset:type=ad`). Als u dat wel doet, hebben de meetgegevens voor Tijd van inhoud een negatief effect.
+>Zorg ervoor dat u de afspeelkop van de inhoudsspeler (`l:event:playhead`) NIET verhoogt tijdens het afspelen van de advertentie (`s:asset:type=ad`). Als u dat wel doet, hebben de meetgegevens voor Tijd van inhoud een negatief effect.
 
 In de volgende voorbeeldcode wordt de JavaScript 2.x SDK gebruikt voor een HTML5-mediaspeler.
 

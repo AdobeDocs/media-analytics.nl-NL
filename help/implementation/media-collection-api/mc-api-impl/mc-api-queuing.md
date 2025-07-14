@@ -1,26 +1,26 @@
 ---
-title: Gebeurtenissen in wachtrij plaatsen wanneer de reactie op sessies traag is
+title: Gebeurtenissen in wachtrij wanneer de reactie op sessies traag is
 description: Leer wat te doen wanneer Sessie-id wordt geretourneerd nadat de speler gebeurtenissen heeft geactiveerd.
 uuid: 39ea59d9-89d3-4087-a806-48a43ecf0c98
 exl-id: 2c23c378-c104-4256-b6e7-8eb6871f62da
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '205'
-ht-degree: 4%
+ht-degree: 0%
 
 ---
 
 # Gebeurtenissen in de wachtrij plaatsen wanneer de reactie van de sessie traag is{#queueing-events-when-sessions-response-is-slow}
 
-De Media Collection API is RESTful: U moet dus een HTTP-aanvraag indienen en op de reactie wachten. Dit is alleen belangrijk wanneer u een [Aanvraag voor sessies](../mc-api-ref/mc-api-sessions-req.md) om een sessie-id te verkrijgen aan het begin van het afspelen van de video. Dit is belangrijk omdat identiteitskaart van de Zitting voor alle verdere volgende het volgen vraag wordt vereist.
+De Media Collection API is RESTful: d.w.z., maakt u een HTTP- verzoek en wacht op de reactie. Dit is een belangrijk punt slechts voor wanneer u a [ verzoek van zittingen ](../mc-api-ref/mc-api-sessions-req.md) maakt om een identiteitskaart van de Zitting aan het begin van videoplayback te verkrijgen. Dit is belangrijk omdat identiteitskaart van de Zitting voor alle verdere volgende het volgen vraag wordt vereist.
 
-Het is mogelijk dat uw speler gebeurtenissen kan starten _voordat de reactie Sessies wordt geretourneerd_ (met de parameter van identiteitskaart van de Zitting) van het achterste eind. Als dit gebeurt, moet uw toepassing alle volgende gebeurtenissen in de wachtrij plaatsen die tussen de [Aanvraag voor sessies](../mc-api-ref/mc-api-sessions-req.md) en haar antwoord. Wanneer de reactie van Zittingen aankomt, zou u om het even welke rij eerst moeten verwerken [gebeurtenissen](../mc-api-ref/mc-api-events-req.md)en dan kunt u beginnen met de verwerking _leven_ gebeurtenissen met de [Gebeurtenissen](../mc-api-ref/mc-api-events-req.md) oproepen.
+Het is mogelijk dat uw speler gebeurtenissen _kan in brand steken alvorens de reactie van Zittingen_ (met de parameter van identiteitskaart van de Zitting) van het achtereind terugkeert. Als dit voorkomt, moet uw app om het even welke volgende gebeurtenissen in de rij plaatsen die tussen het [ verzoek van Zittingen ](../mc-api-ref/mc-api-sessions-req.md) en zijn reactie aankomen. Wanneer de reactie van Sessies aankomt, zou u om het even welke een rij gevormde [ gebeurtenissen ](../mc-api-ref/mc-api-events-req.md) eerst moeten verwerken, dan kunt u beginnen _levende_ gebeurtenissen met de [ Gebeurtenissen ](../mc-api-ref/mc-api-events-req.md) vraag.
 
 >[!NOTE]
 >
->De [Verzoek om gebeurtenissen](../mc-api-ref/mc-api-events-req.md) geeft geen gegevens meer dan een HTTP-antwoordcode terug naar de client.
+>Het [ verzoek van Gebeurtenissen ](../mc-api-ref/mc-api-events-req.md) keert geen gegevens terug naar de cliënt voorbij een de reactiecode van HTTP.
 
 Controleer de Speler van de Verwijzing in uw distributie voor één manier om gebeurtenissen te verwerken alvorens een identiteitskaart van de Zitting te ontvangen. Bijvoorbeeld:
 
@@ -75,7 +75,7 @@ VideoPlayer.prototype.getPlayerTime = function() {
 };
 ```
 
-**Alle gebeurtenissen in de wachtrij verwerken -** De referentiespeler verwerkt gebeurtenissen in de wachtrij als volgt:
+**Proces om het even welke een rij gevormde gebeurtenissen -** de verwijzingsspeler verwerkt een rij gevormde gebeurtenissen als volgt:
 
 ```js
     […] 

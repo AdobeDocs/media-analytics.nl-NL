@@ -1,18 +1,18 @@
 ---
 title: Actieve hoofdinhoud
-description: Bekijk een voorbeeld van hoe u live-inhoud kunt volgen met de Media SDK.
+description: Bekijk een voorbeeld van hoe u live-inhoud kunt bijhouden met de Media SDK.
 uuid: e92e99f4-c395-48aa-8a30-cbdd2f5fc07c
 exl-id: f6a00ffd-da6a-4d62-92df-15d119cfc426
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '587'
 ht-degree: 0%
 
 ---
 
-# Live hoofdcontent{#live-main-content}
+# Actieve hoofdinhoud{#live-main-content}
 
 ## Scenario {#scenario}
 
@@ -20,38 +20,38 @@ In dit scenario is er één actief dat gedurende 40 seconden geen advertenties b
 
 | Trigger | Hartslagmethode | Netwerkaanroepen | Notities   |
 |---|---|---|---|
-| Gebruiker klikt **[!UICONTROL Play]** | `trackSessionStart` | Start inhoud analyse, Start inhoud hartslag | Dit kan een gebruiker zijn die klikt **[!UICONTROL Play]** of een automatisch afspeelbare gebeurtenis. |
+| Gebruiker klikt **[!UICONTROL Play]** | `trackSessionStart` | Start inhoud analyse, Start inhoud hartslag | Dit kan een gebruiker zijn die **[!UICONTROL Play]** klikt of een automatisch afgespeelde gebeurtenis. |
 | Het eerste frame van de media wordt afgespeeld. | `trackPlay` | Hartslaginhoud afspelen | Deze methode activeert de timer. Hartslagen worden elke 10 seconden verzonden zolang het afspelen duurt. |
 | De inhoud wordt afgespeeld. |  | Content Heartbeats |  |
-| De sessie is afgelopen. | `trackSessionEnd` |  | `SessionEnd` het einde van een weergavesessie. Deze API moet worden aangeroepen, zelfs als de gebruiker de media niet voor voltooiing gebruikt. |
+| De sessie is afgelopen. | `trackSessionEnd` |  | `SessionEnd` betekent het einde van een weergavesessie. Deze API moet worden aangeroepen, zelfs als de gebruiker de media niet voor voltooiing gebruikt. |
 
 ## Parameters {#parameters}
 
-Veel van de zelfde waarden die u op de Vraag van het Begin van de Inhoud van Adobe Analytics ziet zult u ook op de Vraag van het Begin van de Inhoud van de Hartslag zien. U zult ook heel wat andere parameters zien die Adobe gebruikt om de diverse rapporten van Media in Adobe Analytics te bevolken. We zullen ze hier niet allemaal behandelen, alleen de echt belangrijke.
+Veel van de zelfde waarden die u op de Vraag van het Begin van de Inhoud van Adobe Analytics ziet zult u ook op de Vraag van het Begin van de Inhoud van de Hartslag zien. U zult ook veel andere parameters zien die Adobe gebruikt om de verschillende Media-rapporten in Adobe Analytics te vullen. We zullen ze hier niet allemaal behandelen, alleen de echt belangrijke.
 
 ### Begin van hartslaginhoud
 
 | Parameter | Waarde | Notities |
 |---|---|---|
-| `s:sc:rsid` | &lt;Your Adobe Report Suite ID> |  |
-| `s:sc:tracking_serve` | &lt;Your Analytics Tracking Server URL> |  |
+| `s:sc:rsid` | &lt;Uw Adobe-rapportsuite-id> |  |
+| `s:sc:tracking_serve` | &lt;Uw URL voor Analytics Tracking Server> |  |
 | `s:user:mid` | `s:user:mid` | Moet overeenkomen met de gemiddelde waarde van de Adobe Analytics Content Start Call |
 | `s:event:type` | &quot;start&quot; |  |
 | `s:asset:type` | &quot;main&quot; |  |
-| `s:asset:mediao_id` | &lt;Your Media Name> |  |
+| `s:asset:mediao_id` | &lt;Uw mediumnaam> |  |
 | `s:stream:type` | leven |  |
 | `s:meta:*` | optioneel | Aangepaste metagegevens ingesteld op het medium |
 
 ## Content Heartbeats {#content-heartbeats}
 
-Tijdens het afspelen van media is er een timer die een of meer hartslagen (of pingelt) om de 10 seconden verzendt voor de hoofdinhoud en elke seconde voor advertenties. Deze hartslagen bevatten informatie over afspelen, advertenties, buffering en een aantal andere elementen. De exacte inhoud van elke hartslag valt buiten het bereik van dit document. Het belangrijkste is dat hartslagen consistent worden geactiveerd terwijl het afspelen wordt voortgezet.
+Tijdens het afspelen van media is er een timer die een of meer hartslagen (of pingelt) om de 10 seconden verzendt voor de hoofdinhoud en elke seconde voor advertenties. Deze hartslagen bevatten informatie over afspelen, advertenties, buffering en een aantal andere elementen. De exacte inhoud van elke hartslag valt buiten het bereik van dit document. Het belangrijkste voor validatie is dat hartslagen consistent worden geactiveerd terwijl het afspelen wordt voortgezet.
 
 Zoek in de inhoudslooplijst naar een aantal specifieke dingen:
 
 | Parameter | Waarde | Notities |
 |---|---|---|
 | `s:event:type` | &quot;play&quot; |  |
-| `l:event:playhead` | &lt;playhead position=&quot;&quot;> bijv. 50, 60, 70 | Dit moet de huidige positie van de afspeelkop aangeven. |
+| `l:event:playhead` | &lt;positie van afspeelkop> bijv. 50, 60, 70 | Dit moet de huidige positie van de afspeelkop aangeven. |
 
 ## Hartslaginhoud voltooid {#heartbeat-content-complete}
 
@@ -63,13 +63,13 @@ Voor LIVE-streams moet u de waarde van de afspeelkop instellen als het aantal se
 
 ### Bij starten
 
-Voor LIVE-media moet u instellen dat wanneer een gebruiker de stream afspeelt `l:event:playhead` tot het aantal seconden sinds middernacht UTC op die dag. Dit is in tegenstelling tot VOD, waar u playhead aan &quot;0&quot;zou plaatsen. Opmerking: Wanneer u voortgangsmarkeringen gebruikt, is de duur van de inhoud vereist en moet de afspeelkop worden bijgewerkt als het aantal seconden vanaf het begin van het media-item, te beginnen met 0.
+Wanneer een gebruiker de stream afspeelt bij LIVE-media, moet u `l:event:playhead` instellen op het aantal seconden dat is verstreken sinds middernacht van de UTC op die dag. Dit is in tegenstelling tot VOD, waar u playhead aan &quot;0&quot;zou plaatsen. Opmerking: wanneer u voortgangsmarkeringen gebruikt, is de duur van de inhoud vereist en moet de afspeelkop worden bijgewerkt in het aantal seconden vanaf het begin van het media-item, te beginnen met 0.
 
-Een LIVE streaming-gebeurtenis start bijvoorbeeld om middernacht en wordt 24 uur uitgevoerd (`a.media.length=86400`; `l:asset:length=86400`). Stel vervolgens dat een gebruiker die LIVE-stream begint af te spelen om 12:00 uur. In dit scenario moet u `l:event:playhead` tot 43200 (12 uur sinds middernacht UTC op die dag in seconden).
+Bijvoorbeeld, zeg een LIVE het stromen gebeurtenis begint bij middernacht en looppas 24 uren (`a.media.length=86400`; `l:asset:length=86400`). Stel vervolgens dat een gebruiker die LIVE-stream begint af te spelen om 12:00 uur. In dit scenario moet u `l:event:playhead` instellen op 43200 (12 uur sinds middernacht UTC op die dag in seconden).
 
 ### Bij pauzeren
 
-Dezelfde logica &#39;live playhead&#39; die aan het begin van het afspelen is toegepast, moet worden toegepast wanneer een gebruiker het afspelen pauzeert. Wanneer de gebruiker terugkeert naar het afspelen van de LIVE-stream, moet u de instelling `l:event:playhead` waarde volgens het nieuwe aantal seconden sinds middernacht UTC; _niet_ tot het punt waarop de gebruiker de LIVE-stream heeft gepauzeerd.
+Dezelfde logica &#39;live playhead&#39; die aan het begin van het afspelen is toegepast, moet worden toegepast wanneer een gebruiker het afspelen pauzeert. Wanneer de gebruiker aan het spelen van de LIVE stroom terugkeert, moet u de `l:event:playhead` waarde volgens het nieuwe aantal seconden sinds middernacht UTC plaatsen, _niet_ aan het punt waar de gebruiker de LIVE stroom pauzeerde.
 
 ## Voorbeeldcode {#sample-code}
 

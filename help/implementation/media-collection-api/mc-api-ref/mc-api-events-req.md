@@ -3,9 +3,9 @@ title: API voor streaming media Collection � Events Request Endpoint
 description: Wat zijn de gebeurtenissen van de Inzameling van Media API verzoeken eindpuntparameters en reacties?
 uuid: b237f0a0-dc29-418b-89ee-04c596a27f39
 exl-id: ee0dd8a6-1529-4258-af12-0e2f5948ec38
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 1%
@@ -45,11 +45,11 @@ De aanvraaginstantie moet JSON zijn en dezelfde structuur hebben als deze instan
 * `customMetadata` (Optioneel; alleen verzenden met gebeurtenistypen `adStart` en `chapterStart` )
 * `qoeData` (optioneel)
 
-Voor een lijst van geldige gebeurtenistypen voor deze versie, zie {de types en de beschrijvingen van 0} Gebeurtenis.[&#128279;](mc-api-event-types.md)
+Voor een lijst van geldige gebeurtenistypen voor deze versie, zie {de types en de beschrijvingen van 0} Gebeurtenis.[](mc-api-event-types.md)
 
 >[!IMPORTANT]
 >
->***Advertentie die -**&#x200B;volgt kunt slechts advertenties binnen een`adBreak`* volgen.
+>***Advertentie die -**volgt kunt slechts advertenties binnen een`adBreak`* volgen.
 >
 >Als de gebeurtenissen `adBreakStart` en `adBreakComplete` &quot;bookends&quot; rondom advertenties ontbreken, worden `adStart` en `adComplete` gewoon genegeerd en wordt de bijbehorende duur van de advertentie bijgehouden als de duur van de hoofdinhoud. Dit kan een aanzienlijke invloed hebben op de geaggregeerde gegevens die in Adobe Analytics beschikbaar zullen zijn.
 

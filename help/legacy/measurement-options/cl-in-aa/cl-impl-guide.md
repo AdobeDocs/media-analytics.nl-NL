@@ -3,9 +3,9 @@ title: Implementatie aangepaste koppeling beschreven
 description: Leer hoe u het bijhouden van aangepaste koppelingen kunt implementeren in de verzameling Streaming media.
 uuid: 83315e73-20ca-4db5-9d43-33daade45a13
 exl-id: ee6f931a-ef80-4ebe-8ccb-cdbf970516e6
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Bij Aangepaste videotracering wordt handmatig koppelingen bijgehouden met behulp
 Het meest wordt aangepaste videotracering van koppelingen gebruikt op platforms en apparaten waar minimale videometing nodig is.
 
 * In JavaScript: de functie `s.tl()`
-* In Mobiele Apps: [ trackAction () Android ](https://experienceleague.adobe.com/docs/mobile-services/android/analytics-android/actions.html?lang=nl-NL), [ trackAction () iOS ](https://experienceleague.adobe.com/docs/mobile-services/ios/analytics-ios/actions.html?lang=nl-NL), [ trackAction () OTT ](/help/use-cases/analytics-with-ott/track-app-actions.md)
+* In Mobiele Apps: [ trackAction () Android ](https://experienceleague.adobe.com/docs/mobile-services/android/analytics-android/actions.html), [ trackAction () iOS ](https://experienceleague.adobe.com/docs/mobile-services/ios/analytics-ios/actions.html), [ trackAction () OTT ](/help/use-cases/analytics-with-ott/track-app-actions.md)
 * In de Invoeging API van Gegevens: [ linktype markering ](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
 
 ## Vereisten

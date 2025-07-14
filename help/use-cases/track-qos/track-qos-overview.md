@@ -3,9 +3,9 @@ title: Uitleg over de kwaliteit van de ervaring
 description: Een overzicht van het volgen van kwaliteit van ervaring (QoE, QoS) gebruikend Media SDK.
 uuid: 4d73c47f-d0a4-4228-9040-d6432311c9eb
 exl-id: af5f3372-a9a5-46ea-9c2f-81b0f5c96ccf
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 2%
@@ -18,23 +18,23 @@ De volgende instructies bieden richtlijnen voor implementatie voor alle 2.x SDK&
 
 >[!IMPORTANT]
 >
->Als u een 1.x-versie van de SDK implementeert, kunt u de 1.x-handleidingen voor ontwikkelaars hier downloaden: [SDK&#39;s downloaden.](/help/getting-started/download-sdks.md)
+>Als u een 1.x versie van SDK uitvoert, kunt u de 1.x Gidsen van Ontwikkelaars hier downloaden: [ Download SDKs.](/help/getting-started/download-sdks.md)
 
-De kwaliteit van ervaring het volgen omvat kwaliteit van de dienst (QoS) en fout het volgen, allebei zijn facultatieve elementen en zijn **niet** vereist voor de belangrijkste implementaties voor het bijhouden van media. U kunt de mediaspeler-API gebruiken om de variabelen met betrekking tot QoS en foutcontrole te identificeren. Hier volgen de belangrijkste elementen van de kwaliteit van ervaring:
+De kwaliteit van ervaring het volgen omvat kwaliteit van de dienst (QoS) en fout het volgen, allebei zijn facultatieve elementen en **niet** vereist voor kernmedia het volgen implementaties. U kunt de mediaspeler-API gebruiken om de variabelen met betrekking tot QoS en foutcontrole te identificeren. Hier volgen de belangrijkste elementen van de kwaliteit van ervaring:
 
 ## Gebeurtenissen van Player {#player-events}
 
 ### Op om het even welke metrische veranderingen QoS:
 
-Maak of werk de instantie van het object QoS bij voor het afspelen. [QoS API-naslaggids](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#.createQoSObject)
+Maak of werk de instantie van het object QoS bij voor het afspelen. [ QoS API Verwijzing ](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#.createQoSObject)
 
 ### Bij alle gebeurtenissen die betrekking hebben op bitsnelheden
 
-Bellen `trackEvent(Media.Heartbeat.Event.BitrateChange);`
+Roep `trackEvent(Media.Heartbeat.Event.BitrateChange);`
 
 ## QOS implementeren
 
-1. Identificeer wanneer om het even welke metriek QOS tijdens media playback verandert, creeer `MediaObject` het gebruiken van de informatie QoS, en werk de nieuwe informatie QoS bij.
+1. Identificeer wanneer om het even welke metriek QOS tijdens media playback veranderen, creeer `MediaObject` gebruikend de informatie QoS, en werk de nieuwe informatie QoS bij.
 
    QoSObject-variabelen:
 
@@ -49,14 +49,14 @@ Bellen `trackEvent(Media.Heartbeat.Event.BitrateChange);`
    | `fps` | FPS-waarde | Ja |
    | `droppedFrames` | Aantal gedropte frames | Ja |
 
-1. Controleer of `getQoSObject()` De methode keert de meest bijgewerkte informatie QoS terug.
-1. Als bij het afspelen wordt geschakeld naar een andere bitsnelheid, roept u de `BitrateChange` in de Media Heartbeat-instantie.
+1. Zorg ervoor dat de `getQoSObject()` methode de meest bijgewerkte informatie QoS terugkeert.
+1. Wanneer bij het afspelen wordt geschakeld naar een andere bitsnelheid, roept u de gebeurtenis `BitrateChange` op in de Media Heartbeat-instantie.
 
    >[!IMPORTANT]
    >
    >Werk het object QoS bij en roep de gebeurtenis Bitrate change aan bij elke wijziging in de bitsnelheid. Dit verstrekt de nauwkeurigste gegevens QoS.
 
-In de volgende voorbeeldcode wordt de JavaScript 2.x SDK gebruikt voor een HTML5-mediaspeler. Gebruik deze code met de afspeelcode voor de kernmedia.
+In de volgende voorbeeldcode wordt de JavaScript 2.x SDK voor een HTML5-mediaspeler gebruikt. Gebruik deze code met de afspeelcode voor de kernmedia.
 
 ```js
 var mediaDelegate = new MediaHeartbeatDelegate();

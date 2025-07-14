@@ -3,35 +3,35 @@ title: Leer hoe u het afspelen van de kern kunt bijhouden met JavaScript 2.x
 description: Leer hoe u core tracking implementeert met de Media SDK in een browser met JavaScript 2.x-apps.
 uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
 exl-id: d8af37a0-9048-4e6b-8cba-809386cbed5f
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '681'
 ht-degree: 2%
 
 ---
 
-# Muziek afspelen bijhouden met JavaScript 2.x{#track-core-playback-on-javascript}
+# Core playback volgen met JavaScript 2.x{#track-core-playback-on-javascript}
 
 De volgende instructies bieden richtlijnen voor implementatie in 2.x SDK&#39;s.
 
 >[!IMPORTANT]
->Als u een 1.x-versie van de SDK implementeert, kunt u hier de 1.x-handleidingen voor ontwikkelaars downloaden: [SDK&#39;s downloaden](/help/getting-started/download-sdks.md)
+>Als u een 1.x versie van SDK uitvoert, kunt u 1.x de Gidsen van Ontwikkelaars hier downloaden: [ Download SDKs ](/help/getting-started/download-sdks.md)
 
-1. **Eerste instelling voor bijhouden**
+1. **Aanvankelijke het volgen opstelling**
 
-   Identificeer wanneer de gebruiker de bedoeling van playback teweegbrengt (de gebruiker klikt spel en/of autoplay is) en creeer een `MediaObject` -instantie.
+   Bepaal wanneer de gebruiker de afspeelintentie activeert (de gebruiker klikt op Afspelen en/of Automatisch afspelen is ingeschakeld) en maak een `MediaObject` -instantie.
 
-   [createMediaObject API](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#.createMediaObject)
+   [ createMediaObject API ](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#.createMediaObject)
 
    | Naam variabele | Beschrijving | Vereist |
    | --- | --- | :---: |
    | `name` | Mediumnaam | Ja |
    | `mediaid` | Unieke id voor media | Ja |
    | `length` | Medialengte | Ja |
-   | `streamType` | Type stream (zie _StreamType-constanten_ hieronder) | Ja |
-   | `mediaType` | Mediatype (zie _MediaType-constanten_ hieronder) | Ja |
+   | `streamType` | Het type van stroom (zie _constanten StreamType_ hieronder) | Ja |
+   | `mediaType` | Het type van media (zie _constanten MediaType_ hieronder) | Ja |
 
    **`StreamType`constanten:**
 
@@ -60,38 +60,38 @@ De volgende instructies bieden richtlijnen voor implementatie in 2.x SDK&#39;s.
                                      <MEDIA_TYPE>);
    ```
 
-1. **Metagegevens koppelen**
+1. **verbind meta-gegevens**
 
-   Koppel standaard- en/of aangepaste metagegevensobjecten optioneel aan de volgende sessie via de variabelen van de contextgegevens.
+   Koppel standaard- en/of aangepaste metagegevensobjecten optioneel aan de volgende sessie via variabelen voor contextgegevens.
 
-   * **Standaardmetagegevens**
+   * **Standaard meta-gegevens**
 
-      [Standaardmetadata implementeren in JavaScript](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
+     [Standaardmetadata implementeren in JavaScript](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
 
-      >[!NOTE]
-      >
-      >Het koppelen van het standaardobject voor metagegevens aan het mediaobject is optioneel.
+     >[!NOTE]
+     >
+     >Het koppelen van het standaardobject voor metagegevens aan het mediaobject is optioneel.
 
-      * API-naslaggids voor metagegevens van media - [Standaardmetagegevenstoetsen - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
+      * De APIVerwijzing van de meta-gegevens van media sleutels - [ Standaard meta-gegevenssleutels - JavaScript ](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
 
-         Hier vindt u de uitgebreide set met beschikbare metagegevens: [Parameters voor audio en video](/help/implementation/variables/audio-video-parameters.md)
-   * **Aangepaste metagegevens**
+        Zie de uitvoerige reeks van beschikbare meta-gegevens hier: [ Audio en videoparameters ](/help/implementation/variables/audio-video-parameters.md)
 
-      Maak een veranderlijk object voor de douanevariabelen en bevolk met de gegevens voor deze media. Bijvoorbeeld:
+   * **de meta-gegevens van de Douane**
 
-      ```js
-      /* Set custom context data */
-      var customVideoMetadata = {
-          isUserLoggedIn: "false",
-          tvStation: "Sample TV station",
-          programmer: "Sample programmer"
-      };
-      ```
+     Maak een veranderlijk object voor de douanevariabelen en bevolk met de gegevens voor deze media. Bijvoorbeeld:
 
+     ```js
+     /* Set custom context data */
+     var customVideoMetadata = {
+         isUserLoggedIn: "false",
+         tvStation: "Sample TV station",
+         programmer: "Sample programmer"
+     };
+     ```
 
-1. **Houd de intentie bij om het afspelen te starten**
+1. **Spoor de intentie om playback** te beginnen
 
-   Als u een mediasessie wilt bijhouden, roept u `trackSessionStart` op de Media Heartbone-instantie:
+   Als u een mediasessie wilt volgen, roept u `trackSessionStart` aan op de Media Heartbeat-instantie:
 
    ```js
    mediaHeartbeat.trackSessionStart(mediaObject, customVideoMetadata);
@@ -103,31 +103,31 @@ De volgende instructies bieden richtlijnen voor implementatie in 2.x SDK&#39;s.
 
    >[!IMPORTANT]
    >
-   >`trackSessionStart` Hiermee wordt bijgehouden wat de gebruiker wil afspelen, niet het begin van het afspelen. Deze API wordt gebruikt om de gegevens/meta-gegevens te laden en tijd-aan-begin metrische QoS (de tijdsduur tussen `trackSessionStart` en `trackPlay`).
+   >In `trackSessionStart` wordt bijgehouden wat de gebruiker wil afspelen, niet het begin van het afspelen. Deze API wordt gebruikt om de gegevens/meta-gegevens te laden en tijd-aan-begin metrische QoS (de tijdduur tussen `trackSessionStart` en `trackPlay`) te schatten.
 
    >[!NOTE]
    >
-   >Als u geen aangepaste metagegevens gebruikt, kunt u gewoon een leeg object verzenden voor de `data` argument in `trackSessionStart`, zoals getoond in de commentaarlijn in het iOS voorbeeld hierboven.
+   >Als u geen aangepaste metagegevens gebruikt, verzendt u gewoon een leeg object voor het argument `data` in `trackSessionStart` , zoals getoond in de regel met opmerkingen in het bovenstaande iOS-voorbeeld.
 
-1. **Het feitelijke begin van het afspelen bijhouden**
+1. **spoor het daadwerkelijke begin van playback**
 
-   Identificeer de gebeurtenis van de media speler voor het begin van het playback, waar het eerste kader van de media op het scherm wordt teruggegeven, en vraag `trackPlay`:
+   Identificeer de gebeurtenis van de mediaspeler voor het begin van het afspelen, waar het eerste frame van de media op het scherm wordt weergegeven, en roep `trackPlay` aan:
 
    ```js
    mediaHeartbeat.trackPlay();
    ```
 
-1. **De voltooiing van het afspelen bijhouden**
+1. **Spoor de voltooiing van playback**
 
-   Identificeer de gebeurtenis van de media speler voor de voltooiing van het playback, waar de gebruiker de inhoud tot het eind heeft bekeken, en vraag `trackComplete`:
+   Identificeer de gebeurtenis van de media speler voor de voltooiing van het playback, waar de gebruiker de inhoud tot het eind heeft bekeken, en roep `trackComplete`:
 
    ```js
    mediaHeartbeat.trackComplete();
    ```
 
-1. **Het einde van de sessie bijhouden**
+1. **Spoor het eind van de zitting**
 
-   Identificeer de gebeurtenis van de media speler voor het leegmaken/sluiten van het playback, waar de gebruiker de media en/of de media sluit wordt voltooid en is leeggemaakt, en vraag `trackSessionEnd`:
+   Identificeer de gebeurtenis van de mediaspeler voor het verwijderen/sluiten van het afspelen, waar de gebruiker de media en/of de media sluit en verwijderd is, en roep `trackSessionEnd` aan:
 
    ```js
    mediaHeartbeat.trackSessionEnd();
@@ -135,9 +135,9 @@ De volgende instructies bieden richtlijnen voor implementatie in 2.x SDK&#39;s.
 
    >[!IMPORTANT]
    >
-   >`trackSessionEnd` markeert het einde van een volgende sessie. Als de sessie succesvol is gecontroleerd naar voltooiing, waarbij de gebruiker de inhoud tot het einde heeft bekeken, zorgt u ervoor dat `trackComplete` wordt eerder aangeroepen `trackSessionEnd`. andere `track*` API-aanroep wordt genegeerd na `trackSessionEnd`, met uitzondering van `trackSessionStart` voor een nieuwe traceringssessie.
+   >`trackSessionEnd` markeert het einde van een volgende sessie. Als de sessie succesvol is gecontroleerd op voltooiing, waarbij de gebruiker de inhoud tot het einde heeft gecontroleerd, controleert u of `trackComplete` vóór `trackSessionEnd` is aangeroepen. Eventuele andere `track*` API-aanroepen worden na `trackSessionEnd` genegeerd, behalve voor `trackSessionStart` voor een nieuwe traceringssessie.
 
-1. **Houd alle mogelijke pauzescenario&#39;s bij**
+1. **spoor alle mogelijke pauzescenario&#39;s**
 
    Identificeer de gebeurtenis van de media speler voor pauze en vraag `trackPause`:
 
@@ -145,16 +145,16 @@ De volgende instructies bieden richtlijnen voor implementatie in 2.x SDK&#39;s.
    mediaHeartbeat.trackPause();
    ```
 
-   **Scenario&#39;s pauzeren**
+   **Scenario&#39;s van de Pauze**
 
-   Identificeer om het even welk scenario waarin de media speler zal pauzeren en zorg ervoor dat `trackPause` wordt correct geroepen. De volgende scenario&#39;s vereisen allemaal dat uw app wordt aangeroepen `trackPause()`:
+   Identificeer om het even welk scenario waarin de media speler zal pauzeren en zorg ervoor dat `trackPause` behoorlijk wordt geroepen. De volgende scenario&#39;s vereisen allemaal dat uw app `trackPause()` aanroept:
 
    * De gebruiker raakt expliciet de pauze in de app.
    * De speler plaatst zichzelf in de pauzestatus.
-   * (*Mobiele apps*) - De gebruiker plaatst de toepassing op de achtergrond, maar u wilt dat de toepassing de sessie geopend houdt.
-   * (*Mobiele apps*) - Elk type onderbreking van het systeem treedt op waardoor een toepassing achteraan wordt geplaatst. Bijvoorbeeld, ontvangt de gebruiker een vraag, of een pop-up van een andere toepassing komt voor, maar u wilt de toepassing de zitting levend houden om de gebruiker de kans te geven om de media van het punt van onderbreking te hervatten.
+   * (*Mobiele Apps*) - de gebruiker zet de toepassing in de achtergrond, maar u wilt dat app de zitting open houdt.
+   * (*Mobiele Apps*) - om het even welk type van systeem onderbreekt komt voor dat een toepassing veroorzaakt om worden gesteund. Bijvoorbeeld, ontvangt de gebruiker een vraag, of een pop-up van een andere toepassing komt voor, maar u wilt de toepassing de zitting levend houden om de gebruiker de kans te geven om de media van het punt van onderbreking te hervatten.
 
-1. De gebeurtenis van de speler identificeren voor afspelen en/of hervatten vanuit pauzeren en aanroepen `trackPlay`:
+1. Identificeer de gebeurtenis van de speler voor spel en/of hervat van pauze en vraag `trackPlay`:
 
    ```js
    mediaHeartbeat.trackPlay();
@@ -162,7 +162,7 @@ De volgende instructies bieden richtlijnen voor implementatie in 2.x SDK&#39;s.
 
    >[!TIP]
    >
-   >Dit kan de zelfde gebeurtenisbron zijn die in Stap 4 werd gebruikt. Zorg ervoor dat elk `trackPause()` API-aanroep is gekoppeld aan het volgende `trackPlay()` API-aanroep wanneer het afspelen wordt hervat.
+   >Dit kan de zelfde gebeurtenisbron zijn die in Stap 4 werd gebruikt. Zorg ervoor dat elke API-aanroep van `trackPause()` wordt gekoppeld aan een volgende API-aanroep van `trackPlay()` wanneer het afspelen wordt hervat.
 
-* Volgscenario&#39;s: [VOD afspelen zonder advertenties](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)
-* Voorbeeldspeler die is opgenomen in de JavaScript SDK voor een volledig voorbeeld van bijhouden.
+* Het volgen scenario&#39;s: [ de playback van VOD zonder advertenties ](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)
+* Voorbeeld van een voorbeeldspeler die bij de JavaScript SDK wordt geleverd voor een volledig voorbeeld van &#39;tracking&#39;.

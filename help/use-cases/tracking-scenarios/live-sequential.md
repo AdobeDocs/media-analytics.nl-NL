@@ -1,34 +1,34 @@
 ---
 title: Actieve hoofdinhoud met opeenvolgende reeksspatiëring
-description: Bekijk een voorbeeld van hoe u live-inhoud kunt bijhouden met sequentiële tracking met de SDK van Media.
+description: Bekijk een voorbeeld van hoe u live-inhoud kunt bijhouden met sequentiële tracking met de Media SDK.
 uuid: b03477b6-9be8-4b67-a5a0-4cef3cf262ab
 exl-id: 277a72b8-453b-41e5-b640-65c43587baf8
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 2%
+source-wordcount: '525'
+ht-degree: 0%
 
 ---
 
-# Live hoofdcontent met sequentiële tracking{#live-main-content-with-sequential-tracking}
+# Actieve hoofdinhoud met opeenvolgende spatiëring{#live-main-content-with-sequential-tracking}
 
 ## Scenario {#scenario}
 
 In dit scenario is er één actief dat gedurende 40 seconden geen advertenties bevat nadat de live stream is samengevoegd.
 
-Dit is hetzelfde scenario als [VOD afspelen zonder advertenties](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario, maar een deel van de inhoud wordt doorgelicht en een zoekopdracht wordt voltooid van het ene punt in de hoofdinhoud naar het andere punt.
+Dit is het zelfde scenario zoals de [ playback van VOD zonder advertenties ](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario, maar een deel van de inhoud wordt geschaad door en een vraag wordt voltooid van één punt in belangrijkste inhoud aan een ander punt.
 
 | Trigger | Hartslagmethode |  Netwerkaanroepen  |  Notities   |
 | --- | --- | --- | --- |
-| Gebruiker klikt [!UICONTROL Play] | trackSessionStart | Start inhoud analyse, Start inhoud hartslag | De meetbibliotheek is zich niet bewust dat er een pre-rol advertentie is, zodat zijn deze netwerkvraag identiek aan [VOD afspelen zonder advertenties](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| Gebruiker klikt [!UICONTROL Play] | trackSessionStart | Start inhoud analyse, Start inhoud hartslag | De metingsbibliotheek is zich niet bewust dat er een pre-rol advertentie is, zodat zijn deze netwerkvraag identiek aan de [ playback van VOD zonder advertenties ](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario. |
 | Het eerste frame van de inhoud wordt afgespeeld. | trackPlay | Hartslaginhoud afspelen | Wanneer de hoofdstukinhoud vóór hoofdinhoud wordt afgespeeld, begint de hartslag wanneer het hoofdstuk begint. |
-| Inhoud afspelen |  | Content Heartbeats | Deze netwerkvraag is precies het zelfde als [VOD afspelen zonder advertenties](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| Inhoud afspelen | | Content Heartbeats | Deze netwerkvraag is precies het zelfde als de [ playback van VOD zonder advertenties ](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario. |
 | Session1 Boven (Aflevering1 beëindigd) | trackComplete / trackSessionEnd | Hartslaginhoud voltooid | Complete betekent dat session1 voor de eerste aflevering is bereikt en volledig is gecontroleerd. Deze sessie moet worden beëindigd voordat de sessie voor de volgende aflevering wordt gestart. |
 | Episode2 begonnen (Sessie2 start) | trackSessionStart | Begin hartslaginhoud voor analyse inhoud | De reden hiervoor is dat de gebruiker de eerste aflevering heeft bekeken en verder heeft gekeken naar een andere aflevering |
 | Eerste frame van media | trackPlay | Hartslaginhoud afspelen | Deze methode activeert de timer en vanaf dit punt worden hartslagen elke 10 seconden verzonden zolang het afspelen wordt voortgezet. |
-| Inhoud afspelen |  | Content Heartbeats |  |
+| Inhoud afspelen | | Content Heartbeats | |
 | Sessie over (Episode2 beëindigd) | trackComplete / trackSessionEnd | Hartslaginhoud voltooid | Complete betekent dat session2 voor de tweede aflevering is bereikt en volledig is gecontroleerd. Deze sessie moet worden beëindigd voordat de sessie voor de volgende aflevering wordt gestart. |
 
 ## Parameters {#parameters}
@@ -37,18 +37,18 @@ Dit is hetzelfde scenario als [VOD afspelen zonder advertenties](/help/use-cases
 
 | Parameter | Waarde | Notities |
 |---|---|---|
-| `s:sc:rsid` | &lt;Your Adobe Report Suite ID> |  |
-| `s:sc:tracking_serve` | &lt;Your Analytics Tracking Server URL> |  |
+| `s:sc:rsid` | &lt;Uw Adobe-rapportsuite-id> |  |
+| `s:sc:tracking_serve` | &lt;Uw URL voor Analytics Tracking Server> |  |
 | `s:user:mid` | `s:user:mid` | Moet overeenkomen met de gemiddelde waarde van de Adobe Analytics Content Start Call |
 | `s:event:type` | `"start"` |  |
 | `s:asset:type` | `"main"` |  |
-| `s:asset:media_id` | &lt;Your Media Name> |  |
+| `s:asset:media_id` | &lt;Uw mediumnaam> |  |
 | `s:stream:type` | `live` |  |
-| `s:meta:*` | *optioneel* | Aangepaste metagegevens ingesteld op het medium |
+| `s:meta:*` | *facultatief* | Aangepaste metagegevens ingesteld op het medium |
 
 ## Hartslaginhoud afspelen {#heartbeat-content-play}
 
-Dit zou bijna precies als de Vraag van het Begin van de Inhoud van het Hartslagpatroon moeten kijken, maar met het belangrijkste verschil in &quot;s:event:type&quot;. Alle parameters zouden hier nog moeten zijn.
+Dit zou bijna precies als de vraag van het Begin van de Inhoud moeten kijken Heartbeat, maar met het belangrijkste verschil in de &quot;s :event: type&quot;parameter. Alle parameters zouden hier nog moeten zijn.
 
 | Parameter | Waarde | Notities |
 |---|---|---|
@@ -57,14 +57,14 @@ Dit zou bijna precies als de Vraag van het Begin van de Inhoud van het Hartslagp
 
 ## Content Heartbeats {#content-heartbeats}
 
-Tijdens het afspelen van media is er een timer die elke 10 seconden een of meer hartslagen voor de hoofdinhoud en elke seconde voor advertenties verzendt. Deze hartslagen bevatten informatie over afspelen, advertenties, buffering en een aantal andere elementen. De exacte inhoud van elke hartslag valt buiten het bereik van dit document. Het belangrijkste is dat hartslagen consistent worden geactiveerd terwijl het afspelen wordt voortgezet.
+Tijdens het afspelen van media is er een timer die elke 10 seconden een of meer hartslagen voor de hoofdinhoud en elke seconde voor advertenties verzendt. Deze hartslagen bevatten informatie over afspelen, advertenties, buffering en een aantal andere elementen. De exacte inhoud van elke hartslag valt buiten het bereik van dit document. Het belangrijkste voor validatie is dat hartslagen consistent worden geactiveerd terwijl het afspelen wordt voortgezet.
 
 Zoek in de inhoudslooplijst naar een aantal specifieke dingen:
 
 | Parameter | Waarde | Notities |
 |---|---|---|
 | `s:event:type` | `"play"` |  |
-| `l:event:playhead` | &lt;playhead position=&quot;&quot;> bijv. 50, 60, 70 | Dit moet de huidige positie van de afspeelkop aangeven. |
+| `l:event:playhead` | &lt;positie van afspeelkop> bijv. 50, 60, 70 | Dit moet de huidige positie van de afspeelkop aangeven. |
 
 ## Hartslaginhoud voltooid {#heartbeat-content-complete}
 

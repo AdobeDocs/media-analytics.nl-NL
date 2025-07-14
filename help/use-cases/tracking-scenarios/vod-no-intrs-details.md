@@ -3,12 +3,12 @@ title: VOD afspelen zonder advertenties
 description: Bekijk een voorbeeld van het bijhouden van het afspelen van VOD zonder advertenties.
 uuid: ee2a1b79-2c2f-42e1-8e81-b62bbdd0d8cb
 exl-id: 9e2240f0-da8d-4dcc-9d44-0f121c60d924
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 57b4120518a6fecf6a9751f944d5bd20f04b15fe
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 1%
+source-wordcount: '369'
+ht-degree: 0%
 
 ---
 
@@ -23,27 +23,27 @@ Dit scenario heeft één VOD-element, zonder advertenties, dat van begin tot ein
 | Gebruiker klikt **[!UICONTROL Play]** | `trackSessionStart` | Start inhoud analyse, Start inhoud hartslag | Dit kan een gebruiker zijn die op Afspelen klikt of een automatisch afspeelbare gebeurtenis. |
 | Eerste frame van het medium | `trackPlay` | Hartslaginhoud afspelen | Deze methode activeert de timer en vanaf dit punt worden hartslagen tijdens het afspelen elke 10 seconden verzonden. |
 | Inhoud afspelen |  | Content Heartbeats |  |
-| Inhoud is voltooid | `trackComplete` | Hartslaginhoud voltooid | *Voltooid* betekent dat het einde van de afspeelkop is bereikt. |
+| Inhoud is voltooid | `trackComplete` | Hartslaginhoud voltooid | *Volledig* betekent dat het eind van playhead werd bereikt. |
 
 ## Parameters {#parameters}
 
-Veel van de zelfde waarden die u op de Vraag van het Begin van de Inhoud van de Hartslag ziet worden ook gezien op Adobe Analytics `Content Start` Vraag. Er zijn vele parameters die Adobe gebruikt om de diverse media rapporten te bevolken, maar slechts zijn de belangrijkste parameters vermeld in de volgende lijst:
+Veel van de zelfde waarden die u op de Vraag van het Begin van de Inhoud van de Hartslag ziet worden ook gezien bij de Vraag van Adobe Analytics `Content Start`. Er zijn vele parameters die Adobe gebruikt om de diverse media rapporten te bevolken, maar slechts zijn de belangrijkste parameters vermeld in de volgende lijst:
 
 ### Begin van hartslaginhoud
 
 | Parameter | Waarde | Notities   |
 |---|---|---|
-| `s:sc:rsid` | &lt;Your Adobe Report Suite ID> |  |
-| `s:sc:tracking_server` | &lt;Your Analytics Tracking Server URL> |  |
-| `s:user:mid` | moet worden ingesteld | Moet overeenkomen met de middelste waarde van de knop `Adobe Analytics Content Start` vraag. |
+| `s:sc:rsid` | &lt;Uw Adobe-rapportsuite-id> |  |
+| `s:sc:tracking_server` | &lt;Uw URL voor Analytics Tracking Server> |  |
+| `s:user:mid` | moet worden ingesteld | Moet overeenkomen met de gemiddelde waarde van de aanroep van `Adobe Analytics Content Start` . |
 | `s:event:type` | `"start"` |  |
 | `s:asset:type` | `"main"` |  |
-| `s:asset:media_id` | &lt;Your Media Name> |  |
+| `s:asset:media_id` | &lt;Uw mediumnaam> |  |
 | `s:meta:*` | optioneel | Aangepaste metagegevens die zijn ingesteld op het medium. |
 
 ## Hartslaginhoud afspelen {#heartbeat-content-play}
 
-Deze parameters moeten er vrijwel hetzelfde uitzien als `Heartbeat Content Start` vraag, maar het belangrijkste verschil is `s:event:type` parameter. Alle andere parameters zouden nog moeten bestaan.
+Deze parameters zouden bijna identiek aan de `Heartbeat Content Start` vraag moeten kijken, maar het belangrijkste verschil is de `s:event:type` parameter. Alle andere parameters zouden nog moeten bestaan.
 
 | Parameter | Waarde | Notities   |
 |---|---|---|
@@ -59,11 +59,11 @@ Zoek in de inhoudskoppen naar de volgende parameters:
 | Parameters | Waarde | Notities   |
 |---|---|---|
 | `s:event:type` | `"play"` |  |
-| `l:event:playhead` | &lt;playhead position=&quot;&quot;> bijv. 50,60,70 | Deze parameter geeft de huidige positie van de afspeelkop weer. |
+| `l:event:playhead` | &lt;positie van de afspeelkop> bijvoorbeeld 50,60,70 | Deze parameter geeft de huidige positie van de afspeelkop weer. |
 
 ## Hartslaginhoud voltooid {#heartbeat-content-complete}
 
-Wanneer het afspelen is voltooid, wat betekent dat het einde van de afspeelkop is bereikt, wordt een `Heartbeat Content Complete` de vraag wordt verzonden. Deze vraag kijkt als andere Hartslagvraag, maar het bevat sommige specifieke parameters:
+Wanneer het afspelen is voltooid, wat betekent dat het einde van de afspeelkop is bereikt, wordt een `Heartbeat Content Complete` -aanroep verzonden. Deze vraag kijkt als andere Hartslagvraag, maar het bevat sommige specifieke parameters:
 
 | Parameters | Waarde | Notities   |
 |---|---|---|

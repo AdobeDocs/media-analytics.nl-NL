@@ -3,39 +3,39 @@ title: Codevergelijking v1.x naar v2.x
 description: Leer het verschil tussen code in 1.x en 2.x versies van Media SDK.
 uuid: 9f0a1660-2100-446d-ab75-afdf966478b3
 exl-id: c2324c6a-329f-44e2-bea0-9d43ef9c6ef7
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '544'
 ht-degree: 2%
 
 ---
 
 # Vergelijking van oude code — 1.x tot 2.x {#code-comparison-x-to-x}
 
-Alle configuratieparameters en tracking-API&#39;s worden nu geconsolideerd in de `MediaHeartbeats` en `MediaHeartbeatConfig` klassen.
+Alle configuratieparameters en tracking-API&#39;s worden nu geconsolideerd in de klassen `MediaHeartbeats` en `MediaHeartbeatConfig` .
 
-**Wijzigingen in API voor configuratie:**
+**de veranderingen van de Configuratie API:**
 
-* `AdobeHeartbeatPluginConfig.sdk` - Naam wijzigen in `MediaConfig.appVersion`
-* `MediaHeartbeatConfig.playerName` - Nu ingesteld op `MediaHeartbeatConfig` in plaats van `VideoPlayerPluginDelegate`
-* (Alleen voor JavaScript): De `AppMeasurement` -instantie - Nu verzonden via de `MediaHeartbeat` constructor.
+* `AdobeHeartbeatPluginConfig.sdk` - Naam gewijzigd in `MediaConfig.appVersion`
+* `MediaHeartbeatConfig.playerName` - Nu ingesteld via `MediaHeartbeatConfig` in plaats van `VideoPlayerPluginDelegate`
+* (Alleen voor JavaScript): De `AppMeasurement` -instantie - Nu verzonden door de `MediaHeartbeat` -constructor.
 
-**Wijzigingen in configuratie-eigenschappen:**
+**de eigenschappen van de Configuratie verandert:**
 
-* `sdk` - Naam wijzigen in `appVersion`
+* `sdk` - Naam gewijzigd in `appVersion`
 * `publisher` - Verwijderd; Experience Cloud Org ID wordt in plaats daarvan gebruikt als uitgever
 * `quiteMode` - Verwijderd
 
-**Koppelingen naar 1.x- en 2.x-voorbeeldspelers:**
+**Verbindingen aan 1.x en 2.x steekproefspelers:**
 
-* [1.x voorbeeldspeler ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L58)
-* [2.x Sample Player ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/2.x/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L47)
+* [ 1.x de Speler van de Steekproef ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L58)
+* [ 2.x de Speler van de Steekproef ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/2.x/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L47)
 
 In de volgende secties vindt u codevergelijkingen tussen 1.x en 2.x, waaronder Initialisatie, Core Playback, Ad Playback, Chapter Playback en enkele andere gebeurtenissen.
 
-## Vergelijking VHL-code: INITIALISATIE
+## VHL-codevergelijking: INITIALISATIE
 
 ### Initialisatie van objecten
 
@@ -43,8 +43,8 @@ In de volgende secties vindt u codevergelijkingen tussen 1.x en 2.x, waaronder I
 | --- | --- |
 | `Heartbeat()` | `MediaHeartbeat()` |
 | `VideoPlayerPlugin()` | `MediaHeartbeatConfig()` |
-| `AdobeAnalyticsPlugin()` |  |
-| `HeartbeatPlugin()` |  |
+| `AdobeAnalyticsPlugin()` | |
+| `HeartbeatPlugin()` | |
 
 #### Initialisatie van insteekmodule voor videospeler (1.x) {#plugin-init-1.x}
 
@@ -96,11 +96,11 @@ this._mediaHeartbeat = new MediaHeartbeat( new SampleMediaHeartbeatDelegate(this
 | `VideoPlayerPluginDelegate()` | `MediaHeartbeatDelegate()` |
 | `VideoPlayerPluginDelegate().getVideoInfo` | `MediaHeartbeatDelegate().getCurrentPlaybackTime` |
 | `VideoPlayerPluginDelegate().getAdBreakInfo` | `MediaHeartbeatDelegate().getQoSObject` |
-| `VideoPlayerPluginDelegate().getAdInfo` |  |
-| `VideoPlayerPluginDelegate().getChapterInfo` |  |
-| `VideoPlayerPluginDelegate().getQoSInfo` |  |
-| `VideoPlayerPluginDelegate().get.onError` |  |
-| `AdobeAnalyticsPluginDelegate()` |  |
+| `VideoPlayerPluginDelegate().getAdInfo` | |
+| `VideoPlayerPluginDelegate().getChapterInfo` | |
+| `VideoPlayerPluginDelegate().getQoSInfo` | |
+| `VideoPlayerPluginDelegate().get.onError` | |
+| `AdobeAnalyticsPluginDelegate()` | |
 
 #### VideoPlayerPluginDelegate (1.x) {#player-plugin-delegate-1.x}
 
@@ -176,7 +176,7 @@ SampleMediaHeartbeatDelegate.prototype.getQoSObject = function() {
 this._mediaHeartbeat = new MediaHeartbeat(new SampleMediaHeartbeatDelegate(this._player), mediaConfig, appMeasurement);
 ```
 
-## Vergelijking VHL-code: CORE PLAYBACK
+## VHL-codevergelijking: CORE PLAYBACK
 
 ### Begin sessie
 
@@ -266,7 +266,7 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 ```
 
 >[!NOTE]
->In plaats van de standaardvideometagegevens in te stellen via de `AdobeAnalyticsPlugin.setVideoMetadata()` API, in VHL 2.0, wordt de Standaard Video Metadata geplaatst door de sleutel MediaObject `MediaObject.MediaObjectKey.StandardVideoMetadata()`.
+>In plaats van de standaardvideometagegevens via de `AdobeAnalyticsPlugin.setVideoMetadata()` API in te stellen, wordt in VHL 2.0 de Standaardvideometagegevens ingesteld via de MediaObject-toets `MediaObject.MediaObjectKey.StandardVideoMetadata()` .
 
 ### Aangepaste videometagegevens
 
@@ -306,7 +306,7 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 ```
 
 >[!NOTE]
->In plaats van de metagegevens voor aangepaste video in te stellen via de `AdobeAnalyticsPlugin.setVideoMetadata()` API, in VHL 2.0, wordt de Standaard Video Metagegevens geplaatst door `MediaHeartbeat.trackSessionStart()` API.
+>In plaats van de metagegevens voor aangepaste video in te stellen via de `AdobeAnalyticsPlugin.setVideoMetadata()` -API, wordt in VHL 2.0 de metagegevens voor standaard video ingesteld via de `MediaHeartbeat.trackSessionStart()` -API.
 
 
 ### Afspelen
@@ -455,7 +455,7 @@ VideoAnalyticsProvider.prototype._onComplete = function() {
 };
 ```
 
-## Vergelijking VHL-code: AD PLAYBACK
+## VHL-codevergelijking: AD PLAYBACK
 
 ### Ad Start
 
@@ -464,7 +464,7 @@ VideoAnalyticsProvider.prototype._onComplete = function() {
 | `VideoPlayerPlugin.trackAdStart()` | `MediaHeartbeat.createAdBreakObject()` |
 | `VideoPlayerPluginDelegate.getAdBreakInfo()` | `MediaHeartbeat.createAdObject()` |
 | `VideoPlayerPluginDelegate.getAdInfo()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.AdBreakStart)` |
-|  | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.AdStart)` |
+| | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.AdStart)` |
 
 #### Advertentie starten (1.x) {#ad-start-1.x}
 
@@ -552,14 +552,14 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 ```
 
 >[!NOTE]
->In plaats van de metagegevens voor Standaard toevoegen in te stellen via de `AdobeAnalyticsPlugin.setVideoMetadata()` API, in VHL 2.0, wordt de StandaardAdvertentiemetagegevens geplaatst door `AdMetadata` key `MediaObject.MediaObjectKey.StandardVideoMetadata`
+>In plaats van de metagegevens voor standaard-advertenties in te stellen via de `AdobeAnalyticsPlugin.setVideoMetadata()` API, wordt in VHL 2.0 de metagegevens voor standaard-advertenties ingesteld via de `AdMetadata` toets `MediaObject.MediaObjectKey.StandardVideoMetadata` .
 
 ### Aangepaste advertentiemetagegevens
 
 | 1.x API | 2.x API |
 | --- | --- |
 | `AdobeAnalyticsPlugin.setAdMetadata()` | `MediaHeartbeat.createAdObject()` |
-|  | `MediaHeartbeat.trackAdStart()` |
+| | `MediaHeartbeat.trackAdStart()` |
 
 #### Aangepaste advertentiemetagegevens (1.x) {#custom-ad-meta-1.x}
 
@@ -580,7 +580,7 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 };
 ```
 
-#### Aangepaste advertentiemetagegevens (2.x) {#custom-ad-meta-2.x}
+#### Aangepaste Advertentiemetagegevens (2.x) {#custom-ad-meta-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdStart = function() {
@@ -603,14 +603,14 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 ```
 
 >[!NOTE]
->In plaats van de metagegevens voor Aangepaste advertentie in te stellen via het dialoogvenster `AdobeAnalyticsPlugin.setVideoMetadata` API, in VHL 2.0, wordt de StandaardAdvertentiemetagegevens geplaatst door `MediaHeartbeat.trackAdStart()` API.
+>In plaats van de metagegevens voor aangepaste en aangepaste bewerkingen in te stellen via de `AdobeAnalyticsPlugin.setVideoMetadata` API, wordt in VHL 2.0 de metagegevens voor standaard-advertenties ingesteld via de `MediaHeartbeat.trackAdStart()` -API.
 
 ### Ad Skip
 
 | 1.x API | 2.x API |
 | --- | --- |
 | `AdobeAnalyticsPlugin.setAdMetadata()` | `MediaHeartbeat.createAdObject()` |
-|  | `MediaHeartbeat.trackAdStart()` |
+| | `MediaHeartbeat.trackAdStart()` |
 
 #### Advertentie overslaan (1.x) {#ad-skip-1.x}
 
@@ -630,14 +630,14 @@ VideoAnalyticsProvider.prototype._onAdSkip = function() {
 ```
 
 >[!NOTE]
->in VHL 1.5.X-API&#39;s; `getAdinfo()` en `getAdBreakInfo()` moet null retourneren als de speler zich buiten de grenzen van het ad-einde bevindt.
+>In VHL 1.5.X-API&#39;s moeten `getAdinfo()` en `getAdBreakInfo()` null retourneren als de speler zich buiten de grenzen van het invoegpunt bevindt.
 
 ### Toevoegen voltooid
 
 | 1.x API | 2.x API |
 | --- | --- |
 | `VideoPlayerPlugin.trackAdComplete()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.AdComplete)` |
-|  | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.AdBreakComplete)` |
+| | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.AdBreakComplete)` |
 
 #### Advertentie voltooid (1.x) {#ad-complete-1.x}
 
@@ -711,7 +711,7 @@ SampleVideoPlayerPluginDelegate.prototype.getChapterInfo = function() {
 ```
 
 >[!NOTE]
->in VHL 1.5.X-API&#39;s; `getChapterinfo()` moet null retourneren als de speler zich buiten de hoofdstukgrenzen bevindt.
+>In VHL 1.5.X APIs; `getChapterinfo()` moet ongeldig terugkeren als de speler buiten de grenzen van het Hoofdstuk is.
 
 #### Hoofdstuk overslaan (2.x) {#chap-skip-2.x}
 
@@ -780,7 +780,7 @@ VideoAnalyticsProvider.prototype._onChapterComplete = function() {
 };
 ```
 
-## Vergelijking VHL-code: OVERIGE GEBEURTENISSEN
+## VHL-codevergelijking: ANDERE GEBEURTENISSEN
 
 ### Wijziging van bitsnelheid
 
@@ -816,7 +816,7 @@ VideoAnalyticsProvider.prototype._onBitrateChange = function() {
 | --- | --- |
 | `VideoInfo.resumed()` | `MediaObject()` |
 | `VideoPlayerPluginDelegate.getVideoInfo()` | `MediaHeartbeat.trackSessionStart()` |
-| `VideoPlayerPlugin.trackVideoLoad()` |  |
+| `VideoPlayerPlugin.trackVideoLoad()` | |
 
 #### Video hervatten (1.x) {#video-resume-1.x}
 

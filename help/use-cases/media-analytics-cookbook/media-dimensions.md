@@ -2,9 +2,9 @@
 title: Wat is kenmerk van mediastream?
 description: Leer hoe u handelingen van toepassingen koppelt aan gegevens voor mediatracering zonder dat u extra verwerkingsregels en aangepaste variabelen nodig hebt.
 exl-id: 75cc9088-776d-4b10-b358-9fff956a7eb7
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 Met de Attributie van de Stroom van Media, kunt u toepassingsacties met media volgende gegevens verbinden zonder de behoefte aan extra verwerkingsregels en douanevariabelen.
 
-## Media-Dimensionen buiten mediatracering
+## Media-afmetingen buiten mediatracering
 
 U kunt mediumafmetingen toevoegen aan analytische aanroepen, zoals paginaweergaven en aangepaste koppelingen. Tijdens implementatie, moet u de gegevensparameters van de media context aan de het spoorvraag van Analytics toevoegen. Om de volledige lijst van beschikbare parameters van contextgegevens te bekijken die voor media worden gebruikt, zie [ Audio en videoparameters.](/help/implementation/variables/audio-video-parameters.md)
 
@@ -34,7 +34,7 @@ s.contextData["a.media.show"]="Mi Amore"
 s.tl(this,'o','Hero Banner');
 ```
 
-Bij Analytics-rapportage kunt u de `Show` -eVar gebruiken om de gegevens op te splitsen en u kunt de instanties van trackkoppelingen tellen. De rapportage zou er ongeveer als volgt uitzien:
+Bij Analytics-rapportage kunt u de gegevens opsplitsen met de eVar van `Show` en u kunt de instanties van trackkoppelingen tellen. De rapportage zou er ongeveer als volgt uitzien:
 
 ![](/assets/myShow-rpt-1.png)
 

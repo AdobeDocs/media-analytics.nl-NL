@@ -2,9 +2,9 @@
 title: Uitvoering en verslaglegging
 description: Meer informatie over het implementeren van de functie voor het bijhouden van de spelerstatus, waaronder .
 exl-id: 19a97c9b-14d1-4f11-bb0a-3a1ad6f949da
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 15cc123fb44654083b6501042bdd9d4e07128b59
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 0%
@@ -91,7 +91,7 @@ De metriek die voor elke individuele staat wordt verstrekt wordt berekend en aan
 
 ## Rapportage
 
-Alle metriek van de spelerstaat kan voor om het even welke rapporteringsvisualisatie beschikbaar in Analysis Workspace of een component (segment, berekende metriek) worden gebruikt zodra een rapportreeks voor het volgen van de spelerstaat wordt toegelaten. Deze metriek zou van de Admin Console voor elk individueel rapport kunnen worden toegelaten gebruikend Media die Opstelling melden (geef Montages > Mediabeheer > Mediarapportering uit).
+Alle metriek van de spelerstaat kan voor om het even welke rapporteringsvisualisatie beschikbaar in Analysis Workspace of een component (segment, berekende metriek) worden gebruikt zodra een rapportreeks voor het volgen van de spelerstaat wordt toegelaten. Deze metriek zou van Admin Console voor elk individueel rapport kunnen worden toegelaten gebruikend Media die Opstelling melden (geef Montages > Mediabeheer > Mediarapportering uit).
 
 ![](assets/report-setup.png)
 

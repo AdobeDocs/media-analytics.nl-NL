@@ -3,9 +3,9 @@ title: Leer hoe te om Hoofdstuk en Segmenten op Roku te volgen
 description: Leer over het uitvoeren van hoofdstuk en segment het volgen gebruikend Media SDK op Roku.
 uuid: 15c07131-77d7-4a97-92c6-0a190c6b08d3
 exl-id: b5eb8be7-4b85-4ba7-9216-dd691be7ba46
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 2%
@@ -18,13 +18,13 @@ De volgende instructies bieden richtlijnen voor implementatie met 2.x SDK&#39;s.
 
 >[!IMPORTANT]
 >
-> Als u een 1.x-versie van de SDK implementeert, kunt u de Developers Guide hier downloaden: [SDK&#39;s downloaden.](/help/getting-started/download-sdks.md)
+> Als u een versie 1.x van SDK uitvoert, kunt u de Gids van Ontwikkelaars hier downloaden: [ Download SDKs.](/help/getting-started/download-sdks.md)
 
 ## Standaardinstellingen en metagegevens implementeren
 
-1. Identificeer wanneer de hoofdstukbegingebeurtenis voorkomt en creeer `ChapterObject` door de hoofdstukinformatie te gebruiken.
+1. Bepaal wanneer de hoofdstukstartgebeurtenis plaatsvindt en maak de `ChapterObject` -instantie met behulp van de hoofdstukinformatie.
 
-   `ChapterObject` hoofdstuk volgende verwijzing:
+   `ChapterObject` referentie voor het bijhouden van hoofdstukken:
 
    >[!NOTE]
    >
@@ -56,20 +56,20 @@ De volgende instructies bieden richtlijnen voor implementatie met 2.x SDK&#39;s.
    chapterContextData["seg_info"] = "seg_info"
    ```
 
-1. Als u wilt beginnen met het afspelen van het hoofdstuk, roept u de `ChapterStart` in de `MediaHeartbeat` -instantie:
+1. Roep de gebeurtenis `ChapterStart` in de `MediaHeartbeat` -instantie aan om het afspelen van het hoofdstuk te starten:
 
    ```
    ADBMobile().mediaTrackEvent(MEDIA_CHAPTER_START, chapterInfo, chapterContextData)
    ```
 
-1. Wanneer de playback de hoofdstukeindgrens bereikt, zoals die door uw douanecode wordt bepaald, roep `ChapterComplete` in de `MediaHeartbeat` -instantie.
+1. Wanneer het afspelen de eindgrens van het hoofdstuk bereikt, zoals gedefinieerd door uw aangepaste code, roept u de gebeurtenis `ChapterComplete` in de instantie `MediaHeartbeat` aan.
 
    ```
    chapterContextData = {}
    ADBMobile().mediaTrackEvent(MEDIA_CHAPTER_COMPLETE, chapterInfo, chapterContextData)
    ```
 
-1. Als het afspelen van het hoofdstuk niet is voltooid omdat de gebruiker het hoofdstuk heeft overgeslagen (bijvoorbeeld als de gebruiker buiten de hoofdstukgrens zoekt), roept u het dialoogvenster `ChapterSkip` in de MediaHeartbeat-instantie.
+1. Als het afspelen van het hoofdstuk niet is voltooid omdat de gebruiker het hoofdstuk heeft overgeslagen (bijvoorbeeld als de gebruiker buiten de hoofdstukgrens zoekt), roept u de gebeurtenis `ChapterSkip` in de MediaHeartbeat-instantie aan.
 
    ```
    chapterContextData = {}

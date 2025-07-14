@@ -1,14 +1,14 @@
 ---
-title: VOD afspelen met bufferen
-description: Bekijk een voorbeeld van hoe te om inhoud te volgen VOD gebruikend Media SDK.
+title: VOD Playback with Buffering
+description: Bekijk een voorbeeld van hoe u VOD-inhoud kunt bijhouden met behulp van Media SDK.
 uuid: 958f7692-7193-40fb-a8e7-2ff4fa805330
 exl-id: 3a8f913f-cb51-45ae-ac1d-862ea1e7c994
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
-source-wordcount: '227'
-ht-degree: 2%
+source-wordcount: '228'
+ht-degree: 0%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 2%
 
 In dit scenario vindt enige buffering plaats wanneer VOD-inhoud wordt afgespeeld.
 
-Tenzij gespecificeerd, zijn de netwerkvraag in dit scenario het zelfde als de vraag in [VOD afspelen zonder advertenties](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario.
+Tenzij gespecificeerd, zijn de netwerkvraag in dit scenario het zelfde als de vraag in de [ playback van VOD zonder advertenties ](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario.
 
 | Trigger   | Hartslagmethode   | Netwerkaanroepen   | Notities   |
 |---|---|---|---|
-| Gebruiker klikt **[!UICONTROL Play]** | `trackSessionStart` | Start inhoud analyse, Start inhoud hartslag | Dit kan een gebruiker zijn die klikt **[!UICONTROL Play]** of een automatisch afspeelbare gebeurtenis. |
+| Gebruiker klikt **[!UICONTROL Play]** | `trackSessionStart` | Start inhoud analyse, Start inhoud hartslag | Dit kan een gebruiker zijn die **[!UICONTROL Play]** klikt of een automatisch afgespeelde gebeurtenis. |
 | Het eerste frame van de video wordt afgespeeld. | `trackPlay` | Hartslaginhoud afspelen | Deze methode activeert de timer. Hartslagen worden elke 10 seconden verzonden zolang het afspelen duurt. |
 | De inhoud wordt afgespeeld. |  | Content Heartbeats |  |
 | De buffering begint. | `trackEvent:BufferStart` | Hartslagbuffer |  |
@@ -30,7 +30,7 @@ Tenzij gespecificeerd, zijn de netwerkvraag in dit scenario het zelfde als de vr
 | De buffering is voltooid. | `trackEvent:BufferComplete` | Hartslagbuffer, hartslagspel |  |
 | De inhoud wordt afgespeeld. |  | Content Heartbeats |  |
 | Het afspelen van de inhoud is voltooid. | `trackComplete` | Hartslaginhoud voltooid | Het einde van de afspeelkop is bereikt. |
-| De sessie is afgelopen. | `trackSessionEnd` |  | `SessionEnd` het einde van een weergavesessie. Deze API moet worden aangeroepen, zelfs als de gebruiker de video niet in de gaten houdt om te worden voltooid. |
+| De sessie is afgelopen. | `trackSessionEnd` |  | `SessionEnd` betekent het einde van een weergavesessie. Deze API moet worden aangeroepen, zelfs als de gebruiker de video niet in de gaten houdt om te worden voltooid. |
 
 ## Parameters {#parameters}
 

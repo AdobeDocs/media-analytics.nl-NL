@@ -3,9 +3,9 @@ title: Ad-parameters
 description: Leer over advertentieparameters met inbegrip van de implementatie, het netwerk, en het melden van variabelen voor ad videogegevens.
 uuid: 92cd7f97-bb5a-4de6-8946-453d30271d0f
 exl-id: 949e86cb-d265-4836-8825-a06b87203b15
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: e7f17c6e8ea6e54a55f59e4e817fba07a7851496
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '2036'
 ht-degree: 0%
@@ -37,13 +37,13 @@ Beschrijving van tabelgegevens:
 >[!IMPORTANT]
 >
 >Wijzig de classificatienamen niet voor onderstaande variabelen die
->beschreven onder Rapportage/Gereserveerde variabele als &quot;classificatie&quot;.
->De mediaclassificaties worden gedefinieerd wanneer een rapportsuite is ingeschakeld voor media
->bijhouden. Van tijd tot tijd voegt Adobe nieuwe eigenschappen toe, en, wanneer dit voorkomt,
->klanten moeten hun rapportsuites opnieuw toelaten om toegang tot de nieuwe media te krijgen
->eigenschappen. Tijdens het updateproces bepaalt Adobe of de
->classificaties worden ingeschakeld door de namen van de variabelen te controleren. Indien een van de
->ze ontbreken, voegt Adobe de ontbrekende weer toe.
+>>beschreven onder Rapportage/Gereserveerde variabele als &quot;classificatie&quot;.
+>>De mediaclassificaties worden gedefinieerd wanneer een rapportsuite is ingeschakeld voor media
+>>bijhouden. Van tijd tot tijd voegt Adobe nieuwe eigenschappen toe, en, wanneer dit voorkomt,
+>>klanten moeten hun rapportsuites opnieuw toelaten om toegang tot de nieuwe media te krijgen
+>>eigenschappen. Tijdens het updateproces bepaalt Adobe of de
+>>classificaties worden ingeschakeld door de namen van de variabelen te controleren. Indien een van de
+>>ze ontbreken, voegt Adobe de ontbrekende weer toe.
 
 ## Videogegevens toevoegen {#ad-video-data}
 

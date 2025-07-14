@@ -1,20 +1,20 @@
 ---
 title: Foutopsporing in SDK
-description: Leer over het volgen/registreren beschikbaar in de SDK van Media.
+description: Meer informatie over het bijhouden/registreren in Media SDK.
 uuid: a5972d87-c593-4b4f-a56f-dca6e25268e1
 exl-id: c2de6454-8538-4d07-a099-e278b153d894
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 2%
+source-wordcount: '218'
+ht-degree: 0%
 
 ---
 
 # Foutopsporing in SDK{#sdk-debugging}
 
-U kunt logbestanden in- en uitschakelen. De Media SDK biedt een uitgebreid mechanisme voor overtrekken/registreren in de stapel voor het bijhouden van media. U kunt registreren toelaten of onbruikbaar maken door te plaatsen `debugLogging` markering op het Config-object.
+U kunt logbestanden in- en uitschakelen. Media SDK verstrekt een uitgebreid het vinden/registreren mechanisme door de media-volgende stapel. U kunt registratie in- of uitschakelen door de markering `debugLogging` op het Config-object in te stellen.
 
 ## Voorbeeldcode voor foutopsporingslogboekregistratie
 
@@ -52,7 +52,7 @@ this._mediaHeartbeat = new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasure
 
 ### OTT (Chromecast, Roku)
 
-De ADBMobile-bibliotheek biedt foutopsporingslogboekregistratie via de `setDebugLogging` methode. Foutopsporingslogbestand moet worden ingesteld op `false` voor alle productie-apps.
+De bibliotheek ADBMobile biedt foutopsporingslogboekregistratie via de methode `setDebugLogging` . Foutopsporingslogbestand moet worden ingesteld op `false` voor alle productie-apps.
 
 #### Roku
 
@@ -75,18 +75,18 @@ Format: [<timestamp>] [<level>] [<tag>] [<message>]
 Example: [16:10:29 GMT­0700 (PDT).245] [DEBUG] [plugin::player] Resolving qos.startupTime: 0
 ```
 
-* **tijdstempel:** Dit is de huidige CPU-tijd (tijdzone voor GMT)
-* **niveau:** Er zijn vier berichtniveaus gedefinieerd:
+* **timestamp:** dit is de huidige tijd van CPU (tijd-die voor GMT wordt geplaatst)
+* **niveau:** er zijn 4 bepaalde berichtniveaus:
    * INFO - Meestal worden de invoergegevens van de toepassing (naam van speler valideren, video-id enzovoort)
    * DEBUG - zuivert logboeken, die door de ontwikkelaars worden gebruikt om complexere kwesties te zuiveren
-   * WAARSCHUWING - Geeft mogelijke integratie-/configuratiefouten of fouten in de SDK van Heartbeats aan
-   * FOUT - Geeft belangrijke integratiefouten of fouten in de SDK van Heartbeats aan
-* **tag:** De naam van de subcomponent die het logboekbericht heeft uitgegeven (gewoonlijk de klassenaam)
-* **bericht:** Het daadwerkelijke spoorbericht
+   * WARN - Geeft mogelijke integratie-/configuratiefouten of Heartbeats SDK-bugs aan
+   * FOUT - Geeft belangrijke integratiefouten of Heartbeats SDK-bugs aan
+* **markering:** de naam van sub-component die het logboekbericht (gewoonlijk de klassennaam) uitbracht
+* **bericht:** het daadwerkelijke spoorbericht
 
-U kunt de logboekoutput door de bibliotheek van SDK van Media gebruiken om de implementatie te verifiëren. Een goede strategie is door de logboeken naar de tekenreeks te zoeken `#track`. Hiermee worden alle `track*()` oproepen die door uw toepassing worden gemaakt.
+U kunt de logboekoutput door de bibliotheek van Media SDK gebruiken om de implementatie te verifiëren. Een goede strategie is door de logboeken naar de tekenreeks `#track` te zoeken. Hiermee worden alle `track*()` -aanroepen van uw toepassing gemarkeerd.
 
-Dit is bijvoorbeeld waar de logbestanden voor zijn gefilterd `#track` zou er als volgt kunnen uitzien:
+Zo zouden de voor `#track` gefilterde logboeken er bijvoorbeeld als volgt kunnen uitzien:
 
 ```js
 [16:10:29 GMT­0700 (PDT).222] [INFO] [plugin::player] #trackVideoLoad()

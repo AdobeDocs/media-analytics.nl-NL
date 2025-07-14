@@ -1,11 +1,11 @@
 ---
-title: Verklaarde Sleutels van Metagegevens van Chromecast
+title: Uitgevoerde chroecast-metagegevenssleutels
 description: Leer hoe te om standaardvideo en admeta-gegevens te plaatsen die met het volgen vraag op Chromecast moeten worden verzonden.
 uuid: c446ad41-51b8-46d6-9bc1-abfae866023f
 exl-id: ccc717ae-d846-4349-8282-5e3511ddeb9b
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '139'
 ht-degree: 2%
@@ -47,7 +47,7 @@ Standaard video- en advertentiemetagegevens kunnen worden ingesteld voor respect
 | Creative-id | `a.media.ad.creative` | `ADBMobile.media.AdMetadataKeys.CREATIVE_ID` |
 | Plaatsing-id | `a.media.ad.placement` | `ADBMobile.media.AdMetadataKeys.PLACEMENT_ID` |
 | Site-id | `a.media.ad.site` | `ADBMobile.media.AdMetadataKeys.SITE_ID` |
-| Creative URL | `a.media.ad.creativeURL` | `ADBMobile.media.AdMetadataKeys.CREATIVE_URL` |
+| CREATIVE URL | `a.media.ad.creativeURL` | `ADBMobile.media.AdMetadataKeys.CREATIVE_URL` |
 
 ## Voorbeeldimplementaties voor Chromecast {#sample-implementations-for-chromecast}
 

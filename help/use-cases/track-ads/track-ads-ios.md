@@ -3,12 +3,12 @@ title: Meer informatie over het volgen van advertenties op iOS
 description: Implementeer en volg in iOS-toepassingen met de Media SDK.
 uuid: e979e679-cde5-4c30-8f34-867feceac13a
 exl-id: a352bca9-bcfc-4418-b2a2-c9b1ad226359
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 4%
+source-wordcount: '359'
+ht-degree: 2%
 
 ---
 
@@ -18,7 +18,7 @@ De volgende instructies bieden richtlijnen voor implementatie met behulp van de 
 
 >[!IMPORTANT]
 >
->Als u een 1.x-versie van de SDK implementeert, kunt u hier de 1.x-handleidingen voor ontwikkelaars downloaden: [SDK&#39;s downloaden.](/help/getting-started/download-sdks.md)
+>Als u een 1.x versie van SDK uitvoert, kunt u 1.x de Gidsen van Ontwikkelaars hier downloaden: [ Download SDKs.](/help/getting-started/download-sdks.md)
 
 ## Constanten voor bijhouden van advertenties
 
@@ -30,11 +30,11 @@ De volgende instructies bieden richtlijnen voor implementatie met behulp van de 
 | `ADBMediaHeartbeatEventAdComplete` | Constante voor het bijhouden van de gebeurtenis Advertentie voltooid |
 | `ADBMediaHeartbeatEventAdSkip` | Constante voor het bijhouden van de gebeurtenis Advertentie overslaan |
 
-## Uitvoeringsstappen
+## Implementatiestappen
 
-1. Identificeer wanneer de grens van de advertentie begint, met inbegrip van pre-rol, en creeer een `AdBreakObject` met behulp van de informatie over het advertentieeinde.
+1. Bepaal wanneer de grens van de advertentieruimte begint, met inbegrip van pre-rol, en creeer `AdBreakObject` door de informatie van de advertentierak te gebruiken.
 
-   `AdBreakObject` referentie:
+   `AdBreakObject` reference:
 
    | Naam variabele | Beschrijving | Vereist |
    | --- | --- | :---: |
@@ -42,7 +42,7 @@ De volgende instructies bieden richtlijnen voor implementatie met behulp van de 
    | `position` | De getalpositie van het advertentierak binnen de inhoud, beginnend met 1. | Ja |
    | `startTime` | Waarde van afspeelkop aan het begin van het advertentieeinde. | Ja |
 
-   Object maken van einde toevoegen:
+   Object maken van advertentie-einde:
 
    ```
    id adBreakObject = [ADBMediaHeartbeat createAdBreakObjectWithName:[ADBREAK_NAME]
@@ -50,7 +50,7 @@ De volgende instructies bieden richtlijnen voor implementatie met behulp van de 
                                startTime:[START_TIME]];
    ```
 
-1. Bellen `trackEvent()` with `AdBreakStart` in de `MediaHeartbeat` -instantie om het ad-einde te volgen:
+1. Roep `trackEvent()` aan met `AdBreakStart` in de `MediaHeartbeat` -instantie om het ad-einde te volgen:
 
    ```
    - (void)onAdBreakStart:(NSNotification *)notification {
@@ -60,9 +60,9 @@ De volgende instructies bieden richtlijnen voor implementatie met behulp van de 
    }
    ```
 
-1. Identificeer wanneer de advertentie begint en creeer `AdObject` -instantie die de advertentiegegevens gebruikt.
+1. Bepaal wanneer de advertentie begint en creeer een `AdObject` instantie gebruikend de advertentieinformatie.
 
-   `AdObject` referentie:
+   `AdObject` reference:
 
    | Naam variabele | Beschrijving | Vereist |
    | --- | --- | :---: |
@@ -82,17 +82,17 @@ De volgende instructies bieden richtlijnen voor implementatie met behulp van de 
 
 1. Voeg desgewenst standaard- en/of advertentiemetagegevens toe aan de mediatraceringssessie via de variabelen van de contextgegevens.
 
-   * [Standaardmetadata voor advertenties implementeren in iOS](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
-   * **Aangepaste en metagegevens -** Voor aangepaste metagegevens maakt u een variabelenobject voor de aangepaste gegevensvariabelen en vult u de gegevens voor de huidige advertentie in:
+   * [Standaard en metagegevens implementeren op iOS](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
+   * **Douane en meta-gegevens -** voor douanemetagegevens, creeer een veranderlijk voorwerp voor de variabelen van douanegegevens en bevolk met de gegevens voor de huidige advertentie:
 
-      ```
-      NSMutableDictionary *adDictionary = [[NSMutableDictionary alloc] init];
-      [adDictionary setObject:@"Sample affiliate" forKey:@"affiliate"];
-      [adDictionary setObject:@"Sample campaign" forKey:@"campaign"];
-      [adDictionary setObject:@"Sample creative" forKey:@"creative"];
-      ```
+     ```
+     NSMutableDictionary *adDictionary = [[NSMutableDictionary alloc] init];
+     [adDictionary setObject:@"Sample affiliate" forKey:@"affiliate"];
+     [adDictionary setObject:@"Sample campaign" forKey:@"campaign"];
+     [adDictionary setObject:@"Sample creative" forKey:@"creative"];
+     ```
 
-1. Bellen `trackEvent()` met de `AdStart` in de `MediaHeartbeat` -instantie om het afspelen van de advertentie te volgen.
+1. Roep `trackEvent()` aan met de gebeurtenis `AdStart` in de instantie `MediaHeartbeat` om het afspelen van de advertentie te volgen.
 
    Neem een verwijzing naar de aangepaste metagegevensvariabele (of een leeg object) op als de derde parameter in de gebeurtenisaanroep:
 
@@ -104,7 +104,7 @@ De volgende instructies bieden richtlijnen voor implementatie met behulp van de 
    }
    ```
 
-1. Wanneer het afspelen van de advertentie het einde van de advertentie heeft bereikt, roept u `trackEvent()` met de `AdComplete` gebeurtenis.
+1. Wanneer het afspelen van de advertentie het einde van de advertentie heeft bereikt, roept u `trackEvent()` aan met de gebeurtenis `AdComplete` .
 
    ```
    - (void)onAdComplete:(NSNotification *)notification {
@@ -114,7 +114,7 @@ De volgende instructies bieden richtlijnen voor implementatie met behulp van de 
    }
    ```
 
-1. Als het afspelen van de advertentie niet is voltooid omdat de gebruiker de advertentie heeft overgeslagen, voert u de `AdSkip` gebeurtenis.
+1. Als het afspelen van de advertentie niet is voltooid omdat de gebruiker de advertentie heeft overgeslagen, houdt u de gebeurtenis `AdSkip` bij.
 
    ```
    - (void)onAdSkip:(NSNotification *)notification {
@@ -124,8 +124,8 @@ De volgende instructies bieden richtlijnen voor implementatie met behulp van de 
    }
    ```
 
-1. Als er extra advertenties zijn binnen dezelfde `AdBreak`Herhaal stap 3 tot en met 7 opnieuw.
-1. Wanneer het advertentieeinde is voltooid, gebruikt u de `AdBreakComplete` te volgen gebeurtenis:
+1. Herhaal stap 3 tot en met 7 opnieuw als er extra advertenties binnen dezelfde `AdBreak` zijn.
+1. Wanneer het ad-einde is voltooid, gebruikt u de gebeurtenis `AdBreakComplete` om bij te houden:
 
    ```
    - (void)onAdBreakComplete:(NSNotification *)notification {
@@ -135,4 +135,4 @@ De volgende instructies bieden richtlijnen voor implementatie met behulp van de 
    }
    ```
 
-Zie het volgende scenario [VOD afspelen met pre-roll-advertenties](/help/use-cases/tracking-scenarios/vod-preroll-ads.md) voor meer informatie .
+Zie het volgende scenario [ de playback van VOD met pre-roladvertenties ](/help/use-cases/tracking-scenarios/vod-preroll-ads.md) voor meer informatie.

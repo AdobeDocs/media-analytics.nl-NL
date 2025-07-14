@@ -1,18 +1,18 @@
 ---
-title: Overzicht van Adobe streaming media Collection
-description: Met de verzameling Streaming media krijgt u meer inzicht in inhoud, audio en advertenties.
+title: Overzicht van Adobe Streaming Media Collection
+description: Met de verzameling Streaming media krijgt u krachtige insight voor inhoud, audio en advertenties.
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 9%
 
 ---
 
-# Overzicht van Adobe streaming media Collection
+# Overzicht van Adobe Streaming Media Collection
 
 ![Banner](./assets/media_analytics_banner.png)
 
@@ -30,7 +30,7 @@ Streaming mediagegevens kunnen eenvoudig worden geïntegreerd in de volgende Ado
 
 >[!IMPORTANT]
 >
->Om de het stromen Inzameling van Media uit te voeren, contacteer uw Vertegenwoordiger van de Adobe of het Team van de Rekening van de Adobe om ervoor te zorgen de Streaming Invoegsel van de Inzameling van Media deel van uw productportefeuille uitmaakt.
+>Als u de verzameling streamingmedia wilt implementeren, neemt u contact op met uw Adobe-verkoper of Adobe-accountteam om ervoor te zorgen dat de invoegtoepassing voor het streamen van media-collectie deel uitmaakt van uw productportfolio.
 
 ## Belangrijkste kenmerken
 
@@ -65,7 +65,7 @@ Nadat een afspeelsessie is beëindigd, worden de gegevens voor het bijhouden van
 
 >[!NOTE]
 >
->Met de implementaties van de Customer Journey Analytics, kunnen de gegevens naar Customer Journey Analytics of gebruikend Ervaring Edge of het gebruiken van de Verbinding van Gegevens van de Analyse (ADC) worden verzonden.
+>Met Customer Journey Analytics-implementaties kunnen gegevens naar Customer Journey Analytics worden verzonden met Experience Edge of via de Analytics Data Connector (ADC).
 
 
 Voor gedetailleerde informatie over de diverse implementatiemethodes, zie [ de Streaming Inzameling van Media voor Adobe Analytics of Customer Journey Analytics uitvoeren ](/help/implementation/overview.md).

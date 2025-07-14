@@ -3,9 +3,9 @@ title: Leer hoe u de kwaliteit van ervaring kunt bijhouden op Roku
 description: Leer over het uitvoeren van kwaliteit van ervaring (QoE, QoS) het volgen gebruikend Media SDK op Roku.
 uuid: a8b242ab-da3c-4297-9eef-f0b9684ef56a
 exl-id: cd84c26d-ad91-4179-9532-83408030ff3e
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 4%
@@ -22,7 +22,7 @@ De volgende instructies bieden richtlijnen voor implementatie voor alle 2.x SDK&
 
 ## QOS implementeren
 
-1. Bepaal wanneer de bitsnelheid verandert tijdens het afspelen van media en gebruik de `mediaUpdateQoS` -API om de QoS-informatie op de Media SDK bij te werken.
+1. Bepaal wanneer de bitsnelheid verandert tijdens het afspelen van media en gebruik de `mediaUpdateQoS` -API om de QoS-informatie bij te werken op de Media SDK.
 
    QoSObject-variabelen:
 

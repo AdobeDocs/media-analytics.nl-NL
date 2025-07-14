@@ -4,9 +4,9 @@ title: API-overzicht voor streaming media
 description: Leer over de API van de Inzameling van Media en hoe uw speler audio en videogebeurtenissen kan volgen gebruikend de vraag van HTTP RESTful.
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
 exl-id: 58430636-7fab-433a-8ead-52ccaa45d920
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 7a1ae72af231659bd794fb18ce9e76685e6beff4
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # API-overzicht van mediagroep {#overview}
 
-De Media Collection API is het RESTful alternatief van Adobe aan de cliënt-kant Media SDK. Met de Media Collection API kan uw speler audio en videogebeurtenissen volgen gebruikend vraag RESTful van HTTP.
+De Media Collection API is Adobe RESTful alternatief aan cliënt-kant Media SDK. Met de Media Collection API kan uw speler audio en videogebeurtenissen volgen gebruikend vraag RESTful van HTTP.
 
 De Media Collection API is hoofdzakelijk een adapter, handelend als server-zijversie van Media SDK. Dit betekent dat sommige aspecten van de documentatie van Media SDK ook relevant zijn voor de API van de Inzameling van Media. Bijvoorbeeld, gebruiken beide oplossingen de zelfde [ Streaming Parameters van Media ](../variables/audio-video-parameters.md), en de verzamelde het stromen media volgende gegevens leiden tot het zelfde [ Melden en Analyse.](/help/reporting/media-reports-enable.md)
 
@@ -29,7 +29,7 @@ De volggegevens die met de Media Collection API worden gevangen worden verzonden
 
 ## API-overzicht {#api-overview}
 
-**URI:** verkrijg dit van uw vertegenwoordiger van de Adobe.
+**URI:** verkrijg dit van uw vertegenwoordiger van Adobe.
 
 **Methode van HTTP:** POST, met JSON- verzoeklichaam.
 

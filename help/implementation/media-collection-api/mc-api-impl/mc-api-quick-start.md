@@ -3,9 +3,9 @@ title: API voor streaming media-verzameling - Snel starten
 description: Aan de slag met de API voor streaming media. Leer hoe u uw aanvraaggegevens snel kunt verifiëren.
 uuid: ca20bad4-2c8f-406b-833e-b4883a9aa534
 exl-id: 08bb5873-f69a-4fdd-8f27-69649b4acb17
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 0%
@@ -20,8 +20,8 @@ ht-degree: 0%
 
 1. Verzamel de standaard, vereiste Adobe Analytics- en Bezoekergegevens die u moet opgeven om een Experience Cloud-toepassing uit te voeren:
 
-   * Org ID Experience Cloud van bezoeker
-   * Gebruikersnaam Experience Cloud van bezoeker
+   * Bezoeker Experience Cloud Org ID
+   * Experience Cloud-gebruikersnaam bezoeker
    * ID Analyserapport
    * URL Analytics Tracking Server
 

@@ -3,11 +3,11 @@ title: Leer hoe u hoofdstukken en segmenten kunt bijhouden op Android
 description: Meer informatie over het implementeren van hoofdstuk- en segmenttracering met de Media SDK op Android.
 uuid: 013815d7-4d9e-48f4-a2b9-3b70cb1149d3
 exl-id: ada2e2a7-1383-471c-9ce6-c82ea93fa79d
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
-source-wordcount: '198'
+source-wordcount: '200'
 ht-degree: 2%
 
 ---
@@ -18,13 +18,13 @@ De volgende instructies bieden richtlijnen voor implementatie met 2.x SDK&#39;s.
 
 >[!IMPORTANT]
 >
->Als u een 1.x-versie van de SDK implementeert, kunt u de Developers Guide hier downloaden: [SDK&#39;s downloaden.](/help/getting-started/download-sdks.md)
+>Als u een versie 1.x van SDK uitvoert, kunt u de Gids van Ontwikkelaars hier downloaden: [ Download SDKs.](/help/getting-started/download-sdks.md)
 
 ## Hoofdstuk bijhouden implementeren
 
-1. Identificeer wanneer de hoofdstukbegingebeurtenis voorkomt en creeer `ChapterObject` door de hoofdstukinformatie te gebruiken.
+1. Bepaal wanneer de hoofdstukstartgebeurtenis plaatsvindt en maak de `ChapterObject` -instantie met behulp van de hoofdstukinformatie.
 
-   `ChapterObject` hoofdstuk volgende verwijzing:
+   `ChapterObject` referentie voor het bijhouden van hoofdstukken:
 
    >[!NOTE]
    >
@@ -57,7 +57,7 @@ De volgende instructies bieden richtlijnen voor implementatie met 2.x SDK&#39;s.
    chapterMetadata.put("segmentInfo", "Sample Segment Info");
    ```
 
-1. Als u wilt beginnen met het afspelen van het hoofdstuk, roept u de `ChapterStart` in de `MediaHeartbeat` instantie:
+1. Roep de gebeurtenis `ChapterStart` in de `MediaHeartbeat` -instantie aan om het afspelen van het hoofdstuk te starten:
 
    ```java
    public void onChapterStart(Observable observable, Object data) {  
@@ -67,7 +67,7 @@ De volgende instructies bieden richtlijnen voor implementatie met 2.x SDK&#39;s.
    }
    ```
 
-1. Wanneer de playback de hoofdstukeindgrens bereikt, zoals die door uw douanecode wordt bepaald, roep `ChapterComplete` in de `MediaHeartbeat` instantie:
+1. Wanneer het afspelen de eindgrens van het hoofdstuk bereikt, zoals gedefinieerd door uw aangepaste code, roept u de gebeurtenis `ChapterComplete` op in de instantie `MediaHeartbeat` :
 
    ```java
    public void onChapterComplete(Observable observable, Object data) {  
@@ -75,7 +75,7 @@ De volgende instructies bieden richtlijnen voor implementatie met 2.x SDK&#39;s.
    }
    ```
 
-1. Als het afspelen van het hoofdstuk niet is voltooid omdat de gebruiker het hoofdstuk heeft overgeslagen (bijvoorbeeld als de gebruiker buiten de hoofdstukgrens zoekt), roept u het dialoogvenster `ChapterSkip` -gebeurtenis in de MediaHeartbeat-instantie:
+1. Als het afspelen van het hoofdstuk niet is voltooid omdat de gebruiker het hoofdstuk heeft overgeslagen (bijvoorbeeld als de gebruiker buiten de hoofdstukgrens zoekt), roept u de gebeurtenis `ChapterSkip` in de MediaHeartbeat-instantie aan:
 
    ```java
    public void onChapterSkip(Observable observable, Object data) {  

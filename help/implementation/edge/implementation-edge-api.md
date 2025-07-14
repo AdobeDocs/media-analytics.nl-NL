@@ -1,19 +1,19 @@
 ---
-title: Implementeer de streamingmedia-verzameling met de Edge Network-API
+title: De verzameling streamingmedia implementeren met de Edge Network API
 description: Bronnen voor het installeren van Media Analytics met Experience Platform Edge API.
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: 762abfd4-dc84-40dc-9142-fbebbb892e15
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 0%
 
 ---
 
-# Implementeer de streamingmedia-verzameling met de Edge Network-API
+# De verzameling streamingmedia implementeren met de Edge Network API
 
-Als u niet [ Adobe Experience Platform Mobile SDK ](/help/implementation/edge/implementation-edge.md) kunt gebruiken, kunt u gegevens naar de Edge Network van Adobe Experience Platform direct door API verzenden.
+Als u niet [ Adobe Experience Platform Mobile SDK ](/help/implementation/edge/implementation-edge.md) kunt gebruiken, kunt u gegevens naar Adobe Experience Platform Edge Network direct door API verzenden.
 
 Gebruik de volgende bronnen voor informatie over het uitvoeren van een aangepaste implementatie van de Edge API&#39;s:
 

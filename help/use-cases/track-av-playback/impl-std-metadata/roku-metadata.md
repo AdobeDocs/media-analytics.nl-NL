@@ -1,14 +1,14 @@
 ---
-title: Verklaarde de Sleutels van Meta-gegevens van Roku
+title: Verklaarde Sleutels van Metagegevens van Roku
 description: Leer meer over de beschikbare Roku-metagegevenssleutels en bekijk de volledige lijst met standaardmetagegevensconstanten.
 uuid: 2ca6bb1d-c545-43d3-9c3e-63b890aa268d
 exl-id: 687dbaa5-4723-4b3f-ab1e-4d5bf447cddf
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 1%
+source-wordcount: '471'
+ht-degree: 0%
 
 ---
 
@@ -58,7 +58,7 @@ Standaard video-, audio- en advertentiemetagegevens kunnen worden ingesteld voor
 | Creative-id | `a.media.ad.creative` | `MEDIA_AdMetadataKeyCREATIVE_ID` |
 | Plaatsing-id | `a.media.ad.placement` | `MEDIA_AdMetadataKeyPLACEMENT_ID` |
 | Site-id | `a.media.ad.site` | `MEDIA_AdMetadataKeyPLACEMENT_ID` |
-| Creative URL | `a.media.ad.creativeURL` | `MEDIA_AdMetadataKeyCREATIVE_URL` |
+| CREATIVE URL | `a.media.ad.creativeURL` | `MEDIA_AdMetadataKeyCREATIVE_URL` |
 
 ## Constanten {#constants}
 
@@ -74,16 +74,16 @@ U kunt de volgende constanten gebruiken om mediagebeurtenissen bij te houden:
 
 | Constante | Beschrijving   |
 | --- | --- |
-| `MEDIA_STANDARD_MEDIA_METADATA` | Constante voor het instellen van metagegevens op het tabblad `MediaInfo` `trackLoad` |
-| `MEDIA_STANDARD_AD_METADATA` | Constante om de metagegevens voor de advertentie in te stellen op de knop `EventData` `trackEvent` |
-| `MEDIA_RESUMED` | Constante voor het verzenden van een video-hervat hartslag. Als u het bijhouden van video&#39;s van eerder gestopt inhoud wilt hervatten, moet u de instelling `MEDIA_RESUMED` eigenschap op de `mediaInfo` object wanneer u `mediaTrackLoad`. (`MEDIA_RESUMED` is geen gebeurtenis die u kunt volgen gebruikend `mediaTrackEvent` API.) `MEDIA_RESUMED` moet worden ingesteld op true wanneer een toepassing inhoud wil blijven bijhouden die een gebruiker niet meer bekijkt, maar nu opnieuw wil kijken. <br/><br/>Stel dat een gebruiker 30% van de inhoud controleert en de app vervolgens sluit. Hierdoor wordt de sessie beëindigd. Later, als dezelfde gebruiker naar dezelfde inhoud terugkeert en de toepassing de gebruiker toestaat om vanaf hetzelfde punt te hervatten waar hij of zij werd uitgeschakeld, moet de toepassing instellen `MEDIA_RESUMED` op &quot;true&quot; tijdens het aanroepen van de `mediaTrackLoad` API. Het resultaat is dat deze twee verschillende mediasessies voor dezelfde video-inhoud aan elkaar kunnen worden gekoppeld. Hier volgt het implementatievoorbeeld: <br/><br/> `mediaInfo =` <br/>   `adb_media_init_mediainfo(` <br/>     `"test_media_name",` <br/>     `"test_media_id",`<br/>      `10,` <br/>     `"vod"` <br/> `)` <br/> `mediaInfo[ADBMobile().MEDIA_RESUMED] = true` <br/> `mediaContextData = {}` <br/>  `ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)` <br/><br/>Hierdoor wordt een nieuwe sessie voor de video gemaakt, maar de SDK verzendt ook een hartslagverzoek met het gebeurtenistype &quot;resume&quot;, dat in de rapportage kan worden gebruikt om twee verschillende mediasessies aan elkaar te koppelen. |
+| `MEDIA_STANDARD_MEDIA_METADATA` | Constante om metagegevens in te stellen op de `MediaInfo` `trackLoad` |
+| `MEDIA_STANDARD_AD_METADATA` | Constante om de metagegevens voor de advertentie in te stellen op `EventData` `trackEvent` |
+| `MEDIA_RESUMED` | Constante voor het verzenden van een video-hervat hartslag. Als u video-opvolging van eerder gestopt inhoud wilt hervatten, moet u de eigenschap `MEDIA_RESUMED` voor het `mediaInfo` -object instellen wanneer u `mediaTrackLoad` aanroept. (`MEDIA_RESUMED` is geen gebeurtenis die u kunt bijhouden met de `mediaTrackEvent` API.) `MEDIA_RESUMED` moet worden ingesteld op true wanneer een toepassing inhoud wil blijven bijhouden die een gebruiker niet meer bekijkt, maar die nu weer het kijken wil hervatten. <br/><br/> Bijvoorbeeld, zeg een gebruiker 30% van de inhoud kijkt, dan sluit app. Hierdoor wordt de sessie beëindigd. Later, als dezelfde gebruiker naar dezelfde inhoud terugkeert en de toepassing de gebruiker toestaat om vanaf hetzelfde punt te hervatten waar deze werd uitgeschakeld, moet de toepassing `MEDIA_RESUMED` instellen op &quot;true&quot; terwijl de `mediaTrackLoad` API wordt aangeroepen. Het resultaat is dat deze twee verschillende mediasessies voor dezelfde video-inhoud aan elkaar kunnen worden gekoppeld. Hier volgt het voorbeeld van de implementatie: <br/><br/> `mediaInfo =` <br/>   `adb_media_init_mediainfo(` <br/>     `"test_media_name",` <br/>     `"test_media_id",`<br/>      `10,` <br/>     `"vod"` <br/> `)` <br/> `mediaInfo[ADBMobile().MEDIA_RESUMED] = true` <br/> `mediaContextData = {}` <br/>  `ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)` <br/><br/> dit zal tot een nieuwe zitting voor de video leiden, maar het veroorzaakt ook de SDK om een hartslagverzoek met het gebeurtenistype &quot;resume&quot;te verzenden, dat in rapportering kan worden gebruikt om twee verschillende media zittingen samen te binden. |
 
 ### Constanten van inhoudstypen
 
 | Constante | Beschrijving   |
 |---|---|
 | `MEDIA_STREAM_TYPE_LIVE` | Constante voor stroomtype LIVE |
-| `MEDIA_STREAM_TYPE_VOD` | Constante voor het stroomtype VOD |
+| `MEDIA_STREAM_TYPE_VOD` | Constante voor stroomtype VOD |
 
 ### Constanten voor gebeurtenistype (gebruikt voor de aanroep van trackEvent)
 
@@ -96,10 +96,10 @@ U kunt de volgende constanten gebruiken om mediagebeurtenissen bij te houden:
 | `MEDIA_BITRATE_CHANGE` | Gebeurtenistype voor wijziging van bitsnelheid |
 | `MEDIA_CHAPTER_START` | Gebeurtenistype voor Start van hoofdstuk |
 | `MEDIA_CHAPTER_COMPLETE` | Type gebeurtenis voor hoofdstuk voltooid |
-| `MEDIA_CHAPTER_SKIP` | Gebeurtenistype voor begin advertentie |
-| `MEDIA_AD_BREAK_START` | Gebeurtenistype voor begin advertentie |
+| `MEDIA_CHAPTER_SKIP` | Gebeurtenistype voor Advertentietype Begin |
+| `MEDIA_AD_BREAK_START` | Gebeurtenistype voor Advertentietype Begin |
 | `MEDIA_AD_BREAK_COMPLETE` | Gebeurtenistype voor AdBreak voltooid |
 | `MEDIA_AD_BREAK_SKIP` | Type gebeurtenis voor AdBreak-overslaan |
-| `MEDIA_AD_START` | Gebeurtenistype voor begin advertentie |
+| `MEDIA_AD_START` | Gebeurtenistype voor Advertentietype Begin |
 | `MEDIA_AD_COMPLETE` | Gebeurtenistype voor advertentie voltooid |
 | `MEDIA_AD_SKIP` | Gebeurtenistype voor overslaan van advertentie |

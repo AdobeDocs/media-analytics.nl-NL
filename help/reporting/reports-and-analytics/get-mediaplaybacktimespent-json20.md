@@ -1,28 +1,28 @@
 ---
 title: Met de API's van Analytics 2.0 worden JSON-rapportgegevens opgehaald voor tijd dat media worden afgespeeld
 description: Leer hoe te om media playbacktijd bestede rapportgegevens te verkrijgen gebruikend Analytics 2.0 APIs. Bekijk een voorbeeldverzoek en een antwoord.
-feature: Media Analytics, Reports & Analytics Basics
+feature: Streaming Media, Workspace Basics
 role: User, Admin, Data Engineer
 exl-id: 65e5b67a-26fc-433e-b99b-0ebbc24428ac
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: 67f1fa8194fa58b2c513e3136d2bc7880f9cb06b
 workflow-type: tm+mt
 source-wordcount: '205'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
 # Met de API&#39;s van Analytics 2.0 worden JSON-rapportgegevens opgehaald voor tijd dat media worden afgespeeld{#get-media-playback-time-spent-json-report-data}
 
-U kunt de media playbacktijd bestede rapportgegevens verkrijgen gebruikend [_*API&#39;s voor Analytics 2.0*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html).
+U kunt media playbacktijd bestede rapportgegevens verkrijgen gebruikend [_*Analytics 2.0 APIs*_ ](https://www.adobe.io/apis/experiencecloud/analytics/docs.html).
 
 1. Filter de gegevens gebruikend om het even welk segment dat op UI wordt voortgebouwd. Maak een nieuw segment om te filteren op een specifieke inhoud-id.
-1. Stel de `elements` -> `id` in de verzoekende instantie `metrics/playback_time_spent_seconds` of `metrics/playback_time_spent_minutes` afhankelijk van of u de uitvoer in seconden of minuten wilt.
+1. Stel de waarde `elements` -> `id` in de hoofdtekst van de aanvraag in op `metrics/playback_time_spent_seconds` of `metrics/playback_time_spent_minutes` , afhankelijk van het feit of u de uitvoer in seconden of minuten wilt uitvoeren.
 1. Een voldoende hoeveelheid gegevens aanvragen.
 
-   * Het gegevensbereik dat u in het rapport opgeeft, verzamelt alle gelijktijdige viewergegevens _op het moment dat de videosessie werd beëindigd._
+   * De gegevenswaaier u in het rapport specificeert verzamelt alle gezamenlijke kijkersgegevens _op het tijdstip dat de videozitting beëindigde._
 U moet uw account opgeven voor sessies die op een dag beginnen en eindigen na middernacht, de volgende dag.
 
-   * Vraag in uw verzoek om een nieuwe dag gegevens naar de bedoelde periode, maar in uw analyse _*alleen de beoogde gegevens gebruiken.*_
+   * Vraag één meer dag van gegevens aan uw voorgenomen periode in uw verzoek, maar in uw analyse _*gebruik slechts de voorgenomen gegevens.*_
 
 Een lading van het steekproefverzoek voor één dag van gegevens zou als het volgende voorbeeld kijken. Het verzoek wordt gedurende twee opeenvolgende dagen uitgevoerd, maar in de rapportage wordt u alleen de eerste dag gebruikt.
 
@@ -129,7 +129,7 @@ You can extract the Media Playback Time Spent report data using the Experience C
     * **Environment -** Select your data center.
     * Request JSON - Specify the following:
 
-        * `reportSuiteID` - For info on reports suites: [Report Suites](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html?lang=nl-NL)
+        * `reportSuiteID` - For info on reports suites: [Report Suites](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html)
 
         * `dateTo` - End date of the report.         
 

@@ -1,21 +1,21 @@
 ---
-title: QoE-data verzenden
+title: QoE-gegevens verzenden
 description: Meer informatie over het verzenden van gebeurtenissen met een JavaData JSON-toets.
 uuid: 52a02d92-195d-4ce8-8ce3-585ed68969f9
 exl-id: 41a20410-78e6-481d-bd5c-0febadb290d8
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '55'
-ht-degree: 5%
+ht-degree: 0%
 
 ---
 
 # QoE-gegevens verzenden{#sending-qoe-data}
 
-Elke gebeurtenis kan worden versierd met een extra JSON-toets genaamd `qoeData`, die naast de `params` in de JSON-aanvraaginstantie.
+Elke gebeurtenis kan worden versierd met de extra JSON-toets `qoeData` , die naast de `params` -toets in de JSON-aanvraagtekst wordt geplaatst.
 
 >[!NOTE]
 >
->U moet de [JSON-validatieschema&#39;s](mc-api-validate-reqs.md) om de parametertypen te controleren en na te gaan of deze verplicht of optioneel zijn.
+>U zou de [ JSON bevestigingsschema&#39;s ](mc-api-validate-reqs.md) moeten controleren om parametertypes te verifiëren en of zij verplicht of facultatief zijn.

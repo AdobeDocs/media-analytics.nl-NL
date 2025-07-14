@@ -1,14 +1,14 @@
 ---
-title: Details testoproep
+title: Gegevens van testoproep
 description: Onderzoek de vraag u moet maken om uw implementatie te bevestigen.
 uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 exl-id: 5e167714-3f0c-4afa-b171-7d51cff6522e
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
-source-wordcount: '614'
-ht-degree: 11%
+source-wordcount: '608'
+ht-degree: 8%
 
 ---
 
@@ -16,21 +16,21 @@ ht-degree: 11%
 
 ## De mediaspeler starten {#start-the-media-player}
 
-### Aanroep Adobe Analytics (AppMeasurement) starten {#aa-start-call}
+### Adobe Analytics (AppMeasurement) Aanroep starten {#aa-start-call}
 
 | Parameter |  Waarde (monster)  |
 |---|---|
 | `pev2` | ms_s |
 | `a.media.friendlyName` | Episodetitel |
-| _&#x200B;**`a.media.name`**&#x200B;_ | _&#x200B;**123456**&#x200B;_ |
-| _&#x200B;**`a.media.length`**&#x200B;_ | _&#x200B;**120**&#x200B;_ |
+| _**`a.media.name`**_ | _**123456**_ |
+| _**`a.media.length`**_ | _**120**_ |
 | `a.media.playerName` | HTML5 |
-| _&#x200B;**`a.media.view`**&#x200B;_ | _&#x200B;**true**&#x200B;_ |
+| _**`a.media.view`**_ | _**waar**_ |
 | `a.contentType` | vod |
-| _&#x200B;**`custom.[value]`**&#x200B;_ | _&#x200B;**Aangepaste metagegevensvelden**&#x200B;_ |
-| _&#x200B;**`a.media.[value]`**&#x200B;_ | _&#x200B;**Standaardmetagegevensvelden**&#x200B;_ |
+| _**`custom.[value]`**_ | _**de meta-gegevensgebieden van de Douane**_ |
+| _**`a.media.[value]`**_ | _**Standaard meta-gegevensgebieden**_ |
 
-**Opmerkingen:**
+**Nota&#39;s:**
 
 * Er moeten extra contextgegevensvariabelen aanwezig zijn die metagegevens bevatten. Zie de metagegevens hieronder.
 * De lengte voor lineaire stromen zou aan de beste schatting voor de huidige show moeten worden geplaatst.
@@ -66,17 +66,17 @@ ht-degree: 11%
 | Parameter |  Waarde (monster)  |
 |---|---|
 | `s:event:type` | start |
-| _&#x200B;**`l:event:playhead`**&#x200B;_ | _&#x200B;**0**&#x200B;_ |
+| _**`l:event:playhead`**_ | _**0**_ |
 | `l:event:duration` | 4 |
 | `s:asset:name` | Episodetitel |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
 | `s:stream:type` | vod |
 | `s:asset:type` | hoofd |
-| _&#x200B;**`s:meta:custom.[value]`**&#x200B;_ | _&#x200B;**Aangepaste metagegevensvelden**&#x200B;_ |
-| _&#x200B;**`s:meta:a.media.[value]`**&#x200B;_ | _&#x200B;**Standaardmetagegevensvelden**&#x200B;_ |
+| _**`s:meta:custom.[value]`**_ | _**de meta-gegevensgebieden van de Douane**_ |
+| _**`s:meta:a.media.[value]`**_ | _**Standaard meta-gegevensgebieden**_ |
 
-**Opmerkingen:**
+**Nota&#39;s:**
 
 * Er moeten extra contextgegevensvariabelen aanwezig zijn die metagegevens bevatten. Zie de metagegevens hieronder.
 * De positie van de afspeelkop voor lineaire streams bij het starten van de video moet worden ingesteld op de seconden die zijn verstreken sinds het begin van de huidige show, niet op 0.
@@ -111,7 +111,7 @@ ht-degree: 11%
 
 | Parameter |  Waarde (monster)  |
 |---|---|
-| _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**aa_start**&#x200B;_ |
+| _**`s:event:type`**_ | _**aa_start**_ |
 | `l:event:playhead` | 0 |
 | `l:event:duration` | 4 |
 | `s:asset:name` | Episodetitel |
@@ -120,37 +120,37 @@ ht-degree: 11%
 | `s:stream:type` | vod |
 | `s:asset:type` | hoofd |
 
-**Opmerkingen:**
+**Nota&#39;s:**
 
-* Deze aanroep geeft aan dat de SDK van Media heeft verzocht dat een Adobe Analytics `pev2=ms_s` De aanroep wordt naar de Adobe Analytics-server (AppMeasurement) verzonden.
+* Deze aanroep geeft aan dat de Media SDK heeft verzocht dat een Adobe Analytics `pev2=ms_s` -aanroep naar de Adobe Analytics (AppMeasurement)-server wordt verzonden.
 * Deze aanroep bevat geen aangepaste metagegevens.
 
 ## Weergeven en afspelen {#view-ad-playback}
 
-### Aanroep Adobe Analytics (AppMeasurement) en Start {#aa-ad-start-call}
+### Adobe Analytics (AppMeasurement) Aanroep starten {#aa-ad-start-call}
 
 | Parameter |  Waarde (monster)  |
 |---|---|
-| _&#x200B;**`pev2`**&#x200B;_ | _&#x200B;**msa_s**&#x200B;_ |
+| _**`pev2`**_ | _**msa_s**_ |
 | `a.media.name` | 123456 |
-| _&#x200B;**`a.media.ad.name`**&#x200B;_ | _&#x200B;**9378**&#x200B;_ |
+| _**`a.media.ad.name`**_ | _**9378**_ |
 | `a.media.ad.friendlyName` | Video_VPAID_DFA |
 | `a.media.ad.podFriendlyName` | preroll |
-| _&#x200B;**`a.media.ad.length`**&#x200B;_ | _&#x200B;**15**&#x200B;_ |
+| _**`a.media.ad.length`**_ | _**15**_ |
 | `a.media.ad.playerName` | HTML5 |
 | `a.media.ad.pod` | c27aaf3ff8224bb6b9ebfe1b2e79073d_1 |
 | `a.media.ad.podPosition` | 1 |
 | `a.media.ad.podSecond` | 0,0 |
-| _&#x200B;**`a.media.ad.view`**&#x200B;_ | _&#x200B;**Waar**&#x200B;_ |
-| _&#x200B;**`custom.[value]`**&#x200B;_ | _&#x200B;**Metagegevensvelden**&#x200B;_ |
-| _&#x200B;**`a.media.[value]`**&#x200B;_ | _&#x200B;**Standaardmetagegevensvelden**&#x200B;_ |
+| _**`a.media.ad.view`**_ | _**Waar**_ |
+| _**`custom.[value]`**_ | _**de gebieden van Meta-gegevens**_ |
+| _**`a.media.[value]`**_ | _**Standaard meta-gegevensgebieden**_ |
 
-**Opmerkingen:**
+**Nota&#39;s:**
 
 * Er moeten extra contextgegevensvariabelen aanwezig zijn die metagegevens bevatten. Zie de metagegevens hieronder.
 * De lengte van de advertentie kan worden ingesteld op -1 als deze niet beschikbaar is bij het starten van de advertentie.
 
-### Standaardmetagegevens in Adobe Analytics (AppMeasurement) en aanroep starten {#std-metadata-aa-ad-start}
+### Standaardmetagegevens in Adobe Analytics (AppMeasurement) en Aanroep starten {#std-metadata-aa-ad-start}
 
 | Parameter |  Waarde (monster)  |
 |---|---|
@@ -169,7 +169,7 @@ ht-degree: 11%
 | `a.media.feed` | geen diervoeder |
 | `a.media.stream_format` | 0 |
 
-### Aangepaste metagegevens in Adobe Analytics (AppMeasurement) en aanroep starten {#custom-metadata-aa-ad-start}
+### Aangepaste metagegevens in Adobe Analytics (AppMeasurement) en Aanroep starten {#custom-metadata-aa-ad-start}
 
 | Parameter |  Waarde (monster)  |
 |---|---|
@@ -180,17 +180,17 @@ ht-degree: 11%
 
 | Parameter |  Waarde (monster)  |
 |---|---|
-| _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**start**&#x200B;_ |
+| _**`s:event:type`**_ | _**begin**_ |
 | `l:event:playhead` | 0 |
 | `l:event:duration` | 4 |
 | `s:asset:ad_id` | 9378 |
-| _&#x200B;**`l:asset:length`**&#x200B;_ | _&#x200B;**120**&#x200B;_ |
+| _**`l:asset:length`**_ | _**120**_ |
 | `s:stream:type` | vod |
-| _&#x200B;**`s:asset:type`**&#x200B;_ | _&#x200B;**advertentie**&#x200B;_ |
-| _&#x200B;**`s:meta:custom.[value]`**&#x200B;_ | _&#x200B;**Aangepaste metagegevensvelden**&#x200B;_ |
-| _&#x200B;**`s:meta:a.media.[value]`**&#x200B;_ | _&#x200B;**Standaardmetagegevensvelden**&#x200B;_ |
+| _**`s:asset:type`**_ | _**ad**_ |
+| _**`s:meta:custom.[value]`**_ | _**de meta-gegevensgebieden van de Douane**_ |
+| _**`s:meta:a.media.[value]`**_ | _**Standaard meta-gegevensgebieden**_ |
 
-**Opmerkingen:**
+**Nota&#39;s:**
 
 * Er moeten extra contextgegevensvariabelen aanwezig zijn die metagegevens bevatten. Zie de metagegevens hieronder.
 * De lengte van de advertentie kan worden ingesteld op -1 als deze niet beschikbaar is bij het starten van de advertentie.
@@ -225,7 +225,7 @@ ht-degree: 11%
 
 | Parameter |  Waarde (monster)  |
 |---|---|
-| _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**aa_ad_start**&#x200B;_ |
+| _**`s:event:type`**_ | _**aa_ad_start**_ |
 | `l:event:playhead` | 0 |
 | `l:event:duration` | 0 |
 | `s:asset:ad_id` | 9378 |
@@ -237,37 +237,37 @@ ht-degree: 11%
 
 | Parameter |  Waarde (monster)  |
 |---|---|
-| _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**play**&#x200B;_ |
+| _**`s:event:type`**_ | _**spel**_ |
 | `l:event:playhead` | 15 |
 | `l:event:duration` | 0 |
 | `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
 | `s:stream:type` | vod |
-| _&#x200B;**`s:asset:type`**&#x200B;_ | _&#x200B;**advertentie**&#x200B;_ |
+| _**`s:asset:type`**_ | _**ad**_ |
 
 ### Media Analytics (hartslagen) en Pauze vraag {#ma-ad-pause-call}
 
 | Parameter |  Waarde (monster)  |
 |---|---|
-| _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**pauzeren**&#x200B;_ |
+| _**`s:event:type`**_ | _**pauze**_ |
 | `l:event:playhead` | 15 |
 | `l:event:duration` | 0 |
 | `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
 | `s:stream:type` | vod |
-| _&#x200B;**`s:asset:type`**&#x200B;_ | _&#x200B;**advertentie**&#x200B;_ |
+| _**`s:asset:type`**_ | _**ad**_ |
 
 ### Media Analytics (heartbeats) Adobe Analytics Ad Complete call {#ma-aa-ad-complete-call}
 
 | Parameter |  Waarde (monster)  |
 |---|---|
-| _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**complete**&#x200B;_ |
+| _**`s:event:type`**_ | _**volledig**_ |
 | `l:event:playhead` | 15 |
 | `l:event:duration` | 0 |
 | `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
 | `s:stream:type` | vod |
-| _&#x200B;**`s:asset:type`**&#x200B;_ | _&#x200B;**advertentie**&#x200B;_ |
+| _**`s:asset:type`**_ | _**ad**_ |
 
 ## Hoofdinhoud afspelen {#play-main-content}
 
@@ -276,27 +276,27 @@ ht-degree: 11%
 | Parameter |  Waarde (monster)  |
 |---|---|
 | `s:event:type` | play |
-| _&#x200B;**`l:event:playhead`**&#x200B;_ | _&#x200B;**29**&#x200B;_ |
-| _&#x200B;**`l:event:duration`**&#x200B;_ | _&#x200B;**10189**&#x200B;_ |
+| _**`l:event:playhead`**_ | _**29**_ |
+| _**`l:event:duration`**_ | _**10189**_ |
 | `s:asset:name` | Episodetitel |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
 | `s:stream:type` | vod |
 | `s:asset:type` | hoofd |
 
-**Opmerkingen:**
+**Nota&#39;s:**
 
 * De positie van de afspeelkop moet met 10 seconden toenemen bij elke afspeelaanroep.
-* De `l:event:duration` De waarde vertegenwoordigt het aantal milliseconden sinds de laatste het volgen vraag en zou ruwweg de zelfde waarde op elke 10 tweede vraag moeten zijn.
+* De `l:event:duration` waarde vertegenwoordigt het aantal milliseconden sinds de laatste het volgen vraag en zou ruwweg de zelfde waarde op elke 10 tweede vraag moeten zijn.
 
 ## Hoofdinhoud pauzeren {#pause-main-content}
 
-### Media Analytics (heartbeats) Aanroep pauzeren {#ma-pause-call}
+### Media Analytics (hartslagen) Aanroep pauzeren {#ma-pause-call}
 
 | Parameter |  Waarde (monster)  |
 |---|---|
-| _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**pauzeren**&#x200B;_ |
-| _&#x200B;**`l:event:playhead`**&#x200B;_ | _&#x200B;**29**&#x200B;_ |
+| _**`s:event:type`**_ | _**pauze**_ |
+| _**`l:event:playhead`**_ | _**29**_ |
 | `l:event:duration` | 10189 |
 | `s:asset:name` | Episodetitel |
 | `s:asset:video_id` | 123456 |

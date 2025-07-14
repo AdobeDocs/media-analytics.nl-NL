@@ -1,10 +1,10 @@
 ---
 title: Een mobiele SDK instellen met tags voor streaming media
 description: Leer hoe u Adobe Streaming Media voor mobiele apps implementeert.
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: b4944b5f-cbae-4efc-9ef7-962d3f342240
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Installeer en configureer de volgende toepassingen om de Streaming Media Collect
 
 * **SDK van Media voor Android** of **SDK van Media voor iOS**
 
-* **Analytics van Adobe Media voor Audio en Video uitbreiding**
+* **Analytics van de Media van Adobe voor Audio en Video uitbreiding**
 
 Om SDKs en voor extra documentatiemiddelen te downloaden, zie [ Media SDKs, Uitbreidingen krijgen die Markeringen gebruiken, en OTT SDKs ](/help/getting-started/download-sdks.md)
 

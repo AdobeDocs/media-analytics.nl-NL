@@ -3,22 +3,22 @@ title: Gebeurtenisverzoeken valideren
 description: Leer hoe u het JSON-validatieschema gebruikt om gebeurtenisaanvragen te valideren.
 uuid: 1fc92f21-b510-4c96-8ea2-47e819f4a96e
 exl-id: a78739da-9fc9-42e3-9181-1887fb3dd357
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '121'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
 # Gebeurtenisaanvragen valideren{#validating-event-requests}
 
-De JSON-aanvraaginstantie voor elk gebeurtenistype wordt gevalideerd op de achtergrond met JSON-schema&#39;s. De hoofdtekst van de HTTP-reactie wordt gevuld met een foutbericht wanneer de validatie mislukt voor een API-aanroep.
+De JSON-aanvraaginstantie voor elk gebeurtenistype wordt gevalideerd op de achtergrond met JSON-schema&#39;s. De antwoordinstantie van HTTP wordt gevuld met een foutbericht wanneer validatie mislukt voor een API-aanroep.
 
-JSON-validatieschema&#39;s voor elk gebeurtenistype zijn hier openbaar toegankelijk: `{uri}/api/v1/schemas/{eventType}` (bv. `{uri}/api/v1/schemas/sessionEnd`). Deze JSON-validatieschema&#39;s zijn de absolute autoriteit voor het bepalen van de juiste parameters van de aanvraaginstantie voor elk type gebeurtenis.
+JSON-validatieschema&#39;s voor elk gebeurtenistype zijn hier openbaar toegankelijk: `{uri}/api/v1/schemas/{eventType}` (bijvoorbeeld `{uri}/api/v1/schemas/sessionEnd` ). Deze JSON-validatieschema&#39;s zijn de absolute autoriteit voor het bepalen van de juiste parameters van de aanvraaginstantie voor elk type gebeurtenis.
 
-Bijvoorbeeld de reactie op een verzoek om `sessionStart` Het validatieschema ziet er ongeveer als volgt uit (enigszins opgemaakt voor leesbaarheid hier):
+De reactie op een aanvraag voor het `sessionStart` -validatieschema ziet er bijvoorbeeld ongeveer als volgt uit (enigszins opgemaakt voor leesbaarheid hier):
 
 ```
 HTTP/1.1 200 OK

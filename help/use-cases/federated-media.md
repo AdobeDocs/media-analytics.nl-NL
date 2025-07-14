@@ -3,9 +3,9 @@ title: Federale media
 description: De Federated Media-service biedt een systeem voor het delen van streaming mediagegevens tussen twee partners.
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 exl-id: 81970370-663c-49d5-b13c-628d294be178
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '571'
 ht-degree: 60%
@@ -59,6 +59,6 @@ Om aan Federatieve Media deel te nemen, download en voltooi de [ vorm van de Ove
 1. Afzender en ontvanger zorgen ervoor dat de overeenkomst voor het delen van data voldoet aan alle contractuele vereisten tussen beide partijen.
 1. Consultingservices stuurt het ingevulde formulier naar Adobe Engineering om regels voor het delen van data op te stellen.
 1. Gegevens worden gedeeld met de Adobe Analytics-rapportensuite voor ontwikkeling of de Adobe Experience Platform-gegevensstroom waar de ontvanger gegevens zal controleren en valideren.
-1. Zodra de Ontvanger gegevens bevestigt correct is, werkt de Techniek van de Adobe de regels bij om aan een het rapportreeks van de productieAnalytics of Adobe Experience Platform gegevensstroom te richten.
+1. Zodra de Ontvanger bevestigt de gegevens correct zijn, werkt de Techniek van Adobe de regels bij om aan een het rapportreeks van de Analystics van de productie of gegevensstroom van Adobe Experience Platform te richten.
 1. De ontvanger controleert en valideert gegevens in de het rapportreeks van de Analytics van de Productie of de gegevensstroom van Adobe Experience Platform.
 1. Als de veranderingen in de datareeks optreden in de toekomst, kan de afzender of de ontvanger een klantenserviceticket indienen voor ondersteuning.

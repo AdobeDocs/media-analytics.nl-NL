@@ -1,11 +1,11 @@
 ---
-title: Leer hoe u fouten kunt bijhouden met JavaScript 2.x
-description: Leer hoe u fouten kunt bijhouden met de SDK van Media in browser-apps (JS).
+title: Leer fouten bijhouden met JavaScript 2.x
+description: Leer hoe u fouten kunt bijhouden met de Media SDK in browser-apps (JS).
 uuid: 5a4fc5df-2677-4189-92af-5cd074847b39
 exl-id: b3012bce-4b92-408e-8b7a-57ae9d52e93d
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '98'
 ht-degree: 0%
@@ -18,7 +18,7 @@ De volgende instructies bieden richtlijnen voor implementatie voor alle 2.x SDK&
 
 >[!IMPORTANT]
 >
->Als u een 1.x-versie van de SDK implementeert, kunt u de 1.x-handleidingen voor ontwikkelaars hier downloaden: [SDK&#39;s downloaden.](/help/getting-started/download-sdks.md)
+>Als u een 1.x versie van SDK uitvoert, kunt u de 1.x Gidsen van Ontwikkelaars hier downloaden: [ Download SDKs.](/help/getting-started/download-sdks.md)
 
 ## Foutopsporing implementeren
 
@@ -32,4 +32,4 @@ De volgende instructies bieden richtlijnen voor implementatie voor alle 2.x SDK&
 
 >[!NOTE]
 >
->Fouten bij het bijhouden van mediaspeler stoppen de mediatrackingsessie niet. Als de fout in de mediaspeler voorkomt dat het afspelen wordt voortgezet, controleert u of de mediatrackingsessie is gesloten door `trackSessionEnd` na het aanroepen `trackError`.
+>Fouten bij het bijhouden van mediaspeler stoppen de mediatrackingsessie niet. Als de fout in de mediaspeler voorkomt dat het afspelen wordt voortgezet, controleert u of de mediatrackingsessie is gesloten door `trackSessionEnd` aan te roepen na het aanroepen van `trackError` .

@@ -3,9 +3,9 @@ title: De Media SDK instellen voor Chromecast
 description: Voer de volgende stappen uit om de Media SDK-toepassing op Chromecast in te stellen.
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 exl-id: 5dfe3407-2858-48c0-a70c-8ea87967ac47
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '570'
 ht-degree: 0%
@@ -20,15 +20,15 @@ In deze sectie worden de voorwaarden beschreven voor het instellen van een Chrom
 
 * **verkrijg geldige configuratieparameters**
 
-  Deze parameters kunt u verkrijgen van een Adobe die u vertegenwoordigt nadat u een account voor de mediaanalyse hebt ingesteld.
+  Deze parameters kunt u verkrijgen van een Adobe-medewerker nadat u uw account voor mediacontrole hebt ingesteld.
 * **omvat volgende APIs in uw media speler**
 
    * *API om aan spelergebeurtenissen* in te tekenen - de Media SDK vereist dat u een reeks eenvoudige APIs roept wanneer de gebeurtenissen in uw speler voorkomen.
    * *API die spelerinformatie* verstrekt - Deze informatie omvat details zoals de media naam en de positie van het spelhoofd.
 
-Adobe Mobile-services biedt een nieuwe gebruikersinterface waarin mobiele marketingmogelijkheden voor mobiele toepassingen vanuit de hele Adobe Marketing Cloud worden samengebracht. Aanvankelijk biedt de Mobile-service een naadloze integratie van analysemogelijkheden voor apps en doelgerichte functionaliteit voor de Adobe Analytics- en Adobe Target-oplossingen. Leer meer bij [ de documentatie van de Diensten van de Adobe Mobiele.](https://experienceleague.adobe.com/docs/mobile-services/using/home.html?lang=nl-NL)
+Adobe Mobile-services bieden een nieuwe gebruikersinterface waarin mobiele marketingmogelijkheden voor mobiele toepassingen uit de hele Adobe Marketing Cloud worden samengebracht. Aanvankelijk biedt de Mobile-service een naadloze integratie van analysemogelijkheden voor apps en doelgerichte functionaliteit voor de Adobe Analytics- en Adobe Target-oplossingen. Leer meer bij [ de Mobiele documentatie van de Diensten van Adobe.](https://experienceleague.adobe.com/docs/mobile-services/using/home.html)
 
-Met de Adobe Mobile Library for Chromecast v3.x for Experience Cloud Solutions kunt u Chromecast-toepassingen die in JavaScript zijn geschreven, optimaliseren en publieksgegevens verzamelen via publieksbeheer en de betrokkenheid van video meten.
+Met de Adobe Mobile Library for Chromecast v3.x for Experience Cloud Solutions kunt u Chromecast-toepassingen die in JavaScript zijn geschreven, meten, publieksgegevens verzamelen en benutten via publieksbeheer en de betrokkenheid van video meten.
 
 ## Implementatie van mobiele bibliotheek / SDK
 
@@ -42,9 +42,9 @@ Met de Adobe Mobile Library for Chromecast v3.x for Experience Cloud Solutions k
 
       * `ADBMobileConfig` config
 
-        Dit SDK-configuratiebestand is aangepast voor uw app. Bij de SDK wordt een voorbeeldimplementatie `ADBMobileConfig` geleverd (onder `samples/` ). Verkrijg de juiste montages van een vertegenwoordiger van de Adobe.
+        Dit SDK-configuratiebestand is aangepast voor uw app. Bij de SDK wordt een voorbeeldimplementatie `ADBMobileConfig` geleverd (onder `samples/` ). Verkrijg de juiste montages van een vertegenwoordiger van Adobe.
 
-   1. Voeg het bibliotheekbestand toe aan het `index.html` -bestand en maak de globale variabele `ADBMobileConfig` als volgt (de algemene variabele die wordt gebruikt om Adobe Mobile voor Media Analytics te configureren heeft een exclusieve sleutel met de naam `mediaHeartbeat` ):
+   1. Voeg het bibliotheekbestand toe aan het `index.html` -bestand en maak de globale variabele `ADBMobileConfig` als volgt (de algemene variabele die wordt gebruikt om Adobe Mobile for Media Analytics te configureren heeft een exclusieve sleutel met de naam `mediaHeartbeat` ):
 
       ```js
       <script>
@@ -104,9 +104,9 @@ Met de Adobe Mobile Library for Chromecast v3.x for Experience Cloud Solutions k
    | `playerName` | Tekenreeks die de naam van de speler vertegenwoordigt. |
 
 
-1. Vorm identiteitskaart van de Bezoeker van het Experience Cloud.
+1. Experience Cloud-bezoeker-id configureren.
 
-   De dienst van identiteitskaart van de Bezoeker van het Experience Cloud verstrekt een universele identiteitskaart van de Bezoeker over de oplossingen van het Experience Cloud. De service voor bezoekers-id is vereist voor Media Analytics en andere Marketing Cloud-integraties.
+   De Experience Cloud Visitor ID-service biedt een universele bezoeker-id voor alle Experience Cloud-oplossingen. De service voor bezoekers-id is vereist voor Media Analytics en andere Marketing Cloud-integraties.
 
    Controleer of de `ADBMobileConfig` config uw `marketingCloud` -organisatie-id bevat.
 
@@ -116,24 +116,24 @@ Met de Adobe Mobile Library for Chromecast v3.x for Experience Cloud Solutions k
    }
    ```
 
-   ID&#39;s van organisaties van Experiencen Cloud identificeren elk clientbedrijf in de Adobe Marketing Cloud op unieke wijze en lijken op de volgende waarde: `016D5C175213CCA80A490D05@AdobeOrg` .
+   Experience Cloud-organisatie-id&#39;s identificeren elk clientbedrijf op unieke wijze in de Adobe Marketing Cloud en lijken op de volgende waarde: `016D5C175213CCA80A490D05@AdobeOrg` .
 
    >[!IMPORTANT]
    >
    >Zorg ervoor dat u `@AdobeOrg` opneemt.
 
-   Nadat de configuratie volledig is, wordt een identiteitskaart van de Bezoeker van het Experience Cloud geproduceerd en inbegrepen op alle treffers. Andere bezoeker-id&#39;s, zoals `custom` en `automatically-generated` , worden bij elke treffer verzonden.
+   Nadat de configuratie volledig is, wordt een identiteitskaart van de Bezoeker van Experience Cloud geproduceerd en inbegrepen op alle treffers. Andere bezoeker-id&#39;s, zoals `custom` en `automatically-generated` , worden bij elke treffer verzonden.
 
-   **Methoden van de Dienst van identiteitskaart van de Bezoeker van het Experience Cloud**
+   **Methoden van de Dienst van identiteitskaart van de Bezoeker van Experience Cloud**
 
    >[!TIP]
    >
-   >De methodes van identiteitskaart van de Bezoeker van het Experience Cloud worden vooraf bepaald met `visitor`.
+   >De methoden voor Experience Cloud Visitor ID worden vooraf ingesteld door `visitor` .
 
    | Methode | Beschrijving |
    | --- | --- |
-   | `getMarketingCloudID()` | Haalt de bezoekersidentiteitskaart van het Experience Cloud van de dienst van identiteitskaart van de Bezoeker op.  <br/><br/>`ADBMobile.visitor.getMarketingCloudID();` |
-   | `syncIdentifiers()` | Met de Experience Cloud Bezoeker-id kunt u extra klant-id&#39;s instellen die aan elke bezoeker kunnen worden gekoppeld. De bezoeker-API accepteert meerdere klant-id&#39;s voor dezelfde bezoeker en een id voor het klanttype om het bereik van de verschillende klant-id&#39;s te scheiden. Deze methode komt overeen met `setCustomerIDs()` in de JavaScript-bibliotheek.  Bijvoorbeeld: <br/><br/>`var identifiers = {};` <br/><br/>`identifiers["idType"] = "idValue";` <br/><br/>`ADBMobile.visitor.syncIdentifiers(identifiers);` |
+   | `getMarketingCloudID()` | Haalt de Experience Cloud Visitor ID op van de Bezoeker ID-service.  <br/><br/>`ADBMobile.visitor.getMarketingCloudID();` |
+   | `syncIdentifiers()` | Met de Experience Cloud-bezoeker-id kunt u aanvullende klant-id&#39;s instellen die aan elke bezoeker kunnen worden gekoppeld. De bezoeker-API accepteert meerdere klant-id&#39;s voor dezelfde bezoeker en een id voor het klanttype om het bereik van de verschillende klant-id&#39;s te scheiden. Deze methode komt overeen met `setCustomerIDs()` in de JavaScript-bibliotheek.  Bijvoorbeeld: <br/><br/>`var identifiers = {};` <br/><br/>`identifiers["idType"] = "idValue";` <br/><br/>`ADBMobile.visitor.syncIdentifiers(identifiers);` |
 
 1. Implementeer het MediaDelegate-protocol voor het bijhouden van media
 
@@ -153,4 +153,4 @@ Met de Adobe Mobile Library for Chromecast v3.x for Experience Cloud Solutions k
    }
    ```
 
-<!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html?lang=nl-NL) -->
+<!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->

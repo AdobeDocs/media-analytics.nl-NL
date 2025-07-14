@@ -3,9 +3,9 @@ title: Afspelen van bijgehouden inhoud beschreven
 description: 'Leer hoe u het afspelen van de kern kunt bijhouden, zoals het laden van media, het starten van media, het pauzeren van media en het voltooien van media. '
 uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 exl-id: 98ad2783-c9e3-48de-88df-8549f26114a0
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0d53e62069a65b252e004e21943ecdbd011a3658
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '875'
 ht-degree: 0%
@@ -14,15 +14,15 @@ ht-degree: 0%
 
 # Overzicht van bijhouden{#tracking-overview}
 
-Deze documentatie behandelt het volgen in versie 2.x van SDK.
+Deze documentatie behandelt het volgen in versie 2.x van de SDK.
 
 >[!IMPORTANT]
 >
->Als u een versie 1.x van SDK uitvoert, kunt u 1.x de Gidsen van Ontwikkelaars hier downloaden: [ Download SDKs.](/help/getting-started/download-sdks.md)
+>Als u een 1.x versie van SDK uitvoert, kunt u 1.x de Gidsen van Ontwikkelaars hier downloaden: [ Download SDKs.](/help/getting-started/download-sdks.md)
 
 ## Player Events
 
-Tot het bijhouden van het afspelen van de kern behoren het bijhouden van het laden van media, het starten van media, het pauzeren van media en het voltooien van media. Hoewel dit niet verplicht is, vormen het bijhouden van buffering en zoeken ook kerncomponenten die worden gebruikt voor het bijhouden van het afspelen van inhoud. In uw media speler API, identificeer de spelergebeurtenissen die met de het volgen vraag van SDK van Media beantwoorden, en codeer uw gebeurtenismanagers om het volgen APIs te roepen, en vereiste en facultatieve variabelen te bevolken.
+Tot het bijhouden van het afspelen van de kern behoren het bijhouden van het laden van media, het starten van media, het pauzeren van media en het voltooien van media. Hoewel dit niet verplicht is, vormen het bijhouden van buffering en zoeken ook kerncomponenten die worden gebruikt voor het bijhouden van het afspelen van inhoud. In uw media speler API, identificeer de spelergebeurtenissen die met de Media SDK volgen vraag beantwoorden, en codeer uw gebeurtenismanagers om het volgen APIs te roepen, en vereiste en facultatieve variabelen te bevolken.
 
 ### Bij laden van media
 
@@ -155,7 +155,7 @@ Wijzigingen annuleren
 
 Zie voorbeelden van elke stap in de volgende platformspecifieke onderwerpen, en bekijk de steekproefspelers inbegrepen met uw SDKs.
 
-Zie dit gebruik van de JavaScript 2.x SDK in een HTML5-speler voor een eenvoudig voorbeeld van het bijhouden van het afspelen:
+Zie dit gebruik van de JavaScript 2.x SDK in een HTML5-speler voor een eenvoudig voorbeeld van afspelen:
 
 ```js
 /* Call on media start */

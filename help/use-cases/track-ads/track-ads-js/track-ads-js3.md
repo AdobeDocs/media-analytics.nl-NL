@@ -1,13 +1,13 @@
 ---
-title: Leer hoe u advertenties kunt bijhouden met JavaScript 3.x
+title: Meer informatie over het volgen van advertenties met JavaScript 3.x
 description: Implementeer en volg in browser (JS) toepassingen gebruikend Media SDK.
 exl-id: 6b34b2c0-5e50-471a-b52c-b9c760fa3169
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 3%
+source-wordcount: '398'
+ht-degree: 1%
 
 ---
 
@@ -17,7 +17,7 @@ De volgende instructies bieden richtlijnen voor implementatie met behulp van de 
 
 >[!IMPORTANT]
 >
->Als u eerdere versies van de SDK implementeert, kunt u de ontwikkelaarsgidsen hier downloaden: [SDK&#39;s downloaden.](/help/getting-started/download-sdks.md)
+>Als u om het even welke vorige versies van SDK uitvoert, kunt u de Gidsen van Ontwikkelaars hier downloaden: [ Download SDKs.](/help/getting-started/download-sdks.md)
 
 ## Constanten voor bijhouden van advertenties
 
@@ -31,9 +31,9 @@ De volgende instructies bieden richtlijnen voor implementatie met behulp van de 
 
 ## Implementatiestappen
 
-1. Identificeer wanneer de grens van de advertentie begint, met inbegrip van pre-rol, en creeer een `AdBreakObject` met behulp van de informatie over het advertentieeinde.
+1. Bepaal wanneer de grens van de advertentieruimte begint, met inbegrip van pre-rol, en creeer `AdBreakObject` door de informatie van de advertentierak te gebruiken.
 
-   `AdBreakObject` referentie:
+   `AdBreakObject` reference:
 
    | Naam variabele | Type | Beschrijving |
    | --- | --- | --- |
@@ -50,15 +50,15 @@ De volgende instructies bieden richtlijnen voor implementatie met behulp van de 
                                       <START_TIME>);
    ```
 
-1. Bellen `trackEvent()` with `AdBreakStart` in de `MediaHeartbeat` -instantie om het ad-einde te volgen:
+1. Roep `trackEvent()` aan met `AdBreakStart` in de `MediaHeartbeat` -instantie om het ad-einde te volgen:
 
    ```js
    tracker.trackEvent(ADB.Media.Event.AdBreakStart, adBreakObject);
    ```
 
-1. Identificeer wanneer de advertentie begint en creeer `AdObject` -instantie die de advertentiegegevens gebruikt.
+1. Bepaal wanneer de advertentie begint en creeer een `AdObject` instantie gebruikend de advertentieinformatie.
 
-   `AdObject` referentie:
+   `AdObject` reference:
 
    | Naam variabele | Type | Beschrijving |
    | --- | --- | --- |
@@ -79,8 +79,8 @@ De volgende instructies bieden richtlijnen voor implementatie met behulp van de 
 
 1. (Optioneel) Voeg standaard- en/of advertentiemetagegevens toe aan de mediatraceringssessie via de variabelen van de contextgegevens.
 
-   * [Standaardmetadata voor advertenties implementeren in JavaScript](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
-   * **Aangepaste en metagegevens -** Voor aangepaste metagegevens maakt u een variabelenobject voor de aangepaste gegevensvariabelen en vult u de gegevens voor de huidige advertentie in:
+   * [Standaard en metagegevens implementeren op JavaScript](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
+   * **Douane en meta-gegevens -** voor douanemetagegevens, creeer een veranderlijk voorwerp voor de variabelen van douanegegevens en bevolk met de gegevens voor de huidige advertentie:
 
      ```js
      /* Set context data */
@@ -94,7 +94,7 @@ De volgende instructies bieden richtlijnen voor implementatie met behulp van de 
      adMetadata["creative"] = "Sample creative";
      ```
 
-1. Bellen `trackEvent()` met de `AdStart` in de `MediaHeartbeat` -instantie om het afspelen van de advertentie te volgen.
+1. Roep `trackEvent()` aan met de gebeurtenis `AdStart` in de instantie `MediaHeartbeat` om het afspelen van de advertentie te volgen.
 
    Neem een verwijzing naar de aangepaste metagegevensvariabele (of een leeg object) op als de derde parameter in de gebeurtenisaanroep:
 
@@ -104,7 +104,7 @@ De volgende instructies bieden richtlijnen voor implementatie met behulp van de 
    };
    ```
 
-1. Wanneer het afspelen van de advertentie het einde van de advertentie heeft bereikt, roept u `trackEvent()` met de `AdComplete` gebeurtenis:
+1. Wanneer het afspelen van de advertentie het einde van de advertentie heeft bereikt, roept u `trackEvent()` aan met de gebeurtenis `AdComplete` :
 
    ```js
    _onAdComplete = function() {
@@ -112,7 +112,7 @@ De volgende instructies bieden richtlijnen voor implementatie met behulp van de 
    };
    ```
 
-1. Als het afspelen van de advertentie niet is voltooid omdat de gebruiker de advertentie heeft overgeslagen, voert u de `AdSkip` gebeurtenis:
+1. Als het afspelen van de advertentie niet is voltooid omdat de gebruiker de advertentie heeft overgeslagen, houdt u de gebeurtenis `AdSkip` bij:
 
    ```js
    _onAdSkip = function() {
@@ -120,8 +120,8 @@ De volgende instructies bieden richtlijnen voor implementatie met behulp van de 
    };
    ```
 
-1. Als er extra advertenties zijn binnen dezelfde `AdBreak`Herhaal stap 3 tot en met 7 opnieuw.
-1. Wanneer het advertentieeinde is voltooid, gebruikt u de `AdBreakComplete` te volgen gebeurtenis:
+1. Herhaal stap 3 tot en met 7 opnieuw als er extra advertenties binnen dezelfde `AdBreak` zijn.
+1. Wanneer het ad-einde is voltooid, gebruikt u de gebeurtenis `AdBreakComplete` om bij te houden:
 
    ```js
    _onAdBreakComplete = function() {
@@ -129,13 +129,13 @@ De volgende instructies bieden richtlijnen voor implementatie met behulp van de 
    };
    ```
 
-Zie het volgende scenario [VOD afspelen met pre-roll-advertenties](/help/use-cases/tracking-scenarios/vod-preroll-ads.md) voor meer informatie .
+Zie het volgende scenario [ de playback van VOD met pre-roladvertenties ](/help/use-cases/tracking-scenarios/vod-preroll-ads.md) voor meer informatie.
 
 ## Korrelige advertentie bijhouden
 
-Het standaardinterval voor toevoegen en pingelen is `10 seconds`.
+Het standaardinterval voor toevoegen en pingelen is `10 seconds` .
 
-U kunt granulaire advertentietracering instellen om `1 second` advertentie bijhouden.
+U kunt granulaire advertentie-tracking instellen om `1 second` ad tracking in te schakelen.
 
 >[!IMPORTANT]
 >

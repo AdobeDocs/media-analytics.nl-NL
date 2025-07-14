@@ -3,24 +3,24 @@ title: Meer informatie over tijdlijnen voor het bijhouden van media - sessie voo
 description: Leer meer over de tijdlijn van de afspeelkop en de bijbehorende � als een videosessie wordt verlaten. Meer informatie over de details van elke actie en elk verzoek.
 uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
 exl-id: 0c6a89f4-7949-4623-8ed9-ce1d1547bdfa
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 4c68f5997a9d336e8c3545cdfb7b9cb955602b69
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 6%
+source-wordcount: '627'
+ht-degree: 5%
 
 ---
 
-# Tijdlijn 2 - Gebruiker verlaat sessie {#timeline--2-user-abandons-session}
+# Tijdlijn 2 - Afloopsessie van gebruiker {#timeline--2-user-abandons-session}
 
-## VOD, Pre-roll en, mid-roll advertenties, gebruikers laten de inhoud vroeg achter
+## VOD, pre-rol en, mid-roll advertenties, gebruiker verlaat inhoud vroeg
 
 De volgende diagrammen illustreren de tijdlijn van de afspeelkop en de bijbehorende tijdlijn van de handelingen van een gebruiker. De bijzonderheden van elke actie en de bijbehorende verzoeken worden hieronder weergegeven.
 
-![API-inhoud](assets/va_api_content_2.png)
+![ API inhoud ](assets/va_api_content_2.png)
 
-![API-handelingen](assets/va_api_actions_2.png)
+![ API acties ](assets/va_api_actions_2.png)
 
 ## Handelingsdetails
 
@@ -30,7 +30,7 @@ De volgende diagrammen illustreren de tijdlijn van de afspeelkop en de bijbehore
 | --- | :---: | :---: | --- |
 | Knop Automatisch afspelen of Afspelen ingedrukt | 0 | 0 | `/api/v1/sessions` |
 
-Deze vraagsignalen _het voornemen van de gebruiker om te spelen_ een video. Er wordt een sessie-id geretourneerd ( `{sid}` ) aan de cliënt die wordt gebruikt om alle volgende het volgen vraag binnen de zitting te identificeren. De spelerstatus wordt nog niet afgespeeld, maar &#39;gestart&#39;.  De verplichte sessieparameters moeten in de `params` kaart in de aanvraaginstantie.  Op de achtergrond, produceert deze vraag Adobe Analytics in werking stelt vraag in werking. Zie de documentatie van de API voor mediagroep voor informatie over sessies.
+Deze vraag signaleert _de intentie van de gebruiker om_ een video te spelen. Er wordt een sessie-id ( `{sid}` ) geretourneerd aan de client die wordt gebruikt om alle volgende opvolgende opvolgende aanroepen binnen de sessie te identificeren. De spelerstatus wordt nog niet afgespeeld, maar &#39;gestart&#39;.  Verplichte sessieparameters moeten in de `params` -kaart in de aanvraaginstantie worden opgenomen.  Op de achtergrond, produceert deze vraag Adobe Analytics in werking stelt vraag in werking. Zie de documentatie van de API voor mediagroep voor informatie over sessies.
 
 ```json
 {
@@ -60,7 +60,7 @@ Deze vraagsignalen _het voornemen van de gebruiker om te spelen_ een video. Er w
 
 | Handeling | Tijdlijn handeling (seconden) | Positie afspeelkop (seconden) | Aanvraag client |
 | --- | :---: | :---: | --- |
-| App start gebeurtenistimer | 0 | 0 |  |
+| App start gebeurtenistimer | 0 | 0 | |
 
 Start de pingtimer van uw app. De eerste pingel gebeurtenis zou dan 1 seconde binnen moeten in brand steken als er pre-roladvertenties zijn, anders 10 seconden.
 
@@ -161,7 +161,7 @@ De eerste pre-roll advertentie is voorbij.
 | --- | :---: | :---: | --- |
 | Track voor rol en break voltooid | 12 | 0 | `/api/v1/sessions/{sid}/events` |
 
-Het advertentiespoor is voorbij. Tijdens de hele advertentiesessie is de speler in de afspeelstatus gebleven.
+Het advertentiespoor is voorbij. Tijdens het hele advertentieseizoen is de speler in de &quot;speelstatus&quot; gebleven.
 
 ```json
 {
@@ -179,7 +179,7 @@ Het advertentiespoor is voorbij. Tijdens de hele advertentiesessie is de speler 
 | --- | :---: | :---: | --- |
 | Gebeurtenis track afspelen | 12 | 0 | `/api/v1/sessions/{sid}/events` |
 
-Verplaats de speler naar de afspeelstatus. begin het volgen van het begin van inhoudsplayback.
+Verplaats de speler naar de afspeelstatus. Volg het afspelen van de inhoud.
 
 ```json
 {
@@ -289,7 +289,7 @@ Pingel het achterste eind om de 10 seconden.
 | --- | :---: | :---: | --- |
 | Begin middelste rol en onderbreking volgen | 45 | 33 | `/api/v1/sessions/{sid}/events` |
 
-Midden rol en duur van 8 seconden: send `adBreakStart` .
+Midden rol en duur van 8 seconden: verzenden `adBreakStart` .
 
 ```json
 {
@@ -342,7 +342,7 @@ Houd de middenrol advertentie bij.
 | --- | :---: | :---: | --- |
 | De gebruiker sluit de app. De app bepaalt dat de gebruiker de weergave heeft verlaten en niet terugkeert naar deze sessie. | 48 | 33 | `/api/v1/sessions/{sid}/events` |
 
-Verzenden `sessionEnd` op de VA-achtergrond om aan te geven dat de sessie onmiddellijk moet worden gesloten, zonder verdere verwerking.
+Stuur `sessionEnd` naar de VA-achtergrond om aan te geven dat de sessie onmiddellijk moet worden gesloten, zonder verdere verwerking.
 
 ```json
 {

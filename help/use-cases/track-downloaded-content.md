@@ -3,9 +3,9 @@ title: Offline gedownloade inhoud bijhouden in de streamingmedia-verzameling
 description: Leer hoe u de functie Gedownloade inhoud kunt gebruiken om het mediaconsumptie bij te houden wanneer een gebruiker offline is.
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '696'
 ht-degree: 0%
@@ -57,7 +57,7 @@ De functie Gedownloade inhoud is de offlineversie van de (standaard) online API 
 
 ## Integratie met Adobe Analtyics {#integration-with-adobe-analtyics}
 
-Bij het berekenen van de aanroepen van Analytics start/close voor het gedownloade inhoudsscenario stelt de back-end een extra Analytics-veld met de naam `ts.` Dit zijn tijdstempels voor de eerste en laatste ontvangen gebeurtenissen (start en voltooid). Dankzij dit mechanisme kan een voltooide mediasessie op het juiste tijdstip worden geplaatst (zelfs als de gebruiker enkele dagen niet online terugkomt, wordt gemeld dat de mediasessie heeft plaatsgevonden op het moment dat de inhoud daadwerkelijk werd bekeken). U moet dit mechanisme op de kant van Adobe Analytics toelaten door a _te creëren timestamp facultatieve rapportreeks._ om een timestamp facultatieve rapportreeks toe te laten, zie [ Facultatieve Tijdstempels.](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/timestamp-optional.html?lang=nl-NL)
+Bij het berekenen van de aanroepen van Analytics start/close voor het gedownloade inhoudsscenario stelt de back-end een extra Analytics-veld met de naam `ts.` Dit zijn tijdstempels voor de eerste en laatste ontvangen gebeurtenissen (start en voltooid). Dankzij dit mechanisme kan een voltooide mediasessie op het juiste tijdstip worden geplaatst (zelfs als de gebruiker enkele dagen niet online terugkomt, wordt gemeld dat de mediasessie heeft plaatsgevonden op het moment dat de inhoud daadwerkelijk werd bekeken). U moet dit mechanisme op de kant van Adobe Analytics toelaten door a _te creëren timestamp facultatieve rapportreeks._ om een timestamp facultatieve rapportreeks toe te laten, zie [ Facultatieve Tijdstempels.](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/timestamp-optional.html)
 
 ## Samplesessievergelijking {#sample-session-comparison}
 

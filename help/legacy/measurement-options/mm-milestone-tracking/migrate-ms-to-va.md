@@ -3,12 +3,12 @@ title: Leer hoe u van Mijlsteen naar Media Analytics kunt migreren
 description: Leer hoe u Mijlsteenvariabelen wijzigt in Metrics van Media Analytics en Mijlstone-modulemethoden in de syntaxis van Media Analytics.
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
 exl-id: 655841ed-3a02-4e33-bbc9-46fb14302194
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 9ba64b68efec5dd8b52010ac1a13afd7703448d0
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '707'
+ht-degree: 12%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## Overzicht {#overview}
 
-De kernconcepten van videometing zijn hetzelfde voor Mijlpaal en Media Analytics, die videospelergebeurtenissen neemt en deze toewijst aan analytische methoden, terwijl ook de metagegevens en waarden van de speler worden opgehaald en aan analytische variabelen worden toegewezen. De oplossing van de Analyse van Media groeide uit Mijlpaal, zo veel van de methodes en metriek zijn het zelfde, echter, is de configuratiebenadering en de code beduidend veranderd. Het zou mogelijk moeten zijn om de spelergebeurteniscode bij te werken om aan de nieuwe methodes van de Analyse van Media te richten. Zie [Overzicht SDK](/help/legacy/setup/legacy-setup-overview.md) en [Overzicht van bijhouden](/help/use-cases/track-av-playback/track-core-overview.md) voor meer informatie over het implementeren van Media Analytics.
+De kernconcepten van videometing zijn hetzelfde voor Mijlpaal en Media Analytics, die videospelergebeurtenissen neemt en deze toewijst aan analytische methoden, terwijl ook de metagegevens en waarden van de speler worden opgehaald en aan analytische variabelen worden toegewezen. De oplossing van de Analyse van Media groeide uit Mijlpaal, zo veel van de methodes en metriek zijn het zelfde, echter, is de configuratiebenadering en de code beduidend veranderd. Het zou mogelijk moeten zijn om de spelergebeurteniscode bij te werken om aan de nieuwe methodes van de Analyse van Media te richten. Zie [ het Overzicht van SDK ](/help/legacy/setup/legacy-setup-overview.md) en [ het Volgen Overzicht ](/help/use-cases/track-av-playback/track-core-overview.md) voor meer details bij het uitvoeren van de Analytics van Media.
 
 De volgende lijsten verstrekken vertalingen tussen de oplossing van de Mijlpaal en de oplossing van de Analyse van Media.
 
@@ -27,10 +27,10 @@ De volgende lijsten verstrekken vertalingen tussen de oplossing van de Mijlpaal 
 | Mijlsteen, metrisch | Type variabele | Metrisch voor media-analyse |
 | --- | --- | --- |
 | Inhoud | eVar <br> Standaardvervaldatum: Bezoek | Inhoud |
-| Inhoudstype | eVar <br> Standaardvervaldatum: Paginaweergave | Inhoudstype |
-| Tijd van inhoud besteed | Gebeurtenis <br> Type: Teller | Tijd van inhoud besteed |
-| Video wordt gestart | Gebeurtenis <br> Type: Teller | Video wordt gestart |
-| Video voltooid | Gebeurtenis <br> Type: Teller | Inhoud voltooid |
+| Inhoudstype | eVar <br> Standaardvervaldatum: paginaweergave | Inhoudstype |
+| Tijd van inhoud besteed | Event <br> Type: Counter | Tijd van inhoud besteed |
+| Video wordt gestart | Event <br> Type: Counter | Video wordt gestart |
+| Video voltooid | Event <br> Type: Counter | Inhoud voltooid |
 
 
 ### Variabelen van de mediamodule
@@ -50,8 +50,8 @@ De volgende lijsten verstrekken vertalingen tussen de oplossing van de Mijlpaal 
 | Media.autoTrackNetStreams | `s.Media.` <br> `  autoTrackNetStreams` <br> `  = true` | N.v.t. | We bieden geen vooraf gebouwde spelertoewijzingen meer. |
 | Media.completeByCloseOffset | `s.Media.` <br> `  completeByCloseOffset` <br> `  = true` | N.v.t. | Inhoud voltooid ondersteunt alleen een voortgangsmarkering van 100%. |
 | Media.completeCloseOffsetThreshold | `s.Media.` <br> `  completeCloseOffsetThreshold` <br> `  = 1` | N.v.t. | Inhoud voltooid ondersteunt alleen een voortgangsmarkering van 100%. |
-| Media.playerName | `s.Media.playerName` <br> `  = "Custom Player Name"` | SDK-sleutel: playerName;<br> API-sleutel: media.playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
-| Media.trackSeconds | `s.Media.` <br> `  trackSeconds` <br> `  = 15` | N.v.t. | Media Analytics wordt ingesteld op 10 seconden voor inhoud en 1 seconde voor advertenties. Er zijn geen andere opties beschikbaar. |
+| Media.playerName | `s.Media.playerName` <br> `  = "Custom Player Name"` | SDK Key: playerName;<br> API Key: media.playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
+| Media.trackSeconds | `s.Media.` <br> `  trackSeconds` <br> `  = 15` | N.v.t. | Media Analytics wordt ingesteld op 10 seconden voor inhoud en 1 seconde voor advertenties. Geen andere opties beschikbaar. |
 | Media.trackMilestones | `s.Media.` <br> `  trackMilestones` <br> `  = "25,50,75";` | N.v.t. | Media Analytics houdt voortgangsmarkeringen altijd bij op 10%, 25%, 50%, 75% en 95%. |
 | Media.trackOffsetMilestones | `s.Media.` <br> `  trackOffsetMilestones` <br> `  = "20,40,60";` | N.v.t. | Media Analytics houdt voortgangsmarkeringen altijd bij op 10%, 25%, 50%, 75% en 95%. |
 | Media.segmentByMilestones | `s.Media.segmentByMilestones` <br> `  = true;` | N.v.t. | Auto track is niet meer beschikbaar. |
@@ -61,9 +61,9 @@ De volgende lijsten verstrekken vertalingen tussen de oplossing van de Mijlpaal 
 
 | Mijlsteen | Mijlsteensyntaxis | Media Analytics | Syntaxis voor medianalyse |
 | --- | --- | --- | --- |
-| Media.adTrackSeconds | `s.Media.` <br> `  adTrackSeconds` <br> `  = 15` | N.v.t. | Media Analytics wordt ingesteld op 10 seconden voor inhoud en 1 seconde voor advertenties. Er zijn geen andere opties beschikbaar. |
+| Media.adTrackSeconds | `s.Media.` <br> `  adTrackSeconds` <br> `  = 15` | N.v.t. | Media Analytics wordt ingesteld op 10 seconden voor inhoud en 1 seconde voor advertenties. Geen andere opties beschikbaar. |
 | Media.adTrackMilestones | `s.Media.` <br> `  adTrackMilestones` <br> `  = "25,50,75";` | N.v.t. | Voortgangsmarkeringen worden niet standaard weergegeven voor advertenties. Gebruik berekende metriek om markeringen voor voortgang samen te stellen. |
-| Media.adTrackOffsetMilestones | `s.Media.` <br> `  adTrackOffsetMilestones` <br> `  = "20,40,60";` | N.v.t. | Media Analytics is ingesteld op 1 seconde voor advertenties. Er zijn geen andere opties beschikbaar. |
+| Media.adTrackOffsetMilestones | `s.Media.` <br> `  adTrackOffsetMilestones` <br> `  = "20,40,60";` | N.v.t. | Media Analytics is ingesteld op 1 seconde voor advertenties. Geen andere opties beschikbaar. |
 | Media.adSegmentByMilestones | `s.Media.` <br> `  adSegmentByMilestones` <br> `  = true;` | N.v.t. | Auto track is niet meer beschikbaar. |
 | Media.adSegmentByOffsetMilestones | `s.Media.` <br> `  adSegmentByOffsetMilestones` <br> `  = true;` | N.v.t. | Auto track is niet meer beschikbaar. |
 
@@ -72,17 +72,17 @@ De volgende lijsten verstrekken vertalingen tussen de oplossing van de Mijlpaal 
 | Mijlsteen | Mijlsteensyntaxis | Media Analytics | Syntaxis voor medianalyse |
 | --- | --- | --- | --- |
 | Media.open | `s.Media.open(` <br> `  mediaName,` <br> `  mediaLength,` <br> `  mediaPlayerName)` | trackSessionStart | `trackSessionStart(` <br> `  mediaObject,` <br> `  contextData)` |
-| mediaName | `mediaName`: (Vereist) De naam van de video zoals u deze wilt weergeven in videoverslagen. | name | `createMediaObject(` <br> `  name,` <br> `  mediaId,` <br> `  length,` <br> `  streamType)` |
-| mediaLength | `mediaLength`: (Vereist) De lengte van de video in seconden. | length | `createMediaObject(` <br> `  name,` <br> `  mediaId,` <br> `  length,` <br> `  streamType)` |
-| mediaPlayerName | `mediaPlayerName`: (Vereist) De naam van de mediaspeler die wordt gebruikt om de video weer te geven, zoals u deze wilt weergeven in videoverslagen. | playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
+| mediaName | `mediaName`: (vereist) De naam van de video zoals u deze wilt weergeven in videorapporten. | name | `createMediaObject(` <br> `  name,` <br> `  mediaId,` <br> `  length,` <br> `  streamType)` |
+| mediaLength | `mediaLength`: (vereist) De lengte van de video in seconden. | length | `createMediaObject(` <br> `  name,` <br> `  mediaId,` <br> `  length,` <br> `  streamType)` |
+| mediaPlayerName | `mediaPlayerName`: (vereist) De naam van de mediaspeler die wordt gebruikt om de video weer te geven, zoals u deze wilt weergeven in videoverslagen. | playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
 | Media.openAd | `s.Media.openAd(` <br> `  name,` <br> `  length,` <br> `  playerName,` <br> `  parentName,` <br> `  parentPod,` <br> `  parentPodPosition,` <br> `  CPM)` | trackEvent | `mediaHeartbeat.trackEvent(` <br> `  MediaHeartbeat.` <br> `    Event.` <br> `    AdBreakStart, ` <br> `  adBreakObject);` <br> `...` <br> `trackEvent(` <br> `  MediaHeartbeat.` <br> `    Event.` <br> `    AdStart, ` <br> `  adObject, ` <br> `  adCustomMetadata);` |
-| name | `name`: (Vereist) De naam of id van de advertentie. | name | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
+| name | `name`: (vereist) De naam of id van de advertentie. | name | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
 | length | `length`: (vereist) De lengte van de advertentie. | length | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
-| playerName | `playerName`: (Vereist) De naam van de mediaspeler die wordt gebruikt om de advertentie weer te geven. | playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
+| playerName | `playerName`: (vereist) De naam van de mediaspeler die wordt gebruikt om de advertentie weer te geven. | playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
 | parentName | `parentName`: De naam of id van de primaire inhoud waarin de advertentie is ingesloten. | N.v.t. | Automatisch overgeërfd. |
 | parentPod | `parentPod`: De positie in de primaire inhoud waarop de advertentie is afgespeeld. | position | `createAdBreakObject(` <br> `  name, ` <br> `  position, ` <br> `  startTime)` |
-| parentPodPosition | `parentPodPosition`: De positie in de pod waar de advertentie wordt afgespeeld. | positie | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
-| CPM | `CPM`: CPM of gecodeerde CPM (vooraf bevestigd met &quot;~&quot;) die op deze playback van toepassing is. | N.v.t. | Niet standaard beschikbaar in Media Analytics. |
+| parentPodPosition | `parentPodPosition`: De positie binnen de pod waar de advertentie wordt afgespeeld. | position | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
+| CPM | `CPM`: De CPM of de gecodeerde CPM (vooraf voorzien van een &#39;~&#39;) die op dit afspelen van toepassing is. | N.v.t. | Niet standaard beschikbaar in Media Analytics. |
 | Media.click | `s.Media.click(name, offset)` | N.v.t. | Gebruik een aanroep van een aangepaste koppelingsanalyse om kliks bij te houden. |
 | Media.close | `s.Media.close(mediaName)` | trackSessionEnd | `trackSessionEnd()` |
 | Media.complete | `s.Media.complete(name, offset)` | trackComplete | `trackComplete()` |

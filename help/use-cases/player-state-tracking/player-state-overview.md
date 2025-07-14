@@ -2,11 +2,11 @@
 title: Over Player State Tracking
 description: Leer meer over de functie voor het bijhouden van spelerstatussen, zoals vereisten en richtlijnen voor het implementeren en rapporteren van spelerstatussen.
 exl-id: c678e182-74e4-4f46-8596-7be57e645c66
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '406'
 ht-degree: 0%
 
 ---
@@ -26,16 +26,16 @@ De Staat van de speler het Volgen levert de volgende voordelen op:
 * Hiermee wordt de tijd gemeten die in een aangepaste spelerstatus is doorgebracht
 * Meerdere staten die gelijktijdig kunnen worden gemeten
 
-![Reeksspatiëring](assets/player_state_tracking.png)
+![ de staat die van de Speler volgen ](assets/player_state_tracking.png)
 
 ## Vereisten
 
 Voor het bijhouden van Player-statussen is een van de volgende vereist voor gegevensverzameling:
 * Media JS SDK 3.0+
-* Chromecast 3.0 SDK voor Adobe Marketing Cloud-oplossingen
+* Chromecast 3.0 SDK for Adobe Marketing Cloud Solutions
 * Media Analytics Extension (voor gebruik met de Adobe Experience Platform (AEP) SDK)
    * Web: Adobe Media Analytics (3.x SDK) voor Audio en Video v1.0+
-   * Mobiel: Adobe Media Analytics voor Audio en Video v2.0+
+   * Mobiel: Adobe Media Analytics voor audio en video v2.0+
 * Media Collection-API
 
 ## Richtsnoeren

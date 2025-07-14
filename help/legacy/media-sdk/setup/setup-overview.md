@@ -3,9 +3,9 @@ title: Uitvoeren van Uitgevoerde Media SDKs
 description: Leer hoe u de Media SDK instelt voor het bijhouden van media in uw mobiele, OTT- en browsertoepassingen (JS).
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '617'
 ht-degree: 1%
@@ -36,7 +36,7 @@ Voer de volgende implementatiestappen uit om de Streaming Media SDK in te stelle
    | `channel` | Kanaalnaam | Nee | Lege tekenreeks |
    | `ovp` | Naam van het online-mediaplatform waarmee inhoud wordt gedistribueerd | Nee | Lege tekenreeks |
    | `appVersion` | Versie van de mediaspeler-app/SDK | Nee | Lege tekenreeks |
-   | `playerName` | Naam van de mediaspeler in gebruik, d.w.z. &quot;AVPlayer&quot;, &quot;HTML5 Player&quot;, &quot;My Custom Player&quot; | Nee | Lege tekenreeks |
+   | `playerName` | Naam van de mediaspeler in gebruik, dus &quot;AVPlayer&quot;, &quot;HTML5 Player&quot;, &quot;My Custom Player&quot; | Nee | Lege tekenreeks |
    | `ssl` | Geeft aan of aanroepen moeten worden uitgevoerd via HTTPS | Nee | false |
    | `debugLogging` | Geeft aan of foutopsporingslogbestand is ingeschakeld | Nee | false |
 
@@ -72,7 +72,7 @@ Voer de volgende implementatiestappen uit om de Streaming Media SDK in te stelle
 
 1. Combineer alle stukken.
 
-   De volgende voorbeeldcode gebruikt onze JavaScript 2.x SDK voor een HTML5 videospeler:
+   De volgende voorbeeldcode gebruikt onze JavaScript 2.x SDK voor een HTML5-videospeler:
 
    ```javascript
    // Create local references to the heartbeat classes
@@ -114,19 +114,19 @@ Voer de volgende implementatiestappen uit om de Streaming Media SDK in te stelle
 
 De volgende implementaties van de Analytics van media produceren twee soorten het volgen vraag:
 
-* De vraag van de media en van het begin van de advertentie wordt verzonden rechtstreeks naar de server van Adobe Analytics (AppMeasurement).
+* De vraag van het media en van het Begin van de advertentie wordt verzonden rechtstreeks naar de server van Adobe Analytics (AppMeasurement).
 * De vraag van de hartslag wordt verzonden naar de Media Analytics (hartslagen) volgende server, daar verwerkt, en tot de server van Adobe Analytics overgegaan.
 
 * **Adobe Analytics (AppMeasurement) server**
-Voor meer informatie over het volgen van serveropties, zie [ correct de variabelen trackingServer en trackingServerSecure bevolken.](https://helpx.adobe.com/nl/analytics/kb/determining-data-center.html)
+Voor meer informatie over het volgen van serveropties, zie [ correct de variabelen trackingServer en trackingServerSecure bevolken.](https://helpx.adobe.com/analytics/kb/determining-data-center.html)
 
   >[!IMPORTANT]
   >
-  >Een RDC-trackingserver of CNAME die een RDC-server oplost, is vereist voor de service Bezoeker-id van Experience Cloud.
+  >Voor de Experience Cloud Visitor ID-service is een RDC-trackingserver of CNAME vereist die een RDC-server oplost.
 
   De analytics tracking-server moet eindigen in &quot;`.sc.omtrdc.net`&quot; of een CNAME zijn.
 
-* **&#x200B; Media Analytics (Heartbeats)-server**
+* ** Media Analytics (Heartbeats)-server**
 Dit heeft altijd het formaat &quot;`[your_namespace].hb.omtrdc.net`&quot;. De waarde van &quot;`[your_namespace]`&quot;specificeert uw bedrijf, en door Adobe verstrekt.
 
 Mediatracering werkt op alle platformen hetzelfde, zowel op het bureaublad als op mobiele apparaten. Audio bijhouden werkt momenteel op mobiele platforms. Voor alle volgende vraag zijn er een paar zeer belangrijke universele variabelen die moeten worden bevestigd:

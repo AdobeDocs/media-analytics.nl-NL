@@ -2,9 +2,9 @@
 title: Meer informatie over ondersteunde apparaten en platforms
 description: Leer meer over de belangrijkste apparaten zoals iOS, Android, OTT-apparaten en JavaScript-browsers die de Streaming Media Collection ondersteunt.
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '309'
 ht-degree: 6%
@@ -13,7 +13,7 @@ ht-degree: 6%
 
 # Ondersteunde apparaten en platforms {#devices-supported}
 
-De Adobe die Media Inzameling stroomt steunt alle belangrijke apparaten, met inbegrip van:
+De Adobe Streaming Media Collection ondersteunt alle belangrijke apparaten, waaronder:
 
 * iOS- en Android-smartphones en -tablets
 * OTT-apparaten voor Roku, Fire TV en Android TV

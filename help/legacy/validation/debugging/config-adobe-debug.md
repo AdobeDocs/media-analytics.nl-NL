@@ -1,22 +1,22 @@
 ---
-title: Foutopsporing Adobe configureren
-description: Leer hoe te om Adobe te vormen zuivert, die u kunt gebruiken om de implementaties van SDK van Media problemen op te lossen.
+title: Adobe Debug configureren
+description: Leer hoe u Adobe Debug configureert, waarmee u de implementatie van Media SDK kunt oplossen.
 uuid: e416458d-f23c-41ce-8d99-fa5076c455f0
 exl-id: 48ad3f23-f36d-44f3-b8d9-b0b3a2ee06bc
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 0%
 
 ---
 
-# Foutopsporing Adobe configureren{#configure-adobe-debug}
+# Adobe Debug configureren{#configure-adobe-debug}
 
-## Toegang tot foutopsporing Adobe {#accessing-adobe-debug}
+## Toegang tot Adobe Debug {#accessing-adobe-debug}
 
-Voor toegang tot foutopsporing in Adobe:
+Ga als volgt te werk om Adobe Debug te openen:
 
 1. Ga naar [ Experience Cloud ](https://www.marketing.adobe.com/) en creeer een nieuwe gebruiker van Adobe Experience Cloud.
 
@@ -24,8 +24,8 @@ Voor toegang tot foutopsporing in Adobe:
    >
    >Deze aanmelding is niet dezelfde gebruikersnaam/hetzelfde wachtwoord als waarmee u zich aanmeldt bij Adobe Analytics.
 
-1. Nadat u een rekening van het Experience Cloud hebt, contacteer uw vertegenwoordiger van de Adobe om toegang tot Adobe te verzoeken zuivert.
-1. Nadat de toegang is verleend, ga naar [ https://debug.adobe.com ](https://debug.adobe.com) en gebruik uw geloofsbrieven van het Experience Cloud aan login.
+1. Nadat u een Experience Cloud-account hebt, neemt u contact op met uw Adobe-vertegenwoordiger om toegang tot de foutopsporing van Adobe te vragen.
+1. Nadat de toegang is verleend, ga naar [ https://debug.adobe.com ](https://debug.adobe.com) en gebruik uw geloofsbrieven van Experience Cloud aan login.
 
    ![](assets/adobe-debug-login.png)
 
@@ -55,11 +55,11 @@ Download en vorm de Debug Proxy:
 
 ## Download en installeer het SSL-certificaat op een desktopcomputer of op apps {#download-and-install-sSL-desktop}
 
-De eerste keer dat u Adobe debuggen uitvoert, wordt een uniek SSL certificaat gegenereerd. Als u HTTPS-verkeer op het bureaublad en/of toepassingen ondersteunt, moet u ons SSL-certificaat downloaden en installeren.
+De eerste keer dat u Adobe Debug uitvoert, wordt een uniek SSL-certificaat gegenereerd. Als u HTTPS-verkeer op het bureaublad en/of toepassingen ondersteunt, moet u ons SSL-certificaat downloaden en installeren.
 
 Download en installeer het SSL-certificaat:
 
-1. Nadat de Adobe zuivert is geïnstalleerd en is begonnen, ga [ https://proxy.debug.adobe.com/ssl ](https://proxy.debug.adobe.com/ssl) en download de certificatie.
+1. Nadat Adobe zuivert is geïnstalleerd en begonnen, ga [ https://proxy.debug.adobe.com/ssl ](https://proxy.debug.adobe.com/ssl) en download de certificatie.
 1. Het certificaat importeren
 
    **Mac OS**
@@ -87,7 +87,7 @@ Download en installeer het SSL-certificaat:
 
 ## Het SSL-certificaat voor uw mobiele apparaat installeren {#install-sSL-for-mobile-device}
 
-Als u de HTTPS-aanroepen in de foutopsporing voor Adobe mist, moet u het SSL-certificaat voor foutopsporing voor Adobe installeren op het mobiele apparaat.
+Als u de HTTPS-aanroepen in Adobe Debug mist, moet u het SSL-certificaat voor Adobe Debug installeren op het mobiele apparaat.
 
 ### iOS
 
@@ -102,7 +102,7 @@ Ga als volgt te werk om het SSL-certificaat op een iOS-apparaat te installeren:
    1. Ga naar [ https://proxy.debug.adobe.com/ssl.](https://proxy.debug.adobe.com/ssl)
    1. Download en installeer het SSL-certificaat.
 
-1. Start op uw laptop de foutopsporingssessie voor de Adobe.
+1. Start op uw laptop de Adobe Debug-sessie.
 1. Test op je iOS-apparaat.
 
 ### Android
@@ -118,5 +118,5 @@ Ga als volgt te werk om het SSL-certificaat op een Android-apparaat te installer
    1. Ga naar [ https://proxy.debug.adobe.com/ssl.](https://proxy.debug.adobe.com/ssl)
    1. Download en installeer het SSL-certificaat.
 
-1. Start op uw laptop de foutopsporingssessie voor de Adobe.
+1. Start op uw laptop de Adobe Debug-sessie.
 1. Test op je Android-apparaat.

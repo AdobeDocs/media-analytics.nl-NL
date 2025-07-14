@@ -3,9 +3,9 @@ title: Media SDK instellen op Android
 description: Voer de volgende stappen uit om de Media SDK-toepassing in Android in te stellen.
 uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 exl-id: 261445bf-3c8b-4658-891d-9a878e0b26ea
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 6%
@@ -18,7 +18,7 @@ Leer hoe u de verzameling streamingmedia voor Android-apparaten instelt.
 
 >[!IMPORTANT]
 >
->Met het einde van de ondersteuning voor versie 4 Mobile SDK&#39;s op 31 augustus 2021 zal Adobe ook de ondersteuning voor Media Analytics SDK voor iOS en Android beëindigen.  Voor extra informatie, zie [ Analytics SDK End-of-Support FAQs ](/help/additional-resources/end-of-support-faqs.md).
+>Met het einde van de ondersteuning voor versie 4 Mobile SDK&#39;s op 31 augustus 2021 beëindigt Adobe ook de ondersteuning voor Media Analytics SDK voor iOS en Android.  Voor extra informatie, zie [ Analytics SDK End-of-Support FAQs ](/help/additional-resources/end-of-support-faqs.md).
 
 
 ## Vereisten
@@ -26,7 +26,7 @@ Leer hoe u de verzameling streamingmedia voor Android-apparaten instelt.
 * **verkrijg geldige configuratieparameters voor de Media SDK**
 Deze parameters kunt u verkrijgen van een Adobe-medewerker nadat u uw analyseaccount hebt ingesteld.
 * **voert ADBMobile voor Android in uw toepassing uit**
-Voor meer informatie over de documentatie van Adobe Mobile SDK, zie [ Android SDK 4.x voor de Oplossingen van het Experience Cloud.](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html?lang=nl-NL)
+Voor meer informatie over de documentatie van Adobe Mobile SDK, zie [ Android SDK 4.x voor de Oplossingen van Experience Cloud.](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html)
 
 * **verstrek de volgende mogelijkheden in uw media speler:**
    * *API om aan spelergebeurtenissen* in te tekenen - de Media SDK vereist dat u een reeks eenvoudige APIs roept wanneer de gebeurtenissen in uw speler voorkomen.
