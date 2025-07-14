@@ -40,7 +40,7 @@ U moet deze taken in de volgende volgorde voltooien en opnemen:
 
    Voor vraagparameters en meta-gegevens, zie [ de vraagdetails van de Test.](/help/legacy/validation/test-call-details.md#play-main-content)
 
-   Zie ook het 0} Spoor van uw platform Advertentie [ instructies voor extra informatie over deze vraag van Advertentie.](/help/use-cases/track-ads/track-ads-overview.md)
+   Zie ook het 0&rbrace; Spoor van uw platform Advertentie [ instructies voor extra informatie over deze vraag van Advertentie.](/help/use-cases/track-ads/track-ads-overview.md)
 
 1. **Beweeg app of browser aan de achtergrond**
 

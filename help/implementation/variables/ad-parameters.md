@@ -37,13 +37,13 @@ Beschrijving van tabelgegevens:
 >[!IMPORTANT]
 >
 >Wijzig de classificatienamen niet voor onderstaande variabelen die
->>beschreven onder Rapportage/Gereserveerde variabele als &quot;classificatie&quot;.
->>De mediaclassificaties worden gedefinieerd wanneer een rapportsuite is ingeschakeld voor media
->>bijhouden. Van tijd tot tijd voegt Adobe nieuwe eigenschappen toe, en, wanneer dit voorkomt,
->>klanten moeten hun rapportsuites opnieuw toelaten om toegang tot de nieuwe media te krijgen
->>eigenschappen. Tijdens het updateproces bepaalt Adobe of de
->>classificaties worden ingeschakeld door de namen van de variabelen te controleren. Indien een van de
->>ze ontbreken, voegt Adobe de ontbrekende weer toe.
+>&#x200B;>beschreven onder Rapportage/Gereserveerde variabele als &quot;classificatie&quot;.
+>&#x200B;>De mediaclassificaties worden gedefinieerd wanneer een rapportsuite is ingeschakeld voor media
+>&#x200B;>bijhouden. Van tijd tot tijd voegt Adobe nieuwe eigenschappen toe, en, wanneer dit voorkomt,
+>&#x200B;>klanten moeten hun rapportsuites opnieuw toelaten om toegang tot de nieuwe media te krijgen
+>&#x200B;>eigenschappen. Tijdens het updateproces bepaalt Adobe of de
+>&#x200B;>classificaties worden ingeschakeld door de namen van de variabelen te controleren. Indien een van de
+>&#x200B;>ze ontbreken, voegt Adobe de ontbrekende weer toe.
 
 ## Videogegevens toevoegen {#ad-video-data}
 

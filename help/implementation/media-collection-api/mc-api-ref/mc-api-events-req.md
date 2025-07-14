@@ -45,11 +45,11 @@ De aanvraaginstantie moet JSON zijn en dezelfde structuur hebben als deze instan
 * `customMetadata` (Optioneel; alleen verzenden met gebeurtenistypen `adStart` en `chapterStart` )
 * `qoeData` (optioneel)
 
-Voor een lijst van geldige gebeurtenistypen voor deze versie, zie {de types en de beschrijvingen van 0} Gebeurtenis.[](mc-api-event-types.md)
+Voor een lijst van geldige gebeurtenistypen voor deze versie, zie {de types en de beschrijvingen van 0} Gebeurtenis.[&#128279;](mc-api-event-types.md)
 
 >[!IMPORTANT]
 >
->***Advertentie die -**volgt kunt slechts advertenties binnen een`adBreak`* volgen.
+>***Advertentie die -**&#x200B;volgt kunt slechts advertenties binnen een`adBreak`* volgen.
 >
 >Als de gebeurtenissen `adBreakStart` en `adBreakComplete` &quot;bookends&quot; rondom advertenties ontbreken, worden `adStart` en `adComplete` gewoon genegeerd en wordt de bijbehorende duur van de advertentie bijgehouden als de duur van de hoofdinhoud. Dit kan een aanzienlijke invloed hebben op de geaggregeerde gegevens die in Adobe Analytics beschikbaar zullen zijn.
 

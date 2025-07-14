@@ -142,28 +142,28 @@ De verbindingsbrug is ontworpen om als volgt te presteren:
 <td> Ongeldig </td>
 <td> Alleen-lezen Alle API's die op AdobeMobileSDK worden uitgevoerd, retourneren reacties in dit veld. Registreer u voor een callback om te luisteren naar updates voor dit veld om reactieobjecten te ontvangen. Hier volgt de indeling voor het reactieobject:  
 <pre>
-response = {
+response = &lbrace;
   "apiName" : &lt;SceneGraphConstants.
                API_NAME&gt;
   "returnValue : &lt;API_RESPONSE&gt;
-}</pre>
+&rbrace;</pre>
 Een instantie van dit reactieobject wordt verzonden voor elke API-aanroep op AdobeMobileSDK die een waarde retourneert volgens de API-naslaggids. Een API-aanroep voor bezoekerMarketingCloudID() retourneert bijvoorbeeld het volgende reactieobject:
 <pre>
-response = {
+response = &lbrace;
   "apiName" : m.
               adbmobileConstants.
               VISITOR_MARKETING_CLOUD_ID  
   "returnValue : "07050x25671x33760x72644x14"  
-}
+&rbrace;
 </pre>
 OR, kunnen de reactiegegevens ook ongeldig zijn:
 <pre>
-response = {  
+response = &lbrace;  
   "apiName" : m.
               adbmobileConstants.
               VISITOR_MARKETING_CLOUD_ID  
   "returnValue : invalid
-}
+&rbrace;
 </pre>
 </td>
 </tr>

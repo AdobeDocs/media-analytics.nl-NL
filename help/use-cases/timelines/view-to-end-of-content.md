@@ -179,7 +179,7 @@ Pingel de steun om de 1 seconde terwijl binnen een advertentie.
 >[!NOTE]
 >
 >De volgende advertenties in de chronologie zullen overslaan die de reeks van één-tweede pingelt tonen
->>in het belang van de beknoptheid...
+>&#x200B;>in het belang van de beknoptheid...
 
 ```json
 {

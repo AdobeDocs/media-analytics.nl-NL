@@ -130,7 +130,7 @@ Geef de Experience Cloud Gebruiker - identiteitskaart (ook genoemd geworden `MID
 
 * **als u *niet* een `appInstallationId` waarde -** het achterste eind van MA niet meer MCID zal produceren, maar in plaats daarvan op Adobe Analytics zal vertrouwen om dit te doen. De aanbeveling van Adobe is om een MCID te verzenden als deze beschikbaar is, of een `appInstallationId` (samen met de nog steeds verplichte `marketingCloudOrgId` ), zodat de Media Collection-API de MCID genereert en deze op alle aanroepen verzendt.
 
-* **als u ** `appInstallationId` waarde** overgaat MCID ** kan worden geproduceerd door het achterste eind van MA, als u waarden voor `appInstallationId` en (vereiste) `marketingCloudOrgId` parameters overgaat. Als u `appInstallationId` zelf doorgeeft, moet u de waarde ervan aan de clientzijde behouden. De toepassing moet uniek zijn voor de toepassing op een apparaat en moet blijvend zijn zolang de toepassing niet opnieuw wordt geïnstalleerd.
+* **als u &#x200B;** `appInstallationId` waarde **&#x200B; overgaat MCID &#x200B;** kan worden geproduceerd door het achterste eind van MA, als u waarden voor `appInstallationId` en (vereiste) `marketingCloudOrgId` parameters overgaat. Als u `appInstallationId` zelf doorgeeft, moet u de waarde ervan aan de clientzijde behouden. De toepassing moet uniek zijn voor de toepassing op een apparaat en moet blijvend zijn zolang de toepassing niet opnieuw wordt geïnstalleerd.
 
 >[!NOTE]
 >

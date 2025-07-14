@@ -31,7 +31,7 @@ Dit rapport bevat enkele kenmerken:
 * Het verslag bestrijkt een tijdsbestek van 24 uur. De x-as is tijd-van-dag die op de tijdzone van de rapportreeks wordt gebaseerd.
 * Dit toont gelijktijdige kijkers bij minieme granulariteit.
 * Er is het Rapport van de Kijkers van a *Gelijktijdige van Media* dat toont hoeveel kijkers letten op of over alle inhoud luisteren.
-* Er is een Gelijktijdig rapport van Kijkers binnen het *rapport van het Detail van 0} Media dat toont hoeveel kijkers letten op of naar één specifiek media punt luisteren.*
+* Er is een Gelijktijdig rapport van Kijkers binnen het *rapport van het Detail van 0&rbrace; Media dat toont hoeveel kijkers letten op of naar één specifiek media punt luisteren.*
 * Het rapport werkt slechts over één dag.
 * De klant kan naar historische gelijktijdige viewerrapporten (beperkt tot één dag) kijken.
 

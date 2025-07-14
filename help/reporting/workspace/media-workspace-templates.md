@@ -32,7 +32,7 @@ Hieronder volgt een lijst met standaardrapporten die nuttig zijn voor het analys
 
 * [!UICONTROL **recentie van Media, frequentie, loyaliteit**]: Creeert een rapport dat de recentie (hoeveel dagen sinds het laatste bezoek) toont, frequentie (hoeveel bezoeken per bezoeker), en loyaliteit (hoe vaak cohorts van gebruikers aan de plaats terugkeren)
 
-Bijvoorbeeld, als u het [!UICONTROL **rapport van de Consumptie van Media 0} het stromen kiest, wordt een project met het volgende dashboard voorgesteld:**]
+Bijvoorbeeld, als u het [!UICONTROL **rapport van de Consumptie van Media 0&rbrace; het stromen kiest, wordt een project met het volgende dashboard voorgesteld:**]
 
 ![](/help/reporting/assets/aa-workspace.png)
 

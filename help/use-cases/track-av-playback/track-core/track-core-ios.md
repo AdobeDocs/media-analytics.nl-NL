@@ -71,6 +71,7 @@ Deze documentatie behandelt het volgen in versie 2.x van de SDK.
 
       * [Standaardmetagegevens implementeren op iOS](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
       * **Video meta-gegevenssleutels**
+
         [ de meta-gegevenssleutels van iOS ](/help/use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
 
       * Zie de uitvoerige lijst van videometagegevens hier: [ Audio en videoparameters ](/help/implementation/variables/audio-video-parameters.md)
