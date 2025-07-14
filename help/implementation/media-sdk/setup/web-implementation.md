@@ -25,7 +25,7 @@ Alternatief, kunt u de uitbreiding van de Analyse van de Media van Adobe gebruik
 
 * **voer `AppMeasurement` en `Experience Cloud Identity Service` voor JavaScript in uw media toepassing uit**
 
-  Voor meer informatie, zie [ het Uitvoeren Analytics Gebruikend JavaScript ](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html) en [ het Uitvoeren van de Dienst van de Identiteit van Experience Cloud ](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html).
+  Voor meer informatie, zie [ het Uitvoeren Analytics Gebruikend JavaScript ](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=nl-NL) en [ het Uitvoeren van de Dienst van de Identiteit van Experience Cloud ](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=nl-NL).
 
 * **omvat volgende APIs in uw media speler**
 

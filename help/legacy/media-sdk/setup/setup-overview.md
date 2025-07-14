@@ -118,7 +118,7 @@ De volgende implementaties van de Analytics van media produceren twee soorten he
 * De vraag van de hartslag wordt verzonden naar de Media Analytics (hartslagen) volgende server, daar verwerkt, en tot de server van Adobe Analytics overgegaan.
 
 * **Adobe Analytics (AppMeasurement) server**
-Voor meer informatie over het volgen van serveropties, zie [ correct de variabelen trackingServer en trackingServerSecure bevolken.](https://helpx.adobe.com/analytics/kb/determining-data-center.html)
+Voor meer informatie over het volgen van serveropties, zie [ correct de variabelen trackingServer en trackingServerSecure bevolken.](https://helpx.adobe.com/nl/analytics/kb/determining-data-center.html)
 
   >[!IMPORTANT]
   >

@@ -171,4 +171,4 @@ Met Roku SDK 2.x for Experience Cloud Solutions kunt u Roku-toepassingen die in 
    | `processMediaMessages` | Verantwoordelijk om de Media-gebeurtenissen door te geven aan de SDK die moet worden afgehandeld. <br/><br/>`ADBMobile().processMediaMessages()` |
 
 
-<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
+<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html?lang=nl-NL) -->

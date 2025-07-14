@@ -19,7 +19,7 @@ ht-degree: 0%
 U kunt bepalen of traceringsactiviteit is toegestaan op een specifiek apparaat:
 
 * **Mobiele Apps -** de Uitbreidingen van Media eerbiedigen de privacymontages in de Inzameling van Gegevens. Om uit het volgen te kiezen, moet u opstellingsprivacy aan [ Geopend uit in Codes ](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/#create-a-mobile-property) of [ de privacystatus van de Update in Mobiele SDK ](https://developer.adobe.com/client-sdks/resources/privacy-and-gdpr/#getprivacystatus).
-* **JavaScript/Browser Apps -** de bibliotheek VA eerbiedigt de `VisitorAPI` privacy en optout montages. Als u het bijhouden wilt uitschakelen, moet u zich afmelden bij de service voor de Bezoeker-API. Voor verdere informatie over optout en privacy, zie [ de Dienst van de Identiteit van Adobe Experience Platform ](https://experienceleague.adobe.com/docs/id-service/using/home.html).
+* **JavaScript/Browser Apps -** de bibliotheek VA eerbiedigt de `VisitorAPI` privacy en optout montages. Als u het bijhouden wilt uitschakelen, moet u zich afmelden bij de service voor de Bezoeker-API. Voor verdere informatie over optout en privacy, zie [ de Dienst van de Identiteit van Adobe Experience Platform ](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=nl-NL).
 * **OTT Apps (Chromecast, Roku) -** OTT SDKs verstrekt Algemene Verordening van de Bescherming van Gegevens (GDPR) - klaar APIs die u toestaan om `opt` statusvlaggen voor gegevensinzameling en transmissie te plaatsen, en lokaal opgeslagen identiteiten terug te winnen.
 
   >[!NOTE]

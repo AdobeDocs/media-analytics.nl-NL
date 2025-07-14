@@ -15,6 +15,6 @@ ht-degree: 0%
 
 U kunt de extensie Adobe Media Analytics gebruiken om de Adobe Streaming Media Collection te implementeren. De extensie Media Analytics voegt de core JavaScript Media SDK (Media 3.x SDK) toe. Deze extensie biedt de functionaliteit voor het toevoegen van de instantie Media tracker aan een site of project waarvoor tags zijn ingeschakeld.
 
-Voor informatie over hoe te om de uitbreiding te installeren en te gebruiken, zie [ Analytics van de Media van Adobe (3.x SDK) voor Audio en Video uitbreiding - gebruikend Markeringen (de Inzameling van Gegevens) ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=en).
+Voor informatie over hoe te om de uitbreiding te installeren en te gebruiken, zie [ Analytics van de Media van Adobe (3.x SDK) voor Audio en Video uitbreiding - gebruikend Markeringen (de Inzameling van Gegevens) ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=nl-NL).
 
 Alternatief, kunt u Analytics uitvoeren gebruikend JavaScript, zoals die in [ wordt beschreven voert Analytics uit gebruikend JavaScript ](/help/implementation/media-sdk/setup/web-implementation.md).
