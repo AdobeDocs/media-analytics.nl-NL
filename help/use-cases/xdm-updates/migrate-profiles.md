@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # Profielen migreren naar de nieuwe Streaming Media-velden
 
-In dit document wordt beschreven hoe de profielfilterservice wordt gemigreerd die aanwezig is boven op de gegevensverzamelingsstromen van Adobe die zijn ingeschakeld voor Adobe Analytics voor Streaming Media-gegevens. De migratie zet de profiel het filtreren dienst van het gebruiken van het Adobe het stromen gegevenstype van de Inzameling van Media om genoemd &quot;Media&quot;om het nieuwe overeenkomstige gegevenstype te gebruiken genoemd &quot;[ Media die Details ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details) melden.&quot;
+In dit document wordt beschreven hoe de profielfilterservice wordt gemigreerd die aanwezig is boven op de gegevensverzamelingsstromen van Adobe die zijn ingeschakeld voor Adobe Analytics voor Streaming Media-gegevens. De migratie zet de profiel het filtreren dienst van het gebruiken van het Adobe het stromen gegevenstype van de Inzameling van Media om genoemd &quot;Media&quot;om het nieuwe overeenkomstige gegevenstype te gebruiken genoemd &quot;[ Media die Details ](https://experienceleague.adobe.com/nl/docs/experience-platform/xdm/data-types/media-reporting-details) melden.&quot;
 
 ## Profielen migreren
 
-Om het profiel te migreren dat van het oude gegevenstype &quot;Media&quot;aan het nieuwe geroepen gegevenstype &quot;[ Media het Melden van Details ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details) filtreert,&quot;moet u de bestaande profiel het filtreren regels uitgeven:
+Om het profiel te migreren dat van het oude gegevenstype &quot;Media&quot;aan het nieuwe geroepen gegevenstype &quot;[ Media het Melden van Details ](https://experienceleague.adobe.com/nl/docs/experience-platform/xdm/data-types/media-reporting-details) filtreert,&quot;moet u de bestaande profiel het filtreren regels uitgeven:
 
 1. In Adobe Experience Platform, onder de [!UICONTROL **Bronnen**] sectie, ga naar [!UICONTROL **Dataflows**] tabel.
 
@@ -32,7 +32,7 @@ Om het profiel te migreren dat van het oude gegevenstype &quot;Media&quot;aan he
 
 1. Controleer of de profielen nog steeds naar behoren werken.
 
-Zie de [ parameter van identiteitskaart van de Inhoud ](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) op de [ Audio en videoparameters ](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters) pagina aan kaart tussen de oude gebieden en de nieuwe gebieden. Het oude veldpad kan worden gevonden onder de eigenschap &quot;XDM Field Path&quot;, terwijl het nieuwe veldpad kan worden gevonden onder de eigenschap &quot;Reporting XDM Field Path&quot;.
+Zie de [ parameter van identiteitskaart van de Inhoud ](https://experienceleague.adobe.com/nl/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) op de [ Audio en videoparameters ](https://experienceleague.adobe.com/nl/docs/media-analytics/using/implementation/variables/audio-video-parameters) pagina aan kaart tussen de oude gebieden en de nieuwe gebieden. Het oude veldpad kan worden gevonden onder de eigenschap &quot;XDM Field Path&quot;, terwijl het nieuwe veldpad kan worden gevonden onder de eigenschap &quot;Reporting XDM Field Path&quot;.
 
 ## Voorbeeld
 
@@ -55,7 +55,7 @@ Om het gemakkelijker te maken om de migratierichtlijnen te volgen, overweeg het 
    ![ AEP dataflow filterregels ](assets/dataflow-filtering-rules-profile.jpeg)
 
 
-   Voor elk filter dat het media.mediaTimed voorwerp gebruikt, vind zijn correspondent in het `mediaReporting` voorwerp gebruikend de [ Audio en videoparameters ](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters) pagina om tussen de oude gebieden en de nieuwe gebieden in kaart te brengen. Het oude veldpad wordt gevonden onder de eigenschap &quot;XDM Field Path&quot; terwijl het nieuwe veldpad wordt gevonden onder de eigenschap &quot;Reporting XDM Field Path&quot;. Als voorbeeld, voor [ Media begint ](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#media-starts), is de correspondent voor `media.mediaTimed.impressions.value` `mediaReporting.sessionDetails.isViewed`.
+   Voor elk filter dat het media.mediaTimed voorwerp gebruikt, vind zijn correspondent in het `mediaReporting` voorwerp gebruikend de [ Audio en videoparameters ](https://experienceleague.adobe.com/nl/docs/media-analytics/using/implementation/variables/audio-video-parameters) pagina om tussen de oude gebieden en de nieuwe gebieden in kaart te brengen. Het oude veldpad wordt gevonden onder de eigenschap &quot;XDM Field Path&quot; terwijl het nieuwe veldpad wordt gevonden onder de eigenschap &quot;Reporting XDM Field Path&quot;. Als voorbeeld, voor [ Media begint ](https://experienceleague.adobe.com/nl/docs/media-analytics/using/implementation/variables/audio-video-parameters#media-starts), is de correspondent voor `media.mediaTimed.impressions.value` `mediaReporting.sessionDetails.isViewed`.
 
    ![ Nieuwe en oude gebieden XDM ](assets/xdm-fields-new-and-old.jpeg)
 

@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # Gegevensvoorinstelling voor aangepaste velden migreren naar de nieuwe streaming mediavelden
 
-In dit document wordt beschreven hoe de Data Prep-service wordt gemigreerd die wordt gebruikt vóór de gegevensverzamelingsstromen van Adobe die zijn ingeschakeld voor Adobe Streaming Media Collection-gegevens. De migratie zet een afbeelding van de Prep van Gegevens van het Adobe die gegevenstype van de Inzameling van Media &quot;Media&quot;om het nieuwe overeenkomstige gegevenstype te gebruiken genoemd &quot;[ Media die Details ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details) melden.&quot;
+In dit document wordt beschreven hoe de Data Prep-service wordt gemigreerd die wordt gebruikt vóór de gegevensverzamelingsstromen van Adobe die zijn ingeschakeld voor Adobe Streaming Media Collection-gegevens. De migratie zet een afbeelding van de Prep van Gegevens van het Adobe die gegevenstype van de Inzameling van Media &quot;Media&quot;om het nieuwe overeenkomstige gegevenstype te gebruiken genoemd &quot;[ Media die Details ](https://experienceleague.adobe.com/nl/docs/experience-platform/xdm/data-types/media-reporting-details) melden.&quot;
 
 ## Gegevensvoorinstelling migreren voor aangepaste velden
 
-Om de afbeeldingen van Prep van Gegevens van het oude gegevenstype te migreren genoemd &quot;Media&quot;aan het nieuwe geroepen gegevenstype &quot;[ Media die Details ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details) melden,&quot;u moet de Prep van Gegevens in kaart brengen uitgeven:
+Om de afbeeldingen van Prep van Gegevens van het oude gegevenstype te migreren genoemd &quot;Media&quot;aan het nieuwe geroepen gegevenstype &quot;[ Media die Details ](https://experienceleague.adobe.com/nl/docs/experience-platform/xdm/data-types/media-reporting-details) melden,&quot;u moet de Prep van Gegevens in kaart brengen uitgeven:
 
 >[!IMPORTANT]
 >
@@ -34,7 +34,7 @@ Om de afbeeldingen van Prep van Gegevens van het oude gegevenstype te migreren g
 
 1. Controleer of de toewijzingen nog steeds naar behoren werken.
 
-Zie de [ parameter van identiteitskaart van de Inhoud ](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) op de [ Audio en videoparameters ](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters) pagina aan kaart tussen de oude gebieden en de nieuwe gebieden. Het oude veldpad wordt gevonden onder de eigenschap &quot;XDM Field Path&quot; terwijl het nieuwe veldpad wordt gevonden onder de eigenschap &quot;Reporting XDM Field Path&quot;.
+Zie de [ parameter van identiteitskaart van de Inhoud ](https://experienceleague.adobe.com/nl/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) op de [ Audio en videoparameters ](https://experienceleague.adobe.com/nl/docs/media-analytics/using/implementation/variables/audio-video-parameters) pagina aan kaart tussen de oude gebieden en de nieuwe gebieden. Het oude veldpad wordt gevonden onder de eigenschap &quot;XDM Field Path&quot; terwijl het nieuwe veldpad wordt gevonden onder de eigenschap &quot;Reporting XDM Field Path&quot;.
 
 ## Voorbeeld
 
@@ -76,7 +76,7 @@ Om het gemakkelijker te maken om de migratierichtlijnen te volgen, overweeg het 
 
 In het bovenstaande voorbeeld waren alle gegevenstypen in kwestie String, zodat de vervangende toewijzing direct was.
 
-Als het gegevenstype van het brongebied verschillend is dan het gegevenstype van het doelgebied, moet u de richtlijnen in de [ het oplossen van problemengids van de Prep van Gegevens ](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/troubleshooting-guide) volgen, [ het behandelen van gegevensformaten met de Prep van Gegevens ](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling), en [ de kaartfuncties van Prep van Gegevens ](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling).
+Als het gegevenstype van het brongebied verschillend is dan het gegevenstype van het doelgebied, moet u de richtlijnen in de [ het oplossen van problemengids van de Prep van Gegevens ](https://experienceleague.adobe.com/nl/docs/experience-platform/data-prep/troubleshooting-guide) volgen, [ het behandelen van gegevensformaten met de Prep van Gegevens ](https://experienceleague.adobe.com/nl/docs/experience-platform/data-prep/data-handling), en [ de kaartfuncties van Prep van Gegevens ](https://experienceleague.adobe.com/nl/docs/experience-platform/data-prep/data-handling).
 
 Als het brontype bijvoorbeeld een tekenreeks is en het doeltype een Booleaanse waarde is, kan Data Prep de waarde automatisch parseren en de bronwaarde omzetten in een booleaanse waarde.
 
