@@ -4,18 +4,18 @@ description: Leer hoe hartslagen worden gebruikt om videometriek te verzamelen.
 feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: 180dd9b1-877a-4ec1-8e81-c293800069c0
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '312'
 ht-degree: 27%
 
 ---
 
 # Informatie over hartslagmeting
 
-De Adobe Streaming Media Collection gebruikt &quot;hartslagen&quot;om videometriek te verzamelen. Tijdens het afspelen van video worden heartbeats naar de heartbeat-trackingserver verzonden om de afspeeltijd te meten. De heartbeatsignalen worden om de tien seconden verzonden. Heartbeats resulteren in gedetailleerde videobetrokkenheidsstatistieken en nauwkeurigere video-uitvalrapporten. Streaming media meet hartslagen met Adobe Launch met de extensie Media Analytics, Media SDK en de Media Collection API. De componenten `AppMeasurement` en `VisitorID` worden gebruikt om videodata te ontvangen.
+Adobe streaming media services gebruiken &#39;hartslagen&#39; om videomeetgegevens te verzamelen. Tijdens het afspelen van video worden heartbeats naar de heartbeat-trackingserver verzonden om de afspeeltijd te meten. De heartbeatsignalen worden om de tien seconden verzonden. Heartbeats resulteren in gedetailleerde videobetrokkenheidsstatistieken en nauwkeurigere video-uitvalrapporten. via streaming media services worden hartslagen gemeten bij gebruik van Adobe Launch met de extensie Media Analytics, Media SDK en de Media Collection API. De componenten `AppMeasurement` en `VisitorID` worden gebruikt om videodata te ontvangen.
 
-Het gebruik van hartslagen in de Streaming Media Collection biedt de volgende voordelen:
+Het gebruik van hartslagen in streaming media biedt de volgende voordelen:
 
 | Functie | Beschrijving |
 |---|---|

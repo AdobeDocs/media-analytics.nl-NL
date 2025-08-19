@@ -4,7 +4,7 @@ description: Leer hoe u Adobe Streaming Media voor web-apps implementeert.
 feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 In de informatie op deze pagina wordt beschreven hoe u de zelfstandige webversie van SDK kunt installeren en JavaScript kunt instellen.
 
-Alternatief, kunt u de uitbreiding van de Analyse van de Media van Adobe gebruiken om de Verzameling van Media van Adobe uit te voeren Streaming, zoals die in [ wordt beschreven voert Analytics uit gebruikend de uitbreiding van Analytics van Media ](/help/implementation/media-sdk/setup/web-implementation-tags.md).
+Alternatief, kunt u de uitbreiding van de Analyse van de Media van Adobe gebruiken om het stromen media diensten uit te voeren, zoals die in [ wordt beschreven installeer het stromen media diensten gebruikend de uitbreiding van de Analyse van Media ](/help/implementation/media-sdk/setup/web-implementation-tags.md).
 
 ## Vereisten {#prerequesites}
 
@@ -25,7 +25,7 @@ Alternatief, kunt u de uitbreiding van de Analyse van de Media van Adobe gebruik
 
 * **voer `AppMeasurement` en `Experience Cloud Identity Service` voor JavaScript in uw media toepassing uit**
 
-  Voor meer informatie, zie [ het Uitvoeren Analytics Gebruikend JavaScript ](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=nl-NL) en [ het Uitvoeren van de Dienst van de Identiteit van Experience Cloud ](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=nl-NL).
+  Voor meer informatie, zie [ het Uitvoeren Analytics Gebruikend JavaScript ](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html) en [ het Uitvoeren van de Dienst van de Identiteit van Experience Cloud ](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html).
 
 * **omvat volgende APIs in uw media speler**
 

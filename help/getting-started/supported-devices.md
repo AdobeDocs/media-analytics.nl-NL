@@ -1,19 +1,19 @@
 ---
 title: Meer informatie over ondersteunde apparaten en platforms
-description: Leer meer over de belangrijkste apparaten zoals iOS, Android, OTT-apparaten en JavaScript-browsers die de Streaming Media Collection ondersteunt.
+description: Meer informatie over de belangrijkste apparaten die door Adobe streaming media services worden ondersteund, zoals iOS, Android, OTT-apparaten en JavaScript.
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Streaming Media
 role: User, Admin
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '308'
 ht-degree: 6%
 
 ---
 
 # Ondersteunde apparaten en platforms {#devices-supported}
 
-De Adobe Streaming Media Collection ondersteunt alle belangrijke apparaten, waaronder:
+Adobe streaming media services ondersteunen alle belangrijke apparaten, waaronder:
 
 * iOS- en Android-smartphones en -tablets
 * OTT-apparaten voor Roku, Fire TV en Android TV
@@ -21,7 +21,7 @@ De Adobe Streaming Media Collection ondersteunt alle belangrijke apparaten, waar
 
 SDK&#39;s worden regelmatig bijgewerkt wanneer nieuwe versies van apparaten worden uitgebracht en u kunt de SDK&#39;s gebruiken om te integreren met native spelers van elk afzonderlijk platform of elke andere beschikbare mediaspeler.
 
-Voor apparaten die momenteel geen SDK-ondersteuning hebben of in situaties waarin u uw implementatie moet aanpassen, kunt u de Media Collection API of Media Edge API gebruiken. Met deze API&#39;s kunt u RESTful API-aanroepen rechtstreeks van een apparaat naar de achtergrond van de Streaming Media Collection uitvoeren.
+Voor apparaten die momenteel geen SDK-ondersteuning hebben of in situaties waarin u uw implementatie moet aanpassen, kunt u de Media Collection API of Media Edge API gebruiken. Met deze API&#39;s kunt u RESTful-API-aanroepen rechtstreeks van een apparaat naar de achtergrond van Adobe-streaming-mediaservices uitvoeren.
 
 De onderstaande tabel bevat een lijst met momenteel ondersteunde apparaten. Als een apparaat niet in de lijst staat, neemt u contact op met uw klantenservice of oplossingsconsultant voor de status van dat apparaat.
 

@@ -4,7 +4,7 @@ description: Leer hoe u handelingen van toepassingen koppelt aan gegevens voor m
 exl-id: 75cc9088-776d-4b10-b358-9fff956a7eb7
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 1%
@@ -23,7 +23,7 @@ Om deze eigenschap voor een specifiek rapport toe te laten, re-enable de media v
 
 >[!NOTE]
 >
->De media metriek zijn _niet_ beschikbaar voor gebruik buiten media het volgen omdat de meeste van deze gegevens door de Streaming Inzameling van Media die op hartslaggebeurtenissen worden gebaseerd worden gegevens verwerkt. Ook, is het belangrijk dat de media metriek niet door verschillende implementaties worden opgeblazen.
+>De media metriek zijn _niet_ beschikbaar voor gebruik buiten media het volgen omdat de meeste van deze gegevens door de het stromen media diensten worden gegevens verwerkt die op hartslaggebeurtenissen worden gebaseerd. Ook, is het belangrijk dat de media metriek niet door verschillende implementaties worden opgeblazen.
 
 ## Kenmerken van mediastroom gebruiken
 

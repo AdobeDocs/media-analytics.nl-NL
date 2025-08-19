@@ -1,19 +1,19 @@
 ---
-title: Een mobiele SDK instellen met tags voor streaming media
-description: Leer hoe u Adobe Streaming Media voor mobiele apps implementeert.
+title: Een mobiele SDK instellen met tags voor streaming Media Services
+description: Leer hoe u Adobe-streaming-mediaservices kunt implementeren voor mobiele apps.
 feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: b4944b5f-cbae-4efc-9ef7-962d3f342240
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '199'
 ht-degree: 0%
 
 ---
 
 # Mobiele SDK&#39;s installeren {#install-mobile-sdks}
 
-Installeer en configureer de volgende toepassingen om de Streaming Media Collection voor mobiele apps te implementeren op Android of iOS:
+Als u Adobe streaming media services voor mobiele apps wilt implementeren op Android of iOS, installeert en configureert u het volgende:
 
 * **Adobe Experience Platform Mobile SDK**
 

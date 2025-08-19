@@ -1,27 +1,27 @@
 ---
 product: adobe analytics
 audience: end-user
-user-guide-title: Mediaverzameling streamen
-breadcrumb-title: Handleiding voor het streamen van mediaverzameling
-user-guide-description: Implementeer streaming van media. Bevat de Media-SDK en de Media Collection-API.
+user-guide-title: Handleiding voor streaming-mediaservices
+breadcrumb-title: Handleiding voor streaming-mediaservices
+user-guide-description: Implementeer streaming media-services. Bevat de Media-SDK en de Media Collection-API.
 sub-product: media analytics
-source-git-commit: a0a357c3fe7e958b0b6491c84f17f26a806ea205
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 5%
+source-wordcount: '926'
+ht-degree: 3%
 
 ---
 
 
-# Mediaverzameling streamen {#using}
+# Handleiding voor streaming-mediaservices {#using}
 
-+ [Handleiding voor het streamen van mediaverzameling](media-overview.md)
++ [Handleiding voor Adobe-streaming-mediaservices](media-overview.md)
 + Aanvullende informatie {#release-notes}
-   + [Opmerkingen bij de release Streaming Media Collection](additional-resources/release-notes.md)
+   + [Opmerkingen bij de release van streaming-mediaservices](additional-resources/release-notes.md)
 + Aan de slag {#getting-started}
    + [Vereisten](getting-started/prereqs.md)
    + [Ondersteunde apparaten](getting-started/supported-devices.md)
-   + [Implementatiedocumentatie voor streamingmedia-verzameling](getting-started/implementation-documentation.md)
+   + [Implementatiedocumentatie voor streaming-mediaservices](getting-started/implementation-documentation.md)
    + [SDK&#39;s, bibliotheken en extensies](getting-started/download-sdks.md)
    + Einde van ondersteuning {#end-of-support}
       + [Media Analytics Mobile SDK End of Support](additional-resources/end-of-support-faqs.md)
@@ -29,7 +29,7 @@ ht-degree: 5%
          + [Overzicht](legacy/sdk-to-launch/sdk-to-launch-migration.md)
          + [Android - Media SDK om te starten](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
          + [iOS - Media SDK om te starten](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
-         + [ JavaScript - Media SDK om  te lanceren](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
+         + [ JavaScript - Media SDK om ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md) te lanceren
 + Implementatie {#implementation}
    + [Overzicht van implementatie](implementation/overview.md)
    + Edge-implementaties (aanbevolen) {#edge-recommended}

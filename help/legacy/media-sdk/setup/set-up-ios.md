@@ -5,7 +5,7 @@ uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 exl-id: fe7662b5-1700-4bd6-b542-66aa8493459d
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '731'
 ht-degree: 3%
@@ -14,7 +14,7 @@ ht-degree: 3%
 
 # IOS instellen{#set-up-ios}
 
-Leer de verzameling Streaming Media voor iOS-apparaten in te stellen.
+Leer de streaming-mediaservices voor iOS-apparaten in te stellen.
 
 >[!IMPORTANT]
 >
@@ -25,11 +25,11 @@ Leer de verzameling Streaming Media voor iOS-apparaten in te stellen.
 * **verkrijg geldige configuratieparameters voor de Media SDK**
 Deze parameters kunt u verkrijgen van een Adobe-medewerker nadat u uw analyseaccount hebt ingesteld.
 * **voert ADBMobile voor iOS in uw toepassing uit**
-Voor meer informatie over de documentatie van Adobe Mobile SDK, zie [ iOS SDK 4.x voor de Oplossingen van Experience Cloud.](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html?lang=nl-NL)
+Voor meer informatie over de documentatie van Adobe Mobile SDK, zie [ iOS SDK 4.x voor de Oplossingen van Experience Cloud.](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html)
 
   >[!IMPORTANT]
   >
-  >Vanaf iOS 9 introduceerde Apple de functie App Transport Security (ATS). Deze functie is bedoeld om de netwerkbeveiliging te verbeteren door ervoor te zorgen dat uw apps alleen industriestandaard protocollen en ciphers gebruiken. Deze functie is standaard ingeschakeld, maar u hebt configuratieopties die u opties bieden voor het werken met ATS. Voor details op ATS, zie [ de Veiligheid van het Vervoer van de Toepassing.](https://experienceleague.adobe.com/docs/mobile-services/ios/config-ios/app-transport-security.html?lang=nl-NL)
+  >Vanaf iOS 9 introduceerde Apple de functie App Transport Security (ATS). Deze functie is bedoeld om de netwerkbeveiliging te verbeteren door ervoor te zorgen dat uw apps alleen industriestandaard protocollen en ciphers gebruiken. Deze functie is standaard ingeschakeld, maar u hebt configuratieopties die u opties bieden voor het werken met ATS. Voor details op ATS, zie [ de Veiligheid van het Vervoer van de Toepassing.](https://experienceleague.adobe.com/docs/mobile-services/ios/config-ios/app-transport-security.html)
 
 * **verstrek de volgende mogelijkheden in uw media speler:**
 
@@ -163,7 +163,7 @@ Raadpleeg de documentatie bij Oudere implementatie voor informatie over het migr
 
 ## Een native app voor tvOS configureren
 
-Met de release van de nieuwe Apple TV kunt u nu toepassingen maken die in de native tvOS-omgeving kunnen worden uitgevoerd. U kunt een puur eigen app maken met behulp van een van de verschillende frameworks die beschikbaar zijn in iOS, of u kunt uw app maken met XML-sjablonen en JavaScript. Vanaf MediaSDK versie 2.0 is ondersteuning voor tvOS beschikbaar. Voor meer informatie over tvOS, zie {de plaats van de Ontwikkelaar 0} tvOS.[&#128279;](https://developer.apple.com/tvos/)
+Met de release van de nieuwe Apple TV kunt u nu toepassingen maken die in de native tvOS-omgeving kunnen worden uitgevoerd. U kunt een puur eigen app maken met behulp van een van de verschillende frameworks die beschikbaar zijn in iOS, of u kunt uw app maken met XML-sjablonen en JavaScript. Vanaf MediaSDK versie 2.0 is ondersteuning voor tvOS beschikbaar. Voor meer informatie over tvOS, zie {de plaats van de Ontwikkelaar 0} tvOS.[](https://developer.apple.com/tvos/)
 
 Voer de volgende stappen in uw project Xcode uit. In deze handleiding wordt ervan uitgegaan dat uw project een doel heeft dat een Apple TV-app voor tvOS is:
 

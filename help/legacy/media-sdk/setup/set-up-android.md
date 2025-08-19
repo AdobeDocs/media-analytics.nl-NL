@@ -5,16 +5,16 @@ uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 exl-id: 261445bf-3c8b-4658-891d-9a878e0b26ea
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '417'
 ht-degree: 6%
 
 ---
 
 # Android instellen{#set-up-android}
 
-Leer hoe u de verzameling streamingmedia voor Android-apparaten instelt.
+Leer hoe u streaming-mediaservices instelt voor Android-apparaten.
 
 >[!IMPORTANT]
 >
@@ -26,7 +26,7 @@ Leer hoe u de verzameling streamingmedia voor Android-apparaten instelt.
 * **verkrijg geldige configuratieparameters voor de Media SDK**
 Deze parameters kunt u verkrijgen van een Adobe-medewerker nadat u uw analyseaccount hebt ingesteld.
 * **voert ADBMobile voor Android in uw toepassing uit**
-Voor meer informatie over de documentatie van Adobe Mobile SDK, zie [ Android SDK 4.x voor de Oplossingen van Experience Cloud.](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html?lang=nl-NL)
+Voor meer informatie over de documentatie van Adobe Mobile SDK, zie [ Android SDK 4.x voor de Oplossingen van Experience Cloud.](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html)
 
 * **verstrek de volgende mogelijkheden in uw media speler:**
    * *API om aan spelergebeurtenissen* in te tekenen - de Media SDK vereist dat u een reeks eenvoudige APIs roept wanneer de gebeurtenissen in uw speler voorkomen.

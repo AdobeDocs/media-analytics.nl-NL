@@ -5,9 +5,9 @@ uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '616'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ Nadat u de Media SDK voor uw video-app of -speler hebt gedownload, volgt u de in
 
 ## Algemene uitvoeringsrichtsnoeren {#general-implementation-guidelines}
 
-Er zijn drie belangrijke SDK-componenten die worden gebruikt voor het bijhouden van streaming media Collection:
+Er zijn drie belangrijke SDK-componenten die worden gebruikt voor het bijhouden van streaming-mediaservices:
 * Configuratie van mediageletterdheid - De `MediaHeartbeatConfig` bevat de basisinstellingen voor rapportage.
 * Media Heartmaatdelegatie - De `MediaHeartbeatDelegate` bestuurt de afspeeltijd en het QoS-object.
 * Mediahartslag - De `MediaHeartbeat` is de primaire bibliotheek met leden en methoden.
@@ -118,7 +118,7 @@ De volgende implementaties van de Analytics van media produceren twee soorten he
 * De vraag van de hartslag wordt verzonden naar de Media Analytics (hartslagen) volgende server, daar verwerkt, en tot de server van Adobe Analytics overgegaan.
 
 * **Adobe Analytics (AppMeasurement) server**
-Voor meer informatie over het volgen van serveropties, zie [ correct de variabelen trackingServer en trackingServerSecure bevolken.](https://helpx.adobe.com/nl/analytics/kb/determining-data-center.html)
+Voor meer informatie over het volgen van serveropties, zie [ correct de variabelen trackingServer en trackingServerSecure bevolken.](https://helpx.adobe.com/analytics/kb/determining-data-center.html)
 
   >[!IMPORTANT]
   >
@@ -126,7 +126,7 @@ Voor meer informatie over het volgen van serveropties, zie [ correct de variabel
 
   De analytics tracking-server moet eindigen in &quot;`.sc.omtrdc.net`&quot; of een CNAME zijn.
 
-* **&#x200B; Media Analytics (Heartbeats)-server**
+* ** Media Analytics (Heartbeats)-server**
 Dit heeft altijd het formaat &quot;`[your_namespace].hb.omtrdc.net`&quot;. De waarde van &quot;`[your_namespace]`&quot;specificeert uw bedrijf, en door Adobe verstrekt.
 
 Mediatracering werkt op alle platformen hetzelfde, zowel op het bureaublad als op mobiele apparaten. Audio bijhouden werkt momenteel op mobiele platforms. Voor alle volgende vraag zijn er een paar zeer belangrijke universele variabelen die moeten worden bevestigd:

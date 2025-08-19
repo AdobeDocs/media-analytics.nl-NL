@@ -1,11 +1,11 @@
 ---
-title: API voor streaming media-verzameling � aanvraagparameters
+title: API voor streaming Media Services � aanvraagparameters
 description: Wat zijn de de verzoekparameters van de Inzameling van Media, verzoeksleutels, en beschrijvingen.
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '1337'
 ht-degree: 4%
@@ -130,7 +130,7 @@ Geef de Experience Cloud Gebruiker - identiteitskaart (ook genoemd geworden `MID
 
 * **als u *niet* een `appInstallationId` waarde -** het achterste eind van MA niet meer MCID zal produceren, maar in plaats daarvan op Adobe Analytics zal vertrouwen om dit te doen. De aanbeveling van Adobe is om een MCID te verzenden als deze beschikbaar is, of een `appInstallationId` (samen met de nog steeds verplichte `marketingCloudOrgId` ), zodat de Media Collection-API de MCID genereert en deze op alle aanroepen verzendt.
 
-* **als u &#x200B;** `appInstallationId` waarde **&#x200B; overgaat MCID &#x200B;** kan worden geproduceerd door het achterste eind van MA, als u waarden voor `appInstallationId` en (vereiste) `marketingCloudOrgId` parameters overgaat. Als u `appInstallationId` zelf doorgeeft, moet u de waarde ervan aan de clientzijde behouden. De toepassing moet uniek zijn voor de toepassing op een apparaat en moet blijvend zijn zolang de toepassing niet opnieuw wordt geïnstalleerd.
+* **als u ** `appInstallationId` waarde** overgaat MCID ** kan worden geproduceerd door het achterste eind van MA, als u waarden voor `appInstallationId` en (vereiste) `marketingCloudOrgId` parameters overgaat. Als u `appInstallationId` zelf doorgeeft, moet u de waarde ervan aan de clientzijde behouden. De toepassing moet uniek zijn voor de toepassing op een apparaat en moet blijvend zijn zolang de toepassing niet opnieuw wordt geïnstalleerd.
 
 >[!NOTE]
 >
