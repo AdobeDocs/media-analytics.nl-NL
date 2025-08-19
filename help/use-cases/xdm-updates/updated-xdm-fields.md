@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Deze informatie is voorgenomen voor organisaties die de [ bron van Analytics schakelaar ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/analytics) gebruiken om het stromen media gegevens van Adobe Analytics in Adobe Experience Platform voor gebruik met Customer Journey Analytics te brengen rapporterend of een andere dienst van het Platform.
+>Deze informatie is voorgenomen voor organisaties die de [ bron van Analytics schakelaar ](https://experienceleague.adobe.com/nl/docs/experience-platform/sources/connectors/adobe-applications/analytics) gebruiken om het stromen media gegevens van Adobe Analytics in Adobe Experience Platform voor gebruik met Customer Journey Analytics te brengen rapporterend of een andere dienst van het Platform.
 >
 >De wijzigingen hebben geen invloed op Adobe Analytics als zelfstandige toepassing, zoals gegevensverzameling, -verwerking en -rapportage. Gereedschappen zoals Gegevensfeeds en Verwerkingsregels blijven ongewijzigd, zodat de implementatie van Analytics niet hoeft te worden bijgewerkt.
 

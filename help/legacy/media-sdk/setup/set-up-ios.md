@@ -25,11 +25,11 @@ Leer de streaming-mediaservices voor iOS-apparaten in te stellen.
 * **verkrijg geldige configuratieparameters voor de Media SDK**
 Deze parameters kunt u verkrijgen van een Adobe-medewerker nadat u uw analyseaccount hebt ingesteld.
 * **voert ADBMobile voor iOS in uw toepassing uit**
-Voor meer informatie over de documentatie van Adobe Mobile SDK, zie [ iOS SDK 4.x voor de Oplossingen van Experience Cloud.](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html)
+Voor meer informatie over de documentatie van Adobe Mobile SDK, zie [ iOS SDK 4.x voor de Oplossingen van Experience Cloud.](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html?lang=nl-NL)
 
   >[!IMPORTANT]
   >
-  >Vanaf iOS 9 introduceerde Apple de functie App Transport Security (ATS). Deze functie is bedoeld om de netwerkbeveiliging te verbeteren door ervoor te zorgen dat uw apps alleen industriestandaard protocollen en ciphers gebruiken. Deze functie is standaard ingeschakeld, maar u hebt configuratieopties die u opties bieden voor het werken met ATS. Voor details op ATS, zie [ de Veiligheid van het Vervoer van de Toepassing.](https://experienceleague.adobe.com/docs/mobile-services/ios/config-ios/app-transport-security.html)
+  >Vanaf iOS 9 introduceerde Apple de functie App Transport Security (ATS). Deze functie is bedoeld om de netwerkbeveiliging te verbeteren door ervoor te zorgen dat uw apps alleen industriestandaard protocollen en ciphers gebruiken. Deze functie is standaard ingeschakeld, maar u hebt configuratieopties die u opties bieden voor het werken met ATS. Voor details op ATS, zie [ de Veiligheid van het Vervoer van de Toepassing.](https://experienceleague.adobe.com/docs/mobile-services/ios/config-ios/app-transport-security.html?lang=nl-NL)
 
 * **verstrek de volgende mogelijkheden in uw media speler:**
 
