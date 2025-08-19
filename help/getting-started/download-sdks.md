@@ -22,7 +22,7 @@ Tags in Adobe Experience Platform zijn de volgende generatie mogelijkheden voor 
 >[!NOTE]
 >
 >Voor informatie over het downloaden van erfenis SDKs, zie [ verouderd-download SDKs ](/help/legacy/legacy-download-sdks.md).<br>
->>Voor belangrijke informatie over eind-van-steun, zie [ Einde van de Veelgestelde vragen van de Steun ](/help/additional-resources/end-of-support-faqs.md).
+>&#x200B;>Voor belangrijke informatie over eind-van-steun, zie [ Einde van de Veelgestelde vragen van de Steun ](/help/additional-resources/end-of-support-faqs.md).
 
 ## Media-SDK&#39;s en mobiele bibliotheken {#media-sdks-libraries}
 
@@ -39,9 +39,9 @@ Tags in Adobe Experience Platform zijn de volgende generatie mogelijkheden voor 
 | Ondersteund platform | Ondersteunde oplossingen | Implementatiemethode | Versie |  Documentatie   |  Voorbeelden  |
 |:---:|---|---|---|---|---|
 | ![ het pictogram van Android ](assets/android-icon.png)</br>**Android** | Adobe Analytics | Alleen analyse | Android - Media Extension | [ Mobiele documentatie van SDK ](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [ Adobe Analytics - Analytics van Media voor Audio en Videosteekproef ](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/mobile/android) |
-| ![ tvOS ](assets/ios-icon.png)<br>**het pictogram van iOS van 0} Apple** | Adobe Analytics | Alleen analyse | iOS / tvOS - Media Extension | [ Mobiele documentatie van SDK ](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [ Adobe Analytics - Analytics van Media voor Audio en Videosteekproef ](https://github.com/adobe/aepsdk-media-ios/tree/main/TestApp) |
+| ![ tvOS ](assets/ios-icon.png)<br>**het pictogram van iOS van 0&rbrace; Apple** | Adobe Analytics | Alleen analyse | iOS / tvOS - Media Extension | [ Mobiele documentatie van SDK ](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [ Adobe Analytics - Analytics van Media voor Audio en Videosteekproef ](https://github.com/adobe/aepsdk-media-ios/tree/main/TestApp) |
 | ![ het pictogram van Android ](assets/android-icon.png)</br>**Android** | <p>Adobe Analytics</p><p>Customer Journey Analytics</p><p>Adobe Journey Optimizer</p><p>Real-Time CDP</p> | Edge | ANDROID - EXPERIENCE PLATFORM EDGE | [ installeer de Media SDK gebruikend JavaScript ](/help/implementation/edge/implementation-edge.md) | |
-| ![ tvOS ](assets/ios-icon.png)<br>**het pictogram van iOS van 0} Apple** | <p>Adobe Analytics</p><p>Customer Journey Analytics</p><p>Adobe Journey Optimizer</p><p>Real-Time CDP</p> | Edge | iOS / tvOS - Experience Platform Edge | [ installeer de Media SDK gebruikend JavaScript ](/help/implementation/edge/implementation-edge.md) |  |
+| ![ tvOS ](assets/ios-icon.png)<br>**het pictogram van iOS van 0&rbrace; Apple** | <p>Adobe Analytics</p><p>Customer Journey Analytics</p><p>Adobe Journey Optimizer</p><p>Real-Time CDP</p> | Edge | iOS / tvOS - Experience Platform Edge | [ installeer de Media SDK gebruikend JavaScript ](/help/implementation/edge/implementation-edge.md) |  |
 
 ### Bovenste implementatie {#download-ott-libraries}
 

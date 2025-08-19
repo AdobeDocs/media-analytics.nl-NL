@@ -163,7 +163,7 @@ Raadpleeg de documentatie bij Oudere implementatie voor informatie over het migr
 
 ## Een native app voor tvOS configureren
 
-Met de release van de nieuwe Apple TV kunt u nu toepassingen maken die in de native tvOS-omgeving kunnen worden uitgevoerd. U kunt een puur eigen app maken met behulp van een van de verschillende frameworks die beschikbaar zijn in iOS, of u kunt uw app maken met XML-sjablonen en JavaScript. Vanaf MediaSDK versie 2.0 is ondersteuning voor tvOS beschikbaar. Voor meer informatie over tvOS, zie {de plaats van de Ontwikkelaar 0} tvOS.[](https://developer.apple.com/tvos/)
+Met de release van de nieuwe Apple TV kunt u nu toepassingen maken die in de native tvOS-omgeving kunnen worden uitgevoerd. U kunt een puur eigen app maken met behulp van een van de verschillende frameworks die beschikbaar zijn in iOS, of u kunt uw app maken met XML-sjablonen en JavaScript. Vanaf MediaSDK versie 2.0 is ondersteuning voor tvOS beschikbaar. Voor meer informatie over tvOS, zie {de plaats van de Ontwikkelaar 0} tvOS.[&#128279;](https://developer.apple.com/tvos/)
 
 Voer de volgende stappen in uw project Xcode uit. In deze handleiding wordt ervan uitgegaan dat uw project een doel heeft dat een Apple TV-app voor tvOS is:
 
