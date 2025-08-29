@@ -1,19 +1,19 @@
 ---
 product: adobe analytics
 audience: end-user
-user-guide-title: Handleiding voor streaming-mediaservices
-breadcrumb-title: Handleiding voor streaming-mediaservices
-user-guide-description: Implementeer streaming media-services. Bevat de Media-SDK en de Media Collection-API.
+user-guide-title: Handleiding voor Streaming Media-services
+breadcrumb-title: Handleiding voor Streaming Media-services
+user-guide-description: Implementeer Streaming Media-services. Bevat de Media-SDK en de Media Collection-API.
 sub-product: media analytics
 source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '926'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
 
-# Handleiding voor streaming-mediaservices {#using}
+# Handleiding voor Streaming Media-services {#using}
 
 + [Handleiding voor Adobe-streaming-mediaservices](media-overview.md)
 + Aanvullende informatie {#release-notes}
@@ -29,7 +29,7 @@ ht-degree: 3%
          + [Overzicht](legacy/sdk-to-launch/sdk-to-launch-migration.md)
          + [Android - Media SDK om te starten](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
          + [iOS - Media SDK om te starten](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
-         + [ JavaScript - Media SDK om  te lanceren](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
+         + [ JavaScript - Media SDK om ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md) te lanceren
 + Implementatie {#implementation}
    + [Overzicht van implementatie](implementation/overview.md)
    + Edge-implementaties (aanbevolen) {#edge-recommended}
