@@ -5,9 +5,9 @@ user-guide-title: Handleiding voor Streaming Media-services
 breadcrumb-title: Handleiding voor Streaming Media-services
 user-guide-description: Implementeer Streaming Media-services. Bevat de Media-SDK en de Media Collection-API.
 sub-product: media analytics
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+source-git-commit: efe4605d59be2629c931e3f0faca839ccb56c495
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '929'
 ht-degree: 5%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 5%
          + [Overzicht](legacy/sdk-to-launch/sdk-to-launch-migration.md)
          + [Android - Media SDK om te starten](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
          + [iOS - Media SDK om te starten](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
-         + [ JavaScript - Media SDK om  te lanceren](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
+         + [ JavaScript - Media SDK om ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md) te lanceren
 + Implementatie {#implementation}
    + [Overzicht van implementatie](implementation/overview.md)
    + Edge-implementaties (aanbevolen) {#edge-recommended}
@@ -99,6 +99,7 @@ ht-degree: 5%
       + [Uitvoering en verslaglegging](use-cases/player-state-tracking/implementation-and-reporting.md)
       + [Meerdere statussen van spelers bijhouden](use-cases/player-state-tracking/multiple-player-states.md)
       + [Voorbeelden van statussen van Player bijhouden](use-cases/player-state-tracking/player-state-examples.md)
+   + [Trackplanningsgegevens](/help/use-cases/track-schedule-data.md)
    + [Gedownloade inhoud bijhouden](use-cases/track-downloaded-content.md)
    + [Federale media](use-cases/federated-media.md)
    + [Toepassing onderbreekt tijdens afspelen](use-cases/cookbook/app-interrupts.md)
