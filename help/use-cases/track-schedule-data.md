@@ -140,7 +140,7 @@ Nadat u [ een dataset van het programma ](#create-a-program-schedule-dataset-in-
 
    1. Druk op het .json-bestand dat de gegevensrecords van het programma bevat met de batch-id.
 
-      Om planningsinformatie te duwen zou u de partij APIs van AEP moeten gebruiken, zoals die in [ wordt beschreven de opname API overzicht van de Partij ](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/overview).
+      Om planningsinformatie te duwen zou u de partij APIs van AEP moeten gebruiken, zoals die in [ wordt beschreven de opname API overzicht van de Partij ](https://experienceleague.adobe.com/nl/docs/experience-platform/ingestion/batch/overview).
 
       Bekijk het volgende voorbeeld van het gebruik van cURL om een bestand met de planningsrecords te duwen:
 
@@ -300,9 +300,9 @@ Het volgende voorbeeld is van een programma.json- dossier met twee verslagen. El
 
    Bekijk de volgende voorbeelden van afmetingen die u kunt maken en rapporteren in Customer Journey Analytics:
 
-   * **[&quot;_naam van de Aflevering_&quot;](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#episode)**: Deze dimensie kon u helpen leren welke episodes in een bepaalde reeks best presteren.
+   * **[&quot;_naam van de Aflevering_&quot;](https://experienceleague.adobe.com/nl/docs/media-analytics/using/implementation/variables/audio-video-parameters#episode)**: Deze dimensie kon u helpen leren welke episodes in een bepaalde reeks best presteren.
 
-   * **[identiteitskaart van Activa ](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#asset-id)**
+   * **[identiteitskaart van Activa ](https://experienceleague.adobe.com/nl/docs/media-analytics/using/implementation/variables/audio-video-parameters#asset-id)**
 
 1. Ga met [ verder analyseren gegevens in Customer Journey Analytics ](#analyze-data-in-customer-journey-analytics).
 
