@@ -17,7 +17,7 @@ Met de Attributie van de Stroom van Media, kunt u toepassingsacties met media vo
 
 ## Media-afmetingen buiten mediatracering
 
-U kunt mediumafmetingen toevoegen aan analytische aanroepen, zoals paginaweergaven en aangepaste koppelingen. Tijdens implementatie, moet u de gegevensparameters van de media context aan de het spoorvraag van Analytics toevoegen. Om de volledige lijst van beschikbare parameters van contextgegevens te bekijken die voor media worden gebruikt, zie [ Audio en videoparameters.](/help/implementation/variables/audio-video-parameters.md)
+U kunt mediumafmetingen toevoegen aan analytische aanroepen, zoals paginaweergaven en aangepaste koppelingen. Tijdens implementatie, moet u de gegevensparameters van de media context aan de het spoorvraag van Analytics toevoegen. Om de volledige lijst van beschikbare parameters van contextgegevens te bekijken die voor media worden gebruikt, zie [&#x200B; Audio en videoparameters.](/help/implementation/variables/audio-video-parameters.md)
 
 Om deze eigenschap voor een specifiek rapport toe te laten, re-enable de media volgende configuratie van de Admin console.
 

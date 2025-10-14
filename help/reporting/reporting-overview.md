@@ -20,7 +20,7 @@ Elke rapportsuite die mediametriek verzamelt, moet worden geconfigureerd voordat
 >
 >Om uit nieuwe mogelijkheden voordeel te halen, zouden de bestaande het stromen media klanten media het volgen voor hun RSIDs opnieuw moeten toelaten.
 
-1. In [ Adobe Analytics ](https://experience.adobe.com) klik **[!UICONTROL Admin > Report Suites].**
+1. In [&#x200B; Adobe Analytics &#x200B;](https://experience.adobe.com) klik **[!UICONTROL Admin > Report Suites].**
 1. Selecteer de rapportsuite(s) waar u mediagegevens verzamelt en klik op **[!UICONTROL Edit Settings > Media Management > Media Reporting].**
 
    ![](assets/media-reporting.png){width="400px"}
@@ -70,4 +70,4 @@ Elke rapportsuite die mediametriek verzamelt, moet worden geconfigureerd voordat
 
 >[!IMPORTANT]
 >
->Verander niet de classificatienamen voor om het even welke die variabelen in de Metriek en meta-gegevenslijsten (b.v., [ Audio en videoparameters ](/help/metrics-and-metadata/audio-video-parameters.md) worden vermeld) die daar onder het Melden/Gereserveerde Variabele als &quot;classificatie&quot;worden beschreven. De mediaclassificaties worden gedefinieerd wanneer een rapportsuite is ingeschakeld voor het bijhouden van media. Van tijd tot tijd, voegt Adobe nieuwe eigenschappen toe, en wanneer dit voorkomt, moeten de klanten hun rapportsuites opnieuw toelaten om toegang tot de nieuwe media eigenschappen te krijgen. Tijdens het updateproces bepaalt Adobe of de classificaties worden toegelaten door de namen van de variabelen te controleren. Als een van de ontbrekende elementen ontbreekt, voegt Adobe de ontbrekende opnieuw toe.
+>Verander niet de classificatienamen voor om het even welke die variabelen in de Metriek en meta-gegevenslijsten (b.v., [&#x200B; Audio en videoparameters &#x200B;](/help/metrics-and-metadata/audio-video-parameters.md) worden vermeld) die daar onder het Melden/Gereserveerde Variabele als &quot;classificatie&quot;worden beschreven. De mediaclassificaties worden gedefinieerd wanneer een rapportsuite is ingeschakeld voor het bijhouden van media. Van tijd tot tijd, voegt Adobe nieuwe eigenschappen toe, en wanneer dit voorkomt, moeten de klanten hun rapportsuites opnieuw toelaten om toegang tot de nieuwe media eigenschappen te krijgen. Tijdens het updateproces bepaalt Adobe of de classificaties worden toegelaten door de namen van de variabelen te controleren. Als een van de ontbrekende elementen ontbreekt, voegt Adobe de ontbrekende opnieuw toe.

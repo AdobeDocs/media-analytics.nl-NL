@@ -18,9 +18,9 @@ De volgende instructies bieden richtlijnen voor implementatie met behulp van de 
 
 >[!IMPORTANT]
 >
->Als u een 1.x versie van SDK uitvoert, kunt u 1.x de Gidsen van Ontwikkelaars hier downloaden: [ Download SDKs.](/help/getting-started/download-sdks.md)
+>Als u een 1.x versie van SDK uitvoert, kunt u 1.x de Gidsen van Ontwikkelaars hier downloaden: [&#x200B; Download SDKs.](/help/getting-started/download-sdks.md)
 
-Het afspelen van advertenties omvat het bijhouden en afbreken, het starten, voltooien en het overslaan van advertenties. Gebruik de API van de mediaspeler om toetsspelergebeurtenissen te identificeren en de vereiste en optionele advertentievariabelen te vullen. Zie de uitvoerige lijst van meta-gegevens hier: [ Advertentieparameters.](../../implementation/variables/ad-parameters.md)
+Het afspelen van advertenties omvat het bijhouden en afbreken, het starten, voltooien en het overslaan van advertenties. Gebruik de API van de mediaspeler om toetsspelergebeurtenissen te identificeren en de vereiste en optionele advertentievariabelen te vullen. Zie de uitvoerige lijst van meta-gegevens hier: [&#x200B; Advertentieparameters.](../../implementation/variables/ad-parameters.md)
 
 ## Gebeurtenissen van Player {#player-events}
 

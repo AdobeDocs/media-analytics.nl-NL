@@ -18,7 +18,7 @@ ht-degree: 0%
 
 In dit scenario vindt enige buffering plaats wanneer VOD-inhoud wordt afgespeeld.
 
-Tenzij gespecificeerd, zijn de netwerkvraag in dit scenario het zelfde als de vraag in de [ playback van VOD zonder advertenties ](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario.
+Tenzij gespecificeerd, zijn de netwerkvraag in dit scenario het zelfde als de vraag in de [&#x200B; playback van VOD zonder advertenties &#x200B;](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario.
 
 | Trigger   | Hartslagmethode   | Netwerkaanroepen   | Notities   |
 |---|---|---|---|

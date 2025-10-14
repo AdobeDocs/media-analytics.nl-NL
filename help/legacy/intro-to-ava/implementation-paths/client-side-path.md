@@ -18,4 +18,4 @@ Media Analytics (Heartbeats) is een gestandaardiseerde oplossing voor mediatrace
 
 Integraties aan de clientzijde worden alleen geïmplementeerd met Media Analytics. U kunt kiezen of u de Media SDK of de Media Collection API (of beide) wilt implementeren. Het pad naar de client-side kan worden gebruikt voor elke speler, inclusief client- en/of OVP-spelers zoals Brightcove, Ooyala, het Platform enzovoort.
 
-Als de Analytics van Media uw voorgenomen weg is, zie [ Media SDKs, Uitbreidingen gebruikend Markeringen, en OTT SDKs ](/help/getting-started/download-sdks.md) en [ de Inzameling API van Media krijgen.](/help/implementation/media-collection-api/mc-api-overview.md)
+Als de Analytics van Media uw voorgenomen weg is, zie [&#x200B; Media SDKs, Uitbreidingen gebruikend Markeringen, en OTT SDKs &#x200B;](/help/getting-started/download-sdks.md) en [&#x200B; de Inzameling API van Media krijgen.](/help/implementation/media-collection-api/mc-api-overview.md)

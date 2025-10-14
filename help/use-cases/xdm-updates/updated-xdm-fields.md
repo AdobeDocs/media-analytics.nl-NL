@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Deze informatie is voorgenomen voor organisaties die de [ bron van Analytics schakelaar ](https://experienceleague.adobe.com/nl/docs/experience-platform/sources/connectors/adobe-applications/analytics) gebruiken om het stromen media gegevens van Adobe Analytics in Adobe Experience Platform voor gebruik met Customer Journey Analytics te brengen rapporterend of een andere dienst van het Platform.
+>Deze informatie is voorgenomen voor organisaties die de [&#x200B; bron van Analytics schakelaar &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/sources/connectors/adobe-applications/analytics) gebruiken om het stromen media gegevens van Adobe Analytics in Adobe Experience Platform voor gebruik met Customer Journey Analytics te brengen rapporterend of een andere dienst van het Platform.
 >
 >De wijzigingen hebben geen invloed op Adobe Analytics als zelfstandige toepassing, zoals gegevensverzameling, -verwerking en -rapportage. Gereedschappen zoals Gegevensfeeds en Verwerkingsregels blijven ongewijzigd, zodat de implementatie van Analytics niet hoeft te worden bijgewerkt.
 
@@ -57,17 +57,17 @@ Er zijn twee manieren waarop CJA-rapporten kunnen worden gemigreerd:
 
 * **om historische gegevens** te behouden: De teams van Adobe hebben een vooraf bepaald malplaatje van Customer Journey Analytics ontwikkeld dat een reeks afgeleide gebieden introduceert die de oude en nieuwe gebieden XDM in één enkel gebied combineren. Deze sjabloon kan op verzoek per Customer Journey Analytics-verbinding worden ingeschakeld. Neem contact op met het Adobe-ondersteuningsteam om u te helpen bij het inschakelen van de nieuwe velden. Deze afgeleide gebieden tellen niet naar de afgeleide gebiedsgrens van uw organisatie.
 
-  Om een lijst van afbeeldingen te bekijken, zie [ de parameterafbeelding van Analytics van Media voor Adobe Experience Platform en Customer Journey Analytics ](/help/use-cases/xdm-updates/parameters-mapping.md).
+  Om een lijst van afbeeldingen te bekijken, zie [&#x200B; de parameterafbeelding van Analytics van Media voor Adobe Experience Platform en Customer Journey Analytics &#x200B;](/help/use-cases/xdm-updates/parameters-mapping.md).
 
-* **als het historische gegeven niet wordt vereist**: Het is voldoende om het Rapporterende Weg van het Gebied XDM bij het melden van tijd te gebruiken. Voor meer informatie, zie [ Customer Journey Analytics migreren om de nieuwe het stromen media gebieden ](/help/use-cases/xdm-updates/migrate-cja-setup.md) te gebruiken.
+* **als het historische gegeven niet wordt vereist**: Het is voldoende om het Rapporterende Weg van het Gebied XDM bij het melden van tijd te gebruiken. Voor meer informatie, zie [&#x200B; Customer Journey Analytics migreren om de nieuwe het stromen media gebieden &#x200B;](/help/use-cases/xdm-updates/migrate-cja-setup.md) te gebruiken.
 
 ### Real-Time CDP
 
-Alle soorten publiek en profielen moeten zijn gebaseerd op `mediaReporting` . Voor meer informatie, zie [ profielen aan de nieuwe het stromen media gebieden ](/help/use-cases/xdm-updates/migrate-profiles.md) migreren.
+Alle soorten publiek en profielen moeten zijn gebaseerd op `mediaReporting` . Voor meer informatie, zie [&#x200B; profielen aan de nieuwe het stromen media gebieden &#x200B;](/help/use-cases/xdm-updates/migrate-profiles.md) migreren.
 
 ### Gegevensstroom en gegevensverzameling
 
-Dynamische configuraties en gegevenstoewijzing moeten `mediaReporting` gebruiken. Voor meer informatie, zie [ Prep van Gegevens voor douanegebieden aan de nieuwe het stromen media gebieden ](/help/use-cases/xdm-updates/migrate-dataprep.md) migreren.
+Dynamische configuraties en gegevenstoewijzing moeten `mediaReporting` gebruiken. Voor meer informatie, zie [&#x200B; Prep van Gegevens voor douanegebieden aan de nieuwe het stromen media gebieden &#x200B;](/help/use-cases/xdm-updates/migrate-dataprep.md) migreren.
 
 ### Overige diensten die moeten worden gemigreerd
 

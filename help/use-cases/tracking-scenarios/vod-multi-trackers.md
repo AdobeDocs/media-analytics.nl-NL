@@ -18,9 +18,9 @@ ht-degree: 0%
 
 In dit scenario worden twee sessies parallel uitgevoerd voor twee afzonderlijke media en worden twee afzonderlijke instanties van `MediaHeartbeat` gebruikt.
 
-Dit scenario is identiek aan de [ playback van VOD zonder advertenties ](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario, behalve zijn er twee zittingen die parallel voor twee afzonderlijke media lopen. Voor elk van deze sessies wordt een aparte instantie van `MediaHeartbeat` gebruikt.
+Dit scenario is identiek aan de [&#x200B; playback van VOD zonder advertenties &#x200B;](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario, behalve zijn er twee zittingen die parallel voor twee afzonderlijke media lopen. Voor elk van deze sessies wordt een aparte instantie van `MediaHeartbeat` gebruikt.
 
-Tenzij gespecificeerd, zijn de netwerkvraag het zelfde als de [ playback van VOD zonder advertenties ](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario.
+Tenzij gespecificeerd, zijn de netwerkvraag het zelfde als de [&#x200B; playback van VOD zonder advertenties &#x200B;](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario.
 
 ## Parameters {#parameters}
 

@@ -17,7 +17,7 @@ De volgende instructies bieden richtlijnen voor implementatie voor alle 3.x SDK&
 
 >[!IMPORTANT]
 >
->Als u om het even welke vorige versies van SDK uitvoert, kunt u de Gidsen van Ontwikkelaars hier downloaden: [ Download SDKs.](/help/getting-started/download-sdks.md)
+>Als u om het even welke vorige versies van SDK uitvoert, kunt u de Gidsen van Ontwikkelaars hier downloaden: [&#x200B; Download SDKs.](/help/getting-started/download-sdks.md)
 
 ## Constanten voor bijhouden zoeken
 
@@ -44,4 +44,4 @@ De volgende instructies bieden richtlijnen voor implementatie voor alle 3.x SDK&
    };
    ```
 
-Zie het volgende scenario [ de playback van VOD met het zoeken in de belangrijkste inhoud ](/help/use-cases/tracking-scenarios/vod-seeking.md) voor meer informatie.
+Zie het volgende scenario [&#x200B; de playback van VOD met het zoeken in de belangrijkste inhoud &#x200B;](/help/use-cases/tracking-scenarios/vod-seeking.md) voor meer informatie.

@@ -30,8 +30,8 @@ Alle configuratieparameters en tracking-API&#39;s worden nu geconsolideerd in de
 
 **Verbindingen aan 1.x en 2.x steekproefspelers:**
 
-* [ 1.x de Speler van de Steekproef ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L58)
-* [ 2.x de Speler van de Steekproef ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/2.x/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L47)
+* [&#x200B; 1.x de Speler van de Steekproef &#x200B;](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L58)
+* [&#x200B; 2.x de Speler van de Steekproef &#x200B;](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/2.x/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L47)
 
 In de volgende secties vindt u codevergelijkingen tussen 1.x en 2.x, waaronder Initialisatie, Core Playback, Ad Playback, Chapter Playback en enkele andere gebeurtenissen.
 

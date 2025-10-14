@@ -28,7 +28,7 @@ U moet deze taken in de volgende volgorde voltooien en opnemen:
    1. Start van media-analyse (hartslagen)
    1. Media Analytics (heartbeats) Aanvraag voor Adobe Analytics Start aangevraagd
 
-   De eerste twee hierboven vraag bevat extra meta-gegevens en variabelen. Voor vraagparameters en meta-gegevens, zie [ de vraagdetails van de Test.](/help/legacy/validation/test-call-details.md#start-the-media-player)
+   De eerste twee hierboven vraag bevat extra meta-gegevens en variabelen. Voor vraagparameters en meta-gegevens, zie [&#x200B; de vraagdetails van de Test.](/help/legacy/validation/test-call-details.md#start-the-media-player)
 
    De derde vraag hierboven vertelt de server van de Analyse van Media dat de Media SDK verzocht om dat de vraag van het Begin van Adobe Analytics (`pev2=ms_s`) wordt verzonden naar de server van Adobe Analytics.
 
@@ -38,9 +38,9 @@ U moet deze taken in de volgende volgorde voltooien en opnemen:
 
    Tijdens het afspelen van inhoud verzendt de Media SDK om de tien seconden afspeelaanroepen (hartslagen) naar de Media Analytics-server.
 
-   Voor vraagparameters en meta-gegevens, zie [ de vraagdetails van de Test.](/help/legacy/validation/test-call-details.md#play-main-content)
+   Voor vraagparameters en meta-gegevens, zie [&#x200B; de vraagdetails van de Test.](/help/legacy/validation/test-call-details.md#play-main-content)
 
-   Zie ook het 0&rbrace; Spoor van uw platform Advertentie [ instructies voor extra informatie over deze vraag van Advertentie.](/help/use-cases/track-ads/track-ads-overview.md)
+   Zie ook het 0&rbrace; Spoor van uw platform Advertentie [&#x200B; instructies voor extra informatie over deze vraag van Advertentie.](/help/use-cases/track-ads/track-ads-overview.md)
 
 1. **Beweeg app of browser aan de achtergrond**
 
@@ -52,7 +52,7 @@ U moet deze taken in de volgende volgorde voltooien en opnemen:
 
 1. **media van de belangrijkste inhoud van het Spel voor minstens 5 minuten ononderbroken**
 
-   Voor vraagparameters en meta-gegevens, zie [ de Details van de Vraag van de Test.](/help/legacy/validation/test-call-details.md#play-main-content)
+   Voor vraagparameters en meta-gegevens, zie [&#x200B; de Details van de Vraag van de Test.](/help/legacy/validation/test-call-details.md#play-main-content)
 
 1. **Sluiten media speler**
 

@@ -159,6 +159,6 @@ De mogelijkheden voor het bijhouden van de spelerstatus kunnen worden gekoppeld 
 
 ## Verwante API&#39;s {#related_apis_section}
 
-* Android - [ createStateObject ](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/)
-* iOS - [ createStateObjectWithName ](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/)
-* Javascript - [ createStateObject ](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/APIReference.html)
+* Android - [&#x200B; createStateObject &#x200B;](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/)
+* iOS - [&#x200B; createStateObjectWithName &#x200B;](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/)
+* Javascript - [&#x200B; createStateObject &#x200B;](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/APIReference.html)

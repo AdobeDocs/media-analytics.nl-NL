@@ -18,4 +18,4 @@ Elke gebeurtenis kan worden versierd met de extra JSON-toets `qoeData` , die naa
 
 >[!NOTE]
 >
->U zou de [ JSON bevestigingsschema&#39;s ](mc-api-validate-reqs.md) moeten controleren om parametertypes te verifiëren en of zij verplicht of facultatief zijn.
+>U zou de [&#x200B; JSON bevestigingsschema&#39;s &#x200B;](mc-api-validate-reqs.md) moeten controleren om parametertypes te verifiëren en of zij verplicht of facultatief zijn.

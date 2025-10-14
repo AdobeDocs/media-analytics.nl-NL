@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # VOD afspelen met pre-roll-advertenties{#vod-playback-with-pre-roll-ads}
 
-In dit scenario zijn pre-roll-advertenties ingevoegd vóór de hoofdinhoud. Tenzij gespecificeerd, zijn de netwerkvraag het zelfde als de vraag in de [ playback van VOD zonder advertenties ](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario. De netwerkvraag gebeurt tezelfdertijd, maar de nuttige lading is verschillend.
+In dit scenario zijn pre-roll-advertenties ingevoegd vóór de hoofdinhoud. Tenzij gespecificeerd, zijn de netwerkvraag het zelfde als de vraag in de [&#x200B; playback van VOD zonder advertenties &#x200B;](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario. De netwerkvraag gebeurt tezelfdertijd, maar de nuttige lading is verschillend.
 
 | Trigger | Hartslagmethode | Netwerkaanroepen   | Notities   |
 | --- | --- | --- | --- |
-| De gebruiker klikt op [!UICONTROL Play] | `trackSessionStart` | Start inhoud analyse, Start inhoud hartslag | De metingsbibliotheek weet niet dat er een pre-rol advertentie is, zodat zijn deze netwerkvraag nog identiek aan de [ playback van VOD zonder advertenties ](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| De gebruiker klikt op [!UICONTROL Play] | `trackSessionStart` | Start inhoud analyse, Start inhoud hartslag | De metingsbibliotheek weet niet dat er een pre-rol advertentie is, zodat zijn deze netwerkvraag nog identiek aan de [&#x200B; playback van VOD zonder advertenties &#x200B;](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario. |
 | De advertentie begint. | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analyses en begin, hartslag en begin | |
 | Het frame van advertentie 1 wordt afgespeeld. | `trackPlay` | Hartslag en Afspelen | De inhoud van de advertentie wordt afgespeeld vóór de hoofdinhoud en de hartslagen beginnen bij het starten van de advertentie. |
 | De advertentie wordt afgespeeld. | | Hartbeats toevoegen | |
@@ -26,8 +26,8 @@ In dit scenario zijn pre-roll-advertenties ingevoegd vóór de hoofdinhoud. Tenz
 | Het eerste frame van advertentie 2 wordt afgespeeld. | `trackEvent:AdStart` | Analyses en begin, hartslag en begin | |
 | De advertentie speelt. | | Hartbeats toevoegen | |
 | Advertentie 2 voltooit het afspelen. | <ul> <li> `trackEvent:trackAdComplete` </li> <li> `trackEvent:AdBreakComplete` </li> </ul> | Hartslag en voltooid | Het einde van de advertentie en de pod is bereikt. |
-| De inhoud wordt afgespeeld. | | Content Heartbeats | Deze netwerkvraag is identiek aan de [ playback van VOD zonder advertenties ](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario. |
-| De inhoud is voltooid. | `trackComplete` | Hartslaginhoud voltooid | Deze netwerkvraag is identiek aan de [ playback van VOD zonder advertenties ](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| De inhoud wordt afgespeeld. | | Content Heartbeats | Deze netwerkvraag is identiek aan de [&#x200B; playback van VOD zonder advertenties &#x200B;](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| De inhoud is voltooid. | `trackComplete` | Hartslaginhoud voltooid | Deze netwerkvraag is identiek aan de [&#x200B; playback van VOD zonder advertenties &#x200B;](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario. |
 | De sessie is beëindigd | `trackSessionEnd` | | `SessionEnd` |
 
 ## Parameters {#parameters}

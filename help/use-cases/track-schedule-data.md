@@ -64,7 +64,7 @@ De functionaliteit voor het plannen van gegevens voor het stromen van Media werk
 
 Voor het uploaden van planningsgegevens van live-inhoud uit het verleden moet uw omgeving voor Streaming media aan de volgende voorwaarden voldoen:
 
-* Het stromen de Inzameling van Media moet voor het volgen op de inhoud worden toegelaten waarvoor u planningsgegevens wilt uploaden, zoals die in [ het Volgen overzicht ](/help/use-cases/track-av-playback/track-core-overview.md) worden beschreven. <!--specifics??? -->
+* Het stromen de Inzameling van Media moet voor het volgen op de inhoud worden toegelaten waarvoor u planningsgegevens wilt uploaden, zoals die in [&#x200B; het Volgen overzicht &#x200B;](/help/use-cases/track-av-playback/track-core-overview.md) worden beschreven. <!--specifics??? -->
 
 * Gebruik Streaming Media Collection met Customer Journey Analytics. De mogelijkheid om planningsgegevens te uploaden is niet beschikbaar bij Adobe Analytics.
 
@@ -74,19 +74,19 @@ Voordat u de planningsinformatie kunt doorlopen, moet u een gegevensset voor het
 
 1. Creeer een schema dat op de **Media wordt gebaseerd Analytics Geplande klasse van het Programma** XDM.
 
-   ![ het Schema van het Programma van het Programma van de Analyse van Media van het Programma ](assets/media_schedule_finish_schema_creation.png)
+   ![&#x200B; het Schema van het Programma van het Programma van de Analyse van Media van het Programma &#x200B;](assets/media_schedule_finish_schema_creation.png)
 
    Dit is de XDM definitie van de Media Analytics Gepland programmaklasse.
 
-   [ https://github.com/adobe/xdm/blob/master/components/fieldgroups/tv-schedule/media-analytics-scheduled-program.schema.json](https://github.com/adobe/xdm/blob/master/components/fieldgroups/tv-schedule/media-analytics-scheduled-program.schema.json)
+   [&#x200B; https://github.com/adobe/xdm/blob/master/components/fieldgroups/tv-schedule/media-analytics-scheduled-program.schema.json](https://github.com/adobe/xdm/blob/master/components/fieldgroups/tv-schedule/media-analytics-scheduled-program.schema.json)
 
 1. Creeer een dataset die op het schema wordt gebaseerd dat u creeerde.
 
-1. Ga met de volgende sectie, [ Push programmainformatie ](#push-schedule-information) verder.
+1. Ga met de volgende sectie, [&#x200B; Push programmainformatie &#x200B;](#push-schedule-information) verder.
 
 ## Informatie over pushschema
 
-Nadat u [ een dataset van het programma ](#create-a-program-schedule-dataset-in-aep) creeert, kunt u planningsinformatie duwen:
+Nadat u [&#x200B; een dataset van het programma &#x200B;](#create-a-program-schedule-dataset-in-aep) creeert, kunt u planningsinformatie duwen:
 
 1. Maak een .json-bestand met de planningsgegevens.
 
@@ -140,7 +140,7 @@ Nadat u [ een dataset van het programma ](#create-a-program-schedule-dataset-in-
 
    1. Druk op het .json-bestand dat de gegevensrecords van het programma bevat met de batch-id.
 
-      Om planningsinformatie te duwen zou u de partij APIs van AEP moeten gebruiken, zoals die in [ wordt beschreven de opname API overzicht van de Partij ](https://experienceleague.adobe.com/nl/docs/experience-platform/ingestion/batch/overview).
+      Om planningsinformatie te duwen zou u de partij APIs van AEP moeten gebruiken, zoals die in [&#x200B; wordt beschreven de opname API overzicht van de Partij &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/ingestion/batch/overview).
 
       Bekijk het volgende voorbeeld van het gebruik van cURL om een bestand met de planningsrecords te duwen:
 
@@ -167,7 +167,7 @@ Nadat u [ een dataset van het programma ](#create-a-program-schedule-dataset-in-
           -H 'Authorization: Bearer <OAUTH_TOKEN>'
       ```
 
-1. Ga met de volgende sectie verder, [ Logboek een steunkaartje met de Zorg van de Klant van Adobe ](#log-a-support-ticket-with-adobe-customer-care).
+1. Ga met de volgende sectie verder, [&#x200B; Logboek een steunkaartje met de Zorg van de Klant van Adobe &#x200B;](#log-a-support-ticket-with-adobe-customer-care).
 
 ## Een ondersteuningsticket aanmelden bij de klantenservice van Adobe
 
@@ -302,13 +302,13 @@ Het volgende voorbeeld is van een programma.json- dossier met twee verslagen. El
 
    * **[&quot;_naam van de Aflevering_&quot;](https://experienceleague.adobe.com/nl/docs/media-analytics/using/implementation/variables/audio-video-parameters#episode)**: Deze dimensie kon u helpen leren welke episodes in een bepaalde reeks best presteren.
 
-   * **[identiteitskaart van Activa ](https://experienceleague.adobe.com/nl/docs/media-analytics/using/implementation/variables/audio-video-parameters#asset-id)**
+   * **[identiteitskaart van Activa &#x200B;](https://experienceleague.adobe.com/nl/docs/media-analytics/using/implementation/variables/audio-video-parameters#asset-id)**
 
-1. Ga met [ verder analyseren gegevens in Customer Journey Analytics ](#analyze-data-in-customer-journey-analytics).
+1. Ga met [&#x200B; verder analyseren gegevens in Customer Journey Analytics &#x200B;](#analyze-data-in-customer-journey-analytics).
 
 ## Gegevens analyseren in Customer Journey Analytics
 
-Binnen één dag van het uploaden van uw gegevensdossier zoals die in [ wordt beschreven Verzoek en upload het dossier van planningsgegevens ](#request-and-upload-the-schedule-data-file), zijn uw gegevens klaar om in Customer Journey Analytics te rapporteren.
+Binnen één dag van het uploaden van uw gegevensdossier zoals die in [&#x200B; wordt beschreven Verzoek en upload het dossier van planningsgegevens &#x200B;](#request-and-upload-the-schedule-data-file), zijn uw gegevens klaar om in Customer Journey Analytics te rapporteren.
 
 Rapporten over uw oude live streaming mediagegevens in Customer Journey Analytics:
 
@@ -316,7 +316,7 @@ Rapporten over uw oude live streaming mediagegevens in Customer Journey Analytic
 
 1. Ontwerp het project door tabellen of visualisaties te maken die u nodig hebt voor het analyseren van uw eerdere live streaming mediagegevens.
 
-   Gebruik bij het uitbouwen van het project de informatie die u in het bestand met planningsgegevens hebt opgenomen en naar de klantenservice van Adobe hebt verzonden. Hieronder vallen de overeenkomende sleutel, afmetingen en eventuele aanvullende metagegevens. Voor meer informatie, zie [ Verzoek en upload het dossier van planningsgegevens ](#request-and-upload-the-schedule-data-file).
+   Gebruik bij het uitbouwen van het project de informatie die u in het bestand met planningsgegevens hebt opgenomen en naar de klantenservice van Adobe hebt verzonden. Hieronder vallen de overeenkomende sleutel, afmetingen en eventuele aanvullende metagegevens. Voor meer informatie, zie [&#x200B; Verzoek en upload het dossier van planningsgegevens &#x200B;](#request-and-upload-the-schedule-data-file).
 
 
 

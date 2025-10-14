@@ -14,7 +14,7 @@ ht-degree: 20%
 
 # iOS-metagegevenssleutels{#ios-metadata-keys}
 
-[ iOS API Verwijzing ](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/)
+[&#x200B; iOS API Verwijzing &#x200B;](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/)
 
 Van `ADBStandardMetadataKeys.h`:
 

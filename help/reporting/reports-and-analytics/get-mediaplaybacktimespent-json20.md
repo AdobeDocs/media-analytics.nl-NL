@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Met de API&#39;s van Analytics 2.0 worden JSON-rapportgegevens opgehaald voor tijd dat media worden afgespeeld{#get-media-playback-time-spent-json-report-data}
 
-U kunt media playbacktijd bestede rapportgegevens verkrijgen gebruikend [_*Analytics 2.0 APIs*_ ](https://www.adobe.io/apis/experiencecloud/analytics/docs.html).
+U kunt media playbacktijd bestede rapportgegevens verkrijgen gebruikend [_*Analytics 2.0 APIs*_ &#x200B;](https://www.adobe.io/apis/experiencecloud/analytics/docs.html).
 
 1. Filter de gegevens gebruikend om het even welk segment dat op UI wordt voortgebouwd. Maak een nieuw segment om te filteren op een specifieke inhoud-id.
 1. Stel de waarde `elements` -> `id` in de hoofdtekst van de aanvraag in op `metrics/playback_time_spent_seconds` of `metrics/playback_time_spent_minutes` , afhankelijk van het feit of u de uitvoer in seconden of minuten wilt uitvoeren.

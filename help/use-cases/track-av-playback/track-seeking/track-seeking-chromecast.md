@@ -18,7 +18,7 @@ De volgende instructies bieden richtlijnen voor implementatie voor alle 2.x SDK&
 
 >[!IMPORTANT]
 >
->Als u een 1.x versie van SDK uitvoert, kunt u de 1.x Gidsen van Ontwikkelaars hier downloaden: [ Download SDKs.](/help/getting-started/download-sdks.md)
+>Als u een 1.x versie van SDK uitvoert, kunt u de 1.x Gidsen van Ontwikkelaars hier downloaden: [&#x200B; Download SDKs.](/help/getting-started/download-sdks.md)
 
 ## Constanten voor bijhouden zoeken
 
@@ -29,16 +29,16 @@ De volgende instructies bieden richtlijnen voor implementatie voor alle 2.x SDK&
 
 ## Zoeken implementeren
 
-1. Luister naar de playback die gebeurtenissen van de media speler zoeken, en op zoek begin gebeurtenis bericht, spoor die de `SeekStart` gebeurtenis gebruiken: [ trackEvent ](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
+1. Luister naar de playback die gebeurtenissen van de media speler zoeken, en op zoek begin gebeurtenis bericht, spoor die de `SeekStart` gebeurtenis gebruiken: [&#x200B; trackEvent &#x200B;](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
 
    ```
    ADBMobile.media.trackEvent(ADBMobile.media.Event.SeekStart);
    ```
 
-1. Op zoek volledig bericht van de media speler, spoor het eind van het zoeken gebruikend de `SeekComplete` gebeurtenis: [ trackEvent ](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
+1. Op zoek volledig bericht van de media speler, spoor het eind van het zoeken gebruikend de `SeekComplete` gebeurtenis: [&#x200B; trackEvent &#x200B;](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
 
    ```
    ADBMobile.media.trackEvent(ADBMobile.media.Event.SeekComplete);
    ```
 
-Zie het volgende scenario [ de playback van VOD met het zoeken in de belangrijkste inhoud ](/help/use-cases/tracking-scenarios/vod-seeking.md) voor meer informatie.
+Zie het volgende scenario [&#x200B; de playback van VOD met het zoeken in de belangrijkste inhoud &#x200B;](/help/use-cases/tracking-scenarios/vod-seeking.md) voor meer informatie.

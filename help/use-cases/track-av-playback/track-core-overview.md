@@ -18,7 +18,7 @@ Deze documentatie behandelt het volgen in versie 2.x van de SDK.
 
 >[!IMPORTANT]
 >
->Als u een 1.x versie van SDK uitvoert, kunt u 1.x de Gidsen van Ontwikkelaars hier downloaden: [ Download SDKs.](/help/getting-started/download-sdks.md)
+>Als u een 1.x versie van SDK uitvoert, kunt u 1.x de Gidsen van Ontwikkelaars hier downloaden: [&#x200B; Download SDKs.](/help/getting-started/download-sdks.md)
 
 ## Player Events
 
@@ -109,7 +109,7 @@ Wijzigingen annuleren
 
      Instantiëren van een standaard metagegevensobject, vullen van de gewenste variabelen en stellen het metagegevensobject in op het Media Heartbone-object.
 
-     Zie de uitvoerige lijst van meta-gegevens hier: [ Audio en videoparameters.](../../implementation/variables/audio-video-parameters.md)
+     Zie de uitvoerige lijst van meta-gegevens hier: [&#x200B; Audio en videoparameters.](../../implementation/variables/audio-video-parameters.md)
 
    * **meta-gegevens van de Douane -** creeer een veranderlijk voorwerp voor de douanevariabelen en bevolk met de gegevens voor deze inhoud.
 
@@ -238,4 +238,4 @@ if (e.type == "buffered") {
 
 ## Valideren {#validate}
 
-Voor informatie bij het bevestigen van uw *erfenis* implementatie, zie [ Validering van de Oudheid.](/help/legacy/validation/validation-overview.md)
+Voor informatie bij het bevestigen van uw *erfenis* implementatie, zie [&#x200B; Validering van de Oudheid.](/help/legacy/validation/validation-overview.md)

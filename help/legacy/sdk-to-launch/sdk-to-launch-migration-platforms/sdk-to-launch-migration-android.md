@@ -14,7 +14,7 @@ ht-degree: 7%
 # Migreren van de standalone Media SDK naar Adobe Launch - Android
 
 >[!NOTE]
->Adobe Experience Platform Launch is omgedoopt tot een reeks technologieën voor gegevensverzameling in Experience Platform. Als gevolg hiervan zijn er verschillende terminologiewijzigingen in de productdocumentatie doorgevoerd. Raadpleeg het volgende [ document ](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=nl-NL) voor een geconsolideerde referentie van de terminologiewijzigingen.
+>Adobe Experience Platform Launch is omgedoopt tot een reeks technologieën voor gegevensverzameling in Experience Platform. Als gevolg hiervan zijn er verschillende terminologiewijzigingen in de productdocumentatie doorgevoerd. Raadpleeg het volgende [&#x200B; document &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=nl-NL) voor een geconsolideerde referentie van de terminologiewijzigingen.
 
 
 ## Configuratie
@@ -48,7 +48,7 @@ De uitbreiding van Media zal de gevormde parameters voor het volgen gebruiken.
 
 ![](assets/launch_config_mobile.png)
 
-[ Gebruikend Mobiele Uitbreidingen ](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)
+[&#x200B; Gebruikend Mobiele Uitbreidingen &#x200B;](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)
 
 ## Beheer maken
 
@@ -91,7 +91,7 @@ MediaHeartbeatDelegate delegate = new MediaHeartbeatDelegate() {
 
 ### Extensie starten
 
-[ Verwijzing van media API - creeer een Trekker van Media ](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createtracker)
+[&#x200B; Verwijzing van media API - creeer een Trekker van Media &#x200B;](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createtracker)
 
 Voordat u de Beheer maakt, moet u de media-extensie registreren en
 afhankelijke extensies met de mobiele kern.
@@ -145,13 +145,13 @@ De huidige afspeelkop van de speler moet in de implementatie worden bijgewerkt d
 `updateCurrentPlayhead` -methode die door de tracker beschikbaar wordt gemaakt. Voor nauwkeurige tracering
 u zou deze methode minstens eens per seconde moeten roepen.
 
-[ Bron van Media API - Update Huidige Speler ](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#updatecurrentplayhead)
+[&#x200B; Bron van Media API - Update Huidige Speler &#x200B;](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#updatecurrentplayhead)
 
 De implementatie moet de QoE-informatie bijwerken door de `updateQoEObject`
 door de verklikker aan het licht gebrachte methode. We verwachten dat deze methode altijd wordt gebruikt
 Dit is een wijziging in de kwaliteitswaarden.
 
-[ Media API verwijzing - het Voorwerp van QoE van de Update ](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createqoeobject)
+[&#x200B; Media API verwijzing - het Voorwerp van QoE van de Update &#x200B;](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createqoeobject)
 
 ## Standaardmedia/metagegevens doorgeven
 

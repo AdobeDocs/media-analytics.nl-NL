@@ -19,14 +19,14 @@ ht-degree: 2%
 * **verkrijg geldige configuratieparameters**
 Deze parameters kunt u verkrijgen van een Adobe-medewerker nadat u uw analyseaccount hebt ingesteld.
 * **voer `AppMeasurement` voor JavaScript in uw media toepassing** uit
-Voor meer informatie over de documentatie van Adobe Mobile SDK, zie [ het Uitvoeren Analytics die JavaScript gebruiken.](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=nl-NL)
+Voor meer informatie over de documentatie van Adobe Mobile SDK, zie [&#x200B; het Uitvoeren Analytics die JavaScript gebruiken.](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=nl-NL)
 
 * **verstrek de volgende mogelijkheden in uw media speler:**
 
    * *API om aan spelergebeurtenissen* in te tekenen - de Media SDK vereist dat u een reeks eenvoudige APIs roept wanneer de gebeurtenissen in uw speler voorkomen.
    * *API die spelerinformatie* verstrekt - Deze informatie omvat details zoals de media naam en de positie van het spelhoofd.
 
-1. Voeg uw [ gedownload ](/help/getting-started/download-sdks.md) bibliotheek aan uw project toe. Maak lokale verwijzingen naar de klassen voor het gemak.
+1. Voeg uw [&#x200B; gedownload &#x200B;](/help/getting-started/download-sdks.md) bibliotheek aan uw project toe. Maak lokale verwijzingen naar de klassen voor het gemak.
 
    1. Vouw het `MediaSDK-js-v2.*.zip` -bestand uit dat u hebt gedownload.
    1. Controleer of het bestand `MediaSDK.min.js` aanwezig is in de map `libs` :

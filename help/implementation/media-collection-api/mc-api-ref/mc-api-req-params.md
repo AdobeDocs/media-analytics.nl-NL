@@ -143,7 +143,7 @@ Geef de Experience Cloud Gebruiker - identiteitskaart (ook genoemd geworden `MID
 
 ### visitor.marketingCloudOrgId
 
-Naast noodzakelijk voor generatie MCID wanneer dat niet wordt verstrekt, wordt deze parameter ook gebruikt als waarde voor uitgevers identiteitskaart (die op wordt gebaseerd die de Analyse van Media [ aanpassing van de federatieregel uitvoert.](/help/use-cases/federated-media.md))
+Naast noodzakelijk voor generatie MCID wanneer dat niet wordt verstrekt, wordt deze parameter ook gebruikt als waarde voor uitgevers identiteitskaart (die op wordt gebaseerd die de Analyse van Media [&#x200B; aanpassing van de federatieregel uitvoert.](/help/use-cases/federated-media.md))
 
 ### Verouderde gebruikersnaam (hulp) en gedeclareerde gebruikers-id&#39;s (CustomerID&#39;s) voor analyse
 

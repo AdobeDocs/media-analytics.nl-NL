@@ -81,7 +81,7 @@ Geeft aan dat er een fout is opgetreden.
 
 Dit wordt gebruikt om de achtergrond van de Analyse van Media op de hoogte te brengen om de zitting onmiddellijk te sluiten wanneer de gebruiker hun het bekijken van de inhoud heeft verlaten en zij waarschijnlijk niet zullen terugkeren.
 
-Als a `sessionEnd` niet wordt verzonden, zal een verlaten zitting [ tijd-uit normaal ](../mc-api-impl/mc-api-timeout.md) (of nadat geen gebeurtenissen voor 10 minuten worden ontvangen, of wanneer geen playhead beweging voor 30 minuten voorkomt). Bovendien, zullen alle verdere Vraag van Media die met die Zitting ID wordt gemaakt worden gelaten vallen.
+Als a `sessionEnd` niet wordt verzonden, zal een verlaten zitting [&#x200B; tijd-uit normaal &#x200B;](../mc-api-impl/mc-api-timeout.md) (of nadat geen gebeurtenissen voor 10 minuten worden ontvangen, of wanneer geen playhead beweging voor 30 minuten voorkomt). Bovendien, zullen alle verdere Vraag van Media die met die Zitting ID wordt gemaakt worden gelaten vallen.
 
 ## sessionComplete
 
@@ -89,16 +89,16 @@ Verzonden wanneer het einde van de hoofdinhoud is bereikt
 
 >[!IMPORTANT]
 >
->U zou naar de [ JSON bevestigingsschema&#39;s ](mc-api-json-validation.md) voor elk gebeurtenistype moeten verwijzen, om de correcte types en de vereisten van de gebeurtenisparameter te verifiëren.
+>U zou naar de [&#x200B; JSON bevestigingsschema&#39;s &#x200B;](mc-api-json-validation.md) voor elk gebeurtenistype moeten verwijzen, om de correcte types en de vereisten van de gebeurtenisparameter te verifiëren.
 
 ## stateStart
 
 Geeft het begin van bijhouden van spelerstatus aan.
 
-Voor meer informatie, zie [ Implementatie en het melden ](/help/use-cases/player-state-tracking/implementation-and-reporting.md).
+Voor meer informatie, zie [&#x200B; Implementatie en het melden &#x200B;](/help/use-cases/player-state-tracking/implementation-and-reporting.md).
 
 ## stateEnd
 
 Geeft het einde van de status tracking van de speler aan.
 
-Voor meer informatie, zie [ Implementatie en het melden ](/help/use-cases/player-state-tracking/implementation-and-reporting.md).
+Voor meer informatie, zie [&#x200B; Implementatie en het melden &#x200B;](/help/use-cases/player-state-tracking/implementation-and-reporting.md).

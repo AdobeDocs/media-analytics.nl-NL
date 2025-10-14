@@ -16,6 +16,6 @@ ht-degree: 0%
 
 **`{uri}/api/v1/sessions/{sid}/events`**
 
-Gebruik het [ verzoek van Gebeurtenissen ](../mc-api-ref/mc-api-events-req.md) voor alle verdere volgende volgende het volgen vraag nadat u een identiteitskaart van de Zitting gebruikend het [ verzoek van Zitting verkrijgt.](../mc-api-ref/mc-api-sessions-req.md) Geef de locatie en het tijdstempel van de afspeelkop, het gebeurtenistype en eventuele optionele parameters op die u wilt opnemen in de JSON-hoofdtekst van de aanvraag.
+Gebruik het [&#x200B; verzoek van Gebeurtenissen &#x200B;](../mc-api-ref/mc-api-events-req.md) voor alle verdere volgende volgende het volgen vraag nadat u een identiteitskaart van de Zitting gebruikend het [&#x200B; verzoek van Zitting verkrijgt.](../mc-api-ref/mc-api-sessions-req.md) Geef de locatie en het tijdstempel van de afspeelkop, het gebeurtenistype en eventuele optionele parameters op die u wilt opnemen in de JSON-hoofdtekst van de aanvraag.
 
-Het JSON- verzoeklichaam voor het [ verzoek van Gebeurtenissen ](../mc-api-ref/mc-api-events-req.md) heeft de zelfde structuur zoals dat van het verzoek van Sessies, echter controleer de [ JSON bevestigingsschema&#39;s ](../mc-api-ref/mc-api-json-validation.md) voor parametervereisten en types.
+Het JSON- verzoeklichaam voor het [&#x200B; verzoek van Gebeurtenissen &#x200B;](../mc-api-ref/mc-api-events-req.md) heeft de zelfde structuur zoals dat van het verzoek van Sessies, echter controleer de [&#x200B; JSON bevestigingsschema&#39;s &#x200B;](../mc-api-ref/mc-api-json-validation.md) voor parametervereisten en types.

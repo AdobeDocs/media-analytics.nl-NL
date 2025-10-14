@@ -18,4 +18,4 @@ De terugweg van de Inzameling van Media van de Streaming bevestigt de verzoekpar
 
 `GET https://{uri}/api/v1/schemas/{event-type}`
 
-Voor meer informatie over het gebruiken van de JSON bevestigingsschema&#39;s, zie [ Validerend gebeurtenisverzoeken.](../mc-api-impl/mc-api-validate-reqs.md)
+Voor meer informatie over het gebruiken van de JSON bevestigingsschema&#39;s, zie [&#x200B; Validerend gebeurtenisverzoeken.](../mc-api-impl/mc-api-validate-reqs.md)

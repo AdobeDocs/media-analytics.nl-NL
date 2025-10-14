@@ -18,7 +18,7 @@ ht-degree: 1%
 
 ## URI-parameter
 
-`sid`: Sessieidentiteitskaart die van het verzoek van a [ Sessies ](mc-api-sessions-req.md) is teruggekeerd.
+`sid`: Sessieidentiteitskaart die van het verzoek van a [&#x200B; Sessies &#x200B;](mc-api-sessions-req.md) is teruggekeerd.
 
 ## Indieningsinstantie
 
@@ -71,7 +71,7 @@ Access-Control-Expose-Headers Location
 | HTTP-antwoordcode | Beschrijving | Client-actiepunten |
 |---|---|---|
 | **204** | **Geen inhoud.** <br/><br/> De hartslagvraag was succesvol. | N.v.t. |
-| **400** | **Onjuist Verzoek.** <br/><br/> Verzoek had onjuist formaat. | Controleer de [ JSON bevestigingsschema&#39;s ](mc-api-json-validation.md) voor het verzoektype. |
-| **404** | **niet gevonden.** <br/><br/> Sessie-id voor de mediasessie is niet gevonden in de back-end service. | De cliënttoepassing zou het [ verzoek van Sessies ](mc-api-sessions-req.md) API moeten gebruiken om een andere media zitting tot stand te brengen en het volgen op het te melden. |
-| **410** | **Gone.** <br/><br/> de media zitting werd gevonden in de achterste-einddienst maar de cliënt kan activiteit niet meer op het melden. | De cliënttoepassing zou het [ verzoek van Sessies ](mc-api-sessions-req.md) API moeten gebruiken om een andere media zitting tot stand te brengen en het volgen op het te melden. |
+| **400** | **Onjuist Verzoek.** <br/><br/> Verzoek had onjuist formaat. | Controleer de [&#x200B; JSON bevestigingsschema&#39;s &#x200B;](mc-api-json-validation.md) voor het verzoektype. |
+| **404** | **niet gevonden.** <br/><br/> Sessie-id voor de mediasessie is niet gevonden in de back-end service. | De cliënttoepassing zou het [&#x200B; verzoek van Sessies &#x200B;](mc-api-sessions-req.md) API moeten gebruiken om een andere media zitting tot stand te brengen en het volgen op het te melden. |
+| **410** | **Gone.** <br/><br/> de media zitting werd gevonden in de achterste-einddienst maar de cliënt kan activiteit niet meer op het melden. | De cliënttoepassing zou het [&#x200B; verzoek van Sessies &#x200B;](mc-api-sessions-req.md) API moeten gebruiken om een andere media zitting tot stand te brengen en het volgen op het te melden. |
 | **500** | **fout van de Server** | N.v.t. |

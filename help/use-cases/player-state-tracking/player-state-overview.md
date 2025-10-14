@@ -26,7 +26,7 @@ De Staat van de speler het Volgen levert de volgende voordelen op:
 * Hiermee wordt de tijd gemeten die in een aangepaste spelerstatus is doorgebracht
 * Meerdere staten die gelijktijdig kunnen worden gemeten
 
-![ de staat die van de Speler volgen ](assets/player_state_tracking.png)
+![&#x200B; de staat die van de Speler volgen &#x200B;](assets/player_state_tracking.png)
 
 ## Vereisten
 

@@ -18,18 +18,18 @@ Leer de streaming-mediaservices voor iOS-apparaten in te stellen.
 
 >[!IMPORTANT]
 >
->Met het einde van de ondersteuning voor versie 4 Mobile SDK&#39;s op 31 augustus 2021 beëindigt Adobe ook de ondersteuning voor Media Analytics SDK voor iOS en Android.  Voor extra informatie, zie [ Analytics SDK End-of-Support FAQs ](/help/additional-resources/end-of-support-faqs.md).
+>Met het einde van de ondersteuning voor versie 4 Mobile SDK&#39;s op 31 augustus 2021 beëindigt Adobe ook de ondersteuning voor Media Analytics SDK voor iOS en Android.  Voor extra informatie, zie [&#x200B; Analytics SDK End-of-Support FAQs &#x200B;](/help/additional-resources/end-of-support-faqs.md).
 
 ## Vereisten
 
 * **verkrijg geldige configuratieparameters voor de Media SDK**
 Deze parameters kunt u verkrijgen van een Adobe-medewerker nadat u uw analyseaccount hebt ingesteld.
 * **voert ADBMobile voor iOS in uw toepassing uit**
-Voor meer informatie over de documentatie van Adobe Mobile SDK, zie [ iOS SDK 4.x voor de Oplossingen van Experience Cloud.](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html?lang=nl-NL)
+Voor meer informatie over de documentatie van Adobe Mobile SDK, zie [&#x200B; iOS SDK 4.x voor de Oplossingen van Experience Cloud.](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html?lang=nl-NL)
 
   >[!IMPORTANT]
   >
-  >Vanaf iOS 9 introduceerde Apple de functie App Transport Security (ATS). Deze functie is bedoeld om de netwerkbeveiliging te verbeteren door ervoor te zorgen dat uw apps alleen industriestandaard protocollen en ciphers gebruiken. Deze functie is standaard ingeschakeld, maar u hebt configuratieopties die u opties bieden voor het werken met ATS. Voor details op ATS, zie [ de Veiligheid van het Vervoer van de Toepassing.](https://experienceleague.adobe.com/docs/mobile-services/ios/config-ios/app-transport-security.html?lang=nl-NL)
+  >Vanaf iOS 9 introduceerde Apple de functie App Transport Security (ATS). Deze functie is bedoeld om de netwerkbeveiliging te verbeteren door ervoor te zorgen dat uw apps alleen industriestandaard protocollen en ciphers gebruiken. Deze functie is standaard ingeschakeld, maar u hebt configuratieopties die u opties bieden voor het werken met ATS. Voor details op ATS, zie [&#x200B; de Veiligheid van het Vervoer van de Toepassing.](https://experienceleague.adobe.com/docs/mobile-services/ios/config-ios/app-transport-security.html?lang=nl-NL)
 
 * **verstrek de volgende mogelijkheden in uw media speler:**
 
@@ -49,7 +49,7 @@ Voor meer informatie over de documentatie van Adobe Mobile SDK, zie [ iOS SDK 4.
    * MediaSDK_TV.a > MediaSDKTV.xframework
 * Als u de Adobe XCFrameworks handmatig aan uw project toevoegt, moet u ervoor zorgen dat deze niet zijn ingesloten.
 
-1. Voeg uw [ gedownloade ](/help/getting-started/download-sdks.md) Media SDK aan uw project toe.
+1. Voeg uw [&#x200B; gedownloade &#x200B;](/help/getting-started/download-sdks.md) Media SDK aan uw project toe.
 
    1. Controleer of de volgende softwarecomponenten in de map `libs` staan:
 
@@ -70,7 +70,7 @@ Voor meer informatie over de documentatie van Adobe Mobile SDK, zie [ iOS SDK 4.
 
       1. Zorg ervoor dat het selectievakje **[!UICONTROL Copy Items if Needed]** is ingeschakeld, dat **[!UICONTROL Create Groups]** is geselecteerd en dat geen van de selectievakjes in **[!UICONTROL Add to Target]** is geselecteerd.
 
-      ![ kies Opties ](assets/choose-options_ios.png)
+      ![&#x200B; kies Opties &#x200B;](assets/choose-options_ios.png)
 
       1. Klik op **[!UICONTROL Finish]**.
       1. Selecteer in **[!UICONTROL Project Navigator]** uw app en selecteer uw doelen.

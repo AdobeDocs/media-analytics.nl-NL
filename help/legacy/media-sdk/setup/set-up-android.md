@@ -18,7 +18,7 @@ Leer hoe u streaming-mediaservices instelt voor Android-apparaten.
 
 >[!IMPORTANT]
 >
->Met het einde van de ondersteuning voor versie 4 Mobile SDK&#39;s op 31 augustus 2021 beëindigt Adobe ook de ondersteuning voor Media Analytics SDK voor iOS en Android.  Voor extra informatie, zie [ Analytics SDK End-of-Support FAQs ](/help/additional-resources/end-of-support-faqs.md).
+>Met het einde van de ondersteuning voor versie 4 Mobile SDK&#39;s op 31 augustus 2021 beëindigt Adobe ook de ondersteuning voor Media Analytics SDK voor iOS en Android.  Voor extra informatie, zie [&#x200B; Analytics SDK End-of-Support FAQs &#x200B;](/help/additional-resources/end-of-support-faqs.md).
 
 
 ## Vereisten
@@ -26,7 +26,7 @@ Leer hoe u streaming-mediaservices instelt voor Android-apparaten.
 * **verkrijg geldige configuratieparameters voor de Media SDK**
 Deze parameters kunt u verkrijgen van een Adobe-medewerker nadat u uw analyseaccount hebt ingesteld.
 * **voert ADBMobile voor Android in uw toepassing uit**
-Voor meer informatie over de documentatie van Adobe Mobile SDK, zie [ Android SDK 4.x voor de Oplossingen van Experience Cloud.](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html?lang=nl-NL)
+Voor meer informatie over de documentatie van Adobe Mobile SDK, zie [&#x200B; Android SDK 4.x voor de Oplossingen van Experience Cloud.](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html?lang=nl-NL)
 
 * **verstrek de volgende mogelijkheden in uw media speler:**
    * *API om aan spelergebeurtenissen* in te tekenen - de Media SDK vereist dat u een reeks eenvoudige APIs roept wanneer de gebeurtenissen in uw speler voorkomen.

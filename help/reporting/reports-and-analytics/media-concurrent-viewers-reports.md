@@ -18,7 +18,7 @@ Op het dashboard Medium Gelijktijdige viewers worden gedurende één dag gelijkt
 
 >[!TIP]
 >
-> Dit rapport is gebaseerd op gelijktijdige actieve mediasessies.  Om gezamenlijke kijkers door unieke bezoeker, met de extra mogelijkheden te zien om een segment toe te passen, onderbreking en vergelijk, gebruik het [ Gelijktijdige paneel van Kijkers van Media in Analysis Workspace ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html?lang=nl-NL).
+> Dit rapport is gebaseerd op gelijktijdige actieve mediasessies.  Om gezamenlijke kijkers door unieke bezoeker, met de extra mogelijkheden te zien om een segment toe te passen, onderbreking en vergelijk, gebruik het [&#x200B; Gelijktijdige paneel van Kijkers van Media in Analysis Workspace &#x200B;](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html?lang=nl-NL).
 >
 
 ![](assets/video-concurrent-viewers.png)

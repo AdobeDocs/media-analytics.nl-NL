@@ -18,9 +18,9 @@ ht-degree: 5%
 
 De volgende diagrammen illustreren de tijdlijn van de afspeelkop en de bijbehorende tijdlijn van de handelingen van een gebruiker. De bijzonderheden van elke actie en de bijbehorende verzoeken worden hieronder weergegeven.
 
-![ API inhoud ](assets/va_api_content_3.png)
+![&#x200B; API inhoud &#x200B;](assets/va_api_content_3.png)
 
-![ API acties ](assets/va_api_actions_3.png)
+![&#x200B; API acties &#x200B;](assets/va_api_actions_3.png)
 
 ## Handelingsdetails
 
@@ -30,7 +30,7 @@ De volgende diagrammen illustreren de tijdlijn van de afspeelkop en de bijbehore
 | --- | :---: | :---: | --- |
 | De knop Automatisch afspelen of Afspelen is ingedrukt, de video wordt geladen. | 0 | 0 | `/api/v1/sessions` |
 
-Deze vraag signaleert _de intentie van de gebruiker om_ een video te spelen. Er wordt een sessie-id ( `{sid}` ) geretourneerd aan de client die wordt gebruikt om alle volgende opvolgende opvolgende aanroepen binnen de sessie te identificeren. De spelerstatus wordt nog niet afgespeeld, maar &#39;gestart&#39;.  [ Verplichte zittingsparameters ](../mc-api-ref/mc-api-sessions-req.md) moeten in de `params` kaart in het verzoeklichaam worden omvat.  Op de achtergrond, produceert deze vraag Adobe Analytics in werking stelt vraag in werking.
+Deze vraag signaleert _de intentie van de gebruiker om_ een video te spelen. Er wordt een sessie-id ( `{sid}` ) geretourneerd aan de client die wordt gebruikt om alle volgende opvolgende opvolgende aanroepen binnen de sessie te identificeren. De spelerstatus wordt nog niet afgespeeld, maar &#39;gestart&#39;.  [&#x200B; Verplichte zittingsparameters &#x200B;](../mc-api-ref/mc-api-sessions-req.md) moeten in de `params` kaart in het verzoeklichaam worden omvat.  Op de achtergrond, produceert deze vraag Adobe Analytics in werking stelt vraag in werking.
 
 ```json
 {

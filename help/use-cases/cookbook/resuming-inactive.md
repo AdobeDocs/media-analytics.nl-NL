@@ -23,7 +23,7 @@ De Media SDK houdt automatisch bij hoe lang het afspelen van media zich in een v
 * Gestopt
 * Bufferen
 
-Als een sessie voor het bijhouden van media langer dan 30 minuten in een niet-actieve status blijft, wordt de sessie automatisch gesloten. Als de gebruiker na een eerder inactieve video het volgen zitting (`trackPlay`) hervat, leidt de Hartslag van Media automatisch tot een nieuwe videozitting gebruikend de eerder gebruikte videoinformatie en meta-gegevens, en verzendt een summehartgebeurtenis. Voor meer informatie, zie [ Audio en videoparameters.](/help/implementation/variables/audio-video-parameters.md)
+Als een sessie voor het bijhouden van media langer dan 30 minuten in een niet-actieve status blijft, wordt de sessie automatisch gesloten. Als de gebruiker na een eerder inactieve video het volgen zitting (`trackPlay`) hervat, leidt de Hartslag van Media automatisch tot een nieuwe videozitting gebruikend de eerder gebruikte videoinformatie en meta-gegevens, en verzendt een summehartgebeurtenis. Voor meer informatie, zie [&#x200B; Audio en videoparameters.](/help/implementation/variables/audio-video-parameters.md)
 
 
 ## Eerder gesloten sessie handmatig hervatten

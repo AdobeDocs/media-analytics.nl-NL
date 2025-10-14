@@ -27,7 +27,7 @@ Primetime elimineert de ingewikkeldheid van het bereiken van, het monetiseren va
 * Integrated support for Nielsen DTVR (linear) with ID3 metadata and DCR with CMS metadata.
 -->
 
-TVSDK is al geïntegreerd met de Media SDK, waardoor de implementatie op elk ondersteund platform veel eenvoudiger en sneller verloopt. <!--Primetime also supports the partnership with Nielsen.--> aan hefboomwerking Primetime, volg de zelfde richtlijnen en de eerste vereisten die in [ worden gevonden client-kant ](/help/legacy/intro-to-ava/implementation-paths/client-side-path.md) samen met de volgende documenten voor uw platform(s): [ Gids van de Gebruiker Primetime.](https://helpx.adobe.com/nl/primetime/user-guide.html)
+TVSDK is al geïntegreerd met de Media SDK, waardoor de implementatie op elk ondersteund platform veel eenvoudiger en sneller verloopt. <!--Primetime also supports the partnership with Nielsen.--> aan hefboomwerking Primetime, volg de zelfde richtlijnen en de eerste vereisten die in [&#x200B; worden gevonden client-kant &#x200B;](/help/legacy/intro-to-ava/implementation-paths/client-side-path.md) samen met de volgende documenten voor uw platform(s): [&#x200B; Gids van de Gebruiker Primetime.](https://helpx.adobe.com/nl/primetime/user-guide.html)
 
 >[!NOTE]
 >

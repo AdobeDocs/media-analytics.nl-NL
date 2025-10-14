@@ -26,7 +26,7 @@ In deze sectie worden de voorwaarden beschreven voor het instellen van een Chrom
    * *API om aan spelergebeurtenissen* in te tekenen - de Media SDK vereist dat u een reeks eenvoudige APIs roept wanneer de gebeurtenissen in uw speler voorkomen.
    * *API die spelerinformatie* verstrekt - Deze informatie omvat details zoals de media naam en de positie van het spelhoofd.
 
-Adobe Mobile-services bieden een nieuwe gebruikersinterface waarin mobiele marketingmogelijkheden voor mobiele toepassingen uit de hele Adobe Marketing Cloud worden samengebracht. Aanvankelijk biedt de Mobile-service een naadloze integratie van analysemogelijkheden voor apps en doelgerichte functionaliteit voor de Adobe Analytics- en Adobe Target-oplossingen. Leer meer bij [ de Mobiele documentatie van de Diensten van Adobe.](https://experienceleague.adobe.com/docs/mobile-services/using/home.html?lang=nl-NL)
+Adobe Mobile-services bieden een nieuwe gebruikersinterface waarin mobiele marketingmogelijkheden voor mobiele toepassingen uit de hele Adobe Marketing Cloud worden samengebracht. Aanvankelijk biedt de Mobile-service een naadloze integratie van analysemogelijkheden voor apps en doelgerichte functionaliteit voor de Adobe Analytics- en Adobe Target-oplossingen. Leer meer bij [&#x200B; de Mobiele documentatie van de Diensten van Adobe.](https://experienceleague.adobe.com/docs/mobile-services/using/home.html?lang=nl-NL)
 
 Met de Adobe Mobile Library for Chromecast v3.x for Experience Cloud Solutions kunt u Chromecast-toepassingen die in JavaScript zijn geschreven, meten, publieksgegevens verzamelen en benutten via publieksbeheer en de betrokkenheid van video meten.
 

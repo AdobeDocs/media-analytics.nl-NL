@@ -23,7 +23,7 @@ ht-degree: 3%
 ## Implementatie
 
 1. Een woordenboek maken van standaardwaardeparen voor metagegevens met de `ADBStandardMetadataKeys`
-   [ de meta-gegevenssleutels van IOS ](/help/use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
+   [&#x200B; de meta-gegevenssleutels van IOS &#x200B;](/help/use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
 
 1. Stel het standaardmetagegevenswoordenboek voor een `MediaInfo` `ADBMediaObject` -instantie in met de standaardmetagegevensconstante voor metagegevens.
 

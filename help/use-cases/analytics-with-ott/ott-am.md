@@ -14,4 +14,4 @@ ht-degree: 0%
 
 # OTT en Audience Manager{#ott-and-audience-manager}
 
-Voor details bij het integreren van OTT apps met Audience Manager, zie [ toe:laten Audience Manager.](/help/legacy/intro-to-ava/am-enablement.md)
+Voor details bij het integreren van OTT apps met Audience Manager, zie [&#x200B; toe:laten Audience Manager.](/help/legacy/intro-to-ava/am-enablement.md)
