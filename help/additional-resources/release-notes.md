@@ -21,7 +21,7 @@ Voor informatie over nieuwe eigenschappen, moeilijke situaties, en belangrijke i
 
 * [&#x200B; de versienota&#39;s van Adobe Analytics &#x200B;](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=nl-NL)
 * [&#x200B; de versienota&#39;s van Customer Journey Analytics &#x200B;](https://experienceleague.adobe.com/docs/analytics-platform/using/releases/latest.html?lang=nl-NL)
-* De recentste versie werkt voor [&#x200B; producten van Adobe Experience Cloud &#x200B;](https://business.adobe.com/products/adobe-experience-cloud-products.html) bij
+* De recentste versie werkt voor [&#x200B; producten van Adobe Experience Cloud &#x200B;](https://business.adobe.com/nl/products/adobe-experience-cloud-products.html) bij
 
 * [Adobe Analytics-tutorials](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=nl-NL)
 

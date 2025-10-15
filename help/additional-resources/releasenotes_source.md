@@ -10,7 +10,7 @@ ht-degree: 13%
 De volgende inhoud is gekopieerd uit de opmerkingen bij de release van Experience Cloud. Deze wordt verplaatst naar de nieuwe gratis opmerkingen van streaming-mediaservices.
 
 
-Leer over de recentste versie voor [&#x200B; producten van Adobe Experience Cloud &#x200B;](https://business.adobe.com/products/adobe-experience-cloud-products.html) bijwerkt. Kies voor de nieuwste zelfHelp-documentatie, zelfstudies en cursussen op Experience League.
+Leer over de recentste versie voor [&#x200B; producten van Adobe Experience Cloud &#x200B;](https://business.adobe.com/nl/products/adobe-experience-cloud-products.html) bijwerkt. Kies voor de nieuwste zelfHelp-documentatie, zelfstudies en cursussen op Experience League.
 
 Leer over de recentste versie voor [&#x200B; Adobe Analytics &#x200B;](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=nl-NL) bijwerkt. Kies voor de nieuwste zelfHelp-documentatie, zelfstudies en cursussen op Experience League.
 
