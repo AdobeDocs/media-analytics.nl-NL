@@ -29,7 +29,7 @@ ht-degree: 5%
          + [Overzicht](legacy/sdk-to-launch/sdk-to-launch-migration.md)
          + [Android - Media SDK om te starten](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
          + [iOS - Media SDK om te starten](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
-         + [&#x200B; JavaScript - Media SDK om  te lanceren](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
+         + [ JavaScript - Media SDK om ](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md) te lanceren
 + Implementatie {#implementation}
    + [Overzicht van implementatie](implementation/overview.md)
    + Edge-implementaties (aanbevolen) {#edge-recommended}
@@ -84,13 +84,13 @@ ht-degree: 5%
    + [Mediasegmenten](reporting/segments.md)
    + Standaardrapporten voor media {#media-default-reports}
       + [Overzicht van standaardrapporten](reporting/reports-and-analytics/default-reports-overview.md)
-      + [&#x200B; Overzicht van Media &#x200B;](reporting/reports-and-analytics/media-reports-overview.md)
-      + [&#x200B; detail van Media &#x200B;](reporting/reports-and-analytics/media-reports-detail.md)
-      + [&#x200B; Rapport van Media daypart &#x200B;](reporting/reports-and-analytics/media-reports-daypart.md)
+      + [ Overzicht van Media ](reporting/reports-and-analytics/media-reports-overview.md)
+      + [ detail van Media ](reporting/reports-and-analytics/media-reports-detail.md)
+      + [ Rapport van Media daypart ](reporting/reports-and-analytics/media-reports-daypart.md)
       + [Rapport voor gelijktijdige viewers voor media](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
    + Media-API {#media-api}
       + [Gelijktijdige viewergegevens ophalen](reporting/reports-and-analytics/get-concurrent-json20.md)
-      + [&#x200B; krijgt de Gegevens van de Tijd van de Playback van Media van de Tijd bestede &#x200B;](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
+      + [ krijgt de Gegevens van de Tijd van de Playback van Media van de Tijd bestede ](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
 + Gebruiksscenario’s {#media-use-cases}
    + [Gebruiksscenario&#39;s voor Media SDK](use-cases/cookbook/sdk-cookbook-overview.md)
    + Player State Tracking {#player-state-tracking}
