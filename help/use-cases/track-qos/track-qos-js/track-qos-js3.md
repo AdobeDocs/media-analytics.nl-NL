@@ -17,7 +17,7 @@ De volgende instructies bieden richtlijnen voor implementatie voor alle 2.x SDK&
 
 >[!IMPORTANT]
 >
->Als u om het even welke vorige versies van SDK uitvoert, kunt u de Gidsen van Ontwikkelaars hier downloaden: [ Download SDKs.](/help/getting-started/download-sdks.md)
+>Als u om het even welke vorige versies van SDK uitvoert, kunt u de Gidsen van Ontwikkelaars hier downloaden: [&#x200B; Download SDKs.](/help/getting-started/download-sdks.md)
 
 ## QOE implementeren
 
@@ -65,7 +65,7 @@ De volgende instructies bieden richtlijnen voor implementatie voor alle 2.x SDK&
    >Werk het object QoE bij en roep de gebeurtenis bitsnelheidwijziging aan bij elke wijziging in de bitsnelheid. Dit verstrekt de nauwkeurigste gegevens QoE.
 
 1. Roep de methode `updateQoEObject()` aan om de meest bijgewerkte QoE-gegevens aan de SDK te verstrekken.
-1. Wanneer de mediaspeler een fout aantreft en de foutgebeurtenis beschikbaar is voor de speler-API, gebruikt u `trackError()` om de foutinformatie vast te leggen. (Zie [ Overzicht ](/help/use-cases/track-errors/track-errors-overview.md).)
+1. Wanneer de mediaspeler een fout aantreft en de foutgebeurtenis beschikbaar is voor de speler-API, gebruikt u `trackError()` om de foutinformatie vast te leggen. (Zie [&#x200B; Overzicht &#x200B;](/help/use-cases/track-errors/track-errors-overview.md).)
 
    >[!TIP]
    >
