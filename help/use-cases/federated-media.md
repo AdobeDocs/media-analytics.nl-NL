@@ -52,13 +52,13 @@ Met Federale media worden audio- en videometingen efficiënter, gestroomlijnder 
 * **Contract voor mediastreams:** ontvanger en afzender moeten een contract voor Adobe Analytics voor Media Streams hebben voordat ze toegang krijgen tot audio- en videodata in Adobe Analytics. Neem contact op met uw accountteam voor meer informatie.
 * **Federated addendum:** zowel afzender als ontvanger moet beschikken over een ondertekend addendum bij Adobe voordat data worden verzonden of ontvangen. Eén addendum per klant is vereist, niet één addendum per partnerschap. Neem contact op met uw accountteam voor meer informatie.
 
-* **het stromen de Implementatie van de Inzameling van Media:** De afzender moet de stromen media diensten hebben die op alle spelers worden uitgevoerd die deel van de gefedereerde gegevensreeks zullen uitmaken. Alleen streaming-mediagegevens zijn beschikbaar voor federatie. Voor meer informatie, zie [ het stromen van Adobe media diensten overzicht ](/help/media-overview.md).
+* **het stromen de Implementatie van de Inzameling van Media:** De afzender moet de stromen media diensten hebben die op alle spelers worden uitgevoerd die deel van de gefedereerde gegevensreeks zullen uitmaken. Alleen streaming-mediagegevens zijn beschikbaar voor federatie. Voor meer informatie, zie [&#x200B; het stromen van Adobe media diensten overzicht &#x200B;](/help/media-overview.md).
 
 * **Adobe Consulting-contract:** voor de eerste instelling van gefedereerde regels tussen ontvanger en afzender is het waardevol om met adviesdiensten te werken voor het beoordelen van data en een datasharingovereenkomst te maken.
 
 ## Het Federale mediaformulier downloaden
 
-Om aan Federatieve Media deel te nemen, download en voltooi de [ vorm van de Overeenkomst van de Regels van de Federatie ](assets/federated_analytics_form.pdf).
+Om aan Federatieve Media deel te nemen, download en voltooi de [&#x200B; vorm van de Overeenkomst van de Regels van de Federatie &#x200B;](assets/federated_analytics_form.pdf).
 
 ## Proces {#process}
 

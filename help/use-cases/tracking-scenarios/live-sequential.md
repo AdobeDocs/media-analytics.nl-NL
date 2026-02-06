@@ -18,13 +18,13 @@ ht-degree: 1%
 
 In dit scenario is er één actief dat gedurende 40 seconden geen advertenties bevat nadat de live stream is samengevoegd.
 
-Dit is het zelfde scenario zoals de [ playback van VOD zonder advertenties ](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario, maar een deel van de inhoud wordt geschaad door en een vraag wordt voltooid van één punt in belangrijkste inhoud aan een ander punt.
+Dit is het zelfde scenario zoals de [&#x200B; playback van VOD zonder advertenties &#x200B;](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario, maar een deel van de inhoud wordt geschaad door en een vraag wordt voltooid van één punt in belangrijkste inhoud aan een ander punt.
 
 | Trigger | Hartslagmethode |  Netwerkaanroepen  |  Notities   |
 | --- | --- | --- | --- |
-| Gebruiker klikt [!UICONTROL Play] | trackSessionStart | Start inhoud analyse, Start inhoud hartslag | De metingsbibliotheek is zich niet bewust dat er een pre-rol advertentie is, zodat zijn deze netwerkvraag identiek aan de [ playback van VOD zonder advertenties ](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| Gebruiker klikt [!UICONTROL Play] | trackSessionStart | Start inhoud analyse, Start inhoud hartslag | De metingsbibliotheek is zich niet bewust dat er een pre-rol advertentie is, zodat zijn deze netwerkvraag identiek aan de [&#x200B; playback van VOD zonder advertenties &#x200B;](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario. |
 | Het eerste frame van de inhoud wordt afgespeeld. | trackPlay | Hartslaginhoud afspelen | Wanneer de hoofdstukinhoud vóór hoofdinhoud wordt afgespeeld, begint de hartslag wanneer het hoofdstuk begint. |
-| Inhoud afspelen | | Content Heartbeats | Deze netwerkvraag is precies het zelfde als de [ playback van VOD zonder advertenties ](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| Inhoud afspelen | | Content Heartbeats | Deze netwerkvraag is precies het zelfde als de [&#x200B; playback van VOD zonder advertenties &#x200B;](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario. |
 | Session1 Boven (Aflevering1 beëindigd) | trackComplete / trackSessionEnd | Hartslaginhoud voltooid | Complete betekent dat session1 voor de eerste aflevering is bereikt en volledig is gecontroleerd. Deze sessie moet worden beëindigd voordat de sessie voor de volgende aflevering wordt gestart. |
 | Episode2 begonnen (Sessie2 start) | trackSessionStart | Begin hartslaginhoud voor analyse inhoud | De reden hiervoor is dat de gebruiker de eerste aflevering heeft bekeken en verder heeft gekeken naar een andere aflevering |
 | Eerste frame van media | trackPlay | Hartslaginhoud afspelen | Deze methode activeert de timer en vanaf dit punt worden hartslagen elke 10 seconden verzonden zolang het afspelen wordt voortgezet. |

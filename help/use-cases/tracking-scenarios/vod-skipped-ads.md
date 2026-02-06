@@ -20,22 +20,22 @@ Dit scenario bestaat uit het afspelen van VOD-inhoud met een overgeslagen advert
 
 ### Eén VOD met een overgeslagen pre-roll advertentie
 
-Dit is het zelfde scenario zoals [ de playback van VOD met pre-rol advertenties ](/help/use-cases/tracking-scenarios/vod-preroll-ads.md), behalve de toepassing heeft een bepaling om de gebruiker te laten overslaan de advertentie, op de klik van een overslaan knoop misschien.
+Dit is het zelfde scenario zoals [&#x200B; de playback van VOD met pre-rol advertenties &#x200B;](/help/use-cases/tracking-scenarios/vod-preroll-ads.md), behalve de toepassing heeft een bepaling om de gebruiker te laten overslaan de advertentie, op de klik van een overslaan knoop misschien.
 
 | Trigger   | Hartslagmethode  | Netwerkaanroepen   | Notities   |
 | --- | --- | --- | --- |
-| Gebruiker klikt [!UICONTROL Play] | `trackSessionStart()` | Start inhoud analyse, Start inhoud hartslag | De meetbibliotheek is zich er niet van bewust dat er een pre-roll advertentie is. Deze netwerkvraag is nog precies het zelfde als [ de playback van VOD zonder advertenties ](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| Gebruiker klikt [!UICONTROL Play] | `trackSessionStart()` | Start inhoud analyse, Start inhoud hartslag | De meetbibliotheek is zich er niet van bewust dat er een pre-roll advertentie is. Deze netwerkvraag is nog precies het zelfde als [&#x200B; de playback van VOD zonder advertenties &#x200B;](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario. |
 | De advertentie begint. | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analyses en begin, hartslag en begin | |
 | Het eerste frame van de advertentie wordt afgespeeld. | `trackPlay()` | Hartslag en Afspelen | Wanneer advertentie-inhoud wordt afgespeeld vóór de hoofdinhoud, worden de hartslagen gestart wanneer de advertentie wordt afgespeeld. |
 | De advertentie speelt. | | Hartbeats toevoegen | |
 | De advertentie wordt overgeslagen. | `trackEvent:trackAdSkip` | | Er is geen volledig netwerkgesprek. |
-| De inhoud wordt afgespeeld. | | Content Heartbeats | Deze netwerkvraag is precies het zelfde als de [ playback van VOD zonder advertenties ](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario. |
-| Het afspelen van de inhoud is voltooid. | `trackComplete()` | Hartslaginhoud voltooid | Deze netwerkvraag is precies het zelfde als de [ playback van VOD zonder advertenties ](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| De inhoud wordt afgespeeld. | | Content Heartbeats | Deze netwerkvraag is precies het zelfde als de [&#x200B; playback van VOD zonder advertenties &#x200B;](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| Het afspelen van de inhoud is voltooid. | `trackComplete()` | Hartslaginhoud voltooid | Deze netwerkvraag is precies het zelfde als de [&#x200B; playback van VOD zonder advertenties &#x200B;](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario. |
 | De sessie is afgelopen. | `trackSessionEnd()` | | `SessionEnd` |
 
 ## Parameters {#parameters}
 
-De parameters zijn identiek aan de parameters in de [ playback van VOD met pre-rol advertenties ](/help/use-cases/tracking-scenarios/vod-preroll-ads.md) scenario, behalve is er geen volledige en geen a-break volledige vraag.
+De parameters zijn identiek aan de parameters in de [&#x200B; playback van VOD met pre-rol advertenties &#x200B;](/help/use-cases/tracking-scenarios/vod-preroll-ads.md) scenario, behalve is er geen volledige en geen a-break volledige vraag.
 
 ## Voorbeeldcode {#sample-code}
 

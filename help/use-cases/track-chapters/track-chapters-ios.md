@@ -18,7 +18,7 @@ De volgende instructies bieden richtlijnen voor implementatie met 2.x SDK&#39;s.
 
 >[!IMPORTANT]
 >
-> Als u een versie 1.x van SDK uitvoert, kunt u de Gids van Ontwikkelaars hier downloaden: [ Download SDKs.](/help/getting-started/download-sdks.md)
+> Als u een versie 1.x van SDK uitvoert, kunt u de Gids van Ontwikkelaars hier downloaden: [&#x200B; Download SDKs.](/help/getting-started/download-sdks.md)
 
 1. Bepaal wanneer de hoofdstukstartgebeurtenis plaatsvindt en maak de `ChapterObject` -instantie met behulp van de hoofdstukinformatie.
 

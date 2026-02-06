@@ -18,7 +18,7 @@ ht-degree: 0%
 
 In dit scenario wordt een gedeelte van de VOD-inhoud gemarkeerd als een hoofdstuk.
 
-Tenzij gespecificeerd, zijn de netwerkvraag in dit scenario het zelfde als de vraag in de [ playback van VOD zonder advertenties ](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario. De netwerkvraag gebeurt tezelfdertijd, maar de lading is verschillend.
+Tenzij gespecificeerd, zijn de netwerkvraag in dit scenario het zelfde als de vraag in de [&#x200B; playback van VOD zonder advertenties &#x200B;](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario. De netwerkvraag gebeurt tezelfdertijd, maar de lading is verschillend.
 
 | Trigger   | Hartslagmethode   | Netwerkaanroepen   | Notities   |
 |---|---|---|---|
@@ -27,8 +27,8 @@ Tenzij gespecificeerd, zijn de netwerkvraag in dit scenario het zelfde als de vr
 | Het eerste frame van het hoofdstuk wordt afgespeeld. | `trackPlay` | Hartslaginhoud afspelen | Wanneer de hoofdstukinhoud vóór hoofdinhoud wordt afgespeeld, begint de hartslag wanneer het hoofdstuk begint. |
 | Het hoofdstuk speelt. |  | Hoofdstukbeats |  |
 | Het hoofdstuk is voltooid. | `trackEvent:trackChapterComplete` | Hoofdstuk hartslag voltooid | Dit is wanneer het einde van het hoofdstuk is bereikt. |
-| De inhoud wordt afgespeeld. |  | Content Heartbeats | Deze netwerkvraag is precies het zelfde als de [ playback van VOD zonder advertenties ](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario. |
-| De inhoud is voltooid. | `trackComplete` | Hartslaginhoud voltooid | Deze netwerkvraag is precies het zelfde als de [ playback van VOD zonder advertenties ](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| De inhoud wordt afgespeeld. |  | Content Heartbeats | Deze netwerkvraag is precies het zelfde als de [&#x200B; playback van VOD zonder advertenties &#x200B;](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| De inhoud is voltooid. | `trackComplete` | Hartslaginhoud voltooid | Deze netwerkvraag is precies het zelfde als de [&#x200B; playback van VOD zonder advertenties &#x200B;](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario. |
 | De sessie is afgelopen. | `trackSessionEnd` |  | `SessionEnd` betekent dat het einde van een weergavesessie is bereikt. Deze API moet worden aangeroepen, zelfs als de gebruiker de media niet controleert om te worden voltooid. |
 
 ## Parameters {#parameters}

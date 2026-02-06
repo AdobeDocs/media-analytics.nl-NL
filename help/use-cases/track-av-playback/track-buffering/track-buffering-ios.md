@@ -18,7 +18,7 @@ De volgende instructies bieden richtlijnen voor implementatie voor alle 2.x SDK&
 
 >[!IMPORTANT]
 >
->Als u een 1.x versie van SDK uitvoert, kunt u de 1.x Gidsen van Ontwikkelaars hier downloaden: [ Download SDKs.](/help/getting-started/download-sdks.md)
+>Als u een 1.x versie van SDK uitvoert, kunt u de 1.x Gidsen van Ontwikkelaars hier downloaden: [&#x200B; Download SDKs.](/help/getting-started/download-sdks.md)
 
 ## Constanten voor bufferspatiëring
 
@@ -50,4 +50,4 @@ De volgende instructies bieden richtlijnen voor implementatie voor alle 2.x SDK&
    }
    ```
 
-Zie het volgende scenario [ playback van VOD met het als buffer optreden voor ](/help/use-cases/tracking-scenarios/vod-buffering.md) voor meer informatie.
+Zie het volgende scenario [&#x200B; playback van VOD met het als buffer optreden voor &#x200B;](/help/use-cases/tracking-scenarios/vod-buffering.md) voor meer informatie.

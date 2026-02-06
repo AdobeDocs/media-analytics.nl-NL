@@ -42,4 +42,4 @@ De gegevens worden op dezelfde manier berekend voor standaard- en aangepaste sta
 
 Met de mogelijkheid om aangepaste statussen te maken, kunt u aangepaste handelingen vastleggen en aangepaste metagegevens bijwerken tijdens een afspeelsessie.
 
-Voor informatie over het creëren van douanestaten, zie de [ gids van de Verwijzing van Media API: `createStateObject` ](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/)
+Voor informatie over het creëren van douanestaten, zie de [&#x200B; gids van de Verwijzing van Media API: `createStateObject` &#x200B;](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/)

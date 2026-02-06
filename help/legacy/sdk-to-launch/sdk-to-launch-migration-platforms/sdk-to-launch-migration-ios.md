@@ -14,7 +14,7 @@ ht-degree: 7%
 # Migreren van de standalone Media SDK naar Adobe Launch - iOS
 
 >[!NOTE]
->Adobe Experience Platform Launch is omgedoopt tot een reeks technologieën voor gegevensverzameling in Experience Platform. Als gevolg hiervan zijn er verschillende terminologiewijzigingen in de productdocumentatie doorgevoerd. Raadpleeg het volgende [ document ](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en) voor een geconsolideerde referentie van de terminologiewijzigingen.
+>Adobe Experience Platform Launch is omgedoopt tot een reeks technologieën voor gegevensverzameling in Experience Platform. Als gevolg hiervan zijn er verschillende terminologiewijzigingen in de productdocumentatie doorgevoerd. Raadpleeg het volgende [&#x200B; document &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en) voor een geconsolideerde referentie van de terminologiewijzigingen.
 
 ## Configuratie
 
@@ -48,7 +48,7 @@ De uitbreiding van Media zal de gevormde parameters voor het volgen gebruiken.
 
    ![](assets/launch_config_mobile.png)
 
-[ vorm de uitbreiding van Analytics van Media ](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)
+[&#x200B; vorm de uitbreiding van Analytics van Media &#x200B;](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)
 
 ## Beheer maken
 
@@ -95,7 +95,7 @@ ADBMediaHeartbeat* tracker =
 
 ### Extensie starten
 
-[ Media API verwijzing - creeer de Trekker van Media ](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createtracker)
+[&#x200B; Media API verwijzing - creeer de Trekker van Media &#x200B;](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createtracker)
 
 Registreer de media-extensie en de afhankelijke extensies bij de mobiele kern voordat u de Beheer maakt.
 
@@ -142,13 +142,13 @@ De huidige afspeelkop van de speler moet worden bijgewerkt met de functie
 `updateCurrentPlayhead` -methode die door de tracker beschikbaar wordt gemaakt. Voor nauwkeurige tracering
 u zou deze methode minstens eens per seconde moeten roepen.
 
-[ Verwijzing van media API - Update Huidige Playhead ](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#updatecurrentplayhead)
+[&#x200B; Verwijzing van media API - Update Huidige Playhead &#x200B;](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#updatecurrentplayhead)
 
 De implementatie moet de QoE-informatie bijwerken door de
 `updateQoEObject` -methode die door de tracker beschikbaar wordt gemaakt. U moet deze methode aanroepen
 wanneer er een wijziging optreedt in de kwaliteitswaarden.
 
-[ Media API verwijzing - het Voorwerp van QoE van de Update ](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createqoeobject)
+[&#x200B; Media API verwijzing - het Voorwerp van QoE van de Update &#x200B;](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createqoeobject)
 
 ## Standaardmedia/metagegevens doorgeven
 

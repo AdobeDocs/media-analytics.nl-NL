@@ -35,4 +35,4 @@ Het afspelen in een mediatoepassing kan op verschillende manieren worden onderbr
 
 * _wat over het opnieuw beginnen van de zelfde zitting?_
 
-  Voor informatie over het hervatten van een volgende zitting, zie [ Hervatten inactieve zittingen ](resuming-inactive.md).SDK verzendt hervat pingel om het achterste eind mee te delen dat de gebruiker manueel de zitting hervat.
+  Voor informatie over het hervatten van een volgende zitting, zie [&#x200B; Hervatten inactieve zittingen &#x200B;](resuming-inactive.md).SDK verzendt hervat pingel om het achterste eind mee te delen dat de gebruiker manueel de zitting hervat.

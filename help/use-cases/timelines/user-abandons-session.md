@@ -18,9 +18,9 @@ ht-degree: 5%
 
 De volgende diagrammen illustreren de tijdlijn van de afspeelkop en de bijbehorende tijdlijn van de handelingen van een gebruiker. De bijzonderheden van elke actie en de bijbehorende verzoeken worden hieronder weergegeven.
 
-![ API inhoud ](assets/va_api_content_2.png)
+![&#x200B; API inhoud &#x200B;](assets/va_api_content_2.png)
 
-![ API acties ](assets/va_api_actions_2.png)
+![&#x200B; API acties &#x200B;](assets/va_api_actions_2.png)
 
 ## Handelingsdetails
 

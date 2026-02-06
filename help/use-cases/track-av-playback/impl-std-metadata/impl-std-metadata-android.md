@@ -23,8 +23,8 @@ ht-degree: 1%
 ## API-naslaggids voor metagegevens
 
 * Maak een `HashMap` van standaard waardeparen voor metagegevens.
-   * [ VideoMeta-gegevens Sleutels ](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
-   * [ AudioMeta-gegevenssleutels ](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.AudioMetadataKeys.html)
+   * [&#x200B; VideoMeta-gegevens Sleutels &#x200B;](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
+   * [&#x200B; AudioMeta-gegevenssleutels &#x200B;](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.AudioMetadataKeys.html)
 * Stel de standaardmetagegevens `HashMap` in op `MediaInfo` met de standaardmetagegevensconstante voor de metagegevens.
 * Geef dit `MediaInfo` -object op terwijl de `trackSessionStart()` API wordt aangeroepen.
 

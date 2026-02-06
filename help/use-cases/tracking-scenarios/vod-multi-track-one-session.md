@@ -18,7 +18,7 @@ ht-degree: 0%
 
 In dit scenario wordt de instantie `MediaHeartbeat` gebruikt om twee afzonderlijke sessies in de juiste volgorde te maken.
 
-Dit scenario is het zelfde als de [ playback van VOD zonder advertenties ](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario.
+Dit scenario is het zelfde als de [&#x200B; playback van VOD zonder advertenties &#x200B;](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario.
 
 ## Parameters {#parameters}
 

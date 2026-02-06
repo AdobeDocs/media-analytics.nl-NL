@@ -29,7 +29,7 @@ Met Roku SDK 2.x for Experience Cloud Solutions kunt u Roku-toepassingen die in 
 
 ## Implementatie van mobiele bibliotheek / SDK
 
-1. Voeg uw [ gedownloade ](/help/getting-started/download-sdks.md) bibliotheek van Roku aan uw project toe.
+1. Voeg uw [&#x200B; gedownloade &#x200B;](/help/getting-started/download-sdks.md) bibliotheek van Roku aan uw project toe.
 
    1. Het `AdobeMobileLibrary-2.*-Roku.zip` -downloadbestand bestaat uit de volgende softwarecomponenten:
 
@@ -132,7 +132,7 @@ Met Roku SDK 2.x for Experience Cloud Solutions kunt u Roku-toepassingen die in 
    | --- | --- |
    | `visitorMarketingCloudID` | Haalt de Experience Cloud-bezoeker-id op van de bezoeker-id-service.  <br/><br/>`ADBMobile().visitorMarketingCloudID()` |
    | `visitorSyncIdentifiers` | Met de Experience Cloud-bezoeker-id kunt u aanvullende klant-id&#39;s instellen die aan elke bezoeker kunnen worden gekoppeld. De bezoeker-API accepteert meerdere klant-id&#39;s voor dezelfde bezoeker en een id voor het klanttype om het bereik van de verschillende klant-id&#39;s te scheiden. Deze methode komt overeen met `setCustomerIDs` . Bijvoorbeeld: <br/><br/>`identifiers={}` <br/>`identifiers["idType"]="idValue"` <br/>`ADBMobile().visitorSyncIdentifiers(identifiers)` |
-   | `setAdvertisingIdentifier` | Wordt gebruikt om de Roku-id voor Advertising (RIDA) in te stellen op de SDK. Bijvoorbeeld: <br/><br/> `ADBMobile().setAdvertisingIdentifier(`<br/>  `"<sample_roku_identifier_for_advertising>")` <br/><br/><br/> krijgt identiteitskaart van Roku voor Advertising (RIDA) gebruikend Roku SDK [ getRIDA () ](https://developer.roku.com/docs/references/brightscript/interfaces/ifdeviceinfo.md#getrida-as-dynamic) API. |
+   | `setAdvertisingIdentifier` | Wordt gebruikt om de Roku-id voor Advertising (RIDA) in te stellen op de SDK. Bijvoorbeeld: <br/><br/> `ADBMobile().setAdvertisingIdentifier(`<br/>  `"<sample_roku_identifier_for_advertising>")` <br/><br/><br/> krijgt identiteitskaart van Roku voor Advertising (RIDA) gebruikend Roku SDK [&#x200B; getRIDA () &#x200B;](https://developer.roku.com/docs/references/brightscript/interfaces/ifdeviceinfo.md#getrida-as-dynamic) API. |
    | `getAllIdentifiers` | Retourneert een lijst met alle id&#39;s die door de SDK zijn opgeslagen, inclusief Analytics, Visitor, Audience Manager en aangepaste id&#39;s. <br/><br/> `identifiers = ADBMobile().getAllIdentifiers()` |
 
    <!--

@@ -25,7 +25,7 @@ Als u Adobe streaming media services voor mobiele apps wilt implementeren op And
 
 * **Analytics van de Media van Adobe voor Audio en Video uitbreiding**
 
-Om SDKs en voor extra documentatiemiddelen te downloaden, zie [ Media SDKs, Uitbreidingen krijgen die Markeringen gebruiken, en OTT SDKs ](/help/getting-started/download-sdks.md)
+Om SDKs en voor extra documentatiemiddelen te downloaden, zie [&#x200B; Media SDKs, Uitbreidingen krijgen die Markeringen gebruiken, en OTT SDKs &#x200B;](/help/getting-started/download-sdks.md)
 
 * **verkrijg geldige configuratieparameters**
 

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Gelijktijdige gebruikers JSON-rapportgegevens ophalen met API&#39;s van Analytics 2.0{#get-concurrent-viewers-json-report-data}
 
-U kunt gezamenlijke kijkers rapportgegevens verkrijgen gebruikend [_*Analytics 2.0 APIs*_ ](https://www.adobe.io/apis/experiencecloud/analytics/docs.html).
+U kunt gezamenlijke kijkers rapportgegevens verkrijgen gebruikend [_*Analytics 2.0 APIs*_ &#x200B;](https://www.adobe.io/apis/experiencecloud/analytics/docs.html).
 
 1. Filter de gegevens gebruikend om het even welk segment dat op UI wordt voortgebouwd. Maak een nieuw segment om te filteren op een specifieke inhoud-id.
 1. Stel `elements` -> `id` in de hoofdtekst van de aanvraag in op `metrics/concurrent_viewers_visitors` .

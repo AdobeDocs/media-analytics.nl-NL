@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Soms is het begin en einde van twee spelerstaten tegelijkertijd of is het einde van een status ook het begin van een andere status, zoals in de volgende afbeelding wordt getoond:
 
-![ Veelvoudige spelerstaten ](assets/multiple-player-states.png)
+![&#x200B; Veelvoudige spelerstaten &#x200B;](assets/multiple-player-states.png)
 
 De huidige implementatie staat beide scenario&#39;s toe:
 - `stateStart(pictureInPicture)` - t0

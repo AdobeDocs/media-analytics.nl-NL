@@ -16,7 +16,7 @@ ht-degree: 3%
 
 Berekende meetgegevens voor Adobe-streaming-mediaservices zijn aangepaste meetwaarden waarmee u doelgerichte streaming-mediagegevens kunt verkrijgen, zoals gemiddelde gebruikte advertentietijd of gemiddelde advertenties per mediastream.
 
-Voor informatie over Adobe Analytics berekende metriek, zie [ Berekende en Geavanceerde Berekende (Afgeleid) Metriek ](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/cm-overview.html?lang=en) in de Gids van de Componenten van Adobe Analytics.
+Voor informatie over Adobe Analytics berekende metriek, zie [&#x200B; Berekende en Geavanceerde Berekende (Afgeleid) Metriek &#x200B;](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/cm-overview.html?lang=en) in de Gids van de Componenten van Adobe Analytics.
 
 >[!NOTE]
 >

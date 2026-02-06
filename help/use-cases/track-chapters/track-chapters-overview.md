@@ -18,7 +18,7 @@ De volgende instructies bieden richtlijnen voor implementatie met 2.x SDK&#39;s.
 
 >[!IMPORTANT]
 > 
-> Als u een versie 1.x van SDK uitvoert, kunt u de Gids van Ontwikkelaars hier downloaden: [ Download SDKs.](/help/getting-started/download-sdks.md)
+> Als u een versie 1.x van SDK uitvoert, kunt u de Gids van Ontwikkelaars hier downloaden: [&#x200B; Download SDKs.](/help/getting-started/download-sdks.md)
 
 Het hoofdstuk en het segment volgen is beschikbaar voor douane-bepaalde media hoofdstukken of segmenten. Bij het bijhouden van hoofdstukken wordt vaak gebruik gemaakt van aangepaste segmenten die zijn gebaseerd op media-inhoud (zoals honkbal-waarschuwingen), of van het definiëren van inhoudssegmenten tussen ad-hocafbrekingen. Het volgen van het hoofdstuk wordt **niet** vereist voor kernmedia volgende implementaties.
 

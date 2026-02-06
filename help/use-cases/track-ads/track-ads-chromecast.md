@@ -18,7 +18,7 @@ De volgende instructies bieden richtlijnen voor implementatie met behulp van de 
 
 >[!IMPORTANT]
 >
->Als u een 1.x versie van SDK uitvoert, kunt u 1.x de Gidsen van Ontwikkelaars hier downloaden: [ Download SDKs.](/help/getting-started/download-sdks.md)
+>Als u een 1.x versie van SDK uitvoert, kunt u 1.x de Gidsen van Ontwikkelaars hier downloaden: [&#x200B; Download SDKs.](/help/getting-started/download-sdks.md)
 
 ## Constanten voor bijhouden van advertenties
 
@@ -34,13 +34,13 @@ De volgende instructies bieden richtlijnen voor implementatie met behulp van de 
 
 1. Bepaal wanneer de grens van de advertentieruimte begint, met inbegrip van pre-rol, en creeer `AdBreakObject` door de informatie van de advertentierak te gebruiken.
 
-   De verwezenlijking van het onderbrekingsvoorwerp van de hulp: [ createAdBreakObject ](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createAdBreakObject)
+   De verwezenlijking van het onderbrekingsvoorwerp van de hulp: [&#x200B; createAdBreakObject &#x200B;](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createAdBreakObject)
 
    ```
    adBreakInfo = ADBMobile.media.createAdBreakObject("First Ad-Break", 1, AD_BREAK_START_TIME, playerName);
    ```
 
-1. Vraag `trackEvent()` met `AdBreakStart` in de `MediaHeartbeat` instantie beginnen het volgen van de advertentie: [ trackEvent ](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
+1. Vraag `trackEvent()` met `AdBreakStart` in de `MediaHeartbeat` instantie beginnen het volgen van de advertentie: [&#x200B; trackEvent &#x200B;](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
 
    ```
    ADBMobile.media.trackEvent(ADBMobile.media.Event.AdBreakStart, getAdBreakInfo());
@@ -48,7 +48,7 @@ De volgende instructies bieden richtlijnen voor implementatie met behulp van de 
 
 1. Bepaal wanneer het advertentie-element begint en maak een `AdObject` -instantie met behulp van de advertentie-informatie.
 
-   De objecten van de Advertentie verwezenlijking: [ createAdObject ](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createAdObject)
+   De objecten van de Advertentie verwezenlijking: [&#x200B; createAdObject &#x200B;](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createAdObject)
 
    ```
    adInfo = ADBMobile.media.createAdObject("Sample ad", "001", 1, AD_LENGTH);
@@ -61,23 +61,23 @@ De volgende instructies bieden richtlijnen voor implementatie met behulp van de 
 
 1. Roep `trackEvent()` aan met de `AdStart` -gebeurtenis om het afspelen van de advertentie te volgen.
 
-   Omvat een verwijzing naar uw veranderlijke douanemetagegevens (of een leeg voorwerp) als derde parameter in de gebeurtenisvraag: [ trackEvent ](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
+   Omvat een verwijzing naar uw veranderlijke douanemetagegevens (of een leeg voorwerp) als derde parameter in de gebeurtenisvraag: [&#x200B; trackEvent &#x200B;](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
 
    ```
    ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, getAdInfo(), adContextData);
    ```
 
-1. Wanneer de advertentie activa playback het eind van de advertentie bereikt, vraag `trackEvent()` met de `AdComplete` gebeurtenis: [ trackEvent ](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
+1. Wanneer de advertentie activa playback het eind van de advertentie bereikt, vraag `trackEvent()` met de `AdComplete` gebeurtenis: [&#x200B; trackEvent &#x200B;](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
 
    ```
    ADBMobile.media.trackEvent(ADBMobile.media.Event.AdComplete);
    ```
 
 1. Herhaal stap 3 tot en met 6 opnieuw als er extra advertenties binnen dezelfde `AdBreak` zijn.
-1. Wanneer de advertentieonderbreking volledig is, gebruik de `AdBreakComplete` gebeurtenis om te volgen: [ trackEvent ](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
+1. Wanneer de advertentieonderbreking volledig is, gebruik de `AdBreakComplete` gebeurtenis om te volgen: [&#x200B; trackEvent &#x200B;](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
 
    ```
    ADBMobile.media.trackEvent(ADBMobile.media.Event.AdBreakComplete, getAdBreakInfo());
    ```
 
-Zie het volgende scenario [ de playback van VOD met pre-roladvertenties ](/help/use-cases/tracking-scenarios/vod-preroll-ads.md) voor meer informatie.
+Zie het volgende scenario [&#x200B; de playback van VOD met pre-roladvertenties &#x200B;](/help/use-cases/tracking-scenarios/vod-preroll-ads.md) voor meer informatie.

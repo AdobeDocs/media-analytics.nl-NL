@@ -18,7 +18,7 @@ De volgende instructies bieden richtlijnen voor implementatie voor alle 2.x SDK&
 
 >[!IMPORTANT]
 >
->Als u een 1.x versie van SDK uitvoert, kunt u de 1.x Gidsen van Ontwikkelaars hier downloaden: [ Download SDKs.](/help/getting-started/download-sdks.md)
+>Als u een 1.x versie van SDK uitvoert, kunt u de 1.x Gidsen van Ontwikkelaars hier downloaden: [&#x200B; Download SDKs.](/help/getting-started/download-sdks.md)
 
 De kwaliteit van ervaring het volgen omvat kwaliteit van de dienst (QoS) en fout het volgen, allebei zijn facultatieve elementen en **niet** vereist voor kernmedia het volgen implementaties. U kunt de mediaspeler-API gebruiken om de variabelen met betrekking tot QoS en foutcontrole te identificeren. Hier volgen de belangrijkste elementen van de kwaliteit van ervaring:
 
@@ -26,7 +26,7 @@ De kwaliteit van ervaring het volgen omvat kwaliteit van de dienst (QoS) en fout
 
 ### Op om het even welke metrische veranderingen QoS:
 
-Maak of werk de instantie van het object QoS bij voor het afspelen. [ QoS API Verwijzing ](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#.createQoSObject)
+Maak of werk de instantie van het object QoS bij voor het afspelen. [&#x200B; QoS API Verwijzing &#x200B;](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#.createQoSObject)
 
 ### Bij alle gebeurtenissen die betrekking hebben op bitsnelheden
 

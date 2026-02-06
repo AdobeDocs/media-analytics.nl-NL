@@ -13,14 +13,14 @@ ht-degree: 0%
 
 # Adobe-streaming-mediaservices implementeren met de Edge Network API
 
-Als u niet [ Adobe Experience Platform Mobile SDK ](/help/implementation/edge/implementation-edge.md) kunt gebruiken, kunt u gegevens naar Adobe Experience Platform Edge Network direct door API verzenden.
+Als u niet [&#x200B; Adobe Experience Platform Mobile SDK &#x200B;](/help/implementation/edge/implementation-edge.md) kunt gebruiken, kunt u gegevens naar Adobe Experience Platform Edge Network direct door API verzenden.
 
 Gebruik de volgende bronnen voor informatie over het uitvoeren van een aangepaste implementatie van de Edge API&#39;s:
 
-* [ het overzicht van Edge API van Media ](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/)
+* [&#x200B; het overzicht van Edge API van Media &#x200B;](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/)
 
-* [ Aan de slag Edge API van Media ](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/getting-started/)
+* [&#x200B; Aan de slag Edge API van Media &#x200B;](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/getting-started/)
 
-* [ het oplossen van problemengids van Edge API van Media ](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/troubleshooting/)
+* [&#x200B; het oplossen van problemengids van Edge API van Media &#x200B;](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/troubleshooting/)
 
-* [ Gebruikend het Open API specificatiedossier voor Media Edge APIs ](https://developer.adobe.com/data-collection-apis/docs/api/media-edge/)
+* [&#x200B; Gebruikend het Open API specificatiedossier voor Media Edge APIs &#x200B;](https://developer.adobe.com/data-collection-apis/docs/api/media-edge/)

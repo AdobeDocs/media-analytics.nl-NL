@@ -18,7 +18,7 @@ Deze documentatie behandelt het volgen in versie 2.x van de SDK.
 
 >[!IMPORTANT]
 >
->Als u een 1.x versie van SDK uitvoert, kunt u 1.x de Gidsen van Ontwikkelaars hier downloaden: [ Download SDKs ](/help/getting-started/download-sdks.md)
+>Als u een 1.x versie van SDK uitvoert, kunt u 1.x de Gidsen van Ontwikkelaars hier downloaden: [&#x200B; Download SDKs &#x200B;](/help/getting-started/download-sdks.md)
 
 1. **Aanvankelijke het volgen opstelling**
 
@@ -26,7 +26,7 @@ Deze documentatie behandelt het volgen in versie 2.x van de SDK.
 
    **`MediaObject`API-referentie:**
 
-   [ createMediaObject ](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createMediaObject)
+   [&#x200B; createMediaObject &#x200B;](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createMediaObject)
 
    ```
    mediaObject = ADBMobile.media.createMediaObject(<name>, <id>, <duration>, <streamType>, <mediaType>);
@@ -34,11 +34,11 @@ Deze documentatie behandelt het volgen in versie 2.x van de SDK.
 
    **`StreamType`constanten:**
 
-   [ ADBMobile Media ](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.StreamType)
+   [&#x200B; ADBMobile Media &#x200B;](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.StreamType)
 
    **`MediaType`constanten:**
 
-   [ ADBMobile Media ](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.MediaType)
+   [&#x200B; ADBMobile Media &#x200B;](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.MediaType)
 
 1. **Band videometagegevens**
 
@@ -67,7 +67,7 @@ Deze documentatie behandelt het volgen in versie 2.x van de SDK.
 
 1. **Spoor de intentie om playback** te beginnen
 
-   Beginnen het volgen van een media zitting, vraag [ trackSessionStart ](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackSessionStart) op het `media` voorwerp.
+   Beginnen het volgen van een media zitting, vraag [&#x200B; trackSessionStart &#x200B;](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackSessionStart) op het `media` voorwerp.
 
    ```
    ADBMobile.media.trackSessionStart(mediaObject, customVideoMetadata);
@@ -83,7 +83,7 @@ Deze documentatie behandelt het volgen in versie 2.x van de SDK.
 
 1. **spoor het daadwerkelijke begin van playback**
 
-   Identificeer de gebeurtenis van de videospeler voor het begin van de videoplayback, waar het eerste kader van de video op het scherm wordt teruggegeven, en vraag [ trackPlay:](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackPlay)
+   Identificeer de gebeurtenis van de videospeler voor het begin van de videoplayback, waar het eerste kader van de video op het scherm wordt teruggegeven, en vraag [&#x200B; trackPlay:](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackPlay)
 
    ```
    ADBMobile.media.trackPlay();
@@ -105,7 +105,7 @@ Deze documentatie behandelt het volgen in versie 2.x van de SDK.
 
 1. **Spoor de voltooiing van playback**
 
-   Identificeer de gebeurtenis van de videospeler voor de voltooiing van de videoplayback, waar de gebruiker de inhoud tot het eind heeft bekeken, en vraag [ trackComplete:](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackComplete)
+   Identificeer de gebeurtenis van de videospeler voor de voltooiing van de videoplayback, waar de gebruiker de inhoud tot het eind heeft bekeken, en vraag [&#x200B; trackComplete:](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackComplete)
 
    ```
    ADBMobile.media.trackComplete();
@@ -113,7 +113,7 @@ Deze documentatie behandelt het volgen in versie 2.x van de SDK.
 
 1. **Spoor het eind van de zitting**
 
-   Identificeer de gebeurtenis van de videospeler voor het ontladen/sluiten van de videoplayback, waar de gebruiker de video sluit en/of de video wordt voltooid en is gedownload, en vraag [ trackSessionEnd:](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackSessionEnd)
+   Identificeer de gebeurtenis van de videospeler voor het ontladen/sluiten van de videoplayback, waar de gebruiker de video sluit en/of de video wordt voltooid en is gedownload, en vraag [&#x200B; trackSessionEnd:](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackSessionEnd)
 
    ```
    ADBMobile.media.trackSessionEnd();
@@ -125,7 +125,7 @@ Deze documentatie behandelt het volgen in versie 2.x van de SDK.
 
 1. **spoor alle mogelijke pauzescenario&#39;s**
 
-   Identificeer de gebeurtenis van de videospeler voor videopauze en vraag [ trackPause:](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackPause)
+   Identificeer de gebeurtenis van de videospeler voor videopauze en vraag [&#x200B; trackPause:](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackPause)
 
    ```
    ADBMobile.media.trackPause();
@@ -140,7 +140,7 @@ Deze documentatie behandelt het volgen in versie 2.x van de SDK.
    * (*Mobiele Apps*) - de gebruiker zet de toepassing in de achtergrond, maar u wilt dat app de zitting open houdt.
    * (*Mobiele Apps*) - om het even welk type van systeem onderbreekt komt voor dat een toepassing veroorzaakt om worden gesteund. Bijvoorbeeld, ontvangt de gebruiker een vraag, of een pop-up van een andere toepassing komt voor, maar u wilt de toepassing de zitting levend houden om de gebruiker de kans te geven om de video van het punt van onderbreking te hervatten.
 
-1. Identificeer de gebeurtenis van de speler voor videospel en/of videohervat van pauze en vraag [ trackPlay:](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackComplete)
+1. Identificeer de gebeurtenis van de speler voor videospel en/of videohervat van pauze en vraag [&#x200B; trackPlay:](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackComplete)
 
    ```
    ADBMobile.media.trackPlay();
@@ -150,5 +150,5 @@ Deze documentatie behandelt het volgen in versie 2.x van de SDK.
    >
    >Dit kan de zelfde gebeurtenisbron zijn die in Stap 4 werd gebruikt. Zorg ervoor dat elke API-aanroep van `trackPause()` wordt gekoppeld aan een volgende API-aanroep van `trackPlay()` wanneer het afspelen van de video wordt hervat.
 
-* Het volgen scenario&#39;s: [ de playback van VOD zonder advertenties ](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)
+* Het volgen scenario&#39;s: [&#x200B; de playback van VOD zonder advertenties &#x200B;](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)
 * Voorbeeldspeler die bij de Chromecast SDK wordt geleverd voor een volledig voorbeeld van &#39;tracking&#39;.

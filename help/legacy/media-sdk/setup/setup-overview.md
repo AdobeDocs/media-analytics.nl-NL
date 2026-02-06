@@ -118,7 +118,7 @@ De volgende implementaties van de Analytics van media produceren twee soorten he
 * De vraag van de hartslag wordt verzonden naar de Media Analytics (hartslagen) volgende server, daar verwerkt, en tot de server van Adobe Analytics overgegaan.
 
 * **Adobe Analytics (AppMeasurement) server**
-Voor meer informatie over het volgen van serveropties, zie [ correct de variabelen trackingServer en trackingServerSecure bevolken.](https://helpx.adobe.com/analytics/kb/determining-data-center.html)
+Voor meer informatie over het volgen van serveropties, zie [&#x200B; correct de variabelen trackingServer en trackingServerSecure bevolken.](https://helpx.adobe.com/analytics/kb/determining-data-center.html)
 
   >[!IMPORTANT]
   >
@@ -126,7 +126,7 @@ Voor meer informatie over het volgen van serveropties, zie [ correct de variabel
 
   De analytics tracking-server moet eindigen in &quot;`.sc.omtrdc.net`&quot; of een CNAME zijn.
 
-* ** Media Analytics (Heartbeats)-server**
+* **&#x200B; Media Analytics (Heartbeats)-server**
 Dit heeft altijd het formaat &quot;`[your_namespace].hb.omtrdc.net`&quot;. De waarde van &quot;`[your_namespace]`&quot;specificeert uw bedrijf, en door Adobe verstrekt.
 
 Mediatracering werkt op alle platformen hetzelfde, zowel op het bureaublad als op mobiele apparaten. Audio bijhouden werkt momenteel op mobiele platforms. Voor alle volgende vraag zijn er een paar zeer belangrijke universele variabelen die moeten worden bevestigd:

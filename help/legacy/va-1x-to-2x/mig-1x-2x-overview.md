@@ -27,6 +27,6 @@ Hier volgen de belangrijkste verschillen tussen 1.x en 2.x:
 * Alle configuraties worden nu geconsolideerd in de `MediaHeartbeatConfig` -klasse.
 * U hoeft geen configuraties meer te instantiëren voor de plug-ins Analytics, VideoPlayer en Heartbone. U hoeft de `MediaHeartbeat` -klasse alleen te instantiëren met `MediaHeartbeatDelegate` - en `MediaHeartbeatConfig` -instanties. Dit is de enige implementatie die nodig is om Media Analytics te initialiseren.
 
-  Met de initialisatie van `MediaHeartbeat` kunt u veilig alle implementatie voor Analytics Plugin, VideoPlayer Plugin, en de Insteekmodule van de Hartslag schrappen. Verwijder ook alle bestaande implementatie voor initialisatie die een array van plug-ins als invoer nodig heeft. U kunt zij aan zij vergelijkingen van de 1.x en 2.x implementaties hier zien: [ vergelijking van de Code: 1.x aan 2.x.](./code-comparison-1x-2x.md)
+  Met de initialisatie van `MediaHeartbeat` kunt u veilig alle implementatie voor Analytics Plugin, VideoPlayer Plugin, en de Insteekmodule van de Hartslag schrappen. Verwijder ook alle bestaande implementatie voor initialisatie die een array van plug-ins als invoer nodig heeft. U kunt zij aan zij vergelijkingen van de 1.x en 2.x implementaties hier zien: [&#x200B; vergelijking van de Code: 1.x aan 2.x.](./code-comparison-1x-2x.md)
 
 De nieuwe API&#39;s in 2.x worden uitgebreid beschreven in: [Conversie van API 1.x naar 2.x](./1x-2x-api-change.md).

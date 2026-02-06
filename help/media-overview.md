@@ -59,7 +59,7 @@ De voordelen van streaming media services zijn onder andere realtime bewaking, g
 
 Gegevens over het bijhouden van streaming-mediaservices worden verzameld bij een speler met behulp van Media voor Edge Network SDK/Extension, Media Extension with Tags, Media SDK&#39;s, Media Edge API of de Media Collection API.
 
-Alle korrelige gegevens (tot 10 seconden) worden verzonden of naar de Dienst van de Analyse van Media of Ervaring Edge (afhankelijk van de [ implementatiemethode ](/help/implementation/overview.md) u kiest), die de gegevens voor elke individuele playbackzitting verzamelen en verwerken.
+Alle korrelige gegevens (tot 10 seconden) worden verzonden of naar de Dienst van de Analyse van Media of Ervaring Edge (afhankelijk van de [&#x200B; implementatiemethode &#x200B;](/help/implementation/overview.md) u kiest), die de gegevens voor elke individuele playbackzitting verzamelen en verwerken.
 
 Nadat een afspeelsessie is beëindigd, worden de gegevens voor het bijhouden van de gegevens naar Adobe Analytics of Customer Journey Analytics verzonden voor opslag en rapportage.
 
@@ -68,4 +68,4 @@ Nadat een afspeelsessie is beëindigd, worden de gegevens voor het bijhouden van
 >Met Customer Journey Analytics-implementaties kunnen gegevens naar Customer Journey Analytics worden verzonden met Experience Edge of via de Analytics Data Connector (ADC).
 
 
-Voor gedetailleerde informatie over de diverse implementatiemethodes, zie [ het stromen media diensten voor Adobe Analytics of Customer Journey Analytics uitvoeren ](/help/implementation/overview.md).
+Voor gedetailleerde informatie over de diverse implementatiemethodes, zie [&#x200B; het stromen media diensten voor Adobe Analytics of Customer Journey Analytics uitvoeren &#x200B;](/help/implementation/overview.md).

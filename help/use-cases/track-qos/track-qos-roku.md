@@ -18,7 +18,7 @@ De volgende instructies bieden richtlijnen voor implementatie voor alle 2.x SDK&
 
 >[!IMPORTANT]
 >
->Als u een 1.x versie van SDK uitvoert, kunt u de 1.x Gidsen van Ontwikkelaars hier downloaden: [ Download SDKs.](/help/getting-started/download-sdks.md)
+>Als u een 1.x versie van SDK uitvoert, kunt u de 1.x Gidsen van Ontwikkelaars hier downloaden: [&#x200B; Download SDKs.](/help/getting-started/download-sdks.md)
 
 ## QOS implementeren
 
@@ -82,7 +82,7 @@ De volgende instructies bieden richtlijnen voor implementatie voor alle 2.x SDK&
     >Update the QoS object and call the bitrate change event on every bitrate change. This provides the most accurate QoS data.
     -->
 
-1. Wanneer de mediaspeler een fout aantreft en de foutgebeurtenis beschikbaar is voor de speler-API, gebruikt u `trackError()` om de foutinformatie vast te leggen. (Zie [ Overzicht ](/help/use-cases/track-errors/track-errors-overview.md).)
+1. Wanneer de mediaspeler een fout aantreft en de foutgebeurtenis beschikbaar is voor de speler-API, gebruikt u `trackError()` om de foutinformatie vast te leggen. (Zie [&#x200B; Overzicht &#x200B;](/help/use-cases/track-errors/track-errors-overview.md).)
 
    >[!TIP]
    >

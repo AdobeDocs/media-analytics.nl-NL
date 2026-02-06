@@ -38,4 +38,4 @@ standardMetadata[ADBMobile().MEDIA_AudioMetadataKeyLABEL] = "sample label"
 mediaInfo[ADBMobile().MEDIA_STANDARD_MEDIA_METADATA] = standardMetadata
 ```
 
-Zie de uitvoerige lijst van videometagegevens hier: [ Audio en videoparameters ](/help/implementation/variables/audio-video-parameters.md)
+Zie de uitvoerige lijst van videometagegevens hier: [&#x200B; Audio en videoparameters &#x200B;](/help/implementation/variables/audio-video-parameters.md)
