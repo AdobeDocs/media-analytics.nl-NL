@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!AVAILABILITY]
 >
->De functionaliteit die in dit artikel wordt beschreven, bevindt zich in de Beperkte testfase van de release en is mogelijk nog niet beschikbaar in uw omgeving. Deze notitie wordt verwijderd wanneer de functionaliteit algemeen beschikbaar is. Voor informatie over het versieproces, zie [&#x200B; de eigenschapversies van Customer Journey Analytics &#x200B;](https://experienceleague.adobe.com/en/docs/analytics-platform/using/releases/releases).
+>De functionaliteit die in dit artikel wordt beschreven, bevindt zich in de Beperkte testfase van de release en is mogelijk nog niet beschikbaar in uw omgeving. Deze notitie wordt verwijderd wanneer de functionaliteit algemeen beschikbaar is. Voor informatie over het versieproces, zie [&#x200B; de eigenschapversies van Customer Journey Analytics &#x200B;](https://experienceleague.adobe.com/nl/docs/analytics-platform/using/releases/releases).
 
 U kunt planningsgegevens van eerder live streaming media-inhoud uploaden om de viewer van live inhoud eenvoudiger en nauwkeuriger bij te houden. U kunt het viewerschap bijhouden voor afzonderlijke programma&#39;s en zelfs voor specifieke onderwerpen of programmasegmenten.
 
@@ -143,7 +143,7 @@ Nadat u [&#x200B; een dataset van het programma &#x200B;](#create-a-program-sche
 
    1. Druk op het .json-bestand dat de gegevensrecords van het programma bevat met de batch-id.
 
-      Om planningsinformatie te duwen zou u de partij APIs van AEP moeten gebruiken, zoals die in [&#x200B; wordt beschreven de opname API overzicht van de Partij &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/overview).
+      Om planningsinformatie te duwen zou u de partij APIs van AEP moeten gebruiken, zoals die in [&#x200B; wordt beschreven de opname API overzicht van de Partij &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/ingestion/batch/overview).
 
       Bekijk het volgende voorbeeld van het gebruik van cURL om een bestand met de planningsrecords te duwen:
 
@@ -303,9 +303,9 @@ Het volgende voorbeeld is van een programma.json- dossier met twee verslagen. El
 
    Bekijk de volgende voorbeelden van afmetingen die u kunt maken en rapporteren in Customer Journey Analytics:
 
-   * **[&quot;_naam van de Aflevering_&quot;](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#episode)**: Deze dimensie kon u helpen leren welke episodes in een bepaalde reeks best presteren.
+   * **[&quot;_naam van de Aflevering_&quot;](https://experienceleague.adobe.com/nl/docs/media-analytics/using/implementation/variables/audio-video-parameters#episode)**: Deze dimensie kon u helpen leren welke episodes in een bepaalde reeks best presteren.
 
-   * **[identiteitskaart van Activa &#x200B;](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#asset-id)**
+   * **[identiteitskaart van Activa &#x200B;](https://experienceleague.adobe.com/nl/docs/media-analytics/using/implementation/variables/audio-video-parameters#asset-id)**
 
 1. Ga met [&#x200B; verder analyseren gegevens in Customer Journey Analytics &#x200B;](#analyze-data-in-customer-journey-analytics).
 

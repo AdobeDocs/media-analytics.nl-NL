@@ -19,7 +19,7 @@ De voorwaarden die in deze sectie worden beschreven, gelden specifiek voor de im
 Of u het stromen de media diensten voor Adobe Analytics-slechts implementaties of voor de implementaties van Edge uitvoert, zorg ervoor dat u aan de [&#x200B; algemene eerste vereisten &#x200B;](/help/getting-started/prereqs.md) voldoet.
 
 1. **Bevestig dat u een implementatie van Adobe Analytics**<br> hebt
-Bij de implementatie van de Adobe Analytics voor Streaming Media Add-on voor een alleen-analytische implementatie is ook een Adobe Analytics-basisimplementatie vereist. Zie [&#x200B; Adobe Analytics &#x200B;](https://experienceleague.adobe.com/docs/analytics/implementation/home.html) voor meer informatie uitvoeren.
+Bij de implementatie van de Adobe Analytics voor Streaming Media Add-on voor een alleen-analytische implementatie is ook een Adobe Analytics-basisimplementatie vereist. Zie [&#x200B; Adobe Analytics &#x200B;](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=nl-NL) voor meer informatie uitvoeren.
 
 1. **verkrijg media het volgen server URL**<br>
 Vraag uw Adobe Analytics-vertegenwoordiger naar de URL van de mediatrackingserver. Dit is de `collection-api-server` URL voor Mobile SDK, de JavaScript SDK, en de niet-inzameling-api die server voor Roku volgen. Domeinnamen voor API-implementatie zijn: `[your_namespace].hb-api.omtrdc.net` .

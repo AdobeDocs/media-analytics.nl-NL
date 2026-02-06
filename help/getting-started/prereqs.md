@@ -31,13 +31,13 @@ Als u rapporten wilt inschakelen in Analytics of Customer Journey Analytics en o
 
    ![&#x200B; grafisch van de Dienst van identiteitskaart &#x200B;](assets/mc_id_service_graphic.png)
 
-   De dienst van identiteitskaart kan verschillende oplossing-specifieke IDs (bijvoorbeeld, Analytics HULP) ook vervangen. Door [&#x200B; identiteitskaarts van de Klant en de Status van de Authentificatie &#x200B;](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html) functionaliteit, laat de dienst van identiteitskaart u in uw eigen klant IDs tot Experience Cloud overgaan. Houd er echter rekening mee dat de id-service alleen werkt met de oplossingen waarop u zich al hebt geabonneerd. Als u niet bent aangemeld voor toegang tot andere producten, biedt de id-service geen toegang.
+   De dienst van identiteitskaart kan verschillende oplossing-specifieke IDs (bijvoorbeeld, Analytics HULP) ook vervangen. Door [&#x200B; identiteitskaarts van de Klant en de Status van de Authentificatie &#x200B;](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=nl-NL) functionaliteit, laat de dienst van identiteitskaart u in uw eigen klant IDs tot Experience Cloud overgaan. Houd er echter rekening mee dat de id-service alleen werkt met de oplossingen waarop u zich al hebt geabonneerd. Als u niet bent aangemeld voor toegang tot andere producten, biedt de id-service geen toegang.
 
    De dienst van identiteitskaart is een integraal onderdeel van vele eigenschappen, verhogingen, en de diensten van Experience Cloud. Momenteel, steunt de dienst van identiteitskaart [&#x200B; Analytics, &#x200B;](https://www.adobe.com/marketing-cloud/web-analytics.html) [&#x200B; Audience Manager, &#x200B;](https://www.adobe.com/marketing-cloud/data-management-platform.html) en [&#x200B; Doel.](https://www.adobe.com/marketing-cloud/testing-targeting.html)
 
    Als u de id-service niet hebt geïmplementeerd, is het nu tijd om een migratiestrategie te overwegen. Voor meer informatie over het belang en de rol van de dienst van identiteitskaart, zie [&#x200B; waarom de Dienst van de Identiteit op Uw Radar zou moeten zijn.](https://theblog.adobe.com/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)
 
-   Voor extra informatie over identiteitskaart van Experience Cloud, zie [&#x200B; het Overzicht van identiteitskaart van Experience Cloud, &#x200B;](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html) en [&#x200B; de Dienst van de Identiteit van Adobe Experience Platform &#x200B;](https://experienceleague.adobe.com/docs/id-service/using/home.html).
+   Voor extra informatie over identiteitskaart van Experience Cloud, zie [&#x200B; het Overzicht van identiteitskaart van Experience Cloud, &#x200B;](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html?lang=nl-NL) en [&#x200B; de Dienst van de Identiteit van Adobe Experience Platform &#x200B;](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=nl-NL).
 
 1. **de extra eerste vereisten van de Mening voor uw implementatiemethode**
 

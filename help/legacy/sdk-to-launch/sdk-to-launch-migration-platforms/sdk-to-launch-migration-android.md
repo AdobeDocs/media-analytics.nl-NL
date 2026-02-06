@@ -14,7 +14,7 @@ ht-degree: 7%
 # Migreren van de standalone Media SDK naar Adobe Launch - Android
 
 >[!NOTE]
->Adobe Experience Platform Launch is omgedoopt tot een reeks technologieën voor gegevensverzameling in Experience Platform. Als gevolg hiervan zijn er verschillende terminologiewijzigingen in de productdocumentatie doorgevoerd. Raadpleeg het volgende [&#x200B; document &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en) voor een geconsolideerde referentie van de terminologiewijzigingen.
+>Adobe Experience Platform Launch is omgedoopt tot een reeks technologieën voor gegevensverzameling in Experience Platform. Als gevolg hiervan zijn er verschillende terminologiewijzigingen in de productdocumentatie doorgevoerd. Raadpleeg het volgende [&#x200B; document &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=nl-NL) voor een geconsolideerde referentie van de terminologiewijzigingen.
 
 
 ## Configuratie

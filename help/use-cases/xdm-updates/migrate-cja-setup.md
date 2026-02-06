@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Customer Journey Analytics migreren voor het gebruik van de nieuwe streamingmediavelden
 
-Dit document beschrijft hoe een opstelling van Customer Journey Analytics die Adobe het stromen media de dienstgegevenstype genoemd &quot;Media&quot;gebruikt zou moeten worden bijgewerkt om het nieuwe overeenkomstige gegevenstype te gebruiken genoemd &quot;[&#x200B; Media die Details &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details) melden.&quot;
+Dit document beschrijft hoe een opstelling van Customer Journey Analytics die Adobe het stromen media de dienstgegevenstype genoemd &quot;Media&quot;gebruikt zou moeten worden bijgewerkt om het nieuwe overeenkomstige gegevenstype te gebruiken genoemd &quot;[&#x200B; Media die Details &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/xdm/data-types/media-reporting-details) melden.&quot;
 
 ## Customer Journey Analytics migreren
 
-Om een opstelling van Customer Journey Analytics van het oude gegevenstype te migreren genoemd &quot;Media&quot;aan het nieuwe gegevenstype genoemd &quot;[&#x200B; Media die Details &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details) melden,&quot;moet u de volgende montages bijwerken die het oude gegevenstype gebruiken:
+Om een opstelling van Customer Journey Analytics van het oude gegevenstype te migreren genoemd &quot;Media&quot;aan het nieuwe gegevenstype genoemd &quot;[&#x200B; Media die Details &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/xdm/data-types/media-reporting-details) melden,&quot;moet u de volgende montages bijwerken die het oude gegevenstype gebruiken:
 
 * Gegevensweergaven
 
@@ -43,7 +43,7 @@ U kunt als volgt afgeleide velden migreren naar het nieuwe gegevenstype:
 
 1. Vervang alle oude velden in het afgeleide veld door het nieuwe corresponderende veld van &quot;Media Reporting Details&quot;.
 
-Zie de [&#x200B; parameter van identiteitskaart van de Inhoud &#x200B;](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) op de [&#x200B; Audio en videoparameters &#x200B;](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters) pagina aan kaart tussen de oude gebieden en de nieuwe gebieden. Het oude veldpad wordt gevonden onder de eigenschap &quot;XDM Field Path&quot; terwijl het nieuwe veldpad wordt gevonden onder de eigenschap &quot;Reporting XDM Field Path&quot;.
+Zie de [&#x200B; parameter van identiteitskaart van de Inhoud &#x200B;](https://experienceleague.adobe.com/nl/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) op de [&#x200B; Audio en videoparameters &#x200B;](https://experienceleague.adobe.com/nl/docs/media-analytics/using/implementation/variables/audio-video-parameters) pagina aan kaart tussen de oude gebieden en de nieuwe gebieden. Het oude veldpad wordt gevonden onder de eigenschap &quot;XDM Field Path&quot; terwijl het nieuwe veldpad wordt gevonden onder de eigenschap &quot;Reporting XDM Field Path&quot;.
 
 ![&#x200B; Oude en nieuwe XDM gebiedspaden &#x200B;](assets/field-paths-updated.jpeg)
 
@@ -61,7 +61,7 @@ U kunt een van de volgende opties gebruiken om de gegevensweergave bij te werken
 
    ![&#x200B; Oude gebiedspad in gegevensmening &#x200B;](assets/old-field-data-view.jpeg)
 
-1. Controleer het overeenkomstige nieuwe gebied in de [&#x200B; Verschuiving van het Hoofdstuk &#x200B;](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/chapter-parameters#chapter-offset) sectie in het [&#x200B; de parameters van het Hoofdstuk &#x200B;](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/chapter-parameters) artikel.
+1. Controleer het overeenkomstige nieuwe gebied in de [&#x200B; Verschuiving van het Hoofdstuk &#x200B;](https://experienceleague.adobe.com/nl/docs/media-analytics/using/implementation/variables/chapter-parameters#chapter-offset) sectie in het [&#x200B; de parameters van het Hoofdstuk &#x200B;](https://experienceleague.adobe.com/nl/docs/media-analytics/using/implementation/variables/chapter-parameters) artikel.
 
 1. Zoek het nieuwe corresponderende veld in de gegevensweergave.
 
@@ -81,7 +81,7 @@ Als u een afgeleid gebied voor de &quot;Naam van het Hoofdstuk&quot;wilt tot sta
 
    ![&#x200B; pas het nieuwe gebied aan om een gegevensmening &#x200B;](assets/create-derived-field2.jpeg) te creëren
 
-1. Vul [!UICONTROL **als**] clausule gebruikend de waarde van de **Rapporterende Weg van het Gebied XDM**, zoals aangetoond in de [&#x200B; naam van het Hoofdstuk &#x200B;](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/chapter-parameters#chapter-name) parameter op de [&#x200B; parameters van het Hoofdstuk &#x200B;](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/chapter-parameters) pagina.
+1. Vul [!UICONTROL **als**] clausule gebruikend de waarde van de **Rapporterende Weg van het Gebied XDM**, zoals aangetoond in de [&#x200B; naam van het Hoofdstuk &#x200B;](https://experienceleague.adobe.com/nl/docs/media-analytics/using/implementation/variables/chapter-parameters#chapter-name) parameter op de [&#x200B; parameters van het Hoofdstuk &#x200B;](https://experienceleague.adobe.com/nl/docs/media-analytics/using/implementation/variables/chapter-parameters) pagina.
 
    ![&#x200B; de naam van het Hoofdstuk &#x200B;](assets/chapter-name.jpeg)
 
@@ -111,7 +111,7 @@ Als u een afgeleid gebied voor de &quot;Naam van het Hoofdstuk&quot;wilt tot sta
 
    ![&#x200B; bepaal de plaats van gebied met oud gegevenstype &#x200B;](assets/locate-fields-with-old-datatype.jpeg)
 
-1. Controleer het overeenkomstige nieuwe gebied in de [&#x200B; Naam van de Inhoud (veranderlijke) &#x200B;](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-name-variable) sectie in het [&#x200B; Streaming de parameters van Media &#x200B;](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-name-variable) artikel.
+1. Controleer het overeenkomstige nieuwe gebied in de [&#x200B; Naam van de Inhoud (veranderlijke) &#x200B;](https://experienceleague.adobe.com/nl/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-name-variable) sectie in het [&#x200B; Streaming de parameters van Media &#x200B;](https://experienceleague.adobe.com/nl/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-name-variable) artikel.
 
 1. Vervang het oude veld door het nieuwe veld.
 

@@ -14,7 +14,7 @@ ht-degree: 8%
 # Migreren van de stand-alone Media SDK naar Adobe Launch - Web (JS)
 
 >[!NOTE]
->Adobe Experience Platform Launch is omgedoopt tot een reeks technologieën voor gegevensverzameling in Experience Platform. Als gevolg hiervan zijn er verschillende terminologiewijzigingen in de productdocumentatie doorgevoerd. Raadpleeg het volgende [&#x200B; document &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en) voor een geconsolideerde referentie van de terminologiewijzigingen.
+>Adobe Experience Platform Launch is omgedoopt tot een reeks technologieën voor gegevensverzameling in Experience Platform. Als gevolg hiervan zijn er verschillende terminologiewijzigingen in de productdocumentatie doorgevoerd. Raadpleeg het volgende [&#x200B; document &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=nl-NL) voor een geconsolideerde referentie van de terminologiewijzigingen.
 
 ## Verschillen in functies
 
@@ -55,7 +55,7 @@ De uitbreiding van Media zal de gevormde parameters voor het volgen gebruiken.
 
    ![](assets/launch_config_js.png)
 
-[&#x200B; Gids van de Gebruiker van de Start - installeer en vorm de media uitbreiding &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html#install-and-configure-the-ma-extension)
+[&#x200B; Gids van de Gebruiker van de Start - installeer en vorm de media uitbreiding &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=nl-NL#install-and-configure-the-ma-extension)
 
 ## Verschillen in het maken van Beheer
 
@@ -124,5 +124,5 @@ Geef een gedelegeerd object door aan `get-instance` dat `getQoSObject()` - en `g
 
 ### Starten
 
-* [Overzicht van Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
-* [&#x200B; Uitbreiding van de Analytics van Media &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html)
+* [Overzicht van Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl-NL)
+* [&#x200B; Uitbreiding van de Analytics van Media &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=nl-NL)

@@ -20,10 +20,10 @@ Of u de Streaming Inzameling van Media voor Adobe Analytics-slechts implementati
 
 1. **bevestigt dat u een oplossing van Adobe compatibel met Edge Network en de Streaming Inzameling van Media**<br> uitvoert
 Wanneer u de verzameling streamingmedia implementeert met Edge, moet u ook over een werkende Customer Journey Analytics, Adobe Analytics, Adobe Journey Optimizer of een Real-Time Customer Data Platform-implementatie beschikken. Zie de volgende documentatiebronnen voor meer informatie:
-   * [&#x200B; de gids van Customer Journey Analytics &#x200B;](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=en)
-   * [&#x200B; voer Adobe Analytics &#x200B;](https://experienceleague.adobe.com/docs/analytics/implementation/home.html) uit
-   * [&#x200B; documentatie van Adobe Journey Optimizer &#x200B;](https://experienceleague.adobe.com/docs/journey-optimizer.html)
-   * [&#x200B; documentatie van Real-Time Customer Data Platform &#x200B;](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html)
+   * [&#x200B; de gids van Customer Journey Analytics &#x200B;](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=nl-NL)
+   * [&#x200B; voer Adobe Analytics &#x200B;](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=nl-NL) uit
+   * [&#x200B; documentatie van Adobe Journey Optimizer &#x200B;](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=nl-NL)
+   * [&#x200B; documentatie van Real-Time Customer Data Platform &#x200B;](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html?lang=nl-NL)
 
 1. **verkrijg media het volgen server URL**<br>
 Vraag uw Customer Journey Analytics-vertegenwoordiger naar de URL van de mediatrackingserver. <!-- This is the `collection-api-server` URL for the Mobile SDK, the JavaScript SDK, and the non-collection-api tracking server for Roku. Domain names for API implementation is: `[your_namespace].hb-api.omtrdc.net`. -->

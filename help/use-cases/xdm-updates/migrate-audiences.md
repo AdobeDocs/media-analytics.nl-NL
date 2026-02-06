@@ -13,15 +13,15 @@ ht-degree: 0%
 
 # Soorten publiek migreren naar nieuwe streamingmediavelden
 
-Dit document beschrijft hoe een publiek dat gebieden van het Adobe het stromen media de dienstgegevenstype genoemd &quot;Media&quot;gebruikt zou moeten worden gemigreerd om het nieuwe overeenkomstige gegevenstype te gebruiken genoemd &quot;[&#x200B; Media die Details &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details) melden.&quot;
+Dit document beschrijft hoe een publiek dat gebieden van het Adobe het stromen media de dienstgegevenstype genoemd &quot;Media&quot;gebruikt zou moeten worden gemigreerd om het nieuwe overeenkomstige gegevenstype te gebruiken genoemd &quot;[&#x200B; Media die Details &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/xdm/data-types/media-reporting-details) melden.&quot;
 
 ## Een publiek migreren
 
-Om een publiek van het oude gegevenstype te migreren genoemd &quot;Media&quot;aan het nieuwe geroepen gegevenstype &quot;[&#x200B; Media die Details &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details) melden,&quot;u moet het publiek uitgeven en in elke regel vervangen het oude gebied van het vervangen gegevenstype met het nieuwe overeenkomstige gebied van het nieuwe gegevenstype:
+Om een publiek van het oude gegevenstype te migreren genoemd &quot;Media&quot;aan het nieuwe geroepen gegevenstype &quot;[&#x200B; Media die Details &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/xdm/data-types/media-reporting-details) melden,&quot;u moet het publiek uitgeven en in elke regel vervangen het oude gebied van het vervangen gegevenstype met het nieuwe overeenkomstige gebied van het nieuwe gegevenstype:
 
 1. Zoek regels met velden van het vervangen gegevenstype &quot;Media&quot;. Dit zijn alle velden die met het pad beginnen, `media.mediaTimed` .
 
-1. Dupliceer die regels gebruikend gebieden van nieuwe &quot;[&#x200B; Media die Details &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;gegevenstype melden.
+1. Dupliceer die regels gebruikend gebieden van nieuwe &quot;[&#x200B; Media die Details &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/xdm/data-types/media-reporting-details)&quot;gegevenstype melden.
 
 1. Houd beide regels op zijn plaats tot u bevestigt dat het publiek zoals verwacht werkt.
 
@@ -29,7 +29,7 @@ Om een publiek van het oude gegevenstype te migreren genoemd &quot;Media&quot;aa
 
 1. Controleer of het publiek nog steeds naar behoren functioneert.
 
-Zie de [&#x200B; parameter van identiteitskaart van de Inhoud &#x200B;](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) op de [&#x200B; Audio en videoparameters &#x200B;](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters) pagina aan kaart tussen de oude gebieden en de nieuwe gebieden. Het oude veldpad wordt gevonden onder de eigenschap &quot;XDM Field Path&quot; terwijl het nieuwe veldpad wordt gevonden onder de eigenschap &quot;Reporting XDM Field Path&quot;.
+Zie de [&#x200B; parameter van identiteitskaart van de Inhoud &#x200B;](https://experienceleague.adobe.com/nl/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) op de [&#x200B; Audio en videoparameters &#x200B;](https://experienceleague.adobe.com/nl/docs/media-analytics/using/implementation/variables/audio-video-parameters) pagina aan kaart tussen de oude gebieden en de nieuwe gebieden. Het oude veldpad wordt gevonden onder de eigenschap &quot;XDM Field Path&quot; terwijl het nieuwe veldpad wordt gevonden onder de eigenschap &quot;Reporting XDM Field Path&quot;.
 
 ![&#x200B; Oude en nieuwe XDM gebiedspaden &#x200B;](assets/field-paths-updated.jpeg)
 
@@ -57,7 +57,7 @@ Om het gemakkelijker te maken om de migratierichtlijnen te volgen, overweeg het 
 
    ![&#x200B; geef publiek &#x200B;](assets/audience-edit5.jpeg) uit
 
-1. Zie de [&#x200B; Audio en videoparameters &#x200B;](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters) pagina aan kaart tussen de oude gebieden. Het oude veldpad kan worden gevonden onder de eigenschap &quot;XDM Field Path&quot;, terwijl het nieuwe veldpad kan worden gevonden onder de eigenschap &quot;Reporting XDM Field Path&quot;. Als voorbeeld, voor [&#x200B; begint de Media &#x200B;](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#media-starts) parameter, is de correspondent voor `media.mediaTimed.impressions.value` `mediaReporting.sessionDetails.isViewed`.
+1. Zie de [&#x200B; Audio en videoparameters &#x200B;](https://experienceleague.adobe.com/nl/docs/media-analytics/using/implementation/variables/audio-video-parameters) pagina aan kaart tussen de oude gebieden. Het oude veldpad kan worden gevonden onder de eigenschap &quot;XDM Field Path&quot;, terwijl het nieuwe veldpad kan worden gevonden onder de eigenschap &quot;Reporting XDM Field Path&quot;. Als voorbeeld, voor [&#x200B; begint de Media &#x200B;](https://experienceleague.adobe.com/nl/docs/media-analytics/using/implementation/variables/audio-video-parameters#media-starts) parameter, is de correspondent voor `media.mediaTimed.impressions.value` `mediaReporting.sessionDetails.isViewed`.
 
    ![&#x200B; Bijgewerkte weg XDM &#x200B;](assets/updated-xdm-path.jpeg)
 

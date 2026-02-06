@@ -18,8 +18,8 @@ ht-degree: 0%
 
 U kunt bepalen of traceringsactiviteit is toegestaan op een specifiek apparaat:
 
-* **Mobiele Apps -** de bibliotheek VA eerbiedigt de `AdobeMobile` privacy en opt-out montages van de bibliotheek. Als u het bijhouden van gegevens wilt uitschakelen, moet u de `AdobeMobile` -bibliotheek gebruiken. Voor meer informatie over de `AdobeMobile` optie-uit van de bibliotheek en privacymontages, zie [&#x200B; Opt-uit en de Montages van de Privacy &#x200B;](https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html).
-* **JavaScript/Browser Apps -** de bibliotheek VA eerbiedigt de `VisitorAPI` privacy en optout montages. Als u het bijhouden wilt uitschakelen, moet u zich afmelden bij de service voor de Bezoeker-API. Voor verdere informatie over optout en privacy, zie [&#x200B; de Dienst van de Identiteit van Adobe Experience Platform.](https://experienceleague.adobe.com/docs/id-service/using/home.html).
+* **Mobiele Apps -** de bibliotheek VA eerbiedigt de `AdobeMobile` privacy en opt-out montages van de bibliotheek. Als u het bijhouden van gegevens wilt uitschakelen, moet u de `AdobeMobile` -bibliotheek gebruiken. Voor meer informatie over de `AdobeMobile` optie-uit van de bibliotheek en privacymontages, zie [&#x200B; Opt-uit en de Montages van de Privacy &#x200B;](https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html?lang=nl-NL).
+* **JavaScript/Browser Apps -** de bibliotheek VA eerbiedigt de `VisitorAPI` privacy en optout montages. Als u het bijhouden wilt uitschakelen, moet u zich afmelden bij de service voor de Bezoeker-API. Voor verdere informatie over optout en privacy, zie [&#x200B; de Dienst van de Identiteit van Adobe Experience Platform.](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=nl-NL).
 * **OTT Apps (Chromecast, Roku) -** OTT SDKs verstrekt Algemene Verordening van de Bescherming van Gegevens (GDPR) - klaar APIs die u toestaan om `opt` statusvlaggen voor gegevensinzameling en transmissie te plaatsen, en lokaal opgeslagen identiteiten terug te winnen.
 
   >[!NOTE]

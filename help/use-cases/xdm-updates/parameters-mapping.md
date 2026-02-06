@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Media Analytics-parameters voor Adobe Experience Platform en Customer Journey Analytics
 
-Dit document bevat een uitgebreide lijst met alle parameters voor Media Analytics die in Adobe Experience Platform en Customer Journey Analytics worden gebruikt. Het is bedoeld om de integratie van gegevens te steunen die van Adobe Analytics aan Platform via de [&#x200B; Schakelaar van Source van Analytics &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/analytics) of de [&#x200B; Verbinding van Source van Analytics voor Classificaties &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/classifications) worden ingevoerd, in kaart brengend elke parameter aan zijn overeenkomstige XDM gebiedspad.
+Dit document bevat een uitgebreide lijst met alle parameters voor Media Analytics die in Adobe Experience Platform en Customer Journey Analytics worden gebruikt. Het is bedoeld om de integratie van gegevens te steunen die van Adobe Analytics aan Platform via de [&#x200B; Schakelaar van Source van Analytics &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/sources/connectors/adobe-applications/analytics) of de [&#x200B; Verbinding van Source van Analytics voor Classificaties &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/sources/connectors/adobe-applications/classifications) worden ingevoerd, in kaart brengend elke parameter aan zijn overeenkomstige XDM gebiedspad.
 
 ## Voor Media Analytics gereserveerde variabelen
 

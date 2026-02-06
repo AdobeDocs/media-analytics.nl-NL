@@ -16,7 +16,7 @@ ht-degree: 14%
 # Migreren van de standalone Media SDK naar Adobe Launch
 
 >[!NOTE]
->Adobe Experience Platform Launch is omgedoopt tot een reeks technologieën voor gegevensverzameling in Experience Platform. Als gevolg hiervan zijn er verschillende terminologiewijzigingen in de productdocumentatie doorgevoerd. Raadpleeg het volgende [&#x200B; document &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en) voor een geconsolideerde referentie van de terminologiewijzigingen.
+>Adobe Experience Platform Launch is omgedoopt tot een reeks technologieën voor gegevensverzameling in Experience Platform. Als gevolg hiervan zijn er verschillende terminologiewijzigingen in de productdocumentatie doorgevoerd. Raadpleeg het volgende [&#x200B; document &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=nl-NL) voor een geconsolideerde referentie van de terminologiewijzigingen.
 
 Deze documentatie is vooral gericht op verschillen in implementatie van Media Analytics
 tussen de standalone Media SDK en de Media Analytics Launch-extensie.
@@ -30,7 +30,7 @@ kunnen hun oplossingen snel installeren, configureren en implementeren.
 
 Adobe Media Analytics for Audio and Video is beschikbaar als een extensie voor Starten voor zowel internet als mobiele apparaten:
 
-* [&#x200B; Documentatie van de Lancering van het Web &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html)
+* [&#x200B; Documentatie van de Lancering van het Web &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=nl-NL)
 * [&#x200B; Mobiele Documentatie van de Lancering &#x200B;](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)
 
 ## Platforms
