@@ -3,8 +3,8 @@ title: Wat is Adobe Audience Manager ingeschakeld?
 description: Leer hoe u handelingen van toepassingen koppelt aan gegevens voor mediatracering zonder dat u extra verwerkingsregels en aangepaste variabelen nodig hebt.
 exl-id: c0d73bc2-4713-498a-8882-ff66c7f3dd50
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Met Adobe Audience Manager (AAM), een platform voor gegevensbeheer (DMP), kunt u uw publieksgegevens samenbrengen, zodat u eenvoudig commercieel relevante informatie over sitebezoekers kunt verzamelen, verhandelbare segmenten kunt maken en doelgerichte advertenties en inhoud aan het juiste publiek kunt leveren.
 
-Met AAM ben je niet gebonden aan een gegevensverkoper, -uitwisseling of -platform. Bovendien is AAM volkomen onbehagen als het gaat om de gegevensmiddelen van uw partners. Met toegang tot meerdere gegevensbronnen biedt AAM digitale uitgevers de mogelijkheid om een groot aantal gegevens van derden te gebruiken. Meer over AAM leren, zie de documentatie van AAM [&#x200B; de Documentatie van het Product van Audience Manager &#x200B;](https://experienceleague.adobe.com/docs/audience-manager/user-guide/aam-home.html?lang=nl-NL).
+Met AAM ben je niet gebonden aan een gegevensverkoper, -uitwisseling of -platform. Bovendien is AAM volkomen onbehagen als het gaat om de gegevensmiddelen van uw partners. Met toegang tot meerdere gegevensbronnen biedt AAM digitale uitgevers de mogelijkheid om een groot aantal gegevens van derden te gebruiken. Meer over AAM leren, zie de documentatie van AAM [ de Documentatie van het Product van Audience Manager ](https://experienceleague.adobe.com/docs/audience-manager/user-guide/aam-home.html).
 
 **VA aan de gegevensoverdracht van AAM -** voor zowel video inhoud als videoreclame, kunnen de metriek en de metriek die door (gereserveerde) oplossingsvariabelen worden verzameld automatisch worden verzonden naar AAM. De gegevensoverdracht is beschikbaar op alle platforms, inclusief desktopcomputers, mobiele apparaten en OTT. Als u deze gegevensoverdracht aan de serverzijde wilt inschakelen, moet u contact opnemen met de Adobe Client Care en vragen of deze feed is ingeschakeld.
 

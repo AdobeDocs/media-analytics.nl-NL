@@ -3,8 +3,8 @@ title: Meer informatie over het volgen van advertenties met JavaScript 3.x
 description: Implementeer en volg in browser (JS) toepassingen gebruikend Media SDK.
 exl-id: 6b34b2c0-5e50-471a-b52c-b9c760fa3169
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 1%
@@ -17,7 +17,7 @@ De volgende instructies bieden richtlijnen voor implementatie met behulp van de 
 
 >[!IMPORTANT]
 >
->Als u om het even welke vorige versies van SDK uitvoert, kunt u de Gidsen van Ontwikkelaars hier downloaden: [&#x200B; Download SDKs.](/help/getting-started/download-sdks.md)
+>Als u om het even welke vorige versies van SDK uitvoert, kunt u de Gidsen van Ontwikkelaars hier downloaden: [ Download SDKs.](/help/getting-started/download-sdks.md)
 
 ## Constanten voor bijhouden van advertenties
 
@@ -129,7 +129,7 @@ De volgende instructies bieden richtlijnen voor implementatie met behulp van de 
    };
    ```
 
-Zie het volgende scenario [&#x200B; de playback van VOD met pre-roladvertenties &#x200B;](/help/use-cases/tracking-scenarios/vod-preroll-ads.md) voor meer informatie.
+Zie het volgende scenario [ de playback van VOD met pre-roladvertenties ](/help/use-cases/tracking-scenarios/vod-preroll-ads.md) voor meer informatie.
 
 ## Korrelige advertentie bijhouden
 

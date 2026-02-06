@@ -4,8 +4,8 @@ description: Meer informatie over de mediarapportsuite voor het verzamelen van m
 uuid: d306068d-a308-4b6e-8a72-742dda0de428
 exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 0%
@@ -16,13 +16,13 @@ ht-degree: 0%
 
 Elke rapportsuite die mediametriek verzamelt, moet worden geconfigureerd voordat mediagegevens worden verzonden.
 
-De gevorderde klanten kunnen de media panelen in Analysis Workspace gebruiken slechts nadat de Kern van Media wordt toegelaten en het volgen wordt toegelaten voor [&#x200B; Kwaliteit van Ervaring &#x200B;](/help/use-cases/track-qos/track-qos-overview.md).
+De gevorderde klanten kunnen de media panelen in Analysis Workspace gebruiken slechts nadat de Kern van Media wordt toegelaten en het volgen wordt toegelaten voor [ Kwaliteit van Ervaring ](/help/use-cases/track-qos/track-qos-overview.md).
 
 >[!TIP]
 >
 >Om uit nieuwe mogelijkheden voordeel te halen, zouden de bestaande het stromen media klanten media het volgen voor hun RSIDs opnieuw moeten toelaten.
 
-1. In [&#x200B; Rapporten &amp; Analytics &#x200B;](https://my.omniture.com/login/) klik **[!UICONTROL Admin > Report Suites].**
+1. In [ Rapporten &amp; Analytics ](https://my.omniture.com/login/) klik **[!UICONTROL Admin > Report Suites].**
 1. Selecteer de rapportsuite(s) waar u mediagegevens verzamelt en klik op **[!UICONTROL Edit Settings > Media Management > Media Reporting].**
 
    ![](assets/media-reporting.png)
@@ -72,4 +72,4 @@ De gevorderde klanten kunnen de media panelen in Analysis Workspace gebruiken sl
 
 >[!IMPORTANT]
 >
->Verander niet de classificatienamen voor om het even welke die variabelen in de Metriek en meta-gegevenslijsten (b.v., [&#x200B; Audio en videoparameters &#x200B;](/help/implementation/variables/audio-video-parameters.md) worden vermeld die daar onder het Melden/Gereserveerde Variabele als &quot;classificatie&quot;worden beschreven. De mediaclassificaties worden gedefinieerd wanneer een rapportsuite is ingeschakeld voor het bijhouden van media. Van tijd tot tijd, voegt Adobe nieuwe eigenschappen toe, en wanneer dit voorkomt, moeten de klanten hun rapportsuites opnieuw toelaten om toegang tot de nieuwe media eigenschappen te krijgen. Tijdens het updateproces bepaalt Adobe of de classificaties worden toegelaten door de namen van de variabelen te controleren. Als een van de ontbrekende elementen ontbreekt, voegt Adobe de ontbrekende opnieuw toe.
+>Verander niet de classificatienamen voor om het even welke die variabelen in de Metriek en meta-gegevenslijsten (b.v., [ Audio en videoparameters ](/help/implementation/variables/audio-video-parameters.md) worden vermeld die daar onder het Melden/Gereserveerde Variabele als &quot;classificatie&quot;worden beschreven. De mediaclassificaties worden gedefinieerd wanneer een rapportsuite is ingeschakeld voor het bijhouden van media. Van tijd tot tijd, voegt Adobe nieuwe eigenschappen toe, en wanneer dit voorkomt, moeten de klanten hun rapportsuites opnieuw toelaten om toegang tot de nieuwe media eigenschappen te krijgen. Tijdens het updateproces bepaalt Adobe of de classificaties worden toegelaten door de namen van de variabelen te controleren. Als een van de ontbrekende elementen ontbreekt, voegt Adobe de ontbrekende opnieuw toe.

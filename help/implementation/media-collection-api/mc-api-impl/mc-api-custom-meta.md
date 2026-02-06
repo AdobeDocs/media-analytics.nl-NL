@@ -4,25 +4,25 @@ description: Leer hoe te om douanesleutel te verstrekken:waardeparen op sessionS
 uuid: df4109dd-9fca-4c33-a7d5-8e6eec257527
 exl-id: 672fa804-4a4f-4f06-b29b-b0aad27ca2f3
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
-source-wordcount: '127'
+source-wordcount: '124'
 ht-degree: 1%
 
 ---
 
 # Ondersteuning voor aangepaste metagegevens{#custom-metadata-support}
 
-U kunt aangepaste sleutel:waardeparen opgeven voor de gebeurtenissen `sessionStart` , `chapterStart` en `adStart` . Deze informatie moet worden opgegeven in de JSON-toets `customMetadata` , die naast de `params` -toets wordt geplaatst.
+U kunt aangepaste sleutel :value paren op de `sessionStart`, `chapterStart`, en `adStart` gebeurtenissen verstrekken. Deze informatie moet worden opgegeven in de JSON-toets `customMetadata` , die naast de `params` -toets wordt geplaatst.
 
-De JSON-toets `customMetadata` moet een object met sleutel:waardeparen bevatten. De sleutel mag alleen alfanumerieke tekens, onderstreping en punt/punt bevatten.
+De `customMetadata` JSON sleutel zou een voorwerp van zeer belangrijke :value paren moeten bevatten. De sleutel mag alleen alfanumerieke tekens, onderstreping en punt/punt bevatten.
 
 [API-gebeurtenissen voor MA-verzameling](../mc-api-ref/mc-api-events-req.md)
 
 ## Voorbeeld
 
-U kunt momenteel een `sessionStart` -gebeurtenis verzenden met de volgende sleutel:waardepaar:
+Momenteel kunt u een `sessionStart` gebeurtenis met het volgende sleutel :value paar verzenden:
 
 ```
 params: { "media.channel": "channel-1" },

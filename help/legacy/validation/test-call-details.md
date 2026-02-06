@@ -4,8 +4,8 @@ description: Onderzoek de vraag u moet maken om uw implementatie te bevestigen.
 uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 exl-id: 5e167714-3f0c-4afa-b171-7d51cff6522e
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 8%
@@ -22,13 +22,13 @@ ht-degree: 8%
 |---|---|
 | `pev2` | ms_s |
 | `a.media.friendlyName` | Episodetitel |
-| _&#x200B;**`a.media.name`**&#x200B;_ | _&#x200B;**123456**&#x200B;_ |
-| _&#x200B;**`a.media.length`**&#x200B;_ | _&#x200B;**120**&#x200B;_ |
+| _**`a.media.name`**_ | _**123456**_ |
+| _**`a.media.length`**_ | _**120**_ |
 | `a.media.playerName` | HTML5 |
-| _&#x200B;**`a.media.view`**&#x200B;_ | _&#x200B;**waar**&#x200B;_ |
+| _**`a.media.view`**_ | _**waar**_ |
 | `a.contentType` | vod |
-| _&#x200B;**`custom.[value]`**&#x200B;_ | _&#x200B;**de meta-gegevensgebieden van de Douane**&#x200B;_ |
-| _&#x200B;**`a.media.[value]`**&#x200B;_ | _&#x200B;**Standaard meta-gegevensgebieden**&#x200B;_ |
+| _**`custom.[value]`**_ | _**de meta-gegevensgebieden van de Douane**_ |
+| _**`a.media.[value]`**_ | _**Standaard meta-gegevensgebieden**_ |
 
 **Nota&#39;s:**
 
@@ -66,15 +66,15 @@ ht-degree: 8%
 | Parameter |  Waarde (monster)  |
 |---|---|
 | `s:event:type` | start |
-| _&#x200B;**`l:event:playhead`**&#x200B;_ | _&#x200B;**0**&#x200B;_ |
+| _**`l:event:playhead`**_ | _**0**_ |
 | `l:event:duration` | 4 |
 | `s:asset:name` | Episodetitel |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
 | `s:stream:type` | vod |
 | `s:asset:type` | hoofd |
-| _&#x200B;**`s:meta:custom.[value]`**&#x200B;_ | _&#x200B;**de meta-gegevensgebieden van de Douane**&#x200B;_ |
-| _&#x200B;**`s:meta:a.media.[value]`**&#x200B;_ | _&#x200B;**Standaard meta-gegevensgebieden**&#x200B;_ |
+| _**`s:meta:custom.[value]`**_ | _**de meta-gegevensgebieden van de Douane**_ |
+| _**`s:meta:a.media.[value]`**_ | _**Standaard meta-gegevensgebieden**_ |
 
 **Nota&#39;s:**
 
@@ -111,7 +111,7 @@ ht-degree: 8%
 
 | Parameter |  Waarde (monster)  |
 |---|---|
-| _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**aa_start**&#x200B;_ |
+| _**`s:event:type`**_ | _**aa_start**_ |
 | `l:event:playhead` | 0 |
 | `l:event:duration` | 4 |
 | `s:asset:name` | Episodetitel |
@@ -131,19 +131,19 @@ ht-degree: 8%
 
 | Parameter |  Waarde (monster)  |
 |---|---|
-| _&#x200B;**`pev2`**&#x200B;_ | _&#x200B;**msa_s**&#x200B;_ |
+| _**`pev2`**_ | _**msa_s**_ |
 | `a.media.name` | 123456 |
-| _&#x200B;**`a.media.ad.name`**&#x200B;_ | _&#x200B;**9378**&#x200B;_ |
+| _**`a.media.ad.name`**_ | _**9378**_ |
 | `a.media.ad.friendlyName` | Video_VPAID_DFA |
 | `a.media.ad.podFriendlyName` | preroll |
-| _&#x200B;**`a.media.ad.length`**&#x200B;_ | _&#x200B;**15**&#x200B;_ |
+| _**`a.media.ad.length`**_ | _**15**_ |
 | `a.media.ad.playerName` | HTML5 |
 | `a.media.ad.pod` | c27aaf3ff8224bb6b9ebfe1b2e79073d_1 |
 | `a.media.ad.podPosition` | 1 |
 | `a.media.ad.podSecond` | 0,0 |
-| _&#x200B;**`a.media.ad.view`**&#x200B;_ | _&#x200B;**Waar**&#x200B;_ |
-| _&#x200B;**`custom.[value]`**&#x200B;_ | _&#x200B;**de gebieden van Meta-gegevens**&#x200B;_ |
-| _&#x200B;**`a.media.[value]`**&#x200B;_ | _&#x200B;**Standaard meta-gegevensgebieden**&#x200B;_ |
+| _**`a.media.ad.view`**_ | _**Waar**_ |
+| _**`custom.[value]`**_ | _**de gebieden van Meta-gegevens**_ |
+| _**`a.media.[value]`**_ | _**Standaard meta-gegevensgebieden**_ |
 
 **Nota&#39;s:**
 
@@ -180,15 +180,15 @@ ht-degree: 8%
 
 | Parameter |  Waarde (monster)  |
 |---|---|
-| _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**begin**&#x200B;_ |
+| _**`s:event:type`**_ | _**begin**_ |
 | `l:event:playhead` | 0 |
 | `l:event:duration` | 4 |
 | `s:asset:ad_id` | 9378 |
-| _&#x200B;**`l:asset:length`**&#x200B;_ | _&#x200B;**120**&#x200B;_ |
+| _**`l:asset:length`**_ | _**120**_ |
 | `s:stream:type` | vod |
-| _&#x200B;**`s:asset:type`**&#x200B;_ | _&#x200B;**ad**&#x200B;_ |
-| _&#x200B;**`s:meta:custom.[value]`**&#x200B;_ | _&#x200B;**de meta-gegevensgebieden van de Douane**&#x200B;_ |
-| _&#x200B;**`s:meta:a.media.[value]`**&#x200B;_ | _&#x200B;**Standaard meta-gegevensgebieden**&#x200B;_ |
+| _**`s:asset:type`**_ | _**ad**_ |
+| _**`s:meta:custom.[value]`**_ | _**de meta-gegevensgebieden van de Douane**_ |
+| _**`s:meta:a.media.[value]`**_ | _**Standaard meta-gegevensgebieden**_ |
 
 **Nota&#39;s:**
 
@@ -225,7 +225,7 @@ ht-degree: 8%
 
 | Parameter |  Waarde (monster)  |
 |---|---|
-| _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**aa_ad_start**&#x200B;_ |
+| _**`s:event:type`**_ | _**aa_ad_start**_ |
 | `l:event:playhead` | 0 |
 | `l:event:duration` | 0 |
 | `s:asset:ad_id` | 9378 |
@@ -237,37 +237,37 @@ ht-degree: 8%
 
 | Parameter |  Waarde (monster)  |
 |---|---|
-| _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**spel**&#x200B;_ |
+| _**`s:event:type`**_ | _**spel**_ |
 | `l:event:playhead` | 15 |
 | `l:event:duration` | 0 |
 | `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
 | `s:stream:type` | vod |
-| _&#x200B;**`s:asset:type`**&#x200B;_ | _&#x200B;**ad**&#x200B;_ |
+| _**`s:asset:type`**_ | _**ad**_ |
 
 ### Media Analytics (hartslagen) en Pauze vraag {#ma-ad-pause-call}
 
 | Parameter |  Waarde (monster)  |
 |---|---|
-| _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**pauze**&#x200B;_ |
+| _**`s:event:type`**_ | _**pauze**_ |
 | `l:event:playhead` | 15 |
 | `l:event:duration` | 0 |
 | `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
 | `s:stream:type` | vod |
-| _&#x200B;**`s:asset:type`**&#x200B;_ | _&#x200B;**ad**&#x200B;_ |
+| _**`s:asset:type`**_ | _**ad**_ |
 
 ### Media Analytics (heartbeats) Adobe Analytics Ad Complete call {#ma-aa-ad-complete-call}
 
 | Parameter |  Waarde (monster)  |
 |---|---|
-| _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**volledig**&#x200B;_ |
+| _**`s:event:type`**_ | _**volledig**_ |
 | `l:event:playhead` | 15 |
 | `l:event:duration` | 0 |
 | `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
 | `s:stream:type` | vod |
-| _&#x200B;**`s:asset:type`**&#x200B;_ | _&#x200B;**ad**&#x200B;_ |
+| _**`s:asset:type`**_ | _**ad**_ |
 
 ## Hoofdinhoud afspelen {#play-main-content}
 
@@ -276,8 +276,8 @@ ht-degree: 8%
 | Parameter |  Waarde (monster)  |
 |---|---|
 | `s:event:type` | play |
-| _&#x200B;**`l:event:playhead`**&#x200B;_ | _&#x200B;**29**&#x200B;_ |
-| _&#x200B;**`l:event:duration`**&#x200B;_ | _&#x200B;**10189**&#x200B;_ |
+| _**`l:event:playhead`**_ | _**29**_ |
+| _**`l:event:duration`**_ | _**10189**_ |
 | `s:asset:name` | Episodetitel |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
@@ -295,8 +295,8 @@ ht-degree: 8%
 
 | Parameter |  Waarde (monster)  |
 |---|---|
-| _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**pauze**&#x200B;_ |
-| _&#x200B;**`l:event:playhead`**&#x200B;_ | _&#x200B;**29**&#x200B;_ |
+| _**`s:event:type`**_ | _**pauze**_ |
+| _**`l:event:playhead`**_ | _**29**_ |
 | `l:event:duration` | 10189 |
 | `s:asset:name` | Episodetitel |
 | `s:asset:video_id` | 123456 |

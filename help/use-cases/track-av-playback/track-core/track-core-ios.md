@@ -4,8 +4,8 @@ description: Leer hoe u core tracking implementeert met de Media SDK op iOS.
 uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
 exl-id: 5c6b36b3-a421-45a4-a65e-4eb57513ca4a
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '704'
 ht-degree: 1%
@@ -18,13 +18,13 @@ Deze documentatie behandelt het volgen in versie 2.x van de SDK.
 
 >[!IMPORTANT]
 >
->Als u een 1.x versie van SDK uitvoert, kunt u 1.x de Gidsen van Ontwikkelaars hier downloaden: [&#x200B; Download SDKs &#x200B;](/help/getting-started/download-sdks.md)
+>Als u een 1.x versie van SDK uitvoert, kunt u 1.x de Gidsen van Ontwikkelaars hier downloaden: [ Download SDKs ](/help/getting-started/download-sdks.md)
 
 1. **Aanvankelijke het volgen opstelling**
 
    Bepaal wanneer de gebruiker de afspeelintentie activeert (de gebruiker klikt op Afspelen en/of Automatisch afspelen is ingeschakeld) en maak een `MediaObject` -instantie.
 
-   [&#x200B; createMediaObjectWithName API &#x200B;](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/Classes/ADBMediaHeartbeat.html#//api/name/createMediaObjectWithName:mediaId:length:streamType:mediaType:)
+   [ createMediaObjectWithName API ](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/Classes/ADBMediaHeartbeat.html#//api/name/createMediaObjectWithName:mediaId:length:streamType:mediaType:)
 
    | Naam variabele | Beschrijving | Vereist |
    |---|---|---|
@@ -71,10 +71,9 @@ Deze documentatie behandelt het volgen in versie 2.x van de SDK.
 
       * [Standaardmetagegevens implementeren op iOS](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
       * **Video meta-gegevenssleutels**
+        [ de meta-gegevenssleutels van iOS ](/help/use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
 
-        [&#x200B; de meta-gegevenssleutels van iOS &#x200B;](/help/use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
-
-      * Zie de uitvoerige lijst van videometagegevens hier: [&#x200B; Audio en videoparameters &#x200B;](/help/implementation/variables/audio-video-parameters.md)
+      * Zie de uitvoerige lijst van videometagegevens hier: [ Audio en videoparameters ](/help/implementation/variables/audio-video-parameters.md)
 
      >[!NOTE]
      >
@@ -180,5 +179,5 @@ Deze documentatie behandelt het volgen in versie 2.x van de SDK.
 
 Raadpleeg de volgende secties voor meer informatie over het bijhouden van het afspelen van core:
 
-* Het volgen scenario&#39;s: [&#x200B; de playback van VOD zonder advertenties &#x200B;](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)
+* Het volgen scenario&#39;s: [ de playback van VOD zonder advertenties ](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)
 * Voorbeeld van een voorbeeldspeler die bij de iOS SDK wordt geleverd voor een volledig voorbeeld van &#39;tracking&#39;.

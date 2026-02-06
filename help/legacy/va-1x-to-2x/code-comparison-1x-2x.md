@@ -4,8 +4,8 @@ description: Leer het verschil tussen code in 1.x en 2.x versies van Media SDK.
 uuid: 9f0a1660-2100-446d-ab75-afdf966478b3
 exl-id: c2324c6a-329f-44e2-bea0-9d43ef9c6ef7
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '544'
 ht-degree: 2%
@@ -30,8 +30,8 @@ Alle configuratieparameters en tracking-API&#39;s worden nu geconsolideerd in de
 
 **Verbindingen aan 1.x en 2.x steekproefspelers:**
 
-* [&#x200B; 1.x de Speler van de Steekproef &#x200B;](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L58)
-* [&#x200B; 2.x de Speler van de Steekproef &#x200B;](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/2.x/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L47)
+* [ 1.x de Speler van de Steekproef ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L58)
+* [ 2.x de Speler van de Steekproef ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/2.x/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L47)
 
 In de volgende secties vindt u codevergelijkingen tussen 1.x en 2.x, waaronder Initialisatie, Core Playback, Ad Playback, Chapter Playback en enkele andere gebeurtenissen.
 

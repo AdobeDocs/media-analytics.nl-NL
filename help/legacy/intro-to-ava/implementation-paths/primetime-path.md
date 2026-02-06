@@ -3,8 +3,8 @@ title: Wat is Adobe Primetime?
 description: Leer meer over de Adobe Primetime-oplossing en hoe u deze oplossing kunt gebruiken voor het monetiseren van streaming-mediaservices.
 exl-id: 756e4e62-35b3-42a2-93f5-81531e1c9cc8
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Primetime elimineert de ingewikkeldheid van het bereiken van, het monetiseren va
 * Integrated support for Nielsen DTVR (linear) with ID3 metadata and DCR with CMS metadata.
 -->
 
-TVSDK is al geïntegreerd met de Media SDK, waardoor de implementatie op elk ondersteund platform veel eenvoudiger en sneller verloopt. <!--Primetime also supports the partnership with Nielsen.--> aan hefboomwerking Primetime, volg de zelfde richtlijnen en de eerste vereisten die in [&#x200B; worden gevonden client-kant &#x200B;](/help/legacy/intro-to-ava/implementation-paths/client-side-path.md) samen met de volgende documenten voor uw platform(s): [&#x200B; Gids van de Gebruiker Primetime.](https://helpx.adobe.com/nl/primetime/user-guide.html)
+TVSDK is al geïntegreerd met de Media SDK, waardoor de implementatie op elk ondersteund platform veel eenvoudiger en sneller verloopt. <!--Primetime also supports the partnership with Nielsen.--> aan hefboomwerking Primetime, volg de zelfde richtlijnen en de eerste vereisten die in [ worden gevonden client-kant ](/help/legacy/intro-to-ava/implementation-paths/client-side-path.md) samen met de volgende documenten voor uw platform(s): [ Gids van de Gebruiker Primetime.](https://helpx.adobe.com/nl/primetime/user-guide.html)
 
 >[!NOTE]
 >

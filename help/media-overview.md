@@ -4,8 +4,8 @@ description: Gebruik Adobe Streaming Media-oplossingen om krachtige insight te v
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '598'
 ht-degree: 9%
@@ -59,7 +59,7 @@ De voordelen van streaming media services zijn onder andere realtime bewaking, g
 
 Gegevens over het bijhouden van streaming-mediaservices worden verzameld bij een speler met behulp van Media voor Edge Network SDK/Extension, Media Extension with Tags, Media SDK&#39;s, Media Edge API of de Media Collection API.
 
-Alle korrelige gegevens (tot 10 seconden) worden verzonden of naar de Dienst van de Analyse van Media of Ervaring Edge (afhankelijk van de [&#x200B; implementatiemethode &#x200B;](/help/implementation/overview.md) u kiest), die de gegevens voor elke individuele playbackzitting verzamelen en verwerken.
+Alle korrelige gegevens (tot 10 seconden) worden verzonden of naar de Dienst van de Analyse van Media of Ervaring Edge (afhankelijk van de [ implementatiemethode ](/help/implementation/overview.md) u kiest), die de gegevens voor elke individuele playbackzitting verzamelen en verwerken.
 
 Nadat een afspeelsessie is beëindigd, worden de gegevens voor het bijhouden van de gegevens naar Adobe Analytics of Customer Journey Analytics verzonden voor opslag en rapportage.
 
@@ -68,4 +68,4 @@ Nadat een afspeelsessie is beëindigd, worden de gegevens voor het bijhouden van
 >Met Customer Journey Analytics-implementaties kunnen gegevens naar Customer Journey Analytics worden verzonden met Experience Edge of via de Analytics Data Connector (ADC).
 
 
-Voor gedetailleerde informatie over de diverse implementatiemethodes, zie [&#x200B; het stromen media diensten voor Adobe Analytics of Customer Journey Analytics uitvoeren &#x200B;](/help/implementation/overview.md).
+Voor gedetailleerde informatie over de diverse implementatiemethodes, zie [ het stromen media diensten voor Adobe Analytics of Customer Journey Analytics uitvoeren ](/help/implementation/overview.md).

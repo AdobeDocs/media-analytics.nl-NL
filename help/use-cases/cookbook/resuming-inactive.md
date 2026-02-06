@@ -4,8 +4,8 @@ description: Leer hoe u een inactieve sessie kunt hervatten.
 uuid: 3ff1205d-7bbe-4016-9bd7-6e34b7862c4c
 exl-id: ee4cf7f5-5788-4d35-a04d-4ed714ccd663
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '159'
 ht-degree: 0%
@@ -23,7 +23,7 @@ De Media SDK houdt automatisch bij hoe lang het afspelen van media zich in een v
 * Gestopt
 * Bufferen
 
-Als een sessie voor het bijhouden van media langer dan 30 minuten in een niet-actieve status blijft, wordt de sessie automatisch gesloten. Als de gebruiker na een eerder inactieve video het volgen zitting (`trackPlay`) hervat, leidt de Hartslag van Media automatisch tot een nieuwe videozitting gebruikend de eerder gebruikte videoinformatie en meta-gegevens, en verzendt een summehartgebeurtenis. Voor meer informatie, zie [&#x200B; Audio en videoparameters.](/help/implementation/variables/audio-video-parameters.md)
+Als een sessie voor het bijhouden van media langer dan 30 minuten in een niet-actieve status blijft, wordt de sessie automatisch gesloten. Als de gebruiker na een eerder inactieve video het volgen zitting (`trackPlay`) hervat, leidt de Hartslag van Media automatisch tot een nieuwe videozitting gebruikend de eerder gebruikte videoinformatie en meta-gegevens, en verzendt een summehartgebeurtenis. Voor meer informatie, zie [ Audio en videoparameters.](/help/implementation/variables/audio-video-parameters.md)
 
 
 ## Eerder gesloten sessie handmatig hervatten

@@ -4,10 +4,10 @@ description: Bekijk een voorbeeld van hoe u live-inhoud kunt bijhouden met de Me
 uuid: e92e99f4-c395-48aa-8a30-cbdd2f5fc07c
 exl-id: f6a00ffd-da6a-4d62-92df-15d119cfc426
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '586'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ Voor LIVE-streams moet u de waarde van de afspeelkop instellen als het aantal se
 
 Wanneer een gebruiker de stream afspeelt bij LIVE-media, moet u `l:event:playhead` instellen op het aantal seconden dat is verstreken sinds middernacht van de UTC op die dag. Dit is in tegenstelling tot VOD, waar u playhead aan &quot;0&quot;zou plaatsen. Opmerking: wanneer u voortgangsmarkeringen gebruikt, is de duur van de inhoud vereist en moet de afspeelkop worden bijgewerkt in het aantal seconden vanaf het begin van het media-item, te beginnen met 0.
 
-Bijvoorbeeld, zeg een LIVE het stromen gebeurtenis begint bij middernacht en looppas 24 uren (`a.media.length=86400`; `l:asset:length=86400`). Stel vervolgens dat een gebruiker die LIVE-stream begint af te spelen om 12:00 uur. In dit scenario moet u `l:event:playhead` instellen op 43200 (12 uur sinds middernacht UTC op die dag in seconden).
+Bijvoorbeeld, zeg een LIVE het stromen gebeurtenis begint bij middernacht en looppas 24 uren (`a.media.length=86400`; `l:asset:length=86400`). Dan, zeg een gebruiker begint die stroom LIVE bij 12 :00pm te spelen. In dit scenario moet u `l:event:playhead` instellen op 43200 (12 uur sinds middernacht UTC op die dag in seconden).
 
 ### Bij pauzeren
 

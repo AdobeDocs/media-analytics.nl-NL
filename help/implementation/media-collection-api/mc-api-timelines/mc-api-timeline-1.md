@@ -4,8 +4,8 @@ description: Dig dieper in de playhead chronologie en overeenkomstige acties van
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: 83c64e35a52921532697063d3fdf987e889b2854
 workflow-type: tm+mt
 source-wordcount: '1120'
 ht-degree: 5%
@@ -18,9 +18,9 @@ ht-degree: 5%
 
 De volgende diagrammen illustreren de tijdlijn van de afspeelkop en de overeenkomstige tijdlijn van de handelingen van een gebruiker. De bijzonderheden van elke actie en de bijbehorende verzoeken worden hieronder weergegeven.
 
-![&#x200B; API inhoud &#x200B;](assets/va_api_content.png)
+![ API inhoud ](assets/va_api_content.png)
 
-![&#x200B; API acties &#x200B;](assets/va_api_actions.png)
+![ API acties ](assets/va_api_actions.png)
 
 ## Handelingsdetails
 
@@ -34,7 +34,7 @@ Deze vraag signaleert _de intentie van de gebruiker om_ een video te spelen.
 
 Er wordt een sessie-id ( `{sid}` ) geretourneerd aan de client die wordt gebruikt om alle volgende opvolgende opvolgende aanroepen binnen de sessie te identificeren. De spelerstatus wordt nog niet afgespeeld, maar &#39;gestart&#39;.
 
-[&#x200B; Verplichte zittingsparameters &#x200B;](../mc-api-ref/mc-api-sessions-req.md) moeten in de `params` kaart in het verzoeklichaam worden omvat.
+[ Verplichte zittingsparameters ](../mc-api-ref/mc-api-sessions-req.md) moeten in de `params` kaart in het verzoeklichaam worden omvat.
 
 Op de achtergrond, produceert deze vraag Adobe Analytics in werking stelt vraag in werking.
 
@@ -65,7 +65,7 @@ Op de achtergrond, produceert deze vraag Adobe Analytics in werking stelt vraag 
 
 | Handeling | Tijdlijn handeling (seconden) | Positie afspeelkop (seconden) | Aanvraag client |
 | --- | :---: | :---: | --- |
-| App start gebeurtenistimer | 0 | 0 | `/api/v1/sessions/{sid}/events` | |
+| App start gebeurtenistimer | 0 | 0 | `/api/v1/sessions/{sid}/events` |
 
 Start de pingtimer van uw app. De eerste pingel gebeurtenis zou dan 1 seconde binnen moeten in brand steken als er pre-roladvertenties zijn, anders 10 seconden.
 
@@ -179,7 +179,7 @@ Pingel de steun om de 1 seconde terwijl binnen een advertentie.
 >[!NOTE]
 >
 >De volgende advertenties in de chronologie zullen overslaan die de reeks van één-tweede pingelt tonen
->&#x200B;>in het belang van de beknoptheid...
+>in het belang van de beknoptheid...
 
 ```json
 {

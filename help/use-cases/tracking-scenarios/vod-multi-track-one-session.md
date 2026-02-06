@@ -4,8 +4,8 @@ description: Bekijk een voorbeeld van hoe u één tracker kunt gebruiken om meer
 uuid: 355c83f4-52bd-4bdd-92dc-ab506e412d0a
 exl-id: 72edb484-0d45-446e-bda3-cda9e2272e7e
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '184'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 In dit scenario wordt de instantie `MediaHeartbeat` gebruikt om twee afzonderlijke sessies in de juiste volgorde te maken.
 
-Dit scenario is het zelfde als de [&#x200B; playback van VOD zonder advertenties &#x200B;](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario.
+Dit scenario is het zelfde als de [ playback van VOD zonder advertenties ](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario.
 
 ## Parameters {#parameters}
 

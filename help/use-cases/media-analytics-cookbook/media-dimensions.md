@@ -3,8 +3,8 @@ title: Wat is kenmerk van mediastream?
 description: Leer hoe u handelingen van toepassingen koppelt aan gegevens voor mediatracering zonder dat u extra verwerkingsregels en aangepaste variabelen nodig hebt.
 exl-id: 75cc9088-776d-4b10-b358-9fff956a7eb7
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 1%
@@ -17,7 +17,7 @@ Met de Attributie van de Stroom van Media, kunt u toepassingsacties met media vo
 
 ## Media-afmetingen buiten mediatracering
 
-U kunt mediumafmetingen toevoegen aan analytische aanroepen, zoals paginaweergaven en aangepaste koppelingen. Tijdens implementatie, moet u de gegevensparameters van de media context aan de het spoorvraag van Analytics toevoegen. Om de volledige lijst van beschikbare parameters van contextgegevens te bekijken die voor media worden gebruikt, zie [&#x200B; Audio en videoparameters.](/help/implementation/variables/audio-video-parameters.md)
+U kunt mediumafmetingen toevoegen aan analytische aanroepen, zoals paginaweergaven en aangepaste koppelingen. Tijdens implementatie, moet u de gegevensparameters van de media context aan de het spoorvraag van Analytics toevoegen. Om de volledige lijst van beschikbare parameters van contextgegevens te bekijken die voor media worden gebruikt, zie [ Audio en videoparameters.](/help/implementation/variables/audio-video-parameters.md)
 
 Om deze eigenschap voor een specifiek rapport toe te laten, re-enable de media volgende configuratie van de Admin console.
 

@@ -4,8 +4,8 @@ description: 'Leer hoe u het afspelen van de kern kunt bijhouden, zoals het lade
 uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 exl-id: 98ad2783-c9e3-48de-88df-8549f26114a0
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '875'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Deze documentatie behandelt het volgen in versie 2.x van de SDK.
 
 >[!IMPORTANT]
 >
->Als u een 1.x versie van SDK uitvoert, kunt u 1.x de Gidsen van Ontwikkelaars hier downloaden: [&#x200B; Download SDKs.](/help/getting-started/download-sdks.md)
+>Als u een 1.x versie van SDK uitvoert, kunt u 1.x de Gidsen van Ontwikkelaars hier downloaden: [ Download SDKs.](/help/getting-started/download-sdks.md)
 
 ## Player Events
 
@@ -109,7 +109,7 @@ Wijzigingen annuleren
 
      Instantiëren van een standaard metagegevensobject, vullen van de gewenste variabelen en stellen het metagegevensobject in op het Media Heartbone-object.
 
-     Zie de uitvoerige lijst van meta-gegevens hier: [&#x200B; Audio en videoparameters.](../../implementation/variables/audio-video-parameters.md)
+     Zie de uitvoerige lijst van meta-gegevens hier: [ Audio en videoparameters.](../../implementation/variables/audio-video-parameters.md)
 
    * **meta-gegevens van de Douane -** creeer een veranderlijk voorwerp voor de douanevariabelen en bevolk met de gegevens voor deze inhoud.
 
@@ -238,4 +238,4 @@ if (e.type == "buffered") {
 
 ## Valideren {#validate}
 
-Voor informatie bij het bevestigen van uw *erfenis* implementatie, zie [&#x200B; Validering van de Oudheid.](/help/legacy/validation/validation-overview.md)
+Voor informatie bij het bevestigen van uw *erfenis* implementatie, zie [ Validering van de Oudheid.](/help/legacy/validation/validation-overview.md)

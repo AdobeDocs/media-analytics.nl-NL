@@ -4,10 +4,10 @@ description: Leer hoe u de optie voor aanmelding, opt-out en privacy kunt gebrui
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
@@ -18,8 +18,8 @@ ht-degree: 0%
 
 U kunt bepalen of traceringsactiviteit is toegestaan op een specifiek apparaat:
 
-* **Mobiele Apps -** de bibliotheek VA eerbiedigt de `AdobeMobile` privacy en opt-out montages van de bibliotheek. Als u het bijhouden van gegevens wilt uitschakelen, moet u de `AdobeMobile` -bibliotheek gebruiken. Voor meer informatie over de `AdobeMobile` optie-uit van de bibliotheek en privacymontages, zie [&#x200B; Opt-uit en de Montages van de Privacy &#x200B;](https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html?lang=nl-NL).
-* **JavaScript/Browser Apps -** de bibliotheek VA eerbiedigt de `VisitorAPI` privacy en optout montages. Als u het bijhouden wilt uitschakelen, moet u zich afmelden bij de service voor de Bezoeker-API. Voor verdere informatie over optout en privacy, zie [&#x200B; de Dienst van de Identiteit van Adobe Experience Platform.](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=nl-NL).
+* **Mobiele Apps -** de bibliotheek VA eerbiedigt de `AdobeMobile` privacy en opt-out montages van de bibliotheek. Als u het bijhouden van gegevens wilt uitschakelen, moet u de `AdobeMobile` -bibliotheek gebruiken. Voor meer informatie over de `AdobeMobile` optie-uit van de bibliotheek en privacymontages, zie [ Opt-uit en de Montages van de Privacy ](https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html).
+* **JavaScript/Browser Apps -** de bibliotheek VA eerbiedigt de `VisitorAPI` privacy en optout montages. Als u het bijhouden wilt uitschakelen, moet u zich afmelden bij de service voor de Bezoeker-API. Voor verdere informatie over optout en privacy, zie [ de Dienst van de Identiteit van Adobe Experience Platform.](https://experienceleague.adobe.com/docs/id-service/using/home.html).
 * **OTT Apps (Chromecast, Roku) -** OTT SDKs verstrekt Algemene Verordening van de Bescherming van Gegevens (GDPR) - klaar APIs die u toestaan om `opt` statusvlaggen voor gegevensinzameling en transmissie te plaatsen, en lokaal opgeslagen identiteiten terug te winnen.
 
   >[!NOTE]
@@ -36,16 +36,16 @@ U kunt bepalen of traceringsactiviteit is toegestaan op een specifiek apparaat:
 
          * **Chromecast:**
 
-               &quot;
-                ADBMobile.config.setPrivacyStatus (ADBMobile.config.PRIVACY_STATUS_OPT_OUT) 
-               &quot;
-           
+           ```
+           ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_OUT)
+           ```
+
          * **Roku:**
 
-               &quot;
-                ADBMobile ().setPrivacyStatus (ADBMobile ().PRIVACY_STATUS_OPT_OUT) 
-               &quot;
-           
+           ```
+           ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_OUT)
+           ```
+
            >[!IMPORTANT]
            >
            >Wanneer een gebruiker het bijhouden uitschakelt, worden alle gegevens en id&#39;s van het apparaat gewist totdat de gebruiker weer inklikt.
@@ -54,30 +54,30 @@ U kunt bepalen of traceringsactiviteit is toegestaan op een specifiek apparaat:
 
          * **Chromecast:**
 
-               &quot;
-                ADBMobile.config.setPrivacyStatus (ADBMobile.config.PRIVACY_STATUS_OPT_IN) 
-               &quot;
-           
+           ```
+           ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_IN)
+           ```
+
          * **Roku:**
 
-               &quot;
-                ADBMobile ().setPrivacyStatus (ADBMobile ().PRIVACY_STATUS_OPT_IN) 
-               &quot;
-           
+           ```
+           ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)
+           ```
+
       * **terugkeer het huidige plaatsen:**
 
          * **Chromecast:**
 
-               &quot;
-                ADBMobile.config.getPrivacyStatus () 
-               &quot;
-           
+           ```
+           ADBMobile.config.getPrivacyStatus()
+           ```
+
          * **Roku:**
 
-               &quot;
-                ADBMobile ().getPrivacyStatus () 
-               &quot;
-           
+           ```
+           ADBMobile().getPrivacyStatus()
+           ```
+
   Nadat u de privacy-instelling met `setPrivacyStatus` hebt gewijzigd, is de wijziging blijvend totdat deze opnieuw met deze methode wordt gewijzigd of de toepassing wordt verwijderd en opnieuw geïnstalleerd.
 
 ## Opgeslagen id&#39;s ophalen (OTT-apps) {#retrieving-stored-identifiers-ott-apps}

@@ -4,8 +4,8 @@ description: Leer hoe te om de variabelen van Milestone in de modulemethodes van
 uuid: 1c8edde5-0ef1-4bc0-a62d-1747f4907f09
 exl-id: 732079f4-3eb8-4b9a-892b-25a1c9332be4
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 12%
@@ -16,7 +16,7 @@ ht-degree: 12%
 
 ## Overzicht {#overview}
 
-De kernconcepten van videometing zijn hetzelfde voor bijhouden van mijlpaal en aangepaste koppeling. Deze houdt gebeurtenissen van videospelers in en wijst deze toe aan analysemethoden, terwijl de metagegevens en waarden van de speler ook worden opgehaald en aan analytische variabelen worden toegewezen. De benadering van de Verbinding van de Douane zou als afslanking en vereenvoudiging van zowel de implementatie als de verzamelde gegevens moeten worden beschouwd. Met de oplossing van de Verbinding van de Douane, zijn geen variabelen of methodes vooraf bepaald voor videometing, vereist het een volledige douaneopstelling. Het zou mogelijk moeten zijn om de spelergebeurteniscode bij te werken zodat deze naar de aangepaste link tracking-aanroepen voor basisspelergebeurtenissen zoals start en complete verwijst. Zie [&#x200B; de implementatiegids van de Verbinding van de Douane &#x200B;](/help/legacy/measurement-options/cl-in-aa/cl-impl-guide.md) voor meer details.
+De kernconcepten van videometing zijn hetzelfde voor bijhouden van mijlpaal en aangepaste koppeling. Deze houdt gebeurtenissen van videospelers in en wijst deze toe aan analysemethoden, terwijl de metagegevens en waarden van de speler ook worden opgehaald en aan analytische variabelen worden toegewezen. De benadering van de Verbinding van de Douane zou als afslanking en vereenvoudiging van zowel de implementatie als de verzamelde gegevens moeten worden beschouwd. Met de oplossing van de Verbinding van de Douane, zijn geen variabelen of methodes vooraf bepaald voor videometing, vereist het een volledige douaneopstelling. Het zou mogelijk moeten zijn om de spelergebeurteniscode bij te werken zodat deze naar de aangepaste link tracking-aanroepen voor basisspelergebeurtenissen zoals start en complete verwijst. Zie [ de implementatiegids van de Verbinding van de Douane ](/help/legacy/measurement-options/cl-in-aa/cl-impl-guide.md) voor meer details.
 
 De volgende lijsten verstrekken vertalingen tussen de oplossing van Milestone en de oplossing van de Verbinding van de Douane.
 

@@ -3,8 +3,8 @@ title: Migreren van de standalone Media SDK naar Adobe Launch - Web (JS)
 description: Leer hoe u van Media SDK naar Launch voor JS migreert.
 exl-id: 19b506b2-3070-4a5e-9732-a5cd0867afde
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 8%
@@ -14,7 +14,7 @@ ht-degree: 8%
 # Migreren van de stand-alone Media SDK naar Adobe Launch - Web (JS)
 
 >[!NOTE]
->Adobe Experience Platform Launch is omgedoopt tot een reeks technologieën voor gegevensverzameling in Experience Platform. Als gevolg hiervan zijn er verschillende terminologiewijzigingen in de productdocumentatie doorgevoerd. Raadpleeg het volgende [&#x200B; document &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=nl-NL) voor een geconsolideerde referentie van de terminologiewijzigingen.
+>Adobe Experience Platform Launch is omgedoopt tot een reeks technologieën voor gegevensverzameling in Experience Platform. Als gevolg hiervan zijn er verschillende terminologiewijzigingen in de productdocumentatie doorgevoerd. Raadpleeg het volgende [ document ](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en) voor een geconsolideerde referentie van de terminologiewijzigingen.
 
 ## Verschillen in functies
 
@@ -55,7 +55,7 @@ De uitbreiding van Media zal de gevormde parameters voor het volgen gebruiken.
 
    ![](assets/launch_config_js.png)
 
-[&#x200B; Gids van de Gebruiker van de Start - installeer en vorm de media uitbreiding &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=nl-NL#install-and-configure-the-ma-extension)
+[ Gids van de Gebruiker van de Start - installeer en vorm de media uitbreiding ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html#install-and-configure-the-ma-extension)
 
 ## Verschillen in het maken van Beheer
 
@@ -120,9 +120,9 @@ Geef een gedelegeerd object door aan `get-instance` dat `getQoSObject()` - en `g
 ### Media-SDK
 
 * [JavaScript 2.x instellen](/help/legacy/media-sdk/setup/setup-javascript/set-up-js-2.md)
-* [&#x200B; Media SDK JS API &#x200B;](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html)
+* [ Media SDK JS API ](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html)
 
 ### Starten
 
-* [Overzicht van Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=nl-NL)
-* [&#x200B; Uitbreiding van de Analytics van Media &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=nl-NL)
+* [Overzicht van Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
+* [ Uitbreiding van de Analytics van Media ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html)

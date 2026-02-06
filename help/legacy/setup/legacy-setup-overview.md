@@ -2,9 +2,9 @@
 title: Legacy Media SDK's implementeren
 description: Leer hoe u de **legacy** 2.x Media SDK instelt voor het bijhouden van media in uw mobiele, OTT- en browsertoepassingen (JS).
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: d94ede3e-95f8-4591-9833-ef39aff12ba9
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 1%
@@ -15,13 +15,13 @@ ht-degree: 1%
 
 De instructies in deze sectie zijn op **erfenis** 2.x Media SDKs van toepassing.
 
-* Voor informatie over het uitvoeren van een versie 1.x van Media SDK, zie de [&#x200B; 1.x Documentatie van Media SDK.](/help/getting-started/download-sdks.md)
+* Voor informatie over het uitvoeren van een versie 1.x van Media SDK, zie de [ 1.x Documentatie van Media SDK.](/help/getting-started/download-sdks.md)
 
 * Voor integrators Primetime, zie de _Documentatie van SDK van Media Primetime_.
 
 >[!IMPORTANT]
 >
->Met het einde van de ondersteuning voor versie 4 Mobile SDK&#39;s op 31 augustus 2021 beëindigt Adobe ook de ondersteuning voor de Media Analytics SDK&#39;s voor iOS en Android.  Voor extra informatie, zie [&#x200B; Analytics SDK End-of-Support FAQs &#x200B;](/help/additional-resources/end-of-support-faqs.md).
+>Met het einde van de ondersteuning voor versie 4 Mobile SDK&#39;s op 31 augustus 2021 beëindigt Adobe ook de ondersteuning voor de Media Analytics SDK&#39;s voor iOS en Android.  Voor extra informatie, zie [ Analytics SDK End-of-Support FAQs ](/help/additional-resources/end-of-support-faqs.md).
 
 
 ## Ondersteuning voor minimale platformversie {#minimum-platform-version}
@@ -136,7 +136,7 @@ De volgende implementaties van de Analytics van media produceren twee soorten he
 * De vraag van de hartslag wordt verzonden naar de Media Analytics (hartslagen) volgende server, daar verwerkt, en tot de server van Adobe Analytics overgegaan.
 
 * **Adobe Analytics (AppMeasurement) server**
-Voor meer informatie over het volgen van serveropties, zie [&#x200B; correct de variabelen trackingServer en trackingServerSecure bevolken.](https://helpx.adobe.com/nl/analytics/kb/determining-data-center.html)
+Voor meer informatie over het volgen van serveropties, zie [ correct de variabelen trackingServer en trackingServerSecure bevolken.](https://helpx.adobe.com/analytics/kb/determining-data-center.html)
 
   >[!IMPORTANT]
   >
@@ -144,7 +144,7 @@ Voor meer informatie over het volgen van serveropties, zie [&#x200B; correct de 
 
   De analytics tracking-server moet eindigen in &quot;`.sc.omtrdc.net`&quot; of een CNAME zijn.
 
-* **&#x200B; Media Analytics (Heartbeats)-server**
+* ** Media Analytics (Heartbeats)-server**
 Dit heeft altijd het formaat &quot;`[your_namespace].hb.omtrdc.net`&quot;. De waarde van &quot;`[your_namespace]`&quot;specificeert uw bedrijf, en door Adobe verstrekt.
 
 Mediatracering werkt op alle platformen hetzelfde, zowel op het bureaublad als op mobiele apparaten. Audio bijhouden werkt momenteel op mobiele platforms. Voor alle volgende vraag zijn er een paar zeer belangrijke universele variabelen die moeten worden bevestigd:
@@ -153,14 +153,14 @@ Mediatracering werkt op alle platformen hetzelfde, zowel op het bureaublad als o
 
 | Video Analytics 1.x SDKs  |  Ontwikkelaarshulplijnen (alleen PDF&#39;s) |
 | --- | --- |
-| Android | [&#x200B; vormen voor Android &#x200B;](vhl-dev-guide-v15_android.pdf) |
-| APPLE TV | [&#x200B; vormen voor Apple TV &#x200B;](vhl-dev-guide-v1x_appletv.pdf) |
-| Chromecast | [&#x200B; vormt voor Chromecast &#x200B;](chromecast_1.x_sdk.pdf) |
-| iOS | [&#x200B; vormen voor iOS &#x200B;](vhl-dev-guide-v15_ios.pdf) |
-| JavaScript | [&#x200B; vormen voor JavaScript &#x200B;](vhl-dev-guide-v15_js.pdf) |
-| Primetime | <ul> <li> Android:   [&#x200B; vorm Analytics van Media &#x200B;](https://help.adobe.com/en_US/primetime/psdk/android/1.4/index.html) </li> <li> DHLS:   [&#x200B; vorm Analytics van Media &#x200B;](https://help.adobe.com/en_US/primetime/psdk/dhls/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> iOS:   [&#x200B; vorm Analytics van Media &#x200B;](https://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
-| TVML | [&#x200B; vormt voor TVML &#x200B;](vhl_tvml.pdf) |
+| Android | [ vormen voor Android ](vhl-dev-guide-v15_android.pdf) |
+| APPLE TV | [ vormen voor Apple TV ](vhl-dev-guide-v1x_appletv.pdf) |
+| Chromecast | [ vormt voor Chromecast ](chromecast_1.x_sdk.pdf) |
+| iOS | [ vormen voor iOS ](vhl-dev-guide-v15_ios.pdf) |
+| JavaScript | [ vormen voor JavaScript ](vhl-dev-guide-v15_js.pdf) |
+| Primetime | <ul> <li> Android:   [ vorm Analytics van Media ](https://help.adobe.com/en_US/primetime/psdk/android/1.4/index.html) </li> <li> DHLS:   [ vorm Analytics van Media ](https://help.adobe.com/en_US/primetime/psdk/dhls/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> iOS:   [ vorm Analytics van Media ](https://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
+| TVML | [ vormt voor TVML ](vhl_tvml.pdf) |
 
 ## SDK-documentatie voor primetime media {#primetime-docs}
 
-* [&#x200B; Gidsen van de Gebruiker Primetime &#x200B;](https://helpx.adobe.com/nl/primetime/user-guide.html)
+* [ Gidsen van de Gebruiker Primetime ](https://helpx.adobe.com/nl/primetime/user-guide.html)

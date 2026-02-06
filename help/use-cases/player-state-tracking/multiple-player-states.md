@@ -2,9 +2,9 @@
 title: Meerdere spelerstatussen tegelijk bijwerken
 description: Dit onderwerp beschrijft de Veelvoudige eigenschap van het Volgen van de Staat van de Speler.
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: 7a512a81-a6d1-4d0c-a4fe-91e9b11419db
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Soms is het begin en einde van twee spelerstaten tegelijkertijd of is het einde van een status ook het begin van een andere status, zoals in de volgende afbeelding wordt getoond:
 
-![&#x200B; Veelvoudige spelerstaten &#x200B;](assets/multiple-player-states.png)
+![ Veelvoudige spelerstaten ](assets/multiple-player-states.png)
 
 De huidige implementatie staat beide scenario&#39;s toe:
 - `stateStart(pictureInPicture)` - t0

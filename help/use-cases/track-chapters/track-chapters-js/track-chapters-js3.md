@@ -3,8 +3,8 @@ title: Leer hoofdstukken en segmenten bij te houden met JavaScript 3.x
 description: Leer hoe u hoofdstuk- en segmenttracering implementeert met de Media SDK in browser-apps (JS).
 exl-id: 00ba11df-d226-45a2-a561-dc9f15dcf714
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '221'
 ht-degree: 0%
@@ -17,7 +17,7 @@ De volgende instructies bieden richtlijnen voor implementatie met 3.x SDK&#39;s.
 
 >[!IMPORTANT]
 >
-> Als u om het even welke vorige versies van SDK uitvoert, kunt u de Gids van Ontwikkelaars hier downloaden: [&#x200B; Download SDKs.](/help/getting-started/download-sdks.md)
+> Als u om het even welke vorige versies van SDK uitvoert, kunt u de Gids van Ontwikkelaars hier downloaden: [ Download SDKs.](/help/getting-started/download-sdks.md)
 
 1. Bepaal wanneer de hoofdstukstartgebeurtenis plaatsvindt en maak de `ChapterObject` -instantie met behulp van de hoofdstukinformatie.
 

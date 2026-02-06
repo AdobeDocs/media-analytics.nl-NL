@@ -4,8 +4,8 @@ description: Leer hoe te om media met het Roku SceneGraph XML programmeringskade
 uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
 exl-id: e428d3cd-dbc7-48bb-82ff-61b6b892884c
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '1152'
 ht-degree: 1%
@@ -142,28 +142,28 @@ De verbindingsbrug is ontworpen om als volgt te presteren:
 <td> Ongeldig </td>
 <td> Alleen-lezen Alle API's die op AdobeMobileSDK worden uitgevoerd, retourneren reacties in dit veld. Registreer u voor een callback om te luisteren naar updates voor dit veld om reactieobjecten te ontvangen. Hier volgt de indeling voor het reactieobject:  
 <pre>
-response = &lbrace;
+response = {
   "apiName" : &lt;SceneGraphConstants.
                API_NAME&gt;
   "returnValue : &lt;API_RESPONSE&gt;
-&rbrace;</pre>
+}</pre>
 Een instantie van dit reactieobject wordt verzonden voor elke API-aanroep op AdobeMobileSDK die een waarde retourneert volgens de API-naslaggids. Een API-aanroep voor bezoekerMarketingCloudID() retourneert bijvoorbeeld het volgende reactieobject:
 <pre>
-response = &lbrace;
+response = {
   "apiName" : m.
               adbmobileConstants.
               VISITOR_MARKETING_CLOUD_ID  
   "returnValue : "07050x25671x33760x72644x14"  
-&rbrace;
+}
 </pre>
 OR, kunnen de reactiegegevens ook ongeldig zijn:
 <pre>
-response = &lbrace;  
+response = {  
   "apiName" : m.
               adbmobileConstants.
               VISITOR_MARKETING_CLOUD_ID  
   "returnValue : invalid
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -194,8 +194,8 @@ Retourneringstype: `SceneGraphConstants`
 | Versioning | `version` | Constante voor het ophalen van AdobeMobileLibrary-versiegegevens |
 | Privacy/opt-out | `PRIVACY_STATUS_OPT_IN` | Constante voor privacystatus gekozen in |
 |   | `PRIVACY_STATUS_OPT_OUT` | Constante voor privacystatus uitgeschakeld |
-| MediaHeartbone-constanten | Verwijs naar de constanten op deze pagina: <br/><br/>[&#x200B; de Methoden van de Hartslag van Media.](/help/use-cases/track-av-playback/track-core/track-core-roku.md) | Deze constanten gebruiken met MediaHeartbone-API&#39;s |
-| Standaardmetagegevens | Verwijs naar de constanten op deze pagina: <br/><br/>[&#x200B; StandaardParameters van Meta-gegevens.](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md) | Gebruik deze constanten om standaard video-/advertentiemetagegevens toe te voegen in MediaHeartbone-API&#39;s |
+| MediaHeartbone-constanten | Verwijs naar de constanten op deze pagina: <br/><br/>[ de Methoden van de Hartslag van Media.](/help/use-cases/track-av-playback/track-core/track-core-roku.md) | Deze constanten gebruiken met MediaHeartbone-API&#39;s |
+| Standaardmetagegevens | Verwijs naar de constanten op deze pagina: <br/><br/>[ StandaardParameters van Meta-gegevens.](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md) | Gebruik deze constanten om standaard video-/advertentiemetagegevens toe te voegen in MediaHeartbone-API&#39;s |
 
 
 
@@ -213,7 +213,7 @@ Globally defined nut `MediaHeartbeat` APIs op erfenis AdobeMobileLibrary is toeg
 
 ## Implementatie {#implementation}
 
-1. **Download de Bibliotheek van Roku -** Download de [&#x200B; recentste bibliotheek van Roku.](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.2)
+1. **Download de Bibliotheek van Roku -** Download de [ recentste bibliotheek van Roku.](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.2)
 
 1. **opstelling Uw Ontwikkelomgeving**
 

@@ -4,8 +4,8 @@ description: Leer hoe u Mijlsteenvariabelen wijzigt in Metrics van Media Analyti
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
 exl-id: 655841ed-3a02-4e33-bbc9-46fb14302194
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '707'
 ht-degree: 12%
@@ -16,7 +16,7 @@ ht-degree: 12%
 
 ## Overzicht {#overview}
 
-De kernconcepten van videometing zijn hetzelfde voor Mijlpaal en Media Analytics, die videospelergebeurtenissen neemt en deze toewijst aan analytische methoden, terwijl ook de metagegevens en waarden van de speler worden opgehaald en aan analytische variabelen worden toegewezen. De oplossing van de Analyse van Media groeide uit Mijlpaal, zo veel van de methodes en metriek zijn het zelfde, echter, is de configuratiebenadering en de code beduidend veranderd. Het zou mogelijk moeten zijn om de spelergebeurteniscode bij te werken om aan de nieuwe methodes van de Analyse van Media te richten. Zie [&#x200B; het Overzicht van SDK &#x200B;](/help/legacy/setup/legacy-setup-overview.md) en [&#x200B; het Volgen Overzicht &#x200B;](/help/use-cases/track-av-playback/track-core-overview.md) voor meer details bij het uitvoeren van de Analytics van Media.
+De kernconcepten van videometing zijn hetzelfde voor Mijlpaal en Media Analytics, die videospelergebeurtenissen neemt en deze toewijst aan analytische methoden, terwijl ook de metagegevens en waarden van de speler worden opgehaald en aan analytische variabelen worden toegewezen. De oplossing van de Analyse van Media groeide uit Mijlpaal, zo veel van de methodes en metriek zijn het zelfde, echter, is de configuratiebenadering en de code beduidend veranderd. Het zou mogelijk moeten zijn om de spelergebeurteniscode bij te werken om aan de nieuwe methodes van de Analyse van Media te richten. Zie [ het Overzicht van SDK ](/help/legacy/setup/legacy-setup-overview.md) en [ het Volgen Overzicht ](/help/use-cases/track-av-playback/track-core-overview.md) voor meer details bij het uitvoeren van de Analytics van Media.
 
 De volgende lijsten verstrekken vertalingen tussen de oplossing van de Mijlpaal en de oplossing van de Analyse van Media.
 

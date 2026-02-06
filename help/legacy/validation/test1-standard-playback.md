@@ -4,10 +4,10 @@ description: Leer meer over de standaardafspeeltest die bij validatie wordt gebr
 uuid: c4b3fead-1b27-484b-ab6a-39f1ae0f03f2
 exl-id: 3781f0f7-be75-43e5-a40b-a34956dce36e
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '846'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Voer de volgende handelingen uit en registreer deze (in volgorde):
 
      | Parameter | Waarde (monster) |
      |---|---|
-     | `pev2` | ADBINTERN:levenscyclus |
+     | `pev2` | ADBINTERNAL :Lifecycle |
      | `mid` | 30250035503789876473484580554595324209 |
 
    * **de vraag van het Begin van Analytics van Media**
@@ -86,7 +86,7 @@ Voer de volgende handelingen uit en registreer deze (in volgorde):
    1. Media Analytics-server - Aanroep starten
    1. Media Analytics-server - &quot;Aanvraag voor Adobe Analytics Start aangevraagd&quot;
 
-   De eerste twee hierboven vraag bevat extra meta-gegevens en variabelen. Voor vraagparameters en meta-gegevens, zie [&#x200B; de vraagdetails van de Test.](/help/legacy/validation/test-call-details.md#start-the-media-player)
+   De eerste twee hierboven vraag bevat extra meta-gegevens en variabelen. Voor vraagparameters en meta-gegevens, zie [ de vraagdetails van de Test.](/help/legacy/validation/test-call-details.md#start-the-media-player)
 
    De derde vraag hierboven vertelt de server van de Analyse van Media dat de Media SDK verzocht om dat de vraag van het Begin van Adobe Analytics (`pev2=ms_s`) wordt verzonden naar de server van Adobe Analytics.
 
@@ -100,7 +100,7 @@ Voer de volgende handelingen uit en registreer deze (in volgorde):
    1. Media Analytics-server - Aanroep toevoegen
    1. Media Analytics-server - &quot;Aanroep Adobe Analytics Ad Start aangevraagd&quot;
 
-   De eerste twee aanroepen bevatten aanvullende metagegevens en variabelen. Voor vraagparameters en meta-gegevens, zie [&#x200B; de vraagdetails van de Test.](/help/legacy/validation/test-call-details.md#view-ad-playback)
+   De eerste twee aanroepen bevatten aanvullende metagegevens en variabelen. Voor vraagparameters en meta-gegevens, zie [ de vraagdetails van de Test.](/help/legacy/validation/test-call-details.md#view-ad-playback)
 
    De derde vraag vertelt de server van de Analyse van Media dat de Media SDK verzocht om de vraag van het Begin van Adobe Analytics Ad (`pev2=msa_s`) te verzenden naar de server van Adobe Analytics.
 
@@ -120,7 +120,7 @@ Voer de volgende handelingen uit en registreer deze (in volgorde):
    >
    >De waarde van de afspeelkop moet tijdens het pauzeren constant blijven.
 
-   Voor vraagparameters en meta-gegevens, zie [&#x200B; de vraagdetails van de Test.](/help/legacy/validation/test-call-details.md#ma-ad-pause-call)
+   Voor vraagparameters en meta-gegevens, zie [ de vraagdetails van de Test.](/help/legacy/validation/test-call-details.md#ma-ad-pause-call)
 
 1. **belangrijkste inhoud van het Spel ononderbroken 10 seconden.**  **Inhoud Spel**
 
@@ -131,11 +131,11 @@ Voer de volgende handelingen uit en registreer deze (in volgorde):
    * De positie van de playhead zou met 10 met elke vraag van het Spel moeten verhogen.
    * De `l:event:duration` waarde vertegenwoordigt het aantal milliseconden sinds de laatste het volgen vraag en zou ruwweg de zelfde waarde op elke 10 tweede vraag moeten zijn.
 
-     Voor vraagparameters en meta-gegevens, zie [&#x200B; de vraagdetails van de Test.](/help/legacy/validation/test-call-details.md#play-main-content)
+     Voor vraagparameters en meta-gegevens, zie [ de vraagdetails van de Test.](/help/legacy/validation/test-call-details.md#play-main-content)
 
 1. **Pauzeren tijdens playback voor minstens 30 seconden.** Wanneer de mediaspeler wordt gepauzeerd, worden de aanroepen van de pauze-gebeurtenis door de SDK elke 10 seconden naar de Media Analytics-server verzonden. Nadat de pauze is afgelopen, moeten de afspeelgebeurtenissen worden hervat.
 
-   Voor vraagparameters en meta-gegevens, zie [&#x200B; de vraagdetails van de Test.](/help/legacy/validation/test-call-details.md#pause-main-content)
+   Voor vraagparameters en meta-gegevens, zie [ de vraagdetails van de Test.](/help/legacy/validation/test-call-details.md#pause-main-content)
 
 1. **Onderzoek/schrobt media.** Bij het scrubben van de afspeelkop van media worden geen speciale aanroepen voor het bijhouden van de beelden verzonden. Wanneer het afspelen van media echter wordt hervat na het scrubben, moet de waarde van de afspeelkop de nieuwe positie in de hoofdinhoud aangeven.
 

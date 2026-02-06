@@ -4,8 +4,8 @@ description: Voer de volgende stappen uit om de Media SDK-toepassing in te stell
 uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
 exl-id: 33976096-8b86-4353-906b-e25bf4693471
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 2%
@@ -19,14 +19,14 @@ ht-degree: 2%
 * **verkrijg geldige configuratieparameters**
 Deze parameters kunt u verkrijgen van een Adobe-medewerker nadat u uw analyseaccount hebt ingesteld.
 * **voer `AppMeasurement` voor JavaScript in uw media toepassing** uit
-Voor meer informatie over de documentatie van Adobe Mobile SDK, zie [&#x200B; het Uitvoeren Analytics die JavaScript gebruiken.](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=nl-NL)
+Voor meer informatie over de documentatie van Adobe Mobile SDK, zie [ het Uitvoeren Analytics die JavaScript gebruiken.](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html)
 
 * **verstrek de volgende mogelijkheden in uw media speler:**
 
    * *API om aan spelergebeurtenissen* in te tekenen - de Media SDK vereist dat u een reeks eenvoudige APIs roept wanneer de gebeurtenissen in uw speler voorkomen.
    * *API die spelerinformatie* verstrekt - Deze informatie omvat details zoals de media naam en de positie van het spelhoofd.
 
-1. Voeg uw [&#x200B; gedownload &#x200B;](/help/getting-started/download-sdks.md) bibliotheek aan uw project toe. Maak lokale verwijzingen naar de klassen voor het gemak.
+1. Voeg uw [ gedownload ](/help/getting-started/download-sdks.md) bibliotheek aan uw project toe. Maak lokale verwijzingen naar de klassen voor het gemak.
 
    1. Vouw het `MediaSDK-js-v2.*.zip` -bestand uit dat u hebt gedownload.
    1. Controleer of het bestand `MediaSDK.min.js` aanwezig is in de map `libs` :

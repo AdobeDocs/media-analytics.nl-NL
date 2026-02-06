@@ -4,8 +4,8 @@ description: Bekijk een voorbeeld van hoe u VOD-inhoud kunt bijhouden waarin zoe
 uuid: 5c2392f6-9b9c-42f5-833f-77423d1e6222
 exl-id: d77aa717-5dcb-4429-8dce-1914434f2b32
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 0%
@@ -18,16 +18,16 @@ ht-degree: 0%
 
 Dit scenario omvat het zoeken in de belangrijkste inhoud tijdens playback.
 
-Dit is het zelfde scenario zoals de [&#x200B; playback van VOD zonder advertenties &#x200B;](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario, maar een deel van de inhoud wordt geschaad door en een vraag wordt voltooid van één punt in belangrijkste inhoud aan een ander punt.
+Dit is het zelfde scenario zoals de [ playback van VOD zonder advertenties ](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario, maar een deel van de inhoud wordt geschaad door en een vraag wordt voltooid van één punt in belangrijkste inhoud aan een ander punt.
 
 | Trigger   | Hartslagmethode   | Netwerkaanroepen   | Notities   |
 | --- | --- | --- | --- |
-| Gebruiker klikt [!UICONTROL Play] | `trackSessionStart` | Start inhoud analyse, Start inhoud hartslag | De metingsbibliotheek is zich niet bewust dat er een pre-rol advertentie is, zodat zijn deze netwerkvraag identiek aan de [&#x200B; playback van VOD zonder advertenties &#x200B;](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| Gebruiker klikt [!UICONTROL Play] | `trackSessionStart` | Start inhoud analyse, Start inhoud hartslag | De metingsbibliotheek is zich niet bewust dat er een pre-rol advertentie is, zodat zijn deze netwerkvraag identiek aan de [ playback van VOD zonder advertenties ](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario. |
 | Het eerste frame van de inhoud wordt afgespeeld. | `trackPlay` | Hartslaginhoud afspelen | Wanneer de hoofdstukinhoud vóór hoofdinhoud wordt afgespeeld, begint de hartslag wanneer het hoofdstuk begint. |
-| Inhoud afspelen | | Content Heartbeats | Deze netwerkvraag is precies het zelfde als de [&#x200B; playback van VOD zonder advertenties &#x200B;](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| Inhoud afspelen | | Content Heartbeats | Deze netwerkvraag is precies het zelfde als de [ playback van VOD zonder advertenties ](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario. |
 | Gebruiker begint de zoekbewerking op inhoud | `trackSeekStart` | | Er gaan geen hartslagen uit tot de zoekactie is voltooid, bijvoorbeeld `trackSeekComplete` |
 | De zoekbewerking is voltooid | `trackSeekComplete` | | De hartslagen beginnen uit te gaan aangezien het zoeken volledig is.  Tip: de waarde van de afspeelkop moet de juiste nieuwe afspeelkop na de zoekactie aangeven. |
-| Inhoud is voltooid | `trackComplete` | Hartslaginhoud voltooid | Deze netwerkvraag is precies het zelfde als de [&#x200B; playback van VOD zonder advertenties &#x200B;](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| Inhoud is voltooid | `trackComplete` | Hartslaginhoud voltooid | Deze netwerkvraag is precies het zelfde als de [ playback van VOD zonder advertenties ](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario. |
 | Sessie over | `trackSessionEnd` | | `SessionEnd` |
 
 ## Voorbeeldcode {#sample-code}

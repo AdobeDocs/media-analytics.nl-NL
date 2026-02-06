@@ -3,8 +3,8 @@ title: Leer hoe u het afspelen van de kern kunt bijhouden met JavaScript v3.x
 description: Leer hoe u core tracking implementeert met de Media SDK in een browser met JavaScript 3.x-apps.
 exl-id: f3145450-82ba-4790-91a4-9d2cc97bbaa5
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '747'
 ht-degree: 0%
@@ -17,13 +17,13 @@ Deze documentatie behandelt het bijhouden van wijzigingen in versie 3.x van de S
 
 >[!IMPORTANT]
 >
->Als u om het even welke vorige versies van SDK uitvoert, kunt u de Gidsen van Ontwikkelaars hier downloaden: [&#x200B; Download SDKs &#x200B;](/help/getting-started/download-sdks.md)
+>Als u om het even welke vorige versies van SDK uitvoert, kunt u de Gidsen van Ontwikkelaars hier downloaden: [ Download SDKs ](/help/getting-started/download-sdks.md)
 
 1. **Aanvankelijke het volgen opstelling**
 
    Bepaal wanneer de gebruiker de afspeelintentie activeert (de gebruiker klikt op Afspelen en/of Automatisch afspelen is ingeschakeld) en maak een `MediaObject` -instantie.
 
-   [&#x200B; createMediaObject API &#x200B;](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#.createMediaObject)
+   [ createMediaObject API ](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#.createMediaObject)
 
    | Naam variabele | Type | Beschrijving |
    | --- | --- | --- |
@@ -65,9 +65,9 @@ Deze documentatie behandelt het bijhouden van wijzigingen in versie 3.x van de S
      >
      >U kunt de standaardmetagegevens niet koppelen.
 
-      * De APIVerwijzing van de meta-gegevens van media sleutels - [&#x200B; Standaard meta-gegevenssleutels - JavaScript &#x200B;](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
+      * De APIVerwijzing van de meta-gegevens van media sleutels - [ Standaard meta-gegevenssleutels - JavaScript ](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
 
-        Zie de uitvoerige reeks van beschikbare meta-gegevens hier: [&#x200B; Audio en videoparameters &#x200B;](/help/implementation/variables/audio-video-parameters.md)
+        Zie de uitvoerige reeks van beschikbare meta-gegevens hier: [ Audio en videoparameters ](/help/implementation/variables/audio-video-parameters.md)
 
    * **de meta-gegevens van de Douane**
 
@@ -187,5 +187,5 @@ Deze documentatie behandelt het bijhouden van wijzigingen in versie 3.x van de S
    >
    >Dit kan de zelfde gebeurtenisbron zijn die in Stap 4 werd gebruikt. Zorg ervoor dat elke API-aanroep van `trackPause()` wordt gekoppeld aan een volgende API-aanroep van `trackPlay()` wanneer het afspelen wordt hervat.
 
-* Het volgen scenario&#39;s: [&#x200B; de playback van VOD zonder advertenties &#x200B;](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)
+* Het volgen scenario&#39;s: [ de playback van VOD zonder advertenties ](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)
 * Voorbeeld van een voorbeeldspeler die bij de JavaScript SDK wordt geleverd voor een volledig voorbeeld van &#39;tracking&#39;.

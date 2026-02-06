@@ -4,8 +4,8 @@ description: Leer hoe u standaardvideo- en advertentiemetagegevens instelt die m
 uuid: c48b4190-b062-4c4e-9c40-8dde4598a50e
 exl-id: 31afd8b5-0f23-4025-afcb-6df906cf6be5
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 1%
@@ -23,8 +23,8 @@ ht-degree: 1%
 ## API-naslaggids voor metagegevens
 
 * Maak een `HashMap` van standaard waardeparen voor metagegevens.
-   * [&#x200B; VideoMeta-gegevens Sleutels &#x200B;](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
-   * [&#x200B; AudioMeta-gegevenssleutels &#x200B;](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.AudioMetadataKeys.html)
+   * [ VideoMeta-gegevens Sleutels ](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
+   * [ AudioMeta-gegevenssleutels ](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.AudioMetadataKeys.html)
 * Stel de standaardmetagegevens `HashMap` in op `MediaInfo` met de standaardmetagegevensconstante voor de metagegevens.
 * Geef dit `MediaInfo` -object op terwijl de `trackSessionStart()` API wordt aangeroepen.
 

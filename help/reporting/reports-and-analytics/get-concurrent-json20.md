@@ -4,8 +4,8 @@ description: Leer hoe u gelijktijdige viewers rapportgegevens verkrijgt met de A
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
 exl-id: f84f63d3-b0d0-45fe-95a7-159f22d60660
 feature: "Streaming Media, Workspace Basics"
-role: User, Admin, Data Engineer
-source-git-commit: 67f1fa8194fa58b2c513e3136d2bc7880f9cb06b
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '185'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Gelijktijdige gebruikers JSON-rapportgegevens ophalen met API&#39;s van Analytics 2.0{#get-concurrent-viewers-json-report-data}
 
-U kunt gezamenlijke kijkers rapportgegevens verkrijgen gebruikend [_*Analytics 2.0 APIs*_ &#x200B;](https://www.adobe.io/apis/experiencecloud/analytics/docs.html).
+U kunt gezamenlijke kijkers rapportgegevens verkrijgen gebruikend [_*Analytics 2.0 APIs*_ ](https://www.adobe.io/apis/experiencecloud/analytics/docs.html).
 
 1. Filter de gegevens gebruikend om het even welk segment dat op UI wordt voortgebouwd. Maak een nieuw segment om te filteren op een specifieke inhoud-id.
 1. Stel `elements` -> `id` in de hoofdtekst van de aanvraag in op `metrics/concurrent_viewers_visitors` .
@@ -131,7 +131,7 @@ You can extract the concurrent viewers report data using the Experience Cloud AP
     * **Environment -** Select your data center.
     * Request JSON - Specify the following:
 
-        * `reportSuiteID` - For info on reports suites: [Report Suites](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html?lang=nl-NL)
+        * `reportSuiteID` - For info on reports suites: [Report Suites](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html)
 
         * `dateTo` - End date of the report.         
 

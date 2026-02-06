@@ -2,9 +2,9 @@
 title: Een mobiele SDK instellen met tags voor streaming Media Services
 description: Leer hoe u Adobe-streaming-mediaservices kunt implementeren voor mobiele apps.
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: b4944b5f-cbae-4efc-9ef7-962d3f342240
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '199'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Als u Adobe streaming media services voor mobiele apps wilt implementeren op And
 
 * **Analytics van de Media van Adobe voor Audio en Video uitbreiding**
 
-Om SDKs en voor extra documentatiemiddelen te downloaden, zie [&#x200B; Media SDKs, Uitbreidingen krijgen die Markeringen gebruiken, en OTT SDKs &#x200B;](/help/getting-started/download-sdks.md)
+Om SDKs en voor extra documentatiemiddelen te downloaden, zie [ Media SDKs, Uitbreidingen krijgen die Markeringen gebruiken, en OTT SDKs ](/help/getting-started/download-sdks.md)
 
 * **verkrijg geldige configuratieparameters**
 

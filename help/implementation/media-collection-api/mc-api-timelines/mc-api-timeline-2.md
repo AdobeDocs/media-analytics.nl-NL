@@ -4,8 +4,8 @@ description: Leer meer over de tijdlijn van de afspeelkop en de bijbehorende �
 uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
 exl-id: 0c6a89f4-7949-4623-8ed9-ce1d1547bdfa
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 5%
@@ -18,9 +18,9 @@ ht-degree: 5%
 
 De volgende diagrammen illustreren de tijdlijn van de afspeelkop en de bijbehorende tijdlijn van de handelingen van een gebruiker. De bijzonderheden van elke actie en de bijbehorende verzoeken worden hieronder weergegeven.
 
-![&#x200B; API inhoud &#x200B;](assets/va_api_content_2.png)
+![ API inhoud ](assets/va_api_content_2.png)
 
-![&#x200B; API acties &#x200B;](assets/va_api_actions_2.png)
+![ API acties ](assets/va_api_actions_2.png)
 
 ## Handelingsdetails
 
@@ -30,7 +30,7 @@ De volgende diagrammen illustreren de tijdlijn van de afspeelkop en de bijbehore
 | --- | :---: | :---: | --- |
 | Knop Automatisch afspelen of Afspelen ingedrukt | 0 | 0 | `/api/v1/sessions` |
 
-Deze vraag signaleert _de intentie van de gebruiker om_ een video te spelen. Er wordt een sessie-id ( `{sid}` ) geretourneerd aan de client die wordt gebruikt om alle volgende opvolgende opvolgende aanroepen binnen de sessie te identificeren. De spelerstatus wordt nog niet afgespeeld, maar &#39;gestart&#39;.  [&#x200B; Verplichte zittingsparameters &#x200B;](../mc-api-ref/mc-api-sessions-req.md) moeten in de `params` kaart in het verzoeklichaam worden omvat.  Op de achtergrond, produceert deze vraag Adobe Analytics in werking stelt vraag in werking.
+Deze vraag signaleert _de intentie van de gebruiker om_ een video te spelen. Er wordt een sessie-id ( `{sid}` ) geretourneerd aan de client die wordt gebruikt om alle volgende opvolgende opvolgende aanroepen binnen de sessie te identificeren. De spelerstatus wordt nog niet afgespeeld, maar &#39;gestart&#39;.  [ Verplichte zittingsparameters ](../mc-api-ref/mc-api-sessions-req.md) moeten in de `params` kaart in het verzoeklichaam worden omvat.  Op de achtergrond, produceert deze vraag Adobe Analytics in werking stelt vraag in werking.
 
 ```json
 {

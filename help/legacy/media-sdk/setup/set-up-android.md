@@ -4,11 +4,11 @@ description: Voer de volgende stappen uit om de Media SDK-toepassing in Android 
 uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 exl-id: 261445bf-3c8b-4658-891d-9a878e0b26ea
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '417'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -18,7 +18,7 @@ Leer hoe u streaming-mediaservices instelt voor Android-apparaten.
 
 >[!IMPORTANT]
 >
->Met het einde van de ondersteuning voor versie 4 Mobile SDK&#39;s op 31 augustus 2021 beëindigt Adobe ook de ondersteuning voor Media Analytics SDK voor iOS en Android.  Voor extra informatie, zie [&#x200B; Analytics SDK End-of-Support FAQs &#x200B;](/help/additional-resources/end-of-support-faqs.md).
+>Met het einde van de ondersteuning voor versie 4 Mobile SDK&#39;s op 31 augustus 2021 beëindigt Adobe ook de ondersteuning voor Media Analytics SDK voor iOS en Android.  Voor extra informatie, zie [ Analytics SDK End-of-Support FAQs ](/help/additional-resources/end-of-support-faqs.md).
 
 
 ## Vereisten
@@ -26,7 +26,7 @@ Leer hoe u streaming-mediaservices instelt voor Android-apparaten.
 * **verkrijg geldige configuratieparameters voor de Media SDK**
 Deze parameters kunt u verkrijgen van een Adobe-medewerker nadat u uw analyseaccount hebt ingesteld.
 * **voert ADBMobile voor Android in uw toepassing uit**
-Voor meer informatie over de documentatie van Adobe Mobile SDK, zie [&#x200B; Android SDK 4.x voor de Oplossingen van Experience Cloud.](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html?lang=nl-NL)
+Voor meer informatie over de documentatie van Adobe Mobile SDK, zie [ Android SDK 4.x voor de Oplossingen van Experience Cloud.](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html)
 
 * **verstrek de volgende mogelijkheden in uw media speler:**
    * *API om aan spelergebeurtenissen* in te tekenen - de Media SDK vereist dat u een reeks eenvoudige APIs roept wanneer de gebeurtenissen in uw speler voorkomen.
@@ -44,7 +44,7 @@ Voor meer informatie over de documentatie van Adobe Mobile SDK, zie [&#x200B; An
       **IntelliJ IDEA:**
 
       1. Klik met de rechtermuisknop op uw project in het deelvenster **[!UICONTROL Project navigation]**.
-      1. Selecteer **[!UICONTROL Open Module Settings]** .
+      1. Selecteer **[!UICONTROL Open Module Settings]**.
       1. Selecteer onder **[!UICONTROL Project Settings]** de optie **[!UICONTROL Libraries]** .
 
       1. Klik op **[!UICONTROL +]** om een nieuwe bibliotheek toe te voegen.
@@ -57,7 +57,7 @@ Voor meer informatie over de documentatie van Adobe Mobile SDK, zie [&#x200B; An
 
       1. In winde van de Verduistering, klik op de projectnaam met de rechtermuisknop aan.
       1. Klik op **[!UICONTROL Build Path]** > **[!UICONTROL Add External Archives]** .
-      1. Selecteer `MediaSDK.jar` .
+      1. Selecteer `MediaSDK.jar`.
       1. Klik op **[!UICONTROL Open]**.
       1. Klik nogmaals met de rechtermuisknop op het project en klik op **[!UICONTROL Build Path]** > **[!UICONTROL Configure Build Path]** .
       1. Klik op de tabbladen **[!UICONTROL Order]** en **[!UICONTROL Export]**.

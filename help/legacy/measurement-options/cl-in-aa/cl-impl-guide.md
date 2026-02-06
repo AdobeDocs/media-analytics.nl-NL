@@ -4,8 +4,8 @@ description: Leer hoe u het bijhouden van aangepaste koppelingen kunt implemente
 uuid: 83315e73-20ca-4db5-9d43-33daade45a13
 exl-id: ee6f931a-ef80-4ebe-8ccb-cdbf970516e6
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 0%
@@ -18,8 +18,8 @@ Bij Aangepaste videotracering wordt handmatig koppelingen bijgehouden met behulp
 Het meest wordt aangepaste videotracering van koppelingen gebruikt op platforms en apparaten waar minimale videometing nodig is.
 
 * In JavaScript: de functie `s.tl()`
-* In Mobiele Apps: [&#x200B; trackAction () Android &#x200B;](https://experienceleague.adobe.com/docs/mobile-services/android/analytics-android/actions.html?lang=nl-NL), [&#x200B; trackAction () iOS &#x200B;](https://experienceleague.adobe.com/docs/mobile-services/ios/analytics-ios/actions.html?lang=nl-NL), [&#x200B; trackAction () OTT &#x200B;](/help/use-cases/analytics-with-ott/track-app-actions.md)
-* In de Invoeging API van Gegevens: [&#x200B; linktype markering &#x200B;](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
+* In Mobiele Apps: [ trackAction () Android ](https://experienceleague.adobe.com/docs/mobile-services/android/analytics-android/actions.html), [ trackAction () iOS ](https://experienceleague.adobe.com/docs/mobile-services/ios/analytics-ios/actions.html), [ trackAction () OTT ](/help/use-cases/analytics-with-ott/track-app-actions.md)
+* In de Invoeging API van Gegevens: [ linktype markering ](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
 
 ## Vereisten
 

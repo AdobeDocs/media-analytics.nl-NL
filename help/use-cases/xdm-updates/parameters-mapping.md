@@ -2,8 +2,9 @@
 title: Soorten publiek migreren naar het nieuwe Adobe Analytics-gegevenstype voor streaming media
 description: Leer hoe u het publiek kunt migreren naar het nieuwe gegevenstype Adobe Analytics voor streaming media
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: 3056a384535b3f5f2a9bc2d950bd5ee3410ec0a5
+role: User, Admin, Developer
+exl-id: 79203a2f-8158-44f2-83b2-146179be9180
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '1346'
 ht-degree: 0%
@@ -12,7 +13,7 @@ ht-degree: 0%
 
 # Media Analytics-parameters voor Adobe Experience Platform en Customer Journey Analytics
 
-Dit document bevat een uitgebreide lijst met alle parameters voor Media Analytics die in Adobe Experience Platform en Customer Journey Analytics worden gebruikt. Het is bedoeld om de integratie van gegevens te steunen die van Adobe Analytics aan Platform via de [&#x200B; Schakelaar van Source van Analytics &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/sources/connectors/adobe-applications/analytics) of de [&#x200B; Verbinding van Source van Analytics voor Classificaties &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/sources/connectors/adobe-applications/classifications) worden ingevoerd, in kaart brengend elke parameter aan zijn overeenkomstige XDM gebiedspad.
+Dit document bevat een uitgebreide lijst met alle parameters voor Media Analytics die in Adobe Experience Platform en Customer Journey Analytics worden gebruikt. Het is bedoeld om de integratie van gegevens te steunen die van Adobe Analytics aan Platform via de [ Schakelaar van Source van Analytics ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/analytics) of de [ Verbinding van Source van Analytics voor Classificaties ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/classifications) worden ingevoerd, in kaart brengend elke parameter aan zijn overeenkomstige XDM gebiedspad.
 
 ## Voor Media Analytics gereserveerde variabelen
 
@@ -237,9 +238,3 @@ In beide gevallen komt `<number>` overeen met de specifieke gebeurtenis of het e
 | Totale stapelduur | `_experience.analytics.event<x>to<y>.event<number>.value` | Metrisch |
 
 {style="table-layout:auto"}
-
-
-
-
-
-

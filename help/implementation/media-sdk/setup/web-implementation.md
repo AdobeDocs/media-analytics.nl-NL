@@ -2,9 +2,9 @@
 title: Een webimplementatie instellen voor Analytics voor Streaming Media
 description: Leer hoe u Adobe Streaming Media voor web-apps implementeert.
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 In de informatie op deze pagina wordt beschreven hoe u de zelfstandige webversie van SDK kunt installeren en JavaScript kunt instellen.
 
-Alternatief, kunt u de uitbreiding van de Analyse van de Media van Adobe gebruiken om het stromen media diensten uit te voeren, zoals die in [&#x200B; wordt beschreven installeer het stromen media diensten gebruikend de uitbreiding van de Analyse van Media &#x200B;](/help/implementation/media-sdk/setup/web-implementation-tags.md).
+Alternatief, kunt u de uitbreiding van de Analyse van de Media van Adobe gebruiken om het stromen media diensten uit te voeren, zoals die in [ wordt beschreven installeer het stromen media diensten gebruikend de uitbreiding van de Analyse van Media ](/help/implementation/media-sdk/setup/web-implementation-tags.md).
 
 ## Vereisten {#prerequesites}
 
@@ -25,7 +25,7 @@ Alternatief, kunt u de uitbreiding van de Analyse van de Media van Adobe gebruik
 
 * **voer `AppMeasurement` en `Experience Cloud Identity Service` voor JavaScript in uw media toepassing uit**
 
-  Voor meer informatie, zie [&#x200B; het Uitvoeren Analytics Gebruikend JavaScript &#x200B;](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=nl-NL) en [&#x200B; het Uitvoeren van de Dienst van de Identiteit van Experience Cloud &#x200B;](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=nl-NL).
+  Voor meer informatie, zie [ het Uitvoeren Analytics Gebruikend JavaScript ](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html) en [ het Uitvoeren van de Dienst van de Identiteit van Experience Cloud ](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html).
 
 * **omvat volgende APIs in uw media speler**
 
@@ -34,7 +34,7 @@ Alternatief, kunt u de uitbreiding van de Analyse van de Media van Adobe gebruik
 
 ## JavaScript 3.x instellen {#set-up-javascript}
 
-1. Voeg uw [&#x200B; gedownload &#x200B;](/help/getting-started/download-sdks.md) bibliotheek aan uw project toe. Maak lokale verwijzingen naar de klassen voor het gemak.
+1. Voeg uw [ gedownload ](/help/getting-started/download-sdks.md) bibliotheek aan uw project toe. Maak lokale verwijzingen naar de klassen voor het gemak.
 
    1. Vouw het `MediaSDK-js-v3*.zip` -bestand uit dat u hebt gedownload.
    1. Controleer of het `MediaSDK.js` -bestand in de map `libs` staat.
@@ -104,6 +104,6 @@ Alternatief, kunt u de uitbreiding van de Analyse van de Media van Adobe gebruik
 
 ## Migreren van JavaScript 2.x naar 3.x
 
-Voor gedetailleerde informatie over het migreren van 2.x naar 3.x, zie [&#x200B; 2.x aan migratie 3.x.](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/MigrationGuide.html)
+Voor gedetailleerde informatie over het migreren van 2.x naar 3.x, zie [ 2.x aan migratie 3.x.](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/MigrationGuide.html)
 
-Voor erfenisinhoud, zie [&#x200B; uitvoeringen van de Oudheid &#x200B;](/help/legacy/media-sdk/setup/setup-overview.md)
+Voor erfenisinhoud, zie [ uitvoeringen van de Oudheid ](/help/legacy/media-sdk/setup/setup-overview.md)

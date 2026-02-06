@@ -4,8 +4,8 @@ description: Leer hoe u core tracking implementeert met de Media SDK op Android.
 uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
 exl-id: d5f5a3f0-f1e0-4d68-af7f-88a30faed0db
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '689'
 ht-degree: 2%
@@ -17,13 +17,13 @@ ht-degree: 2%
 Deze documentatie behandelt het volgen in versie 2.x van de SDK.
 >[!IMPORTANT]
 >
->Als u een 1.x versie van SDK uitvoert, kunt u de 1.x Gids van Ontwikkelaars voor Android hier downloaden: [&#x200B; Download SDKs &#x200B;](/help/getting-started/download-sdks.md)
+>Als u een 1.x versie van SDK uitvoert, kunt u de 1.x Gids van Ontwikkelaars voor Android hier downloaden: [ Download SDKs ](/help/getting-started/download-sdks.md)
 
 1. **Aanvankelijke het volgen opstelling**
 
    Bepaal wanneer de gebruiker de afspeelintentie activeert (de gebruiker klikt op Afspelen en/of Automatisch afspelen is ingeschakeld) en maak een `MediaObject` -instantie.
 
-   [&#x200B; createMediaObject API &#x200B;](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.html#createMediaObject-java.lang.String-java.lang.String-java.lang.Double-java.lang.String-com.adobe.primetime.va.simple.MediaHeartbeat.MediaType-)
+   [ createMediaObject API ](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.html#createMediaObject-java.lang.String-java.lang.String-java.lang.Double-java.lang.String-com.adobe.primetime.va.simple.MediaHeartbeat.MediaType-)
 
    | Naam variabele | Beschrijving | Vereist |
    | --- | --- | :---: |
@@ -68,8 +68,8 @@ Deze documentatie behandelt het volgen in versie 2.x van de SDK.
      >
      >Het koppelen van het standaardobject voor metagegevens aan het mediaobject is optioneel.
 
-      * De APIVerwijzing van de meta-gegevens van media sleutels - [&#x200B; Standaard meta-gegevenssleutels - Android &#x200B;](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
-      * Zie de uitvoerige reeks van beschikbare videometagegevens hier: [&#x200B; Audio en videoparameters &#x200B;](/help/implementation/variables/audio-video-parameters.md)
+      * De APIVerwijzing van de meta-gegevens van media sleutels - [ Standaard meta-gegevenssleutels - Android ](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
+      * Zie de uitvoerige reeks van beschikbare videometagegevens hier: [ Audio en videoparameters ](/help/implementation/variables/audio-video-parameters.md)
 
    * **de meta-gegevens van de Douane**
 
@@ -176,5 +176,5 @@ Deze documentatie behandelt het volgen in versie 2.x van de SDK.
 
 Raadpleeg de volgende secties voor meer informatie over het bijhouden van het afspelen van core:
 
-* Het volgen scenario&#39;s: [&#x200B; de playback van VOD zonder advertenties &#x200B;](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)
+* Het volgen scenario&#39;s: [ de playback van VOD zonder advertenties ](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)
 * Voorbeeld van een voorbeeldspeler die bij de Android SDK wordt geleverd voor een volledig voorbeeld van &#39;tracking&#39;.

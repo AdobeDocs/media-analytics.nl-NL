@@ -3,8 +3,8 @@ title: Uitvoering en verslaglegging
 description: Meer informatie over het implementeren van de functie voor het bijhouden van de spelerstatus, waaronder .
 exl-id: 19a97c9b-14d1-4f11-bb0a-3a1ad6f949da
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 0%
@@ -101,4 +101,4 @@ In Analysis Workspace bevinden alle nieuwe eigenschappen zich in het deelvenster
 
 ## Door speler opgegeven meetgegevens importeren naar Adobe Experience Platform
 
-De gegevens die in Analytics worden opgeslagen, kunnen voor elk doel worden gebruikt en de metriek van de spelerstaat kunnen in Adobe Experience Platform worden ingevoerd gebruikend XDM en met Customer Journey Analytics worden gebruikt. De eigenschappen van de standaardstatus hebben specifieke eigenschappen, terwijl de aangepaste statussen eigenschappen zijn die beschikbaar zijn via aangepaste gebeurtenissen. Voor extra informatie over de standaardstaatseigenschappen, zie de *Lijst van Eigenschappen voor XDM de sectie van Identiteiten* op de [&#x200B; pagina van de Parameters van de Staat van de Speler &#x200B;](/help/implementation/variables/player-state-parameters.md).
+De gegevens die in Analytics worden opgeslagen, kunnen voor elk doel worden gebruikt en de metriek van de spelerstaat kunnen in Adobe Experience Platform worden ingevoerd gebruikend XDM en met Customer Journey Analytics worden gebruikt. De eigenschappen van de standaardstatus hebben specifieke eigenschappen, terwijl de aangepaste statussen eigenschappen zijn die beschikbaar zijn via aangepaste gebeurtenissen. Voor extra informatie over de standaardstaatseigenschappen, zie de *Lijst van Eigenschappen voor XDM de sectie van Identiteiten* op de [ pagina van de Parameters van de Staat van de Speler ](/help/implementation/variables/player-state-parameters.md).

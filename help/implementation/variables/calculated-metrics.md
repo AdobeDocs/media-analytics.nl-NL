@@ -4,8 +4,8 @@ description: Leer over berekende metriek en metrische formules in het stromen me
 uuid: 9dd35155-58aa-4f05-896e-c5cbc4b13d59
 exl-id: 253f6c61-70b5-4bdf-8e79-840545aeca0e
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '242'
 ht-degree: 3%
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 Berekende meetgegevens voor Adobe-streaming-mediaservices zijn aangepaste meetwaarden waarmee u doelgerichte streaming-mediagegevens kunt verkrijgen, zoals gemiddelde gebruikte advertentietijd of gemiddelde advertenties per mediastream.
 
-Voor informatie over Adobe Analytics berekende metriek, zie [&#x200B; Berekende en Geavanceerde Berekende (Afgeleid) Metriek &#x200B;](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/cm-overview.html?lang=nl-NL) in de Gids van de Componenten van Adobe Analytics.
+Voor informatie over Adobe Analytics berekende metriek, zie [ Berekende en Geavanceerde Berekende (Afgeleid) Metriek ](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/cm-overview.html?lang=en) in de Gids van de Componenten van Adobe Analytics.
 
 >[!NOTE]
 >

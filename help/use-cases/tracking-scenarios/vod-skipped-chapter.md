@@ -4,8 +4,8 @@ description: Bekijk een voorbeeld van hoe u VOD-inhoud kunt bijhouden waarin de 
 uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
 exl-id: 5ab981bf-1195-4197-a7c0-051fa4aa11b8
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 0%
@@ -18,11 +18,11 @@ ht-degree: 0%
 
 In dit scenario slaat de gebruiker een hoofdstuk in de hoofdinhoud over.
 
-Dit is het zelfde scenario zoals [&#x200B; de playback van VOD met één hoofdstuk &#x200B;](/help/use-cases/tracking-scenarios/vod-one-chapter.md), behalve de gebruiker in dit geval van plan is uit het hoofdstuk te zoeken daardoor het aan land in belangrijkste inhoud.
+Dit is het zelfde scenario zoals [ de playback van VOD met één hoofdstuk ](/help/use-cases/tracking-scenarios/vod-one-chapter.md), behalve de gebruiker in dit geval van plan is uit het hoofdstuk te zoeken daardoor het aan land in belangrijkste inhoud.
 
 | Trigger | Hartslagmethode | Netwerkaanroepen   | Notities |
 |---|---|---|---|
-| Gebruiker klikt **[!UICONTROL Play]** | `trackSessionStart` | Start inhoud analyse, Start inhoud hartslag | De meetbibliotheek is zich er niet van bewust dat er een pre-roll advertentie is. Deze netwerkvraag is nog precies het zelfde als [&#x200B; Playback zonder onderbrekingen in iOS &#x200B;](vod-no-intrs-details.md) scenario. |
+| Gebruiker klikt **[!UICONTROL Play]** | `trackSessionStart` | Start inhoud analyse, Start inhoud hartslag | De meetbibliotheek is zich er niet van bewust dat er een pre-roll advertentie is. Deze netwerkvraag is nog precies het zelfde als [ Playback zonder onderbrekingen in iOS ](vod-no-intrs-details.md) scenario. |
 | Het hoofdstuk begint. | `trackEvent:ChapterStart` | Begin van hoofdstuk hartslag |  |
 | Het eerste frame van het hoofdstuk wordt afgespeeld. | `trackPlay` | Hoofdgedeelte afspelen | Wanneer hoofdstukinhoud vóór hoofdinhoud wordt afgespeeld, willen wij hartslagen beginnen wanneer het hoofdstuk begint. |
 | Het hoofdstuk speelt. |  | Hoofdstukbeats |  |
@@ -30,12 +30,12 @@ Dit is het zelfde scenario zoals [&#x200B; de playback van VOD met één hoofdst
 | Het zoeken is voltooid. | `trackEvent:trackSeekComplete` |  | De hartslagen zullen dit bericht hervatten. |
 | De toepassing realiseert zich dat de gebruiker uit de regelmatige hoofdstukgrens heeft gezocht. | `trackEvent:trackChapterSkip` |  |  |
 | De inhoud wordt afgespeeld. |  | Content Heartbeats |  |
-| Het afspelen van de inhoud is voltooid. | `trackComplete` | Hartslaginhoud voltooid | Deze netwerkvraag is precies het zelfde als [&#x200B; Playback zonder onderbrekingen in iOS &#x200B;](vod-no-intrs-details.md) scenario. |
+| Het afspelen van de inhoud is voltooid. | `trackComplete` | Hartslaginhoud voltooid | Deze netwerkvraag is precies het zelfde als [ Playback zonder onderbrekingen in iOS ](vod-no-intrs-details.md) scenario. |
 | De sessie is afgelopen. | `trackSessionEnd` |  | `SessionEnd` betekent het einde van een weergavesessie. Deze API moet worden aangeroepen, zelfs als de gebruiker de media niet controleert om te worden voltooid. |
 
 ## Parameters {#parameters}
 
-De parameters die tijdens hoofdstukplayback worden gebruikt zijn identiek aan de parameters in de [&#x200B; playback van VOD met één hoofdstuk &#x200B;](/help/use-cases/tracking-scenarios/vod-one-chapter.md) scenario, behalve dat er geen hoofdstuk volledige netwerkvraag is.
+De parameters die tijdens hoofdstukplayback worden gebruikt zijn identiek aan de parameters in de [ playback van VOD met één hoofdstuk ](/help/use-cases/tracking-scenarios/vod-one-chapter.md) scenario, behalve dat er geen hoofdstuk volledige netwerkvraag is.
 
 ## Voorbeeldcode {#sample-code}
 

@@ -4,8 +4,8 @@ description: Bekijk een voorbeeld van hoe u VOD kunt bijhouden met meerdere trac
 uuid: 6e25dd92-522f-455c-8e71-99d71d352e06
 exl-id: 318beba8-bb26-4cec-81d7-c6fc446ec7b4
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 0%
@@ -18,9 +18,9 @@ ht-degree: 0%
 
 In dit scenario worden twee sessies parallel uitgevoerd voor twee afzonderlijke media en worden twee afzonderlijke instanties van `MediaHeartbeat` gebruikt.
 
-Dit scenario is identiek aan de [&#x200B; playback van VOD zonder advertenties &#x200B;](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario, behalve zijn er twee zittingen die parallel voor twee afzonderlijke media lopen. Voor elk van deze sessies wordt een aparte instantie van `MediaHeartbeat` gebruikt.
+Dit scenario is identiek aan de [ playback van VOD zonder advertenties ](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario, behalve zijn er twee zittingen die parallel voor twee afzonderlijke media lopen. Voor elk van deze sessies wordt een aparte instantie van `MediaHeartbeat` gebruikt.
 
-Tenzij gespecificeerd, zijn de netwerkvraag het zelfde als de [&#x200B; playback van VOD zonder advertenties &#x200B;](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario.
+Tenzij gespecificeerd, zijn de netwerkvraag het zelfde als de [ playback van VOD zonder advertenties ](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) scenario.
 
 ## Parameters {#parameters}
 

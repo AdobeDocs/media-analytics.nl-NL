@@ -4,8 +4,8 @@ description: Leer meer over de tijdlijn van de afspeelkop en wanneer een hoofdst
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
 exl-id: e3f5bbdb-7007-435b-920c-566d163e57ad
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '1159'
 ht-degree: 5%
@@ -18,9 +18,9 @@ ht-degree: 5%
 
 De volgende diagrammen illustreren de tijdlijn van de afspeelkop en de bijbehorende tijdlijn van de handelingen van een gebruiker. De bijzonderheden van elke actie en de bijbehorende verzoeken worden hieronder weergegeven.
 
-![&#x200B; API inhoud &#x200B;](assets/va_api_content_3.png)
+![ API inhoud ](assets/va_api_content_3.png)
 
-![&#x200B; API acties &#x200B;](assets/va_api_actions_3.png)
+![ API acties ](assets/va_api_actions_3.png)
 
 ## Handelingsdetails
 

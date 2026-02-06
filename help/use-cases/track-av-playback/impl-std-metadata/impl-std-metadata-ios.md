@@ -4,8 +4,8 @@ description: Leer hoe u standaardvideo- en advertentiemetagegevens instelt die m
 uuid: 75a80f08-4a95-49d4-a27a-8ce531d64d31
 exl-id: e0981346-3d3c-4a0c-82a4-19942634fd03
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '100'
 ht-degree: 3%
@@ -23,7 +23,7 @@ ht-degree: 3%
 ## Implementatie
 
 1. Een woordenboek maken van standaardwaardeparen voor metagegevens met de `ADBStandardMetadataKeys`
-   [&#x200B; de meta-gegevenssleutels van IOS &#x200B;](/help/use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
+   [ de meta-gegevenssleutels van IOS ](/help/use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
 
 1. Stel het standaardmetagegevenswoordenboek voor een `MediaInfo` `ADBMediaObject` -instantie in met de standaardmetagegevensconstante voor metagegevens.
 

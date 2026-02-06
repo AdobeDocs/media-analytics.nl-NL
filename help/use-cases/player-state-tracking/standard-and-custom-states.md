@@ -3,8 +3,8 @@ title: Over Standaard- en Aangepaste statussen
 description: Leer meer over de functie voor het bijhouden van spelerstatussen, zoals vereisten en richtlijnen voor het implementeren en rapporteren van standaard- en aangepaste spelerstatussen.
 exl-id: 3c492055-d471-4147-aa78-b058d6b931f4
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 0%
@@ -42,4 +42,4 @@ De gegevens worden op dezelfde manier berekend voor standaard- en aangepaste sta
 
 Met de mogelijkheid om aangepaste statussen te maken, kunt u aangepaste handelingen vastleggen en aangepaste metagegevens bijwerken tijdens een afspeelsessie.
 
-Voor informatie over het creëren van douanestaten, zie de [&#x200B; gids van de Verwijzing van Media API: `createStateObject` &#x200B;](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/)
+Voor informatie over het creëren van douanestaten, zie de [ gids van de Verwijzing van Media API: `createStateObject` ](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/)

@@ -4,8 +4,8 @@ description: Leer hoe u onderbrekingen in het bijhouden van gegevens tijdens het
 uuid: 1ccb4507-bda6-462d-bf67-e22978a4db3d
 exl-id: a84af6ad-dd4f-4f0d-93dd-66f2f84ddc0e
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 0%
@@ -35,4 +35,4 @@ Het afspelen in een mediatoepassing kan op verschillende manieren worden onderbr
 
 * _wat over het opnieuw beginnen van de zelfde zitting?_
 
-  Voor informatie over het hervatten van een volgende zitting, zie [&#x200B; Hervatten inactieve zittingen &#x200B;](resuming-inactive.md).SDK verzendt hervat pingel om het achterste eind mee te delen dat de gebruiker manueel de zitting hervat.
+  Voor informatie over het hervatten van een volgende zitting, zie [ Hervatten inactieve zittingen ](resuming-inactive.md).SDK verzendt hervat pingel om het achterste eind mee te delen dat de gebruiker manueel de zitting hervat.

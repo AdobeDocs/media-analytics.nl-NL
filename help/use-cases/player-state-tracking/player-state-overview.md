@@ -3,8 +3,8 @@ title: Over Player State Tracking
 description: Leer meer over de functie voor het bijhouden van spelerstatussen, zoals vereisten en richtlijnen voor het implementeren en rapporteren van spelerstatussen.
 exl-id: c678e182-74e4-4f46-8596-7be57e645c66
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%
@@ -26,7 +26,7 @@ De Staat van de speler het Volgen levert de volgende voordelen op:
 * Hiermee wordt de tijd gemeten die in een aangepaste spelerstatus is doorgebracht
 * Meerdere staten die gelijktijdig kunnen worden gemeten
 
-![&#x200B; de staat die van de Speler volgen &#x200B;](assets/player_state_tracking.png)
+![ de staat die van de Speler volgen ](assets/player_state_tracking.png)
 
 ## Vereisten
 

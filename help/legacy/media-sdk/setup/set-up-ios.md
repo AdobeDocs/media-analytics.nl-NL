@@ -4,8 +4,8 @@ description: Voer de volgende stappen uit om de Media SDK-toepassing in iOS in t
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 exl-id: fe7662b5-1700-4bd6-b542-66aa8493459d
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '731'
 ht-degree: 3%
@@ -18,18 +18,18 @@ Leer de streaming-mediaservices voor iOS-apparaten in te stellen.
 
 >[!IMPORTANT]
 >
->Met het einde van de ondersteuning voor versie 4 Mobile SDK&#39;s op 31 augustus 2021 beëindigt Adobe ook de ondersteuning voor Media Analytics SDK voor iOS en Android.  Voor extra informatie, zie [&#x200B; Analytics SDK End-of-Support FAQs &#x200B;](/help/additional-resources/end-of-support-faqs.md).
+>Met het einde van de ondersteuning voor versie 4 Mobile SDK&#39;s op 31 augustus 2021 beëindigt Adobe ook de ondersteuning voor Media Analytics SDK voor iOS en Android.  Voor extra informatie, zie [ Analytics SDK End-of-Support FAQs ](/help/additional-resources/end-of-support-faqs.md).
 
 ## Vereisten
 
 * **verkrijg geldige configuratieparameters voor de Media SDK**
 Deze parameters kunt u verkrijgen van een Adobe-medewerker nadat u uw analyseaccount hebt ingesteld.
 * **voert ADBMobile voor iOS in uw toepassing uit**
-Voor meer informatie over de documentatie van Adobe Mobile SDK, zie [&#x200B; iOS SDK 4.x voor de Oplossingen van Experience Cloud.](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html?lang=nl-NL)
+Voor meer informatie over de documentatie van Adobe Mobile SDK, zie [ iOS SDK 4.x voor de Oplossingen van Experience Cloud.](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html)
 
   >[!IMPORTANT]
   >
-  >Vanaf iOS 9 introduceerde Apple de functie App Transport Security (ATS). Deze functie is bedoeld om de netwerkbeveiliging te verbeteren door ervoor te zorgen dat uw apps alleen industriestandaard protocollen en ciphers gebruiken. Deze functie is standaard ingeschakeld, maar u hebt configuratieopties die u opties bieden voor het werken met ATS. Voor details op ATS, zie [&#x200B; de Veiligheid van het Vervoer van de Toepassing.](https://experienceleague.adobe.com/docs/mobile-services/ios/config-ios/app-transport-security.html?lang=nl-NL)
+  >Vanaf iOS 9 introduceerde Apple de functie App Transport Security (ATS). Deze functie is bedoeld om de netwerkbeveiliging te verbeteren door ervoor te zorgen dat uw apps alleen industriestandaard protocollen en ciphers gebruiken. Deze functie is standaard ingeschakeld, maar u hebt configuratieopties die u opties bieden voor het werken met ATS. Voor details op ATS, zie [ de Veiligheid van het Vervoer van de Toepassing.](https://experienceleague.adobe.com/docs/mobile-services/ios/config-ios/app-transport-security.html)
 
 * **verstrek de volgende mogelijkheden in uw media speler:**
 
@@ -49,7 +49,7 @@ Voor meer informatie over de documentatie van Adobe Mobile SDK, zie [&#x200B; iO
    * MediaSDK_TV.a > MediaSDKTV.xframework
 * Als u de Adobe XCFrameworks handmatig aan uw project toevoegt, moet u ervoor zorgen dat deze niet zijn ingesloten.
 
-1. Voeg uw [&#x200B; gedownloade &#x200B;](/help/getting-started/download-sdks.md) Media SDK aan uw project toe.
+1. Voeg uw [ gedownloade ](/help/getting-started/download-sdks.md) Media SDK aan uw project toe.
 
    1. Controleer of de volgende softwarecomponenten in de map `libs` staan:
 
@@ -70,7 +70,7 @@ Voor meer informatie over de documentatie van Adobe Mobile SDK, zie [&#x200B; iO
 
       1. Zorg ervoor dat het selectievakje **[!UICONTROL Copy Items if Needed]** is ingeschakeld, dat **[!UICONTROL Create Groups]** is geselecteerd en dat geen van de selectievakjes in **[!UICONTROL Add to Target]** is geselecteerd.
 
-      ![&#x200B; kies Opties &#x200B;](assets/choose-options_ios.png)
+      ![ kies Opties ](assets/choose-options_ios.png)
 
       1. Klik op **[!UICONTROL Finish]**.
       1. Selecteer in **[!UICONTROL Project Navigator]** uw app en selecteer uw doelen.
@@ -163,7 +163,7 @@ Raadpleeg de documentatie bij Oudere implementatie voor informatie over het migr
 
 ## Een native app voor tvOS configureren
 
-Met de release van de nieuwe Apple TV kunt u nu toepassingen maken die in de native tvOS-omgeving kunnen worden uitgevoerd. U kunt een puur eigen app maken met behulp van een van de verschillende frameworks die beschikbaar zijn in iOS, of u kunt uw app maken met XML-sjablonen en JavaScript. Vanaf MediaSDK versie 2.0 is ondersteuning voor tvOS beschikbaar. Voor meer informatie over tvOS, zie {de plaats van de Ontwikkelaar 0} tvOS.[&#128279;](https://developer.apple.com/tvos/)
+Met de release van de nieuwe Apple TV kunt u nu toepassingen maken die in de native tvOS-omgeving kunnen worden uitgevoerd. U kunt een puur eigen app maken met behulp van een van de verschillende frameworks die beschikbaar zijn in iOS, of u kunt uw app maken met XML-sjablonen en JavaScript. Vanaf MediaSDK versie 2.0 is ondersteuning voor tvOS beschikbaar. Voor meer informatie over tvOS, zie {de plaats van de Ontwikkelaar 0} tvOS.[](https://developer.apple.com/tvos/)
 
 Voer de volgende stappen in uw project Xcode uit. In deze handleiding wordt ervan uitgegaan dat uw project een doel heeft dat een Apple TV-app voor tvOS is:
 
