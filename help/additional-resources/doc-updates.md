@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## Opmerkingen bij de release{#release-notes}
 
-* [Opmerkingen bij de release](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html)
+* [Opmerkingen bij de release](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=nl-NL)
 
 <!--
 ## Documentation Updates{#documentation-updates}
